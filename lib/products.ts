@@ -36,7 +36,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-fc-porto-202425-principal",
-    nome: "FC Porto 2024/25 Home Jersey",
+    nome: "Camisola FC Porto 2024/25 Principal",
     descricao:
       "Official home jersey of FC Porto for the 2024/25 season. Classic blue and white design, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
@@ -807,7 +807,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-barcelona-202425-principal",
-    nome: "Camisola Barcelona 2024/25 Principal",
+    nome: "Barcelona 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do FC Barcelona para a temporada 2024/25. Design inovador dividido em metades grená e azul, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga:
@@ -829,7 +829,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-atletico-madrid-202425-principal",
-    nome: "Camisola Atlético Madrid 2024/25 Principal",
+    nome: "Atlético Madrid 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do Atlético Madrid para a temporada 2024/25. Design clássico com listras verticais vermelhas e brancas, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga:
@@ -851,7 +851,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-tottenham-alternativa-202425",
-    nome: "Camisola Tottenham Alternativa 2024/25",
+    nome: "Tottenham 2024/25 Away Jersey",
     descricao:
       "Camisola oficial alternativa do Tottenham para a temporada 2024/25. Design moderno em azul marinho com detalhes em amarelo, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga:
@@ -873,7 +873,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-real-madrid-alternativa-202425",
-    nome: "Camisola Real Madrid Alternativa 2024/25",
+    nome: "Real Madrid 2024/25 Away Jersey",
     descricao:
       "Camisola oficial alternativa do Real Madrid para a temporada 2024/25. Design moderno em preto com detalhes em dourado, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
     descricaoLonga:
@@ -895,7 +895,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-atletico-madrid-terceira-202425",
-    nome: "Camisola Atlético Madrid Terceira 2024/25",
+    nome: "Atlético Madrid 2024/25 Third Jersey",
     descricao:
       "Camisola oficial terceira do Atlético Madrid para a temporada 2024/25. Design inovador em verde com detalhes em preto, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga:
@@ -917,7 +917,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-real-madrid-terceira-202425",
-    nome: "Camisola Real Madrid Terceira 2024/25",
+    nome: "Real Madrid 2024/25 Third Jersey",
     descricao:
       "Camisola oficial terceira do Real Madrid para a temporada 2024/25. Design inovador em azul elétrico com detalhes em dourado, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
     descricaoLonga:
@@ -939,7 +939,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-benfica-originals-25-26",
-    "nome": "Kit Criança Benfica x Adidas Originals 2025/26",
+    "nome": "Benfica x Adidas Originals Kids Kit 2025/26",
     "descricao": "Kit especial Benfica x Adidas Originals 2025/26 para criança.",
     "descricaoLonga": "O Kit infantil Benfica x Adidas Originals 2025/26 é uma edição especial que celebra a história e o estilo único do clube. Inclui camisola e calções, confeccionados em tecido leve e confortável, perfeitos para os jovens adeptos mostrarem o seu orgulho encarnado com um toque clássico da Adidas Originals.",
     "preco": 23.99,
@@ -975,7 +975,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-barcelona-alternativa-202425",
-    nome: "Camisola Barcelona Alternativa 2024/25",
+    nome: "Barcelona 2024/25 Away Jersey",
     descricao:
       "Camisola oficial alternativa do FC Barcelona para a temporada 2024/25. Design moderno em dourado com detalhes em azul e grená, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga:
@@ -997,7 +997,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-inter-principal-202425",
-    nome: "Camisola Inter Principal 2024/25",
+    nome: "Inter Milan 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do Inter de Milão para a temporada 2024/25. Design clássico com listras verticais azuis e pretas, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga:
@@ -1019,7 +1019,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-ac-milan-principal-202425",
-    nome: "Camisola AC Milan Principal 2024/25",
+    nome: "AC Milan 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do AC Milan para a temporada 2024/25. Design clássico com listras verticais vermelhas e pretas, fabricada pela Puma com tecnologia dryCELL para máximo conforto.",
     descricaoLonga:
@@ -1041,7 +1041,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-juventus-principal-202425",
-    nome: "Camisola Juventus Principal 2024/25",
+    nome: "Juventus 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal da Juventus para a temporada 2024/25. Design clássico com listras verticais pretas e brancas, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
     descricaoLonga:
@@ -1063,7 +1063,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-napoli-principal-202425",
-    nome: "Camisola Napoli Principal 2024/25",
+    nome: "Napoli 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do Napoli para a temporada 2024/25. Design clássico em azul celeste, fabricada pela EA7 com tecnologia avançada para máximo conforto.",
     descricaoLonga:
@@ -1085,7 +1085,7 @@ const produtosArray = ([
   },
   {
     id: "roma-24-25-principal",
-    nome: "Camisola Roma Principal 2024/25",
+    nome: "AS Roma 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal da AS Roma para a temporada 2024/25. Design clássico em vermelho escuro e dourado, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
     descricaoLonga:
@@ -1107,7 +1107,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-lazio-principal-202425",
-    nome: "Camisola Lazio Principal 2024/25",
+    nome: "SS Lazio 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal da SS Lazio para a temporada 2024/25. Design clássico em azul celeste, fabricada pela Mizuno com tecnologia avançada para máximo conforto.",
     descricaoLonga:
@@ -1129,7 +1129,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-fiorentina-principal-202425",
-    nome: "Camisola Fiorentina Principal 2024/25",
+    nome: "Fiorentina 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal da Fiorentina para a temporada 2024/25. Design clássico em roxo com detalhes em branco, fabricada pela Kappa com tecnologia Kombat Pro para máximo conforto.",
     descricaoLonga:
@@ -1151,7 +1151,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-al-nassr-terceira-202425",
-    nome: "Camisola Al-Nassr Terceira 2024/25",
+    nome: "Al-Nassr 2024/25 Third Jersey",
     descricao: "Camisola oficial terceira do Al-Nassr para a temporada 2024/25. Design moderno em azul com detalhes dourados, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A nova camisola terceira do Al-Nassr para a temporada 2024/25 apresenta um design moderno em azul com detalhes dourados que simbolizam a grandeza do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a evolução e o prestígio do Al-Nassr, perfeita para apoiar o clube na nova temporada.",
     preco: 17.99,
@@ -1171,7 +1171,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-al-hilal-principal-202425",
-    nome: "Camisola Al-Hilal Principal 2024/25",
+    nome: "Al-Hilal 2024/25 Home Jersey",
     descricao: "Camisola oficial principal do Al-Hilal para a temporada 2024/25. Design clássico em azul com detalhes brancos, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A nova camisola principal do Al-Hilal para a temporada 2024/25 mantém a tradição do clube com o icônico azul e detalhes em branco. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e o prestígio do Al-Hilal, perfeita para apoiar o clube na nova temporada.",
     preco: 17.99,
@@ -1191,7 +1191,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-inter-miami-terceira-202425",
-    nome: "Camisola Inter Miami Terceira 2024/25",
+    nome: "Inter Miami 2024/25 Third Jersey",
     descricao: "Camisola oficial terceira do Inter Miami para a temporada 2024/25. Design inovador em preto com detalhes rosa, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A nova camisola terceira do Inter Miami para a temporada 2024/25 apresenta um design inovador em preto com detalhes em rosa que refletem a identidade única do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a modernidade e o estilo do Inter Miami, perfeita para apoiar o clube na nova temporada.",
     preco: 17.99,
@@ -1211,7 +1211,7 @@ const produtosArray = ([
   },
   {
     "id": "manutd-home-07-08-ls",
-    "nome": "Manchester United Home 2007/08 Manga Comprida",
+    "nome": "Manchester United Home 2007/08 Long Sleeve",
     "descricao": "Camisola principal Manchester United 2007/08, manga comprida.",
     "descricaoLonga": "A camisola principal do Manchester United da época 2007/08, versão de manga comprida, usada na histórica temporada em que o clube conquistou a Premier League e a UEFA Champions League. Um clássico absoluto para colecionadores e adeptos dos Red Devils.",
     "preco": 19.99,
@@ -1235,7 +1235,7 @@ const produtosArray = ([
   },
   {
     "id": "manutd-home-06-07-kids",
-    "nome": "Kit Criança Manchester United Home 2006/07",
+    "nome": "Manchester United Kids Home Kit 2006/07",
     "descricao": "Kit criança Manchester United principal 2006/07.",
     "descricaoLonga": "O kit criança do Manchester United da época 2006/07, usado durante a temporada em que os Red Devils conquistaram a Premier League. Inclui camisola e calções, recriando fielmente o equipamento principal daquele ano histórico.",
     "preco": 17.99,
@@ -1260,7 +1260,7 @@ const produtosArray = ([
 
   {
     id: "sc-braga-25-26-principal",
-    nome: "Camisola SC Braga Principal 2025/26",
+    nome: "SC Braga 2025/26 Home Jersey",
     descricao: "Camisola principal do SC Braga para a temporada 2025/26.",
     descricaoLonga: "A camisola principal do SC Braga 2025/26 combina o tradicional vermelho e branco com um corte moderno e tecido de elevada qualidade. Ideal para adeptos que querem apoiar os Guerreiros do Minho dentro e fora do estádio.",
     preco: 17.99,
@@ -1290,7 +1290,7 @@ const produtosArray = ([
   },
   {
     "id": "chelsea-third-24-25",
-    "nome": "Camisola Chelsea Terceira 2024/25",
+    "nome": "Chelsea Third Jersey 2024/25",
     "descricao": "Camisola terceira do Chelsea 2024/25.",
     "descricaoLonga": "A camisola terceira do Chelsea 2024/25 combina modernidade e tradição. Um design ousado e cheio de estilo, ideal para os adeptos que querem marcar presença dentro e fora de campo.",
     "preco": 17.99,
@@ -1316,7 +1316,7 @@ const produtosArray = ([
   },
   {
     "id": "psg-home-25-26",
-    "nome": "Camisola Paris Saint-Germain Principal 2025/26",
+    "nome": "Paris Saint-Germain Home Jersey 2025/26",
     "descricao": "Camisola principal do Paris Saint-Germain 2025/26.",
     "descricaoLonga": "A camisola principal do PSG 2025/26 mantém o tradicional design elegante do clube parisiense, com detalhes modernos e materiais de alta qualidade. Um símbolo de orgulho para os adeptos do Parc des Princes.",
     "preco": 17.99,
@@ -1340,7 +1340,7 @@ const produtosArray = ([
   },
   {
     "id": "flamengo-third-away-25-26",
-    "nome": "Camisola Flamengo Third Away 2025/26 (sem Sponsors)",
+    "nome": "Flamengo Third Away 2025/26 (No Sponsors)",
     "descricao": "Camisola third away do Flamengo 2025/26 com todos os patrocinadores oficiais.",
     "descricaoLonga": "A camisola third away do Flamengo 2025/26 apresenta um design moderno e arrojado, mantendo a tradição do Mengão. Esta versão inclui todos os sponsors oficiais, tornando-a igual à usada pelos jogadores em campo.",
     "preco": 17.99,
@@ -1367,7 +1367,7 @@ const produtosArray = ([
   },
   {
     "id": "flamengo-third-25-26",
-    "nome": "Flamengo Third 2025/26 com Patrocinadores",
+    "nome": "Flamengo Third 2025/26 with Sponsors",
     "descricao": "Camisola Flamengo terceiro equipamento 2025/26 com todos os patrocinadores.",
     "descricaoLonga": "A camisola do Flamengo Third 2025/26 com todos os patrocinadores combina tradição e inovação. Um design moderno, com tecido leve e respirável, ideal para adeptos e colecionadores.",
     "preco": 17.99,
@@ -1393,7 +1393,7 @@ const produtosArray = ([
   },
   {
     "id": "psg-special-25-26",
-    "nome": "Camisola Paris Saint-Germain Special Edition 2025/26",
+    "nome": "Paris Saint-Germain Special Edition 2025/26",
     "descricao": "Edição especial do Paris Saint-Germain para a temporada 2025/26.",
     "descricaoLonga": "A camisola Special Edition do PSG 2025/26 apresenta um design exclusivo e sofisticado, inspirada no estilo parisiense e produzida com materiais premium. Uma peça de coleção para os verdadeiros adeptos do clube.",
     "preco": 17.99,
@@ -1419,7 +1419,7 @@ const produtosArray = ([
   },
   {
     id: "casaco-sl-benfica-2526",
-    nome: "Casaco S.L. Benfica 25/26",
+    nome: "SL Benfica 25/26 Jacket",
     descricao: "Casaco oficial do S.L. Benfica para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Casaco S.L. Benfica 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Leões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 34.99,
@@ -1443,7 +1443,7 @@ const produtosArray = ([
   },
   {
     id: "casaco-sl-benfica-vermelho-2526",
-    nome: "Casaco S.L. Benfica vermelho 25/26",
+    nome: "SL Benfica 25/26 Red Jacket",
     descricao: "Casaco oficial do S.L. Benfica para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Casaco S.L. Benfica 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Leões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 34.99,
@@ -1467,7 +1467,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-al-nassr-principal-202425",
-    nome: "Camisola Al-Nassr Principal 2024/25",
+    nome: "Al-Nassr 2024/25 Home Jersey",
     descricao: "Camisola oficial principal do Al-Nassr para a temporada 2024/25. Design clássico em amarelo com detalhes azuis, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A nova camisola principal do Al-Nassr para a temporada 2024/25 mantém a tradição do clube com o icônico amarelo e detalhes em azul. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e o prestígio do Al-Nassr, perfeita para apoiar o clube na nova temporada.",
     preco: 17.99,
@@ -1487,7 +1487,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-inter-miami-principal-202425",
-    nome: "Camisola Inter Miami Principal 2024/25",
+    nome: "Inter Miami 2024/25 Home Jersey",
     descricao: "Camisola oficial principal do Inter Miami para a temporada 2024/25. Design clássico em rosa e preto, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A nova camisola principal do Inter Miami para a temporada 2024/25 apresenta o design característico do clube em rosa e preto. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a identidade única do Inter Miami, perfeita para apoiar o clube na nova temporada.",
     preco: 17.99,
@@ -1507,7 +1507,7 @@ const produtosArray = ([
   },
   {
     "id": "sporting-third-25-26",
-    "nome": "Camisola Sporting CP 3º Equipamento 2025/26",
+    "nome": "Sporting CP Third Kit 2025/26",
     "descricao": "Camisola Sporting CP 3º Equipamento 2025/26.",
     "descricaoLonga": "O terceiro equipamento do Sporting Clube de Portugal para a época 2025/26 apresenta um design arrojado e moderno, perfeito para os adeptos que querem destacar-se. Fabricado em poliéster de alta qualidade, garante conforto e respirabilidade.",
     "preco": 17.99,
@@ -1533,7 +1533,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-inter-miami-alternativa-202425",
-    nome: "Camisola Inter Miami Alternativa 2024/25",
+    nome: "Inter Miami 2024/25 Away Jersey",
     descricao: "Camisola oficial alternativa do Inter Miami para a temporada 2024/25. Design moderno em preto com detalhes rosa, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A nova camisola alternativa do Inter Miami para a temporada 2024/25 apresenta um design moderno em preto com detalhes em rosa que refletem a identidade única do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa o estilo contemporâneo do Inter Miami, perfeita para apoiar o clube na nova temporada.",
     preco: 17.99,
@@ -1553,7 +1553,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-celtic-terceira-202324",
-    nome: "Camisola Celtic Terceira 2023/24",
+    nome: "Celtic 2023/24 Third Jersey",
     descricao: "Camisola oficial terceira do Celtic para a temporada 2023/24. Design moderno em preto com detalhes verdes, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A camisola terceira do Celtic para a temporada 2023/24 apresenta um design moderno em preto com detalhes em verde que homenageiam as cores tradicionais do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e a tradição do Celtic, perfeita para apoiar os Bhoys na temporada.",
     preco: 17.99,
@@ -1573,7 +1573,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-celtic-principal-202425",
-    nome: "Camisola Celtic Principal 2024/25",
+    nome: "Celtic 2024/25 Home Jersey",
     descricao: "Camisola oficial principal do Celtic para a temporada 2024/25. Design clássico em verde e branco, fabricada com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A nova camisola principal do Celtic para a temporada 2024/25 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e a tradição do Celtic, perfeita para apoiar os Bhoys na nova temporada.",
     preco: 17.99,
@@ -1593,7 +1593,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-barcelona-alternativo-edicao-especial-202425",
-    nome: "Kit Criança Barcelona Alternativo Edição Especial 2024/25",
+    nome: "Barcelona 2024/25 Kids Special Edition Away Kit",
     descricao: "Kit oficial alternativo de criança do FC Barcelona para a temporada 2024/25. Design especial em dourado com detalhes em azul e grená, fabricado pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga: "O novo kit alternativo de criança do FC Barcelona para a temporada 2024/25 apresenta um design especial em dourado com detalhes em azul e grená que homenageiam as cores tradicionais do clube. Fabricado pela Nike com a tecnologia Dri-FIT avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em suas cores originais no peito, junto com o logotipo da Nike e o patrocinador Spotify. A parte traseira apresenta o logo da UNHCR/ACNUR, demonstrando o compromisso social do clube. Perfeito para os jovens adeptoes apoiarem os Blaugranas na nova temporada.",
     preco: 17.99,
@@ -1613,7 +1613,7 @@ const produtosArray = ([
   },
   {
     id: "kitliver-principal-25-26",
-    nome: "Kit Criança Liverpool Principal 2025/26",
+    nome: "Liverpool 2025/26 Kids Home Kit",
     descricao: "Kit oficial principal de criança do Liverpool FC para a temporada 2025/26. Design clássico em vermelho com detalhes brancos, produzido pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga: "O novo kit principal de criança do Liverpool FC para a temporada 2025/26 apresenta o tradicional vermelho do clube com detalhes modernos em branco. Fabricado pela Nike, integra a tecnologia Dri-FIT que ajuda a manter os jovens jogadores secos e confortáveis durante o jogo ou no uso diário. O emblema do Liverpool está bordado no peito, ao lado do swoosh da Nike e do patrocinador principal. Ideal para os pequenos Reds demonstrarem o seu apoio com orgulho nesta nova época.",
     preco: 17.99,
@@ -1634,7 +1634,7 @@ const produtosArray = ([
   },
   {
     id: "benfica-25-26-home",
-    nome: "Camisola Principal do SL Benfica 2025-2026",
+    nome: "SL Benfica 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do SL Benfica para a temporada 2025/26. Design clássico em vermelho com detalhes modernos.",
     descricaoLonga: "A nova camisola principal do SL Benfica para a temporada 2025/26 combina a tradição do clube com elementos modernos. O vermelho vibrante tradicional é complementado por detalhes sofisticados que homenageiam a rica história do clube. Fabricada com tecnologia de ponta para garantir máximo conforto e performance.",
     preco: 17.99,
@@ -1654,7 +1654,7 @@ const produtosArray = ([
   },
   {
     id: "benfica-25-26-away",
-    nome: "Camisola Alternativa do SL Benfica 2025-2026",
+    nome: "SL Benfica 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do SL Benfica para a temporada 2025/26. Design elegante e moderno com identidade única.",
     descricaoLonga: "A nova camisola alternativa do SL Benfica para a temporada 2025/26 apresenta um design elegante e moderno que mantém a identidade do clube. Com detalhes sofisticados e acabamentos premium, esta camisola oferece uma alternativa estilosa à tradicional camisola principal. Fabricada com tecnologia de ponta para garantir máximo conforto e performance em campo e no dia-a-dia.",
     preco: 17.99,
@@ -1679,7 +1679,7 @@ const produtosArray = ([
   },
   {
     id: "benfica-special-edition-2526",
-    nome: "Camisola Edição Especial Benfica 2025/2026",
+    nome: "Benfica 2025/26 Special Edition Jersey",
     descricao: "Edição especial e limitada da camisola do SL Benfica para a temporada 2025/26.",
     descricaoLonga: "Uma edição verdadeiramente especial que celebra a grandeza do Sport Lisboa e Benfica. Esta camisola única combina elementos tradicionais com um design inovador, criando uma peça de colecionador que todo benfiquista vai querer ter.",
     preco: 17.99,
@@ -1703,7 +1703,7 @@ const produtosArray = ([
   },
   {
     id: "benfica-special-edition-2-2526",
-    nome: "Camisola Edição II EDIÇÃO Especial Benfica 2025/2026",
+    nome: "Benfica 2025/26 Special Edition II Jersey",
     descricao: "Segunda edição especial da camisola do SL Benfica, com design único e exclusivo.",
     descricaoLonga: "A segunda edição especial da camisola do Benfica apresenta um design ainda mais ousado e inovador. Com elementos gráficos únicos e acabamentos premium, esta camisola é uma verdadeira obra de arte que celebra o clube.",
     preco: 17.99,
@@ -1727,7 +1727,7 @@ const produtosArray = ([
   },
   {
     id: "benfica-special-edition-retro-2526",
-    nome: "Camisola Edição Especial RETRO Benfica 2025/2026",
+    nome: "Benfica 2025/26 Retro Special Edition Jersey",
     descricao: "Edição retro especial que homenageia a história gloriosa do SL Benfica.",
     descricaoLonga: "Uma homenagem às camisolas históricas do Benfica, esta edição retro combina elementos clássicos com tecnologia moderna. Cada detalhe foi cuidadosamente pensado para criar uma peça que celebra o rico legado do clube.",
     preco: 17.99,
@@ -1750,7 +1750,7 @@ const produtosArray = ([
   },  
     {
       "id": "benfica-adidas-originals-mlb-2025",
-      "nome": "Camisola S.L. Benfica x Adidas Originals Edição Especial MLB 2025",
+      "nome": "S.L. Benfica x Adidas Originals Special Edition MLB 2025",
       "descricao": "Camisola edição especial do Benfica em colaboração com a Adidas Originals e MLB para 2025.",
       "descricaoLonga": "A camisola S.L. Benfica x Adidas Originals Edição Especial MLB 2025 combina o estilo clássico do clube com o design urbano da Major League Baseball. Uma peça de coleção limitada, feita em poliéster premium com detalhes exclusivos que unem o futebol e o lifestyle.",
       "preco": 19.99,
@@ -1775,7 +1775,7 @@ const produtosArray = ([
     },
   {
     "id": "real-madrid-25-26-special-kids",
-    "nome": "Kit Criança Real Madrid Edição Especial 2025/26",
+    "nome": "Real Madrid Kids Special Edition 2025/26",
     "descricao": "Camisola edição especial do Real Madrid 2025/26 para criança.",
     "descricaoLonga": "A camisola infantil edição especial do Real Madrid para a temporada 2025/26 combina estilo icónico com conforto superior. Confeccionada em tecido leve e respirável, permite aos jovens adeptos mostrarem o seu apoio ao clube espanhol com elegância e conforto.",
     "preco": 17.99,
@@ -1859,7 +1859,7 @@ const produtosArray = ([
   },
   {
     id: "porto-25-26-home",
-    nome: "Camisola Principal do FC Porto 2025/26",
+    nome: "FC Porto 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do FC Porto para a temporada 2025/26. Design clássico em azul e branco.",
     descricaoLonga: "A nova camisola principal do FC Porto para a temporada 2025/26 mantém a tradição do clube com as icônicas listras verticais azuis e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia.",
     preco: 17.99,
@@ -1883,7 +1883,7 @@ const produtosArray = ([
   },
   {
     id: "ac-milan-25-26-terceiro",
-    nome: "Camisola AC Milan Terceiro 2025/26",
+    nome: "AC Milan 2025/26 Third Jersey",
     descricao: "Camisola terceira do AC Milan para a temporada 2025/26.",
     descricaoLonga: "A Camisola AC Milan Terceiro 2025/26 apresenta um design moderno que mistura tradição e inovação, destacando-se pelas suas cores e detalhes únicos. Produzida com tecnologia dryCELL da Puma, garante conforto e respirabilidade em qualquer situação. O emblema do clube e o logótipo da Puma estão aplicados com alta qualidade, reforçando o visual premium desta camisola. Ideal para adeptos que querem apoiar os Rossoneri com estilo.",
     preco: 17.99,
@@ -1911,7 +1911,7 @@ const produtosArray = ([
   },
   {
     id: "porto-25-26-away",
-    nome: "Camisola II do FC Porto 2025/26",
+    nome: "FC Porto 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do FC Porto para a temporada 2025/26. Design moderno e inovador.",
     descricaoLonga: "A nova camisola alternativa do FC Porto para a temporada 2025/26 apresenta um design moderno e inovador que homenageia a rica história do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia.",
     preco: 17.99,
@@ -1935,7 +1935,7 @@ const produtosArray = ([
   },
   {
     id: "al-nassr-25-26-principal",
-    nome: "Camisola Al-Nassr Principal 2025/26",
+    nome: "Al-Nassr 2025/26 Home Jersey",
     descricao: "Camisola principal do Al-Nassr para a temporada 2025/26.",
     descricaoLonga: "A camisola principal do Al-Nassr 2025/26 mantém o icónico amarelo vibrante do clube, com detalhes azuis que simbolizam a identidade e a história da equipa saudita. Produzida com tecido respirável e de secagem rápida, ideal para treinos e jogos.",
     preco: 17.99,
@@ -1963,7 +1963,7 @@ const produtosArray = ([
   },
   {
     id: "benfica-25-26-away2",
-  nome: "Camisola Alternativa Branca SL Benfica 2025/26",
+  nome: "SL Benfica 2025/26 White Away Jersey",
   descricao: "Camisola oficial alternativa do SL Benfica para a temporada 2025/26. Design elegante em branco com detalhes em vermelho.",
   descricaoLonga: "A nova camisola alternativa do SL Benfica para a temporada 2025/26 apresenta um design elegante e moderno em branco com detalhes em vermelho. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
   preco: 17.99,
@@ -1989,7 +1989,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-25-26-third-away-kids",
-    nome: "Kit Criança Sporting CP terceiro equipamento Kids 2025/26",
+    nome: "Sporting CP 2025/26 Kids Third Kit",
     descricao: "Camisola alternativa infantil do Sporting Clube de Portugal para a temporada 2025/26.",
     descricaoLonga: "A Camisola Sporting CP Third Away Kids 2025/26 combina o design moderno com a tradição leonina. Feita em poliéster respirável com tecnologia anti-humidade, é ideal para os jovens adeptos mostrarem o seu apoio ao clube com conforto e estilo.",
     preco: 17.99,
@@ -2077,7 +2077,7 @@ const produtosArray = ([
   },
   {
     id: "real-madrid-25-26-home",
-    nome: "Camisola Real Madrid Principal 25/26",
+    nome: "Real Madrid 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Real Madrid para a temporada 2025/26. Design clássico em branco com detalhes em dourado.",
     descricaoLonga: "A nova camisola principal do Real Madrid para a temporada 2025/26 mantém a tradição do clube com o icônico branco e detalhes em dourado. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
     preco: 17.99,
@@ -2102,7 +2102,7 @@ const produtosArray = ([
   },
   {
     id: "real-madrid-25-26-away",
-    nome: "Camisola II do Real Madrid 2025/26",
+    nome: "Real Madrid 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do Real Madrid para a temporada 2025/26. Design moderno e elegante.",
     descricaoLonga: "A nova camisola alternativa do Real Madrid para a temporada 2025/26 apresenta um design moderno que combina elegância com inovação. Fabricada pela Adidas com tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, com a coroa real em destaque.",
     preco: 17.99,
@@ -2124,7 +2124,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-sporting-principal-2024-25",
-    nome: "Kit Criança Sporting Principal 2024/25",
+    nome: "Sporting CP 2024/25 Kids Home Kit",
     descricao: "Kit oficial de criança do Sporting CP para a temporada 2024/25. Design clássico em verde e branco, fabricado pela Nike com tecnologia avançada para máximo conforto.",
     descricaoLonga: "O novo kit de criança do Sporting CP para a temporada 2024/25 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricado pela Nike com materiais de alta qualidade e tecnologia avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. Inclui camisola e calções. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike. Perfeito para os jovens adeptos apoiarem os Leões na nova temporada.",
     preco: 17.99,
@@ -2151,7 +2151,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-sporting-edicao-especial-2024",
-    nome: "Kit Criança Sporting Edição Especial 2024",
+    nome: "Sporting CP 2024 Kids Special Edition Kit",
     descricao: "Kit oficial de criança do Sporting CP Edição Especial 2024. Design único e exclusivo, fabricado com tecnologia avançada para máximo conforto.",
     descricaoLonga: "O kit edição especial de criança do Sporting CP para 2024 apresenta um design único e exclusivo que celebra a grandeza do clube. Fabricado com materiais de alta qualidade e tecnologia avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. Inclui camisola e calções. Uma peça especial para os jovens sportinguistas mostrarem a sua paixão pelo clube de forma diferenciada.",
     preco: 17.99,
@@ -2224,7 +2224,7 @@ const produtosArray = ([
   },
   {
     id: "liverpool-25-26-alternativa",
-    nome: "Camisola Liverpool Alternativa 2025/26",
+    nome: "Liverpool 2025/26 Away Jersey",
     descricao: "Camisola alternativa do Liverpool para a temporada 2025/26.",
     descricaoLonga: "A Camisola Liverpool Alternativa 2025/26 apresenta um design arrojado e moderno, pensado para destacar-se tanto em campo como fora dele. Produzida com tecnologia Dri-FIT, garante conforto, leveza e excelente gestão de humidade, tornando-a ideal para jogos intensos ou uso casual. Um produto oficial que reflete o orgulho e a paixão dos adeptos pelos Reds.",
     preco: 17.99,
@@ -2248,7 +2248,7 @@ const produtosArray = ([
   },
   {
     id: "arsenal-25-26-terceiro",
-    nome: "Camisola Arsenal Terceira 2025/26",
+    nome: "Arsenal 2025/26 Third Jersey",
     descricao: "Camisola terceira do Arsenal para a temporada 2025/26.",
     descricaoLonga: "A Camisola Arsenal Terceira 2025/26 apresenta um design inovador que combina modernidade e tradição. Produzida com tecnologia AEROREADY para manter o corpo seco e confortável, esta camisola é perfeita tanto para apoiar os Gunners nas bancadas como para usar no dia-a-dia. O emblema do clube e o logótipo da Adidas estão aplicados com alta qualidade, garantindo um visual premium.",
     preco: 17.99,
@@ -2272,7 +2272,7 @@ const produtosArray = ([
   },
   {
     "id": "psg-special-2025",
-    "nome": "Camisola Paris Saint-Germain Edição Especial 2025",
+    "nome": "Paris Saint-Germain Special Edition 2025",
     "descricao": "Edição especial do Paris Saint-Germain lançada em 2025.",
     "descricaoLonga": "A camisola Edição Especial do PSG 2025 apresenta um design único e sofisticado, criada para marcar um momento especial do clube. Produzida com materiais de alta qualidade, é ideal tanto para coleção como para uso no dia a dia.",
     "preco": 17.99,
@@ -2297,7 +2297,7 @@ const produtosArray = ([
   },
   {
     id: "psg-25-26-third-away",
-    nome: "Camisola PSG terceiro equipamento 2025/26",
+    nome: "PSG 2025/26 Third Jersey",
     descricao: "Camisola alternativa do Paris Saint-Germain para a temporada 2025/26.",
     descricaoLonga: "A Camisola PSG Third Away 2025/26 apresenta um design ousado e moderno, inspirado no estilo urbano parisiense. Produzida com tecnologia Dri-FIT, oferece respirabilidade e conforto, ideal para adeptos que querem apoiar o clube com estilo.",
     preco: 17.99,
@@ -2326,7 +2326,7 @@ const produtosArray = ([
   },
   {
     id: "liverpool-25-26-especial-jordan",
-    nome: "Camisola Liverpool Especial Jordan Concept 2025/26",
+    nome: "Liverpool 2025/26 Special Jordan Concept Jersey",
     descricao: "Camisola especial do Liverpool para a temporada 2025/26, conceito Jordan exclusivo.",
     descricaoLonga: "A Camisola Liverpool Especial Jordan Concept 2025/26 combina o espírito competitivo do clube com o estilo icónico da marca Jordan. Este design conceptual apresenta elementos modernos e ousados, aliados à qualidade de fabrico premium e tecnologia Dri-FIT para máximo conforto e desempenho. Ideal para adeptos que procuram uma peça única para demonstrar o seu apoio aos Reds.",
     preco: 17.99,
@@ -2353,7 +2353,7 @@ const produtosArray = ([
   
   {
     id: "sporting-campeao-2024-25",
-    nome: "Camisola Principal Sporting Campeão 2024/25",
+    nome: "Sporting CP 2024/25 Champions Home Jersey",
     descricao: "Camisola oficial principal do Sporting CP Campeão para a temporada 2024/25. Design especial comemorativo do título, fabricada pela Nike com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A camisola comemorativa do título de Campeão do Sporting CP para a temporada 2024/25 celebra a conquista do campeonato com um design especial que honra os Leões. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com elementos comemorativos do título. Uma peça histórica para os sportinguistas celebrarem a conquista do campeonato.",
     preco: 17.99,
@@ -2375,7 +2375,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-dobradinha-2024-25",
-    nome: "Camisola Principal Sporting DOBRADINHA",
+    nome: "Sporting CP Double Champions Home Jersey",
     descricao: "Camisola oficial principal do Sporting CP DOBRADINHA. Design especial comemorativo da dobradinha, fabricada pela Nike com tecnologia avançada para máximo conforto.",
     descricaoLonga: "A camisola comemorativa da DOBRADINHA do Sporting CP celebra a conquista dupla com um design especial que honra este feito histórico dos Leões. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com elementos comemorativos da dobradinha. Uma peça única para os sportinguistas celebrarem este momento histórico do clube.",
     preco: 17.99,
@@ -2397,7 +2397,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-third-2024-25",
-    nome: "Camisola Sporting 3º Equipamento 24/25",
+    nome: "Sporting CP 2024/25 Third Jersey",
     descricao: "Camisola oficial terceira equipamento do Sporting CP para a temporada 2024/25. Design moderno e inovador.",
     descricaoLonga: "A nova camisola terceira equipamento do Sporting CP para a temporada 2024/25 apresenta um design moderno e inovador que se destaca pela sua originalidade. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. Uma peça única para os adeptos que querem mostrar a sua paixão pelos Leões de forma diferenciada.",
     preco: 17.99,
@@ -2422,7 +2422,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-third-cr7-2024-25",
-    nome: "Camisola 3º Equipamento c/ Cristiano Ronaldo",
+    nome: "Sporting CP Third Jersey with Cristiano Ronaldo",
     descricao: "Camisola terceira equipamento do Sporting CP com nome e número do Cristiano Ronaldo. Edição especial limitada.",
     descricaoLonga: "Camisola especial terceira equipamento do Sporting CP com o nome e número do lendário Cristiano Ronaldo, uma homenagem ao maior jogador formado no clube. Esta edição limitada combina o design moderno da terceira equipamento com a história e tradição do clube. Fabricada pela Nike com tecnologia avançada, é uma peça de colecionador perfeita para os adeptos que querem celebrar a ligação eterna entre CR7 e o Sporting.",
     preco: 19.99,
@@ -2447,7 +2447,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-stromp-2024-25",
-    nome: "Camisola Sporting Stromp 24/25",
+    nome: "Sporting CP Stromp 2024/25 Jersey",
     descricao: "Camisola especial Sporting Stromp para a temporada 2024/25. Design único e exclusivo.",
     descricaoLonga: "A Camisola Sporting Stromp 2024/25 apresenta um design único e exclusivo que celebra a identidade especial do clube. Esta camisola combina elementos tradicionais com uma abordagem moderna e ousada, criando uma peça distintiva para os adeptos mais exigentes. Fabricada com materiais de primeira qualidade e tecnologia avançada, oferece conforto superior e durabilidade.",
     preco: 17.99,
@@ -2470,7 +2470,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-especial-rosa-2024",
-    nome: "Camisola Sporting Edição Especial 2024",
+    nome: "Sporting CP 2024 Special Edition Jersey",
     descricao: "Camisola edição especial do Sporting CP para 2024. Design exclusivo em cores diferenciadas.",
     descricaoLonga: "A Camisola Sporting Edição Especial 2024 apresenta um design exclusivo e diferenciado que se destaca pela sua originalidade e cores únicas. Esta edição limitada celebra momentos especiais na história do clube, combinando tradição com inovação. Fabricada com materiais premium e tecnologia avançada, é uma peça de colecionador para os verdadeiros adeptos dos Leões.",
     preco: 17.99,
@@ -2492,7 +2492,7 @@ const produtosArray = ([
   },
   {
     id: "cortavento-sl-benfica-2526",
-    nome: "Corta-Vento S.L. Benfica 25/26",
+    nome: "SL Benfica 25/26 Windbreaker",
     descricao: "Corta-vento oficial do S.L. Benfica para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Corta-vento S.L. Benfica 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Leões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 34.99,
@@ -2518,7 +2518,7 @@ const produtosArray = ([
   },
   {
     id: "cortavento-sl-benfica-preto-2526",
-    nome: "Corta-Vento S.L. Benfica 25/26",
+    nome: "SL Benfica 25/26 Windbreaker",
     descricao: "Corta-vento oficial do S.L. Benfica para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Corta-vento S.L. Benfica 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Leões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 34.99,
@@ -2543,7 +2543,7 @@ const produtosArray = ([
   },
   {
     id: "cortavento-sl-benfica-vermelho-2526",
-    nome: "Corta-Vento S.L. Benfica 25/26 vermelho",
+    nome: "SL Benfica 25/26 Red Windbreaker",
     descricao: "Corta-vento oficial do S.L. Benfica para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Corta-vento S.L. Benfica 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Leões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 34.99,
@@ -2568,7 +2568,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-terceira-2024-25",
-    nome: "Camisola Sporting Terceira 2024/25",
+    nome: "Sporting CP 2024/25 Third Jersey",
     descricao: "Camisola terceira do Sporting CP para a temporada 2024/25. Design moderno e impactante.",
     descricaoLonga: "A Camisola Sporting Terceira 2024/25 apresenta um design moderno e impactante que reflete a evolução e modernidade do clube. Com cores e padrões únicos, esta camisola destaca-se pela sua originalidade e estilo contemporâneo. Fabricada pela Nike com tecnologia Dri-FIT avançada, oferece máximo conforto e performance tanto nos jogos como no dia-a-dia dos adeptos.",
     preco: 17.99,
@@ -2666,7 +2666,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-sporting-away-25-26",
-    "nome": "Kit Criança Sporting CP 2025/26 - Away",
+    "nome": "Sporting CP Kids 2025/26 - Away",
     "descricao": "Kit alternativo do Sporting CP 2025/26 para criança.",
     "descricaoLonga": "O kit infantil alternativo do Sporting CP para a temporada 2025/26 apresenta um design moderno e arrojado, com cores que se destacam fora de casa. Confeccionado em tecido leve e respirável, garante máximo conforto e mobilidade para os jovens adeptos leoninos.",
     "preco": 17.99,
@@ -2700,7 +2700,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-sporting-alternativa-verde-25-26",
-    "nome": "Kit Criança Sporting 2025/26 - Alternativa Verde",
+    "nome": "Sporting Kids 2025/26 - Green Away",
     "descricao": "Kit alternativo verde do Sporting CP 2025/26 para criança.",
     "descricaoLonga": "O kit infantil alternativo do Sporting CP para a temporada 2025/26 apresenta um elegante tom verde sólido, destacando a identidade leonina de forma moderna e distinta. Fabricado em tecido leve e respirável, garante conforto e liberdade de movimentos para os jovens adeptos sportinguistas.",
     "preco": 17.99,
@@ -2725,7 +2725,7 @@ const produtosArray = ([
   
   {
     "id": "kit-crianca-sporting-gr-25-26",
-    "nome": "Kit Criança Guarda-Redes Sporting CP 2025/26 - Verde",
+    "nome": "Sporting CP Kids Goalkeeper 2025/26 - Green",
     "descricao": "Kit de guarda-redes verde do Sporting CP 2025/26 para criança.",
     "descricaoLonga": "O kit infantil de guarda-redes do Sporting CP para a temporada 2025/26 apresenta um design moderno na cor verde vibrante, garantindo visibilidade e estilo em campo. Fabricado em tecido leve e respirável, oferece conforto e mobilidade para os jovens guardiões leoninos.",
     "preco": 17.99,
@@ -2760,7 +2760,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-sporting-gr-preto-25-26",
-    "nome": "Kit Criança Guarda-Redes Sporting CP 2025/26 - Preto",
+    "nome": "Sporting CP Kids Goalkeeper 2025/26 - Black",
     "descricao": "Kit de guarda-redes preto do Sporting CP 2025/26 para criança.",
     "descricaoLonga": "O kit infantil de guarda-redes do Sporting CP para a temporada 2025/26 apresenta um design elegante na cor preta, transmitindo confiança e autoridade entre os postes. Produzido em tecido leve e respirável, proporciona conforto e liberdade de movimento para os jovens guardiões leoninos.",
     "preco": 17.99,
@@ -2842,7 +2842,7 @@ const produtosArray = ([
   },
   {
     id: "benfica-aquecimento-2425",
-    nome: "Camisola Benfica Aquecimento 24/25",
+    nome: "Benfica 2024/25 Warm-up Jersey",
     descricao: "Camisola de aquecimento oficial do SL Benfica para a temporada 2024/25. Design moderno e tecnologia avançada para preparação ideal.",
     descricaoLonga: "A Camisola de Aquecimento do SL Benfica 2024/25 foi desenvolvida especificamente para otimizar o desempenho durante o aquecimento. Com tecnologia avançada de gestão de temperatura e umidade, esta camisola oferece o máximo conforto e liberdade de movimento. O design moderno incorpora elementos tradicionais do clube, mantendo a identidade do Benfica.",
     preco: 17.99,
@@ -2867,7 +2867,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-braga-principal-25-26",
-    "nome": "Kit Criança Braga 2025/26 - Principal",
+    "nome": "Braga Kids 2025/26 - Home",
     "descricao": "Kit principal do SC Braga 2025/26 para criança.",
     "descricaoLonga": "O kit infantil principal do SC Braga para a temporada 2025/26 apresenta o tradicional vermelho e branco, símbolo da garra e paixão minhota. Produzido em tecido leve e respirável, proporciona máximo conforto e liberdade de movimentos para os jovens adeptos bracarenses.",
     "preco": 17.99,
@@ -2891,7 +2891,7 @@ const produtosArray = ([
   },
   {
     id: "manchester-united-retro-91-clubes",
-    nome: "Camisola Alternativa 91 do Manchester United",
+    nome: "Manchester United 1991 Away Jersey",
     descricao: "Camisola retro do Manchester United, réplica do modelo alternativo de 1991. Um clássico do futebol inglês.",
     descricaoLonga: "Reviva a era dourada do Manchester United com esta camisola retro de 1991. Esta réplica fiel do equipamento alternativo apresenta o design icônico que marcou uma das épocas mais memoráveis do clube. Fabricada com atenção aos detalhes históricos, mantendo o conforto moderno.",
     preco: 19.99,
@@ -2916,7 +2916,7 @@ const produtosArray = ([
   },
   {
     id: "manchester-united-retro-91-retro",
-    nome: "Camisola Alternativa 91 do Manchester United",
+    nome: "Manchester United 1991 Away Jersey",
     descricao: "Camisola retro do Manchester United, réplica do modelo alternativo de 1991. Um clássico do futebol inglês.",
     descricaoLonga: "Reviva a era dourada do Manchester United com esta camisola retro de 1991. Esta réplica fiel do equipamento alternativo apresenta o design icônico que marcou uma das épocas mais memoráveis do clube. Fabricada com atenção aos detalhes históricos, mantendo o conforto moderno.",
     preco: 19.99,
@@ -2941,7 +2941,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-travis-scott-2526",
-    nome: "Camisola Barcelona x Travis Scott 2025/26",
+    nome: "Barcelona x Travis Scott 2025/26 Jersey",
     descricao: "Edição especial da camisola do FC Barcelona em colaboração com Travis Scott para a temporada 2025/26.",
     descricaoLonga: "Uma colaboração única entre o FC Barcelona e Travis Scott, esta camisola especial combina o design tradicional do clube com elementos artísticos distintivos do famoso artista. Uma peça de colecionador que representa a fusão perfeita entre futebol e cultura moderna.",
     preco: 17.99,
@@ -2966,7 +2966,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-principal-2526",
-    nome: "Camisola Barcelona principal 25/26",
+    nome: "Barcelona 2025/26 Home Jersey",
     descricao: "Camisola principal do FC Barcelona para a temporada 2025/26. Design clássico com as icônicas cores azul e grená.",
     descricaoLonga: "A nova camisola principal do FC Barcelona para a temporada 2025/26 mantém a tradição do clube com as icônicas listras verticais azul e grená. Fabricada com tecnologia de ponta para garantir máximo conforto e performance, esta camisola representa a essência do Barça com um toque moderno.",
     preco: 17.99,
@@ -2990,7 +2990,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-travis-scott-preta-2526",
-    nome: "Camisola Barcelona x Travis Scott Preta 2025/26",
+    nome: "Barcelona x Travis Scott Black 2025/26 Jersey",
     descricao: "Edição especial preta da camisola do FC Barcelona em colaboração com Travis Scott para a temporada 2025/26.",
     descricaoLonga: "A versão preta da colaboração entre FC Barcelona e Travis Scott apresenta um design único e ousado. Esta edição especial combina a elegância do preto com detalhes exclusivos inspirados no estilo característico de Travis Scott, criando uma peça verdadeiramente única na história do clube.",
     preco: 17.99,
@@ -3014,7 +3014,7 @@ const produtosArray = ([
   },
   {
     id: "porto-edicao-especial-2526-vermelho",
-    nome: "Camisola FC Porto Edição Especial 25/26 Vermelha",
+    nome: "FC Porto 2025/26 Special Edition Red Jersey",
     descricao: "Camisola oficial edição especial vermelha do FC Porto para a temporada 2025/26. Design exclusivo que celebra a história do clube.",
     descricaoLonga: "A Camisola FC Porto Edição Especial 2025/26 na versão vermelha apresenta um design único e exclusivo que celebra a rica história do clube. Esta edição especial combina elementos tradicionais com detalhes modernos em tons de vermelho, criando uma peça verdadeiramente única para os adeptos dos Dragões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 17.99,
@@ -3040,7 +3040,7 @@ const produtosArray = ([
   },
   {
     id: "porto-edicao-especial-2526-azul",
-    nome: "Camisola FC Porto Edição Especial 25/26 Azul",
+    nome: "FC Porto 2025/26 Special Edition Blue Jersey",
     descricao: "Camisola oficial edição especial azul do FC Porto para a temporada 2025/26. Design exclusivo que celebra a história do clube.",
     descricaoLonga: "A Camisola FC Porto Edição Especial 2025/26 na versão azul apresenta um design único e exclusivo que celebra a rica história do clube. Esta edição especial combina elementos tradicionais com detalhes modernos em tons de azul, criando uma peça verdadeiramente única para os adeptos dos Dragões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 17.99,
@@ -3396,7 +3396,7 @@ const produtosArray = ([
   },
   {
     id: "realmadrid-special-2526",
-    nome: "Camisola Real Madrid Special Edition 2025/26",
+    nome: "Real Madrid 2025/26 Special Edition Jersey",
     preco: 17.99,
     precoAntigo: 29.99,
     categoria: "clubes",
@@ -3416,7 +3416,7 @@ const produtosArray = ([
   },
   {
     id: "realmadrid-terceira-2526",
-    nome: "Camisola Real Madrid Terceira 2025/26",
+    nome: "Real Madrid 2025/26 Third Jersey",
     preco: 17.99,
     precoAntigo: 29.99,
     categoria: "clubes",
@@ -3437,7 +3437,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-realmadrid-terceira-2526",
-    nome: "Kit Criança Real Madrid Terceira 2025/26",
+    nome: "Real Madrid 2025/26 Kids Third Kit",
     descricao: "Kit infantil oficial terceira do Real Madrid para a temporada 2025/26. Para os jovens campeões.",
     descricaoLonga: "O kit terceira do Real Madrid 2025/26 para criança oferece conforto e estilo numa versão fiel ao equipamento dos craques. Ideal para treinar ou apoiar o clube com orgulho.",
     preco: 17.99,
@@ -3461,7 +3461,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-special-vi-2526",
-    nome: "Camisola Barcelona Special Edition VI 2025/26",
+    nome: "Barcelona 2025/26 Special Edition VI Jersey",
     preco: 17.99,
     precoAntigo: 29.99,
     categoria: "clubes",
@@ -3481,7 +3481,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-special-vii-2526",
-    nome: "Camisola Barcelona Special Edition VII 2025/26",
+    nome: "Barcelona 2025/26 Special Edition VII Jersey",
     preco: 17.99,
     precoAntigo: 29.99,
     categoria: "clubes",
@@ -3501,7 +3501,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-special-viii-2526",
-    nome: "Camisola Barcelona Special Edition VIII 2025/26",
+    nome: "Barcelona 2025/26 Special Edition VIII Jersey",
     preco: 17.99,
     precoAntigo: 29.99,
     categoria: "clubes",
@@ -3665,7 +3665,7 @@ const produtosArray = ([
   },
   {
     id: "tottenham-away-2526",
-    nome: "Camisola Tottenham II 25/26",
+    nome: "Tottenham 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do Tottenham para a temporada 2025/26. Design moderno e arrojado.",
     descricaoLonga: "A nova camisola alternativa do Tottenham para a temporada 2025/26 apresenta um design moderno e arrojado, que reflete a identidade dinâmica do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto e performance, ideal para os adeptos apoiarem os Spurs.",
     preco: 17.99,
@@ -3690,7 +3690,7 @@ const produtosArray = ([
   },
   {
     id: "tottenham-home-2425",
-    nome: "Camisola Principal Tottenham 2024/25",
+    nome: "Tottenham 2024/25 Home Jersey",
     descricao: "Camisola oficial principal do Tottenham para a temporada 2024/25. Design clássico e elegante.",
     descricaoLonga: "A nova camisola principal do Tottenham para a temporada 2024/25 combina o design clássico do clube com um toque de elegância moderna. Fabricada com tecnologia de ponta, oferece conforto e estilo para os adeptos mais exigentes dos Spurs.",
     preco: 17.99,
@@ -3714,7 +3714,7 @@ const produtosArray = ([
   },
   {
     id: "chelsea-home-2526",
-    nome: "Camisola Chelsea 2025/26 Principal",
+    nome: "Chelsea 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Chelsea para a temporada 2025/26. Design icónico em azul.",
     descricaoLonga: "A nova camisola principal do Chelsea para a temporada 2025/26 apresenta o icónico azul do clube, combinando tradição e inovação. Fabricada com materiais de alta performance, garante conforto e estilo para os adeptos dos Blues.",
     preco: 17.99,
@@ -3739,7 +3739,7 @@ const produtosArray = ([
   },
   {
     id: "chelsea-away-2526",
-    nome: "Camisola Chelsea 2025/26 Alternativa",
+    nome: "Chelsea 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do Chelsea para a temporada 2025/26. Design moderno e arrojado.",
     descricaoLonga: "A nova camisola alternativa do Chelsea para a temporada 2025/26 destaca-se pelo seu design moderno e arrojado. Fabricada com tecnologia avançada, oferece conforto e performance, ideal para os adeptos mostrarem o seu apoio aos Blues de forma diferenciada.",
     preco: 17.99,
@@ -3764,7 +3764,7 @@ const produtosArray = ([
   },
   {
     id: "arsenal-home-2526",
-    nome: "Camisola Arsenal 2025/26 Principal",
+    nome: "Arsenal 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Arsenal para a temporada 2025/26. Design clássico em vermelho e branco.",
     descricaoLonga: "A nova camisola principal do Arsenal para a temporada 2025/26 mantém o design clássico em vermelho e branco, celebrando a rica história do clube. Fabricada com materiais de alta qualidade, oferece conforto e estilo para os adeptos dos Gunners.",
     preco: 17.99,
@@ -3788,7 +3788,7 @@ const produtosArray = ([
   },
   {
     id: "man-city-25-26-home",
-    nome: "Camisola Manchester City 2025/26 Principal",
+    nome: "Manchester City 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Manchester City para a temporada 2025/26. Design moderno em azul celeste com detalhes únicos.",
     descricaoLonga: "A nova camisola principal do Manchester City para a temporada 2025/26 apresenta o icônico azul celeste do clube com um design moderno e inovador. Fabricada com tecnologia avançada para máximo conforto e performance, esta camisola representa a excelência e o estilo que caracterizam os Citizens. Perfeita para apoiar o clube na nova temporada.",
     preco: 17.99,
@@ -5086,7 +5086,7 @@ const produtosArray = ([
   },
     {
       "id": "liverpool-especial-25-26",
-      "nome": "Camisola Liverpool F.C. Especial 25/26",
+      "nome": "Liverpool F.C. Special 25/26",
       "descricao": "Camisola especial do Liverpool 2025/26.",
       "descricaoLonga": "Edição especial da camisola do Liverpool 2025/26, ideal para colecionadores e fãs, confeccionada em poliéster respirável.",
       "preco": 17.99,
@@ -5109,7 +5109,7 @@ const produtosArray = ([
     },
       {
         "id": "newcastle-principal-mc-25-26",
-        "nome": "Camisola Newcastle United Principal Manga Comprida 25/26",
+        "nome": "Newcastle United Home Long Sleeve 25/26",
         "descricao": "Camisola principal de manga comprida do Newcastle United 2025/26.",
         "descricaoLonga": "Camisola oficial principal do Newcastle United 2025/26, versão manga comprida, perfeita para jogos e treinos em dias frios, produzida em poliéster leve e respirável.",
         "preco": 17.99,
@@ -5132,7 +5132,7 @@ const produtosArray = ([
       },
       {
         "id": "tottenham-principal-mc-25-26",
-        "nome": "Camisola Tottenham Hotspur Principal Manga Comprida 25/26",
+        "nome": "Tottenham Hotspur Home Long Sleeve 25/26",
         "descricao": "Camisola principal de manga comprida do Tottenham Hotspur 2025/26.",
         "descricaoLonga": "Camisola oficial principal do Tottenham Hotspur 2025/26, versão manga comprida, ideal para treinos e partidas, confeccionada em poliéster respirável e confortável.",
         "preco": 17.99,
@@ -5155,7 +5155,7 @@ const produtosArray = ([
       },
       {
         "id": "manchester-united-secundaria-mc-25-26",
-        "nome": "Camisola Manchester United Secundária Manga Comprida 25/26",
+        "nome": "Manchester United Away Long Sleeve 25/26",
         "descricao": "Camisola secundária de manga comprida do Manchester United 2025/26.",
         "descricaoLonga": "Camisola oficial secundária do Manchester United 2025/26, versão manga comprida, perfeita para mostrar apoio ao clube em dias frios, confeccionada em poliéster respirável de alta qualidade.",
         "preco": 17.99,
@@ -6556,7 +6556,7 @@ const produtosArray = ([
   },
   {
     "id": "ajax-third-away-21-22",
-    "nome": "Ajax 2021/22 - Terceira (Away)",
+    "nome": "Camisola Ajax 2021/22 - Terceira (Alternativa)",
     "descricao": "Camisola terceira/alternativa do Ajax 2021/22.",
     "descricaoLonga": "A camisola terceira do Ajax na temporada 2021/22 presta homenagem à cultura musical de Amesterdão, inspirada em Bob Marley e na música 'Three Little Birds'. Apresenta um design em preto com detalhes em verde, amarelo e vermelho, cores que simbolizam esperança e unidade. Confeccionada em poliéster de alta qualidade, combina estilo urbano com a tradição do clube.",
     "preco": 17.99,
@@ -6778,7 +6778,7 @@ const produtosArray = ([
 },
   {
     "id": "flamengo-third-away-25-26-kids",
-    "nome": "Kit Criança Flamengo Third Away 25/26",
+    "nome": "Kit Criança Flamengo Terceira Alternativa 25/26",
     "descricao": "Kit Criança Flamengo Third Away 2025/26.",
     "descricaoLonga": "Kit Criança Flamengo Third Away 2025/26, desenvolvido em tecido respirável para máximo conforto.",
     "preco": 17.99,
@@ -7219,7 +7219,7 @@ const produtosArray = ([
       },
       {
         "id": "osasuna-third-away-25-26-kids",
-        "nome": "Kit Criança 25/26 Osasuna Terceira Fora",
+        "nome": "Kit Criança Osasuna 25/26 Terceira Alternativa",
         "descricao": "Camisola Third Away do Osasuna, temporada 25/26, tamanho 16-28",
         "descricaoLonga": "Camisola oficial Third Away do Osasuna, disponível em tamanhos 16 a 28.",
         "preco": 17.99,
@@ -7239,7 +7239,7 @@ const produtosArray = ([
       },
       {
         "id": "osasuna-away-25-26-kids",
-        "nome": "Kit Criança 25/26 Osasuna Fora",
+        "nome": "Kit Criança Osasuna 25/26 Alternativa",
         "descricao": "Camisola Away do Osasuna, temporada 25/26, tamanho 16-28",
         "descricaoLonga": "Camisola oficial Away do Osasuna, disponível em tamanhos 16 a 28.",
         "preco": 17.99,
@@ -7475,7 +7475,7 @@ const produtosArray = ([
         },      
   {
     "id": "real-betis-away-25-26-s-4xl",
-    "nome": "Kit Criança Real Betis Away 25/26",
+    "nome": "Kit Criança Real Betis Alternativa 25/26",
     "descricao": "Kit Criança Real Betis Away 2025/26.",
     "descricaoLonga": "Kit Criança Real Betis Away 2025/26, em design moderno e tecido leve, perfeito para apoiar o clube com máximo estilo.",
     "preco": 17.99,
@@ -7506,7 +7506,7 @@ const produtosArray = ([
   },
   {
     "id": "sevilla-away-25-26-kids",
-    "nome": "Kit Criança Sevilla Away 25/26",
+    "nome": "Kit Criança Sevilla Alternativa 25/26",
     "descricao": "Kit Criança Sevilla Away 2025/26.",
     "descricaoLonga": "Kit Criança Sevilla Away 2025/26, com tecido leve e respirável, ideal para apoiar o clube com conforto.",
     "preco": 17.99,
