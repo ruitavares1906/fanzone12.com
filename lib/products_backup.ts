@@ -1,0 +1,1576 @@
+import type { Product } from "./types"
+
+// Dados simulados de produtos
+const produtos: Product[] = [
+  {
+    id: "1",
+    nome: "Camisola Benfica 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do SL Benfica para a temporada 2024/25. Design clássico em vermelho com detalhes em dourado, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do SL Benfica para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho vibrante e detalhes em dourado que representam a grandeza do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+    preco: 19.99,
+    precoAntigo: 29.99,
+    imagem: "/images/benfica-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/benfica-home-2024-25-back.webp", "/images/benfica-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "benfica",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster",
+    marca: "Adidas",
+    avaliacao: 4.8,
+    numAvaliacoes: 42,
+    destaque: true,
+  },
+  {
+    id: "2",
+    nome: "Camisola FC Porto 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do FC Porto para a temporada 2024/25. Design clássico em azul e branco, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do FC Porto para a temporada 2024/25 mantém a tradição do clube com as icônicas listras verticais azuis e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/porto-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/porto-home-2024-25-back.webp", "/images/porto-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "porto",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster",
+    marca: "New Balance",
+    avaliacao: 4.7,
+    numAvaliacoes: 38,
+    destaque: true,
+  },
+  {
+    id: "3",
+    nome: "Camisola Sporting 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Sporting CP para a temporada 2024/25. Design clássico em verde e branco, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Sporting CP para a temporada 2024/25 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do Sporting CP, perfeita para apoiar os Leões na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/sporting-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/sporting-home-2024-25-back.webp", "/images/sporting-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "verde",
+    material: "100% Poliéster",
+    marca: "Nike",
+    avaliacao: 4.9,
+    numAvaliacoes: 45,
+    destaque: true,
+  },
+
+  {
+    id: "9",
+    nome: "Camisola Benfica Alternativa 2024/25",
+    descricao:
+      "Camisola oficial alternativa do SL Benfica para a temporada 2024/25. Design moderno em preto com detalhes em vermelho, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do SL Benfica para a temporada 2024/25 apresenta um design moderno em preto com detalhes em vermelho que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/benfica-away-2024-25-front.webp",
+    imagensAdicionais: ["/images/benfica-away-2024-25-back.webp", "/images/benfica-away-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "benfica",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster",
+    marca: "Adidas",
+    avaliacao: 4.7,
+    numAvaliacoes: 36,
+    destaque: false,
+  },
+  {
+    id: "10",
+    nome: "Camisola FC Porto Alternativa 2024/25",
+    descricao:
+      "Camisola oficial alternativa do FC Porto para a temporada 2024/25. Design moderno em preto com detalhes em azul, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do FC Porto para a temporada 2024/25 apresenta um design moderno em preto com detalhes em azul que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/porto-away-2024-25-front.webp",
+    imagensAdicionais: ["/images/porto-away-2024-25-back.webp", "/images/porto-away-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "porto",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster",
+    marca: "New Balance",
+    avaliacao: 4.6,
+    numAvaliacoes: 32,
+    destaque: false,
+  },
+  {
+    id: "11",
+    nome: "Camisola Sporting Alternativa 2024/25",
+    descricao:
+      "Camisola oficial alternativa do Sporting CP para a temporada 2024/25. Design moderno em preto com detalhes em verde, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do Sporting CP para a temporada 2024/25 apresenta um design moderno em preto com detalhes em verde que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/sporting-away-2024-25-front.webp",
+    imagensAdicionais: ["/images/sporting-away-2024-25-back.webp", "/images/sporting-away-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 40,
+    destaque: false,
+  },
+
+  {
+    id: "20",
+    nome: "Camisola FC Porto Terceira 2024/25",
+    descricao:
+      "Camisola oficial terceira do FC Porto para a temporada 2024/25. Design moderno em laranja com detalhes em azul, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola terceira do FC Porto para a temporada 2024/25 apresenta um design moderno em laranja vibrante com detalhes em azul que adicionam um toque de originalidade e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do FC Porto, perfeita para apoiar os Dragões na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/porto-third-2024-25-front.webp",
+    imagensAdicionais: ["/images/porto-third-2024-25-back.webp"],
+    categoria: "clubes",
+    clube: "porto",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "laranja",
+    material: "100% Poliéster",
+    marca: "New Balance",
+    avaliacao: 4.7,
+    numAvaliacoes: 30,
+    destaque: false,
+  },
+  {
+    id: "21",
+    nome: "Camisola Sporting 2025/26 Principal",
+    descricao:
+      "Camisola oficial principal do Sporting CP para a temporada 2025/26. Design clássico em verde e branco, fabricada pela Nike com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Sporting CP para a temporada 2025/26 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do Sporting CP, perfeita para apoiar os Leões na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/sccccc.webp",
+    imagensAdicionais: [
+      "/images/dddddd.webp",
+      "/images/cccccc.webp"
+    ],
+    categoria: "clubes",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 5.0,
+    numAvaliacoes: 15,
+    destaque: true,
+  },
+  {
+    id: "sporting-concept-2024",
+    nome: "Camisola Sporting Concept 2024",
+    descricao: "Camisola conceito do Sporting CP para 2024. Design inovador e moderno que representa a evolução do clube.",
+    descricaoLonga: "A Camisola Sporting Concept 2024 apresenta um design inovador e moderno que representa a evolução e o futuro do Sporting CP. Esta camisola conceito combina elementos tradicionais do clube com uma abordagem contemporânea, criando uma peça única que celebra a identidade dos Leões. Fabricada com materiais de alta qualidade e tecnologia avançada, oferece conforto excepcional e gestão da transpiração. Uma peça especial para os adeptos que procuram algo diferente e exclusivo.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/6e24bf24.jpeg",
+    imagensAdicionais: [
+      "/images/c8da3dcf.jpeg",
+      "/images/1cedd2f0.jpeg",
+      "/images/ec6ce3c5.jpeg",
+      "/images/8752c5ef.jpeg",
+      "/images/cd5d586b.jpeg",
+      "/images/00fc66dc.jpeg"
+    ],
+    categoria: "clubes",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2024",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 25,
+    destaque: true,
+  },
+  {
+    id: "22",
+    nome: "Camisola SC Braga 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do SC Braga para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do SC Braga para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho vibrante e detalhes em branco. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do SC Braga, perfeita para apoiar os Guerreiros do Minho na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/braga-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/braga-home-2024-25-back.webp", "/images/braga-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "braga",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster",
+    marca: "Hummel",
+    avaliacao: 4.6,
+    numAvaliacoes: 25,
+    destaque: false,
+  },
+  {
+    id: "23",
+    nome: "Camisola Vitória SC 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Vitória SC para a temporada 2024/25. Design clássico em branco com detalhes em preto, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Vitória SC para a temporada 2024/25 mantém a tradição do clube com o icônico branco e detalhes em preto. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do Vitória SC, perfeita para apoiar os Conquistadores na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/vitoria-sc-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/vitoria-sc-home-2024-25-back.webp", "/images/vitoria-sc-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "vitoria-sc",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "branco",
+    material: "100% Poliéster",
+    marca: "Macron",
+    avaliacao: 4.5,
+    numAvaliacoes: 20,
+    destaque: false,
+  },
+  {
+    id: "24",
+    nome: "Camisola Manchester City 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Manchester City para a temporada 2024/25. Design clássico em azul celeste com detalhes em branco, fabricada pela Puma com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Manchester City para a temporada 2024/25 mantém a tradição do clube com o icônico azul celeste e detalhes em branco. Fabricada pela Puma com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Puma e o patrocinador na frente. Esta camisola representa a paixão e a história do Manchester City, perfeita para apoiar os Citizens na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/man-city-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/man-city-home-2024-25-back.webp", "/images/man-city-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "manchester-city",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "azul-celeste",
+    material: "100% Poliéster Reciclado",
+    marca: "Puma",
+    avaliacao: 4.8,
+    numAvaliacoes: 42,
+    destaque: true,
+  },
+  {
+    id: "25",
+    nome: "Camisola Arsenal 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Arsenal para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Arsenal para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho e detalhes em branco. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Arsenal, perfeita para apoiar os Gunners na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/arsenal-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/arsenal-home-2024-25-back.webp", "/images/arsenal-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "arsenal",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.7,
+    numAvaliacoes: 38,
+    destaque: false,
+  },
+  {
+    id: "26",
+    nome: "Camisola Liverpool 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Liverpool para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada pela Nike com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Liverpool para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho e detalhes em branco. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike e o patrocinador na frente. Esta camisola representa a paixão e a história do Liverpool, perfeita para apoiar os Reds na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/liverpool-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/liverpool-home-2024-25-back.webp", "/images/liverpool-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "liverpool",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.9,
+    numAvaliacoes: 45,
+    destaque: true,
+  },
+  {
+    id: "27",
+    nome: "Camisola Manchester United 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Manchester United para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Manchester United para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho e detalhes em branco. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Manchester United, perfeita para apoiar os Red Devils na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/man-utd-home-2024-25-front.webp",
+    imagensAdicionais: ["/images/man-utd-home-2024-25-back.webp", "/images/man-utd-home-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "manchester-united",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.8,
+    numAvaliacoes: 40,
+    destaque: false,
+  },
+  {
+    id: "28",
+    nome: "Camisola Chelsea 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Chelsea para a temporada 2024/25. Design moderno em azul com padrão ondulado, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Chelsea para a temporada 2024/25 apresenta um design moderno em azul com um elegante padrão ondulado em tons de azul mais claro. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, com um contorno laranja vibrante que combina com os detalhes nas mangas. O logotipo da Nike e o design 'LONDON' na gola completam o visual contemporâneo. Esta camisola representa a paixão e a história do Chelsea Football Club, perfeita para apoiar os Blues na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (19).webp",
+    imagensAdicionais: ["/images/640 (20).webp", "/images/640 (21).webp"],
+    categoria: "clubes",
+    clube: "chelsea",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 32,
+    destaque: true,
+  },
+  {
+    id: "29",
+    nome: "Camisola Arsenal 2024/25 Alternativa",
+    descricao:
+      "Camisola oficial alternativa do Arsenal para a temporada 2024/25. Design moderno em preto com detalhes em vermelho, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do Arsenal para a temporada 2024/25 apresenta um design moderno em preto com detalhes em vermelho que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Arsenal, perfeita para apoiar os Gunners na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/640 (22).webp",
+    imagensAdicionais: ["/images/640 (23).webp", "/images/640 (24).webp"],
+    categoria: "clubes",
+    clube: "arsenal",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.6,
+    numAvaliacoes: 30,
+    destaque: false,
+  },
+  {
+    id: "30",
+    nome: "Camisola Arsenal 2024/25 Terceira",
+    descricao:
+      "Camisola oficial terceira do Arsenal para a temporada 2024/25. Design moderno em azul com detalhes em vermelho, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola terceira do Arsenal para a temporada 2024/25 apresenta um design moderno em azul com detalhes em vermelho que adicionam um toque de originalidade e mantêm a identidade do clube. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Arsenal, perfeita para apoiar os Gunners na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/640 (25).webp",
+    imagensAdicionais: ["/images/640 (26).webp", "/images/640 (27).webp"],
+    categoria: "clubes",
+    clube: "arsenal",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.7,
+    numAvaliacoes: 28,
+    destaque: false,
+  },
+  {
+    id: "31",
+    nome: "Camisola Tottenham 2024/25 Terceira",
+    descricao:
+      "Camisola oficial terceira do Tottenham para a temporada 2024/25. Design inovador em verde água com padrão cósmico, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola terceira do Tottenham para a temporada 2024/25 apresenta um design inovador e ousado em verde água com um padrão cósmico que lembra o espaço, com pontos brancos que parecem estrelas. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube, o famoso galo, é apresentado em tons suaves que se integram ao design espacial, junto com o logotipo da Nike e o patrocinador AIA em branco na frente. Os punhos das mangas apresentam detalhes em amarelo que adicionam um toque de cor ao design. Esta camisola representa a inovação e o estilo do Tottenham, perfeita para apoiar os Spurs na nova temporada.",
+    preco: 17.99,
+        imagem: "/images/640 (28).webp",    imagensAdicionais: ["/images/640 (29).webp", "/images/640 (30).webp"],
+    categoria: "clubes",
+    clube: "tottenham",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "verde-agua",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 26,
+    destaque: false,
+  },
+  {
+    id: "32",
+    nome: "Camisola Manchester United 2024/25 Terceira",
+    descricao:
+      "Camisola oficial terceira do Manchester United para a temporada 2024/25. Design clássico em branco com listras horizontais em vermelho e preto, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola terceira do Manchester United para a temporada 2024/25 apresenta um design clássico e elegante predominantemente branco com listras horizontais em vermelho e preto na parte superior. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube, o famoso Red Devil, é apresentado em preto sobre a listra vermelha, criando um contraste marcante, junto com o logotipo da Adidas e o patrocinador Snapdragon na frente. A gola redonda e os punhos das mangas em preto adicionam um toque de elegância ao design. Esta camisola representa a tradição e o estilo do Manchester United, perfeita para apoiar os Red Devils na nova temporada.",
+    preco: 17.99,
+        imagem: "/images/640 (31).webp",    imagensAdicionais: ["/images/640 (32).webp", "/images/640 (33).webp"],
+    categoria: "clubes",
+    clube: "manchester-united",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "branco",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.9,
+    numAvaliacoes: 31,
+    destaque: false,
+  },
+  {
+    id: "33",
+    nome: "Camisola Paris Saint-Germain 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Paris Saint-Germain para a temporada 2024/25. Design clássico em azul marinho com faixa vertical vermelha, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Paris Saint-Germain para a temporada 2024/25 mantém a tradição do clube com o icônico azul marinho e a faixa vertical vermelha central com acabamento estilo pincel. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike e o patrocinador Qatar Airways na frente. A palavra 'PARIS' aparece na parte interna da gola, reforçando a identidade do clube. Esta camisola representa a paixão e a história do PSG, perfeita para apoiar os Parisienses na nova temporada.",
+    preco: 17.99,
+        imagem: "/images/640 (34).webp",    imagensAdicionais: ["/images/640 (35).webp", "/images/640 (36).webp"],
+    categoria: "clubes",
+    clube: "psg",
+    liga: "ligue-1",
+    temporada: "2024/25",
+    cor: "azul-marinho",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.9,
+    numAvaliacoes: 45,
+    destaque: true,
+  },
+  {
+    id: "34",
+    nome: "Camisola Marselha 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Olympique de Marselha para a temporada 2024/25. Design elegante em branco com detalhes em azul, fabricada pela Puma com tecnologia dryCELL para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Olympique de Marselha para a temporada 2024/25 apresenta um design elegante predominantemente branco com detalhes em azul nas mangas e gola. Fabricada pela Puma com a tecnologia dryCELL avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Puma e o patrocinador CMA CGM na frente. As laterais apresentam um padrão quadriculado em tons de azul claro que adiciona um toque moderno ao design clássico. O lema 'DROIT AU BUT' (Direto ao Gol) está presente no emblema, reforçando a identidade do clube. Esta camisola representa a paixão e a história do Olympique de Marselha, perfeita para apoiar os Olympiens na nova temporada.",
+    preco: 17.99,
+        imagem: "/images/640 (37).webp",    imagensAdicionais: ["/images/640 (38).webp", "/images/640 (39).webp"],
+    categoria: "clubes",
+    clube: "marselha",
+    liga: "ligue-1",
+    temporada: "2024/25",
+    cor: "branco",
+    material: "100% Poliéster Reciclado",
+    marca: "Puma",
+    avaliacao: 4.7,
+    numAvaliacoes: 32,
+    destaque: false,
+  },
+  {
+    id: "35",
+    nome: "Camisola Lille 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Lille OSC para a temporada 2024/25. Design clássico em vermelho com padrão geométrico, fabricada pela New Balance com tecnologia NB Dry para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Lille OSC para a temporada 2024/25 apresenta o tradicional vermelho vibrante do clube com um padrão geométrico subtil em tom sobre tom. Fabricada pela New Balance com a tecnologia NB Dry avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube, com o famoso doghead (cabeça de cão), é apresentado com orgulho no peito em um escudo pentagonal, junto com o logotipo da New Balance e o patrocinador Boulanger na frente. A gola redonda com detalhes em branco e azul adiciona um toque de elegância ao design. Esta camisola representa a paixão e a história do Lille OSC, perfeita para apoiar os Dogues na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (40).webp",
+    imagensAdicionais: ["/images/640 (41).webp", "/images/640 (42).webp"],
+    categoria: "clubes",
+    clube: "lille",
+    liga: "ligue-1",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "New Balance",
+    avaliacao: 4.6,
+    numAvaliacoes: 28,
+    destaque: false,
+  },
+  {
+    id: "36",
+    nome: "Camisola Paris Saint-Germain 2024/25 Alternativa",
+    descricao:
+      "Camisola oficial alternativa do Paris Saint-Germain para a temporada 2024/25. Design elegante em branco com faixas estilizadas em azul e vermelho, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do Paris Saint-Germain para a temporada 2024/25 apresenta um design elegante predominantemente branco com uma faixa diagonal estilizada em azul e vermelho que atravessa o peito, criando um efeito de pincelada artística. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike e o patrocinador Qatar Airways na frente. As mangas apresentam acabamentos em azul e vermelho que complementam o design. A palavra 'PARIS' aparece na parte interna da gola, reforçando a identidade do clube. Esta camisola representa a elegância e o estilo do PSG, perfeita para apoiar os Parisienses na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/psg-away-2024-25-front.webp",
+    imagensAdicionais: ["/images/psg-away-2024-25-back.webp", "/images/psg-away-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "psg",
+    liga: "ligue-1",
+    temporada: "2024/25",
+    cor: "branco",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 37,
+    destaque: false,
+  },
+  {
+    id: "37",
+    nome: "Camisola Lyon 2024/25 Alternativa",
+    descricao:
+      "Camisola oficial alternativa do Olympique Lyonnais para a temporada 2024/25. Design moderno em preto com detalhes em vermelho e azul, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do Olympique Lyonnais para a temporada 2024/25 apresenta um design moderno predominantemente preto com um padrão xadrez subtil que incorpora o emblema do clube. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador Emirates 'Fly Better' na frente. As laterais apresentam faixas em vermelho e azul, representando as cores da bandeira francesa e adicionando um toque de cor ao design elegante. Esta camisola representa a tradição e a modernidade do Olympique Lyonnais, perfeita para apoiar os Les Gones na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/lyon-away-2024-25-front.webp",
+    imagensAdicionais: ["/images/lyon-away-2024-25-back.webp", "/images/lyon-away-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "lyon",
+    liga: "ligue-1",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.7,
+    numAvaliacoes: 29,
+    destaque: false,
+  },
+  {
+    id: "38",
+    nome: "Camisola Marselha 2024/25 Alternativa",
+    descricao:
+      "Camisola oficial alternativa do Olympique de Marselha para a temporada 2024/25. Design moderno em azul com padrão camuflado, fabricada pela Puma com tecnologia dryCELL para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do Olympique de Marselha para a temporada 2024/25 apresenta um design moderno em azul com um padrão camuflado subtil em tons mais escuros de azul. Fabricada pela Puma com a tecnologia dryCELL avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em dourado no peito, junto com o logotipo da Puma e o patrocinador CMA CGM na frente. A gola e os punhos das mangas apresentam detalhes em branco que adicionam um toque de elegância ao design. O lema 'DROIT AU BUT' (Direto ao Gol) está presente no emblema em dourado, reforçando a identidade do clube. Esta camisola representa a paixão e a história do Olympique de Marselha, perfeita para apoiar os Olympiens na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/marselha-away-2024-25-front.webp",
+    imagensAdicionais: ["/images/marselha-away-2024-25-back.webp", "/images/marselha-away-2024-25-logo.webp"],
+    categoria: "clubes",
+    clube: "marselha",
+    liga: "ligue-1",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "Puma",
+    avaliacao: 4.8,
+    numAvaliacoes: 34,
+    destaque: false,
+  },
+  {
+    id: "39",
+    nome: "Camisola Real Madrid 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Real Madrid para a temporada 2024/25. Design clássico em branco com detalhes em preto, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Real Madrid para a temporada 2024/25 mantém a tradição do clube com o icônico branco elegante e um padrão subtil em relevo que adiciona textura e sofisticação. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, com a coroa real bordada em detalhes dourados, junto com o logotipo da Adidas e o patrocinador Emirates 'Fly Better' na frente. As três listras características da Adidas em preto adornam os ombros, enquanto a gola em V com acabamento listrado complementa o design clássico. Esta camisola representa a grandeza e a história do Real Madrid, perfeita para apoiar os Merengues na nova temporada.",
+    preco: 17.99,
+        imagem: "/images/640 (52).webp",    imagensAdicionais: ["/images/640 (53).webp", "/images/640 (54).webp"],
+    categoria: "clubes",
+    clube: "real-madrid",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "branco",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.9,
+    numAvaliacoes: 52,
+    destaque: true,
+  },
+  {
+    id: "40",
+    nome: "Camisola Barcelona 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do FC Barcelona para a temporada 2024/25. Design inovador dividido em metades grená e azul, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do FC Barcelona para a temporada 2024/25 apresenta um design revolucionário que divide a camisola verticalmente em duas metades: grená à esquerda e azul marinho à direita, representando as cores tradicionais do clube de uma forma moderna e ousada. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike e o patrocinador Spotify em amarelo que se destaca no centro. A parte traseira apresenta o logo da UNHCR/ACNUR (Agência da ONU para Refugiados), demonstrando o compromisso social do clube. A gola redonda em azul marinho e os punhos das mangas complementam o design inovador. Esta camisola representa a tradição e a inovação do FC Barcelona, perfeita para apoiar os Blaugranas na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (55).webp",
+    imagensAdicionais: ["/images/640 (56).webp", "/images/640 (57).webp"],
+    categoria: "clubes",
+    clube: "barcelona",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "grena",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 47,
+    destaque: true,
+  },
+  {
+    id: "41",
+    nome: "Camisola Atlético Madrid 2024/25 Principal",
+    descricao:
+      "Camisola oficial principal do Atlético Madrid para a temporada 2024/25. Design clássico com listras verticais vermelhas e brancas, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Atlético Madrid para a temporada 2024/25 mantém a tradição do clube com as icônicas listras verticais vermelhas e brancas, conhecidas como 'rojiblancas'. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike e o patrocinador Riyadh Air na frente. A gola em V com acabamento em azul adiciona um toque de elegância ao design clássico, enquanto as mangas apresentam detalhes em azul que complementam as cores tradicionais. Esta camisola representa a paixão e a história do Atlético Madrid, perfeita para apoiar os Colchoneros na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (58).webp",
+    imagensAdicionais: ["/images/640 (59).webp", "/images/640 (60).webp"],
+    categoria: "clubes",
+    clube: "atletico-madrid",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.7,
+    numAvaliacoes: 39,
+    destaque: false,
+  },
+  {
+    id: "42",
+    nome: "Camisola Tottenham Alternativa 2024/25",
+    descricao:
+      "Camisola oficial alternativa do Tottenham para a temporada 2024/25. Design moderno em azul marinho com detalhes em amarelo, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do Tottenham para a temporada 2024/25 apresenta um design moderno em azul marinho com detalhes em amarelo que criam um visual elegante e distinto. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em dourado no peito, junto com o logotipo da Nike e o patrocinador AIA. A gola e os punhos das mangas apresentam um acabamento refinado que complementa o design contemporâneo. Esta camisola representa a inovação e o estilo do Tottenham, perfeita para apoiar os Spurs na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (61).webp",
+    imagensAdicionais: ["/images/640 (62).webp", "/images/640 (63).webp"],
+    categoria: "clubes",
+    clube: "tottenham",
+    liga: "premier-league",
+    temporada: "2024/25",
+    cor: "azul-marinho",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.7,
+    numAvaliacoes: 28,
+    destaque: false,
+  },
+  {
+    id: "43",
+    nome: "Camisola Real Madrid Alternativa 2024/25",
+    descricao:
+      "Camisola oficial alternativa do Real Madrid para a temporada 2024/25. Design moderno em preto com detalhes em dourado, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do Real Madrid para a temporada 2024/25 apresenta um design moderno em preto com detalhes em dourado que realçam a elegância e o prestígio do clube. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em dourado no peito, com a coroa real em destaque, junto com o logotipo da Adidas e o patrocinador Emirates 'Fly Better'. As três listras características da Adidas em dourado adornam os ombros, enquanto a gola em V com acabamento dourado complementa o design luxuoso. Esta camisola representa a grandeza e a história do Real Madrid, perfeita para apoiar os Merengues na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (64).webp",
+    imagensAdicionais: ["/images/640 (65).webp", "/images/640 (66).webp"],
+    categoria: "clubes",
+    clube: "real-madrid",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.8,
+    numAvaliacoes: 35,
+    destaque: false,
+  },
+  {
+    id: "44",
+    nome: "Camisola Atlético Madrid Terceira 2024/25",
+    descricao:
+      "Camisola oficial terceira do Atlético Madrid para a temporada 2024/25. Design inovador em verde com detalhes em preto, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola terceira do Atlético Madrid para a temporada 2024/25 apresenta um design inovador em verde com detalhes em preto que trazem uma nova dimensão à identidade visual do clube. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em preto no peito, junto com o logotipo da Nike e o patrocinador Riyadh Air. A gola redonda e os punhos das mangas em preto complementam o design moderno. Esta camisola representa a evolução e o espírito inovador do Atlético Madrid, perfeita para apoiar os Colchoneros na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (67).webp",
+    imagensAdicionais: ["/images/640 (68).webp", "/images/640 (69).webp"],
+    categoria: "clubes",
+    clube: "atletico-madrid",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.6,
+    numAvaliacoes: 25,
+    destaque: false,
+  },
+  {
+    id: "45",
+    nome: "Camisola Real Madrid Terceira 2024/25",
+    descricao:
+      "Camisola oficial terceira do Real Madrid para a temporada 2024/25. Design inovador em azul elétrico com detalhes em dourado, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola terceira do Real Madrid para a temporada 2024/25 apresenta um design inovador em azul elétrico com detalhes em dourado que criam um visual moderno e impactante. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em dourado no peito, com a coroa real em destaque, junto com o logotipo da Adidas e o patrocinador Emirates 'Fly Better'. As três listras características da Adidas em dourado adornam os ombros, enquanto a gola redonda com acabamento dourado complementa o design contemporâneo. Esta camisola representa a inovação e o prestígio do Real Madrid, perfeita para apoiar os Merengues na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (70).webp",
+    imagensAdicionais: ["/images/640 (71).webp", "/images/640 (72).webp"],
+    categoria: "clubes",
+    clube: "real-madrid",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.7,
+    numAvaliacoes: 30,
+    destaque: false,
+  },
+  {
+    id: "46",
+    nome: "Camisola Barcelona Alternativa 2024/25",
+    descricao:
+      "Camisola oficial alternativa do FC Barcelona para a temporada 2024/25. Design moderno em dourado com detalhes em azul e grená, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola alternativa do FC Barcelona para a temporada 2024/25 apresenta um design moderno em dourado com detalhes em azul e grená que homenageiam as cores tradicionais do clube. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em suas cores originais no peito, junto com o logotipo da Nike e o patrocinador Spotify. A parte traseira apresenta o logo da UNHCR/ACNUR, demonstrando o compromisso social do clube. A gola e os punhos das mangas apresentam um acabamento em azul e grená que complementa o design elegante. Esta camisola representa a tradição e a inovação do FC Barcelona, perfeita para apoiar os Blaugranas na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (73).webp",
+    imagensAdicionais: ["/images/640 (74).webp", "/images/640 (75).webp"],
+    categoria: "clubes",
+    clube: "barcelona",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "dourado",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.7,
+    numAvaliacoes: 32,
+    destaque: false,
+  },
+  {
+    id: "47",
+    nome: "Camisola Inter Principal 2024/25",
+    descricao:
+      "Camisola oficial principal do Inter de Milão para a temporada 2024/25. Design clássico com listras verticais azuis e pretas, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Inter de Milão para a temporada 2024/25 mantém a tradição do clube com as icônicas listras verticais 'nerazzurre' em azul e preto. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike e o patrocinador Paramount+. A gola em V e os punhos das mangas apresentam um acabamento elegante que complementa o design clássico. Esta camisola representa a história e a tradição do Inter de Milão, perfeita para apoiar os Nerazzurri na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (76).webp",
+    imagensAdicionais: ["/images/640 (77).webp", "/images/640 (78).webp"],
+    categoria: "clubes",
+    clube: "inter",
+    liga: "serie-a",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 38,
+    destaque: false,
+  },
+  {
+    id: "48",
+    nome: "Camisola AC Milan Principal 2024/25",
+    descricao:
+      "Camisola oficial principal do AC Milan para a temporada 2024/25. Design clássico com listras verticais vermelhas e pretas, fabricada pela Puma com tecnologia dryCELL para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do AC Milan para a temporada 2024/25 mantém a tradição do clube com as icônicas listras verticais 'rossonere' em vermelho e preto. Fabricada pela Puma com a tecnologia dryCELL avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Puma e o patrocinador Emirates. A gola redonda e os punhos das mangas apresentam um acabamento elegante que complementa o design clássico. Esta camisola representa a história e a tradição do AC Milan, perfeita para apoiar os Rossoneri na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (79).webp",
+    imagensAdicionais: ["/images/640 (80).webp", "/images/640 (81).webp"],
+    categoria: "clubes",
+    clube: "milan",
+    liga: "serie-a",
+    temporada: "2024/25",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Puma",
+    avaliacao: 4.8,
+    numAvaliacoes: 36,
+    destaque: false,
+  },
+  {
+    id: "49",
+    nome: "Camisola Juventus Principal 2024/25",
+    descricao:
+      "Camisola oficial principal da Juventus para a temporada 2024/25. Design clássico com listras verticais pretas e brancas, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal da Juventus para a temporada 2024/25 mantém a tradição do clube com as icônicas listras verticais 'bianconere' em preto e branco. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador Jeep. As três listras características da Adidas em dourado adornam os ombros, enquanto a gola redonda com acabamento dourado complementa o design clássico. Esta camisola representa a história e a tradição da Juventus, perfeita para apoiar a Vecchia Signora na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (82).webp",
+    imagensAdicionais: ["/images/640 (83).webp", "/images/640 (84).webp"],
+    categoria: "clubes",
+    clube: "juventus",
+    liga: "serie-a",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.9,
+    numAvaliacoes: 42,
+    destaque: false,
+  },
+  {
+    id: "50",
+    nome: "Camisola Napoli Principal 2024/25",
+    descricao:
+      "Camisola oficial principal do Napoli para a temporada 2024/25. Design clássico em azul celeste, fabricada pela EA7 com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal do Napoli para a temporada 2024/25 apresenta o tradicional azul celeste que é a marca registrada do clube. Fabricada pela EA7 com tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da EA7 e o patrocinador MSC. A gola em V e os punhos das mangas apresentam um acabamento elegante que complementa o design clássico. Esta camisola representa a história e a tradição do Napoli, perfeita para apoiar os Partenopei na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (85).webp",
+    imagensAdicionais: ["/images/640 (86).webp", "/images/640 (87).webp"],
+    categoria: "clubes",
+    clube: "napoli",
+    liga: "serie-a",
+    temporada: "2024/25",
+    cor: "azul-celeste",
+    material: "100% Poliéster Reciclado",
+    marca: "EA7",
+    avaliacao: 4.7,
+    numAvaliacoes: 34,
+    destaque: false,
+  },
+  {
+    id: "51",
+    nome: "Camisola Roma Principal 2024/25",
+    descricao:
+      "Camisola oficial principal da AS Roma para a temporada 2024/25. Design clássico em vermelho escuro e dourado, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal da AS Roma para a temporada 2024/25 apresenta o tradicional vermelho escuro 'giallorosso' com detalhes em dourado que simbolizam a grandeza do clube. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador. As três listras características da Adidas em dourado adornam os ombros, enquanto a gola redonda com acabamento dourado complementa o design clássico. Esta camisola representa a história e a tradição da Roma, perfeita para apoiar os Giallorossi na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (88).webp",
+    imagensAdicionais: ["/images/640 (89).webp", "/images/640 (90).webp"],
+    categoria: "clubes",
+    clube: "roma",
+    liga: "serie-a",
+    temporada: "2024/25",
+    cor: "vermelho-escuro",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.8,
+    numAvaliacoes: 36,
+    destaque: false,
+  },
+  {
+    id: "52",
+    nome: "Camisola Lazio Principal 2024/25",
+    descricao:
+      "Camisola oficial principal da SS Lazio para a temporada 2024/25. Design clássico em azul celeste, fabricada pela Mizuno com tecnologia avançada para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal da SS Lazio para a temporada 2024/25 apresenta o tradicional azul celeste que é a marca registrada do clube. Fabricada pela Mizuno com tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Mizuno e o patrocinador Binance. A gola em V e os punhos das mangas apresentam um acabamento elegante que complementa o design clássico. Esta camisola representa a história e a tradição da Lazio, perfeita para apoiar os Biancocelesti na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (91).webp",
+    imagensAdicionais: ["/images/640 (92).webp", "/images/640 (93).webp"],
+    categoria: "clubes",
+    clube: "lazio",
+    liga: "serie-a",
+    temporada: "2024/25",
+    cor: "azul-celeste",
+    material: "100% Poliéster Reciclado",
+    marca: "Mizuno",
+    avaliacao: 4.7,
+    numAvaliacoes: 32,
+    destaque: false,
+  },
+  {
+    id: "53",
+    nome: "Camisola Fiorentina Principal 2024/25",
+    descricao:
+      "Camisola oficial principal da Fiorentina para a temporada 2024/25. Design clássico em roxo com detalhes em branco, fabricada pela Kappa com tecnologia Kombat Pro para máximo conforto.",
+    descricaoLonga:
+      "A nova camisola principal da Fiorentina para a temporada 2024/25 apresenta o tradicional roxo vibrante que é a marca registrada do clube, com um design moderno que homenageia a rica história do clube. Fabricada pela Kappa com a tecnologia Kombat Pro avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Kappa e o patrocinador. A gola em V e os punhos das mangas apresentam um acabamento elegante em branco que complementa o design clássico. Esta camisola representa a história e a tradição da Fiorentina, perfeita para apoiar a Viola na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/640 (1).webp",
+    imagensAdicionais: ["/images/640 (2).webp", "/images/640 (3).webp"],
+    categoria: "clubes",
+    clube: "fiorentina",
+    liga: "serie-a",
+    temporada: "2024/25",
+    cor: "roxo",
+    material: "100% Poliéster Reciclado",
+    marca: "Kappa",
+    avaliacao: 4.7,
+    numAvaliacoes: 30,
+    destaque: false,
+  },
+  {
+    id: "54",
+    nome: "Camisola Al-Nassr Terceira 2024/25",
+    descricao: "Camisola oficial terceira do Al-Nassr para a temporada 2024/25. Design moderno em azul com detalhes dourados, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola terceira do Al-Nassr para a temporada 2024/25 apresenta um design moderno em azul com detalhes dourados que simbolizam a grandeza do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a evolução e o prestígio do Al-Nassr, perfeita para apoiar o clube na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (4).webp",
+    imagensAdicionais: ["/images/640 (5).webp", "/images/640 (6).webp"],
+    categoria: "clubes",
+    clube: "al-nassr",
+    liga: "saudi-league",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 35,
+    destaque: false,
+  },
+  {
+    id: "55",
+    nome: "Camisola Al-Hilal Principal 2024/25",
+    descricao: "Camisola oficial principal do Al-Hilal para a temporada 2024/25. Design clássico em azul com detalhes brancos, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola principal do Al-Hilal para a temporada 2024/25 mantém a tradição do clube com o icônico azul e detalhes em branco. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e o prestígio do Al-Hilal, perfeita para apoiar o clube na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (7).webp",
+    imagensAdicionais: ["/images/640 (8).webp", "/images/640 (9).webp"],
+    categoria: "clubes",
+    clube: "al-hilal",
+    liga: "saudi-league",
+    temporada: "2024/25",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.7,
+    numAvaliacoes: 30,
+    destaque: false,
+  },
+  {
+    id: "56",
+    nome: "Camisola Inter Miami Terceira 2024/25",
+    descricao: "Camisola oficial terceira do Inter Miami para a temporada 2024/25. Design inovador em preto com detalhes rosa, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola terceira do Inter Miami para a temporada 2024/25 apresenta um design inovador em preto com detalhes em rosa que refletem a identidade única do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a modernidade e o estilo do Inter Miami, perfeita para apoiar o clube na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (10).webp",
+    imagensAdicionais: ["/images/640 (11).webp", "/images/640 (12).webp"],
+    categoria: "clubes",
+    clube: "inter-miami",
+    liga: "mls",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.9,
+    numAvaliacoes: 40,
+    destaque: true,
+  },
+  {
+    id: "57",
+    nome: "Camisola Al-Nassr Principal 2024/25",
+    descricao: "Camisola oficial principal do Al-Nassr para a temporada 2024/25. Design clássico em amarelo com detalhes azuis, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola principal do Al-Nassr para a temporada 2024/25 mantém a tradição do clube com o icônico amarelo e detalhes em azul. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e o prestígio do Al-Nassr, perfeita para apoiar o clube na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (13).webp",
+    imagensAdicionais: ["/images/640 (14).webp", "/images/640 (15).webp"],
+    categoria: "clubes",
+    clube: "al-nassr",
+    liga: "saudi-league",
+    temporada: "2024/25",
+    cor: "amarelo",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 38,
+    destaque: true,
+  },
+  {
+    id: "58",
+    nome: "Camisola Al-Nassr Alternativa 2024/25",
+    descricao: "Camisola oficial alternativa do Al-Nassr para a temporada 2024/25. Design moderno em branco com detalhes dourados, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola alternativa do Al-Nassr para a temporada 2024/25 apresenta um design moderno em branco com detalhes dourados que simbolizam a grandeza do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a evolução e o prestígio do Al-Nassr, perfeita para apoiar o clube na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (16).webp",
+    imagensAdicionais: ["/images/640 (17).webp", "/images/640 (18).webp"],
+    categoria: "clubes",
+    clube: "al-nassr",
+    liga: "saudi-league",
+    temporada: "2024/25",
+    cor: "branco",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.7,
+    numAvaliacoes: 32,
+    destaque: false,
+  },
+  {
+    id: "59",
+    nome: "Camisola Inter Miami Principal 2024/25",
+    descricao: "Camisola oficial principal do Inter Miami para a temporada 2024/25. Design clássico em rosa e preto, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola principal do Inter Miami para a temporada 2024/25 apresenta o design característico do clube em rosa e preto. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a identidade única do Inter Miami, perfeita para apoiar o clube na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (222).webp",
+    imagensAdicionais: ["/images/640 (223).webp", "/images/640 (224).webp"],
+    categoria: "clubes",
+    clube: "inter-miami",
+    liga: "mls",
+    temporada: "2024/25",
+    cor: "rosa",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.9,
+    numAvaliacoes: 45,
+    destaque: true,
+  },
+  {
+    id: "60",
+    nome: "Camisola Inter Miami Alternativa 2024/25",
+    descricao: "Camisola oficial alternativa do Inter Miami para a temporada 2024/25. Design moderno em preto com detalhes rosa, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola alternativa do Inter Miami para a temporada 2024/25 apresenta um design moderno em preto com detalhes em rosa que refletem a identidade única do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa o estilo contemporâneo do Inter Miami, perfeita para apoiar o clube na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (191).webp",
+    imagensAdicionais: ["/images/640 (192).webp", "/images/640 (193).webp"],
+    categoria: "clubes",
+    clube: "inter-miami",
+    liga: "mls",
+    temporada: "2024/25",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.8,
+    numAvaliacoes: 35,
+    destaque: false,
+  },
+  {
+    id: "61",
+    nome: "Camisola Celtic Terceira 2023/24",
+    descricao: "Camisola oficial terceira do Celtic para a temporada 2023/24. Design moderno em preto com detalhes verdes, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A camisola terceira do Celtic para a temporada 2023/24 apresenta um design moderno em preto com detalhes em verde que homenageiam as cores tradicionais do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e a tradição do Celtic, perfeita para apoiar os Bhoys na temporada.",
+    preco: 17.99,
+    imagem: "/images/640 (997).webp",
+    imagensAdicionais: ["/images/640 (998).webp"],
+    categoria: "clubes",
+    clube: "celtic",
+    liga: "scottish-premiership",
+    temporada: "2023/24",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.7,
+    numAvaliacoes: 28,
+    destaque: false,
+  },
+  {
+    id: "62",
+    nome: "Camisola Celtic Principal 2024/25",
+    descricao: "Camisola oficial principal do Celtic para a temporada 2024/25. Design clássico em verde e branco, fabricada com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A nova camisola principal do Celtic para a temporada 2024/25 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o patrocinador. Esta camisola representa a história e a tradição do Celtic, perfeita para apoiar os Bhoys na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/640 555.webp",
+    imagensAdicionais: ["/images/640 556.webp", "/images/640 557.webp"],
+    categoria: "clubes",
+    clube: "celtic",
+    liga: "scottish-premiership",
+    temporada: "2024/25",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 4.8,
+    numAvaliacoes: 33,
+    destaque: false,
+  },
+  {
+    id: "63",
+    nome: "Kit Criança Barcelona Alternativo Edição Especial 2024/25",
+    descricao: "Kit oficial alternativo de criança do FC Barcelona para a temporada 2024/25. Design especial em dourado com detalhes em azul e grená, fabricado pela Nike com tecnologia Dri-FIT para máximo conforto.",
+    descricaoLonga: "O novo kit alternativo de criança do FC Barcelona para a temporada 2024/25 apresenta um design especial em dourado com detalhes em azul e grená que homenageiam as cores tradicionais do clube. Fabricado pela Nike com a tecnologia Dri-FIT avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado em suas cores originais no peito, junto com o logotipo da Nike e o patrocinador Spotify. A parte traseira apresenta o logo da UNHCR/ACNUR, demonstrando o compromisso social do clube. Perfeito para os jovens adeptoes apoiarem os Blaugranas na nova temporada.",
+    preco: 17.99,
+    imagem: "/images/barca.webp",
+    categoria: "crianca",
+    clube: "barcelona",
+    liga: "la-liga",
+    temporada: "2024/25",
+    cor: "dourado",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 25,
+    destaque: false,
+    tamanhosCrianca: ["3/4", "5/6", "7/8", "9/10", "11/12", "13/14"]
+  },
+  {
+    id: "benfica-25-26-home",
+    nome: "Camisola Principal do SL Benfica 2025-2026",
+    descricao: "Camisola oficial principal do SL Benfica para a temporada 2025/26. Design clássico em vermelho com detalhes modernos.",
+    descricaoLonga: "A nova camisola principal do SL Benfica para a temporada 2025/26 combina a tradição do clube com elementos modernos. O vermelho vibrante tradicional é complementado por detalhes sofisticados que homenageiam a rica história do clube. Fabricada com tecnologia de ponta para garantir máximo conforto e performance.",
+    preco: 17.99,
+    precoAntigo: 94.99,
+    imagem: "/images/benfica-home-2025-26-front.webp",
+    imagensAdicionais: [],
+    categoria: "clubes",
+    clube: "benfica",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "benfica-25-26-special",
+    nome: "Camisola Edição Especial Benfica 2025/2026",
+    descricao: "Edição especial e limitada da camisola do SL Benfica para a temporada 2025/26.",
+    descricaoLonga: "Uma edição verdadeiramente especial que celebra a grandeza do Sport Lisboa e Benfica. Esta camisola única combina elementos tradicionais com um design inovador, criando uma peça de colecionador que todo benfiquista vai querer ter.",
+    preco: 17.99,
+    precoAntigo: 99.99,
+    imagem: "/images/slb.webp",
+    imagensAdicionais: [
+      "/images/slb1.webp",
+      "/images/slb3.webp"
+    ],
+    categoria: "clubes",
+    clube: "benfica",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "benfica-25-26-special-2",
+    nome: "Camisola Edição II EDIÇÃO Especial Benfica 2025/2026",
+    descricao: "Segunda edição especial da camisola do SL Benfica, com design único e exclusivo.",
+    descricaoLonga: "A segunda edição especial da camisola do Benfica apresenta um design ainda mais ousado e inovador. Com elementos gráficos únicos e acabamentos premium, esta camisola é uma verdadeira obra de arte que celebra o clube.",
+    preco: 17.99,
+    precoAntigo: 99.99,
+    imagem: "/images/SL.webp",
+    imagensAdicionais: [
+      "/images/SL2.webp",
+      "/images/SL3.webp"
+    ],
+    categoria: "clubes",
+    clube: "benfica",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "benfica-25-26-retro",
+    nome: "Camisola Edição Especial RETRO Benfica 2025/2026",
+    descricao: "Edição retro especial que homenageia a história gloriosa do SL Benfica.",
+    descricaoLonga: "Uma homenagem às camisolas históricas do Benfica, esta edição retro combina elementos clássicos com tecnologia moderna. Cada detalhe foi cuidadosamente pensado para criar uma peça que celebra o rico legado do clube.",
+    preco: 17.99,
+    precoAntigo: 99.99,
+    imagem: "/images/RETRO.webp",
+    imagensAdicionais: [
+      "/images/RETRO1.webp",
+      "/images/RETRO2.webp"
+    ],
+    categoria: "clubes",
+    clube: "benfica",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "benfica-retro-2025-26",
+    nome: "Camisola Edição Especial RETRO Benfica 2025/2026",
+    descricao: "Edição retro especial que homenageia a história gloriosa do SL Benfica.",
+    descricaoLonga: "Uma homenagem às camisolas históricas do Benfica, esta edição retro combina elementos clássicos com tecnologia moderna. Cada detalhe foi cuidadosamente pensado para criar uma peça que celebra o rico legado do clube.",
+    preco: 17.99,
+    precoAntigo: 99.99,
+    imagem: "/images/RETRO.webp",
+    imagensAdicionais: [
+      "/images/RETRO1.webp",
+      "/images/RETRO2.webp"
+    ],
+    categoria: "retro",
+    clube: "benfica",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "vermelho",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "porto-25-26-home",
+    nome: "Camisola Principal do FC Porto 2025/26",
+    descricao: "Camisola oficial principal do FC Porto para a temporada 2025/26. Design clássico em azul e branco.",
+    descricaoLonga: "A nova camisola principal do FC Porto para a temporada 2025/26 mantém a tradição do clube com as icônicas listras verticais azuis e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia.",
+    preco: 17.99,
+    precoAntigo: 94.99,
+    imagem: "/images/p.webp",
+    imagensAdicionais: [
+      "/images/pp.webp",
+      "/images/ppp.webp",
+      "/images/pppp.webp",
+      "/images/ppppp.webp"
+    ],
+    categoria: "clubes",
+    clube: "porto",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "azul",
+    material: "100% Poliéster Reciclado",
+    marca: "New Balance",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "porto-25-26-away",
+    nome: "Camisola II do FC Porto 2025/26",
+    descricao: "Camisola oficial alternativa do FC Porto para a temporada 2025/26. Design moderno e inovador.",
+    descricaoLonga: "A nova camisola alternativa do FC Porto para a temporada 2025/26 apresenta um design moderno e inovador que homenageia a rica história do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia.",
+    preco: 17.99,
+    precoAntigo: 94.99,
+    imagem: "/images/a.webp",
+    imagensAdicionais: [
+      "/images/b.webp",
+      "/images/c.webp",
+      "/images/d.webp"
+    ],
+    categoria: "clubes",
+    clube: "porto",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "branco",
+    material: "100% Poliéster Reciclado",
+    marca: "New Balance",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "sporting-25-26-gk",
+    nome: "Camisola de Guarda-Redes Sporting 2025/26",
+    descricao: "Camisola oficial de guarda-redes do Sporting CP para a temporada 2025/26. Design moderno e tecnologia avançada para máxima performance.",
+    descricaoLonga: "A nova camisola de guarda-redes do Sporting CP para a temporada 2025/26 apresenta um design moderno e arrojado, desenvolvido especificamente para as necessidades dos guarda-redes. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional, durabilidade e proteção durante os jogos. O tecido de alta performance garante excelente gestão da transpiração e liberdade de movimentos, essencial para as exigências da posição.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/s.webp",
+    imagensAdicionais: [
+      "/images/ss.webp"
+    ],
+    categoria: "clubes",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "real-madrid-25-26-home",
+    nome: "Camisola Principal do Real Madrid 2025/26",
+    descricao: "Camisola oficial principal do Real Madrid para a temporada 2025/26. Design clássico em branco com detalhes elegantes.",
+    descricaoLonga: "A nova camisola principal do Real Madrid para a temporada 2025/26 mantém a tradição do clube com o icônico branco real, apresentando detalhes sofisticados que realçam a grandeza do clube. Fabricada pela Adidas com tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, com a coroa real em destaque.",
+    preco: 17.99,
+    precoAntigo: 94.99,
+    imagem: "/images/real.webp",
+    imagensAdicionais: [
+      "/images/reall.webp"
+    ],
+    categoria: "clubes",
+    clube: "real-madrid",
+    liga: "la-liga",
+    temporada: "2025/26",
+    cor: "branco",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "real-madrid-25-26-away",
+    nome: "Camisola II do Real Madrid 2025/26",
+    descricao: "Camisola oficial alternativa do Real Madrid para a temporada 2025/26. Design moderno e elegante.",
+    descricaoLonga: "A nova camisola alternativa do Real Madrid para a temporada 2025/26 apresenta um design moderno que combina elegância com inovação. Fabricada pela Adidas com tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, com a coroa real em destaque.",
+    preco: 17.99,
+    precoAntigo: 94.99,
+    imagem: "/images/88.webp",
+    imagensAdicionais: [
+      "/images/888.webp"
+    ],
+    categoria: "clubes",
+    clube: "real-madrid",
+    liga: "la-liga",
+    temporada: "2025/26",
+    cor: "preto",
+    material: "100% Poliéster Reciclado",
+    marca: "Adidas",
+    avaliacao: 0,
+    numAvaliacoes: 0,
+    destaque: true,
+  },
+  {
+    id: "kit-crianca-sporting-principal-2024-25",
+    nome: "Kit Criança Sporting Principal 2024/25",
+    descricao: "Kit oficial de criança do Sporting CP para a temporada 2024/25. Design clássico em verde e branco, fabricado pela Nike com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "O novo kit de criança do Sporting CP para a temporada 2024/25 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricado pela Nike com materiais de alta qualidade e tecnologia avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. Inclui camisola e calções. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike. Perfeito para os jovens adeptos apoiarem os Leões na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/844d9c6a.jpeg",
+    imagensAdicionais: [
+      "/images/906b5d33.jpeg",
+      "/images/3624efab.jpeg", 
+      "/images/0cb77324.jpeg",
+      "/images/2a4eafb2.jpeg",
+      "/images/b584afe2.jpeg"
+    ],
+    categoria: "crianca",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.9,
+    numAvaliacoes: 32,
+    destaque: true,
+    tamanhosCrianca: ["3/4", "5/6", "7/8", "9/10", "11/12", "13/14"]
+  },
+  {
+    id: "kit-crianca-sporting-edicao-especial-2024",
+    nome: "Kit Criança Sporting Edição Especial 2024",
+    descricao: "Kit oficial de criança do Sporting CP Edição Especial 2024. Design único e exclusivo, fabricado com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "O kit edição especial de criança do Sporting CP para 2024 apresenta um design único e exclusivo que celebra a grandeza do clube. Fabricado com materiais de alta qualidade e tecnologia avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. Inclui camisola e calções. Uma peça especial para os jovens sportinguistas mostrarem a sua paixão pelo clube de forma diferenciada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/32131231.webp",
+    imagensAdicionais: [
+      "/images/31231.webp"
+    ],
+    categoria: "crianca",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2024",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 28,
+    destaque: true,
+    tamanhosCrianca: ["3/4", "5/6", "7/8", "9/10", "11/12", "13/14"]
+  },
+  {
+    id: "kit-crianca-sporting-principal-2025-26",
+    nome: "Kit Criança Sporting Principal 2025/26",
+    descricao: "Kit oficial de criança do Sporting CP para a temporada 2025/26. Design clássico em verde e branco, fabricado pela Nike com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "O novo kit de criança do Sporting CP para a temporada 2025/26 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricado pela Nike com materiais de alta qualidade e tecnologia avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. Inclui camisola e calções. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike. Representa a nova era do Sporting CP, perfeito para os jovens Leões na nova temporada.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/CamisolaSportingCP2526Infantil_ConjuntoPrincipalVerdeeBranco_1_700x.webp",
+    imagensAdicionais: [
+      "/images/CamisolaSportingCP2526Infantil_ConjuntoPrincipalVerdeeBranco_2_700x.webp",
+      "/images/CamisolaSportingCP2526Infantil_ConjuntoPrincipalVerdeeBranco_3_700x.webp"
+    ],
+    categoria: "crianca",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2025/26",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 5.0,
+    numAvaliacoes: 18,
+    destaque: true,
+    tamanhosCrianca: ["3/4", "5/6", "7/8", "9/10", "11/12", "13/14"]
+  },
+  {
+    id: "sporting-campeao-2024-25",
+    nome: "Camisola Principal Sporting Campeão 2024/25",
+    descricao: "Camisola oficial principal do Sporting CP Campeão para a temporada 2024/25. Design especial comemorativo do título, fabricada pela Nike com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A camisola comemorativa do título de Campeão do Sporting CP para a temporada 2024/25 celebra a conquista do campeonato com um design especial que honra os Leões. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com elementos comemorativos do título. Uma peça histórica para os sportinguistas celebrarem a conquista do campeonato.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/3123123123.webp",
+    imagensAdicionais: [
+      "/images/3123123123123.webp"
+    ],
+    categoria: "clubes",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 4.9,
+    numAvaliacoes: 45,
+    destaque: true,
+  },
+  {
+    id: "sporting-dobradinha-2024-25",
+    nome: "Camisola Principal Sporting DOBRADINHA",
+    descricao: "Camisola oficial principal do Sporting CP DOBRADINHA. Design especial comemorativo da dobradinha, fabricada pela Nike com tecnologia avançada para máximo conforto.",
+    descricaoLonga: "A camisola comemorativa da DOBRADINHA do Sporting CP celebra a conquista dupla com um design especial que honra este feito histórico dos Leões. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com elementos comemorativos da dobradinha. Uma peça única para os sportinguistas celebrarem este momento histórico do clube.",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/CamisolaSportingCPPrincipal2425Homem_Dobradinha_35ad4775-b244-46a6-b537-4f8c03d9687c_700x.webp",
+    imagensAdicionais: [
+      "/images/3123123123123.webp"
+    ],
+    categoria: "clubes",
+    clube: "sporting",
+    liga: "liga-portuguesa",
+    temporada: "2024/25",
+    cor: "verde",
+    material: "100% Poliéster Reciclado",
+    marca: "Nike",
+    avaliacao: 5.0,
+    numAvaliacoes: 52,
+    destaque: true,
+  },
+].map(p => ({
+  ...p,
+  preco: 17.99,
+  precoAntigo: 29.99
+}))
+
+// Função para obter todos os produtos com filtros opcionais
+export async function getProdutos({
+  categoria,
+  clube,
+  cor,
+  liga,
+  ordenar = "recentes",
+  precoMin,
+  precoMax,
+  temporada,
+}: {
+  categoria?: string
+  clube?: string
+  cor?: string
+  liga?: string
+  ordenar?: string
+  precoMin?: string
+  precoMax?: string
+  temporada?: string
+}) {
+  // Simular um atraso de rede
+  await new Promise((resolve) => setTimeout(resolve, 500))
+
+  let filteredProducts = [...produtos]
+
+  // Aplicar filtros
+  if (categoria) {
+    filteredProducts = filteredProducts.filter((p) => p.categoria === categoria)
+  }
+
+  if (clube) {
+    filteredProducts = filteredProducts.filter((p) => p.clube === clube)
+  }
+
+  if (cor) {
+    filteredProducts = filteredProducts.filter((p) => p.cor === cor)
+  }
+
+  if (liga) {
+    if (liga === "outras-ligas") {
+      const ligasPrincipais = ["liga-portuguesa", "premier-league", "la-liga", "ligue-1", "serie-a", "bundesliga"]
+      filteredProducts = filteredProducts.filter((p) => p.liga && !ligasPrincipais.includes(p.liga))
+    } else {
+      filteredProducts = filteredProducts.filter((p) => p.liga === liga)
+    }
+  }
+
+  if (precoMin && precoMax) {
+    const min = Number.parseFloat(precoMin)
+    const max = Number.parseFloat(precoMax)
+    filteredProducts = filteredProducts.filter((p) => p.preco >= min && p.preco <= max)
+  }
+
+  // Separar as camisolas do Real Madrid 2025/26
+  const realMadridCamisolas = filteredProducts.filter(
+    (p) => p.id === "real-madrid-25-26-home" || p.id === "real-madrid-25-26-away"
+  )
+
+  // Separar as camisolas 2025/26 dos clubes portugueses
+  const camisolas2526 = filteredProducts.filter(
+    (p) => 
+      (p.temporada === "2025/26" && 
+      (p.clube === "benfica" || p.clube === "porto" || p.clube === "sporting")) &&
+      !realMadridCamisolas.includes(p)
+  )
+
+  // Filtrar os outros produtos
+  const outrosProdutos = filteredProducts.filter(
+    (p) => !realMadridCamisolas.includes(p) && !camisolas2526.includes(p)
+  )
+
+  // Aplicar ordenação aos outros produtos
+  switch (ordenar) {
+    case "preco-asc":
+      outrosProdutos.sort((a, b) => a.preco - b.preco)
+      break
+    case "preco-desc":
+      outrosProdutos.sort((a, b) => b.preco - a.preco)
+      break
+    case "populares":
+      outrosProdutos.sort((a, b) => b.numAvaliacoes - a.numAvaliacoes)
+      break
+    case "avaliacao":
+      outrosProdutos.sort((a, b) => b.avaliacao - a.avaliacao)
+      break
+    case "recentes":
+    default:
+      break
+  }
+
+  // Retornar os produtos na ordem desejada
+  return [...realMadridCamisolas, ...camisolas2526, ...outrosProdutos]
+}
+
+// Função para obter produtos em destaque
+export async function getDestaques() {
+  // Simular um atraso de rede
+  await new Promise((resolve) => setTimeout(resolve, 300))
+
+  // Filtrar produtos em destaque
+  const produtosDestaque = produtos.filter((p) => p.destaque)
+
+  // Separar as camisolas do Real Madrid 2025/26
+  const realMadridCamisolas = produtosDestaque.filter(
+    (p) => p.id === "real-madrid-25-26-home" || p.id === "real-madrid-25-26-away"
+  )
+
+  // Separar a camisola do Sporting 2025/26
+  const sportingCamisola = produtosDestaque.find((p) => p.id === "21")
+
+  // Filtrar os outros produtos
+  const outrosProdutos = produtosDestaque.filter(
+    (p) => 
+      p.id !== "21" && 
+      p.id !== "real-madrid-25-26-home" && 
+      p.id !== "real-madrid-25-26-away"
+  )
+
+  // Ordenar os produtos: Sporting, Real Madrid, e depois os outros
+  const ordenedProducts = [
+    ...(sportingCamisola ? [sportingCamisola] : []),
+    ...realMadridCamisolas,
+    ...outrosProdutos
+  ]
+
+  // Retornar os primeiros 8 produtos
+  return ordenedProducts.slice(0, 8)
+}
+
+// Função para obter um produto pelo ID
+export async function getProdutoById(id: string) {
+  // Simular um atraso de rede
+  await new Promise((resolve) => setTimeout(resolve, 300))
+
+  return produtos.find((p) => p.id === id)
+}
+
+// Função para obter produtos relacionados
+export async function getProdutosRelacionados(id: string, categoria: string) {
+  // Simular um atraso de rede
+  await new Promise((resolve) => setTimeout(resolve, 300))
+
+  return produtos
+    .filter((p) => p.id !== id && p.categoria === categoria)
+    .sort(() => Math.random() - 0.5) // Ordenação aleatória
+    .slice(0, 4)
+}

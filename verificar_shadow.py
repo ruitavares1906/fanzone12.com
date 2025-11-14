@@ -1,0 +1,35 @@
+import json
+
+# Ler o ficheiro JSON
+with open('air_force_1_shadow_limpo.json', 'r', encoding='utf-8') as f:
+    produtos = json.load(f)
+
+print(f"Total produtos: {len(produtos)}")
+
+# Verificar IDs únicos
+ids = [produto['id'] for produto in produtos]
+ids_unicos = set(ids)
+print(f"IDs únicos: {len(ids_unicos)}")
+print(f"IDs duplicados: {len(ids) - len(ids_unicos)}")
+
+# Mostrar últimos 3 produtos
+print("\nÚltimos 3 produtos:")
+for i, produto in enumerate(produtos[-3:]):
+    print(f"{i+1}. {produto['id']} - {produto['nome']}")
+
+# Verificar se contém "Shadow" nos nomes
+print("\nVerificando se contém 'Shadow' nos nomes:")
+shadow_count = sum(1 for p in produtos if 'shadow' in p['nome'].lower())
+print(f"Produtos com 'Shadow' no nome: {shadow_count}")
+
+# Mostrar alguns exemplos de categorias
+print("\nExemplos de categorias:")
+for i, produto in enumerate(produtos[:3]):
+    print(f"{i+1}. Categoria: {produto['categoria']}")
+
+# Verificar produtos com cores específicas
+print("\nProdutos com cores específicas:")
+cores_especiais = ['macaroon', '马卡龙', 'macaroon']
+for produto in produtos[:10]:
+    if any(cor in produto['nome'].lower() for cor in cores_especiais):
+        print(f"- {produto['nome']}")

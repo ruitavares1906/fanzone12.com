@@ -1,0 +1,246 @@
+{
+  "exemplos_capas_apple_personalizadas": [
+    {
+      "id": "capa-iphone-17-pro-max-transparente-personalizada",
+      "nome": "Capa iPhone 17 Pro Max Transparente Personalizada",
+      "descricao": "Capa de proteção transparente para iPhone 17 Pro Max com personalização de nome e número",
+      "descricaoLonga": "Capa premium de proteção para iPhone 17 Pro Max. Material de alta qualidade, resistente e transparente. Permite adicionar seu nome e número personalizados (GRATUITO). Proteção total contra quedas e riscos.",
+      "preco": 11.99,
+      "imagem": "/images/capas/iphone-17-pro-max-transparente.jpg",
+      "imagensAdicionais": [
+        "/images/capas/iphone-17-pro-max-transparente-2.jpg",
+        "/images/capas/iphone-17-pro-max-transparente-3.jpg"
+      ],
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Apple",
+      "modeloTelemovel": "iPhone 17 Pro Max",
+      "personalizacaoNomeNumero": true,
+      "cor": "Transparente",
+      "material": "TPU Premium",
+      "caracteristicas": [
+        "Anti-queda",
+        "Anti-risco",
+        "Ultra fina",
+        "Personalização nome e número",
+        "Proteção 360°"
+      ],
+      "tags": ["iphone", "apple", "capa", "personalizada", "transparente"],
+      "stock": 100,
+      "novo": true,
+      "promocao": true
+    },
+    {
+      "id": "capa-iphone-16-pro-preta-personalizada",
+      "nome": "Capa iPhone 16 Pro Preta Personalizada",
+      "descricao": "Capa de proteção preta para iPhone 16 Pro com personalização de nome e número",
+      "descricaoLonga": "Capa elegante em cor preta para iPhone 16 Pro. Material resistente com acabamento premium. Possibilidade de adicionar seu nome e número personalizados (GRATUITO).",
+      "preco": 11.99,
+      "imagem": "/images/capas/iphone-16-pro-preta.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Apple",
+      "modeloTelemovel": "iPhone 16 Pro",
+      "personalizacaoNomeNumero": true,
+      "cor": "Preto",
+      "material": "Silicone Premium",
+      "caracteristicas": [
+        "Anti-queda",
+        "Acabamento premium",
+        "Personalização nome e número",
+        "Proteção total"
+      ],
+      "tags": ["iphone", "apple", "capa", "personalizada", "preta"],
+      "stock": 80,
+      "novo": true
+    },
+    {
+      "id": "capa-iphone-15-pro-max-azul-personalizada",
+      "nome": "Capa iPhone 15 Pro Max Azul Personalizada",
+      "descricao": "Capa de proteção azul para iPhone 15 Pro Max com personalização de nome e número",
+      "descricaoLonga": "Capa em tom azul vibrante para iPhone 15 Pro Max. Proteção completa com estilo. Adicione seu nome e número para um toque personalizado único (GRATUITO).",
+      "preco": 11.99,
+      "imagem": "/images/capas/iphone-15-pro-max-azul.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Apple",
+      "modeloTelemovel": "iPhone 15 Pro Max",
+      "personalizacaoNomeNumero": true,
+      "cor": "Azul",
+      "material": "Silicone",
+      "caracteristicas": [
+        "Anti-queda",
+        "Cor vibrante",
+        "Personalização nome e número"
+      ],
+      "tags": ["iphone", "apple", "capa", "personalizada", "azul"],
+      "stock": 60,
+      "novo": false
+    }
+  ],
+  "exemplos_capas_apple_sem_personalizacao": [
+    {
+      "id": "capa-iphone-14-pro-transparente",
+      "nome": "Capa iPhone 14 Pro Transparente",
+      "descricao": "Capa de proteção transparente para iPhone 14 Pro",
+      "descricaoLonga": "Capa premium de proteção transparente para iPhone 14 Pro. Material de alta qualidade que mantém o design original do seu iPhone visível.",
+      "preco": 11.99,
+      "imagem": "/images/capas/iphone-14-pro-transparente.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Apple",
+      "modeloTelemovel": "iPhone 14 Pro",
+      "personalizacaoNomeNumero": false,
+      "cor": "Transparente",
+      "material": "TPU",
+      "caracteristicas": [
+        "Anti-queda",
+        "Ultra transparente",
+        "Anti-amarelamento"
+      ],
+      "tags": ["iphone", "apple", "capa", "transparente"],
+      "stock": 120,
+      "novo": false
+    },
+    {
+      "id": "capa-iphone-13-preta",
+      "nome": "Capa iPhone 13 Preta",
+      "descricao": "Capa de proteção preta para iPhone 13",
+      "descricaoLonga": "Capa preta elegante para iPhone 13. Proteção completa com design minimalista.",
+      "preco": 11.99,
+      "imagem": "/images/capas/iphone-13-preta.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Apple",
+      "modeloTelemovel": "Iphone 13",
+      "personalizacaoNomeNumero": false,
+      "cor": "Preto",
+      "material": "Silicone",
+      "caracteristicas": [
+        "Anti-queda",
+        "Design minimalista"
+      ],
+      "tags": ["iphone", "apple", "capa", "preta"],
+      "stock": 90,
+      "novo": false
+    }
+  ],
+  "exemplos_capas_samsung_personalizadas": [
+    {
+      "id": "capa-galaxy-s25-ultra-transparente-personalizada",
+      "nome": "Capa Galaxy S25 Ultra Transparente Personalizada",
+      "descricao": "Capa de proteção transparente para Samsung Galaxy S25 Ultra com personalização de nome e número",
+      "descricaoLonga": "Capa premium de proteção transparente para Galaxy S25 Ultra. Material de alta qualidade. Possibilidade de adicionar seu nome e número personalizados (GRATUITO).",
+      "preco": 11.99,
+      "imagem": "/images/capas/galaxy-s25-ultra-transparente.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Samsung",
+      "modeloTelemovel": "Galaxy S25 Ultra",
+      "personalizacaoNomeNumero": true,
+      "cor": "Transparente",
+      "material": "TPU Premium",
+      "caracteristicas": [
+        "Anti-queda",
+        "Anti-risco",
+        "Personalização nome e número",
+        "Proteção 360°"
+      ],
+      "tags": ["samsung", "galaxy", "capa", "personalizada", "transparente"],
+      "stock": 75,
+      "novo": true,
+      "promocao": true
+    },
+    {
+      "id": "capa-galaxy-s24-ultra-preta-personalizada",
+      "nome": "Capa Galaxy S24 Ultra Preta Personalizada",
+      "descricao": "Capa de proteção preta para Samsung Galaxy S24 Ultra com personalização de nome e número",
+      "descricaoLonga": "Capa elegante em cor preta para Galaxy S24 Ultra. Material resistente com acabamento premium. Adicione seu nome e número para um toque único (GRATUITO).",
+      "preco": 11.99,
+      "imagem": "/images/capas/galaxy-s24-ultra-preta.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Samsung",
+      "modeloTelemovel": "Galaxy S24 Ultra",
+      "personalizacaoNomeNumero": true,
+      "cor": "Preto",
+      "material": "Silicone Premium",
+      "caracteristicas": [
+        "Anti-queda",
+        "Acabamento premium",
+        "Personalização nome e número"
+      ],
+      "tags": ["samsung", "galaxy", "capa", "personalizada", "preta"],
+      "stock": 85,
+      "novo": true
+    }
+  ],
+  "exemplos_capas_samsung_sem_personalizacao": [
+    {
+      "id": "capa-galaxy-s23-transparente",
+      "nome": "Capa Galaxy S23 Transparente",
+      "descricao": "Capa de proteção transparente para Samsung Galaxy S23",
+      "descricaoLonga": "Capa premium de proteção transparente para Galaxy S23. Material de alta qualidade que mantém o design original do seu Galaxy visível.",
+      "preco": 11.99,
+      "imagem": "/images/capas/galaxy-s23-transparente.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Samsung",
+      "modeloTelemovel": "Galaxy S23",
+      "personalizacaoNomeNumero": false,
+      "cor": "Transparente",
+      "material": "TPU",
+      "caracteristicas": [
+        "Anti-queda",
+        "Ultra transparente"
+      ],
+      "tags": ["samsung", "galaxy", "capa", "transparente"],
+      "stock": 110,
+      "novo": false
+    },
+    {
+      "id": "capa-galaxy-s22-preta",
+      "nome": "Capa Galaxy S22 Preta",
+      "descricao": "Capa de proteção preta para Samsung Galaxy S22",
+      "descricaoLonga": "Capa preta elegante para Galaxy S22. Proteção completa com design minimalista.",
+      "preco": 11.99,
+      "imagem": "/images/capas/galaxy-s22-preta.jpg",
+      "categoria": "capas",
+      "subcategoria": "capas-telemovel",
+      "marcaTelemovel": "Samsung",
+      "modeloTelemovel": "Galaxy S22 5G",
+      "personalizacaoNomeNumero": false,
+      "cor": "Preto",
+      "material": "Silicone",
+      "caracteristicas": [
+        "Anti-queda",
+        "Design minimalista"
+      ],
+      "tags": ["samsung", "galaxy", "capa", "preta"],
+      "stock": 95,
+      "novo": false
+    }
+  ],
+  "notas": {
+    "personalizacao": "Quando personalizacaoNomeNumero é true, o cliente pode adicionar nome e/ou número SEM CUSTO ADICIONAL (GRATUITO)",
+    "preco_padrao": "Todas as capas têm preço de 11.99€",
+    "tamanhos": "Capas de telemóvel não usam o campo 'tamanhos' pois cada capa é específica para um modelo",
+    "campos_obrigatorios": [
+      "id",
+      "nome",
+      "descricao",
+      "preco",
+      "imagem",
+      "categoria: 'capas'",
+      "subcategoria: 'capas-telemovel'",
+      "marcaTelemovel: 'Apple' ou 'Samsung'",
+      "modeloTelemovel: (modelo da lista)",
+      "personalizacaoNomeNumero: true ou false"
+    ],
+    "modelos_disponiveis": {
+      "Apple": "Ver modelosApple em lib/types.ts (36 modelos)",
+      "Samsung": "Ver modelosSamsung em lib/types.ts (26 modelos)"
+    }
+  }
+}
+

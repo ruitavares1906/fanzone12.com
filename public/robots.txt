@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fanzone12.pt/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1

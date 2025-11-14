@@ -1,0 +1,7 @@
+# Browserslist config para otimizar JavaScript
+# Suporte para navegadores modernos (últimos 2 anos)
+> 0.5%
+last 2 versions
+not dead
+not IE 11
+not IE_Mob 11

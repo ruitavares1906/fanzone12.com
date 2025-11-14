@@ -1,0 +1,14 @@
+CREATE OR REPLACE FUNCTION exec_sql(sql TEXT)
+RETURNS JSONB
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+DECLARE
+  result JSONB;
+BEGIN
+  EXECUTE sql INTO result;
+  RETURN result;
+EXCEPTION WHEN OTHERS THEN
+  RETURN jsonb_build_object('error', SQLERRM);
+END;
+$$;

@@ -1,0 +1,191 @@
+PROMPT DE ALTERAÇÕES – MIGRAÇÃO FANZONE12.PT ➜ FANZONE12.COM
+================================================================
+
+1. ARQUITETURA ATUAL (NEXT.JS /app)
+-----------------------------------
+- Stack: Next.js App Router, TypeScript, Tailwind, Supabase, Stripe, Mailgun/Postmark. Layout global em `app/layout.tsx` (html `lang="pt"`, metadata com “fanzone12.pt”). Providers globais: `Navbar`, `Footer`, `CartProvider`, `AuthProvider`, `ConsentManager`, `NonBlockingScripts`.
+- Diretórios-chave:
+  • `app/page.tsx` (landing) com dezenas de secções em PT e referências a clubes/liga portuguesa.
+  • Páginas institucionais: `app/sobre`, `app/contacto`, `app/faq`, `app/envios`, `app/devolucoes`, `app/termos`, `app/privacidade`, `app/envios`, `app/info-parceiros`, `app/candidatura-parceiro`, `app/novidades`, `app/personalizadas`.
+  • Funis: `app/carrinho`, `app/sucesso`, `app/cancelado`, `app/checkout-*`, `app/login*`, `app/registro`, `app/reset-password*`.
+  • Dinâmicas: `app/produto/[id]` (página de produto + `ProdutoPageClient.tsx`), `app/catalogo/*` (sub-rotas por modelo), `app/sneakers/*`, `app/parceiros/*`, `app/admin/**` (painel interno, manter PT).
+  • APIs: `app/api/create-checkout-session`, `create-cash-on-delivery-order`, `create-upfront-payment`, `payment-methods`, `webhooks/stripe`, `admin/**`, `partners/**`, etc.
+  • Recursos estáticos: `public/images/**` (logos Benfica/Sporting, “Liga_Portugal_Betclic_2023.webp”), `public/robots.txt` e `public/sitemap.xml` apontam para `.pt`.
+  • Componentes críticos em `components/` (Navbar/Footer, `cash-on-delivery-info`, `payment-method-selector`, `static-info-sections`, `non-blocking-scripts`, etc.).
+
+2. MAPA DE ROTAS E CONTEÚDOS (RESUMO)
+------------------------------------
+- `/` Landing (Português, promoções específicas PT, destaque Camisola Portugal). Reescrever em EN e remover menções nacionais.
+- `/catalogo` + subrotas (categorias, filtros, carrega dados de `lib/products.ts` com copy PT).
+- `/produto/[id]` (detalhes, personalização, preços) – interface/clones PT.
+- `/carrinho` → `use-cart-payment` com opções “Pagamento Online” / “Pagamento à Cobrança”.
+- `/sucesso`, `/cancelado`, `/carrinho` exibem mensagens PT e lógica COD.
+- `/pagina legais` (`/termos`, `/privacidade`, `/devolucoes`, `/envios`) descrevem CTT, envios 7-12 dias PT, MBWay etc.
+- `/envios` e `/faq` têm tabelas “Portugal Continental”, “Ilhas”, “CTT/CTT Expresso”.
+- `/info-parceiros`, `/candidatura-parceiro`: textos PT, referências a programa português e códigos com desconto 10% ≥68€.
+- `/contacto`: SLA “7-12 dias úteis para Portugal Continental e Ilhas”.
+- `/parceiros`, `/admin`, `/admin/*` — manter PT mas atualizar dados (transportadoras, tracking, pagamentos).
+
+3. ELEMENTOS EXCLUSIVOS DE PORTUGAL A ADAPTAR/REMOVER
+-----------------------------------------------------
+| Local | O que ajustar para .com |
+| `app/layout.tsx` | `lang="en"`, títulos/descrições em EN, `NEXT_PUBLIC_SITE_URL` novo domínio, remover fallback para `.pt`. |
+| `app/page.tsx` | Secções com “Seleção Portugal”, “Liga Portuguesa”, carrosséis com produtos PT-first. Redefinir copy e destaques internacionais. |
+| `components/navbar.tsx` | Links “Capas de Telemóvel”, “Liga Portuguesa”, “Body Bebé” (PT). Adaptar menu EN, remover copy “Capas Tele”. |
+| `components/footer.tsx` | Texto “Feito em Portugal”, email `geral@fanzone12.pt`, WhatsApp +351, logos MB WAY/Multibanco/Pagamento à Cobrança. Atualizar para contactos internacionais e novos métodos. |
+| `app/envios`, `app/faq`, `app/devolucoes`, `app/termos`, `app/privacidade`, `app/contacto`, `app/sobre` | Todo o conteúdo PT menciona CTT, prazos PT, legislação portuguesa. Reescrever em EN com regras UE. |
+| `lib/email-templates.ts`, `lib/postmark.ts`, `lib/mailgun.ts` | Corpo PT, menções CTT, “Pagamento à Cobrança”, email `geral@fanzone12.pt`. Traduzir, atualizar remetentes, remover fluxo COD. |
+| `app/api` (checkout, shipping email, payment methods) | País default PT, shipping options “Envio CTT”, allowed countries limitados, validações `country: "Portugal"`. Tornar internacionais. |
+| `hooks/use-cart-payment.ts`, `components/cash-on-delivery-info.tsx`, `app/carrinho` | Textos PT e lógica COD. Remover método e rever cálculos frete. |
+| `public/robots.txt`, `public/sitemap.xml` | URLs `.pt`. Regenerar para `.com`. |
+| `lib/env-config.ts` | fallback `https://www.fanzone12.pt`. Mudar para `.com`. |
+| `public/images` | Logos com texto português (Liga Portugal, MBWay). Rever assets exibidos no .com. |
+
+4. PAGAMENTOS – REMOVER “PAGAMENTO À COBRANÇA”
+----------------------------------------------
+Touchpoints a eliminar/refatorar:
+- Front: `hooks/use-cart-payment.ts` (constantes `CASH_ON_DELIVERY_FEE`, breakdown COD), `components/cash-on-delivery-info*`, `components/payment-method-selector`, `app/carrinho/page.tsx` (ramo `paymentState.method === 'cash_on_delivery'`, chamadas `/api/create-cash-on-delivery-order`, toasts), `app/sucesso/page.tsx` (state `paymentMethod`, UI “Restante à Cobrança”), `app/envios/page.tsx` seção dedicada.
+- APIs: `app/api/create-cash-on-delivery-order`, `app/api/create-upfront-payment`, blocos COD em `create-checkout-session` (linhas 343-395), `app/api/payment-methods` (comentários “MBWay PT”, placeholder “Pagamento à Cobrança” se existir), `app/api/webhooks/stripe` (metadados `paymentMethod === 'cash_on_delivery'`).
+- Emails: `lib/email-templates.ts`, `lib/postmark.ts`, `app/api/admin/send-shipping-email` – remover mensagens “taxa 8€” e macros COD.
+- Admin: `app/admin/encomendas` (resumos de pagamento, filtros) e docs `docs/COMO_USAR_PAINEL_ADMIN.md` falam de COD/CTT. Atualizar instruções.
+Plano:
+ 1. Apagar endpoints e hooks COD; migrar base de dados (Supabase `orders` columns `cash_on_delivery_fee`, `upfront_payment`, `remaining_payment`) para obsoletos ou sempre 0.
+ 2. Simplificar `use-cart-payment` para métodos online apenas (Stripe). Ajustar messaging e promoções.
+ 3. Atualizar `Footer`/Hero/materiais marketing eliminando badges “Pagamento à Cobrança”.
+ 4. Remover assets `cobranca_logo.jpg`.
+
+5. STRIPE – INTERNACIONALIZAÇÃO
+-------------------------------
+- `app/api/create-checkout-session/route.ts`: 
+  • Expandir `shipping_address_collection.allowed_countries` para todos os países da UE/EEE + UK (lista completa). 
+  • Atualizar `shipping_options` (texto “Envio CTT (Grátis)” -> “Standard Shipping (Free/€X)” e novas transportadoras). 
+  • `success_url/cancel_url` usar `https://fanzone12.com`. 
+  • `locale: 'pt'` -> `'en'`. 
+  • Garantir `siteUrl` fallback `.com`.
+  • Revisar promoções para não depender de thresholds PT (avaliar se 68€ faz sentido).
+- `app/api/payment-methods/route.ts`: 
+  • Adicionar métodos suportados na UE (Bancontact, iDEAL, Klarna, Giropay, EPS, Sofort, Przelewy24, Apple Pay/Google Pay). Verificar `account.capabilities` e `settings`. Atualizar icons (adicionar assets EN).
+  • Remover blocos específicos PT (MBWay, “Transferência bancária” se não global). 
+- `app/api/create-upfront-payment`: remover junto com COD.
+- `app/api/webhooks/stripe`: garantir que não assume `country=PT` e que emails/traduções EN.
+- Stripe Dashboard: ativar métodos de pagamento multi-país, atualizar statement descriptor, webhooks configurados para `fanzone12.com/api/webhooks/stripe`.
+
+6. ENVIOS INTERNACIONAIS
+-----------------------
+- Conteúdo editorial (`app/envios`, `app/faq`, `app/devolucoes`, `app/contacto`, landing banners) deve falar em EN e cobrir Europa inteira.
+- `app/api/create-checkout-session`: shipping thresholds 3 items / 68€ baseados em PT. Rever para estratégia por país/região. Permitir múltiplas tabelas (ex.: UE Central €9.90, Nordics €14.90). Persistir configuração em JSON (ex.: `lib/shipping-zones.ts`) para reuso em front/back/email.
+- Remover menções a CTT/CTT Expresso/“Entrega final em Portugal” em `lib/email-templates.ts`, `app/api/admin/send-shipping-email`, `app/admin/encomendas`.
+- Adicionar lista de transportadoras internacionais (DHL, UPS, FedEx, DPD, GLS, TNT). Criar estrutura (por ex. `lib/shipping-carriers.ts`) com `id`, `label`, `trackingBaseUrl`.
+- Nova página “Shipping Information” (EN) substitui `/envios` atual ou reescrevê-la. Incluir: zonas, SLAs, impostos, devoluções internacionais, sem limites PT.
+- Atualizar `Footer` e `components/static-info-sections` (“Envio em 7-12 dias úteis para toda a Europa com tracking completo” – manter se verdadeiro, mas em EN).
+
+7. TRACKING & PAINEL ADMIN
+--------------------------
+- `app/admin/encomendas/page.tsx` e `[id]/page.tsx`: hoje geram links CTT (`https://www.cttexpress.com/...` e `https://appserver.ctt.pt/...`). Necessário:
+  • Substituir campo `transportadora` único por dropdown com carriers internacionais (DHL/UPS/DPD/GLS/FedEx/TNT/Custom). 
+  • Guardar `carrier` + `tracking_number` em Supabase. 
+  • Gerar link dinâmico `tracking_link = carrier.baseUrl + tracking_number`.
+  • Ajustar UI e `trackingInputs` para incluir seleção de carrier + número.
+- `app/api/admin/send-shipping-email`: atualizar payload para incluir `carrierName`, `trackingLink` e template em EN. 
+- Emails (Mailgun/Postmark) devem preencher placeholders `{{carrier_name}}`, `{{tracking_number}}`, `{{tracking_link}}`.
+- Admin continua PT, mas labels podem ser “Transportadora Internacional”, etc.
+
+8. MAILGUN & EMAILS EM INGLÊS
+-----------------------------
+- `lib/mailgun.ts`: alterar `MAILGUN_FROM_EMAIL` para `sales@fanzone12.com`, atualizar logs para não expor configs em produção, e garantir `fetch` usa novo domínio Mailgun (ex.: `mg.fanzone12.com`). 
+- Templates a criar/atualizar (todos EN):
+  • Order confirmation (cliente + admin) – remover COD, mencionar shipping zone, dynamic carrier fields.
+  • Order shipped / delivered.
+  • Payment failed.
+  • Order cancelled.
+  • Password reset / account created.
+  • Tracking email com `{{carrier_name}}/{{tracking_number}}/{{tracking_link}}`.
+- Atualizar `lib/email-templates.ts` + `lib/postmark.ts` (ambos PT). Se só Mailgun for usado, remover Postmark/Sendgrid ou alinhar.
+- Configurar DKIM/SPF para `sales@fanzone12.com`. Atualizar envs: `MAILGUN_DOMAIN`, `MAILGUN_API_KEY`, `MAILGUN_FROM_EMAIL`.
+
+9. TRADUÇÃO COMPLETA
+--------------------
+- Abrangência: menus, CTAs, headings, validações (`useToast`, `use-cart-payment`, `hooks/use-toast`), banners, mensagens de erro em formulários (`app/carrinho`, `app/login`, `app/registro`, `app/contacto`), legal pages, emails, admin notificações ao cliente, toasts e placeholders `Pesquisar produtos...`.
+- `lib/products.ts` (1309 produtos) – campos `nome`, `descricao`, `descricaoLonga`, `categoria` strings PT. Necessário traduzir e, se necessário, duplicar atributos EN (ex.: `name_en`). Ver também backups `lib/products_backup*.ts`.
+- `docs/products_translation_notes.csv` (gerado) lista todos os produtos + notas sobre referências PT/clubes. Usar como guia de tradução (colunas: `id`, `nome`, `needs_translation`, `notes`).
+- Atualizar imagens com texto PT (banners, “Feito em Portugal”).
+- Ajustar `public/placeholder` se contiver mensagens PT.
+- Verificar `components/non-blocking-scripts`/`consent-manager` para textos exibidos (botões consentimento?).
+
+10. SEO INTERNACIONAL
+---------------------
+- Metas: `metadata` global + `export const metadata` em cada página → reescrever EN, incluir países alvo. 
+- Atualizar canonical URLs (via `next-seo`? se não, adicionar manual). 
+- `robots.txt` → `https://fanzone12.com/sitemap.xml`. 
+- Regenerar `public/sitemap.xml` com rotas novas. 
+- Rever `next.config.mjs` headers se forem necessários para .com. 
+- Keywords: remover “Portugal”, “loja PT”, etc. 
+- Adicionar hreflang se planejar manter .pt (ex.: canonical cross-domain). 
+- Atualizar `NonBlockingScripts` se Pixel reorganizado (mesmo ID?). 
+- Otimizar imagens hero para nova copy, reavaliar `link rel="preload"` no `<head>`. 
+- Atualizar `ConsentManager` mensagens (EN).
+
+11. PRODUTOS E CATÁLOGO
+----------------------
+- Fonte: `lib/products.ts` (const `produtosArray`, ~1309 itens). Todos campos PT, alguns com `liga: "liga-portuguesa"` e descrições centradas em clubes portugueses. 
+- CSV gerado em `docs/products_translation_notes.csv` (delimitador `;`) contêm: `needs_translation` (todos “Sim”) + notas (“Clube português”, “liga field=liga-portuguesa”, “Categoria criança”). Usar como planilha inicial de tradução e identificação PT-only. 
+- Preços fixos (17.99/19.99) referenciados em descrições (“envio gratuito PT 68€” etc). Analisar estratégia de pricing para mercados UE (mostrar moeda EUR sem IVA PT, ou incluir IVA 21%?). 
+- Personalização: custo extra calculado em `app/carrinho` + `app/api/create-checkout-session` (3€ nome/número, 1€ patch). Validar se se aplicam internacionalmente. 
+- Dependências de personalização (camisas custom) afetam COD (já vai sair). Reavaliar se personalização deve exigir pagamento integral antecipado.
+
+12. INTEGRAÇÕES E VARIÁVEIS DE AMBIENTE
+---------------------------------------
+- Stripe: `STRIPE_SECRET_KEY`, `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_SITE_URL`. Atualizar `.env` para .com e garantir webhooks apontam para `/api/webhooks/stripe`.
+- Supabase: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (ver `lib/supabase.ts` e `lib/supabase-admin.ts`). Certificar que regras RLS permitem pedidos internacionais.
+- Mailgun (preferencial) + Postmark/Sendgrid (avaliar remoção). 
+- NonBlocking scripts: Meta Pixel ID `953002006834808`; confirmar se permanece válido para novo domínio e atualizar consent/GTMs. 
+- Analytics/env extras: ver `INSTRUCOES-STRIPE-CLI.md`, `docs/**` para debugging; muitos diretórios `app/teste-*` (deixar fora de produção .com).
+- Viva Wallet: existem rotas `app/teste-viva-*` mas nenhum código ativo; confirmar se integração será necessária ou descontinuada para .com.
+- Variáveis novas (ex.): `NEXT_PUBLIC_PRIMARY_DOMAIN=fanzone12.com`, `MAILGUN_FROM_EMAIL=sales@fanzone12.com`, `SUPPORT_EMAIL=support@fanzone12.com`, `SHIPPING_ZONES_CONFIG`.
+
+13. CHECKLIST FINAL
+-------------------
+Obrigatório:
+ 1. Remover completamente “Pagamento à Cobrança” (front, APIs, emails, DB).
+ 2. Atualizar Stripe p/ `.com`, locale EN e ativar métodos UE (Bancontact, iDEAL, Klarna, Giropay, EPS, Sofort, Apple/Google Pay).
+ 3. Reescrever conteúdo completo em inglês (todas páginas públicas, fluxos checkout, emails, banners).
+ 4. Criar regras de envio internacionais (zonas, transportadoras, textos). 
+ 5. Atualizar tracking no admin + emails automatizados com carrier/link.
+ 6. Configurar Mailgun com `sales@fanzone12.com`, templates EN com placeholders de tracking.
+ 7. Atualizar SEO técnico (meta titles/descriptions EN, canonicals `.com`, robots/sitemap, OG).
+ 8. Revisar integrações Supabase/Stripe/Mailgun em `.env` para novo domínio e garantir validações não assumem `country=PT`.
+ 9. Substituir contactos PT (email, telefone, WhatsApp, redes) por canais internacionais apropriados.
+10. Garantir que webhooks, scripts e consentimentos respeitam idiomas/regulamentos UE (GDPR, cookies).
+
+Recomendado:
+ 1. Reorganizar catálogo para destacar clubes europeus populares em vez de PT-first.
+ 2. Implementar mensagens específicas por país (ex.: frete gratuito acima de €X em DE/FR).
+ 3. Preparar suporte multi-moeda futuro (guardar currency no checkout, UI adaptável).
+ 4. Otimizar imagens hero/coleções para campanhas internacionais (usar CDN global).
+ 5. Automatizar export/import de produtos via JSON/CSV para facilitar traduções contínuas.
+
+14. TOP 10 PRIORIDADES OPERACIONAIS
+-----------------------------------
+1. Atualizar infraestrutura (env vars, `NEXT_PUBLIC_SITE_URL`, DNS, Mailgun) para `fanzone12.com`.
+2. Remover pagamento à cobrança em todo o stack (hooks, API, emails, UI, DB).
+3. Reescrever `app/page.tsx`, `Navbar`, `Footer`, páginas legais e checkout para inglês neutro e sem referências PT.
+4. Implementar nova estratégia de shipping europeu + atualizar `create-checkout-session` e página “Shipping Information”.
+5. Revisar método de pagamentos Stripe e adicionar métodos UE; traduzir mensagens de erro.
+6. Atualizar emails (Mailgun/Postmark) para EN + novos placeholders de tracking e remetente `sales@fanzone12.com`.
+7. Atualizar admin tracking UI + endpoint `app/api/admin/send-shipping-email` para transportadoras internacionais.
+8. Regenerar SEO assets (metadata, robots, sitemap) e verificar analytics/pixel para o novo domínio.
+9. Completar tradução do catálogo inteiro usando `docs/products_translation_notes.csv`.
+10. Testar full funnel (navegação ➜ cart ➜ checkout ➜ webhooks ➜ emails) com cliente de fora de PT (ex.: Alemanha) garantindo ausência de validações `country=PT`.
+
+15. ARTEFACTOS ENTREGUES
+------------------------
+- `docs/products_translation_notes.csv` – lista de 1309 produtos + notas para tradução/PT-only.
+- Este ficheiro `prompt_changes_for_new_site.txt` – guia completo de migração.
+ (Lista das 10 prioridades também incluída acima para referência rápida.)
+
+
+
+
+
+
+
