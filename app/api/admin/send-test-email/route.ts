@@ -6,7 +6,7 @@ import { sendOrderConfirmationEmail } from "@/lib/mailgun"
 // Configurar o cliente Mailgun
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || ""
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || ""
-const MAILGUN_FROM_EMAIL = process.env.MAILGUN_FROM_EMAIL || "geral@fanzone12.pt"
+const MAILGUN_FROM_EMAIL = process.env.MAILGUN_FROM_EMAIL || "sales@fanzone12.com"
 
 // Função para criar cliente Mailgun
 function createMailgunClient() {

@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export const metadata = {
   title: "Nike SB Dunk Low | fanzone12.pt",
-  description: "Descubra a nossa coleção exclusiva de Nike SB Dunk Low na fanzone12.pt. Sneakers originais com designs únicos e qualidade premium.",
+  description: "Discover our collection exclusiva de Nike SB Dunk Low na fanzone12.pt. Sneakers originais com designs únicos e qualidade premium.",
 }
 
 export default async function DunkLowPage({
@@ -42,7 +42,7 @@ export default async function DunkLowPage({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center gap-4 mb-8">
           <Link href="/sneakers/nike" className="text-purple-600 hover:text-purple-800 transition-colors">
-            ← Voltar aos Sneakers Nike
+            ← Back to Sneakers Nike
           </Link>
         </div>
         
@@ -51,7 +51,7 @@ export default async function DunkLowPage({
             Nike SB Dunk Low
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Descubra a nossa coleção exclusiva de Nike SB Dunk Low. Sneakers originais com designs únicos e qualidade premium.
+            Discover our collection exclusiva de Nike SB Dunk Low. Sneakers originais com designs únicos e qualidade premium.
           </p>
         </div>
 
@@ -64,18 +64,18 @@ export default async function DunkLowPage({
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900">
-                  Todos os Produtos Nike SB Dunk Low
+                  All Products Nike SB Dunk Low
                 </h2>
                 <p className="text-gray-600 mt-1">
-                  {total} produto{total !== 1 ? 's' : ''} encontrado{total !== 1 ? 's' : ''}
+                  {total} product{total !== 1 ? 's' : ''} found
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <Badge className="bg-green-100 text-green-800">
-                  Em Stock
+                  In Stock
                 </Badge>
                 <Badge className="bg-purple-100 text-purple-800">
-                  Tamanhos 36-45
+                  Sizes 36-45
                 </Badge>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default async function DunkLowPage({
               ))}
             </div>
 
-            {/* Paginação */}
+            {/* Pagination */}
             {total > porPagina && (
               <div className="mt-12">
                 <Pagination
@@ -106,16 +106,16 @@ export default async function DunkLowPage({
                 <span className="text-2xl">👟</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Nenhum produto encontrado
+                No products found
               </h3>
               <p className="text-gray-600 mb-4">
-                Não encontramos produtos Nike SB Dunk Low no momento.
+                We could not find products Nike SB Dunk Low at the moment.
               </p>
               <Link 
                 href="/sneakers/nike"
                 className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors inline-block"
               >
-                Voltar aos Sneakers Nike
+                Back to Sneakers Nike
               </Link>
             </div>
           </div>

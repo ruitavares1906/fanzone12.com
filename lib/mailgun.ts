@@ -1,4 +1,5 @@
 // Removido imports desnecessários para usar fetch nativo
+import { getCarrierLabel } from "@/lib/shipping-carriers"
 
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || "your_mailgun_api_key_here"
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || "your_mailgun_domain_here"
@@ -379,6 +380,9 @@ export async function sendShippingConfirmationEmail(data: {
   orderNumber: string
   customerName: string
   customerEmail: string
+  carrier?: string
+  trackingNumber?: string
+  trackingUrl?: string
 }) {
   try {
     console.log("=== ENVIANDO EMAIL DE CONFIRMAÇÃO DE ENVIO ===")
@@ -403,6 +407,21 @@ export async function sendShippingConfirmationEmail(data: {
             <p style="color: #6b7280; margin: 0; font-size: 16px;">
               Your order <strong>#${data.orderNumber}</strong> has been shipped and is on its way!
             </p>
+            ${data.carrier && data.trackingNumber ? `
+            <div style="background-color: #f0f9ff; padding: 15px; border-radius: 6px; margin-top: 15px;">
+              <h4 style="color: #0369a1; margin: 0 0 10px 0; font-size: 16px;">Tracking Information</h4>
+              <p style="margin: 5px 0; color: #1f2937;"><strong>Carrier:</strong> {{carrier_name}}</p>
+              <p style="margin: 5px 0; color: #1f2937;"><strong>Tracking Number:</strong> {{tracking_number}}</p>
+              ${data.trackingUrl ? `
+              <p style="margin: 10px 0;">
+                <a href="{{tracking_link}}" 
+                   style="background-color: #2563eb; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 600;">
+                  🔍 Track Order
+                </a>
+              </p>
+              ` : ''}
+            </div>
+            ` : ''}
           </div>
 
           <div style="background-color: #f0f9ff; padding: 20px; margin-bottom: 25px; border-radius: 6px;">
@@ -426,11 +445,22 @@ export async function sendShippingConfirmationEmail(data: {
       </html>
     `
 
+    // Replace placeholders with actual values
+    let finalHtml = emailHtml
+    if (data.carrier && data.trackingNumber) {
+      const carrierName = getCarrierLabel(data.carrier)
+      finalHtml = finalHtml.replace(/\{\{carrier_name\}\}/g, carrierName)
+      finalHtml = finalHtml.replace(/\{\{tracking_number\}\}/g, data.trackingNumber)
+      if (data.trackingUrl) {
+        finalHtml = finalHtml.replace(/\{\{tracking_link\}\}/g, data.trackingUrl)
+      }
+    }
+
     const formData = new FormData()
     formData.append('from', `Fanzone12.com <${MAILGUN_FROM_EMAIL}>`)
     formData.append('to', data.customerEmail)
     formData.append('subject', `🚚 Order #${data.orderNumber} Shipped - fanzone12.com`)
-    formData.append('html', emailHtml)
+    formData.append('html', finalHtml)
 
     const response = await fetch(`https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`, {
       method: 'POST',
@@ -456,3 +486,12 @@ export async function sendShippingConfirmationEmail(data: {
     throw error
   }
 }
+
+// Export additional email functions
+export { 
+  sendPaymentFailedEmail,
+  sendOrderDeliveredEmail,
+  sendOrderCancelledEmail,
+  sendPasswordResetEmail,
+  sendAccountCreatedEmail
+} from './mailgun-extra'

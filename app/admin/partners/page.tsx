@@ -582,7 +582,7 @@ export default function PartnersPage() {
             </div>
           )}
 
-          {/* Paginação */}
+          {/* Pagination */}
           {totalPages > 1 && (
             <div className="flex items-center justify-between mt-6">
               <div className="text-sm text-muted-foreground">

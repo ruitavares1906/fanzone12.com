@@ -32,8 +32,8 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
     if (rating === 0) {
       setRatingError(true)
       toast({
-        title: "Classificação obrigatória",
-        description: "Por favor, selecione uma classificação clicando nas estrelas.",
+        title: "Rating required",
+        description: "Please select a rating by clicking on the stars.",
         variant: "destructive",
       })
       return
@@ -44,8 +44,8 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
 
     if (!termsAccepted) {
       toast({
-        title: "Erro",
-        description: "Por favor, aceite os termos e condições.",
+        title: "Error",
+        description: "Please accept the terms and conditions.",
         variant: "destructive",
       })
       return
@@ -57,8 +57,8 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
     if (!productId || productId.trim() === '') {
       console.error("Product ID inválido:", productId)
       toast({
-        title: "Erro",
-        description: "ID do produto inválido. Por favor, recarregue a página.",
+        title: "Error",
+        description: "Invalid product ID. Please reload the page.",
         variant: "destructive",
       })
       setIsSubmitting(false)
@@ -95,8 +95,8 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
       }
 
       toast({
-        title: "Avaliação enviada",
-        description: "Obrigado pela sua avaliação! Ela já está publicada.",
+        title: "Review submitted",
+        description: "Thank you for your review! It has been published.",
       })
 
       // Limpar formulário
@@ -133,14 +133,14 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
         })
         
         toast({
-          title: "Erro",
-          description: `Erro específico: ${supabaseError.message || 'Erro desconhecido'}`,
+          title: "Error",
+          description: `Specific error: ${supabaseError.message || 'Unknown error'}`,
           variant: "destructive",
         })
       } else {
         toast({
-          title: "Erro",
-          description: "Ocorreu um erro ao enviar a avaliação. Por favor, tente novamente.",
+          title: "Error",
+          description: "An error occurred while submitting the review. Please try again.",
           variant: "destructive",
         })
       }
@@ -151,11 +151,11 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
 
   return (
     <div className="bg-gray-50 p-6 rounded-lg border">
-      <h3 className="text-lg font-medium mb-4">Escreva uma Avaliação</h3>
+      <h3 className="text-lg font-medium mb-4">Write a Review</h3>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Classificação <span className="text-red-500">*</span>
+            Rating <span className="text-red-500">*</span>
           </label>
           <div className={`flex gap-1 ${ratingError ? 'p-2 border border-red-300 rounded-md bg-red-50' : ''}`}>
             {[1, 2, 3, 4, 5].map((star) => (
@@ -183,7 +183,7 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
             ))}
             {rating > 0 && (
               <span className="ml-2 text-sm text-gray-600">
-                {["", "Péssimo", "Fraco", "Médio", "Bom", "Excelente"][rating]}
+                {["", "Terrible", "Poor", "Average", "Good", "Excellent"][rating]}
               </span>
             )}
           </div>
@@ -192,47 +192,47 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
               <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
               </svg>
-              Selecione uma classificação clicando nas estrelas
+              Please select a rating by clicking on the stars
             </p>
           )}
         </div>
 
         <div>
           <label htmlFor="review-title" className="block text-sm font-medium text-gray-700 mb-1">
-            Título
+            Title
           </label>
           <Input
             id="review-title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Resuma sua avaliação em uma frase"
+            placeholder="Summarize your review in one sentence"
             required
           />
         </div>
 
         <div>
           <label htmlFor="review-content" className="block text-sm font-medium text-gray-700 mb-1">
-            Avaliação
+            Review
           </label>
           <Textarea
             id="review-content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
             rows={4}
-            placeholder="O que você achou deste produto? Compartilhe sua experiência."
+            placeholder="What did you think of this product? Share your experience."
             required
           />
         </div>
 
         <div>
           <label htmlFor="review-name" className="block text-sm font-medium text-gray-700 mb-1">
-            Nome
+            Name
           </label>
           <Input
             id="review-name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Seu nome"
+            placeholder="Your name"
             required
           />
         </div>
@@ -246,7 +246,7 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Seu email (não será publicado)"
+            placeholder="Your email (will not be published)"
             required
           />
         </div>
@@ -261,12 +261,12 @@ export function ReviewForm({ productId, onSuccess }: ReviewFormProps) {
             htmlFor="review-terms"
             className="text-sm text-gray-700 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
           >
-            Concordo com os termos e condições e política de privacidade
+            I agree with the terms and conditions and privacy policy
           </label>
         </div>
 
         <Button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "A enviar..." : "Enviar Avaliação"}
+          {isSubmitting ? "Sending..." : "Submit Review"}
         </Button>
       </form>
     </div>

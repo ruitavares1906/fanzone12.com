@@ -566,8 +566,8 @@ export default async function Home() {
               </Link>
             </div>
 
-            {/* Mobile Extra Cards: Sneakers e Capas */}
-            <div className="md:hidden grid grid-cols-2 gap-4">
+            {/* Mobile Extra Cards: Sneakers */}
+            <div className="md:hidden">
               {/* Sneakers Mobile */}
               <Link href="/sneakers" className="group block">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
@@ -577,7 +577,7 @@ export default async function Home() {
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     quality={75}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -595,37 +595,9 @@ export default async function Home() {
                   </div>
                 </div>
               </Link>
-
-              {/* Capas Mobile */}
-              <Link href="/catalogo/capas" className="group block">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
-                  <Image 
-                    src="/images/personalized-soccer-01-caseitup-6617908.webp"
-                    alt="Capas de Telemóvel"
-                    fill
-                    className="object-cover transition-all duration-500 group-hover:scale-110"
-                    loading="lazy"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw"
-                    quality={75}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
-                    <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      New
-                    </Badge>
-                    <h3 className="font-bold text-sm mb-1 group-hover:text-blue-300 transition-colors line-clamp-1">
-                      Phone Cases
-                    </h3>
-                    <p className="text-blue-200 text-xs mb-1">Free customization</p>
-                    <span className="text-lg font-black text-white">
-                      11.99€
-                    </span>
-                  </div>
-                </div>
-              </Link>
             </div>
 
-            {/* Extra Desktop Cards: Sneakers e Capas */}
+            {/* Extra Desktop Cards: Sneakers */}
             <div className="hidden md:grid md:grid-cols-4 gap-6">
               {/* Sneakers */}
               <Link href="/sneakers" className="group block">
@@ -649,32 +621,6 @@ export default async function Home() {
                     </h3>
                     <p className="text-orange-200 text-sm mb-1.5">Sneakers collection</p>
                     <span className="text-xl font-black text-white">View collection</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Capas de Telemóvel */}
-              <Link href="/catalogo/capas" className="group block">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-md">
-                  <Image
-                    src="/images/personalized-soccer-01-caseitup-6617908.webp"
-                    alt="Capas de Telemóvel"
-                    fill
-                    className="object-cover transition-all duration-500 group-hover:scale-110"
-                    loading="lazy"
-                    sizes="25vw"
-                    quality={85}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      New
-                    </Badge>
-                    <h3 className="font-bold text-lg mb-1.5 group-hover:text-blue-300 transition-colors">
-                      Phone Cases
-                    </h3>
-                    <p className="text-blue-200 text-sm mb-1.5">Free customization</p>
-                    <span className="text-xl font-black text-white">11.99€</span>
                   </div>
                 </div>
               </Link>
@@ -1018,7 +964,7 @@ export default async function Home() {
               Best Sellers
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Descubra as camisolas mais populares escolhidas pelos nossos clientes
+              Discover the most popular jerseys chosen by our customers
             </p>
           </div>
 
@@ -2995,23 +2941,23 @@ export default async function Home() {
                 <Search className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">
-                Não encontrou a camisola que procura?
+                Can't find the jersey you're looking for?
               </h2>
               <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-                Temos um catálogo completo com mais de <span className="font-bold text-blue-600">5000 camisolas</span> que não estão aqui publicadas!
+                We have a complete catalog with over <span className="font-bold text-blue-600">5000 jerseys</span> that are not published here!
               </p>
             </div>
             
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8">
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">Como proceder:</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">How to proceed:</h3>
               <div className="grid md:grid-cols-2 gap-4 sm:gap-6 text-left">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white font-bold text-xs sm:text-sm">1</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">Veja o catálogo completo na Drive</h4>
-                    <p className="text-gray-600 text-xs sm:text-sm">Temos milhares de modelos adicionais. Consulte aqui:</p>
+                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">View the full catalog on Drive</h4>
+                    <p className="text-gray-600 text-xs sm:text-sm">We have thousands of additional models. Check here:</p>
                     <div className="mt-2">
                       <a 
                         href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" 
@@ -3020,7 +2966,7 @@ export default async function Home() {
                         className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-blue-700 bg-blue-50 border border-blue-200 rounded-full hover:bg-blue-100 transition-colors"
                       >
                         <Search className="w-3 h-3 sm:w-4 sm:h-4" />
-                        Abrir catálogo na Drive
+                        Open catalog on Drive
                       </a>
                     </div>
                   </div>
@@ -3030,8 +2976,8 @@ export default async function Home() {
                     <span className="text-white font-bold text-xs sm:text-sm">2</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">Se não encontrar, fale connosco</h4>
-                    <p className="text-gray-600 text-xs sm:text-sm">Envie-nos uma mensagem com clube, temporada e modelo pretendido.</p>
+                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">If you can't find it, contact us</h4>
+                    <p className="text-gray-600 text-xs sm:text-sm">Send us a message with club, season and desired model.</p>
                   </div>
                 </div>
               </div>
@@ -3043,7 +2989,7 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
-                Enviar mensagem
+                Send message
               </a>
               <a 
                 href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" 

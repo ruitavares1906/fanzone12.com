@@ -17,7 +17,6 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Sneakers", href: "/sneakers" },
-    { name: "Phone Cases", href: "/catalogo/capas" },
     { name: "Clubs", href: "/catalogo" },
     { name: "Retro", href: "/catalogo?categoria=retro" },
     { name: "National Teams", href: "/catalogo?categoria=selecoes" },
@@ -74,8 +73,6 @@ export function Navbar() {
                      ? "text-blue-600 bg-gray-100" 
                      : link.name === "Sneakers"
                      ? "text-orange-600 hover:text-orange-700 font-bold"
-                     : link.name === "Capas de Telemóvel"
-                     ? "text-sky-600 hover:text-sky-700 font-bold"
                      : link.name === "Retro"
                      ? "text-amber-600 hover:text-amber-700 font-bold"
                      : link.name === "Seleções"
@@ -101,11 +98,6 @@ export function Navbar() {
                           <div className="flex items-center gap-2">
                             <span>{link.name}</span>
                              <Footprints className="w-4 h-4 md:animate-bounce motion-reduce:animate-none" />
-                          </div>
-                        ) : link.name === "Phone Cases" ? (
-                          <div className="flex items-center gap-2">
-                            <span>{link.name}</span>
-                            <span className="text-lg">📱</span>
                           </div>
                         ) : (
                           link.name
@@ -179,8 +171,6 @@ export function Navbar() {
                      ? "text-blue-600 bg-gray-100 shadow-lg" 
                      : link.name === "Sneakers"
                      ? "text-orange-600 hover:text-orange-700 font-bold"
-                     : link.name === "Phone Cases"
-                     ? "text-sky-600 hover:text-sky-700 font-bold"
                      : link.name === "Retro"
                      ? "text-amber-600 hover:text-amber-700 font-bold"
                      : link.name === "National Teams"
@@ -206,11 +196,6 @@ export function Navbar() {
                   <div className="flex items-center gap-2">
                     <span>{link.name}</span>
                     <Footprints className="w-4 h-4 md:animate-bounce motion-reduce:animate-none" />
-                  </div>
-                ) : link.name === "Phone Cases" ? (
-                  <div className="flex items-center gap-2">
-                    <span>{link.name}</span>
-                    <span className="text-lg">📱</span>
                   </div>
                 ) : (
                   link.name

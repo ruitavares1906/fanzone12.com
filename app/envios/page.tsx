@@ -53,10 +53,11 @@ export default function EnviosPage() {
                   <p className="text-black mb-4">We work with the following delivery partners:</p>
                   <div className="space-y-3">
                     {[
-                      { name: "CTT", color: "from-blue-500 to-blue-600" },
-                      { name: "CTT Expresso", color: "from-green-500 to-green-600" },
                       { name: "DHL", color: "from-yellow-500 to-orange-500" },
-                      { name: "UPS", color: "from-amber-600 to-yellow-600" }
+                      { name: "UPS", color: "from-amber-600 to-yellow-600" },
+                      { name: "FedEx", color: "from-blue-500 to-indigo-600" },
+                      { name: "DPD", color: "from-red-500 to-pink-600" },
+                      { name: "GLS", color: "from-green-500 to-emerald-600" }
                     ].map((partner, index) => (
                       <div key={index} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
                         <div className={`w-3 h-3 bg-gradient-to-r ${partner.color} rounded-full`}></div>
@@ -78,8 +79,6 @@ export default function EnviosPage() {
                   <p className="text-black mb-4">Estimated delivery times are:</p>
                   <div className="space-y-3">
                     {[
-                      { location: "Mainland Portugal", time: "7-12 business days", color: "bg-green-50 text-green-700 border-green-200" },
-                      { location: "Islands (Madeira and Azores)", time: "10-15 business days", color: "bg-blue-50 text-blue-700 border-blue-200" },
                       { location: "Europe", time: "7-12 business days", color: "bg-purple-50 text-purple-700 border-purple-200" },
                       { location: "Rest of World", time: "10-15 business days", color: "bg-orange-50 text-orange-700 border-orange-200" }
                     ].map((item, index) => (

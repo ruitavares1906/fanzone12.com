@@ -50,7 +50,10 @@ export async function POST(request: Request) {
           await sendShippingConfirmationEmail({
             orderNumber: order.order_number || order.id.substring(0, 8),
             customerName: order.customer_name || order.email,
-            customerEmail: order.email
+            customerEmail: order.email,
+            carrier: order.carrier,
+            trackingNumber: order.tracking_number,
+            trackingUrl: order.tracking_url
           })
         } else if (field === 'payment_status' && value === 'paid') {
           // Para confirmação de pagamento, podemos enviar um email personalizado

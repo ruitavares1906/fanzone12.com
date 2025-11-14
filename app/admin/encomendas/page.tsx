@@ -14,6 +14,7 @@ import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 import { useToast } from "@/components/ui/use-toast"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import { shippingCarriers, getTrackingUrl, getCarrierLabel } from "@/lib/shipping-carriers"
 
 export default function OrdersPage() {
   const [orders, setOrders] = useState<any[]>([])
@@ -29,6 +30,7 @@ export default function OrdersPage() {
   const [ordersPerPage] = useState(20)
   const { toast } = useToast()
   const [trackingInputs, setTrackingInputs] = useState<{[key: string]: string}>({})
+  const [carrierInputs, setCarrierInputs] = useState<{[key: string]: string}>({})
   const [trackingLoading, setTrackingLoading] = useState<{[key: string]: boolean}>({})
   const [paymentInputs, setPaymentInputs] = useState<{[key: string]: string}>({})
   const [paymentLoading, setPaymentLoading] = useState<{[key: string]: boolean}>({})
@@ -48,7 +50,7 @@ export default function OrdersPage() {
     return matchesSearch && matchesStatus && matchesPaymentStatus
   })
 
-  // Calcular paginação
+  // Calcular Pagination
   const totalPages = Math.ceil(filteredOrders.length / ordersPerPage)
   const startIndex = (currentPage - 1) * ordersPerPage
   const endIndex = startIndex + ordersPerPage
@@ -211,11 +213,11 @@ export default function OrdersPage() {
     try {
       const order = orders.find((o) => o.id === orderId)
 
-      if (!order.tracking_number || !order.estimated_delivery) {
+      if (!order.tracking_number || !order.carrier) {
         toast({
           variant: "destructive",
           title: "Informações incompletas",
-          description: "Esta encomenda não tem número de rastreio ou data estimada de entrega.",
+          description: "Esta encomenda não tem número de rastreio ou transportadora selecionada.",
         })
         return
       }
@@ -228,7 +230,8 @@ export default function OrdersPage() {
         body: JSON.stringify({
           orderId: orderId,
           trackingNumber: order.tracking_number,
-          estimatedDelivery: order.estimated_delivery,
+          carrier: order.carrier,
+          estimatedDelivery: order.estimated_delivery || "7 a 12 dias úteis",
         }),
       })
 
@@ -331,7 +334,15 @@ export default function OrdersPage() {
   // Função para atualizar o número de rastreio e enviar email
   const handleSaveTracking = async (order: any) => {
     const trackingNumber = trackingInputs[order.id]?.trim()
-    if (!trackingNumber) return
+    const carrier = carrierInputs[order.id]
+    if (!trackingNumber || !carrier) {
+      toast({ 
+        variant: "destructive", 
+        title: "Informações incompletas", 
+        description: "Por favor, selecione a transportadora e insira o número de rastreio." 
+      })
+      return
+    }
     setTrackingLoading(prev => ({ ...prev, [order.id]: true }))
     try {
       // Atualizar encomenda e enviar email
@@ -341,6 +352,7 @@ export default function OrdersPage() {
         body: JSON.stringify({
           orderId: order.id,
           trackingNumber,
+          carrier,
           estimatedDelivery: "7 a 12 dias úteis"
         })
       })
@@ -348,6 +360,7 @@ export default function OrdersPage() {
       if (result.success) {
         toast({ title: "Rastreio enviado", description: "O email de envio foi enviado ao cliente!" })
         setTrackingInputs(prev => ({ ...prev, [order.id]: "" }))
+        setCarrierInputs(prev => ({ ...prev, [order.id]: "" }))
         await fetchOrders()
       } else {
         throw new Error(result.error || "Erro ao enviar email")
@@ -647,16 +660,35 @@ export default function OrdersPage() {
                       </TableCell>
                       <TableCell>
                         {order.tracking_number ? (
-                          <a
-                            href={`https://www.cttexpress.com/localizador-de-envios/?sc=${order.tracking_number}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
-                          >
-                            {order.tracking_number}
-                          </a>
+                          order.tracking_url ? (
+                            <a
+                              href={order.tracking_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-600 hover:underline"
+                            >
+                              {order.tracking_number} {order.carrier ? `(${getCarrierLabel(order.carrier)})` : ''}
+                            </a>
+                          ) : (
+                            <span className="text-gray-600">{order.tracking_number}</span>
+                          )
                         ) : (
                           <div className="flex gap-2 items-center">
+                            <Select 
+                              value={carrierInputs[order.id] || ""} 
+                              onValueChange={(value) => setCarrierInputs(prev => ({ ...prev, [order.id]: value }))}
+                            >
+                              <SelectTrigger className="w-32 h-8 text-xs">
+                                <SelectValue placeholder="Transportadora" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                {shippingCarriers.map((carrier) => (
+                                  <SelectItem key={carrier.id} value={carrier.id}>
+                                    {carrier.label}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
                             <input
                               type="text"
                               placeholder="Nº rastreio"
@@ -669,7 +701,7 @@ export default function OrdersPage() {
                               size="sm"
                               variant="outline"
                               onClick={() => handleSaveTracking(order)}
-                              disabled={trackingLoading[order.id] || !(trackingInputs[order.id]?.trim())}
+                              disabled={trackingLoading[order.id] || !(trackingInputs[order.id]?.trim()) || !carrierInputs[order.id]}
                               className="px-2"
                             >
                               {trackingLoading[order.id] ? "A enviar..." : "Enviar"}
@@ -779,14 +811,18 @@ export default function OrdersPage() {
                         <div className="mt-1">
                           {order.tracking_number ? (
                             <div className="flex items-center gap-2">
-                              <a
-                                href={`https://www.ctt.pt/particulares/enviar/rastrear-envios?trackingNumber=${order.tracking_number}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 hover:text-blue-800 text-xs underline"
-                              >
-                                {order.tracking_number}
-                              </a>
+                              {order.tracking_url ? (
+                                <a
+                                  href={order.tracking_url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600 hover:text-blue-800 text-xs underline"
+                                >
+                                  {order.tracking_number} {order.carrier ? `(${getCarrierLabel(order.carrier)})` : ''}
+                                </a>
+                              ) : (
+                                <span className="text-gray-600 text-xs">{order.tracking_number}</span>
+                              )}
                               <Button
                                 size="sm"
                                 variant="outline"
@@ -797,24 +833,41 @@ export default function OrdersPage() {
                               </Button>
                             </div>
                           ) : (
-                            <div className="flex items-center gap-2">
-                              <input
-                                type="text"
-                                placeholder="Número de rastreio"
-                                className="border rounded px-2 py-1 text-xs flex-1"
-                                value={trackingInputs[order.id] || ""}
-                                onChange={e => setTrackingInputs(prev => ({ ...prev, [order.id]: e.target.value }))}
-                                disabled={trackingLoading[order.id]}
-                              />
-                              <Button
-                                size="sm"
-                                variant="outline"
-                                onClick={() => handleSaveTracking(order)}
-                                disabled={trackingLoading[order.id] || !trackingInputs[order.id]?.trim()}
-                                className="px-2 text-xs"
+                            <div className="space-y-2">
+                              <Select 
+                                value={carrierInputs[order.id] || ""} 
+                                onValueChange={(value) => setCarrierInputs(prev => ({ ...prev, [order.id]: value }))}
                               >
-                                {trackingLoading[order.id] ? "..." : "Enviar"}
-                              </Button>
+                                <SelectTrigger className="w-full h-8 text-xs">
+                                  <SelectValue placeholder="Selecione transportadora" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  {shippingCarriers.map((carrier) => (
+                                    <SelectItem key={carrier.id} value={carrier.id}>
+                                      {carrier.label}
+                                    </SelectItem>
+                                  ))}
+                                </SelectContent>
+                              </Select>
+                              <div className="flex items-center gap-2">
+                                <input
+                                  type="text"
+                                  placeholder="Número de rastreio"
+                                  className="border rounded px-2 py-1 text-xs flex-1"
+                                  value={trackingInputs[order.id] || ""}
+                                  onChange={e => setTrackingInputs(prev => ({ ...prev, [order.id]: e.target.value }))}
+                                  disabled={trackingLoading[order.id]}
+                                />
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  onClick={() => handleSaveTracking(order)}
+                                  disabled={trackingLoading[order.id] || !trackingInputs[order.id]?.trim() || !carrierInputs[order.id]}
+                                  className="px-2 text-xs"
+                                >
+                                  {trackingLoading[order.id] ? "..." : "Enviar"}
+                                </Button>
+                              </div>
                             </div>
                           )}
                         </div>
@@ -838,7 +891,7 @@ export default function OrdersPage() {
         </CardContent>
       </Card>
 
-      {/* Paginação */}
+      {/* Pagination */}
       {totalPages > 1 && (
         <Card>
           <CardContent className="p-4">

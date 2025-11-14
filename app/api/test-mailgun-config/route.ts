@@ -50,7 +50,7 @@ export async function GET() {
     try {
       // Testar envio de email
       const testEmail = {
-        from: MAILGUN_FROM_EMAIL || "test@fanzone12.pt",
+        from: MAILGUN_FROM_EMAIL || "sales@fanzone12.com",
         to: "test@example.com",
         subject: "Teste de Configuração Mailgun",
         text: "Este é um teste de configuração do Mailgun"

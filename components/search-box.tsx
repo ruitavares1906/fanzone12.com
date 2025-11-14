@@ -178,7 +178,7 @@ export function SearchBox({
                           </span>
                         )}
                         <Badge variant="secondary" className="bg-green-700 text-white text-xs shadow-lg">
-                          Em Stock
+                          In Stock
                         </Badge>
                       </div>
                     </div>

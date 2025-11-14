@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export const metadata = {
   title: "Novidades 2024/25 | fanzone12.pt",
-  description: "Descubra as novas camisolas da temporada 2024/25 dos principais clubes portugueses e europeus.",
+  description: "Discover the new jerseys da temporada 2024/25 dos principais clubes portugueses e europeus.",
 }
 
 export default async function NovidadesPage() {
@@ -17,7 +17,7 @@ export default async function NovidadesPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900">Novidades</h1>
         <p className="mt-4 text-lg text-gray-600">
-          Descubra as novas camisolas para a temporada 2025/26
+          Discover the new jerseys para a temporada 2025/26
         </p>
       </div>
 

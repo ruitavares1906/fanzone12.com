@@ -39,15 +39,15 @@ export function ProductCard({ product, href, index = 0, variant = 'default' }: P
           )}
           {isEdicaoEspecial ? (
             <Badge variant="secondary" className="absolute bottom-2 right-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs shadow-lg font-bold">
-              🏆 Mais Vendido
+              🏆 Best Seller
             </Badge>
           ) : product.preVenda ? (
             <Badge variant="secondary" className={`absolute bottom-2 right-2 ${isDark ? 'bg-purple-700 text-white' : 'bg-purple-600 text-white'} text-xs shadow-lg`}>
-              Pré-venda
+              Pre-order
             </Badge>
           ) : (
             <Badge variant="secondary" className={`absolute bottom-2 right-2 ${isDark ? 'bg-green-700 text-white' : 'bg-green-600 text-white'} text-xs shadow-lg`}>
-              Em Stock
+              In Stock
             </Badge>
           )}
         </div>

@@ -530,14 +530,14 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                   <div className="flex items-center gap-4">
                     {produto.precoAntigo && (
                       <div className="text-center">
-                        <p className="text-xs text-muted-foreground mb-1">Preço Anterior</p>
+                        <p className="text-xs text-muted-foreground mb-1">Previous Price</p>
                         <span className="text-lg font-bold text-muted-foreground line-through bg-destructive/10 px-3 py-1 rounded-lg border border-destructive/30">
                           {produto.precoAntigo}€
                         </span>
                       </div>
                     )}
                     <div className="text-center">
-                      <p className="text-xs text-muted-foreground mb-3">Preço Atual</p>
+                      <p className="text-xs text-muted-foreground mb-3">Current Price</p>
                       <span className="text-4xl font-extrabold text-primary bg-background px-4 py-2 rounded-lg shadow-sm border border-primary/30">
                         {produto.preco}€
                       </span>
@@ -546,9 +546,9 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                   
                   <div className="flex items-center gap-2">
                     {produto.preVenda ? (
-                      <Badge className="bg-purple-500 text-white px-3 py-1 text-sm">Pré-venda</Badge>
+                      <Badge className="bg-purple-500 text-white px-3 py-1 text-sm">Pre-order</Badge>
                     ) : (
-                      <Badge className="bg-green-500 text-white px-3 py-1 text-sm">✓ Em Stock</Badge>
+                      <Badge className="bg-green-500 text-white px-3 py-1 text-sm">✓ In Stock</Badge>
                     )}
                   </div>
                 </div>
@@ -934,29 +934,14 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                 <svg viewBox="0 0 24 24" className="h-5 w-5 text-primary" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h4a1 1 0 011 1v2a1 1 0 01-1 1h-4v8a1 1 0 01-1 1H9a1 1 0 01-1-1v-8H4a1 1 0 01-1-1V8a1 1 0 011-1h4z" stroke="currentColor" strokeWidth="2"/>
                 </svg>
-                Informações de Envio e Devolução
+                Shipping and Return Information
               </h3>
               
               {/* Seção de Envio */}
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-100">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="bg-blue-100 p-2 rounded-lg">
-                      <Image 
-                        src="/images/CTT_LOGO.webp" 
-                        alt="CTT" 
-                        width={32} 
-                        height={16}
-                        className="object-contain"
-                        loading="lazy"
-                        sizes="32px"
-                        quality={85}
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Delivery via CTT®</h4>
-                      <p className="text-sm text-purple-600 font-medium">✨ Free shipping on 3 products or €68+</p>
-                    </div>
+                  <div className="mb-3">
+                    <p className="text-sm text-purple-600 font-medium">✨ Free shipping on 3 products or €68+</p>
                   </div>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1002,8 +987,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900">Compra Garantida</h4>
-                        <p className="text-sm text-amber-700">Satisfeito ou devolvemos o dinheiro</p>
+                        <h4 className="font-semibold text-gray-900">Purchase Guarantee</h4>
+                        <p className="text-sm text-amber-700">Satisfied or money back</p>
                       </div>
                     </div>
                   </div>
@@ -1125,12 +1110,12 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
 
               <div className="border-t pt-6">
                 <div className="flex justify-between items-center mb-6">
-                  <h3 className="text-lg font-medium">Comentários dos clientes</h3>
+                  <h3 className="text-lg font-medium">Customer Comments</h3>
                   <div className="flex gap-2">
                     <select className="px-3 py-1 border border-gray-300 rounded-md text-sm">
-                      <option>Mais recentes</option>
-                      <option>Melhor classificação</option>
-                      <option>Pior classificação</option>
+                      <option>Most recent</option>
+                      <option>Best rating</option>
+                      <option>Worst rating</option>
                     </select>
                   </div>
                 </div>
@@ -1141,8 +1126,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                   </div>
                 ) : avaliacoes.length === 0 ? (
                   <div className="text-center py-8">
-                    <p className="text-gray-500">Ainda não há avaliações para este produto.</p>
-                    <p className="text-gray-500 mt-2">Seja o primeiro a avaliar!</p>
+                    <p className="text-gray-500">There are no reviews for this product yet.</p>
+                    <p className="text-gray-500 mt-2">Be the first to review!</p>
                   </div>
                 ) : (
                   <div className="space-y-6">
@@ -1191,7 +1176,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                             <span className="font-medium">{avaliacao.nome}</span>
                             {avaliacao.is_admin_reply && (
                               <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                                Loja
+                                Store
                               </span>
                             )}
                           </div>
@@ -1218,7 +1203,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                             onClick={() => setReplyingTo(replyingTo === avaliacao.id ? null : avaliacao.id)}
                             className="text-gray-500 hover:text-gray-700"
                           >
-                            Responder
+                            Reply
                           </button>
                           
                           {avaliacao.respostas && avaliacao.respostas.length > 0 && (
@@ -1227,8 +1212,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                               className="text-blue-600 hover:text-blue-800"
                             >
                               {expandedReplies.has(avaliacao.id) 
-                                ? `Ocultar ${avaliacao.respostas.length} resposta${avaliacao.respostas.length > 1 ? 's' : ''}`
-                                : `Ver ${avaliacao.respostas.length} resposta${avaliacao.respostas.length > 1 ? 's' : ''}`
+                                ? `Hide ${avaliacao.respostas.length} ${avaliacao.respostas.length > 1 ? 'replies' : 'reply'}`
+                                : `View ${avaliacao.respostas.length} ${avaliacao.respostas.length > 1 ? 'replies' : 'reply'}`
                               }
                             </button>
                           )}
@@ -1314,7 +1299,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                         disabled={currentPage === 1}
                         className="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50"
                       >
-                        Anterior
+                        Previous
                       </button>
                       {[...Array(totalPages)].map((_, i) => (
                         <button
@@ -1332,7 +1317,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                         disabled={currentPage === totalPages}
                         className="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50"
                       >
-                        Próxima
+                        Next
                       </button>
                     </nav>
                   </div>

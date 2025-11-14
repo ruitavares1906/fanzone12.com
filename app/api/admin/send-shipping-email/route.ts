@@ -4,6 +4,7 @@ import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 import Mailgun from 'mailgun.js'
 import FormData from 'form-data'
+import { getTrackingUrl, getCarrierLabel } from "@/lib/shipping-carriers"
 
 // Configurar Mailgun
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || ""
@@ -21,7 +22,7 @@ function createMailgunClient() {
 
 export async function POST(request: Request) {
   try {
-    const { orderId, trackingNumber, estimatedDelivery } = await request.json()
+    const { orderId, trackingNumber, carrier, estimatedDelivery } = await request.json()
     
     if (!orderId) {
       return NextResponse.json(
@@ -36,6 +37,17 @@ export async function POST(request: Request) {
         { status: 400 }
       )
     }
+    
+    if (!carrier) {
+      return NextResponse.json(
+        { success: false, error: "Carrier is required" },
+        { status: 400 }
+      )
+    }
+    
+    // Gerar link de tracking
+    const trackingUrl = getTrackingUrl(carrier, trackingNumber)
+    const carrierName = getCarrierLabel(carrier)
     
     // Buscar dados do pedido
     const { data: order, error: orderError } = await supabaseAdmin
@@ -58,11 +70,13 @@ export async function POST(request: Request) {
       )
     }
     
-    // Atualizar o tracking number na base de dados
+    // Atualizar o tracking number e carrier na base de dados
     const { error: updateError } = await supabaseAdmin
       .from('orders')
       .update({ 
         tracking_number: trackingNumber,
+        carrier: carrier,
+        tracking_url: trackingUrl,
         status: 'shipped',
         updated_at: new Date().toISOString()
       })
@@ -88,17 +102,19 @@ export async function POST(request: Request) {
               <p>Hello ${order.customer_name || 'Customer'},</p>
               <p>Great news! Your order #${order.order_number} has been shipped and is on its way!</p>
               
-              ${trackingNumber ? `
+              ${trackingNumber && carrier ? `
                 <div style="background-color: #f0f9ff; padding: 15px; border-radius: 6px; margin: 15px 0;">
                   <h3 style="color: #0369a1; margin: 0 0 10px 0;">📦 Tracking Information</h3>
-                  <p style="margin: 5px 0;"><strong>Tracking Code:</strong> ${trackingNumber}</p>
-                  <p style="margin: 5px 0;"><strong>Carrier:</strong> ${order.carrier || 'International Shipping'}</p>
-                  <p style="margin: 10px 0;">
-                    <a href="${order.tracking_url || `#`}" 
-                       style="background-color: #2563eb; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 600;">
-                      🔍 Track Order
-                    </a>
-                  </p>
+                  <p style="margin: 5px 0;"><strong>Carrier:</strong> ${carrierName}</p>
+                  <p style="margin: 5px 0;"><strong>Tracking Number:</strong> ${trackingNumber}</p>
+                  ${trackingUrl ? `
+                    <p style="margin: 10px 0;">
+                      <a href="${trackingUrl}" 
+                         style="background-color: #2563eb; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 600;">
+                        🔍 Track Order
+                      </a>
+                    </p>
+                  ` : ''}
                 </div>
               ` : ''}
               
@@ -135,11 +151,11 @@ export async function POST(request: Request) {
         
         Great news! Your order #${order.order_number} has been shipped and is on its way!
         
-        ${trackingNumber ? `
+        ${trackingNumber && carrier ? `
         Tracking Information:
-        Tracking Code: ${trackingNumber}
-        Carrier: ${order.carrier || 'International Shipping'}
-        Tracking Link: ${order.tracking_url || 'N/A'}
+        Carrier: ${carrierName}
+        Tracking Number: ${trackingNumber}
+        Tracking Link: ${trackingUrl || 'N/A'}
         ` : ''}
         
         DELIVERY INFORMATION:

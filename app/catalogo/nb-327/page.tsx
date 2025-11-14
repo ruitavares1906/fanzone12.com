@@ -40,7 +40,7 @@ async function NB327Content({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center gap-4 mb-8">
           <Link href="/sneakers/new-balance" className="text-green-600 hover:text-green-800 transition-colors">
-            ← Voltar aos Sneakers New Balance
+            ← Back to Sneakers New Balance
           </Link>
         </div>
 
@@ -58,18 +58,18 @@ async function NB327Content({
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900">
-                  Produtos Disponíveis
+                  Available Products
                 </h2>
                 <p className="text-gray-600 mt-1">
-                  {total} produto{total !== 1 ? 's' : ''} encontrado{total !== 1 ? 's' : ''}
+                  {total} product{total !== 1 ? 's' : ''} found
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <Badge className="bg-green-100 text-green-800">
-                  Em Stock
+                  In Stock
                 </Badge>
                 <Badge className="bg-gray-100 text-gray-800">
-                  Tamanhos 36-45
+                  Sizes 36-45
                 </Badge>
               </div>
             </div>

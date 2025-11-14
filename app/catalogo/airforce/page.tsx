@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export const metadata = {
   title: "Nike Air Force 1 | fanzone12.pt",
-  description: "Descubra a nossa coleção exclusiva de Nike Air Force 1 na fanzone12.pt. Sneakers originais com designs únicos e qualidade premium.",
+  description: "Discover our collection exclusiva de Nike Air Force 1 na fanzone12.pt. Sneakers originais com designs únicos e qualidade premium.",
 }
 
 export default async function AirForcePage({
@@ -34,7 +34,7 @@ export default async function AirForcePage({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center gap-4 mb-8">
           <Link href="/sneakers/nike" className="text-orange-600 hover:text-orange-800 transition-colors">
-            ← Voltar aos Sneakers Nike
+            ← Back to Nike Sneakers
           </Link>
         </div>
         
@@ -43,7 +43,7 @@ export default async function AirForcePage({
             Nike Air Force 1
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Descubra a nossa coleção exclusiva de Nike Air Force 1. Sneakers originais com designs únicos e qualidade premium.
+            Discover our exclusive collection of Nike Air Force 1. Original sneakers with unique designs and premium quality.
           </p>
         </div>
 
@@ -53,18 +53,18 @@ export default async function AirForcePage({
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900">
-                  Todos os Produtos Air Force 1
+                  All Air Force 1 Products
                 </h2>
                 <p className="text-gray-600 mt-1">
-                  {total} produto{total !== 1 ? 's' : ''} encontrado{total !== 1 ? 's' : ''}
+                  {total} product{total !== 1 ? 's' : ''} found
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <Badge className="bg-green-100 text-green-800">
-                  Em Stock
+                  In Stock
                 </Badge>
                 <Badge className="bg-orange-100 text-orange-800">
-                  Tamanhos 36-45
+                  Sizes 36-45
                 </Badge>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default async function AirForcePage({
               ))}
             </div>
 
-            {/* Paginação */}
+            {/* Pagination */}
             {total > porPagina && (
               <div className="mt-12">
                 <Pagination
@@ -95,16 +95,16 @@ export default async function AirForcePage({
                 <span className="text-2xl">👟</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Nenhum produto encontrado
+                No products found
               </h3>
               <p className="text-gray-600 mb-4">
-                Não encontramos produtos Air Force 1 no momento.
+                We could not find any Air Force 1 products at the moment.
               </p>
               <Link 
                 href="/sneakers/nike"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-block"
               >
-                Voltar aos Sneakers Nike
+                Back to Nike Sneakers
               </Link>
             </div>
           </div>

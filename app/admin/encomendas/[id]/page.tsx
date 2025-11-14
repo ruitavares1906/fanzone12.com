@@ -54,6 +54,7 @@ import { useToast } from "@/components/ui/use-toast"
 import { supabase } from "@/lib/supabase"
 import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
+import { shippingCarriers, getTrackingUrl, getCarrierLabel } from "@/lib/shipping-carriers"
 
 export default function OrderDetailsPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params)
@@ -71,6 +72,7 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
   const [paymentStatus, setPaymentStatus] = useState("")
   const [estimatedDelivery, setEstimatedDelivery] = useState("")
   const [shippingMethod, setShippingMethod] = useState("")
+  const [carrier, setCarrier] = useState("")
   const [notes, setNotes] = useState("")
 
   useEffect(() => {
@@ -94,6 +96,7 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
         setPaymentStatus(orderDetails.payment_status || "")
         setEstimatedDelivery(orderDetails.estimated_delivery || "")
         setShippingMethod(orderDetails.shipping_method || "")
+        setCarrier(orderDetails.carrier || "")
         setNotes(orderDetails.notes || "")
       } catch (error: any) {
         console.error("Erro ao buscar detalhes da encomenda:", error.message)
@@ -125,6 +128,8 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
           payment_status: paymentStatus,
           estimated_delivery: estimatedDelivery,
           shipping_method: shippingMethod,
+          carrier: carrier,
+          tracking_url: carrier && trackingNumber ? getTrackingUrl(carrier, trackingNumber) : null,
           notes: notes,
         }),
       })
@@ -143,6 +148,8 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
         payment_status: paymentStatus,
         estimated_delivery: estimatedDelivery,
         shipping_method: shippingMethod,
+        carrier: carrier,
+        tracking_url: carrier && trackingNumber ? getTrackingUrl(carrier, trackingNumber) : null,
         notes: notes,
         updated_at: new Date().toISOString(),
       })
@@ -188,6 +195,7 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
         body: JSON.stringify({
           orderId,
           trackingNumber,
+          carrier: carrier,
           estimatedDelivery: estimatedDelivery || "7 a 12 dias úteis",
         }),
       })
@@ -555,6 +563,23 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
+              <Label htmlFor="carrier" className="text-blue-700 font-medium">
+                Transportadora Internacional
+              </Label>
+              <Select value={carrier} onValueChange={setCarrier}>
+                <SelectTrigger id="carrier" className="mt-1 border-blue-200 focus:border-blue-400">
+                  <SelectValue placeholder="Selecione a transportadora" />
+                </SelectTrigger>
+                <SelectContent>
+                  {shippingCarriers.map((carrierOption) => (
+                    <SelectItem key={carrierOption.id} value={carrierOption.id}>
+                      {carrierOption.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+            <div>
               <Label htmlFor="tracking-number" className="text-blue-700 font-medium">
                 Número de Rastreio
               </Label>
@@ -568,25 +593,23 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
                 />
               </div>
             </div>
-            <div>
-              <Label htmlFor="shipping-method" className="text-blue-700 font-medium">
-                Método de Envio
-              </Label>
-              <Select value={shippingMethod} onValueChange={setShippingMethod}>
-                <SelectTrigger id="shipping-method" className="mt-1 border-blue-200 focus:border-blue-400">
-                  <SelectValue placeholder="Selecione o método de envio" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="CTT">CTT</SelectItem>
-                  <SelectItem value="CTT Expresso">CTT Expresso</SelectItem>
-                  <SelectItem value="DHL">DHL</SelectItem>
-                  <SelectItem value="UPS">UPS</SelectItem>
-                  <SelectItem value="FedEx">FedEx</SelectItem>
-                  <SelectItem value="Levantamento na loja">Levantamento na loja</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
           </div>
+          
+          {carrier && trackingNumber && (
+            <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+              <p className="text-sm text-blue-800 font-medium mb-1">
+                Link de Rastreio Gerado:
+              </p>
+              <a
+                href={getTrackingUrl(carrier, trackingNumber)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline text-sm break-all"
+              >
+                {getTrackingUrl(carrier, trackingNumber)}
+              </a>
+            </div>
+          )}
 
           <div className="flex flex-col sm:flex-row gap-3 mt-4">
             <Button onClick={handleSave} disabled={isSaving} className="bg-blue-600 hover:bg-blue-700">
@@ -597,7 +620,7 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
             <Button
               variant="outline"
               onClick={sendShippingEmail}
-              disabled={isSendingEmail || !trackingNumber}
+              disabled={isSendingEmail || !trackingNumber || !carrier}
               className="border-blue-300 text-blue-700 hover:bg-blue-100"
             >
               <Mail className="h-4 w-4 mr-2" />
@@ -605,20 +628,27 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
             </Button>
           </div>
 
-          {trackingNumber && (
+          {trackingNumber && carrier && (
             <div className="mt-4 p-3 bg-white rounded-md border border-blue-200">
               <div className="flex items-start">
                 <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-700">Número de rastreio: {trackingNumber}</p>
-                  <a
-                    href={`https://www.cttexpress.com/localizador-de-envios/?sc=${trackingNumber}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline text-sm flex items-center mt-1"
-                  >
-                    Rastrear encomenda <Truck className="h-3 w-3 ml-1" />
-                  </a>
+                  <p className="font-medium text-gray-700">
+                    Transportadora: {getCarrierLabel(carrier)}
+                  </p>
+                  <p className="font-medium text-gray-700 mt-1">
+                    Número de rastreio: {trackingNumber}
+                  </p>
+                  {getTrackingUrl(carrier, trackingNumber) && (
+                    <a
+                      href={getTrackingUrl(carrier, trackingNumber)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline text-sm flex items-center mt-1"
+                    >
+                      Rastrear encomenda <Truck className="h-3 w-3 ml-1" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

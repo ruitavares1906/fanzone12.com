@@ -93,6 +93,8 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
 
     // Campos básicos que provavelmente existem
     if (body.tracking_number !== undefined) updateData.tracking_number = body.tracking_number
+    if (body.carrier !== undefined) updateData.carrier = body.carrier
+    if (body.tracking_url !== undefined) updateData.tracking_url = body.tracking_url
     if (body.status !== undefined) updateData.status = body.status
     if (body.payment_status !== undefined) updateData.payment_status = body.payment_status
     if (body.shipping_method !== undefined) updateData.shipping_method = body.shipping_method
