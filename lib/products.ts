@@ -2595,7 +2595,7 @@ const produtosArray = ([
   },
   {
     id: "sporting-aquecimento-2024-25",
-    nome: "Sporting T-shirt Aquecimento 24/25",
+    nome: "Sporting Training T-shirt 24/25",
     descricao: "T-shirt oficial de aquecimento do Sporting CP para a temporada 2024/25. Design técnico para treinos.",
     descricaoLonga: "A T-shirt de aquecimento do Sporting CP para a temporada 2024/25 foi desenvolvida especificamente para sessões de treino e aquecimento. Com design técnico e materiais de alta performance, oferece máxima ventilação e gestão da transpiração. Fabricada pela Nike com tecnologia Dri-FIT, é a escolha perfeita para adeptos ativos que querem treinar com o equipamento oficial dos Leões.",
     preco: 17.99,
@@ -3160,7 +3160,7 @@ const produtosArray = ([
   },
   {
     id: "cortavento-sporting-cp-2526",
-    nome: "Corta-Vento Sporting C.P. 25/26",
+    nome: "Sporting C.P. Windbreaker 25/26",
     descricao: "Corta-vento oficial do Sporting CP para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Corta-Vento Sporting C.P. 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Dragões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 35.99,
@@ -3184,7 +3184,7 @@ const produtosArray = ([
   },
   {
     id: "cortavento-sporting-cp-preto-2526",
-    nome: "Corta-Vento preto Sporting C.P. 25/26",
+    nome: "Sporting C.P. Black Windbreaker 25/26",
     descricao: "Corta-vento oficial do Sporting CP para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Corta-Vento Sporting C.P. 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Dragões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 35.99,
@@ -3209,7 +3209,7 @@ const produtosArray = ([
   },  
   {
     id: "cortavento-sporting-cp-verde-2526",
-    nome: "Corta-Vento verde Sporting C.P. 25/26",
+    nome: "Sporting C.P. Green Windbreaker 25/26",
     descricao: "Corta-vento oficial do Sporting CP para a temporada 2025/26. Design exclusivo que celebra a grandeza do clube.",
     descricaoLonga: "O Corta-Vento Sporting C.P. 2025/26 apresenta um design único e exclusivo que celebra a história e grandeza do clube. Esta edição especial combina elementos tradicionais com detalhes modernos, criando uma peça verdadeiramente única para os adeptos dos Dragões. Fabricada com materiais premium e tecnologia avançada para garantir máximo conforto e performance.",
     preco: 35.99,
@@ -6167,7 +6167,7 @@ const produtosArray = ([
     },
     {
       "id": "sheffield-alternativa-25-26",
-      "nome": "Camisola Sheffield United Alternativa 25/26",
+      "nome": "Sheffield United Away Jersey 25/26",
       "descricao": "Camisola alternativa do Sheffield United 2025/26.",
       "descricaoLonga": "A camisola alternativa do Sheffield United para 25/26 aposta num design vibrante e confortável, ideal para quem quer apoiar os Blades com estilo.",
       "preco": 17.99,
@@ -6190,7 +6190,7 @@ const produtosArray = ([
     },
     {
       "id": "liverpool-originals-2025",
-      "nome": "Camisola Liverpool F.C. X Adidas Originals 2025",
+      "nome": "Liverpool F.C. x Adidas Originals 2025 Jersey",
       "descricao": "Edição especial Liverpool F.C. x Adidas Originals 2025.",
       "descricaoLonga": "Uma camisola histórica que une tradição e estilo urbano. Produzida com materiais de alta qualidade e com o toque retrô da Adidas Originals.",
       "preco": 17.99,
@@ -6213,7 +6213,7 @@ const produtosArray = ([
     },
     {
       "id": "chelsea-terceira-25-26",
-      "nome": "Camisola Chelsea F.C. Terceira 25/26",
+      "nome": "Chelsea F.C. Third Jersey 25/26",
       "descricao": "Terceira camisola do Chelsea 2025/26.",
       "descricaoLonga": "A terceira camisola do Chelsea destaca-se pelo seu visual moderno, perfeita para os fãs que apreciam design arrojado e qualidade premium.",
       "preco": 17.99,
@@ -6236,7 +6236,7 @@ const produtosArray = ([
     },
     {
       "id": "burnley-principal-25-26",
-      "nome": "Camisola Burnley Principal 25/26",
+      "nome": "Burnley Home Jersey 25/26",
       "descricao": "Camisola principal do Burnley 2025/26.",
       "descricaoLonga": "A camisola principal do Burnley combina o tradicional grená com detalhes modernos. Fabricada pela Adidas para máximo conforto e orgulho claret.",
       "preco": 17.99,
@@ -6259,7 +6259,7 @@ const produtosArray = ([
     },
     {
       "id": "everton-alternativa-25-26",
-      "nome": "Camisola Everton Alternativa 25/26",
+      "nome": "Everton Away Jersey 25/26",
       "descricao": "Camisola alternativa do Everton 2025/26.",
       "descricaoLonga": "A camisola alternativa do Everton aposta num estilo moderno e desportivo, mantendo o conforto e a leveza característicos da Adidas.",
       "preco": 17.99,
@@ -6399,7 +6399,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-sporting-rosa-24-25",
-    "nome": "Kit Criança Sporting 2024/25 - Rosa",
+    "nome": "Sporting CP Kids Pink Kit 2024/25",
     "descricao": "Kit alternativo rosa do Sporting CP 2024/25 para criança.",
     "descricaoLonga": "O kit infantil alternativo do Sporting CP para a temporada 2024/25 apresenta um arrojado design em tom rosa, ideal para os jovens adeptos que gostam de se destacar. Confeccionado em tecido técnico leve e respirável, proporciona máximo conforto durante todo o dia.",
     "preco": 17.99,
@@ -6423,7 +6423,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-sporting-terceira-24-25",
-    "nome": "Kit Criança Sporting 2024/25 - Terceira",
+    "nome": "Sporting CP Kids Third Kit 2024/25",
     "descricao": "Kit terceira equipação do Sporting CP 2024/25 para criança.",
     "descricaoLonga": "O kit infantil da terceira equipação do Sporting CP para a temporada 2024/25 apresenta um design moderno e diferenciado, ideal para os jovens adeptos que querem mostrar apoio ao clube com estilo. Fabricado em tecido técnico respirável, garante conforto e liberdade de movimentos.",
     "preco": 17.99,
@@ -6447,7 +6447,7 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-sporting-quarta-23-24",
-    "nome": "Kit Criança Sporting 2023/24 - Quarta",
+    "nome": "Sporting CP Kids Fourth Kit 2023/24",
     "descricao": "Kit quarta equipação do Sporting CP 2023/24 para criança.",
     "descricaoLonga": "O kit infantil da quarta equipação do Sporting CP para a temporada 2023/24 apresenta um visual ousado e exclusivo, perfeito para jovens adeptos que querem marcar presença com estilo. Confeccionado em tecido técnico e respirável, oferece conforto e durabilidade para uso no dia a dia ou na prática desportiva.",
     "preco": 17.99,
@@ -6497,7 +6497,7 @@ const produtosArray = ([
   },
   {
     "id": "braga-secundaria-25-26",
-    "nome": "SC Braga 2025/26 - Secundária",
+    "nome": "SC Braga 2025/26 - Secundary jersey",
     "descricao": "Camisola secundária do SC Braga 2025/26.",
     "descricaoLonga": "A camisola secundária do SC Braga para a temporada 2025/26 combina um design moderno com a tradição do clube minhoto. Produzida em tecido técnico respirável, oferece conforto e liberdade de movimentos, ideal para adeptos e colecionadores.",
     "preco": 17.99,
@@ -6523,7 +6523,7 @@ const produtosArray = ([
   },
   {
     "id": "vitoria-sc-principal-25-26",
-    "nome": "Vitória SC 2025/26 - Principal",
+    "nome": "Vitória SC 2025/26 jersey",
     "descricao": "Camisola principal do Vitória SC 2025/26.",
     "descricaoLonga": "A camisola principal do Vitória SC para a temporada 2025/26 mantém o clássico design do clube com detalhes modernos. Confeccionada em tecido leve e respirável, garante conforto e liberdade de movimentos para os adeptos.",
     "preco": 17.99,
@@ -6556,7 +6556,7 @@ const produtosArray = ([
   },
   {
     "id": "ajax-third-away-21-22",
-    "nome": "Camisola Ajax 2021/22 - Terceira (Alternativa)",
+    "nome": "Ajax Third Jersey 2021/22",
     "descricao": "Camisola terceira/alternativa do Ajax 2021/22.",
     "descricaoLonga": "A camisola terceira do Ajax na temporada 2021/22 presta homenagem à cultura musical de Amesterdão, inspirada em Bob Marley e na música 'Three Little Birds'. Apresenta um design em preto com detalhes em verde, amarelo e vermelho, cores que simbolizam esperança e unidade. Confeccionada em poliéster de alta qualidade, combina estilo urbano com a tradição do clube.",
     "preco": 17.99,
@@ -6778,7 +6778,7 @@ const produtosArray = ([
 },
   {
     "id": "flamengo-third-away-25-26-kids",
-    "nome": "Kit Criança Flamengo Terceira Alternativa 25/26",
+    "nome": "Flamengo Kids Third Away Kit 25/26",
     "descricao": "Kit Criança Flamengo Third Away 2025/26.",
     "descricaoLonga": "Kit Criança Flamengo Third Away 2025/26, desenvolvido em tecido respirável para máximo conforto.",
     "preco": 17.99,
@@ -6812,7 +6812,7 @@ const produtosArray = ([
   },
     { 
       "id": "celtics-away-25-26-s-4xl",
-      "nome": "Camisola 25/26 Celtics Fora S-4XL",
+      "nome": "Celtics Away Jersey 25/26 S-4XL",
       "descricao": "Camisola Away dos Celtics, temporada 25/26, tamanho S-4XL",
       "descricaoLonga": "Camisola oficial dos Celtics, modelo away, disponível do S ao 4XL, ideal para fãs e colecionadores.",
       "preco": 17.99,
@@ -6840,9 +6840,9 @@ const produtosArray = ([
     },
     {
       "id": "west-ham-united-third-away-25-26-s-4xl",
-      "nome": "Camisola 25/26 West Ham United Terceira Fora S-4XL",
-      "descricao": "Camisola Third Away do West Ham, temporada 25/26, tamanho S-4XL",
-      "descricaoLonga": "Camisola oficial Third Away do West Ham, disponível do S ao 4XL, perfeita para fãs e colecionadores.",
+      "nome": "25/26 West Ham United Third Away Jersey S-4XL",
+      "descricao": "West Ham Third Away jersey, 25/26 season, size S-4XL",
+      "descricaoLonga": "Official West Ham Third Away jersey, available in sizes S to 4XL, perfect for fans and collectors.",
       "preco": 17.99,
       "precoAntigo": 29.99,
       "imagem": "/images/01_25_26 West Ham United third away S-4XL _ Yupoo.webp",
@@ -6867,9 +6867,9 @@ const produtosArray = ([
     },
     {
       "id": "wolves-home-25-26-s-4xl",
-      "nome": "Camisola 25/26 Wolves Casa S-4XL",
-      "descricao": "Camisola Home dos Wolves, temporada 25/26, tamanho S-4XL",
-      "descricaoLonga": "Camisola oficial Home dos Wolves, disponível do S ao 4XL, ideal para fãs e colecionadores.",
+      "nome": "25/26 Wolves Home Jersey S-4XL",
+      "descricao": "Wolves Home jersey, 25/26 season, size S-4XL",
+      "descricaoLonga": "Official Wolves Home jersey, available in sizes S to 4XL, ideal for fans and collectors.",
       "preco": 17.99,
       "precoAntigo": 29.99,
       "imagem": "/images/01_25_26 Wolves Home S-4XL _ Yupoo.jpg",
@@ -6893,9 +6893,9 @@ const produtosArray = ([
     },
     {
       "id": "napoli-training-suit-25-26-s-4xl",
-      "nome": "Conjunto de Treino 25/26 Napoli S-4XL",
-      "descricao": "Conjunto de treino do Napoli, temporada 25/26, tamanho S-4XL",
-      "descricaoLonga": "Conjunto de treino oficial do Napoli, disponível do S ao 4XL, ideal para treinos e fãs do clube.",
+      "nome": "25/26 Napoli Training Suit S-4XL",
+      "descricao": "Napoli training suit, 25/26 season, size S-4XL",
+      "descricaoLonga": "Official Napoli training suit, available in sizes S to 4XL, ideal for training and club fans.",
       "preco": 17.99,
       "precoAntigo": 29.99,
       "imagem": "/images/01_25_26 Napoli training suit S-4XL _ Yupoo.webp",
@@ -6920,9 +6920,9 @@ const produtosArray = ([
     },
     {
       "id": "chivas-home-25-26-s-4xl",
-      "nome": "Camisola 25/26 Chivas Casa S-4XL",
-      "descricao": "Camisola Home do Chivas, temporada 25/26, tamanho S-4XL",
-      "descricaoLonga": "Camisola oficial Home do Chivas, disponível do S ao 4XL, ideal para fãs e colecionadores.",
+      "nome": "25/26 Chivas Home Jersey S-4XL",
+      "descricao": "Chivas Home jersey, 25/26 season, size S-4XL",
+      "descricaoLonga": "Official Chivas Home jersey, available in sizes S to 4XL, ideal for fans and collectors.",
       "preco": 17.99,
       "precoAntigo": 29.99,
       "imagem": "/images/01_25_26 Chivas Home S-4XL _ Yupoo.jpg",
@@ -7002,7 +7002,7 @@ const produtosArray = ([
     },
     {
       "id": "bahia-goalkeeper-yellow-25-26-s-4xl",
-      "nome": "Camisola 25/26 Bahia Guarda-Redes Amarela S-4XL",
+      "nome": "25/26 Bahia Goalkeeper Yellow Jersey S-4XL",
       "descricao": "Camisola de Guarda-Redes Yellow do Bahia, temporada 25/26, tamanho S-4XL",
       "descricaoLonga": "Camisola oficial de guarda-redes do Bahia, cor amarela, disponível do S ao 4XL.",
       "preco": 17.99,
@@ -7029,7 +7029,7 @@ const produtosArray = ([
     },
     {
       "id": "victoria-away-25-26-s-4xl",
-      "nome": "Camisola 25/26 Vitória Fora S-4XL",
+      "nome": "Vitória Away Jersey 25/26 S-4XL",
       "descricao": "Camisola Away do Victoria, temporada 25/26, tamanho S-4XL",
       "descricaoLonga": "Camisola oficial Away do Victoria, disponível do S ao 4XL, ideal para fãs e colecionadores.",
       "preco": 17.99,
@@ -7056,7 +7056,7 @@ const produtosArray = ([
     },
       {
         "id": "palmeiras-third-away-25-26",
-        "nome": "Camisola 25/26 Palmeiras Terceira Fora",
+        "nome": "Palmeiras Third Away Jersey 25/26",
         "descricao": "Camisola Third Away do Palmeiras, temporada 25/26, tamanho S-4XL",
         "descricaoLonga": "Camisola oficial Third Away do Palmeiras, disponível do S ao 4XL.",
         "preco": 17.99,
@@ -7083,9 +7083,9 @@ const produtosArray = ([
       },
       {
         "id": "bahia-training-25-26",
-        "nome": "Conjunto de Treino 25/26 Bahia",
-        "descricao": "Conjunto de treino do Bahia, temporada 25/26, tamanho S-4XL",
-        "descricaoLonga": "Conjunto oficial de treino do Bahia, disponível do S ao 4XL.",
+        "nome": "25/26 Bahia Training Suit",
+        "descricao": "Bahia training suit, 25/26 season, size S-4XL",
+        "descricaoLonga": "Official Bahia training suit, available in sizes S to 4XL.",
         "preco": 17.99,
         "precoAntigo": 29.99,
         "imagem": "/images/01_25_26 Bahia training suit S-4XL _ Yupoo.webp",
@@ -7110,7 +7110,7 @@ const produtosArray = ([
       },
       {
         "id": "cruzeiro-away-25-26",
-        "nome": "Camisola 25/26 Cruzeiro Fora",
+        "nome": "Cruzeiro Away Jersey 25/26",
         "descricao": "Camisola Away do Cruzeiro, temporada 25/26, tamanho S-4XL",
         "descricaoLonga": "Camisola oficial Away do Cruzeiro, disponível do S ao 4XL.",
         "preco": 17.99,
@@ -7137,7 +7137,7 @@ const produtosArray = ([
       },
       {
         "id": "atletico-mineiro-away-25-26",
-        "nome": "Camisola 25/26 Atlético Mineiro Fora",
+        "nome": "Atlético Mineiro Away Jersey 25/26",
         "descricao": "Camisola Away do Atlético Mineiro, temporada 25/26, tamanho S-4XL",
         "descricaoLonga": "Camisola oficial Away do Atlético Mineiro, disponível do S ao 4XL.",
         "preco": 17.99,
@@ -7164,7 +7164,7 @@ const produtosArray = ([
       },
       {
         "id": "bahia-superman-25-26",
-        "nome": "Camisola 25/26 Bahia Edição Superman",
+        "nome": "Bahia Superman Edition Jersey 25/26",
         "descricao": "Camisola Edição Superman do Bahia, temporada 25/26, tamanho S-4XL",
         "descricaoLonga": "Camisola especial Edição Superman do Bahia, disponível do S ao 4XL.",
         "preco": 17.99,
@@ -7191,7 +7191,7 @@ const produtosArray = ([
       },
       {
         "id": "retro-germany-2008-home",
-        "nome": "Camisola Retro Alemanha 2008 Casa",
+        "nome": "Germany Retro Home Jersey 2008",
         "descricao": "Camisola Retro Alemanha 2008, tamanho S-XXL",
         "descricaoLonga": "Camisola retro oficial da seleção da Alemanha de 2008, disponível do S ao XXL.",
         "preco": 17.99,
@@ -7219,7 +7219,7 @@ const produtosArray = ([
       },
       {
         "id": "osasuna-third-away-25-26-kids",
-        "nome": "Kit Criança Osasuna 25/26 Terceira Alternativa",
+        "nome": "Osasuna Kids Third Away Kit 25/26",
         "descricao": "Camisola Third Away do Osasuna, temporada 25/26, tamanho 16-28",
         "descricaoLonga": "Camisola oficial Third Away do Osasuna, disponível em tamanhos 16 a 28.",
         "preco": 17.99,
@@ -7239,9 +7239,9 @@ const produtosArray = ([
       },
       {
         "id": "osasuna-away-25-26-kids",
-        "nome": "Kit Criança Osasuna 25/26 Alternativa",
-        "descricao": "Camisola Away do Osasuna, temporada 25/26, tamanho 16-28",
-        "descricaoLonga": "Camisola oficial Away do Osasuna, disponível em tamanhos 16 a 28.",
+        "nome": "Osasuna 25/26 Kids Away Kit",
+        "descricao": "Osasuna Away jersey, 25/26 season, size 16-28",
+        "descricaoLonga": "Official Osasuna Away jersey, available in sizes 16 to 28.",
         "preco": 17.99,
         "precoAntigo": 29.99,
         "imagem": "/images/05_25_26 Osasuna Away Size_ 16-28 _ Yupoo.jpg",
@@ -7259,9 +7259,9 @@ const produtosArray = ([
       },
         {
           "id": "polo-osasuna-white-25-26",
-          "nome": "Polo 25/26 Osasuna Branco",
-          "descricao": "Polo oficial do Osasuna, temporada 25/26, tamanho S-XXL",
-          "descricaoLonga": "Polo oficial do Osasuna, disponível do S ao XXL.",
+          "nome": "25/26 Osasuna White Polo",
+          "descricao": "Official Osasuna polo, 25/26 season, size S-XXL",
+          "descricaoLonga": "Official Osasuna polo, available in sizes S to XXL.",
           "preco": 17.99,
           "precoAntigo": 29.99,
           "imagem": "/images/01_25_26 Polo Osasuna White S-XXL _ Yupoo.jpg",
@@ -7286,7 +7286,7 @@ const produtosArray = ([
         },
         {
           "id": "osasuna-third-away-25-26",
-          "nome": "Camisola 25/26 Osasuna Terceira Fora",
+          "nome": "Osasuna Third Away Jersey 25/26",
           "descricao": "Camisola Third Away do Osasuna, temporada 25/26, tamanho S-4XL",
           "descricaoLonga": "Camisola oficial Third Away do Osasuna, disponível do S ao 4XL.",
           "preco": 17.99,
@@ -7313,7 +7313,7 @@ const produtosArray = ([
         },
         {
           "id": "osasuna-away-25-26",
-          "nome": "Camisola 25/26 Osasuna Fora",
+          "nome": "Osasuna Away Jersey 25/26",
           "descricao": "Camisola Away do Osasuna, temporada 25/26, tamanho S-4XL",
           "descricaoLonga": "Camisola oficial Away do Osasuna, disponível do S ao 4XL.",
           "preco": 17.99,
@@ -7340,7 +7340,7 @@ const produtosArray = ([
         },
         {
           "id": "roma-third-away-25-26",
-          "nome": "Camisola 25/26 Roma Terceira Fora",
+          "nome": "Roma Third Away Jersey 25/26",
           "descricao": "Camisola Third Away da Roma, temporada 25/26, tamanho S-4XL",
           "descricaoLonga": "Camisola oficial Third Away da Roma, disponível do S ao 4XL.",
           "preco": 17.99,
@@ -7367,7 +7367,7 @@ const produtosArray = ([
         },
         {
           "id": "sao-paulo-third-away-25-26",
-          "nome": "Camisola 25/26 São Paulo Terceira Fora",
+          "nome": "São Paulo Third Away Jersey 25/26",
           "descricao": "Camisola Third Away do São Paulo, temporada 25/26, tamanho S-4XL",
           "descricaoLonga": "Camisola oficial Third Away do São Paulo, disponível do S ao 4XL.",
           "preco": 17.99,
@@ -7394,9 +7394,9 @@ const produtosArray = ([
         },
         {
           "id": "marseille-third-away-25-26",
-          "nome": "Camisola 25/26 Marselha Terceira Fora",
-          "descricao": "Camisola Third Away do Marselha, temporada 25/26, tamanho S-4XL",
-          "descricaoLonga": "Camisola oficial Third Away do Marselha, disponível do S ao 4XL.",
+          "nome": "25/26 Marseille Third Away Jersey",
+          "descricao": "Marseille Third Away jersey, 25/26 season, size S-4XL",
+          "descricaoLonga": "Official Marseille Third Away jersey, available in sizes S to 4XL.",
           "preco": 17.99,
           "precoAntigo": 29.99,
           "imagem": "/images/01_25_26 Marseille third away S-4XL _ Yupoo.webp",
@@ -7421,9 +7421,9 @@ const produtosArray = ([
         },
         {
           "id": "bayern-munich-baseball-jersey-25-26",
-          "nome": "Camisola 25/26 Bayern Munich Baseball",
-          "descricao": "Camisola Baseball do Bayern Munich, temporada 25/26, tamanho S-4XL",
-          "descricaoLonga": "Camisola oficial Baseball do Bayern Munich, disponível do S ao 4XL.",
+          "nome": "25/26 Bayern Munich Baseball Jersey",
+          "descricao": "Bayern Munich Baseball jersey, 25/26 season, size S-4XL",
+          "descricaoLonga": "Official Bayern Munich Baseball jersey, available in sizes S to 4XL.",
           "preco": 17.99,
           "precoAntigo": 29.99,
           "imagem": "/images/01_25_26 Bayern Munich Baseball Jersey S-4XL _ Yupoo.jpg",
@@ -7448,9 +7448,9 @@ const produtosArray = ([
         },
         {
           "id": "como-home-25-26",
-          "nome": "Camisola 25/26 Como Casa",
-          "descricao": "Camisola Home do Como, temporada 25/26, tamanho S-XXL",
-          "descricaoLonga": "Camisola oficial Home do Como, disponível do S ao XXL.",
+          "nome": "25/26 Como Home Jersey",
+          "descricao": "Como Home jersey, 25/26 season, size S-XXL",
+          "descricaoLonga": "Official Como Home jersey, available in sizes S to XXL.",
           "preco": 17.99,
           "precoAntigo": 29.99,
           "imagem": "/images/01_25_26 Como home S-XXL _ Yupoo.webp",
@@ -7475,7 +7475,7 @@ const produtosArray = ([
         },      
   {
     "id": "real-betis-away-25-26-s-4xl",
-    "nome": "Kit Criança Real Betis Alternativa 25/26",
+    "nome": "Real Betis Kids Away Kit 25/26",
     "descricao": "Kit Criança Real Betis Away 2025/26.",
     "descricaoLonga": "Kit Criança Real Betis Away 2025/26, em design moderno e tecido leve, perfeito para apoiar o clube com máximo estilo.",
     "preco": 17.99,
@@ -7506,7 +7506,7 @@ const produtosArray = ([
   },
   {
     "id": "sevilla-away-25-26-kids",
-    "nome": "Kit Criança Sevilla Alternativa 25/26",
+    "nome": "Sevilla Kids Away Kit 25/26",
     "descricao": "Kit Criança Sevilla Away 2025/26.",
     "descricaoLonga": "Kit Criança Sevilla Away 2025/26, com tecido leve e respirável, ideal para apoiar o clube com conforto.",
     "preco": 17.99,
@@ -7541,7 +7541,7 @@ const produtosArray = ([
   },
     {
       "id": "guimaraes-away-25-26-kids",
-      "nome": "Kit Criança Vitoria SC Away 25/26",
+      "nome": "Vitória SC Kids Away Kit 25/26",
       "descricao": "Kit Criança Vitoria SC Away 2025/26.",
       "descricaoLonga": "Kit Criança Vitoria SC Away 2025/26, ideal para jovens adeptos, tecido respirável e design oficial da temporada.",
       "preco": 17.99,
@@ -7575,7 +7575,7 @@ const produtosArray = ([
     },
     {
       "id": "guimaraes-home-25-26-kids",
-      "nome": "Kit Criança Vitoria SC Home 25/26",
+      "nome": "Vitória SC Kids Home Kit 25/26",
       "descricao": "Kit Criança Vitoria SC Home 2025/26.",
       "descricaoLonga": "Kit Criança Vitoria SC Home 2025/26, ideal para jovens adeptos, tecido respirável e design oficial da temporada.",
       "preco": 17.99,
@@ -7642,7 +7642,7 @@ const produtosArray = ([
     },
   {
     "id": "zaragoza-home-25-26-kids",
-    "nome": "Kit Criança Zaragoza Home 25/26",
+    "nome": "Zaragoza kids Home Kit 25/26",
     "descricao": "Kit Criança Zaragoza Home 2025/26.",
     "descricaoLonga": "Kit Criança Zaragoza Home 2025/26, confortável e respirável, ideal para apoiar o clube com estilo.",
     "preco": 17.99,
@@ -8387,7 +8387,7 @@ const produtosArray = ([
 },
 {
   "id": "athletic-bilbao-25-26-terceiro-equipamento-kids",
-  "nome": "Kit Criança Athletic Bilbao terceiro equipamento 2025/26",
+  "nome": "Athletic Bilbao Kids Third Kit 2025/26",
   "descricao": "Camisola alternativa do Athletic Bilbao 2025/26 para criança.",
   "descricaoLonga": "A camisola infantil alternativa do Athletic Bilbao para a temporada 2025/26 combina o estilo moderno com conforto ideal para os jovens adeptos. Confeccionada em tecido leve e respirável, oferece liberdade de movimento e mostra o apoio ao clube espanhol de forma elegante.",
   "preco": 17.99,
@@ -9151,7 +9151,7 @@ const produtosArray = ([
 },
   {
     "id": "sporting-outubro-rosa-2025",
-    "nome": "Camisola Sporting C.P. Outubro Rosa 2025",
+    "nome": "Sporting C.P. Pink October 2025 Jersey",
     "descricao": "Camisola edição especial Sporting C.P. Outubro Rosa 2025, em apoio à luta contra o cancro da mama.",
     "descricaoLonga": "A camisola Sporting Clube de Portugal Outubro Rosa 2025 é uma edição especial de solidariedade. Produzida pela Nike em poliéster respirável, combina o design desportivo com uma mensagem poderosa de apoio à prevenção e à consciencialização do cancro da mama.",
     "preco": 17.99,
@@ -9175,7 +9175,7 @@ const produtosArray = ([
   },
     {
       "id": "sporting-stromp-25-26",
-      "nome": "Camisola Sporting C.P. Stromp 25/26",
+      "nome": "Sporting C.P. Stromp Jersey 25/26",
       "descricao": "Camisola Stromp do Sporting C.P. 2025/26, o clássico verde e branco reinventado.",
       "descricaoLonga": "A icónica camisola Stromp do Sporting Clube de Portugal regressa para a temporada 2025/26 com um design fiel à tradição. Produzida pela Nike em tecido respirável de poliéster, combina conforto e orgulho leonino em cada detalhe.",
       "preco": 17.99,
@@ -9224,7 +9224,7 @@ const produtosArray = ([
 
 {
   id: "t-shirt-aquecimento-verde-2526",
-  nome: "Sporting T-shirt Aquecimento Verde 25/26",
+    nome: "Sporting Training T-shirt Green 25/26",
   descricao: "T-shirt de aquecimento verde do Sporting CP para a temporada 25/26.",
   descricaoLonga: "Pré-venda: A t-shirt de aquecimento verde do Sporting CP para 2025/26 é perfeita para os treinos e para mostrar o apoio ao clube em qualquer ocasião.",
   preco: 17.99,
@@ -9248,7 +9248,7 @@ const produtosArray = ([
 },
 {
   id: "t-shirt-aquecimento-preta-2526",
-  nome: "Sporting T-shirt Aquecimento Preta 25/26",
+    nome: "Sporting Training T-shirt Black 25/26",
   descricao: "T-shirt de aquecimento preta do Sporting CP para a temporada 25/26.",
   descricaoLonga: "Pré-venda: A t-shirt de aquecimento preta do Sporting CP para 2025/26 é perfeita para os treinos e para mostrar o apoio ao clube em qualquer ocasião.",
   preco: 17.99,
@@ -9274,7 +9274,7 @@ const produtosArray = ([
 },
   {
     "id": "vitoria-sc-alternativa-25-26",
-    "nome": "Camisola Vitória SC Alternativa 2025/26",
+    "nome": "Vitória SC Away Jersey 2025/26",
     "descricao": "Camisola alternativa do Vitória SC para a época 2025/26.",
     "descricaoLonga": "A camisola alternativa do Vitória Sport Club 2025/26 apresenta um design moderno e elegante, perfeita para apoiar a equipa nas competições nacionais e internacionais.",
     "preco": 17.99,
@@ -9299,7 +9299,7 @@ const produtosArray = ([
   },
   {
     "id": "sporting-edicao-especial-25-26",
-    "nome": "Camisola Sporting CP Edição Especial 2025/26",
+    "nome": "Sporting CP Special Edition Jersey 2025/26",
     "descricao": "Camisola de edição especial do Sporting CP para a época 2025/26.",
     "descricaoLonga": "Edição especial da camisola do Sporting Clube de Portugal 2025/26, criada com detalhes únicos para os verdadeiros adeptos leoninos.",
     "preco": 17.99,
@@ -9324,7 +9324,7 @@ const produtosArray = ([
   },
   {
     "id": "bayern-munich-alternativa-25-26",
-    "nome": "Camisola Bayern Munich Alternativa 2025/26",
+    "nome": "Bayern Munich Away Jersey 2025/26",
     "descricao": "Camisola alternativa do Bayern Munich para a época 2025/26.",
     "descricaoLonga": "A camisola alternativa do Bayern Munich 2025/26 combina tradição com modernidade, garantindo máximo conforto dentro e fora de campo.",
     "preco": 17.99,
@@ -9348,7 +9348,7 @@ const produtosArray = ([
   },
   {
     "id": "alverca-principal-25-26",
-    "nome": "Camisola Alverca Principal 2025/26",
+    "nome": "Alverca Home Jersey 2025/26",
     "descricao": "Camisola principal do FC Alverca para a época 2025/26.",
     "descricaoLonga": "A camisola principal do FC Alverca 2025/26 foi desenvolvida para oferecer conforto e orgulho aos adeptos, destacando as cores e a identidade do clube.",
     "preco": 17.99,
@@ -9371,7 +9371,7 @@ const produtosArray = ([
   },
   {
     "id": "benfica-edicao-especial-25-26",
-    "nome": "Camisola Benfica Guarda-Redes Cor-de-Rosa 2025/26",
+    "nome": "Benfica Goalkeeper Pink Jersey 2025/26",
     "descricao": "Camisola de guarda-redes cor-de-rosa do Benfica para a época 2025/26.",
     "descricaoLonga": "Camisola de guarda-redes cor-de-rosa do Benfica para a época 2025/26, criada para colecionadores e adeptos apaixonados pelo clube encarnado.",
     "preco": 17.99,
@@ -9395,7 +9395,7 @@ const produtosArray = ([
   },
   {
     "id": "alverca-25-26-alternativa",
-    "nome": "Camisola F.C. Alverca Secundária 25/26",
+    "nome": "F.C. Alverca Away Jersey 25/26",
     "descricao": "Camisola secundária do FC Alverca para a época 2025/26.",
     "descricaoLonga": "A camisola secundária do FC Alverca 2025/26 foi desenvolvida para oferecer conforto e orgulho aos adeptos, destacando as cores e a identidade do clube.",
     "preco": 17.99,
@@ -9420,7 +9420,7 @@ const produtosArray = ([
   },
   {
     "id": "famalicao-25-26-principal",
-    "nome": "Camisola F.C. Famalicão Principal 25/26",
+    "nome": "F.C. Famalicão Home Jersey 25/26",
     "descricao": "Camisola principal do FC Famalicão para a época 2025/26.",
     "descricaoLonga": "A camisola principal do FC Famalicão 2025/26 foi desenvolvida para oferecer conforto e orgulho aos adeptos, destacando as cores e a identidade do clube.",
     "preco": 17.99,
@@ -9445,7 +9445,7 @@ const produtosArray = ([
   },
   {
     "id": "famalicao-25-26-secondary",
-    "nome": "Camisola F.C. Famalicão Secundária 25/26",
+    "nome": "F.C. Famalicão Away Jersey 25/26",
     "descricao": "Camisola secundária do FC Famalicão para a época 2025/26.",
     "descricaoLonga": "A camisola secundária do FC Famalicão 2025/26 foi desenvolvida para oferecer conforto e orgulho aos adeptos, destacando as cores e a identidade do clube.",
     "preco": 17.99,
@@ -9470,7 +9470,7 @@ const produtosArray = ([
   },
   {
     "id": "benfica-25-26-yellow",
-    "nome": "Camisola Benfica guarda-redes amarela 2025/26",
+    "nome": "Benfica Goalkeeper Yellow Jersey 2025/26",
     "descricao": "Camisola de edição especial do Benfica para a época 2025/26.",
     "descricaoLonga": "Edição especial da camisola do Sport Lisboa e Benfica 2025/26, criada para colecionadores e adeptos apaixonados pelo clube amarelo.",
     "preco": 17.99,
@@ -9496,7 +9496,7 @@ const produtosArray = ([
   },
     {
       "id": "napoli-special-edition-25-26",
-      "nome": "Camisola Napoli Edição Especial 2025/26",
+      "nome": "Napoli Special Edition Jersey 2025/26",
       "descricao": "Camisola edição especial do Napoli para a época 2025/26.",
       "descricaoLonga": "A camisola edição especial do Napoli 2025/26 apresenta um design exclusivo e colecionável, destacando o orgulho napolitano com materiais de alta qualidade para conforto e performance.",
       "preco": 17.99,
@@ -9741,7 +9741,7 @@ const produtosArray = ([
 },
 {
   "id": "camisola-barcelona-quarta-25-26",
-  "nome": "Camisola Barcelona Quarta 2025/26",
+  "nome": "Barcelona Fourth Jersey 2025/26",
   "descricao": "Camisola quarta do FC Barcelona 2025/26, edição especial alternativa.",
   "descricaoLonga": "A Camisola Barcelona Quarta 2025/26 é uma edição especial que combina inovação e design ousado para os adeptos culés. Produzida em tecido respirável e leve, oferece máximo conforto dentro e fora do estádio.",
   "preco": 17.99,
@@ -10656,7 +10656,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   "id": "ajax-home-25-26",
-  "nome": "Ajax 2025/26 - Principal (Home)",
+  "nome": "Ajax 2025/26 Home Jersey",
   "descricao": "Camisola principal do Ajax 2025/26.",
   "descricaoLonga": "A camisola principal do Ajax para a temporada 2025/26 mantém a icónica faixa vertical vermelha sobre fundo branco, símbolo máximo da identidade do clube. O design clássico é complementado por detalhes modernos da Adidas, garantindo conforto, performance e estilo para adeptos e jogadores. Ideal para colecionadores e para mostrar o orgulho pelo Ajax em qualquer ocasião.",
   "preco": 17.99,
@@ -10733,7 +10733,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   "id": "ajax-commemorative-ls-25-26",
-  "nome": "Ajax Commemorative Edition Manga Comprida 2025/26",
+  "nome": "Ajax Commemorative Edition Long Sleeve Jersey 2025/26",
   "descricao": "Camisola comemorativa manga comprida Ajax 2025/26.",
   "descricaoLonga": "A camisola comemorativa de manga comprida do Ajax 2025/26 celebra a história do clube com um design elegante e intemporal. Ideal para colecionadores e adeptos que querem uma peça única, aliando tradição e conforto.",
   "preco": 17.99,
@@ -11148,7 +11148,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "sevilla-home-kids-25-26",
-    "nome": "Kit Criança Sevilla Home 2025/26",
+    "nome": "Sevilla kids Home Kit 2025/26",
     "descricao": "Kit Criança Sevilla Home 2025/26.",
     "descricaoLonga": "Versão infantil do equipamento principal do Sevilla na temporada 2025/26. Inclui camisola leve e confortável para os mais novos.",
     "preco": 17.99,
@@ -11665,7 +11665,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
     "id": "liverpool-special-edition",
-    "nome": "Camisola Liverpool Edição Especial",
+    "nome": "Liverpool Special Edition Jersey",
     "descricao": "Camisola especial do Liverpool.",
     "descricaoLonga": "Uma edição especial do Liverpool, com design único e detalhes exclusivos para colecionadores e adeptos apaixonados.",
     "preco": 17.99,
@@ -11690,7 +11690,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "liverpool-third-25-26",
-    "nome": "Camisola Liverpool Terceira 2025/26",
+    "nome": "Liverpool Third Jersey 2025/26",
     "descricao": "Camisola terceira do Liverpool 2025/26.",
     "descricaoLonga": "A camisola terceira do Liverpool 2025/26 apresenta um design moderno e arrojado, ideal para marcar presença nos jogos fora de casa.",
     "preco": 17.99,
@@ -11714,7 +11714,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "liverpool-third-24-25",
-    "nome": "Camisola Liverpool Terceira 2024/25",
+    "nome": "Liverpool Third Jersey 2024/25",
     "descricao": "Camisola terceira do Liverpool 2024/25.",
     "descricaoLonga": "Um modelo alternativo cheio de estilo, pensado para os adeptos que acompanham o Liverpool em todos os jogos.",
     "preco": 17.99,
@@ -11738,7 +11738,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "liverpool-third-22-23",
-    "nome": "Camisola Liverpool Terceira 2022/23",
+    "nome": "Liverpool Third Jersey 2022/23",
     "descricao": "Camisola terceira do Liverpool 2022/23.",
     "descricaoLonga": "Inspirada na tradição do clube, a camisola terceira 2022/23 traz um design marcante e cheio de identidade.",
     "preco": 17.99,
@@ -11762,7 +11762,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "kit-kids-liverpool-away-25-26",
-    "nome": "Kit Criança Liverpool Alternativa 2025/26",
+    "nome": "Liverpool kids Alternate Jersey 2025/26",
     "descricao": "Kit criança do Liverpool alternativo 2025/26.",
     "descricaoLonga": "O kit criança alternativo do Liverpool para 2025/26 garante o conforto e estilo dos mais pequenos, com camisola, calções e meias a condizer.",
     "preco": 17.99,
@@ -11786,9 +11786,9 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "kit-kids-liverpool-third-24-25",
-    "nome": "Kit Criança Liverpool Terceiro 2024/25",
-    "descricao": "Kit criança terceiro do Liverpool 2024/25.",
-    "descricaoLonga": "Um kit completo pensado para os pequenos adeptos, com a camisola terceira do Liverpool 2024/25 acompanhada de calções e meias.",
+    "nome": "Liverpool Third 2024/25 Kids Kit",
+    "descricao": "Liverpool Third 2024/25 kids kit.",
+    "descricaoLonga": "A complete kit designed for young fans, featuring the Liverpool Third 2024/25 jersey with shorts and socks.",
     "preco": 17.99,
     "precoAntigo": 29.99,
     "imagem": "/images/dfsdfsdf.webp",
@@ -11810,7 +11810,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "liverpool-away-long-25-26",
-    "nome": "Camisola Liverpool Alternativa Manga Comprida 2025/26",
+    "nome": "Liverpool Alternate Long Sleeve Jersey 2025/26",
     "descricao": "Camisola alternativa de manga comprida do Liverpool 2025/26.",
     "descricaoLonga": "Versão de manga comprida da camisola alternativa do Liverpool 2025/26, perfeita para os dias mais frios e para mostrar apoio ao clube em qualquer ocasião.",
     "preco": 17.99,
@@ -11834,7 +11834,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     "id": "liverpool-home-long-25-26",
-    "nome": "Camisola Liverpool Principal Manga Comprida 2025/26",
+    "nome": "Liverpool Home Long Sleeve Jersey 2025/26",
     "descricao": "Camisola principal de manga comprida do Liverpool 2025/26.",
     "descricaoLonga": "Versão principal de manga comprida da camisola do Liverpool para 2025/26, com o clássico vermelho e detalhes icónicos do clube.",
     "preco": 17.99,

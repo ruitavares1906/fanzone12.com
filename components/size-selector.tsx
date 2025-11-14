@@ -25,7 +25,7 @@ export function SizeSelector({ onChange, categoria, subcategoria }: SizeSelector
     ? tamanhosCrianca 
     : subcategoria === "sneakers" 
     ? tamanhosSneakers
-    : [...tamanhosAdulto, ...tamanhosCrianca.map(t => `${t} anos`)]
+    : [...tamanhosAdulto, ...tamanhosCrianca.map(t => `${t} years`)]
 
   const handleSizeChange = (size: string) => {
     setSelectedSize(size)

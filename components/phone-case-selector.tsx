@@ -53,7 +53,7 @@ export function PhoneCaseSelector({ product, onSelectionChange }: PhoneCaseSelec
   if (!mounted) {
     return (
       <div className="mb-6 space-y-4">
-        <h3 className="text-lg font-semibold">Selecione o seu telemóvel</h3>
+        <h3 className="text-lg font-semibold">Select your phone</h3>
         <div className="animate-pulse space-y-4">
           <div className="h-20 bg-gray-200 rounded-lg"></div>
           <div className="h-12 bg-gray-200 rounded-lg"></div>
@@ -64,12 +64,12 @@ export function PhoneCaseSelector({ product, onSelectionChange }: PhoneCaseSelec
 
   return (
     <div className="mb-6 space-y-4">
-      <h3 className="text-lg font-semibold">Selecione o seu telemóvel</h3>
+      <h3 className="text-lg font-semibold">Select your phone</h3>
 
       {/* Seletor de Marca */}
       <div>
         <label className="block text-sm font-medium mb-2 text-gray-700">
-          Marca *
+          Brand *
         </label>
         <div className="grid grid-cols-2 gap-3">
           <button
@@ -128,14 +128,14 @@ export function PhoneCaseSelector({ product, onSelectionChange }: PhoneCaseSelec
       {selectedBrand && (
         <div>
           <label className="block text-sm font-medium mb-2 text-gray-700">
-            Modelo *
+            Model *
           </label>
           <select
             value={selectedModel}
             onChange={(e) => setSelectedModel(e.target.value)}
             className="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
           >
-            <option value="">Selecione o modelo...</option>
+            <option value="">Select model...</option>
             {getModels().map((model) => (
               <option key={model} value={model}>
                 {model}
@@ -143,7 +143,7 @@ export function PhoneCaseSelector({ product, onSelectionChange }: PhoneCaseSelec
             ))}
           </select>
           <p className="text-xs text-gray-500 mt-1">
-            {selectedBrand === "Apple" ? `${modelosApple.length} modelos disponíveis` : `${modelosSamsung.length} modelos disponíveis`}
+            {selectedBrand === "Apple" ? `${modelosApple.length} models available` : `${modelosSamsung.length} models available`}
           </p>
         </div>
       )}
@@ -154,7 +154,7 @@ export function PhoneCaseSelector({ product, onSelectionChange }: PhoneCaseSelec
           <div className="flex items-center gap-2">
             <span className="text-green-600">✓</span>
             <span className="text-sm font-medium text-green-800">
-              Capa para {selectedBrand} {selectedModel}
+              Case for {selectedBrand} {selectedModel}
             </span>
           </div>
         </div>

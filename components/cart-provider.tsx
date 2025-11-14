@@ -228,17 +228,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const allCamisolaItems = camisolaItems.flatMap(item => 
         Array(item.quantidade).fill(null).map(() => ({
           ...item,
-          totalPrice: item.preco + (item.personalizacao?.ativar ? 
+          totalPrice: (item.preco ?? 0) + (item.personalizacao?.ativar ? 
             ((item.personalizacao.nome || item.personalizacao.numero) ? 3 : 0) + 
             ((item.personalizacao.patches?.length || 0) * 1) : 0)
         }))
       )
       
       // Ordenar por preço (mais barato primeiro)
-      const sortedItems = allCamisolaItems.sort((a, b) => a.totalPrice - b.totalPrice)
+      const sortedItems = allCamisolaItems.sort((a, b) => (a.totalPrice ?? 0) - (b.totalPrice ?? 0))
       
       // Calcular valor poupado (soma dos itens mais baratos que ficam grátis)
-      const savedAmount = sortedItems.slice(0, freeItems).reduce((total, item) => total + item.totalPrice, 0)
+      const savedAmount = sortedItems.slice(0, freeItems).reduce((total, item) => total + (item.totalPrice ?? 0), 0)
       
       return {
         applied: true,

@@ -1,6 +1,4 @@
 "use client"
-
-import { getProdutosRelacionados } from "@/lib/products"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
@@ -154,8 +152,17 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
   useEffect(() => {
     async function loadProdutosRelacionados() {
       if (produto) {
-        const related = await getProdutosRelacionados(produto.id, produto.categoria)
-        setProdutosRelacionados(related)
+        try {
+          const response = await fetch(
+            `/api/produtos-relacionados?id=${encodeURIComponent(produto.id)}&categoria=${encodeURIComponent(produto.categoria)}`
+          )
+          if (response.ok) {
+            const related = await response.json()
+            setProdutosRelacionados(related)
+          }
+        } catch (error) {
+          console.error("Error loading related products:", error)
+        }
       }
     }
 
@@ -680,7 +687,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                               setSizeError(false)
                             }}
                           >
-                            {size} anos
+                            {size} years
                           </button>
                         ))}
                       </div>
@@ -689,7 +696,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                 ) : (
                   <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-100">
                     <h4 className="text-sm font-semibold text-green-800 mb-4 flex items-center gap-2">
-                      👶 TAMANHOS INFANTIL
+                      👶 KIDS SIZES
                     </h4>
                     <div className="flex flex-wrap gap-3">
                       {["02-03", "03-04", "04-05", "05-06", "06-07", "08-09", "10-11", "12-13"].map((size) => (
@@ -697,16 +704,16 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                           key={size}
                           type="button"
                           className={`rounded-xl border-2 font-semibold transition-all duration-200 px-4 py-3 min-w-[70px] ${
-                            selectedSize === `${size} anos`
+                            selectedSize === `${size} years`
                               ? "border-green-500 bg-green-500 text-white shadow-lg transform scale-105"
                               : "border-gray-200 bg-white hover:border-green-300 hover:bg-green-50 hover:shadow-md"
                           }`}
                           onClick={() => {
-                            setSelectedSize(`${size} anos`)
+                            setSelectedSize(`${size} years`)
                             setSizeError(false)
                           }}
                         >
-                          {size} anos
+                          {size} years
                         </button>
                       ))}
                     </div>
@@ -796,7 +803,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                           </p>
                           {quantidade > 1 && (
                             <span className="text-sm text-gray-500">
-                              ({produto.preco.toFixed(2)}€ cada)
+                              (€{produto.preco.toFixed(2)} each)
                             </span>
                           )}
                         </div>
@@ -947,8 +954,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                       />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Entrega via CTT®</h4>
-                      <p className="text-sm text-purple-600 font-medium">✨ Portes grátis 3 produtos ou 68€+</p>
+                      <h4 className="font-semibold text-gray-900">Delivery via CTT®</h4>
+                      <p className="text-sm text-purple-600 font-medium">✨ Free shipping on 3 products or €68+</p>
                     </div>
                   </div>
                   
@@ -959,7 +966,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                           <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                       </div>
-                      <span className="text-sm font-medium text-green-700">Envio Grátis</span>
+                      <span className="text-sm font-medium text-green-700">Free Shipping</span>
                     </div>
                     
                     <div className="flex items-center gap-2 bg-white/60 rounded-lg p-3">
@@ -968,7 +975,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                           <path d="M12 2v20M2 12h20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                         </svg>
                       </div>
-                      <span className="text-sm text-blue-700">Entrega: 7 a 12 dias úteis</span>
+                      <span className="text-sm text-blue-700">Delivery: 7 to 12 business days</span>
                     </div>
                   </div>
                 </div>
@@ -981,8 +988,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                         <RotateCcw className="h-5 w-5 text-green-600" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900">Devolução Grátis</h4>
-                        <p className="text-sm text-green-700">Até 30 dias após recebimento</p>
+                        <h4 className="font-semibold text-gray-900">Free Returns</h4>
+                        <p className="text-sm text-green-700">Up to 30 days after receipt</p>
                       </div>
                     </div>
                   </div>
@@ -1026,13 +1033,9 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
       {/* Tabs de Informação */}
       <div className="mb-16" id="avaliacoes">
         <Tabs value={activeTab} onValueChange={setActiveTab}>
-          <TabsList className={`w-full grid gap-1 h-auto p-1 bg-muted ${produto.categoria === "capas" ? "grid-cols-2" : produto.subcategoria === "sneakers" ? "grid-cols-3" : "grid-cols-2 sm:grid-cols-4"}`}>
+          <TabsList className={`w-full grid gap-1 h-auto p-1 bg-muted ${produto.categoria === "capas" ? "grid-cols-1" : produto.subcategoria === "sneakers" ? "grid-cols-1" : "grid-cols-2"}`}>
             {produto.subcategoria !== "sneakers" && produto.categoria !== "capas" && (
               <TabsTrigger value="tabela-medidas" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Size Chart</TabsTrigger>
-            )}
-            <TabsTrigger value="descricao" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Description</TabsTrigger>
-            {produto.categoria !== "capas" && (
-              <TabsTrigger value="detalhes" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Details</TabsTrigger>
             )}
             <TabsTrigger value="avaliacoes" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Reviews</TabsTrigger>
           </TabsList>
@@ -1063,96 +1066,6 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                     onError={() => console.error("Erro ao carregar tabelainfantil22.png")}
                   />
                   <p className="text-center text-xs text-muted-foreground mt-2">Kids size chart</p>
-                </div>
-              </div>
-            </TabsContent>
-          )}
-          <TabsContent value="descricao" className="pt-4">
-            <div className="prose max-w-none">
-              {/* Descrição longa melhor formatada */}
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h2 className="text-xl font-semibold mb-4">{produto.nome}</h2>
-                {produto.categoria === "capas" ? (
-                  <div className="space-y-4 text-gray-700 leading-relaxed">
-                    <p>
-                      At Fanzone12.com, each phone case is designed for those who want to protect their phone without losing style.
-                    </p>
-                    <p>
-                      We use <strong>TPU (thermoplastic polyurethane) 📱</strong> — a resistant, flexible and durable material that guarantees high-level protection against scratches, drops and daily wear 💪.
-                    </p>
-                    <p>
-                      In addition to protecting, TPU fits perfectly to your device, offering a precise and comfortable fit 🔐.
-                    </p>
-                    <p>
-                      Our cases are <strong>handcrafted and customized 🎨</strong>, making each one unique.
-                    </p>
-                    <p>
-                      Each piece is created with artisanal care, resulting in a unique and authentic design ✨.
-                    </p>
-                    <p>
-                      As they are handmade, there may be slight differences from the images shown 🖼️ — a sign of their exclusivity and authenticity 💎.
-                    </p>
-                    <p>
-                      Colors and tones may show small variations depending on your device screen 🌈, but we always guarantee premium quality finishes and attention to detail 🧵.
-                    </p>
-                    <p className="font-medium text-gray-900">
-                      More than simple protection, our cases are an extension of your personal style 🎯.
-                    </p>
-                  </div>
-                ) : (
-                  <>
-                    <p className="mb-4">
-                      {produto.descricaoLonga ||
-                        `The official ${produto.nome} jersey is manufactured with high-quality materials to ensure comfort and durability. Made with cutting-edge technology, this jersey offers breathability and moisture management during use.`}
-                    </p>
-                    <h3 className="text-lg font-medium mb-3">Features:</h3>
-                    <ul className="list-disc pl-5 space-y-2">
-                      <li>Lightweight and breathable high-quality material</li>
-                      <li>Advanced moisture management technology</li>
-                      <li>100% High-durability Polyester</li>
-                      <li>Premium finishes for enhanced comfort</li>
-                    </ul>
-                  </>
-                )}
-              </div>
-            </div>
-          </TabsContent>
-          {produto.categoria !== "capas" && (
-            <TabsContent value="detalhes" className="pt-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="text-lg font-medium mb-3">Specifications</h3>
-                  <div className="space-y-2">
-                    <div className="flex justify-between border-b pb-2">
-                      <span className="text-gray-600">Material</span>
-                      <span>{produto.material || "100% Polyester"}</span>
-                    </div>
-                    <div className="flex justify-between border-b pb-2">
-                      <span className="text-gray-600">Type</span>
-                      <span>{produto.categoria}</span>
-                    </div>
-                    <div className="flex justify-between border-b pb-2">
-                      <span className="text-gray-600">Season</span>
-                      <span>{produto.temporada || "2023/2024"}</span>
-                    </div>
-                    <div className="flex justify-between border-b pb-2">
-                      <span className="text-gray-600">Brand</span>
-                      <span>{produto.marca || "Official"}</span>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-3">Care Instructions</h3>
-                  <div className="space-y-2">
-                    <p className="text-gray-600">To keep your jersey in excellent condition, we recommend:</p>
-                    <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                      <li>Machine wash at 30°C</li>
-                      <li>Do not use bleach</li>
-                      <li>Do not tumble dry</li>
-                      <li>Iron at low temperature</li>
-                      <li>Do not dry clean</li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </TabsContent>
@@ -1205,8 +1118,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                 <ReviewForm productId={produto.id} onSuccess={handleReviewSuccess} />
               ) : (
                 <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
-                  <h3 className="text-lg font-medium text-green-800 mb-2">Obrigado pela sua avaliação!</h3>
-                  <p className="text-green-700">A sua avaliação foi publicada com sucesso.</p>
+                  <h3 className="text-lg font-medium text-green-800 mb-2">Thank you for your review!</h3>
+                  <p className="text-green-700">Your review has been published successfully.</p>
                 </div>
               )}
 
@@ -1544,15 +1457,15 @@ function ProductPersonalizacao({
               </p>
               {quantidade > 1 && (
                 <span className="text-sm text-gray-500">
-                  ({precoFinal.toFixed(2)}€ cada)
+                  (€{precoFinal.toFixed(2)} each)
                 </span>
               )}
             </div>
             {personalizacao.ativar && custoPersonalizacao > 0 && (
               <p className="text-sm text-gray-500 mt-1">
-                Personalização: 
-                {(personalizacao.nome || personalizacao.numero) && " +3€ (nome/número)"}
-                {personalizacao.patches && personalizacao.patches.length > 0 && ` +${personalizacao.patches.length}€ (${personalizacao.patches.length} patches)`}
+                Personalization: 
+                {(personalizacao.nome || personalizacao.numero) && " +€3 (name/number)"}
+                {personalizacao.patches && personalizacao.patches.length > 0 && ` +€${personalizacao.patches.length} (${personalizacao.patches.length} patches)`}
               </p>
             )}
           </div>
@@ -1583,15 +1496,15 @@ function ProductPersonalizacao({
             >
               {isLoading ? (
                 <>
-                  <span className="opacity-0">Adicionar ao Carrinho</span>
+                  <span className="opacity-0">Add to Cart</span>
                   <Check className="h-5 w-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-in fade-in-0 zoom-in-0 duration-300" />
                 </>
               ) : (
-                "Adicionar ao Carrinho"
+                "Add to Cart"
               )}
             </button>
           </div>
-          {sizeError && <p className="text-red-500 text-sm mt-2">Por favor, selecione um tamanho.</p>}
+          {sizeError && <p className="text-red-500 text-sm mt-2">Please select a size.</p>}
           
           {/* Klarna Payment Section */}
           <div className="mt-4 p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl border border-pink-200">
@@ -1604,13 +1517,13 @@ function ProductPersonalizacao({
                 className="h-6 w-auto object-contain"
               />
               <span className="text-sm font-medium text-gray-700">
-                Paga em 3 prestações sem juros de <span className="font-bold text-pink-600">€{(precoTotal / 3).toFixed(2)}</span>
+                Pay in 3 interest-free installments of <span className="font-bold text-pink-600">€{(precoTotal / 3).toFixed(2)}</span>
               </span>
               <button
                 onClick={() => setShowKlarnaModal(true)}
                 className="text-sm text-pink-600 hover:text-pink-700 underline font-medium"
               >
-                Saber mais
+                Learn more
               </button>
             </div>
           </div>
@@ -1648,7 +1561,7 @@ function ProductPersonalizacao({
                 </button>
               </div>
               <h2 className="text-lg font-bold text-gray-900 text-center">
-                COMPRA AGORA. PAGA AO TEU RITMO COM KLARNA
+                BUY NOW. PAY AT YOUR OWN PACE WITH KLARNA
               </h2>
             </div>
 
@@ -1659,46 +1572,46 @@ function ProductPersonalizacao({
                   <p className="text-lg font-bold text-pink-600 mb-1">
                     €{(precoTotal / 3).toFixed(2)}
                   </p>
-                  <p className="text-xs text-gray-600">Cada 30 dias</p>
+                  <p className="text-xs text-gray-600">Every 30 days</p>
                 </div>
                 
                 <div className="grid grid-cols-3 gap-2 mb-3">
                   <div className="bg-pink-100 rounded-lg p-2">
                     <p className="text-xs font-bold text-pink-600">€{(precoTotal / 3).toFixed(2)}</p>
-                    <p className="text-xs text-gray-600">Hoje</p>
+                    <p className="text-xs text-gray-600">Today</p>
                   </div>
                   <div className="bg-purple-100 rounded-lg p-2">
                     <p className="text-xs font-bold text-purple-600">€{(precoTotal / 3).toFixed(2)}</p>
-                    <p className="text-xs text-gray-600">30 dias</p>
+                    <p className="text-xs text-gray-600">30 days</p>
                   </div>
                   <div className="bg-pink-100 rounded-lg p-2">
                     <p className="text-xs font-bold text-pink-600">€{(precoTotal / 3).toFixed(2)}</p>
-                    <p className="text-xs text-gray-600">60 dias</p>
+                    <p className="text-xs text-gray-600">60 days</p>
                   </div>
                 </div>
 
                 <div className="flex justify-center gap-4 text-xs text-gray-600 mb-3">
-                  <span>TAEG: <span className="font-bold">0%</span></span>
-                  <span>Juros: <span className="font-bold text-green-600">Grátis</span></span>
+                  <span>APR: <span className="font-bold">0%</span></span>
+                  <span>Interest: <span className="font-bold text-green-600">Free</span></span>
                 </div>
               </div>
 
               <div className="space-y-2">
-                <h3 className="font-bold text-sm text-gray-900 mb-2 text-center">Como funciona?</h3>
+                <h3 className="font-bold text-sm text-gray-900 mb-2 text-center">How does it work?</h3>
                 
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 bg-pink-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">1</div>
-                  <p className="text-xs text-gray-700">Escolhe Klarna no checkout</p>
+                  <p className="text-xs text-gray-700">Choose Klarna at checkout</p>
                 </div>
                 
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 bg-purple-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">2</div>
-                  <p className="text-xs text-gray-700">Seleciona o plano de pagamento</p>
+                  <p className="text-xs text-gray-700">Select the payment plan</p>
                 </div>
                 
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 bg-pink-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">3</div>
-                  <p className="text-xs text-gray-700">Finaliza e paga em 3x sem juros</p>
+                  <p className="text-xs text-gray-700">Complete and pay in 3x interest-free</p>
                 </div>
               </div>
             </div>
@@ -1709,7 +1622,7 @@ function ProductPersonalizacao({
                 onClick={() => setShowKlarnaModal(false)}
                 className="w-full bg-gray-900 text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
               >
-                Fechar
+                Close
               </button>
             </div>
           </div>

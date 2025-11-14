@@ -55,7 +55,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
 
   return (
     <div className="bg-white p-4 rounded border mb-6">
-      <h3 className="font-semibold mb-3">Filtros de Período</h3>
+      <h3 className="font-semibold mb-3">Period Filters</h3>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
         <button
@@ -66,7 +66,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               : "bg-white text-gray-700 hover:bg-gray-50 border-gray-300"
           }`}
         >
-          Hoje
+          Today
         </button>
         
         <button
@@ -77,7 +77,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               : "bg-white text-gray-700 hover:bg-gray-50 border-gray-300"
           }`}
         >
-          Ontem
+          Yesterday
         </button>
         
         <button
@@ -88,7 +88,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               : "bg-white text-gray-700 hover:bg-gray-50 border-gray-300"
           }`}
         >
-          Últimos 7 dias
+          Last 7 days
         </button>
         
         <button
@@ -99,7 +99,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               : "bg-white text-gray-700 hover:bg-gray-50 border-gray-300"
           }`}
         >
-          Últimos 30 dias
+          Last 30 days
         </button>
       </div>
 
@@ -112,7 +112,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               : "bg-white text-gray-700 hover:bg-gray-50 border-gray-300"
           }`}
         >
-          Semana Atual
+          Current Week
           <div className="text-xs opacity-75">({getCurrentWeekRange()})</div>
         </button>
         
@@ -124,7 +124,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               : "bg-white text-gray-700 hover:bg-gray-50 border-gray-300"
           }`}
         >
-          Semana Anterior
+          Previous Week
           <div className="text-xs opacity-75">({getPreviousWeekRange()})</div>
         </button>
       </div>
@@ -138,13 +138,13 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               : "bg-white text-gray-700 hover:bg-gray-50 border-gray-300"
           }`}
         >
-          Intervalo Personalizado
+          Custom Range
         </button>
 
         {showCustom && (
           <div className="flex flex-col md:flex-row gap-2 items-end">
             <div>
-              <label className="block text-xs text-gray-600 mb-1">Data Início</label>
+              <label className="block text-xs text-gray-600 mb-1">Start Date</label>
               <input
                 type="date"
                 value={customStart}
@@ -153,7 +153,7 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               />
             </div>
             <div>
-              <label className="block text-xs text-gray-600 mb-1">Data Fim</label>
+              <label className="block text-xs text-gray-600 mb-1">End Date</label>
               <input
                 type="date"
                 value={customEnd}
@@ -166,14 +166,14 @@ export default function EarningsFilters({ currentFilter, onFilterChange }: Earni
               disabled={!customStart || !customEnd}
               className="px-4 py-2 text-sm bg-blue-600 text-white rounded border border-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Aplicar
+              Apply
             </button>
           </div>
         )}
       </div>
 
       <div className="mt-4 p-3 bg-blue-50 rounded text-sm text-blue-800">
-        <strong>Reset Automático:</strong> Os ganhos semanais reiniciam sempre às 00:00h de segunda-feira.
+        <strong>Automatic Reset:</strong> Weekly earnings always reset at 00:00 on Monday.
       </div>
     </div>
   )

@@ -101,9 +101,9 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               </div>
               <div>
                 <h3 className="text-lg sm:text-xl font-bold mb-1 bg-gradient-to-r from-primary via-purple-600 to-pink-500 bg-clip-text text-transparent">
-                  Personalização Premium
+                  Premium Personalization
                 </h3>
-                <p className="text-xs sm:text-sm text-primary/70">Torne sua camisola única e especial</p>
+                <p className="text-xs sm:text-sm text-primary/70">Make your jersey unique and special</p>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full shadow-md border border-primary/20 transition-all duration-300 hover:shadow-lg hover:border-primary/40">
@@ -117,10 +117,10 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                 {ativar ? (
                   <>
                     <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-500" />
-                    <span>Personalização Ativa</span>
+                    <span>Personalization Active</span>
                   </>
                 ) : (
-                  "Ativar Personalização"
+                  "Enable Personalization"
                 )}
               </Label>
             </div>
@@ -133,7 +133,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   <div className="flex items-center gap-2 mb-3 sm:mb-4">
                     <Type className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                     <Label htmlFor="nome" className="font-semibold text-sm sm:text-base bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                      Nome nas Costas
+                      Name on Back
                     </Label>
                   </div>
                   <input
@@ -143,14 +143,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     value={nome}
                     onChange={(e) => setNome(e.target.value)}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 px-2"
-                    placeholder="Nome para a camisola"
+                    placeholder="Name for the jersey"
                   />
                 </div>
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20 transition-all duration-300 hover:shadow-xl hover:border-primary/40">
                   <div className="flex items-center gap-2 mb-3 sm:mb-4">
                     <Hash className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                     <Label htmlFor="numero" className="font-semibold text-sm sm:text-base bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                      Número nas Costas
+                      Number on Back
                     </Label>
                   </div>
                   <Input
@@ -162,7 +162,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     maxLength={2}
                     className="font-medium text-base sm:text-lg border-primary/20 focus:border-primary/40 focus:ring-2 focus:ring-primary/20 transition-all duration-300"
                   />
-                  <p className="text-[10px] sm:text-xs text-primary/60 mt-2 ml-1">Números de 0 a 99</p>
+                  <p className="text-[10px] sm:text-xs text-primary/60 mt-2 ml-1">Numbers from 0 to 99</p>
                 </div>
               </div>
 
@@ -172,7 +172,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   <div className="flex items-center gap-2 mb-3 sm:mb-4">
                     <Type className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                     <Label className="font-semibold text-sm sm:text-base bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                      Tipo de Letra
+                      Font Type
                     </Label>
                   </div>
                   <RadioGroup 
@@ -205,7 +205,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               {isNationalTeam && (
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20">
                   <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Patches Seleções
+                    National Team Patches
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
@@ -228,7 +228,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Liga das Nações 2025
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Liga das Nações 2025</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official 2025 Nations League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -254,7 +254,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Liga das Nações 2025 + UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Edição comemorativa de 10 anos</p>
+                            <p className="text-xs sm:text-sm text-primary/60">10th anniversary commemorative edition</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+2€</p>
                           </div>
                         </Label>
@@ -267,7 +267,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               {isPortugueseClub && (
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20">
                   <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Patches Disponíveis
+                    Available Patches
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
@@ -288,9 +288,9 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                           </div>
                           <div className="flex-1">
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                              Patch de Campeão Português
+                              Portuguese Champion Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Adiciona um toque especial à sua camisola</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Adds a special touch to your jersey</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -314,9 +314,9 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                           </div>
                           <div className="flex-1">
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                              Patch de Campeão Liga Portuguesa
+                              Portuguese League Champion Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Celebre a conquista do campeonato</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Celebrate the championship victory</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -342,7 +342,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -368,7 +368,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Liga Portugal Betclic
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da liga</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official league patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -394,7 +394,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da UEFA Foundation</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -407,7 +407,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               {isEnglishClub && (
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20">
                   <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Patches Disponíveis
+                    Available Patches
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
@@ -428,9 +428,9 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                           </div>
                           <div className="flex-1">
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                              Patch Campeão Premier League
+                              Premier League Champion Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch dourado do campeão inglês</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Golden patch for English champions</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -456,7 +456,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Premier League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Premier League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Premier League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -482,7 +482,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               No Room for Racism
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Campanha contra o racismo</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Anti-racism campaign</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -508,7 +508,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -536,7 +536,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da UEFA Foundation</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -567,7 +567,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                                 <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                                   Diogo Jota
                                 </p>
-                                <p className="text-xs sm:text-sm text-primary/60">Patch exclusivo do jogador português</p>
+                                <p className="text-xs sm:text-sm text-primary/60">Exclusive patch for the Portuguese player</p>
                                 <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                               </div>
                             </Label>
@@ -595,7 +595,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                                 <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                                   Diogo Jota Manga
                                 </p>
-                                <p className="text-xs sm:text-sm text-primary/60">Patch na manga do jogador português</p>
+                                <p className="text-xs sm:text-sm text-primary/60">Sleeve patch for the Portuguese player</p>
                                 <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                               </div>
                             </Label>
@@ -610,7 +610,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               {isLaLigaClub && (
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20">
                   <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Patches Disponíveis
+                    Available Patches
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
@@ -633,7 +633,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch La Liga
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da La Liga</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official La Liga patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -659,7 +659,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch La Liga 24/25
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da temporada 24/25</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official 24/25 season patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -686,7 +686,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -713,7 +713,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da UEFA Foundation</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -726,7 +726,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               {isLigue1Club && (
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20">
                   <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Patches Disponíveis
+                    Available Patches
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
@@ -747,9 +747,9 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                           </div>
                           <div className="flex-1">
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                              Patch Ligue 1 Preto
+                              Ligue 1 Black Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Ligue 1</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Ligue 1 patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -801,7 +801,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Ligue 1 2025
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch da temporada 2025</p>
+                            <p className="text-xs sm:text-sm text-primary/60">2025 season patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -827,7 +827,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -855,7 +855,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -882,7 +882,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da UEFA Foundation</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -895,7 +895,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               {isBundesligaClub && (
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20">
                   <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Patches Disponíveis
+                    Available Patches
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
@@ -918,7 +918,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Bundesliga
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Bundesliga</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Bundesliga patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -944,7 +944,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -972,7 +972,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -999,7 +999,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da UEFA Foundation</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -1012,7 +1012,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
               {isSerieAClub && (
                 <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-lg border border-primary/20">
                   <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Patches Disponíveis
+                    Available Patches
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     {/* Patch Serie A 2024-26 Enilive */}
@@ -1036,7 +1036,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               2024-26 Patch Serie A Enilive
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Serie A 2024-26</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Serie A 2024-26 patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -1064,7 +1064,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               23/24 Patch Serie A TIM
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Serie A 23/24</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Serie A 23/24 patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -1092,7 +1092,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Champions League</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -1119,7 +1119,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da UEFA Foundation</p>
+                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
                             <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
@@ -1138,17 +1138,17 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm font-medium bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                      Custos de Personalização:
+                      Personalization Costs:
                     </p>
                     <ul className="mt-2 space-y-1 text-xs sm:text-sm text-primary/70">
                       <li className="flex items-center gap-2">
                         <Sparkles className="h-3 w-3 text-yellow-500" />
-                        Nome e Número: +3€
+                        Name and Number: +€3
                       </li>
                       {patches.length > 0 && (
                         <li className="flex items-center gap-2">
                           <Sparkles className="h-3 w-3 text-yellow-500" />
-                          Patches Selecionados: +{patches.length}€ ({patches.length} patch{patches.length > 1 ? 'es' : ''})
+                          Selected Patches: +€{patches.length} ({patches.length} patch{patches.length > 1 ? 'es' : ''})
                         </li>
                       )}
                     </ul>

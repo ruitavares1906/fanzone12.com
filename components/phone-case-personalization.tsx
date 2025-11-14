@@ -132,9 +132,9 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
           <div className="flex items-center gap-2">
             <span className="text-lg">🔢</span>
             <div>
-              <h3 className="font-semibold text-gray-900">Selecione o Padrão</h3>
+              <h3 className="font-semibold text-gray-900">Select Pattern</h3>
               <p className="text-sm text-gray-600">
-                Escolha o padrão desejado
+                Choose your desired pattern
               </p>
             </div>
           </div>
@@ -167,7 +167,7 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
             {padraoSelecionado && (
               <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
                 <p className="text-sm text-blue-800">
-                  ✓ Padrão selecionado: <span className="font-bold text-lg">{padraoSelecionado}</span>
+                  ✓ Pattern selected: <span className="font-bold text-lg">{padraoSelecionado}</span>
                 </p>
               </div>
             )}
@@ -186,9 +186,9 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
           <div className="flex items-center gap-2">
             <span className="text-lg">🎨</span>
             <div>
-              <h3 className="font-semibold text-gray-900">Selecione a Cor da Capa</h3>
+              <h3 className="font-semibold text-gray-900">Select Case Color</h3>
               <p className="text-sm text-gray-600">
-                Escolha a cor da sua capa personalizada
+                Choose the color for your personalized case
               </p>
             </div>
           </div>
@@ -219,7 +219,7 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
             {cor && (
               <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
                 <p className="text-sm text-blue-800">
-                  ✓ Cor selecionada: <span className="font-bold text-lg">{cor}</span>
+                  ✓ Color selected: <span className="font-bold text-lg">{cor}</span>
                 </p>
               </div>
             )}
@@ -238,9 +238,9 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
           <div className="flex items-center gap-2">
             <span className="text-lg">✨</span>
             <div>
-              <h3 className="font-semibold text-gray-900">Personalização</h3>
+              <h3 className="font-semibold text-gray-900">Personalization</h3>
               <p className="text-sm text-gray-600">
-                Adicione nome e/ou número à sua capa
+                Add name and/or number to your case
               </p>
             </div>
           </div>
@@ -262,9 +262,9 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
               <div className="flex items-start gap-2">
                 <span className="text-blue-600 mt-0.5">ℹ️</span>
                 <div className="text-sm text-blue-800">
-                  <p className="font-medium">Personalização GRATUITA</p>
+                  <p className="font-medium">FREE Personalization</p>
                   <p className="text-xs text-blue-600 mt-1">
-                    Adicione nome e/ou número sem custo adicional
+                    Add name and/or number at no additional cost
                   </p>
                 </div>
               </div>
@@ -274,20 +274,20 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
             <div className="space-y-2">
               <Label htmlFor="personalizacao-nome" className="text-sm font-medium flex items-center gap-2">
                 <span>👤</span>
-                <span>Nome</span>
-                <span className="text-xs text-gray-500 font-normal">(opcional)</span>
+                <span>Name</span>
+                <span className="text-xs text-gray-500 font-normal">(optional)</span>
               </Label>
               <Input
                 id="personalizacao-nome"
                 type="text"
                 value={nome}
                 onChange={(e) => handleNomeChange(e.target.value)}
-                placeholder="Ex: João Silva"
+                placeholder="Ex: John Smith"
                 maxLength={20}
                 className="border-2 focus:border-blue-500"
               />
               <p className="text-xs text-gray-500">
-                Máximo 20 caracteres. {nome.length}/20
+                Maximum 20 characters. {nome.length}/20
               </p>
             </div>
 
@@ -295,8 +295,8 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
             <div className="space-y-2">
               <Label htmlFor="personalizacao-numero" className="text-sm font-medium flex items-center gap-2">
                 <span>#️⃣</span>
-                <span>Número</span>
-                <span className="text-xs text-gray-500 font-normal">(opcional)</span>
+                <span>Number</span>
+                <span className="text-xs text-gray-500 font-normal">(optional)</span>
               </Label>
               <Input
                 id="personalizacao-numero"
@@ -308,7 +308,7 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
                 className="border-2 focus:border-blue-500"
               />
               <p className="text-xs text-gray-500">
-                Máximo 10 caracteres. {numero.length}/10
+                Maximum 10 characters. {numero.length}/10
               </p>
             </div>
 
@@ -316,18 +316,18 @@ export function PhoneCasePersonalization({ onChange, enabled = true, cores, padr
             {(nome || numero) && (
               <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-lg">
                 <p className="text-xs text-gray-600 mb-2 font-medium">
-                  Pré-visualização:
+                  Preview:
                 </p>
                 <div className="flex flex-col gap-1">
                   {nome && (
                     <div className="text-sm">
-                      <span className="text-gray-600">Nome: </span>
+                      <span className="text-gray-600">Name: </span>
                       <span className="font-semibold text-gray-900">{nome}</span>
                     </div>
                   )}
                   {numero && (
                     <div className="text-sm">
-                      <span className="text-gray-600">Número: </span>
+                      <span className="text-gray-600">Number: </span>
                       <span className="font-semibold text-gray-900">{numero}</span>
                     </div>
                   )}

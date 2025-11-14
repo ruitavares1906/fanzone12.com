@@ -1602,7 +1602,7 @@ export default async function Home() {
                   </div>
                   <div className="absolute bottom-3 left-6 text-white">
                     <h3 className="text-3xl font-bold mb-2">Nike</h3>
-                    <p className="text-orange-100 text-base">Just Do It - Inovação americana</p>
+                    <p className="text-orange-100 text-base">Just Do It - American innovation</p>
                     <div className="flex items-center gap-2 mt-2">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                       <span className="text-sm text-orange-100">Just Do It</span>
@@ -1638,7 +1638,7 @@ export default async function Home() {
                   </div>
                   <div className="absolute bottom-3 left-6 text-white">
                     <h3 className="text-3xl font-bold mb-2">Adidas</h3>
-                    <p className="text-green-100 text-base">Sneakers clássicos alemães</p>
+                    <p className="text-green-100 text-base">Classic German sneakers</p>
                     <div className="flex items-center gap-2 mt-2">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                       <span className="text-sm text-green-100">Impossible is Nothing</span>
@@ -1674,7 +1674,7 @@ export default async function Home() {
                   </div>
                   <div className="absolute bottom-3 left-6 text-white">
                     <h3 className="text-3xl font-bold mb-2">New Balance</h3>
-                    <p className="text-gray-200 text-base">Conforto e qualidade americana</p>
+                    <p className="text-gray-200 text-base">American comfort and quality</p>
                     <div className="flex items-center gap-2 mt-2">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                       <span className="text-sm text-gray-200">Fearlessly Independent</span>

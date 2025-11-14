@@ -68,11 +68,23 @@ export default function CarrinhoPage() {
   }
 
   // Hook de pagamento
-  const {
-    paymentState,
-    getPaymentSummary,
-    hasPersonalizedItems
-  } = useCartPayment(cartItems, discounts)
+  const paymentResult = useCartPayment(cartItems, discounts)
+  const paymentState = paymentResult?.paymentState ?? {
+    method: "online" as const,
+    hasPersonalizedItems: false,
+    subtotalOriginal: 0,
+    totalDiscounts: 0,
+    subtotalWithDiscounts: 0,
+    shipping: 0,
+    total: 0
+  }
+  const getPaymentSummary = paymentResult?.getPaymentSummary ?? (() => ({
+    method: "Online Payment",
+    description: "Pay securely with credit/debit card",
+    total: 0,
+    breakdown: []
+  }))
+  const hasPersonalizedItems = paymentResult?.hasPersonalizedItems ?? false
 
   // Remover useEffect desnecessário - o hook já gerencia o estado
 
@@ -107,9 +119,10 @@ export default function CarrinhoPage() {
       const data = await res.json()
       if (data.valid) {
         const partnerPercent = 10 // 10% para parceiros
+        const currentSubtotal = paymentState?.subtotalOriginal ?? 0
         setAppliedDiscount({ 
           code: data.code, 
-          amount: (subtotal * partnerPercent) / 100, 
+          amount: (currentSubtotal * partnerPercent) / 100, 
           percentage: partnerPercent 
         })
         setDiscountError("")
@@ -144,20 +157,20 @@ export default function CarrinhoPage() {
   }
 
   // Usar valores do hook de pagamento
-  const subtotal = paymentState.subtotalOriginal
-  const envio = paymentState.shipping
-  const total = paymentState.total
-  const totalDiscounts = paymentState.totalDiscounts
+  const subtotal = paymentState?.subtotalOriginal ?? 0
+  const envio = paymentState?.shipping ?? 0
+  const total = paymentState?.total ?? 0
+  const totalDiscounts = paymentState?.totalDiscounts ?? 0
   
   const totalItems = cart.length > 0 ? cart.reduce((total, item) => total + item.quantidade, 0) : 0
-  const promotionInfo = getPromotionInfo()
+  const promotionInfo = getPromotionInfo() ?? { applied: false, savedAmount: 0, freeItems: 0 }
   const camisolaCount = cart.filter(item => item.subcategoria !== "sneakers" && item.categoria !== "capas").reduce((sum, item) => sum + item.quantidade, 0)
   // Lógica igual ao backend: se compra >= 68€, desconto fixo de 7€, senão 10%
   const partnerHasFixed = appliedDiscount?.code ? subtotal >= 68 : false
   const discountValue = appliedDiscount?.code
     ? partnerHasFixed
       ? 7
-      : Number(((subtotal * 10) / 100).toFixed(2))
+      : Number((((subtotal ?? 0) * 10) / 100).toFixed(2))
     : 0
 
   const handleQuantityChange = (id: string, tamanhoSelecionado: string, quantidade: number, personalizacao?: any) => {
@@ -312,8 +325,9 @@ export default function CarrinhoPage() {
       }
 
       const code = String(data.code).toUpperCase()
-      const isFixed = subtotal >= 68
-      const discountAmount = isFixed ? 7 : (subtotal * 10) / 100
+      const currentSubtotal = paymentState?.subtotalOriginal ?? 0
+      const isFixed = currentSubtotal >= 68
+      const discountAmount = isFixed ? 7 : (currentSubtotal * 10) / 100
       setAppliedDiscount({ code, amount: discountAmount, percentage: isFixed ? 0 : 10 })
       setDiscountError("")
       toast({
@@ -520,22 +534,22 @@ export default function CarrinhoPage() {
                                       <div className="text-right">
                                         <p className="text-lg lg:text-xl font-bold text-primary">
                                           €{(() => {
-                                            let itemTotal = item.preco * item.quantidade;
+                                            let itemTotal = (item.preco ?? 0) * (item.quantidade ?? 0);
                                             
                                             // Capas têm personalização GRATUITA
                                             if (item.personalizacao?.ativar && item.categoria !== 'capas') {
                                               // Custo da personalização (nome e número) - só se tiver nome OU número
                                               if (item.personalizacao.nome || item.personalizacao.numero) {
-                                                itemTotal += 3 * item.quantidade;
+                                                itemTotal += 3 * (item.quantidade ?? 0);
                                               }
                                               
                                               // Custo dos patches - 1€ por patch
                                               if (Array.isArray(item.personalizacao?.patches) && item.personalizacao.patches.length > 0) {
-                                                itemTotal += item.personalizacao.patches.length * 1 * item.quantidade;
+                                                itemTotal += item.personalizacao.patches.length * 1 * (item.quantidade ?? 0);
                                               }
                                             }
                                             
-                                            return itemTotal.toFixed(2);
+                                            return (itemTotal ?? 0).toFixed(2);
                                           })()}
                                         </p>
                         {item.personalizacao?.ativar && item.categoria !== 'capas' && (
@@ -598,7 +612,7 @@ export default function CarrinhoPage() {
                       <div className="space-y-4 mb-8">
                         <div className="flex justify-between text-muted-foreground">
                           <span>Subtotal ({cart.reduce((total, item) => total + item.quantidade, 0)} {cart.reduce((total, item) => total + item.quantidade, 0) === 1 ? 'item' : 'items'})</span>
-                          <span className="font-medium text-foreground">€{subtotal.toFixed(2)}</span>
+                          <span className="font-medium text-foreground">€{(subtotal ?? 0).toFixed(2)}</span>
             </div>
 
                         <div className="flex justify-between text-muted-foreground">
@@ -606,14 +620,14 @@ export default function CarrinhoPage() {
                           {envio === 0 ? (
                           <span className="font-medium text-primary">Free</span>
                           ) : (
-                            <span className="font-medium text-foreground">€{envio.toFixed(2)}</span>
+                            <span className="font-medium text-foreground">€{(envio ?? 0).toFixed(2)}</span>
                           )}
           </div>
                         
                         {/* Shipping Info */}
                         {envio > 0 && (
                           <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
-                            💡 <strong>Free shipping</strong> from 3 products or orders above €68! Add {3 - totalItems} more {3 - totalItems === 1 ? 'product' : 'products'} or €{Math.max(0, 68 - subtotal).toFixed(2)} for free shipping.
+                            💡 <strong>Free shipping</strong> from 3 products or orders above €68! Add {3 - totalItems} more {3 - totalItems === 1 ? 'product' : 'products'} or €{Math.max(0, 68 - (subtotal ?? 0)).toFixed(2)} for free shipping.
                           </div>
                         )}
                         
@@ -624,14 +638,14 @@ export default function CarrinhoPage() {
                         )}
 
                         {/* Promoção Leva 4 Paga 3 */}
-                        {promotionInfo.applied && (
+                        {promotionInfo?.applied && (
                           <div className="text-xs text-primary bg-accent border border-border rounded-lg p-3">
-                            🎁 <strong>Active Promotion!</strong> Buy 4 jerseys pay for 3 - {promotionInfo.freeItems} {promotionInfo.freeItems === 1 ? 'free jersey' : 'free jerseys'}!
+                            🎁 <strong>Active Promotion!</strong> Buy 4 jerseys pay for 3 - {promotionInfo?.freeItems ?? 0} {(promotionInfo?.freeItems ?? 0) === 1 ? 'free jersey' : 'free jerseys'}!
                           </div>
                         )}
 
                         {/* Informação sobre promoção quando não aplicada */}
-                        {!promotionInfo.applied && totalItems > 0 && (
+                        {!promotionInfo?.applied && totalItems > 0 && (
                           <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
                             🔥 <strong>Buy 4 Pay 3 Promotion!</strong> Applies only to jerseys. Add {4 - (camisolaCount % 4)} more {4 - (camisolaCount % 4) === 1 ? 'jersey' : 'jerseys'} to get 1 free item!
                           </div>
@@ -698,15 +712,15 @@ export default function CarrinhoPage() {
                         {appliedDiscount && (
                           <div className="flex justify-between text-primary">
                             <span>Partner discount {partnerHasFixed ? "(fixed)" : "(10%)"}</span>
-                            <span className="font-medium">-€{discountValue.toFixed(2)}</span>
+                            <span className="font-medium">-€{(discountValue ?? 0).toFixed(2)}</span>
                           </div>
                         )}
 
                         {/* Promotion Applied */}
-                        {promotionInfo.applied && (
+                        {promotionInfo?.applied && (
                           <div className="flex justify-between text-purple-600">
-                            <span>Buy 4 Pay 3 Promotion - Jerseys ({promotionInfo.freeItems} {promotionInfo.freeItems === 1 ? 'free jersey' : 'free jerseys'})</span>
-                            <span className="font-medium">-€{promotionInfo.savedAmount.toFixed(2)}</span>
+                            <span>Buy 4 Pay 3 Promotion - Jerseys ({promotionInfo?.freeItems ?? 0} {(promotionInfo?.freeItems ?? 0) === 1 ? 'free jersey' : 'free jerseys'})</span>
+                            <span className="font-medium">-€{((promotionInfo?.savedAmount ?? 0)).toFixed(2)}</span>
                           </div>
                         )}
 
@@ -714,12 +728,12 @@ export default function CarrinhoPage() {
                           {totalDiscounts > 0 && (
                           <div className="flex justify-between text-muted-foreground mb-2">
                               <span>Total discounts</span>
-                              <span className="font-medium">-€{totalDiscounts.toFixed(2)}</span>
+                              <span className="font-medium">-€{(totalDiscounts ?? 0).toFixed(2)}</span>
                             </div>
                           )}
                           <div className="flex justify-between text-xl font-bold text-foreground">
                             <span>Total</span>
-                            <span className="text-primary">€{total.toFixed(2)}</span>
+                            <span className="text-primary">€{(total ?? 0).toFixed(2)}</span>
                   </div>
                   </div>
                   </div>

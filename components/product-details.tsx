@@ -68,7 +68,7 @@ export function ProductDetails({ product }: { product: Product }) {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-3">Selecione o Tamanho</h3>
+          <h3 className="text-lg font-semibold mb-3">Select Size</h3>
           <SizeSelector 
             onChange={(size) => {
               setSelectedSize(size)
@@ -78,30 +78,25 @@ export function ProductDetails({ product }: { product: Product }) {
             subcategoria={product.subcategoria}
           />
           {sizeError && (
-            <p className="text-red-500 mt-2">Por favor, selecione um tamanho</p>
+            <p className="text-red-500 mt-2">Please select a size</p>
           )}
         </div>
 
-        <div className="space-y-4">
-          <h3 className="text-lg font-semibold">Descrição</h3>
-          <p className="text-muted-foreground">{product.descricaoLonga}</p>
-        </div>
-
         <Button onClick={handleAddToCart} className="w-full">
-          Adicionar ao Carrinho
+          Add to Cart
         </Button>
 
         <ProductPersonalizacao produto={product} />
 
         <div className="space-y-3 text-sm bg-gray-50 p-4 rounded-lg border border-gray-100">
-          <h3 className="font-medium text-gray-900 mb-2">Informações de Envio e Devolução</h3>
+          <h3 className="font-medium text-gray-900 mb-2">Shipping and Returns Information</h3>
           <div className="flex items-center gap-2 text-gray-600">
             <Truck className="h-4 w-4 text-primary" />
-            <p>Entrega em 7-12 dias úteis</p>
+            <p>Delivery in 7-12 business days</p>
           </div>
           <div className="flex items-center gap-2 text-gray-600">
             <RotateCcw className="h-4 w-4 text-primary" />
-            <p>Devolução gratuita em 30 dias</p>
+            <p>Free returns within 30 days</p>
           </div>
         </div>
       </div>

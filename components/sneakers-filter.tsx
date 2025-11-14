@@ -74,10 +74,10 @@ export function SneakersFilter() {
   }
 
   const filtrosAtivos = [
-    precoMin || precoMax ? "Preço" : null,
-    pesquisa ? "Pesquisa" : null,
-    cores.length > 0 ? "Cor" : null,
-    marcas.length > 0 ? "Marca" : null,
+    precoMin || precoMax ? "Price" : null,
+    pesquisa ? "Search" : null,
+    cores.length > 0 ? "Color" : null,
+    marcas.length > 0 ? "Brand" : null,
   ].filter(Boolean)
 
   return (
@@ -86,7 +86,7 @@ export function SneakersFilter() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Filter className="h-5 w-5 text-gray-600" />
-          <h3 className="font-semibold text-gray-900">Filtros</h3>
+          <h3 className="font-semibold text-gray-900">Filters</h3>
         </div>
         {filtrosAtivos.length > 0 && (
           <Button
@@ -96,7 +96,7 @@ export function SneakersFilter() {
             className="text-gray-500 hover:text-gray-700"
           >
             <X className="h-4 w-4 mr-1" />
-            Limpar
+            Clear
           </Button>
         )}
       </div>
@@ -116,11 +116,11 @@ export function SneakersFilter() {
 
       {/* Search */}
       <div className="space-y-3">
-        <Label className="text-sm font-medium text-gray-700">Pesquisar</Label>
+        <Label className="text-sm font-medium text-gray-700">Search</Label>
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
           <Input
-            placeholder="Pesquisar sneakers..."
+            placeholder="Search sneakers..."
             value={pesquisa}
             onChange={(e) => setPesquisa(e.target.value)}
             onKeyPress={(e) => e.key === "Enter" && handlePesquisa()}
@@ -128,7 +128,7 @@ export function SneakersFilter() {
           />
         </div>
         <Button onClick={handlePesquisa} size="sm" className="w-full">
-          Pesquisar
+          Search
         </Button>
       </div>
 
@@ -136,7 +136,7 @@ export function SneakersFilter() {
 
       {/* Price Range */}
       <div className="space-y-3">
-        <Label className="text-sm font-medium text-gray-700">Intervalo de Preço</Label>
+        <Label className="text-sm font-medium text-gray-700">Price Range</Label>
         <div className="space-y-4">
           <Slider
             value={[parseInt(precoMin) || 0, parseInt(precoMax) || 200]}
@@ -148,7 +148,7 @@ export function SneakersFilter() {
           />
           <div className="flex gap-2">
             <div className="flex-1">
-              <Label className="text-xs text-gray-500">Mín</Label>
+              <Label className="text-xs text-gray-500">Min</Label>
               <Input
                 type="number"
                 placeholder="0"
@@ -158,7 +158,7 @@ export function SneakersFilter() {
               />
             </div>
             <div className="flex-1">
-              <Label className="text-xs text-gray-500">Máx</Label>
+              <Label className="text-xs text-gray-500">Max</Label>
               <Input
                 type="number"
                 placeholder="200"
@@ -175,7 +175,7 @@ export function SneakersFilter() {
 
       {/* Colors */}
       <div className="space-y-3">
-        <Label className="text-sm font-medium text-gray-700">Cor</Label>
+        <Label className="text-sm font-medium text-gray-700">Color</Label>
         <div className="space-y-2">
           {coresDisponiveis.map((cor) => (
             <div key={cor} className="flex items-center space-x-2">
@@ -199,7 +199,7 @@ export function SneakersFilter() {
 
       {/* Brands */}
       <div className="space-y-3">
-        <Label className="text-sm font-medium text-gray-700">Marca</Label>
+        <Label className="text-sm font-medium text-gray-700">Brand</Label>
         <div className="space-y-2">
           {marcasDisponiveis.map((marca) => (
             <div key={marca} className="flex items-center space-x-2">

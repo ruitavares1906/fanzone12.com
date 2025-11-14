@@ -43,9 +43,9 @@ export function CartNotification({ produto, tamanho, personalizacao, onClose }: 
   }
 
   // Descrição do produto
-  let descricao = `${produto.nome} (Tamanho: ${tamanho})`
+  let descricao = `${produto.nome} (Size: ${tamanho})`
   if (personalizacao?.ativar) {
-    descricao += ` com personalização: ${personalizacao.nome || ""} ${personalizacao.numero || ""}`
+    descricao += ` with personalization: ${personalizacao.nome || ""} ${personalizacao.numero || ""}`
     if (personalizacao.fonte) {
       const fonteNames = {
         "liga-betclic": "LIGA BETCLIC",
@@ -101,12 +101,12 @@ export function CartNotification({ produto, tamanho, personalizacao, onClose }: 
             <div className="bg-green-100 p-2 rounded-full">
               <Check className="h-5 w-5 text-green-600" />
             </div>
-            <h3 className="ml-2 text-lg font-medium text-green-800">Produto adicionado ao carrinho</h3>
+            <h3 className="ml-2 text-lg font-medium text-green-800">Product added to cart</h3>
           </div>
           <button
             onClick={handleClose}
             className="text-gray-500 hover:text-gray-700 transition-colors"
-            aria-label="Fechar"
+            aria-label="Close"
           >
             <X className="h-5 w-5" />
           </button>
@@ -133,11 +133,11 @@ export function CartNotification({ produto, tamanho, personalizacao, onClose }: 
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <Button variant="outline" className="flex-1 justify-center" onClick={handleClose}>
-              Continuar comprando
+              Continue Shopping
             </Button>
             <Button asChild className="flex-1 justify-center" onClick={handleClose}>
               <Link href="/carrinho">
-                Ver carrinho <ShoppingCart className="ml-2 h-4 w-4" />
+                View Cart <ShoppingCart className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>

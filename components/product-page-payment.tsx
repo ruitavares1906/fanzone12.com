@@ -54,13 +54,13 @@ export function ProductPagePayment({ product, onAddToCart }: ProductPagePaymentP
         
         {/* Seleção de tamanho */}
         <div className="mb-4">
-          <label className="block text-sm font-medium mb-2">Tamanho</label>
+          <label className="block text-sm font-medium mb-2">Size</label>
           <select 
             value={selectedSize} 
             onChange={(e) => setSelectedSize(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded-md"
           >
-            <option value="">Selecionar tamanho</option>
+            <option value="">Select size</option>
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
@@ -72,16 +72,16 @@ export function ProductPagePayment({ product, onAddToCart }: ProductPagePaymentP
         {/* Personalização */}
         {hasPersonalization && (
           <div className="mb-4 space-y-3">
-            <h3 className="font-medium">Personalização</h3>
+            <h3 className="font-medium">Personalization</h3>
             
             {product.personalizationOptions?.name && (
               <div>
-                <label className="block text-sm font-medium mb-1">Nome (3€)</label>
+                <label className="block text-sm font-medium mb-1">Name (€3)</label>
                 <input
                   type="text"
                   value={personalization.name}
                   onChange={(e) => setPersonalization(prev => ({ ...prev, name: e.target.value }))}
-                  placeholder="Ex: João"
+                  placeholder="Ex: John"
                   className="w-full p-2 border border-gray-300 rounded-md"
                 />
               </div>
@@ -89,7 +89,7 @@ export function ProductPagePayment({ product, onAddToCart }: ProductPagePaymentP
 
             {product.personalizationOptions?.number && (
               <div>
-                <label className="block text-sm font-medium mb-1">Número (3€)</label>
+                <label className="block text-sm font-medium mb-1">Number (€3)</label>
                 <input
                   type="text"
                   value={personalization.number}
@@ -134,7 +134,7 @@ export function ProductPagePayment({ product, onAddToCart }: ProductPagePaymentP
 
         {/* Quantidade */}
         <div className="mb-4">
-          <label className="block text-sm font-medium mb-2">Quantidade</label>
+          <label className="block text-sm font-medium mb-2">Quantity</label>
           <div className="flex items-center space-x-2">
             <button
               onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -157,7 +157,7 @@ export function ProductPagePayment({ product, onAddToCart }: ProductPagePaymentP
           onClick={handleAddToCart}
           className="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-medium hover:bg-blue-700"
         >
-          Adicionar ao Carrinho
+          Add to Cart
         </button>
       </div>
 

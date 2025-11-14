@@ -31,13 +31,13 @@ export function AddToCartModal({
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
-        <DialogTitle className="sr-only">Produto adicionado ao carrinho</DialogTitle>
+        <DialogTitle className="sr-only">Product added to cart</DialogTitle>
         <div className="flex flex-col items-center text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
             <CheckCircle2 className="w-10 h-10 text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold mb-2">Adicionado ao Carrinho!</h2>
-          <p className="text-gray-600 mb-6">O item foi adicionado ao seu carrinho com sucesso.</p>
+          <h2 className="text-2xl font-bold mb-2">Added to Cart!</h2>
+          <p className="text-gray-600 mb-6">The item has been successfully added to your cart.</p>
 
           <div className="bg-gray-50 w-full p-4 rounded-lg mb-6">
             <div className="flex items-center gap-4">
@@ -51,8 +51,8 @@ export function AddToCartModal({
               </div>
               <div className="flex-1 text-left">
                 <h3 className="font-medium text-gray-900 mb-1">{product.nome}</h3>
-                <p className="text-sm text-gray-600">Tamanho: {selectedSize}</p>
-                <p className="text-sm text-gray-600">Quantidade: {quantidade}</p>
+                <p className="text-sm text-gray-600">Size: {selectedSize}</p>
+                <p className="text-sm text-gray-600">Quantity: {quantidade}</p>
               </div>
             </div>
           </div>
@@ -63,20 +63,20 @@ export function AddToCartModal({
               className="flex-1 text-base py-6"
               onClick={onClose}
             >
-              Continuar Comprando
+              Continue Shopping
             </Button>
             <Button
               className="flex-1 text-base py-6 bg-primary"
               onClick={handleGoToCart}
             >
-              <span>Ver Carrinho</span>
+              <span>View Cart</span>
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
 
           <div className="mt-6 flex items-center gap-2 text-sm text-gray-600">
             <ShoppingCart className="h-4 w-4" />
-            <span>{quantidade} {quantidade === 1 ? 'item' : 'itens'} no carrinho</span>
+            <span>{quantidade} {quantidade === 1 ? 'item' : 'items'} in cart</span>
           </div>
         </div>
       </DialogContent>

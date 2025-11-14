@@ -43,8 +43,8 @@ export function AddToCartButton({
         onError()
       }
       toast({
-        title: "Selecione um tamanho",
-        description: "Por favor, selecione um tamanho antes de adicionar ao carrinho.",
+        title: "Select a size",
+        description: "Please select a size before adding to cart.",
         variant: "destructive",
       })
       return
@@ -104,9 +104,9 @@ export function AddToCartButton({
           variant={variant}
           className={`${className} transition-all`}
           onClick={handleAddToCart}
-          aria-label="Adicionar ao carrinho"
+          aria-label="Add to cart"
         >
-          Adicionar
+          Add
         </Button>
       ) : (
         <Button
@@ -115,7 +115,7 @@ export function AddToCartButton({
           onClick={() => setAdded(false)}
         >
           <Check className="h-4 w-4 mr-2" />
-          Adicionado!
+          Added!
         </Button>
       )}
 
