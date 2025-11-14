@@ -1803,7 +1803,7 @@ const produtosArray = ([
   },
   {
     id: "asroma-25-26-principal-kids",
-    nome: "Kit Criança AS Roma 2025/26",
+    nome: "AS Roma Kids Kit 2025/26",
     descricao: "Camisola principal da AS Roma 2025/26 para criança.",
     descricaoLonga: "A camisola principal infantil da AS Roma para a temporada 2025/26 combina o tradicional vermelho profundo com detalhes em dourado, refletindo a rica herança do clube romano. Fabricada em tecido respirável e leve, perfeita para jovens adeptos que querem apoiar a equipa com estilo.",
     preco: 17.99,
@@ -1832,7 +1832,7 @@ const produtosArray = ([
   },
   {
     id: "river-plate-25-26-principal-kids",
-    nome: "Kit Criança River Plate Principal 2025/26",
+    nome: "River Plate Kids Home Kit 2025/26",
     descricao: "Camisola principal do River Plate 2025/26 para criança.",
     descricaoLonga: "A camisola infantil principal do River Plate para a temporada 2025/26 apresenta o icónico design branco com a faixa diagonal vermelha, símbolo eterno do clube argentino. Confeccionada em tecido leve e respirável, oferece máximo conforto para os jovens adeptos enquanto demonstram a sua paixão pelo River.",
     preco: 17.99,
@@ -2019,7 +2019,7 @@ const produtosArray = ([
   },
   {
     id: "chelsea-25-26-away-kids",
-    nome: "Kit Criança Chelsea Away 2025/26",
+    nome: "Chelsea Kids Away Kit 2025/26",
     descricao: "Equipamento alternativo infantil do Chelsea FC para a temporada 2025/26.",
     descricaoLonga: "O Kit Criança Chelsea Away 2025/26 apresenta um design moderno e arrojado, ideal para os jovens adeptos mostrarem o seu apoio aos Blues. Produzido em poliéster respirável, garante conforto e liberdade de movimentos dentro e fora de campo.",
     preco: 17.99,
@@ -2049,7 +2049,7 @@ const produtosArray = ([
   },
   {
     id: "manutd-25-26-third-away-kids",
-    nome: "Kit Criança Manchester United terceiro equipamento 2025/26",
+    nome: "Manchester United Kids Third Kit 2025/26",
     descricao: "Equipamento alternativo infantil do Manchester United para a temporada 2025/26.",
     descricaoLonga: "O Kit Criança Manchester United Away 2025/26 apresenta um design moderno e confortável, ideal para os jovens adeptos dos Red Devils mostrarem o seu apoio em qualquer lugar. Fabricado com poliéster de alta qualidade e tecnologia respirável.",
     preco: 17.99,
@@ -2174,7 +2174,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-sporting-principal-2025-26",
-    nome: "Kit Criança Sporting Principal 2025/26",
+    nome: "Sporting CP Kids Home Kit 2025/26",
     descricao: "Kit oficial de criança do Sporting CP para a temporada 2025/26. Design clássico em verde e branco, fabricado pela Nike com tecnologia avançada para máximo conforto.",
     descricaoLonga: "O novo kit de criança do Sporting CP para a temporada 2025/26 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricado pela Nike com materiais de alta qualidade e tecnologia avançada, este equipamento oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. Inclui camisola e calções. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike. Representa a nova era do Sporting CP, perfeito para os jovens Leões na nova temporada.",
     preco: 17.99,
@@ -2199,7 +2199,7 @@ const produtosArray = ([
   },
   {
     id: "retro-sporting-01-03-kids",
-    nome: "Kit Criança Retro Sporting CP 2001/03 Principal",
+    nome: "Sporting CP Retro Kids Home Kit 2001/03",
     descricao: "Kit retro oficial de criança do Sporting CP das temporadas 2001/03. Design clássico com listas verdes e brancas.",
     descricaoLonga: "O Kit Criança Retro Sporting CP 2001/03 Principal celebra uma fase importante da história dos leões. Com o seu design tradicional em listas horizontais verdes e brancas, este kit é uma réplica fiel ao usado por jogadores emblemáticos como João Pinto, Ricardo Quaresma e Beto. Perfeito para os pequenos sportinguistas demonstrarem o seu orgulho pelo clube.",
     preco: 17.99,
@@ -2618,7 +2618,7 @@ const produtosArray = ([
   },
   {
     id: "porto-halloween-2425",
-    nome: "FC Porto Edição Especial Halloween 24/25",
+    nome: "FC Porto Special Edition Halloween 24/25",
     descricao: "Camisola especial do FC Porto comemorativa do Halloween para a temporada 2024/25. Design único com elementos temáticos.",
     descricaoLonga: "A Camisola FC Porto Edição Especial Halloween 2024/25 é uma peça única que combina a tradição do clube com elementos temáticos do Halloween. Com um design ousado e criativo, esta edição limitada oferece aos adeptos uma forma especial de mostrar seu apoio ao clube durante a época do Halloween. Fabricada com materiais de alta qualidade para garantir conforto e durabilidade.",
     preco: 17.99,
@@ -2642,7 +2642,7 @@ const produtosArray = ([
   },
   {
     id: "porto-starry-sky-2425",
-    nome: "FC Porto Edição Especial Starry Sky 24/25",
+    nome: "FC Porto Special Edition Starry Sky 24/25",
     descricao: "Camisola FC Porto Edição Especial Starry Sky para a temporada 2024/25. Design inspirado no céu estrelado.",
     descricaoLonga: "A Camisola FC Porto Edição Especial Starry Sky 2024/25 apresenta um design inovador inspirado no céu noturno estrelado. Esta edição especial combina o azul tradicional do clube com um padrão único de estrelas, criando uma peça verdadeiramente memorável. Fabricada com tecnologia de ponta para garantir conforto e performance excepcionais.",
     preco: 17.99,
@@ -2796,7 +2796,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-benfica-gr-25-26",
-    nome: "Kit Criança Benfica Guarda Redes rosa 25/26",
+    nome: "Benfica Kids Goalkeeper Pink Kit 25/26",
     descricao: "Kit de guarda-redes benfica rosa do SL Benfica para a temporada 2025/26 para criança.",
     descricaoLonga: "O kit infantil de guarda-redes do SL Benfica para a temporada 2025/26 apresenta um design moderno na cor rosa, garantindo visibilidade e estilo em campo. Fabricado em tecido leve e respirável, oferece conforto e mobilidade para os jovens guardiões benfiquistas.",
     preco: 17.99,
@@ -2820,7 +2820,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-sporting-stromp-25-26",
-    nome: "Kit Criança Sporting C.P. Stromp 25/26",
+    nome: "Sporting CP Kids Stromp Kit 25/26",
     descricao: "Kit de Stromp do Sporting CP para a temporada 2025/26 para criança.",
     descricaoLonga: "O kit infantil de Stromp do Sporting CP para a temporada 2025/26 apresenta um design moderno na cor verde, garantindo visibilidade e estilo em campo. Fabricado em tecido leve e respirável, oferece conforto e mobilidade para os jovens guardiões sportinguistas.",
     preco: 17.99,
@@ -3372,7 +3372,7 @@ const produtosArray = ([
   },
   {
     id: "real-madrid-special-edition-2-player-2526",
-    nome: "Real Madrid Special Edition II Versão Jogador 25/26",
+    nome: "Real Madrid Special Edition II Player Version 25/26",
     descricao: "Versão jogador da segunda edição especial do Real Madrid para a temporada 2025/26. Qualidade profissional.",
     descricaoLonga: "A versão jogador da segunda edição especial da Camisola Real Madrid 2025/26 oferece a qualidade profissional usada pelos jogadores. Com tecnologia de ponta e materiais premium, esta edição proporciona o máximo em desempenho.",
     preco: 17.99,
@@ -4778,7 +4778,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-barcelona-special-edition-2526",
-    nome: "Kit Criança Barcelona Special Edition 2025/26",
+    nome: "Barcelona Kids Special Edition Kit 2025/26",
     descricao: "Kit oficial infantil do FC Barcelona Special Edition para a temporada 2025/26. Design especial exclusivo para os mais novos.",
     descricaoLonga: "O novo kit infantil do Barcelona Special Edition 2025/26 é uma edição especial desenvolvida exclusivamente para os jovens culés. Com design único e materiais adaptados para crianças, este kit oferece conforto e estilo para os pequenos adeptos do Barça. Inclui camisola e calções com tecnologia especial para máximo conforto.",
     preco: 17.99,
@@ -4800,7 +4800,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-benfica-principal-2526",
-  nome: "Kit Criança SL Benfica Principal 2025/26",
+  nome: "SL Benfica Kids Home Kit 2025/26",
   descricao: "Kit oficial de criança do SL Benfica para a temporada 2025/26. Conjunto completo que inclui camisola e calções.",
   descricaoLonga: "O novo kit infantil do SL Benfica para a temporada 2025/26 é perfeito para os pequenos encarnados. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que mantêm a tradição e qualidade do clube. O design clássico em vermelho com detalhes elegantes permite que os jovens adeptoes mostrem seu apoio ao clube com estilo e conforto.",
   preco: 17.99,
@@ -4822,7 +4822,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-alemanha-alternativa-2526",
-    nome: "Kit Criança Alemanha Alternativa 2025/26",
+    nome: "Germany Kids Away Kit 2025/26",
     descricao: "Kit oficial infantil alternativo da Seleção Alemã para a temporada 2025/26. Design moderno para os jovens adeptos.",
     descricaoLonga: "O novo kit infantil alternativo da Seleção Alemã 2025/26 apresenta um design moderno e arrojado para os pequenos adeptos da Mannschaft. Fabricado com materiais de alta qualidade, oferece conforto excepcional e representa o orgulho alemão numa versão especial para crianças.",
     preco: 17.99,
@@ -4844,7 +4844,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-italia-alternativa-2526",
-    nome: "Kit Criança Itália Alternativa 2025/26",
+    nome: "Italy Kids Away Kit 2025/26",
     descricao: "Kit oficial infantil alternativo da Seleção Italiana para a temporada 2025/26. Elegância italiana para os mais novos.",
     descricaoLonga: "O novo kit infantil alternativo da Seleção Italiana 2025/26 combina a elegância e tradição azzurra numa versão especial para crianças. Com design sofisticado e materiais de qualidade, este kit oferece conforto e estilo para os jovens adeptos da Squadra Azzurra.",
     preco: 17.99,
@@ -4866,7 +4866,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-espanha-alternativa-2526",
-    nome: "Kit Criança Espanha Alternativa 2025/26",
+    nome: "Spain Kids Away Kit 2025/26",
     descricao: "Kit oficial infantil alternativo da Seleção Espanhola para a temporada 2025/26. Paixão espanhola para os pequenos.",
     descricaoLonga: "O novo kit infantil alternativo da Seleção Espanhola 2025/26 traz a paixão e garra da Roja numa versão especial para crianças. Com design moderno e cores vibrantes, este kit oferece máximo conforto e representa o espírito espanhol para os jovens adeptos.",
     preco: 17.99,
@@ -4888,7 +4888,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-portugal-principal-2526",
-    nome: "Kit Criança Portugal Principal 2025/26",
+    nome: "Portugal Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil principal da Seleção Portuguesa para a temporada 2025/26. Tradição portuguesa para crianças.",
     descricaoLonga: "O novo kit infantil principal da Seleção Portuguesa 2025/26 mantém a tradição do vermelho português numa versão especial para crianças. Com design clássico e materiais de alta qualidade, este kit oferece conforto e orgulho nacional para os pequenos adeptos da Seleção.",
     preco: 17.99,
@@ -4910,7 +4910,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-psg-4th-fora-2526",
-    nome: "Kit Criança PSG 4º Equipamento 2025/26",
+    nome: "PSG Kids Fourth Kit 2025/26",
     descricao: "Kit oficial infantil 4º equipamento do PSG para a temporada 2025/26. Design único para os pequenos parisienses.",
     descricaoLonga: "O novo kit infantil 4º equipamento do PSG 2025/26 apresenta um design único e inovador especialmente criado para os jovens adeptos parisienses. Com cores distintivas e tecnologia avançada, este kit oferece conforto e estilo para os pequenos que sonham com o Parc des Princes.",
     preco: 17.99,
@@ -4932,7 +4932,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-tottenham-principal-2526",
-    nome: "Kit Criança Tottenham Principal 2025/26",
+    nome: "Tottenham Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil principal do Tottenham para a temporada 2025/26. Tradição Spurs para os mais novos.",
     descricaoLonga: "O novo kit infantil principal do Tottenham 2025/26 mantém a tradição dos Spurs no icônico branco numa versão especial para crianças. Com design clássico e materiais de qualidade, este kit oferece conforto excepcional para os jovens adeptos do White Hart Lane.",
     preco: 17.99,
@@ -4954,7 +4954,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-barcelona-principal-2526",
-    nome: "Kit Criança Barcelona Principal 2025/26",
+    nome: "Barcelona Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil principal do FC Barcelona para a temporada 2025/26. Paixão culé para crianças.",
     descricaoLonga: "O novo kit infantil principal do FC Barcelona 2025/26 traz as tradicionais cores blaugrana numa versão especial para crianças. Com design clássico e tecnologia adaptada aos mais novos, este kit oferece conforto máximo para os jovens culés.",
     preco: 17.99,
@@ -4976,7 +4976,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-barcelona-fora-2526",
-    nome: "Kit Criança Barcelona Fora 2025/26",
+    nome: "Barcelona Kids Away Kit 2025/26",
     descricao: "Kit oficial infantil alternativo do FC Barcelona para a temporada 2025/26. Design moderno para os pequenos culés.",
     descricaoLonga: "O novo kit infantil alternativo do FC Barcelona 2025/26 apresenta um design moderno e inovador numa versão especial para crianças. Com cores distintivas e materiais de qualidade, este kit oferece estilo e conforto para os jovens adeptos do Barça.",
     preco: 17.99,
@@ -4998,7 +4998,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-psg-principal-2526",
-    nome: "Kit Criança PSG Principal 2025/26",
+    nome: "PSG Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil principal do PSG para a temporada 2025/26. Elegância parisiense para crianças.",
     descricaoLonga: "O novo kit infantil principal do PSG 2025/26 combina a elegância parisiense com o design clássico do clube numa versão especial para crianças. Com as cores tradicionais azul e vermelho, este kit oferece conforto e estilo para os jovens adeptos do Paris Saint-Germain.",
     preco: 17.99,
@@ -5020,7 +5020,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-barcelona-principal-kids-2526",
-    nome: "Kit Criança Barcelona Principal Kids 2025/26",
+    nome: "Barcelona Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil Barcelona Principal Kids para a temporada 2025/26. Edição especial infantil.",
     descricaoLonga: "O kit Barcelona Principal Kids 2025/26 é uma edição especial desenvolvida exclusivamente para crianças, com design adaptado e materiais específicos para os mais novos. Esta versão kids oferece máximo conforto e durabilidade para os pequenos culés.",
     preco: 17.99,
@@ -5042,7 +5042,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-manchester-united-principal-2526",
-    nome: "Kit Criança Manchester United Principal 2025/26",
+    nome: "Manchester United Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil principal do Manchester United para a temporada 2025/26. Tradição Red Devils para crianças.",
     descricaoLonga: "O novo kit infantil principal do Manchester United 2025/26 mantém a tradição do vermelho dos Red Devils numa versão especial para crianças. Com design clássico e materiais de alta qualidade, este kit oferece conforto e orgulho para os jovens adeptos de Old Trafford.",
     preco: 17.99,
@@ -5064,7 +5064,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-real-madrid-alternativo-2526",
-    nome: "Kit Criança Real Madrid Alternativo 2025/26",
+    nome: "Real Madrid Kids Away Kit 2025/26",
     descricao: "Kit oficial infantil alternativo do Real Madrid para a temporada 2025/26. Elegância merengue para os mais novos.",
     descricaoLonga: "O novo kit infantil alternativo do Real Madrid 2025/26 combina a elegância e tradição merengue numa versão especial para crianças. Com design sofisticado e materiais de qualidade, este kit oferece conforto excepcional para os jovens madridistas.",
     preco: 17.99,
@@ -6282,7 +6282,7 @@ const produtosArray = ([
     },  
   {
     id: "kit-crianca-manchester-city-principal-2526",
-    nome: "Kit Criança Manchester City Principal 2025/26",
+    nome: "Manchester City Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil principal do Manchester City para a temporada 2025/26. Sky Blue para os pequenos Citizens.",
     descricaoLonga: "O novo kit infantil principal do Manchester City 2025/26 apresenta o icônico sky blue numa versão especial para crianças. Com design moderno e tecnologia avançada, este kit oferece conforto e estilo para os jovens Citizens do Etihad Stadium.",
     preco: 17.99,
@@ -6304,7 +6304,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-cristiano-ronaldo-commemorative-2526",
-    nome: "Kit Criança Cristiano Ronaldo Commemorative Edition 2025/26",
+    nome: "Cristiano Ronaldo Kids Commemorative Edition Kit 2025/26",
     descricao: "Kit oficial infantil comemorativo Cristiano Ronaldo para a temporada 2025/26. Edição especial para os pequenos fãs do CR7.",
     descricaoLonga: "O kit infantil comemorativo Cristiano Ronaldo 2025/26 é uma edição especial que homenageia o lendário jogador português. Desenvolvido especialmente para crianças, este kit único combina design exclusivo com materiais de alta qualidade, perfeito para os jovens fãs do CR7.",
     preco: 17.99,
@@ -6326,7 +6326,7 @@ const produtosArray = ([
   },
   {
     id: "kit-crianca-ac-milan-principal-2526",
-    nome: "Kit Criança AC Milan Principal 2025/26",
+    nome: "AC Milan Kids Home Kit 2025/26",
     descricao: "Kit oficial infantil principal do AC Milan para a temporada 2025/26. Tradição rossonera para crianças.",
     descricaoLonga: "O novo kit infantil principal do AC Milan 2025/26 mantém a tradição das listras rossonere numa versão especial para crianças. Com design clássico e materiais de alta qualidade, este kit oferece conforto excepcional para os jovens adeptos de San Siro.",
     preco: 17.99,
@@ -6678,7 +6678,7 @@ const produtosArray = ([
 },
 {
   id: "real-madrid-23-24",
-  nome: "23/24 Real Madrid Principal",
+  nome: "Real Madrid 23/24 Home Jersey",
   descricao: "Camisola oficial principal do Real Madrid para a temporada 2023/24. Design clássico em branco com detalhes em dourado, fabricada com tecnologia avançada para máximo conforto.",
   descricaoLonga: "A camisola principal do Real Madrid para a temporada 2023/24 mantém a tradição do clube com o icônico branco e detalhes em dourado. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a grandeza e a história do Real Madrid, perfeita para apoiar os Merengues.",
   preco: 17.99,
@@ -6730,7 +6730,7 @@ const produtosArray = ([
 // Chelsea Principal 25/26
 {
     id: "kit-crianca-chelsea-25-26",
-    nome: "Kit Criança Chelsea 2025/26 Principal",
+    nome: "Chelsea Kids Home Kit 2025/26",
     descricao: "Kit oficial de criança do Chelsea para a temporada 2025/26. Design clássico em azul, inclui camisola e calções.",
     descricaoLonga: "O novo kit de criança do Chelsea para a temporada 2025/26 é perfeito para os jovens adeptoes. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que mantêm a tradição e qualidade do clube. O design clássico em azul com detalhes modernos garante que os pequenos adeptoes possam mostrar seu apoio com estilo e conforto.",
     preco: 17.99,
@@ -6755,7 +6755,7 @@ const produtosArray = ([
 // Borussia Dortmund Principal 25/26
 {
     id: "kit-crianca-dortmund-25-26",
-    nome: "Kit Criança Borussia Dortmund 2025/26 Principal",
+    nome: "Borussia Dortmund Kids Home Kit 2025/26",
     descricao: "Kit oficial de criança do Borussia Dortmund para a temporada 2025/26. Design clássico em amarelo e preto, inclui camisola e calções.",
     descricaoLonga: "O novo kit de criança do Borussia Dortmund para a temporada 2025/26 é perfeito para os jovens adeptoes. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que mantêm as cores icônicas do clube. O design vibrante em amarelo e preto garante que os pequenos adeptoes possam mostrar seu apoio com o verdadeiro espírito do Signal Iduna Park.",
     preco: 17.99,
@@ -7680,7 +7680,7 @@ const produtosArray = ([
 // Real Madrid Principal 25/26
 {
     id: "kit-crianca-real-madrid-25-26",
-    nome: "Kit Criança Real Madrid 2025/26 Principal",
+    nome: "Real Madrid Kids Home Kit 2025/26",
     descricao: "Kit oficial de criança do Real Madrid para a temporada 2025/26. Design clássico em branco, inclui camisola e calções.",
     descricaoLonga: "O novo kit de criança do Real Madrid para a temporada 2025/26 é perfeito para os jovens madridistas. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que mantêm a elegância e tradição do clube. O design clássico em branco com detalhes dourados garante que os pequenos adeptoes possam mostrar seu apoio ao maior clube do mundo com estilo.",
     preco: 17.99,
@@ -7705,7 +7705,7 @@ const produtosArray = ([
 // Inter Miami Principal 25/26
 {
     id: "kit-crianca-inter-miami-25-26",
-    nome: "Kit Criança Inter Miami 2025/26 Principal",
+    nome: "Inter Miami Kids Home Kit 2025/26",
     descricao: "Kit oficial de criança do Inter Miami para a temporada 2025/26. Design moderno em rosa, inclui camisola e calções.",
     descricaoLonga: "O novo kit de criança do Inter Miami para a temporada 2025/26 é perfeito para os jovens adeptoes. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que representam o estilo único do clube. O design moderno em rosa com detalhes elegantes garante que os pequenos adeptoes possam mostrar seu apoio com o verdadeiro estilo de Miami.",
     preco: 17.99,
@@ -7730,7 +7730,7 @@ const produtosArray = ([
 // Flamengo Alternativa 25/26
 {
     id: "kit-crianca-flamengo-25-26-away",
-    nome: "Kit Criança Flamengo 2025/26 Alternativa",
+    nome: "Flamengo Kids Away Kit 2025/26",
     descricao: "Kit oficial alternativo de criança do Flamengo para a temporada 2025/26. Design elegante em branco, inclui camisola e calções.",
     descricaoLonga: "O novo kit alternativo de criança do Flamengo para a temporada 2025/26 é perfeito para os jovens rubro-negros. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que mantêm a tradição do Mengão. O design elegante em branco com detalhes em vermelho e preto garante que os pequenos adeptoes possam mostrar seu apoio com estilo.",
     preco: 17.99,
@@ -7755,7 +7755,7 @@ const produtosArray = ([
 // Portugal Treino 25/26
 {
     id: "kit-crianca-portugal-25-26-treino",
-    nome: "Kit Criança Portugal 2025/26 Treino",
+    nome: "Portugal Kids Training Kit 2025/26",
     descricao: "Kit oficial de treino de criança da Seleção Portuguesa para a temporada 2025/26. Design moderno em vermelho, inclui camisola e calções.",
     descricaoLonga: "O novo kit de treino de criança da Seleção Portuguesa para a temporada 2025/26 é perfeito para os jovens apoiantes das Quinas. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções ideais para treino ou uso casual. O design moderno em vermelho com detalhes inovadores garante que os pequenos adeptoes possam mostrar seu apoio à seleção com estilo e conforto.",
     preco: 17.99,
@@ -7780,7 +7780,7 @@ const produtosArray = ([
 // Portugal Alternativa 25/26
 {
     id: "kit-crianca-portugal-25-26-away",
-    nome: "Kit Criança Portugal 2025/26 Alternativa",
+    nome: "Portugal Kids Away Kit 2025/26",
     descricao: "Kit oficial alternativo de criança da Seleção Portuguesa para a temporada 2025/26. Design elegante em azul, inclui camisola e calções.",
     descricaoLonga: "O novo kit alternativo de criança da Seleção Portuguesa para a temporada 2025/26 é perfeito para os jovens apoiantes das Quinas. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que representam as cores alternativas da seleção. O design moderno em azul com detalhes únicos garante que os pequenos adeptoes possam mostrar seu apoio à seleção com um visual diferenciado.",
     preco: 17.99,
@@ -7805,7 +7805,7 @@ const produtosArray = ([
 // Real Madrid Terceira 24/25
 {
     id: "kit-crianca-real-madrid-24-25-third",
-    nome: "Kit Criança Real Madrid 2024/25 Terceira",
+    nome: "Real Madrid Kids Third Kit 2024/25",
     descricao: "Kit oficial terceiro equipamento de criança do Real Madrid para a temporada 2024/25. Design moderno em roxo, inclui camisola e calções.",
     descricaoLonga: "O novo kit terceiro equipamento de criança do Real Madrid para a temporada 2024/25 é perfeito para os jovens madridistas. Fabricado com materiais leves e confortáveis, especialmente desenvolvidos para crianças, este conjunto inclui camisola e calções que combinam estilo moderno com a tradição do clube. O design inovador em roxo com detalhes elegantes garante que os pequenos adeptoes possam mostrar seu apoio com um visual único e diferenciado.",
     preco: 17.99,
@@ -8240,7 +8240,7 @@ const produtosArray = ([
 // Kit Criança Benfica
 {
   id: "kit-crianca-real-betis-special-edition-2526",
-    nome: "Kit Criança Real Betis Special Edition 2025/26",
+    nome: "Real Betis Kids Special Edition Kit 2025/26",
     descricao: "Kit oficial infantil do Real Betis Special Edition para a temporada 2025/26. Edição especial para os pequenos béticos.",
     descricaoLonga: "O novo kit infantil do Real Betis Special Edition 2025/26 celebra as cores tradicionais do clube sevilhano numa edição especial para crianças. Fabricado com materiais de qualidade e design adaptado aos mais novos, oferece conforto e estilo para os jovens adeptos dos Verdiblancos.",
     preco: 17.99,
@@ -8282,7 +8282,7 @@ const produtosArray = ([
 },
 {
   id: "real-madrid-special-edition-player-2526",
-  nome: "Real Madrid Special Edition Versão Jogador 25/26",
+  nome: "Real Madrid Special Edition Player Version 25/26",
   descricao: "Versão jogador da camisola edição especial do Real Madrid para a temporada 2025/26. Qualidade profissional.",
   descricaoLonga: "A versão jogador da Camisola Real Madrid Special Edition 2025/26 oferece a mesma qualidade usada pelos profissionais em campo. Com tecnologia avançada e materiais premium, esta edição especial proporciona máximo desempenho e conforto.",
   preco: 17.99,
@@ -8365,7 +8365,7 @@ const produtosArray = ([
 // Casaco Retro Benfica x Adidas Originals
 {
   id: "casaco-retro-benfica-adidas-originals-2526",
-  nome: "Casaco Retro SL Benfica x Adidas Originals 25/26",
+  nome: "SL Benfica x Adidas Originals Retro Jacket 25/26",
   descricao: "Casaco retro exclusivo da colaboração entre SL Benfica e Adidas Originals. Design elegante que combina o heritage do clube com estilo urbano.",
   descricaoLonga: "Este casaco retro faz parte da exclusiva colaboração entre o SL Benfica e a Adidas Originals. Combinando o DNA do clube com o estilo atemporal da Adidas Originals, esta peça oferece um visual único que homenageia a história do clube. Fabricado com materiais de alta qualidade, apresenta detalhes premium e acabamentos refinados que fazem dele uma peça especial para qualquer coleção.",
   preco: 34.99,
@@ -8413,7 +8413,7 @@ const produtosArray = ([
 
 {
   id: "kit-crianca-brazil-principal-2526",
-  nome: "Kit Criança Brasil Principal 2025/26",
+  nome: "Brazil Kids Home Kit 2025/26",
   descricao: "Kit oficial infantil principal da Seleção Brasileira para a temporada 2025/26. Magia brasileira para os pequenos.",
   descricaoLonga: "O novo kit infantil principal da Seleção Brasileira 2025/26 traz toda a magia e ginga do futebol brasileiro numa versão especial para crianças. Com o icônico amarelo e verde, este kit oferece conforto excepcional e representa o orgulho canarinho para os jovens adeptos.",
   preco: 17.99,
@@ -8544,7 +8544,7 @@ const produtosArray = ([
 },
 {
   id: "portugal-treino-i-2025",
-  nome: "Equipamento de Treino Portugal I 2025",
+  nome: "Portugal Training Kit I 2025",
   descricao: "Equipamento oficial de treino I da Seleção Portuguesa para 2025. Design moderno e confortável.",
   descricaoLonga: "O novo equipamento de treino I da Seleção Portuguesa para 2025 combina estilo e funcionalidade. Fabricado com materiais de alta qualidade e tecnologia avançada, este conjunto oferece conforto excepcional para os treinos e representa o orgulho nacional.",
   preco: 17.99,
@@ -8569,7 +8569,7 @@ const produtosArray = ([
 },
 {
   id: "portugal-treino-ii-2025",
-  nome: "Equipamento de Treino Portugal II 2025",
+  nome: "Portugal Training Kit II 2025",
   descricao: "Equipamento oficial de treino II da Seleção Portuguesa para 2025. Design exclusivo e confortável.",
   descricaoLonga: "O novo equipamento de treino II da Seleção Portuguesa para 2025 apresenta um design exclusivo e moderno. Fabricado com materiais de alta qualidade e tecnologia avançada, este conjunto oferece conforto excepcional para os treinos e representa o espírito da Seleção.",
   preco: 17.99,
@@ -8593,7 +8593,7 @@ const produtosArray = ([
 },
 {
   id: "portugal-treino-iii-2025",
-  nome: "Equipamento de Treino Portugal III 2025",
+  nome: "Portugal Training Kit III 2025",
   descricao: "Equipamento oficial de treino III da Seleção Portuguesa para 2025. Design único e confortável.",
   descricaoLonga: "O novo equipamento de treino III da Seleção Portuguesa para 2025 apresenta um design único e moderno. Fabricado com materiais de alta qualidade e tecnologia avançada, este conjunto oferece conforto excepcional para os treinos e representa a tradição portuguesa.",
   preco: 17.99,
@@ -8667,7 +8667,7 @@ const produtosArray = ([
 },
 {
   id: "kit-crianca-portugal-principal-2025",
-  nome: "Kit Criança Portugal Principal 2025",
+  nome: "Portugal Kids Home Kit 2025",
   descricao: "Kit oficial infantil principal da Seleção Portuguesa para 2025. Design clássico em vermelho para os pequenos craques.",
   descricaoLonga: "O novo kit infantil principal da Seleção Portuguesa 2025 mantém a tradição do vermelho português numa versão especial para crianças. Com design clássico e materiais de alta qualidade, este kit oferece conforto e orgulho nacional para os pequenos adeptos da Seleção. Fabricado com tecnologia avançada para garantir o máximo conforto durante o uso.",
   preco: 17.99,
@@ -8716,7 +8716,7 @@ const produtosArray = ([
 },
 {
   id: "benfica-2025-26-home-long-sleeve",
-  nome: "Camisola Benfica Principal 25/26 - Manga Comprida",
+  nome: "Benfica Home Jersey 25/26 - Long Sleeve",
   descricao: "Camisola oficial principal do SL Benfica para a temporada 2025/26 com manga comprida. Design clássico em vermelho com detalhes em dourado.",
   descricaoLonga: "A nova camisola principal do SL Benfica para a temporada 2025/26 com manga comprida mantém a tradição do clube com o icônico vermelho vibrante e detalhes em dourado. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia.",
   preco: 17.99,
@@ -8739,7 +8739,7 @@ const produtosArray = ([
 },
 {
   id: "benfica-2025-26-third-kit-child",
-  nome: "Kit de Criança - Benfica Terceiro 25/26",
+  nome: "Benfica Kids Third Kit 25/26",
   descricao: "Kit oficial terceiro do SL Benfica para crianças na temporada 2025/26. Conjunto completo em branco ideal para os mais pequenos.",
   descricaoLonga: "Kit oficial terceiro do SL Benfica para crianças na temporada 2025/26. Este conjunto completo em branco é ideal para os mais pequenos adeptos do clube, oferecendo conforto e qualidade para brincar e apoiar os Águias.",
   preco: 17.99,
@@ -8764,7 +8764,7 @@ const produtosArray = ([
 },
 {
   id: "porto-2025-26-away-kit-child",
-  nome: "Kit de Criança - FC Porto Alternativa 25/26",
+  nome: "FC Porto Kids Away Kit 25/26",
   descricao: "Kit oficial alternativa do FC Porto para crianças na temporada 2025/26. Conjunto completo ideal para os mais pequenos Dragões.",
   descricaoLonga: "Kit oficial alternativa do FC Porto para crianças na temporada 2025/26. Este conjunto completo é ideal para os mais pequenos adeptos do clube, oferecendo conforto e qualidade para brincar e apoiar os Dragões.",
   preco: 17.99,
@@ -8785,7 +8785,7 @@ const produtosArray = ([
 },
 {
   id: "porto-2025-26-home-kit-child",
-  nome: "Kit de Criança - FC Porto Principal 25/26",
+  nome: "FC Porto Kids Home Kit 25/26",
   descricao: "Kit oficial principal do FC Porto para crianças na temporada 2025/26. Conjunto completo ideal para os mais pequenos Dragões.",
   descricaoLonga: "Kit oficial principal do FC Porto para crianças na temporada 2025/26. Este conjunto completo é ideal para os mais pequenos adeptos do clube, oferecendo conforto e qualidade para brincar e apoiar os Dragões.",
   preco: 17.99,
@@ -8810,7 +8810,7 @@ const produtosArray = ([
 },
 {
   id: "porto-2025-26-special-edition",
-  nome: "FC Porto Edição Especial 25/26",
+  nome: "FC Porto Special Edition 25/26",
   descricao: "Camisola edição especial do FC Porto para a temporada 2025/26. Homenagem à Cidade Invicta com design exclusivo e limitado.",
   descricaoLonga: "Camisola edição especial do FC Porto para a temporada 2025/26. Esta edição especial homenageia a Cidade Invicta com um design exclusivo e limitado. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia.",
   preco: 17.99,
@@ -8835,7 +8835,7 @@ const produtosArray = ([
 },
 {
   id: "porto-2025-26-third",
-  nome: "Camisola FC Porto Terceiro Equipamento 25/26",
+  nome: "FC Porto Third Kit 25/26",
   descricao: "Camisola oficial terceira do FC Porto para a temporada 2025/26. Design exclusivo e moderno.",
   descricaoLonga: "A nova camisola terceira do FC Porto para a temporada 2025/26 apresenta um design exclusivo e moderno que complementa a coleção oficial do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia.",
   preco: 17.99,
@@ -8858,7 +8858,7 @@ const produtosArray = ([
 },
 {
   id: "benfica-kit-crianca-alternativo-2526",
-  nome: "Kit de Criança - Benfica alternativo 25/26",
+  nome: "Benfica Kids Alternative Kit 25/26",
   descricao: "Kit completo de criança do SL Benfica alternativo para a temporada 2025/26. Inclui camisola e calções com design moderno e elegante.",
   descricaoLonga: "O kit de criança alternativo do SL Benfica para a temporada 2025/26 apresenta um design moderno e elegante, perfeito para os pequenos adeptos do clube. Este conjunto completo inclui camisola e calções fabricados com materiais de alta qualidade e tecnologia avançada, oferecendo conforto excepcional durante os jogos ou no dia-a-dia. O design alternativo mantém a identidade do clube com cores e detalhes únicos que representam a tradição e modernidade do Benfica. Ideal para crianças que querem apoiar o seu clube do coração com estilo.",
   preco: 17.99,
@@ -8879,7 +8879,7 @@ const produtosArray = ([
 // Produtos Retro Benfica 98/99, 97/98 e 94/95
 {
   id: "benfica-retro-98-99-casa",
-  nome: "Camisola Retro SL Benfica 98/99 Principal",
+  nome: "SL Benfica Retro Home Jersey 98/99",
   preco: 19.99,
   precoAntigo: 29.99,
   categoria: "retro",
@@ -8901,7 +8901,7 @@ const produtosArray = ([
 },
 {
   id: "benfica-retro-98-99-fora",
-  nome: "Camisola Retro SL Benfica 98/99 Alternativa",
+  nome: "SL Benfica Retro Away Jersey 98/99",
   preco: 19.99,
   precoAntigo: 29.99,
   categoria: "retro",
@@ -8925,7 +8925,7 @@ const produtosArray = ([
 },
 {
   id: "benfica-retro-97-98-fora",
-  nome: "Camisola Retro SL Benfica 97/98 Alternativa",
+  nome: "SL Benfica Retro Away Jersey 97/98",
   preco: 19.99,
   precoAntigo: 29.99,
   categoria: "retro",
@@ -8947,7 +8947,7 @@ const produtosArray = ([
 },
 {
   id: "benfica-retro-97-98-casa",
-  nome: "Camisola Retro SL Benfica 97/98 Principal",
+  nome: "SL Benfica Retro Home Jersey 97/98",
   preco: 19.99,
   precoAntigo: 29.99,
   categoria: "retro",
@@ -8970,7 +8970,7 @@ const produtosArray = ([
 },
 {
   id: "benfica-retro-94-95-casa",
-  nome: "Camisola Retro SL Benfica 94/95 Principal",
+  nome: "SL Benfica Retro Home Jersey 94/95",
   preco: 19.99,
   precoAntigo: 29.99,
   categoria: "retro",
@@ -8992,7 +8992,7 @@ const produtosArray = ([
 },
 {
   id: "sporting-alternativa-branca-2526-1",
-  nome: "Camisola Alternativa Sporting 25/26",
+  nome: "Sporting CP Away Jersey 25/26",
   descricao:
     "Camisola oficial alternativa branca do Sporting CP para a temporada 2025/26. Design elegante em branco com detalhes em verde, fabricada pela Nike com tecnologia avançada.",
   descricaoLonga:
@@ -9019,7 +9019,7 @@ const produtosArray = ([
 },
 {
   id: "sporting-alternativa-preta-2526-1",
-  nome: "Camisola Alternativa Sporting 25/26",
+  nome: "Sporting CP Alternative Jersey 25/26",
   descricao:
     "Camisola oficial alternativa preta do Sporting CP para a temporada 2025/26. Design moderno em preto com detalhes em verde, fabricada pela Nike com tecnologia avançada.",
   descricaoLonga:
@@ -9044,7 +9044,7 @@ const produtosArray = ([
 },
 {
   id: "calcas-retro-slbenfica-adidas-originals",
-  nome: "Calças Retro SL Benfica x Adidas Originals",
+  nome: "SL Benfica x Adidas Originals Retro Pants",
   descricao: "Calças retro oficiais do SL Benfica em parceria com a Adidas Originals. Design clássico e elegante que combina o estilo vintage com o conforto moderno.",
   descricaoLonga: "As Calças Retro SL Benfica x Adidas Originals são uma peça única que celebra a história e tradição do clube. Com um design retro inspirado nos anos clássicos do futebol, estas calças combinam o icônico vermelho do Benfica com detalhes elegantes da Adidas Originals. Fabricadas com materiais de alta qualidade, oferecem conforto excepcional para o dia-a-dia ou para momentos especiais. O corte clássico e os acabamentos cuidados fazem desta peça um must-have para qualquer adepto do Benfica que aprecia o estilo vintage. Perfeitas para usar com a camisola retro ou como peça statement no guarda-roupa casual.",
   preco: 23.99,
@@ -9067,7 +9067,7 @@ const produtosArray = ([
 },
 {
   id: "fato-treino-slbenfica-adidas-originals",
-  nome: "Fato de Treino SL Benfica x adidas Originals",
+  nome: "SL Benfica x adidas Originals Training Suit",
   descricao: "Fato de treino oficial do SL Benfica em parceria com a adidas Originals. Conjunto completo com design retro e conforto moderno para treino e lazer.",
   descricaoLonga: "O Fato de Treino SL Benfica x adidas Originals é um conjunto premium que combina o estilo icônico do Benfica com a qualidade e inovação da adidas Originals. Este fato de treino apresenta um design retro inspirado nos clássicos dos anos 80 e 90, com as cores tradicionais do clube e detalhes elegantes. Fabricado com materiais de alta qualidade, oferece conforto excepcional e liberdade de movimento durante o treino ou para uso casual. O conjunto inclui casaco e calças, ambos com acabamentos premium e logótipos bordados. Perfeito para adeptos que procuram um look autêntico e estiloso que celebra a história do Benfica.",
   preco: 45.99,
@@ -9131,7 +9131,7 @@ const produtosArray = ([
 },
 {
   id: "camisola-guarda-redes-verde-2526",
-  nome: "Sporting Camisola Guarda-Redes Verde 25/26",
+  nome: "Sporting CP Goalkeeper Green Jersey 25/26",
   descricao: "Camisola oficial de guarda-redes verde do Sporting CP para a temporada 25/26.",
   descricaoLonga: "Pré-venda: A camisola de guarda-redes verde do Sporting CP para 2025/26 apresenta um design moderno, confortável e ideal para os adeptos que querem apoiar os leões entre os postes.",
   preco: 17.99,
@@ -9201,7 +9201,7 @@ const produtosArray = ([
     },  
 {
   id: "sporting-edicao-especial-25-26-2",
-  nome: "Camisola Sporting CP Edição Especial 2025/26",
+  nome: "Sporting CP Special Edition Jersey 2025/26",
   descricao: "Camisola edição especial do Sporting CP para a época 2025/26.",
   descricaoLonga: "A camisola edição especial do Sporting CP para a época 2025/26 é uma peça única que celebra a grandeza do clube. Fabricada com materiais premium e tecnologia avançada, é uma peça de colecionador para os verdadeiros adeptos dos Leões.",
   preco: 17.99,
@@ -9519,7 +9519,7 @@ const produtosArray = ([
     },
 {
   id: "t-shirt-treino-staff-2526",
-  nome: "Sporting KIT Treino Staff 25/26",
+  nome: "Sporting CP Training Kit Staff 25/26",
   descricao: "T-shirt de treino Staff do Sporting CP para a temporada 25/26.",
   descricaoLonga: "A t-shirt de treino Staff do Sporting CP para 2025/26 é ideal para quem quer vestir como os profissionais do clube. Confortável, moderna e perfeita para treinos ou uso casual.",
   preco: 23.99,
@@ -9539,7 +9539,7 @@ const produtosArray = ([
 },                 
 {
   "id": "sporting-fourth-23-24",
-  "nome": "Camisola Sporting Quarta 2023/24",
+  "nome": "Sporting CP Fourth Jersey 2023/24",
   "descricao": "Camisola quarta do Sporting 2023/24.",
   "descricaoLonga": "A camisola quarta do Sporting da época 2023/24 apresenta um design moderno e alternativo, destinado a destacar-se nos jogos especiais da temporada. Uma peça obrigatória para os adeptos que gostam de colecionar todas as edições do clube.",
   "preco": 17.99,
@@ -9564,7 +9564,7 @@ const produtosArray = ([
 },
 {
   "id": "sporting-away-23-24",
-  "nome": "Camisola Sporting Alternativa 2023/24",
+  "nome": "Sporting CP Away Jersey 2023/24",
   "descricao": "Camisola alternativa do Sporting 2023/24.",
   "descricaoLonga": "A camisola alternativa do Sporting para a época 2023/24 apresenta um design limpo e elegante em branco, ideal para jogos fora de casa. Um modelo pensado para os adeptos que querem mostrar apoio ao clube em qualquer ocasião.",
   "preco": 17.99,
@@ -9589,7 +9589,7 @@ const produtosArray = ([
 },
 {
   id: "t-shirt-treino-player-2526",
-  nome: "Sporting KIT Treino Player 25/26",
+  nome: "Sporting CP Training Kit Player 25/26",
   descricao: "T-shirt de treino Player do Sporting CP para a temporada 25/26.",
   descricaoLonga: "A t-shirt de treino Player do Sporting CP para 2025/26 é perfeita para os adeptos que querem treinar como os jogadores do clube. Leve, confortável e com design oficial.",
   preco: 23.99,
@@ -9609,7 +9609,7 @@ const produtosArray = ([
 },
 {
   id: "kit-crianca-guarda-redes-slbenfica-2526",
-  nome: "Kit Criança Guarda-Redes SL Benfica 2025/26",
+  nome: "SL Benfica Kids Goalkeeper Kit 2025/26",
   descricao: "Kit infantil oficial – Guarda-redes do SL Benfica para a temporada 2025/26.",
   descricaoLonga:
     "O kit de guarda-redes do SL Benfica 2025/26 para criança apresenta um design arrojado e funcional, ideal para jovens guarda-redes que sonham defender as cores do clube.",
@@ -9636,7 +9636,7 @@ const produtosArray = ([
 },
 {
   id: "tshirt-treino-slbenfica-20252026",
-  nome: "KIT Treino SL Benfica 2025/26",
+  nome: "SL Benfica Training Kit 2025/26",
   descricao: "T-shirt de treino oficial do SL Benfica para a temporada 2025/26.",
   descricaoLonga: "A t-shirt de treino do SL Benfica para 2025/26 apresenta um design moderno, confortável e é perfeita para treinos ou para mostrar o apoio ao clube no dia a dia.",
   preco: 23.99,
@@ -9657,7 +9657,7 @@ const produtosArray = ([
 },
 {
   id: "camisola-aquecimento-slbenfica-2025-2026",
-  nome: "Camisola Aquecimento SL Benfica 2025/26",
+  nome: "SL Benfica Warm-Up Jersey 2025/26",
   descricao: "Camisola de aquecimento oficial do SL Benfica para a temporada 2025/26.",
   descricaoLonga: "A camisola de aquecimento do SL Benfica para 2025/26 é ideal para os adeptos que querem treinar ou aquecer como os jogadores do clube. Confortável, leve e com design oficial.",
   preco: 17.99,
@@ -9677,7 +9677,7 @@ const produtosArray = ([
 },
 {
   id: "t-shirt-treino-staff-fc-porto-2526",
-  nome: "kit treino Staff FC Porto 25/26",
+  nome: "FC Porto Staff Training Kit 25/26",
   descricao: " T-shirt de treino Staff oficial do FC Porto para a temporada 25/26.",
   descricaoLonga: " A t-shirt de treino Staff do FC Porto para 2025/26 é perfeita para quem quer vestir como os profissionais do clube. Confortável, moderna e ideal para treinos ou uso casual.",
   preco: 23.99,
@@ -9696,7 +9696,7 @@ const produtosArray = ([
 },
 {
   id: "t-shirt-treino-plantel-fc-porto-2526",
-  nome: "kit treino Plantel FC Porto 25/26",
+  nome: "FC Porto Squad Training Kit 25/26",
   descricao: "T-shirt de treino Plantel oficial do FC Porto para a temporada 25/26.",
   descricaoLonga: "A t-shirt de treino Plantel do FC Porto para 2025/26 é ideal para os adeptos que querem treinar como os jogadores do clube. Leve, confortável e com design oficial.",
   preco: 23.99,
@@ -9715,7 +9715,7 @@ const produtosArray = ([
 },
 {
   id: "kit-crianca-tshirt-treino-slbenfica-2526",
-  nome: "Kit Criança T-shirt Treino SL Benfica 2025/26",
+  nome: "SL Benfica Kids Training T-shirt Kit 2025/26",
   descricao: "Kit infantil oficial – T-shirt de treino do SL Benfica para a temporada 2025/26.",
   descricaoLonga:
     "O kit infantil da T-shirt de treino do SL Benfica 2025/26 traz design moderno e confortável, ideal para os pequenos benfiquistas treinarem ou vestirem casualmente com orgulho do clube.",
@@ -9764,7 +9764,7 @@ const produtosArray = ([
 },
 {
   id: "porto-special-2526",
-  nome: "Camisola FC Porto Special Edition 2025/26",
+  nome: "FC Porto Special Edition Jersey 2025/26",
   preco: 17.99,
   precoAntigo: 29.99,
   categoria: "clubes",
@@ -9786,7 +9786,7 @@ const produtosArray = ([
 },
 {
   id: "porto-retro-99-00",
-  nome: "Camisola Retro FC Porto 99/00",
+  nome: "FC Porto Retro Jersey 99/00",
   preco: 19.99,
   precoAntigo: 29.99,
   categoria: "retro",
@@ -9809,7 +9809,7 @@ const produtosArray = ([
 },
 {
   id: "arsenal-2526-white-player-version",
-  nome: "Camisola Arsenal 2025/26 Branca Jogador",
+  nome: "Arsenal 2025/26 White Player Jersey",
   descricao: "Camisola branca versao jogador do Arsenal 2025/26.",
   descricaoLonga: "A camisola branca versao jogador do Arsenal 2025/26 é a versão profissional da camisola principal do Arsenal. Com o icônico branco e preto do Arsenal, esta camisola de jogador oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9830,7 +9830,7 @@ const produtosArray = ([
 },
 {
   id: "portugal-2526-bebe-equipamento-principal-vermelho",
-  nome: "body Portugal principal 2025/26",
+  nome: "Portugal Home Baby Body 2025/26",
   descricao: "Body Portugal principal 2025/26 Bebé.",
   descricaoLonga: "A body Portugal principal 2025/26 Bebe é a versão profissional da body principal do Portugal. Com o icônico branco e preto do Portugal, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9851,7 +9851,7 @@ const produtosArray = ([
 },
 {
   id: "body-cristiano-ronaldo-2526-bebe",
-  nome: "Body Cristiano Ronaldo 2025/26",
+  nome: "Cristiano Ronaldo Baby Body 2025/26",
   descricao: "Body Cristiano Ronaldo 2025/26 Bebé.",
   descricaoLonga: "A body Cristiano Ronaldo 2025/26 Bebe é a versão profissional da body principal do Cristiano Ronaldo. Com o icônico branco e preto do Cristiano Ronaldo, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9872,7 +9872,7 @@ const produtosArray = ([
 },
 {
   id: "body-portugal-alternativa-2526",
-  nome: "Body Portugal Alternativa 2025/26",
+  nome: "Portugal Away Baby Body 2025/26",
   descricao: "Body Portugal Alternativa 2025/26.",
   descricaoLonga: "A body Portugal Alternativa 2025/26 é a versão profissional da body principal do Portugal. Com o icônico branco e preto do Portugal, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9893,7 +9893,7 @@ const produtosArray = ([
 },
 {
   id: "body-sporting-cp-2526-bebe",
-  nome: "Body Sporting CP 2025/26",
+  nome: "Sporting CP Baby Body 2025/26",
   descricao: "Body Sporting CP 2025/26 Bebé.",
   descricaoLonga: "A body Sporting CP 2025/26 Bebe é a versão profissional da body principal do Sporting CP. Com o icônico branco e preto do Sporting CP, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9914,7 +9914,7 @@ const produtosArray = ([
 },
 {
   id: "body-benfica-2526",
-  nome: "Body Benfica 2025/26",
+  nome: "Benfica Baby Body 2025/26",
   descricao: "Body Benfica 2025/26.",
   descricaoLonga: "A body Benfica 2025/26 é a versão profissional da body principal do Benfica. Com o icônico branco e preto do Benfica, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9935,7 +9935,7 @@ const produtosArray = ([
 },
 {
   id: "body-porto-2526",
-  nome: "Body Porto 2025/26",
+  nome: "FC Porto Baby Body 2025/26",
   descricao: "Body Porto 2025/26.",
   descricaoLonga: "A body Porto 2025/26 é a versão profissional da body principal do Porto. Com o icônico branco e preto do Porto, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9956,7 +9956,7 @@ const produtosArray = ([
 },
 {
   id: "body-brasil-2526",
-  nome: "Body Brasil 2025/26",
+  nome: "Brazil Baby Body 2025/26",
   descricao: "Body Brasil 2025/26.",
   descricaoLonga: "A body Brasil 2025/26 é a versão profissional da body principal do Brasil. Com o icônico branco e preto do Brasil, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9977,7 +9977,7 @@ const produtosArray = ([
 },
 {
   id: "body-atletico-madrid-2526",
-  nome: "Body Atletico Madrid 2025/26",
+  nome: "Atletico Madrid Baby Body 2025/26",
   descricao: "Body Atletico Madrid 2025/26.",
   descricaoLonga: "A body Atletico Madrid 2025/26 é a versão profissional da body principal do Atletico Madrid. Com o icônico branco e preto do Atletico Madrid, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -9998,7 +9998,7 @@ const produtosArray = ([
 },
 { 
   id: "body-barcelona-2526",
-  nome: "Body Barcelona 2025/26",
+  nome: "Barcelona Baby Body 2025/26",
   descricao: "Body Barcelona 2025/26.",
   descricaoLonga: "A body Barcelona 2025/26 é a versão profissional da body principal do Barcelona. Com o icônico branco e preto do Barcelona, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10019,7 +10019,7 @@ const produtosArray = ([
 },
 {
   id: "body-barcelona-rosa-2526",
-  nome: "Body Barcelona Rosa 2025/26",
+  nome: "Barcelona Pink Baby Body 2025/26",
   descricao: "Body Barcelona Rosa 2025/26.",
   descricaoLonga: "A body Barcelona Rosa 2025/26 é a versão profissional da body principal do Barcelona. Com o icônico branco e preto do Barcelona, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10040,7 +10040,7 @@ const produtosArray = ([
 },
 {
   id: "body-chelsea-2526",
-  nome: "Body Chelsea 2025/26",
+  nome: "Chelsea Baby Body 2025/26",
   descricao: "Body Chelsea 2025/26.",
   descricaoLonga: "A body Chelsea 2025/26 é a versão profissional da body principal do Chelsea. Com o icônico branco e preto do Chelsea, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10061,7 +10061,7 @@ const produtosArray = ([
 },
 {
   id: "body-arsenal-2526",
-  nome: "Body Arsenal 2025/26",
+  nome: "Arsenal Baby Body 2025/26",
   descricao: "Body Arsenal 2025/26.",
   descricaoLonga: "A body Arsenal 2025/26 é a versão profissional da body principal do Arsenal. Com o icônico branco e preto do Arsenal, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10082,7 +10082,7 @@ const produtosArray = ([
 },
 {
   id: "body-juventus-2526",
-  nome: "Body Juventus 2025/26",
+  nome: "Juventus Baby Body 2025/26",
   descricao: "Body Juventus 2025/26.",
   descricaoLonga: "A body Juventus 2025/26 é a versão profissional da body principal do Juventus. Com o icônico branco e preto do Juventus, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10103,7 +10103,7 @@ const produtosArray = ([
 },
 {
   id: "body-milan-2526",
-  nome: "Body Milan 2025/26",
+  nome: "AC Milan Baby Body 2025/26",
   descricao: "Body Milan 2025/26.",
   descricaoLonga: "A body Milan 2025/26 é a versão profissional da body principal do Milan. Com o icônico branco e preto do Milan, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10124,7 +10124,7 @@ const produtosArray = ([
 },
 {
   id: "body-juventus-alternativa-2526",
-  nome: "Body Juventus Alternativa 2025/26",
+  nome: "Juventus Away Baby Body 2025/26",
   descricao: "Body Juventus Alternativa 2025/26.",
   descricaoLonga: "A body Juventus Alternativa 2025/26 é a versão profissional da body principal do Juventus. Com o icônico branco e preto do Juventus, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10145,7 +10145,7 @@ const produtosArray = ([
 },
 {
   id: "body-flamengo-2526",
-  nome: "Body Flamengo 2025/26",
+  nome: "Flamengo Baby Body 2025/26",
   descricao: "Body Flamengo 2025/26.",
   descricaoLonga: "A body Flamengo 2025/26 é a versão profissional da body principal do Flamengo. Com o icônico branco e preto do Flamengo, esta body oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10163,7 +10163,7 @@ const produtosArray = ([
 },
 {
   id: "realmadrid-2526-jogador-rosa",
-  nome: "Camisola Jogador rosa Real Madrid 2025/26",
+  nome: "Real Madrid 2025/26 Pink Player Jersey",
   descricao: "Camisola jogador rosa do Real Madrid 2025/26.",
   descricaoLonga: "A camisola jogador rosa do Real Madrid 2025/26 é a versão profissional da camisola principal do Real Madrid. Com o icônico branco e preto do Real Madrid, esta camisola de jogador oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10184,7 +10184,7 @@ const produtosArray = ([
 },
 {
   id: "barcelona-2526-concept-edition-player-version",
-  nome: "Camisola Barcelona 2025/26 Concept Edition Player ",
+  nome: "Barcelona 2025/26 Concept Edition Player Jersey",
   descricao: "Camisola concept edition player version do Barcelona 2025/26.",
   descricaoLonga: "A camisola concept edition player version do Barcelona 2025/26 é a versão profissional da camisola principal do Barcelona. Com o icônico branco e preto do Barcelona, esta camisola de jogador oferece tecnologia avançada, conforto excepcional e performance de elite, perfeita para os adeptos mais exigentes.",
   preco: 17.99,
@@ -10205,7 +10205,7 @@ const produtosArray = ([
 },
 { 
   id: "kit-crianca-liverpool-i-2425",
-  nome: "Kit criança Liverpool 24/25",
+  nome: "Liverpool Kids Home Kit 24/25",
   descricao: "Kit criança Liverpool I 24/25.",
 descricaoLonga: "Kit criança Liverpool I 24/25 CONJUNTO INFANTIL.",
 preco: 17.99,
@@ -10224,7 +10224,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
   {
     id: "arsenal-terrace-icons-2526-retro",
-    nome: "Camisola Arsenal Terrace Icons 2025/26 Retro",
+    nome: "Arsenal Terrace Icons Retro Jersey 2025/26",
     descricao: "Camisola retro do Arsenal 2025/26, edição Terrace Icons.",
     descricaoLonga: "Edição especial Terrace Icons do Arsenal 2025/26, com design clássico inspirado nas camisolas históricas do clube. Ideal para adeptos colecionadores e fãs do estilo retro.",
     preco: 17.99,
@@ -10245,7 +10245,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     id: "manchester-united-ii-2526-alternativo",
-    nome: "Camisola Manchester United II 2025/26 Alternativo",
+    nome: "Manchester United Away Jersey 2025/26",
     descricao: "Equipamento alternativo do Manchester United 2025/26.",
     descricaoLonga: "Camisola alternativa do Manchester United 2025/26, com design moderno e confortável. Ideal para adeptos que procuram um look diferente do equipamento principal.",
     preco: 17.99,
@@ -10264,7 +10264,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     id: "arsenal-ii-2526-infantil",
-    nome: "Kit Criança Arsenal II 2025/26 Infantil",
+    nome: "Arsenal Kids Away Kit 2025/26",
     descricao: "Equipamento infantil do Arsenal 2025/26, versão II.",
     descricaoLonga: "Camisola infantil do Arsenal 2025/26, ideal para os pequenos fãs do clube. Confortável, com tecido respirável e design moderno inspirado na equipa principal.",
     preco: 17.99,
@@ -10285,7 +10285,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     id: "manchester-city-iii-2526",
-    nome: "Camisola Manchester City III 2025/26",
+    nome: "Manchester City Third Jersey 2025/26",
     descricao: "Terceiro equipamento do Manchester City 2025/26, versão masculina.",
     descricaoLonga: "Equipamento alternativo do Manchester City 2025/26, ideal para treino ou coleção. Confeccionada com tecido respirável, confortável e estiloso.",
     preco: 17.99,
@@ -10307,7 +10307,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
     {
       id: "arsenal-iii-2526-infantil",
-      nome: "Kit Criança Arsenal III 2025/26",
+      nome: "Arsenal Kids Third Kit 2025/26",
       descricao: "Terceiro equipamento infantil do Arsenal 2025/26.",
       descricaoLonga: "Camisola infantil do Arsenal 2025/26, versão III, com design exclusivo e tecido confortável. Ideal para pequenos fãs colecionarem ou usarem no dia a dia.",
       preco: 17.99,
@@ -10328,7 +10328,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     },
     {
       id: "manchester-united-i-2526-infantil",
-      nome: "Kit Criança Manchester United I 2025/26",
+      nome: "Manchester United Kids Home Kit 2025/26",
       descricao: "Primeiro equipamento infantil do Manchester United 2025/26.",
       descricaoLonga: "Camisola infantil do Manchester United 2025/26, com design vermelho clássico e tecido respirável. Perfeita para crianças que apoiam o clube.",
       preco: 17.99,
@@ -10349,7 +10349,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     },
     {
       id: "manchester-united-iii-2526-infantil",
-      nome: "Kit Criança Manchester United III 2025/26",
+      nome: "Manchester United Kids Third Kit 2025/26",
       descricao: "Terceiro equipamento infantil do Manchester United 2025/26.",
       descricaoLonga: "Camisola infantil do Manchester United 2025/26, versão III, perfeita para treinos ou coleções. Tecido leve e confortável, com visual moderno.",
       preco: 17.99,
@@ -10370,7 +10370,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     },
     {
       id: "aston-villa-i-2526-principal",
-      nome: "Camisola Aston Villa I 2025/26 Principal",
+      nome: "Aston Villa Home Jersey 2025/26",
       descricao: "Equipamento principal do Aston Villa 2025/26, versão masculina.",
       descricaoLonga: "Camisola masculina do Aston Villa 2025/26, com design clássico azul e tecido respirável. Ideal para treinos, jogos ou colecionadores do clube.",
       preco: 17.99,
@@ -10391,7 +10391,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     },
     {
       id: "aston-villa-ii-2526-secundario",
-      nome: "Camisola Aston Villa II 2025/26 Secundário",
+      nome: "Aston Villa Away Jersey 2025/26",
       descricao: "Equipamento secundário do Aston Villa 2025/26 em preto.",
       descricaoLonga: "Camisola alternativa do Aston Villa 2025/26, em preto elegante. Tecido respirável e design moderno, perfeita para treinos ou jogos alternativos.",
       preco: 17.99,
@@ -10412,7 +10412,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     },
       {
         id: "lyon-i-2526-principal",
-        nome: "Camisola Lyon I 2025/26 Principal",
+        nome: "Lyon Home Jersey 2025/26",
         descricao: "Equipamento principal do Lyon 2025/26, edição masculina.",
         descricaoLonga: "Camisola masculina do Lyon 2025/26, design clássico em branco, ideal para treinos ou jogos. Confeccionada em tecido respirável e confortável, perfeita para adeptos e colecionadores.",
         preco: 17.99,
@@ -10431,7 +10431,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       },
       {
         id: "lyon-75-anos-2526-edicao-especial",
-        nome: "Camisola Lyon 75 Anos 2025/26 Edição Especial Retro",
+        nome: "Lyon 75 Years 2025/26 Special Edition Retro Jersey",
         descricao: "Edição especial retro comemorativa dos 75 anos do Lyon.",
         descricaoLonga: "Camisola comemorativa dos 75 anos do Lyon 2025/26, edição especial retro. Confortável e estilosa, perfeita para fãs colecionadores.",
         preco: 19.99,
@@ -10452,7 +10452,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       },
       {
         id: "marseille-i-2526-principal",
-        nome: "Camisola Olympique de Marseille I 2025/26",
+        nome: "Olympique de Marseille I 2025/26 Jersey",
         descricao: "Equipamento principal do Olympique de Marseille 2025/26 em branco.",
         descricaoLonga: "Camisola masculina do Olympique de Marseille 2025/26, design clássico branco. Tecido leve e respirável, ideal para treinos e jogos.",
         preco: 17.99,
@@ -10472,7 +10472,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       },
       {
         id: "borussia-dortmund-ii-2526-especial",
-        nome: "Camisola Borussia Dortmund II 2025/26 Especial Roxo",
+        nome: "Borussia Dortmund II 2025/26 Special Purple Jersey",
         descricao: "Equipamento alternativo do Borussia Dortmund 2025/26 em roxo.",
         descricaoLonga: "Camisola alternativa do Borussia Dortmund 2025/26, edição especial em roxo. Ideal para adeptos que gostam de coleções exclusivas e design moderno.",
         preco: 17.99,
@@ -10493,7 +10493,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       },    
         {
           id: "aston-villa-iii-2526-homem",
-          nome: "Camisola Aston Villa III 25/26 ",
+          nome: "Aston Villa Third Jersey 25/26",
           descricao: "Camisola de edição limitada, design moderno e confortável.",
           descricaoLonga: "Camisola para coleção ou uso diário. Produzida com tecido respirável, perfeita para todos os adeptos e fãs de futebol.",
           preco: 17.99,
@@ -10514,7 +10514,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         },
         {
           id: "kit-crianca-liverpool-iii-2526",
-          nome: "kit criança Liverpool III 25/26  ",
+          nome: "Liverpool Kids Third Kit 25/26",
           descricao: "Camisola com tecido leve e respirável, para coleção ou treino.",
           descricaoLonga: "Camisola de corte clássico, confortável e estilosa, ideal para uso diário ou atividades esportivas.",
           preco: 17.99,
@@ -10533,7 +10533,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         },
         {
     id: "manchester-united-final-champions-0708-retro-infantil",
-    nome: "Kit Criança Manchester United Final Champions 2007/08",
+    nome: "Manchester United Kids Champions League Final Retro Kit 2007/08",
     descricao: "Camisola retro da final da Champions 2007/08 do Manchester United, versão infantil.",
     descricaoLonga: "A camisola retro da final da Champions 2007/08 do Manchester United é uma peça clássica para os adeptos que valorizam a história do clube. Esta edição infantil de manga longa oferece conforto e um visual nostálgico, inspirada nos heróis de Moscovo.",
     preco: 17.99,
@@ -10553,8 +10553,8 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     tags: ["manchester", "united", "retro", "champions", "infantil", "0708"]
   },
   {
-    id: "benfica-2526-preto-casaco",
-    nome: "Casaco Benfica 2025/26 Preto",
+  id: "benfica-2526-preto-casaco",
+  nome: "Benfica 2025/26 Black Jacket",
     descricao: "Casaco oficial do Benfica 2025/26 na cor preta, com fecho frontal.",
     descricaoLonga: "O casaco preto do Benfica 2025/26 é ideal para os adeptos que procuram estilo e conforto. Feito com materiais de alta qualidade, apresenta um design moderno com fecho frontal e corte ajustado, perfeito para o dia a dia ou para apoiar o clube.",
     preco: 49.99,
@@ -10575,7 +10575,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     id: "sc-braga-iii-2526-roxo",
-    nome: "Camisola SC Braga III 2025/26 Roxo",
+    nome: "SC Braga Third Purple Jersey 2025/26",
     descricao: "Terceiro equipamento alternativo do SC Braga 2025/26 em roxo.",
     descricaoLonga: "A camisola alternativa III do SC Braga 2025/26 apresenta um design moderno em tom roxo vibrante. Confeccionada com tecido respirável e confortável, é perfeita para treinos ou para os adeptos que gostam de coleções exclusivas.",
     preco: 17.99,
@@ -10594,7 +10594,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     id: "barcelona-ii-2526-kobe-bryant",
-    nome: "Camisola Barcelona II 2025/26 Kobe Bryant Mamba Mentality",
+    nome: "Barcelona Away Jersey 2025/26 Kobe Bryant Mamba Mentality",
     descricao: "Edição especial Mamba Mentality do Barcelona 2025/26, homenagem a Kobe Bryant.",
     descricaoLonga: "A camisola Barcelona II 2025/26 Mamba Mentality presta homenagem a Kobe Bryant, com detalhes inspirados na mentalidade de campeão. Esta edição especial combina o estilo icônico do Barça com elementos do legado de Kobe, perfeita para colecionadores e fãs do basquetebol e do futebol.",
     preco: 17.99,
@@ -10615,7 +10615,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
   {
     id: "lille-i-2526",
-    nome: "Camisola Lille I 2025/26",
+    nome: "Lille Home Jersey 2025/26",
     descricao: "Camisola principal do Lille 2025/26, design clássico e elegante.",
     descricaoLonga: "A camisola principal do Lille 2025/26 apresenta um design refinado, ideal para adeptos do clube francês. Produzida com tecido técnico respirável, proporciona conforto e performance em qualquer ocasião.",
     preco: 17.99,
@@ -10634,7 +10634,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
 {
   id: "casaco-impermeavel-fcporto-2425-i",
-  nome: "Casaco Impermeável FC Porto 2024/25 I",
+  nome: "FC Porto 2024/25 Waterproof Jacket I",
   preco: 49.99,
   precoAntigo: 59.99,
   categoria: "clubes",
@@ -10975,7 +10975,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "casaco-impermeavel-fcporto-2425-ii",
-  nome: "Casaco Impermeável FC Porto 2024/25 II",
+  nome: "FC Porto 2024/25 Waterproof Jacket II",
   preco: 44.99,
   precoAntigo: 59.99,
   categoria: "clubes",
@@ -10997,7 +10997,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "benfica-retro-99-00-casa",
-  nome: "Camisola Retro SL Benfica 99/00 Principal",
+  nome: "SL Benfica Retro Home Jersey 99/00",
   preco: 19.99,
   precoAntigo: 29.99,
   categoria: "retro",
@@ -11020,7 +11020,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "sporting-away-2526",
-  nome: "Camisola Sporting Away 2025/26",
+  nome: "Sporting CP Away Jersey 2025/26",
   preco: 17.99,
   precoAntigo: 29.99,
   categoria: "clubes",
@@ -11042,7 +11042,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "napoli-25-26-away",
-  nome: "Camisola Napoli Away 2025/26",
+  nome: "Napoli Away Jersey 2025/26",
   descricao: "Camisola de visitante do Napoli para a temporada 2025/26.",
   descricaoLonga: "A Camisola Napoli Away 2025/26 apresenta um design moderno que combina estilo e conforto. Produzida pela EA7 Emporio Armani, destaca-se pelo seu corte elegante, tecido respirável e detalhes que remetem à identidade única do clube. Perfeita para adeptos que querem apoiar o Napoli fora de casa com classe e autenticidade.",
   preco: 17.99,
@@ -11069,7 +11069,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "barcelona-25-26-third-away",
-  nome: "Camisola Barcelona terceiro equipamento 2025/26",
+  nome: "Barcelona Third Kit 2025/26",
   descricao: "Camisola alternativa do Barcelona para a temporada 2025/26.",
   descricaoLonga: "A Camisola Barcelona Third Away Game 2025/26 apresenta um design inovador, com cores vibrantes e detalhes que remetem à história do clube. Produzida pela Nike, oferece tecido respirável Dri-FIT e um corte moderno que garante conforto e estilo tanto em campo como nas bancadas.",
   preco: 17.99,
@@ -11094,7 +11094,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "napoli-25-26-home",
-  nome: "Camisola Napoli Home 2025/26",
+  nome: "Napoli Home Jersey 2025/26",
   descricao: "Camisola principal do SSC Napoli para a temporada 2025/26.",
   descricaoLonga: "A Camisola Napoli Home 2025/26 mantém o tradicional azul celeste que é símbolo do clube, com um design moderno e detalhes que destacam a identidade napolitana. Produzida com tecido leve e respirável, proporciona conforto e desempenho para adeptos e atletas.",
   preco: 17.99,
@@ -11223,7 +11223,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
   },
 {
   id: "kit-crianca-fcporto-terceiro-2526",
-  nome: "Kit Criança FC Porto Terceiro Equipamento 2025/26",
+  nome: "FC Porto Kids Third Kit 2025/26",
   descricao: "Kit infantil oficial – terceiro equipamento do FC Porto para a temporada 2025/26.",
   descricaoLonga:
     "O kit terceiro do FC Porto 2025/26 para criança combina tons bege com detalhes azuis, oferecendo um visual moderno e distinto. Ideal para os pequenos dragões mostrarem o seu orgulho pelo clube com conforto e estilo.",
@@ -11246,7 +11246,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-man-city-alternativa-2526",
-  nome: "Camisola Manchester City Alternativa 2025/26",
+  nome: "Manchester City Away Jersey 2025/26",
   descricao: "Camisola alternativa do Manchester City para a temporada 2025/26.",
   descricaoLonga: "A camisola alternativa do Manchester City para 2025/26 apresenta um design arrojado, pensado para os verdadeiros fãs do clube. Ideal para jogos, treinos ou uso diário, combina conforto e estilo com a qualidade da Puma.",
   preco: 17.99,
@@ -11337,7 +11337,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-arsenal-alternativa-2526",
-  nome: "Camisola Arsenal Alternativa 2025/26",
+  nome: "Arsenal Away Jersey 2025/26",
   descricao: "Camisola alternativa do Arsenal para a temporada 2025/26.",
   descricaoLonga: "A camisola alternativa do Arsenal para 2025/26 oferece um visual ousado e inovador, representando a paixão dos Gunners dentro e fora de campo. Ideal para adeptos que valorizam conforto e identidade do clube.",
   preco: 17.99,
@@ -11360,7 +11360,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-liverpool-edicao-especial-2025",
-  nome: "Camisola Liverpool Edição Especial 2025",
+  nome: "Liverpool Special Edition Jersey 2025",
   descricao: "Camisola edição especial do Liverpool para o ano de 2025.",
   descricaoLonga: "A camisola edição especial do Liverpool 2025 celebra a história e tradição dos Reds com um design exclusivo. Ideal para colecionadores e fãs apaixonados pelo clube.",
   preco: 17.99,
@@ -11383,7 +11383,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "juventus-25-26-away-1",
-  nome: "Camisola Juventus 25/26 2ª Away",
+  nome: "Juventus Second Away Jersey 25/26",
   descricao: "Camisola alternativa (Away) da Juventus para a temporada 2025/26. Design elegante e distintivo.",
   descricaoLonga: "A camisola Away da Juventus para a temporada 2025/26 apresenta um design elegante e distintivo que complementa a camisola principal. Fabricada pela Adidas com tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador. Esta camisola representa a tradição e a modernidade da Juventus, perfeita para os adeptos bianconeri que querem mostrar seu apoio em todos os jogos.",
   preco: 17.99,
@@ -11403,7 +11403,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "juventus-25-26-away-2",
-  nome: "Camisola Juventus 25/26 Away",
+  nome: "Juventus 25/26 Away Jersey",
   descricao: "Camisola alternativa (Away) da Juventus para a temporada 2025/26. Design elegante e distintivo.",
   descricaoLonga: "A camisola Away da Juventus para a temporada 2025/26 apresenta um design elegante e distintivo que complementa a camisola principal. Fabricada pela Adidas com tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador. Esta camisola representa a tradição e a modernidade da Juventus, perfeita para os adeptos bianconeri que querem mostrar seu apoio em todos os jogos.",
   preco: 17.99,
@@ -11425,7 +11425,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-inter-principal-2526",
-  nome: "Camisola Inter Principal 2025/26",
+  nome: "Inter Milan 2025/26 Home Jersey",
   descricao: "Camisola principal do Inter de Milão para a temporada 2025/26.",
   descricaoLonga: "A camisola principal do Inter de Milão para 2025/26 mantém as tradicionais riscas azuis e pretas, agora com um toque moderno. Um símbolo de orgulho para os adeptos Nerazzurri.",
   preco: 17.99,
@@ -11536,7 +11536,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-juventus-principal-2526",
-  nome: "Camisola Juventus Principal 2025/26",
+  nome: "Juventus 2025/26 Home Jersey",
   descricao: "Camisola principal da Juventus para a temporada 2025/26.",
   descricaoLonga: "A camisola principal da Juventus 2025/26 mantém o icónico design às riscas pretas e brancas, com detalhes modernos que refletem a elegância e a força do clube de Turim. Perfeita para adeptos fiéis e colecionadores.",
   preco: 17.99,
@@ -11558,7 +11558,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-benfica-gr1-treino-2526",
-  nome: "Camisola Treino Guarda-Redes I Benfica 2025/26",
+  nome: "Benfica 2025/26 Goalkeeper Training Jersey I",
   descricao: "Camisola de treino de guarda-redes I do SL Benfica para a época 2025/26.",
   descricaoLonga: "A camisola de treino de guarda-redes I do Benfica 25/26 combina conforto, mobilidade e estilo, ideal para treinos intensos e para os verdadeiros adeptos do clube.",
   preco: 17.99,
@@ -11583,7 +11583,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-benfica-gr2-treino-2526",
-  nome: "Camisola Treino Guarda-Redes II Benfica 2025/26",
+  nome: "Benfica 2025/26 Goalkeeper Training Jersey II",
   descricao: "Camisola de treino de guarda-redes II do SL Benfica para a época 2025/26.",
   descricaoLonga: "A camisola de treino de guarda-redes II do Benfica 25/26 oferece um design alternativo e confortável, ideal para treinos e para adeptos que gostam de exclusividade.",
   preco: 17.99,
@@ -11607,7 +11607,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-real-madrid-gr-2526",
-  nome: "Camisola Guarda-Redes Real Madrid 2025/26",
+  nome: "Real Madrid 2025/26 Goalkeeper Jersey",
   descricao: "Camisola de guarda-redes do Real Madrid para a temporada 2025/26.",
   descricaoLonga: "A camisola de guarda-redes do Real Madrid 25/26 alia inovação e conforto num design moderno. Perfeita para quem quer vestir como os craques do Santiago Bernabéu.",
   preco: 17.99,
@@ -11632,7 +11632,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
 },
 {
   id: "camisola-liverpool-principal-2025-26",
-  nome: "Camisola Liverpool Principal 2025/26",
+  nome: "Liverpool 2025/26 Home Jersey",
   descricao: "A nova camisola principal do Liverpool para a época 2025/26, em vermelho clássico com detalhes modernos.",
   descricaoLonga: "Celebra a história e a paixão do Liverpool com a camisola principal da época 2025/26. Apresenta um design moderno com o vermelho icónico do clube, detalhes subtis em dourado e branco, e tecnologia Nike Dri-FIT para conforto durante todo o jogo.",
   preco: 17.99,
