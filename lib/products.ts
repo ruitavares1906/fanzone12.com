@@ -36,7 +36,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-fc-porto-202425-principal",
-    nome: "Camisola FC Porto 2024/25 Principal",
+    nome: "FC Porto 2024/25 Home Jersey",
     descricao:
       "Official home jersey of FC Porto for the 2024/25 season. Classic blue and white design, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
@@ -3814,7 +3814,7 @@ const produtosArray = ([
   },
   {
     id: "man-city-25-26-away",
-    nome: "Camisola Manchester City Alternativa 2025/26",
+    nome: "Manchester City 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do Manchester City para a temporada 2025/26. Design elegante e moderno.",
     descricaoLonga: "A nova camisola alternativa do Manchester City para a temporada 2025/26 apresenta um design elegante e moderno que combina tradição com inovação. Fabricada com tecnologia de ponta para máximo conforto e performance, esta camisola é perfeita para os adeptos dos Citizens que procuram qualidade e estilo únicos.",
     preco: 17.99,
@@ -3840,7 +3840,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-home",
-    nome: "Camisola Barcelona 2025/26 ",
+    nome: "Barcelona 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do FC Barcelona para a temporada 2025/26. Design clássico azul e grená com listras tradicionais.",
     descricaoLonga: "A nova camisola principal do FC Barcelona para a temporada 2025/26 mantém o design clássico com as icônicas listras azuis e grenás que definem a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e representa a paixão e tradição do Barça.",
     preco: 17.99,
@@ -3864,7 +3864,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-jogador-rosa",
-    nome: "Camisola Barcelona Jogador Rosa 2025/26",
+    nome: "Barcelona 2025/26 Player Pink Jersey",
     descricao: "Camisola oficial do FC Barcelona para a temporada 2025/26 em cor rosa. Design especial e único.",
     descricaoLonga: "A camisola Barcelona Jogador Rosa 2025/26 apresenta um design especial e único em cor rosa, oferecendo uma alternativa moderna e estilosa para os adeptos do Barça. Fabricada com tecnologia de jogador para máximo conforto e performance, esta camisola é perfeita para quem procura algo diferente e exclusivo.",
     preco: 17.99,
@@ -3888,7 +3888,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-joint-edition",
-    nome: "Camisola Barcelona Joint Edition 2025/26",
+    nome: "Barcelona 2025/26 Joint Edition Jersey",
     descricao: "Camisola especial do FC Barcelona para a temporada 2025/26. Edição especial colaborativa com design único.",
     descricaoLonga: "A Barcelona Joint Edition 2025/26 é uma camisola especial que resulta de uma colaboração única, apresentando um design inovador que combina tradição com modernidade. Esta edição limitada é perfeita para colecionadores e adeptos que procuram uma peça exclusiva e diferenciada do FC Barcelona.",
     preco: 17.99,
@@ -3911,7 +3911,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-jogador-special-edition",
-    nome: "Camisola Barcelona Jogador Special Edition 2025/26",
+    nome: "Barcelona 2025/26 Player Special Edition Jersey",
     descricao: "Camisola especial de jogador do FC Barcelona para a temporada 2025/26. Edição especial com tecnologia avançada.",
     descricaoLonga: "A Barcelona Jogador Special Edition 2025/26 é uma camisola especial desenvolvida com tecnologia de jogador profissional, oferecendo máximo conforto, performance e estilo. Esta edição especial apresenta detalhes únicos e acabamentos premium, perfeita para os verdadeiros adeptos do Barça.",
     preco: 17.99,
@@ -3935,7 +3935,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-jogador-special-edition-ii",
-    nome: "Camisola Barcelona Jogador Special Edition II 2025/26",
+    nome: "Barcelona 2025/26 Player Special Edition II Jersey",
     descricao: "Segunda edição especial de jogador do FC Barcelona para a temporada 2025/26. Design único e exclusivo.",
     descricaoLonga: "A Barcelona Jogador Special Edition II 2025/26 é a segunda edição especial da linha de jogador, apresentando um design único e exclusivo que celebra a excelência do FC Barcelona. Com tecnologia avançada e acabamentos premium, esta camisola é ideal para colecionadores e adeptos exigentes.",
     preco: 17.99,
@@ -3959,7 +3959,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-jogador-special-edition-iii",
-    nome: "Camisola Barcelona Jogador Special Edition III 2025/26",
+    nome: "Barcelona 2025/26 Player Special Edition III Jersey",
     descricao: "Terceira edição especial de jogador do FC Barcelona para a temporada 2025/26. Design inovador e premium.",
     descricaoLonga: "A Barcelona Jogador Special Edition III 2025/26 completa a trilogia de edições especiais da linha de jogador, apresentando um design inovador e premium que representa o auge da qualidade e estilo do FC Barcelona. Esta camisola exclusiva é perfeita para os verdadeiros aficionados do clube catalão.",
     preco: 17.99,
@@ -3983,7 +3983,7 @@ const produtosArray = ([
   },
   {
     id: "inter-25-26-special-edition",
-    nome: "Camisola Inter Milão Special Edition 2025/26",
+    nome: "Inter Milan 2025/26 Special Edition Jersey",
     descricao: "Edição especial do Inter de Milão para a temporada 2025/26. Design único e exclusivo.",
     descricaoLonga: "A Inter Milão Special Edition 2025/26 é uma camisola especial que celebra a tradição e inovação do clube nerazzurri. Com design único e exclusivo, esta edição limitada apresenta detalhes premium e acabamentos especiais, perfeita para colecionadores e adeptos exigentes do Inter.",
     preco: 17.99,
@@ -4006,7 +4006,7 @@ const produtosArray = ([
   },
   {
     id: "inter-25-26-special-edition-ii",
-    nome: "Camisola Inter Milão Special Edition II 2025/26",
+    nome: "Inter Milan 2025/26 Special Edition II Jersey",
     descricao: "Segunda edição especial do Inter de Milão para a temporada 2025/26. Design inovador e exclusivo.",
     descricaoLonga: "A Inter Milão Special Edition II 2025/26 é a segunda edição especial da coleção, apresentando um design ainda mais inovador e exclusivo. Esta camisola premium combina tradição nerazzurri com elementos modernos, criando uma peça única para os verdadeiros adeptos do Inter de Milão.",
     preco: 17.99,
@@ -4030,7 +4030,7 @@ const produtosArray = ([
   },
   {
     id: "milan-25-26-gk",
-    nome: "Camisola AC Milan Guarda-Redes 2025/26",
+    nome: "AC Milan 2025/26 Goalkeeper Jersey",
     descricao: "Camisola oficial de guarda-redes do AC Milan para a temporada 2025/26. Design especial para os guardiões rossoneri.",
     descricaoLonga: "A nova camisola de guarda-redes do AC Milan para a temporada 2025/26 apresenta um design especial desenvolvido para os guardiões rossoneri. Com tecnologia avançada e cores distintivas, esta camisola oferece máximo conforto e visibilidade, representando a tradição e excelência do Milan entre os postes.",
     preco: 17.99,
@@ -4054,7 +4054,7 @@ const produtosArray = ([
   },
   {
     id: "milan-25-26-away",
-    nome: "Camisola AC Milan Alternativa 2025/26",
+    nome: "AC Milan 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do AC Milan para a temporada 2025/26. Design moderno mantendo a identidade rossoneri.",
     descricaoLonga: "A nova camisola alternativa do AC Milan para a temporada 2025/26 apresenta um design moderno que mantém a forte identidade rossoneri. Fabricada com tecnologia de ponta, esta camisola oferece conforto excepcional e estilo único, perfeita para apoiar o Milan em jogos fora de casa.",
     preco: 17.99,
@@ -4079,7 +4079,7 @@ const produtosArray = ([
   },
   {
     id: "milan-25-26-home",
-    nome: "Camisola AC Milan Principal 2025/26",
+    nome: "AC Milan 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do AC Milan para a temporada 2025/26. Design clássico rossoneri em vermelho e preto.",
     descricaoLonga: "A nova camisola principal do AC Milan para a temporada 2025/26 mantém o design clássico rossoneri com as icônicas listras vermelhas e pretas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola representa a tradição, paixão e glória do clube milanês. Perfeita para apoiar os rossoneri na nova temporada.",
     preco: 17.99,
@@ -4104,7 +4104,7 @@ const produtosArray = ([
   },
   {
     id: "milan-25-26-co-branded-edition",
-    nome: "Camisola AC Milan Co-Branded Edition 2025/26",
+    nome: "AC Milan 2025/26 Co-Branded Edition Jersey",
     descricao: "Edição especial co-branded do AC Milan para a temporada 2025/26. Colaboração exclusiva com design único.",
     descricaoLonga: "A AC Milan Co-Branded Edition 2025/26 é uma edição especial resultado de uma colaboração exclusiva, apresentando um design único que combina a tradição rossoneri com elementos inovadores. Esta camisola limitada é perfeita para colecionadores e adeptos que procuram uma peça exclusiva e diferenciada do Milan.",
     preco: 17.99,
@@ -4129,7 +4129,7 @@ const produtosArray = ([
   },
   {
     id: "milan-25-26-co-branded-edition-ii",
-    nome: "Camisola AC Milan Co-Branded Edition II 2025/26",
+    nome: "AC Milan 2025/26 Co-Branded Edition II Jersey",
     descricao: "Segunda edição co-branded do AC Milan para a temporada 2025/26. Colaboração exclusiva com design premium.",
     descricaoLonga: "A AC Milan Co-Branded Edition II 2025/26 é a segunda edição da colaboração exclusiva, apresentando um design premium que eleva ainda mais a tradição rossoneri. Esta camisola especial combina elementos clássicos do Milan com inovação moderna, criando uma peça única para os verdadeiros adeptos do clube.",
     preco: 17.99,
@@ -4153,7 +4153,7 @@ const produtosArray = ([
   },
   {
     id: "psg-25-26-jogador-home",
-    nome: "Camisola PSG Jogador 2025/26 Principal",
+    nome: "PSG 2025/26 Player Home Jersey",
     descricao: "Camisola oficial de jogador do PSG para a temporada 2025/26. Design principal com tecnologia profissional.",
     descricaoLonga: "A nova camisola de jogador do PSG para a temporada 2025/26 apresenta o design principal do clube parisiense com tecnologia profissional de última geração. Fabricada com materiais premium e acabamentos de jogador, esta camisola oferece máximo conforto, performance e estilo, perfeita para os verdadeiros adeptos do Paris Saint-Germain.",
     preco: 17.99,
@@ -4177,7 +4177,7 @@ const produtosArray = ([
   },
   {
     id: "psg-25-26-jogador-gk",
-    nome: "Camisola PSG Jogador Guarda-Redes 2025/26",
+    nome: "PSG 2025/26 Player Goalkeeper Jersey",
     descricao: "Camisola oficial de guarda-redes de jogador do PSG para a temporada 2025/26. Tecnologia avançada para os guardiões.",
     descricaoLonga: "A nova camisola de guarda-redes de jogador do PSG para a temporada 2025/26 foi desenvolvida especificamente para os guardiões parisienses. Com tecnologia profissional avançada e design distintivo, esta camisola oferece máxima visibilidade, conforto e performance entre os postes, representando a excelência do Paris Saint-Germain.",
     preco: 17.99,
@@ -4201,7 +4201,7 @@ const produtosArray = ([
   },
   {
     id: "palmeiras-25-26-away",
-    nome: "Camisola Palmeiras Alternativa 2025/26",
+    nome: "Palmeiras 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do Palmeiras para a temporada 2025/26. Design moderno mantendo a identidade alviverde.",
     descricaoLonga: "A nova camisola alternativa do Palmeiras para a temporada 2025/26 apresenta um design moderno que mantém a forte identidade alviverde do clube. Fabricada com tecnologia avançada, esta camisola oferece conforto excepcional e estilo único, perfeita para apoiar o Verdão em jogos fora de casa.",
     preco: 17.99,
@@ -4225,7 +4225,7 @@ const produtosArray = ([
   },
   {
     id: "palmeiras-25-26-gk",
-    nome: "Camisola Palmeiras Guarda-Redes 2025/26",
+    nome: "Palmeiras 2025/26 Goalkeeper Jersey",
     descricao: "Camisola oficial de guarda-redes do Palmeiras para a temporada 2025/26. Design especial para os guardiões alviverdes.",
     descricaoLonga: "A nova camisola de guarda-redes do Palmeiras para a temporada 2025/26 apresenta um design especial desenvolvido para os guardiões alviverdes. Com tecnologia avançada e cores distintivas, esta camisola oferece máximo conforto e visibilidade, representando a tradição e força do Verdão entre os postes.",
     preco: 17.99,
@@ -4250,7 +4250,7 @@ const produtosArray = ([
   },
   {
     id: "palmeiras-25-26-home",
-    nome: "Camisola Palmeiras Principal 2025/26",
+    nome: "Palmeiras 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Palmeiras para a temporada 2025/26. Design clássico alviverde tradicional.",
     descricaoLonga: "A nova camisola principal do Palmeiras para a temporada 2025/26 mantém o design clássico alviverde que define a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola representa a tradição, paixão e história do Verdão. Perfeita para apoiar o Palmeiras na nova temporada.",
     preco: 17.99,
@@ -4274,7 +4274,7 @@ const produtosArray = ([
   },
   {
     id: "palmeiras-25-26-gk-ii",
-    nome: "Camisola Palmeiras Guarda-Redes II 2025/26",
+    nome: "Palmeiras 2025/26 Goalkeeper II Jersey",
     descricao: "Segunda camisola oficial de guarda-redes do Palmeiras para a temporada 2025/26. Design alternativo para os guardiões.",
     descricaoLonga: "A segunda camisola de guarda-redes do Palmeiras para a temporada 2025/26 oferece uma opção alternativa para os guardiões alviverdes. Com design distintivo e tecnologia profissional, esta camisola proporciona máximo conforto e funcionalidade, mantendo a tradição e identidade do Verdão entre os postes.",
     preco: 17.99,
@@ -4297,7 +4297,7 @@ const produtosArray = ([
   },
   {
     id: "flamengo-25-26-home",
-    nome: "Camisola Flamengo Principal 2025/26",
+    nome: "Flamengo 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Flamengo para a temporada 2025/26. Design clássico rubro-negro tradicional.",
     descricaoLonga: "A nova camisola principal do Flamengo para a temporada 2025/26 mantém o design clássico rubro-negro que define a paixão e identidade do Mengão. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola representa a tradição, glória e história do clube mais popular do Brasil. Perfeita para apoiar o Flamengo na nova temporada.",
     preco: 17.99,
@@ -4321,7 +4321,7 @@ const produtosArray = ([
   },
   {
     id: "flamengo-25-26-away",
-    nome: "Camisola Flamengo Alternativa 2025/26",
+    nome: "Flamengo 2025/26 Away Jersey",
     descricao: "Camisola oficial alternativa do Flamengo para a temporada 2025/26. Design moderno mantendo a identidade rubro-negra.",
     descricaoLonga: "A nova camisola alternativa do Flamengo para a temporada 2025/26 apresenta um design moderno que mantém a forte identidade rubro-negra do clube. Fabricada com tecnologia de ponta, esta camisola oferece conforto excepcional e estilo único, perfeita para apoiar o Mengão em jogos fora de casa e ocasiões especiais.",
     preco: 17.99,
@@ -4346,7 +4346,7 @@ const produtosArray = ([
   },
   {
     id: "bayern-25-26-home",
-    nome: "Camisola Bayern Munich Principal 2025/26",
+    nome: "Bayern Munich 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Bayern Munich para a temporada 2025/26. Design clássico bávaro em vermelho.",
     descricaoLonga: "A nova camisola principal do Bayern Munich para a temporada 2025/26 mantém a tradição bávara com o icônico vermelho que define a identidade do clube. Fabricada com tecnologia avançada para máximo conforto e performance, esta camisola representa a excelência e tradição do maior clube alemão. Perfeita para apoiar o Bayern na nova temporada.",
     preco: 17.99,
@@ -4372,7 +4372,7 @@ const produtosArray = ([
   },
   {
     id: "bayern-25-26-special-edition",
-    nome: "Camisola Bayern Munich Special Edition I 2025/26",
+    nome: "Bayern Munich 2025/26 Special Edition I Jersey",
     descricao: "Edição especial do Bayern Munich para a temporada 2025/26. Design exclusivo e premium.",
     descricaoLonga: "A Bayern Munich Special Edition I 2025/26 é uma camisola especial que celebra a tradição e inovação do clube bávaro. Com design exclusivo e premium, esta edição limitada apresenta detalhes únicos e acabamentos especiais, perfeita para colecionadores e adeptos exigentes do Bayern Munich.",
     preco: 17.99,
@@ -4398,7 +4398,7 @@ const produtosArray = ([
   },
   {
     id: "bayern-25-26-jogador-125th-anniversary",
-    nome: "Camisola Jogador FC Bayern Munich 125th Anniversary Red 2025/26",
+    nome: "FC Bayern Munich 2025/26 Player 125th Anniversary Red Jersey",
     descricao: "Camisola especial de jogador do Bayern Munich comemorativa do 125º aniversário. Edição limitada em vermelho.",
     descricaoLonga: "A camisola de jogador FC Bayern Munich 125th Anniversary Red 2025/26 é uma edição especial comemorativa que celebra os 125 anos de história do clube bávaro. Com tecnologia de jogador profissional e design exclusivo em vermelho, esta camisola limitada é perfeita para colecionadores e verdadeiros adeptos do Bayern.",
     preco: 17.99,
@@ -4423,7 +4423,7 @@ const produtosArray = ([
   },
   {
     id: "dortmund-25-26-special-edition",
-    nome: "Camisola Dortmund Special Edition 2025/26",
+    nome: "Dortmund 2025/26 Special Edition Jersey",
     descricao: "Edição especial do Borussia Dortmund para a temporada 2025/26. Design único e exclusivo.",
     descricaoLonga: "A Dortmund Special Edition 2025/26 é uma camisola especial que celebra a paixão e tradição do Borussia Dortmund. Com design único e exclusivo, esta edição limitada apresenta elementos inovadores que representam o espírito do BVB e a famosa Muralha Amarela.",
     preco: 17.99,
@@ -4449,7 +4449,7 @@ const produtosArray = ([
   },
   {
     id: "dortmund-25-26-jogador-special-edition-ii",
-    nome: "Camisola Jogador Dortmund Special Edition II 2025/26",
+    nome: "Dortmund 2025/26 Player Special Edition II Jersey",
     descricao: "Segunda edição especial de jogador do Borussia Dortmund para a temporada 2025/26. Design premium e exclusivo.",
     descricaoLonga: "A camisola Jogador Dortmund Special Edition II 2025/26 é a segunda edição especial da linha de jogador, apresentando um design premium e exclusivo que eleva ainda mais a tradição do BVB. Com tecnologia profissional avançada, esta camisola é ideal para colecionadores e verdadeiros fanáticos do Borussia Dortmund.",
     preco: 17.99,
@@ -4474,7 +4474,7 @@ const produtosArray = ([
   },
   {
     id: "portugal-25-26-home",
-    nome: "Camisola Seleção Portugal Principal 2025/26",
+    nome: "Portugal National Team 2025/26 Home Jersey",
     descricao: "Camisola oficial da Seleção Nacional de Portugal para a temporada 2025/26. Design clássico português.",
     descricaoLonga: "A camisola oficial da Seleção Nacional de Portugal para 2025/26 representa o orgulho e a tradição do futebol português. Com o icônico vermelho português e detalhes em verde e dourado, esta camisola da Puma combina o design clássico com tecnologia moderna, celebrando a rica história da seleção das quinas.",
     preco: 17.99,
@@ -4498,7 +4498,7 @@ const produtosArray = ([
   },
   {
     id: "celtics-25-26-home",
-    nome: "Camisola Principal Celtic FC 2025/26",
+    nome: "Celtic FC 2025/26 Home Jersey",
     descricao: "Camisola oficial principal do Celtic FC para a temporada 2025/26. Design clássico com listras verdes e brancas.",
     descricaoLonga: "A nova camisola principal do Celtic FC para a temporada 2025/26 mantém a tradição icónica das listras horizontais verdes e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, representando a rica história e tradição dos Hoops.",
     preco: 17.99,
@@ -4524,7 +4524,7 @@ const produtosArray = ([
   },
   {
     id: "arsenal-25-26-gk",
-    nome: "Camisola Guarda-Redes Arsenal 2025/26",
+    nome: "Arsenal 2025/26 Goalkeeper Jersey",
     descricao: "Camisola oficial de guarda-redes do Arsenal para a temporada 2025/26. Design moderno e tecnologia avançada.",
     descricaoLonga: "A nova camisola de guarda-redes do Arsenal para a temporada 2025/26 apresenta um design moderno e arrojado, desenvolvido especificamente para as necessidades dos guarda-redes. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional, durabilidade e proteção durante os jogos.",
     preco: 17.99,
@@ -4548,7 +4548,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-special-edition-iv",
-    nome: "Camisola Barcelona Special Edition IV 2025/26",
+    nome: "Barcelona 2025/26 Special Edition IV Jersey",
     descricao: "Quarta edição especial do FC Barcelona para a temporada 2025/26. Design único e exclusivo.",
     descricaoLonga: "A Barcelona Special Edition IV 2025/26 é uma camisola especial que celebra a inovação e criatividade do FC Barcelona. Com design único e exclusivo, esta edição limitada apresenta elementos inovadores que representam o espírito culé e a rica tradição do clube catalão.",
     preco: 17.99,
@@ -4571,7 +4571,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-special-edition-v",
-    nome: "Camisola Barcelona Special Edition V 2025/26",
+    nome: "Barcelona 2025/26 Special Edition V Jersey",
     descricao: "Quinta edição especial do FC Barcelona para a temporada 2025/26. Design inovador e moderno.",
     descricaoLonga: "A Barcelona Special Edition V 2025/26 representa a quinta edição especial desta temporada, com um design ainda mais inovador e moderno. Esta camisola única combina elementos tradicionais do Barça com toques contemporâneos, criando uma peça de colecionador verdadeiramente especial.",
     preco: 17.99,
@@ -4594,7 +4594,7 @@ const produtosArray = ([
   },
   {
     id: "barcelona-25-26-jogador-125th-anniversary",
-    nome: "Camisola Jogador Barcelona 125th Anniversary 2025/26",
+    nome: "Barcelona 2025/26 Player 125th Anniversary Jersey",
     descricao: "Camisola especial de jogador do FC Barcelona celebrando o 125º aniversário do clube.",
     descricaoLonga: "A camisola especial de jogador do Barcelona 125th Anniversary 2025/26 celebra um marco histórico - os 125 anos de existência do FC Barcelona. Esta edição comemorativa especial apresenta elementos únicos que homenageiam a rica história e tradição do clube catalão, sendo uma peça verdadeiramente histórica.",
     preco: 17.99,
@@ -4617,7 +4617,7 @@ const produtosArray = ([
   },
   {
     id: "real-madrid-25-26-jogador-special-edition-vii",
-    nome: "Camisola Jogador Real Madrid Special Edition VII 2025/26",
+    nome: "Real Madrid 2025/26 Player Special Edition VII Jersey",
     descricao: "Sétima edição especial de jogador do Real Madrid para a temporada 2025/26.",
     descricaoLonga: "A Real Madrid Jogador Special Edition VII 2025/26 representa a sétima edição especial desta temporada, desenvolvida especificamente para jogadores. Com tecnologia de ponta e design exclusivo, esta camisola oferece performance máxima e estilo inigualável, digna dos Galácticos.",
     preco: 17.99,
