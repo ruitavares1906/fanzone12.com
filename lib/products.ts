@@ -14,11 +14,11 @@ import { getCachedData, setCachedData, CACHE_KEYS } from './cache'
 const produtosArray = ([
   {
     id: "camisola-benfica-202425-principal",
-    nome: "Camisola Benfica 2024/25 Principal",
+    nome: "Benfica 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do SL Benfica para a temporada 2024/25. Design clássico em vermelho com detalhes em dourado, fabricada com tecnologia avançada para máximo conforto.",
+      "Official home jersey of SL Benfica for the 2024/25 season. Classic red design with gold details, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do SL Benfica para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho vibrante e detalhes em dourado que representam a grandeza do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+      "The new SL Benfica home jersey for the 2024/25 season maintains the club's tradition with the iconic vibrant red and gold details that represent the club's greatness. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/benfica-home-2024-25-front.webp",
@@ -36,11 +36,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-fc-porto-202425-principal",
-    nome: "Camisola FC Porto 2024/25 Principal",
+    nome: "FC Porto 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do FC Porto para a temporada 2024/25. Design clássico em azul e branco, fabricada com tecnologia avançada para máximo conforto.",
+      "Official home jersey of FC Porto for the 2024/25 season. Classic blue and white design, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do FC Porto para a temporada 2024/25 mantém a tradição do clube com as icônicas listras verticais azuis e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+      "The new FC Porto home jersey for the 2024/25 season maintains the club's tradition with the iconic vertical blue and white stripes. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/porto-home-2024-25-front.webp",
@@ -58,11 +58,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-sporting-202425-principal",
-    nome: "Camisola Sporting 2024/25 Principal",
+    nome: "Sporting CP 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Sporting CP para a temporada 2024/25. Design clássico em verde e branco, fabricada com tecnologia avançada para máximo conforto.",
+      "Official home jersey of Sporting CP for the 2024/25 season. Classic green and white design, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Sporting CP para a temporada 2024/25 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do Sporting CP, perfeita para apoiar os Leões na nova temporada.",
+      "The new Sporting CP home jersey for the 2024/25 season maintains the club's tradition with the iconic horizontal green and white stripes. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front. This jersey represents the passion and history of Sporting CP, perfect for supporting the Lions in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/sporting-home-2024-25-front.webp",
@@ -80,9 +80,9 @@ const produtosArray = ([
   },
   {
     "id": "sporting-vintage-branca-anos-90-limited",
-    "nome": "Camisola Sporting C.P. Vintage Branca Anos 90 Limited Edition",
-    "descricao": "Edição limitada em pré-venda da camisola vintage branca do Sporting C.P., inspirada nos anos 90.",
-    "descricaoLonga": "Revive a nostalgia dos anos 90 com esta camisola vintage branca do Sporting Clube de Portugal. Produzida com materiais premium e detalhes autênticos, esta edição limitada encontra-se em pré-venda e celebra a herança leonina de forma única. Ideal para colecionadores e adeptos que valorizam a história do clube.",
+    "nome": "Sporting CP Vintage White 90s Limited Edition Jersey",
+    "descricao": "Limited edition pre-order of the vintage white Sporting CP jersey, inspired by the 90s.",
+    "descricaoLonga": "Relive the nostalgia of the 90s with this vintage white jersey from Sporting Clube de Portugal. Produced with premium materials and authentic details, this limited edition is available for pre-order and celebrates the Lions' heritage in a unique way. Ideal for collectors and fans who value the club's history.",
     "preco": 19.99,
     "precoAntigo": 29.99,
     "imagem": "/images/0013641_camisola-vintage-branca-anos-90-limited-edition (1).webp",
@@ -107,9 +107,9 @@ const produtosArray = ([
   },
   {
     "id": "sporting-vintage-verde-anos-90-limited",
-    "nome": "Camisola Sporting C.P. Vintage Verde Anos 90 Limited Edition",
-    "descricao": "Camisola vintage verde do Sporting C.P. em pré-venda, edição limitada inspirada nos anos 90.",
-    "descricaoLonga": "Uma peça histórica para os verdadeiros adeptos leoninos. Esta camisola verde vintage do Sporting Clube de Portugal, em pré-venda, reproduz com fidelidade o design clássico dos anos 90, com riscas icónicas e materiais de alta qualidade. Edição limitada para os apaixonados pela tradição do clube.",
+    "nome": "Sporting CP Vintage Green 90s Limited Edition Jersey",
+    "descricao": "Vintage green Sporting CP jersey available for pre-order, limited edition inspired by the 90s.",
+    "descricaoLonga": "A historic piece for true Lions fans. This vintage green jersey from Sporting Clube de Portugal, available for pre-order, faithfully reproduces the classic 90s design, with iconic stripes and high-quality materials. Limited edition for those passionate about the club's tradition.",
     "preco": 19.99,
     "precoAntigo": 29.99,
     "imagem": "/images/0013635_camisola-vintage-verde-anos-90-limited-edition (1).webp",
@@ -133,9 +133,9 @@ const produtosArray = ([
   },  
     {
       "id": "sporting-special-25-26",
-      "nome": "Camisola Sporting CP Special Edition 2025/26",
-      "descricao": "Edição especial do Sporting Clube de Portugal para 2025/26.",
-      "descricaoLonga": "A camisola Special Edition do Sporting CP 2025/26 combina inovação e tradição leonina. Produzida com tecidos técnicos de alta performance, é uma edição limitada pensada para adeptos e colecionadores.",
+      "nome": "Sporting CP Special Edition 2025/26 Jersey",
+      "descricao": "Special edition from Sporting Clube de Portugal for 2025/26.",
+      "descricaoLonga": "The Sporting CP Special Edition 2025/26 jersey combines innovation and Lions tradition. Produced with high-performance technical fabrics, it's a limited edition designed for fans and collectors.",
       "preco": 17.99,
       "precoAntigo": 29.99,
       "imagem": "/images/16a8dee8.webp",
@@ -159,11 +159,11 @@ const produtosArray = ([
     },
   {
     id: "camisola-benfica-alternativa-202425",
-    nome: "Camisola Benfica Alternativa 2024/25",
+    nome: "Benfica 2024/25 Away Jersey",
     descricao:
-      "Camisola oficial alternativa do SL Benfica para a temporada 2024/25. Design moderno em preto com detalhes em vermelho, fabricada com tecnologia avançada para máximo conforto.",
+      "Official away jersey of SL Benfica for the 2024/25 season. Modern black design with red details, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola alternativa do SL Benfica para a temporada 2024/25 apresenta um design moderno em preto com detalhes em vermelho que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+      "The new SL Benfica away jersey for the 2024/25 season features a modern black design with red details that add a touch of elegance while maintaining the club's identity. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/benfica-away-2024-25-front.webp",
@@ -181,11 +181,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-fc-porto-alternativa-202425",
-    nome: "Camisola FC Porto Alternativa 2024/25",
+    nome: "FC Porto 2024/25 Away Jersey",
     descricao:
-      "Camisola oficial alternativa do FC Porto para a temporada 2024/25. Design moderno em preto com detalhes em azul, fabricada com tecnologia avançada para máximo conforto.",
+      "Official away jersey of FC Porto for the 2024/25 season. Modern black design with blue details, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola alternativa do FC Porto para a temporada 2024/25 apresenta um design moderno em preto com detalhes em azul que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+      "The new FC Porto away jersey for the 2024/25 season features a modern black design with blue details that add a touch of elegance while maintaining the club's identity. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/porto-away-2024-25-front.webp",
@@ -203,11 +203,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-sporting-alternativa-202425",
-    nome: "Camisola Sporting Alternativa 2024/25",
+    nome: "Sporting CP 2024/25 Away Jersey",
     descricao:
-      "Camisola oficial alternativa do Sporting CP para a temporada 2024/25. Design moderno em preto com detalhes em verde, fabricada com tecnologia avançada para máximo conforto.",
+      "Official away jersey of Sporting CP for the 2024/25 season. Modern black design with green details, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola alternativa do Sporting CP para a temporada 2024/25 apresenta um design moderno em preto com detalhes em verde que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente.",
+      "The new Sporting CP away jersey for the 2024/25 season features a modern black design with green details that add a touch of elegance while maintaining the club's identity. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/sporting-away-2024-25-front.webp",
@@ -225,9 +225,9 @@ const produtosArray = ([
   },
   {
     "id": "kit-crianca-sporting-lisbon-third-25-26",
-    "nome": "Kit Criança Sporting away 2025/26",
-    "descricao": "Kit criança Sporting away 2025/26, edição alternativa.",
-    "descricaoLonga": "O Kit Criança Sporting Lisbon Third 2025/26 apresenta o equipamento alternativo do clube para os mais jovens adeptos. Inclui camisola e calções em tecido leve e confortável, ideal para vibrar com o Sporting com máximo estilo e orgulho.",
+    "nome": "Sporting Kids Away Kit 2025/26",
+    "descricao": "Sporting kids away kit 2025/26, alternative edition.",
+    "descricaoLonga": "The Sporting Lisbon Third Kids Kit 2025/26 features the club's alternative kit for younger fans. Includes jersey and shorts in lightweight and comfortable fabric, ideal for supporting Sporting with maximum style and pride.",
     "preco": 17.99,
     "precoAntigo": 29.99,
     "imagem": "/images/1e94c560.jpg",
@@ -253,11 +253,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-fc-porto-terceira-202425",
-    nome: "Camisola FC Porto Terceira 2024/25",
+    nome: "FC Porto 2024/25 Third Jersey",
     descricao:
-      "Camisola oficial terceira do FC Porto para a temporada 2024/25. Design moderno em laranja com detalhes em azul, fabricada com tecnologia avançada para máximo conforto.",
+      "Official third jersey of FC Porto for the 2024/25 season. Modern orange design with blue details, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola terceira do FC Porto para a temporada 2024/25 apresenta um design moderno em laranja vibrante com detalhes em azul que adicionam um toque de originalidade e mantêm a identidade do clube. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do FC Porto, perfeita para apoiar os Dragões na nova temporada.",
+      "The new FC Porto third jersey for the 2024/25 season features a modern vibrant orange design with blue details that add a touch of originality while maintaining the club's identity. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front. This jersey represents the passion and history of FC Porto, perfect for supporting the Dragons in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/porto-third-2024-25-front.webp",
@@ -275,11 +275,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-sporting-202526-principal",
-    nome: "Camisola Sporting 2025/26 Principal",
+    nome: "Sporting CP 2025/26 Home Jersey",
     descricao:
-      "Camisola oficial principal do Sporting CP para a temporada 2025/26. Design clássico em verde e branco, fabricada pela Nike com tecnologia avançada para máximo conforto.",
+      "Official home jersey of Sporting CP for the 2025/26 season. Classic green and white design, manufactured by Nike with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Sporting CP para a temporada 2025/26 mantém a tradição do clube com as icônicas listras horizontais verdes e brancas. Fabricada pela Nike com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do Sporting CP, perfeita para apoiar os Leões na nova temporada.",
+      "The new Sporting CP home jersey for the 2025/26 season maintains the club's tradition with the iconic horizontal green and white stripes. Manufactured by Nike with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front. This jersey represents the passion and history of Sporting CP, perfect for supporting the Lions in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/1a47109.webp",
@@ -306,9 +306,9 @@ const produtosArray = ([
   },
   {
     id: "sporting-concept-2024",
-    nome: "Camisola Sporting Concept 2024",
-    descricao: "Camisola conceito do Sporting CP para 2024. Design inovador e moderno que representa a evolução do clube.",
-    descricaoLonga: "A Camisola Sporting Concept 2024 apresenta um design inovador e moderno que representa a evolução e o futuro do Sporting CP. Esta camisola conceito combina elementos tradicionais do clube com uma abordagem contemporânea, criando uma peça única que celebra a identidade dos Leões. Fabricada com materiais de alta qualidade e tecnologia avançada, oferece conforto excepcional e gestão da transpiração. Uma peça especial para os adeptos que procuram algo diferente e exclusivo.",
+    nome: "Sporting CP Concept 2024 Jersey",
+    descricao: "Concept jersey from Sporting CP for 2024. Innovative and modern design that represents the club's evolution.",
+    descricaoLonga: "The Sporting CP Concept 2024 jersey features an innovative and modern design that represents the evolution and future of Sporting CP. This concept jersey combines traditional club elements with a contemporary approach, creating a unique piece that celebrates the Lions' identity. Manufactured with high-quality materials and advanced technology, it offers exceptional comfort and sweat management. A special piece for fans looking for something different and exclusive.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/6e24bf24.webp",
@@ -333,11 +333,11 @@ const produtosArray = ([
   },
   {
     id: "sc-braga-24-25-principal",
-    nome: "Camisola SC Braga 2024/25 Principal",
+    nome: "SC Braga 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do SC Braga para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada com tecnologia avançada para máximo conforto.",
+      "Official home jersey of SC Braga for the 2024/25 season. Classic red design with white details, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do SC Braga para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho vibrante e detalhes em branco. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do SC Braga, perfeita para apoiar os Guerreiros do Minho na nova temporada.",
+      "The new SC Braga home jersey for the 2024/25 season maintains the club's tradition with the iconic vibrant red and white details. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front. This jersey represents the passion and history of SC Braga, perfect for supporting the Warriors of Minho in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/braga-home-2024-25-front.webp",
@@ -355,11 +355,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-vitoria-sc-202425-principal",
-    nome: "Camisola Vitória SC 2024/25 Principal",
+    nome: "Vitória SC 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Vitória SC para a temporada 2024/25. Design clássico em branco com detalhes em preto, fabricada com tecnologia avançada para máximo conforto.",
+      "Official home jersey of Vitória SC for the 2024/25 season. Classic white design with black details, manufactured with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Vitória SC para a temporada 2024/25 mantém a tradição do clube com o icônico branco e detalhes em preto. Fabricada com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da marca e o patrocinador na frente. Esta camisola representa a paixão e a história do Vitória SC, perfeita para apoiar os Conquistadores na nova temporada.",
+      "The new Vitória SC home jersey for the 2024/25 season maintains the club's tradition with the iconic white and black details. Manufactured with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the brand logo and sponsor on the front. This jersey represents the passion and history of Vitória SC, perfect for supporting the Conquerors in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/vitoria-sc-home-2024-25-front.webp",
@@ -377,9 +377,9 @@ const produtosArray = ([
   },
   {
     id: "portugal-pantera-negra",
-    nome: "Camisola Portugal Edição Especial Pantera Negra",
-    descricao: "Camisola alternativa do Portugal para a época 2026.",
-    descricaoLonga: "A camisola alternativa do Portugal para a época 2026 é uma peça única que celebra a grandeza do clube. Fabricada com materiais premium e tecnologia avançada, é uma peça de colecionador para os verdadeiros adeptos dos Leões.",
+    nome: "Portugal Special Edition Black Panther Jersey",
+    descricao: "Alternative jersey from Portugal for the 2026 season.",
+    descricaoLonga: "The Portugal alternative jersey for the 2026 season is a unique piece that celebrates the team's greatness. Manufactured with premium materials and advanced technology, it's a collector's item for true Portugal fans.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/2025092114282251_20_281_29.webp",
@@ -404,9 +404,9 @@ const produtosArray = ([
   },
   {
   id: "portugal-pantera-negra-versao-jogador",
-  nome: "Camisola Portugal Edição Especial Pantera Negra versão jogador",
-  descricao: "Camisola alternativa do Portugal para a época 2026.",
-  descricaoLonga: "A camisola alternativa do Portugal para a época 2026 é uma peça única que celebra a grandeza do clube. Fabricada com materiais premium e tecnologia avançada, é uma peça de colecionador para os verdadeiros adeptos dos Leões.",
+  nome: "Portugal Special Edition Black Panther Player Version Jersey",
+  descricao: "Alternative jersey from Portugal for the 2026 season.",
+  descricaoLonga: "The Portugal alternative jersey for the 2026 season is a unique piece that celebrates the team's greatness. Manufactured with premium materials and advanced technology, it's a collector's item for true Portugal fans.",
   preco: 17.99,
   precoAntigo: 29.99,
   imagem: "/images/80b41c87-5b1b-4a62-a69f-c5cdb3d5223b-172208dd38.webp",
@@ -434,9 +434,9 @@ const produtosArray = ([
   },
   {
     id: "portugal-principal-2026",
-    nome: "Camisola Seleção Portugal Principal 2026",
-    descricao: "Camisola principal da Seleção Portugal para a época 2026.",
-    descricaoLonga: "A camisola principal da Seleção Portugal para a época 2026 é uma peça única que celebra a grandeza do clube. Fabricada com materiais premium e tecnologia avançada, é uma peça de colecionador para os verdadeiros adeptos dos Leões.",
+    nome: "Portugal National Team 2026 Home Jersey",
+    descricao: "Home jersey of the Portugal National Team for the 2026 season.",
+    descricaoLonga: "The Portugal National Team home jersey for the 2026 season is a unique piece that celebrates the team's greatness. Manufactured with premium materials and advanced technology, it's a collector's item for true Portugal fans.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/2025092114284096_20_281_29.webp",
@@ -461,11 +461,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-manchester-city-202425-principal",
-    nome: "Camisola Manchester City 2024/25 Principal",
+    nome: "Manchester City 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Manchester City para a temporada 2024/25. Design clássico em azul celeste com detalhes em branco, fabricada pela Puma com tecnologia avançada para máximo conforto.",
+      "Official home jersey of Manchester City for the 2024/25 season. Classic sky blue design with white details, manufactured by Puma with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Manchester City para a temporada 2024/25 mantém a tradição do clube com o icônico azul celeste e detalhes em branco. Fabricada pela Puma com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Puma e o patrocinador na frente. Esta camisola representa a paixão e a história do Manchester City, perfeita para apoiar os Citizens na nova temporada.",
+      "The new Manchester City home jersey for the 2024/25 season maintains the club's tradition with the iconic sky blue and white details. Manufactured by Puma with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the Puma logo and sponsor on the front. This jersey represents the passion and history of Manchester City, perfect for supporting the Citizens in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/man-city-home-2024-25-front.webp",
@@ -483,11 +483,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-arsenal-202425-principal",
-    nome: "Camisola Arsenal 2024/25 Principal",
+    nome: "Arsenal 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Arsenal para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+      "Official home jersey of Arsenal for the 2024/25 season. Classic red design with white details, manufactured by Adidas with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Arsenal para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho e detalhes em branco. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Arsenal, perfeita para apoiar os Gunners na nova temporada.",
+      "The new Arsenal home jersey for the 2024/25 season maintains the club's tradition with the iconic red and white details. Manufactured by Adidas with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the Adidas logo and sponsor on the front. This jersey represents the passion and history of Arsenal, perfect for supporting the Gunners in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/arsenal-home-2024-25-front.webp",
@@ -505,7 +505,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-liverpool-202425-principal",
-    nome: "Camisola Liverpool 2024/25 Principal",
+    nome: "Liverpool 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do Liverpool para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada pela Nike com tecnologia avançada para máximo conforto.",
     descricaoLonga:
@@ -527,11 +527,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-manchester-united-202425-principal",
-    nome: "Camisola Manchester United 2024/25 Principal",
+    nome: "Manchester United 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Manchester United para a temporada 2024/25. Design clássico em vermelho com detalhes em branco, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+      "Official home jersey of Manchester United for the 2024/25 season. Classic red design with white details, manufactured by Adidas with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Manchester United para a temporada 2024/25 mantém a tradição do clube com o icônico vermelho e detalhes em branco. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Manchester United, perfeita para apoiar os Red Devils na nova temporada.",
+      "The new Manchester United home jersey for the 2024/25 season maintains the club's tradition with the iconic red and white details. Manufactured by Adidas with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the Adidas logo and sponsor on the front. This jersey represents the passion and history of Manchester United, perfect for supporting the Red Devils in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/man-utd-home-2024-25-front.webp",
@@ -549,11 +549,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-chelsea-202425-principal",
-    nome: "Camisola Chelsea 2024/25 Principal",
+    nome: "Chelsea 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Chelsea para a temporada 2024/25. Design moderno em azul com padrão ondulado, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+      "Official home jersey of Chelsea for the 2024/25 season. Modern blue design with wave pattern, manufactured by Nike with Dri-FIT technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Chelsea para a temporada 2024/25 apresenta um design moderno em azul com um elegante padrão ondulado em tons de azul mais claro. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, com um contorno laranja vibrante que combina com os detalhes nas mangas. O logotipo da Nike e o design 'LONDON' na gola completam o visual contemporâneo. Esta camisola representa a paixão e a história do Chelsea Football Club, perfeita para apoiar os Blues na nova temporada.",
+      "The new Chelsea home jersey for the 2024/25 season features a modern blue design with an elegant wave pattern in lighter blue tones. Manufactured by Nike with advanced Dri-FIT technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, with a vibrant orange outline that matches the sleeve details. The Nike logo and 'LONDON' design on the collar complete the contemporary look. This jersey represents the passion and history of Chelsea Football Club, perfect for supporting the Blues in the new season.",
     preco: 17.99,
     imagem: "/images/640 (19).webp",
     imagensAdicionais: ["/images/640 (20).webp", "/images/640 (21).webp"],
@@ -570,11 +570,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-arsenal-202425-alternativa",
-    nome: "Camisola Arsenal 2024/25 Alternativa",
+    nome: "Arsenal 2024/25 Away Jersey",
     descricao:
-      "Camisola oficial alternativa do Arsenal para a temporada 2024/25. Design moderno em preto com detalhes em vermelho, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+      "Official away jersey of Arsenal for the 2024/25 season. Modern black design with red details, manufactured by Adidas with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola alternativa do Arsenal para a temporada 2024/25 apresenta um design moderno em preto com detalhes em vermelho que adicionam um toque de elegância e mantêm a identidade do clube. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Arsenal, perfeita para apoiar os Gunners na nova temporada.",
+      "The new Arsenal away jersey for the 2024/25 season features a modern black design with red details that add a touch of elegance while maintaining the club's identity. Manufactured by Adidas with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the Adidas logo and sponsor on the front. This jersey represents the passion and history of Arsenal, perfect for supporting the Gunners in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/640 (22).webp",
@@ -592,11 +592,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-arsenal-202425-terceira",
-    nome: "Camisola Arsenal 2024/25 Terceira",
+    nome: "Arsenal 2024/25 Third Jersey",
     descricao:
-      "Camisola oficial terceira do Arsenal para a temporada 2024/25. Design moderno em azul com detalhes em vermelho, fabricada pela Adidas com tecnologia avançada para máximo conforto.",
+      "Official third jersey of Arsenal for the 2024/25 season. Modern blue design with red details, manufactured by Adidas with advanced technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola terceira do Arsenal para a temporada 2024/25 apresenta um design moderno em azul com detalhes em vermelho que adicionam um toque de originalidade e mantêm a identidade do clube. Fabricada pela Adidas com materiais de alta qualidade e tecnologia avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Adidas e o patrocinador na frente. Esta camisola representa a paixão e a história do Arsenal, perfeita para apoiar os Gunners na nova temporada.",
+      "The new Arsenal third jersey for the 2024/25 season features a modern blue design with red details that add a touch of originality while maintaining the club's identity. Manufactured by Adidas with high-quality materials and advanced technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the Adidas logo and sponsor on the front. This jersey represents the passion and history of Arsenal, perfect for supporting the Gunners in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
     imagem: "/images/640 (25).webp",
@@ -614,11 +614,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-tottenham-202425-terceira",
-    nome: "Camisola Tottenham 2024/25 Terceira",
+    nome: "Tottenham 2024/25 Third Jersey",
     descricao:
-      "Camisola oficial terceira do Tottenham para a temporada 2024/25. Design inovador em verde água com padrão cósmico, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+      "Official third jersey of Tottenham for the 2024/25 season. Innovative aqua green design with cosmic pattern, manufactured by Nike with Dri-FIT technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola terceira do Tottenham para a temporada 2024/25 apresenta um design inovador e ousado em verde água com um padrão cósmico que lembra o espaço, com pontos brancos que parecem estrelas. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube, o famoso galo, é apresentado em tons suaves que se integram ao design espacial, junto com o logotipo da Nike e o patrocinador AIA em branco na frente. Os punhos das mangas apresentam detalhes em amarelo que adicionam um toque de cor ao design. Esta camisola representa a inovação e o estilo do Tottenham, perfeita para apoiar os Spurs na nova temporada.",
+      "The new Tottenham third jersey for the 2024/25 season features an innovative and bold aqua green design with a cosmic pattern reminiscent of space, with white dots that look like stars. Manufactured by Nike with advanced Dri-FIT technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem, the famous cockerel, is presented in soft tones that integrate with the space design, along with the Nike logo and AIA sponsor in white on the front. The sleeve cuffs feature yellow details that add a touch of color to the design. This jersey represents the innovation and style of Tottenham, perfect for supporting the Spurs in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
         imagem: "/images/640 (28).webp",    imagensAdicionais: ["/images/640 (29).webp", "/images/640 (30).webp"],
@@ -635,11 +635,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-manchester-united-202425-terceira",
-    nome: "Camisola Manchester United 2024/25 Terceira",
+    nome: "Manchester United 2024/25 Third Jersey",
     descricao:
-      "Camisola oficial terceira do Manchester United para a temporada 2024/25. Design clássico em branco com listras horizontais em vermelho e preto, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
+      "Official third jersey of Manchester United for the 2024/25 season. Classic white design with horizontal red and black stripes, manufactured by Adidas with AEROREADY technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola terceira do Manchester United para a temporada 2024/25 apresenta um design clássico e elegante predominantemente branco com listras horizontais em vermelho e preto na parte superior. Fabricada pela Adidas com a tecnologia AEROREADY avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube, o famoso Red Devil, é apresentado em preto sobre a listra vermelha, criando um contraste marcante, junto com o logotipo da Adidas e o patrocinador Snapdragon na frente. A gola redonda e os punhos das mangas em preto adicionam um toque de elegância ao design. Esta camisola representa a tradição e o estilo do Manchester United, perfeita para apoiar os Red Devils na nova temporada.",
+      "The new Manchester United third jersey for the 2024/25 season features a classic and elegant predominantly white design with horizontal red and black stripes on the upper part. Manufactured by Adidas with advanced AEROREADY technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem, the famous Red Devil, is presented in black on the red stripe, creating a striking contrast, along with the Adidas logo and Snapdragon sponsor on the front. The round collar and black sleeve cuffs add a touch of elegance to the design. This jersey represents the tradition and style of Manchester United, perfect for supporting the Red Devils in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
         imagem: "/images/640 (31).webp",    imagensAdicionais: ["/images/640 (32).webp", "/images/640 (33).webp"],
@@ -656,11 +656,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-paris-saint-germain-202425-principal",
-    nome: "Camisola Paris Saint-Germain 2024/25 Principal",
+    nome: "Paris Saint-Germain 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Paris Saint-Germain para a temporada 2024/25. Design clássico em azul marinho com faixa vertical vermelha, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
+      "Official home jersey of Paris Saint-Germain for the 2024/25 season. Classic navy blue design with vertical red stripe, manufactured by Nike with Dri-FIT technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Paris Saint-Germain para a temporada 2024/25 mantém a tradição do clube com o icônico azul marinho e a faixa vertical vermelha central com acabamento estilo pincel. Fabricada pela Nike com a tecnologia Dri-FIT avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Nike e o patrocinador Qatar Airways na frente. A palavra 'PARIS' aparece na parte interna da gola, reforçando a identidade do clube. Esta camisola representa a paixão e a história do PSG, perfeita para apoiar os Parisienses na nova temporada.",
+      "The new Paris Saint-Germain home jersey for the 2024/25 season maintains the club's tradition with the iconic navy blue and central vertical red stripe with brush-style finish. Manufactured by Nike with advanced Dri-FIT technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the Nike logo and Qatar Airways sponsor on the front. The word 'PARIS' appears on the inside of the collar, reinforcing the club's identity. This jersey represents the passion and history of PSG, perfect for supporting the Parisians in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
         imagem: "/images/640 (34).webp",    imagensAdicionais: ["/images/640 (35).webp", "/images/640 (36).webp"],
@@ -677,11 +677,11 @@ const produtosArray = ([
   },
   {
     id: "camisola-marselha-202425-principal",
-    nome: "Camisola Marselha 2024/25 Principal",
+    nome: "Olympique Marseille 2024/25 Home Jersey",
     descricao:
-      "Camisola oficial principal do Olympique de Marselha para a temporada 2024/25. Design elegante em branco com detalhes em azul, fabricada pela Puma com tecnologia dryCELL para máximo conforto.",
+      "Official home jersey of Olympique de Marseille for the 2024/25 season. Elegant white design with blue details, manufactured by Puma with dryCELL technology for maximum comfort.",
     descricaoLonga:
-      "A nova camisola principal do Olympique de Marselha para a temporada 2024/25 apresenta um design elegante predominantemente branco com detalhes em azul nas mangas e gola. Fabricada pela Puma com a tecnologia dryCELL avançada, esta camisola oferece conforto excepcional e gestão da transpiração durante os jogos ou no dia-a-dia. O emblema do clube é apresentado com orgulho no peito, junto com o logotipo da Puma e o patrocinador CMA CGM na frente. As laterais apresentam um padrão quadriculado em tons de azul claro que adiciona um toque moderno ao design clássico. O lema 'DROIT AU BUT' (Direto ao Gol) está presente no emblema, reforçando a identidade do clube. Esta camisola representa a paixão e a história do Olympique de Marselha, perfeita para apoiar os Olympiens na nova temporada.",
+      "The new Olympique de Marseille home jersey for the 2024/25 season features an elegant predominantly white design with blue details on the sleeves and collar. Manufactured by Puma with advanced dryCELL technology, this jersey offers exceptional comfort and sweat management during games or daily wear. The club emblem is proudly displayed on the chest, along with the Puma logo and CMA CGM sponsor on the front. The sides feature a checkered pattern in light blue tones that adds a modern touch to the classic design. The motto 'DROIT AU BUT' (Straight to Goal) is present on the emblem, reinforcing the club's identity. This jersey represents the passion and history of Olympique de Marseille, perfect for supporting the Olympiens in the new season.",
     preco: 17.99,
     precoAntigo: 29.99,
         imagem: "/images/640 (37).webp",    imagensAdicionais: ["/images/640 (38).webp", "/images/640 (39).webp"],
@@ -698,7 +698,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-lille-202425-principal",
-    nome: "Camisola Lille 2024/25 Principal",
+    nome: "Lille 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do Lille OSC para a temporada 2024/25. Design clássico em vermelho com padrão geométrico, fabricada pela New Balance com tecnologia NB Dry para máximo conforto.",
     descricaoLonga:
@@ -720,7 +720,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-paris-saint-germain-202425-alternativa",
-    nome: "Camisola Paris Saint-Germain 2024/25 Alternativa",
+    nome: "Paris Saint-Germain 2024/25 Away Jersey",
     descricao:
       "Camisola oficial alternativa do Paris Saint-Germain para a temporada 2024/25. Design elegante em branco com faixas estilizadas em azul e vermelho, fabricada pela Nike com tecnologia Dri-FIT para máximo conforto.",
     descricaoLonga:
@@ -742,7 +742,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-lyon-202425-alternativa",
-    nome: "Camisola Lyon 2024/25 Alternativa",
+    nome: "Lyon 2024/25 Away Jersey",
     descricao:
       "Camisola oficial alternativa do Olympique Lyonnais para a temporada 2024/25. Design moderno em preto com detalhes em vermelho e azul, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
     descricaoLonga:
@@ -764,7 +764,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-marselha-202425-alternativa",
-    nome: "Camisola Marselha 2024/25 Alternativa",
+    nome: "Olympique Marseille 2024/25 Away Jersey",
     descricao:
       "Camisola oficial alternativa do Olympique de Marselha para a temporada 2024/25. Design moderno em azul com padrão camuflado, fabricada pela Puma com tecnologia dryCELL para máximo conforto.",
     descricaoLonga:
@@ -786,7 +786,7 @@ const produtosArray = ([
   },
   {
     id: "camisola-real-madrid-202425-principal",
-    nome: "Camisola Real Madrid 2024/25 Principal",
+    nome: "Real Madrid 2024/25 Home Jersey",
     descricao:
       "Camisola oficial principal do Real Madrid para a temporada 2024/25. Design clássico em branco com detalhes em preto, fabricada pela Adidas com tecnologia AEROREADY para máximo conforto.",
     descricaoLonga:

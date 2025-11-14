@@ -19,13 +19,13 @@ function formatPrice(price: number): string {
 
 // Função para obter URL completa da imagem
 function getFullImageUrl(imagePath: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://fanzone12.pt'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.fanzone12.com'
   return `${baseUrl}${imagePath}`
 }
 
 // Função para obter URL do produto
 function getProductUrl(productId: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://fanzone12.pt'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.fanzone12.com'
   return `${baseUrl}/produto/${productId}`
 }
 
@@ -122,12 +122,38 @@ export async function GET(request: NextRequest) {
       <g:age_group>adult</g:age_group>
       <g:mpn>${escapeXml(generateMPN(produto))}</g:mpn>
       <g:identifier_exists>false</g:identifier_exists>
-      <g:target_country>PT</g:target_country>
-      <g:target_country>LU</g:target_country>
+      <g:target_country>AT</g:target_country>
+      <g:target_country>BE</g:target_country>
+      <g:target_country>BG</g:target_country>
+      <g:target_country>HR</g:target_country>
+      <g:target_country>CY</g:target_country>
+      <g:target_country>CZ</g:target_country>
+      <g:target_country>DK</g:target_country>
+      <g:target_country>EE</g:target_country>
+      <g:target_country>FI</g:target_country>
       <g:target_country>FR</g:target_country>
-      <g:target_country>ES</g:target_country>
       <g:target_country>DE</g:target_country>
+      <g:target_country>GR</g:target_country>
+      <g:target_country>HU</g:target_country>
+      <g:target_country>IE</g:target_country>
+      <g:target_country>IT</g:target_country>
+      <g:target_country>LV</g:target_country>
+      <g:target_country>LT</g:target_country>
+      <g:target_country>LU</g:target_country>
+      <g:target_country>MT</g:target_country>
+      <g:target_country>NL</g:target_country>
+      <g:target_country>PL</g:target_country>
+      <g:target_country>PT</g:target_country>
+      <g:target_country>RO</g:target_country>
+      <g:target_country>SK</g:target_country>
+      <g:target_country>SI</g:target_country>
+      <g:target_country>ES</g:target_country>
+      <g:target_country>SE</g:target_country>
+      <g:target_country>IS</g:target_country>
+      <g:target_country>LI</g:target_country>
+      <g:target_country>NO</g:target_country>
       <g:target_country>CH</g:target_country>
+      <g:target_country>GB</g:target_country>
     </item>`
     }).filter(item => item !== '').join('')}
   </channel>

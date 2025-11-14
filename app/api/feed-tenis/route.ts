@@ -37,15 +37,15 @@ export async function GET() {
     const allProducts = await getProdutos({ categoria: "sneakers" })
     const tenisProducts = allProducts.filter(product => product.clube !== "benfica")
 
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://fanzone12.pt'
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.fanzone12.com'
 
     // Gerar XML do feed
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Ténis - fanzone12.pt</title>
+    <title>Sneakers - fanzone12.com</title>
     <link>${baseUrl}</link>
-    <description>Feed de ténis e sneakers da fanzone12.pt</description>
+    <description>Sneakers feed from fanzone12.com</description>
     
     ${tenisProducts.map(produto => {
       // Determinar preço (apenas preço normal, sem preço promocional)
@@ -58,7 +58,7 @@ export async function GET() {
       const condition = produto.novo ? 'new' : 'used'
       
       // Determinar marca
-      const brand = produto.marca || 'fanzone12.pt'
+      const brand = produto.marca || 'fanzone12.com'
       
       // Determinar categoria do Google
       const googleCategory = 'Apparel &amp; Accessories &gt; Shoes &gt; Athletic Shoes'
@@ -89,46 +89,49 @@ export async function GET() {
       <g:size>Vários</g:size>
       <g:gender>${gender}</g:gender>
       <g:age_group>${ageGroup}</g:age_group>
-      <g:target_country>PT</g:target_country>
-      <g:target_country>LU</g:target_country>
+      <g:target_country>AT</g:target_country>
+      <g:target_country>BE</g:target_country>
+      <g:target_country>BG</g:target_country>
+      <g:target_country>HR</g:target_country>
+      <g:target_country>CY</g:target_country>
+      <g:target_country>CZ</g:target_country>
+      <g:target_country>DK</g:target_country>
+      <g:target_country>EE</g:target_country>
+      <g:target_country>FI</g:target_country>
       <g:target_country>FR</g:target_country>
-      <g:target_country>ES</g:target_country>
       <g:target_country>DE</g:target_country>
+      <g:target_country>GR</g:target_country>
+      <g:target_country>HU</g:target_country>
+      <g:target_country>IE</g:target_country>
+      <g:target_country>IT</g:target_country>
+      <g:target_country>LV</g:target_country>
+      <g:target_country>LT</g:target_country>
+      <g:target_country>LU</g:target_country>
+      <g:target_country>MT</g:target_country>
+      <g:target_country>NL</g:target_country>
+      <g:target_country>PL</g:target_country>
+      <g:target_country>PT</g:target_country>
+      <g:target_country>RO</g:target_country>
+      <g:target_country>SK</g:target_country>
+      <g:target_country>SI</g:target_country>
+      <g:target_country>ES</g:target_country>
+      <g:target_country>SE</g:target_country>
+      <g:target_country>IS</g:target_country>
+      <g:target_country>LI</g:target_country>
+      <g:target_country>NO</g:target_country>
       <g:target_country>CH</g:target_country>
+      <g:target_country>GB</g:target_country>
       <g:shipping_weight>
         <g:value>0.5</g:value>
         <g:unit>kg</g:unit>
       </g:shipping_weight>
+      ${['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH', 'GB'].map(country => `
       <g:shipping>
-        <g:country>PT</g:country>
+        <g:country>${country}</g:country>
         <g:service>Standard</g:service>
         <g:price>0.00 EUR</g:price>
       </g:shipping>
-      <g:shipping>
-        <g:country>LU</g:country>
-        <g:service>Standard</g:service>
-        <g:price>0.00 EUR</g:price>
-      </g:shipping>
-      <g:shipping>
-        <g:country>FR</g:country>
-        <g:service>Standard</g:service>
-        <g:price>0.00 EUR</g:price>
-      </g:shipping>
-      <g:shipping>
-        <g:country>ES</g:country>
-        <g:service>Standard</g:service>
-        <g:price>0.00 EUR</g:price>
-      </g:shipping>
-      <g:shipping>
-        <g:country>DE</g:country>
-        <g:service>Standard</g:service>
-        <g:price>0.00 EUR</g:price>
-      </g:shipping>
-      <g:shipping>
-        <g:country>CH</g:country>
-        <g:service>Standard</g:service>
-        <g:price>0.00 EUR</g:price>
-      </g:shipping>
+      `).join('')}
     </item>`
     }).join('')}
     
@@ -146,7 +149,7 @@ export async function GET() {
       },
     })
   } catch (error) {
-    console.error('Erro ao gerar feed de ténis:', error)
-    return new NextResponse('Erro interno do servidor', { status: 500 })
+    console.error('Error generating sneakers feed:', error)
+    return new NextResponse('Internal server error', { status: 500 })
   }
 } 

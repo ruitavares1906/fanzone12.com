@@ -29,7 +29,7 @@ export async function GET() {
       status: 200,
       headers: {
         'Content-Type': 'application/xml; charset=utf-8',
-        'Cache-Control': 'public, max-age=300', // Cache por 5 minutos
+        'Cache-Control': 'public, max-age=300', // Cache for 5 minutes
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type',
@@ -37,7 +37,7 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Erro no teste de feed:', error)
-    return new NextResponse('Erro interno do servidor', { status: 500 })
+    return new NextResponse('Internal server error', { status: 500 })
   }
 }
 
