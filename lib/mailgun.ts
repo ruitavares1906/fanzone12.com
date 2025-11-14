@@ -2,7 +2,7 @@
 
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || "your_mailgun_api_key_here"
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || "your_mailgun_domain_here"
-const MAILGUN_FROM_EMAIL = process.env.MAILGUN_FROM_EMAIL || "geral@fanzone12.pt"
+const MAILGUN_FROM_EMAIL = process.env.MAILGUN_FROM_EMAIL || "sales@fanzone12.com"
 
 console.log("=== CONFIGURAÇÃO MAILGUN ===")
 console.log("MAILGUN_API_KEY:", MAILGUN_API_KEY ? "Configurado" : "Não configurado")
@@ -49,7 +49,7 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
       <div style="padding: 10px 0; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between;">
         <div>
           <strong style="color: #1f2937;">${item.name}</strong><br>
-          <span style="color: #6b7280; font-size: 14px;">Tamanho: ${item.size} | Quantidade: ${item.quantity}</span>
+          <span style="color: #6b7280; font-size: 14px;">Size: ${item.size} | Quantity: ${item.quantity}</span>
           ${item.customization ? `<br><span style="color: #2563eb; font-size: 14px;">Personalização: ${JSON.stringify(item.customization)}</span>` : ''}
         </div>
         <div style="text-align: right;">
@@ -64,38 +64,38 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
           
           <!-- Header -->
           <div style="text-align: center; margin-bottom: 30px; background-color: #2563eb; color: white; padding: 20px; border-radius: 8px;">
-            <h1 style="color: white; margin: 0; font-size: 28px;">🛒 NOVO PEDIDO RECEBIDO</h1>
-            <p style="color: #e5e7eb; margin: 10px 0 0 0; font-size: 18px;">Pedido #${data.orderNumber}</p>
+            <h1 style="color: white; margin: 0; font-size: 28px;">🛒 NEW ORDER RECEIVED</h1>
+            <p style="color: #e5e7eb; margin: 10px 0 0 0; font-size: 18px;">Order #${data.orderNumber}</p>
           </div>
 
           <!-- Dados do cliente -->
           <div style="background-color: #f3f4f6; padding: 20px; margin-bottom: 25px; border-radius: 6px;">
-            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">👤 Dados do Cliente</h3>
-            <p style="margin: 5px 0;"><strong>Nome:</strong> ${data.customerName}</p>
+            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">👤 Customer Details</h3>
+            <p style="margin: 5px 0;"><strong>Name:</strong> ${data.customerName}</p>
             <p style="margin: 5px 0;"><strong>Email:</strong> ${data.customerEmail}</p>
-            ${data.customerPhone ? `<p style="margin: 5px 0;"><strong>Telefone:</strong> ${data.customerPhone}</p>` : ''}
-            <p style="margin: 5px 0;"><strong>Data:</strong> ${data.orderDate}</p>
+            ${data.customerPhone ? `<p style="margin: 5px 0;"><strong>Phone:</strong> ${data.customerPhone}</p>` : ''}
+            <p style="margin: 5px 0;"><strong>Date:</strong> ${data.orderDate}</p>
           </div>
 
           <!-- Endereço de envio -->
           ${data.shippingAddress ? `
           <div style="background-color: #f0f9ff; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #3b82f6;">
-            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📍 Endereço de Envio</h3>
-            <p style="margin: 5px 0;"><strong>${data.shippingAddress.name || 'Cliente'}</strong></p>
-            <p style="margin: 5px 0;">${data.shippingAddress.address || 'Endereço não disponível'}</p>
+            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📍 Shipping Address</h3>
+            <p style="margin: 5px 0;"><strong>${data.shippingAddress.name || 'Customer'}</strong></p>
+            <p style="margin: 5px 0;">${data.shippingAddress.address || 'Address not available'}</p>
             <p style="margin: 5px 0;">${data.shippingAddress.postalCode || ''} ${data.shippingAddress.city || ''}</p>
             <p style="margin: 5px 0;">${data.shippingAddress.country || ''}</p>
           </div>
           ` : `
           <div style="background-color: #fef3c7; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #f59e0b;">
-            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📍 Endereço de Envio</h3>
-            <p style="margin: 5px 0; color: #92400e;">Endereço não disponível</p>
+            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📍 Shipping Address</h3>
+            <p style="margin: 5px 0; color: #92400e;">Address not available</p>
           </div>
           `}
 
           <!-- Itens do pedido -->
           <div style="margin-bottom: 25px;">
-            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📦 Itens do Pedido</h3>
+            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📦 Order Items</h3>
             <div style="background-color: #f9fafb; padding: 15px; border-radius: 6px;">
               ${itemsHtml}
             </div>
@@ -103,29 +103,15 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
 
           <!-- Resumo financeiro -->
           <div style="background-color: #f3f4f6; padding: 20px; margin-bottom: 25px; border-radius: 6px;">
-            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">💰 Resumo Financeiro</h3>
+            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">💰 Financial Summary</h3>
             <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
               <span style="color: #6b7280;">Subtotal:</span>
               <span style="color: #1f2937; font-weight: 600;">${(data.subtotal || 0).toFixed(2)}€</span>
             </div>
             <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <span style="color: #6b7280;">Envio:</span>
+              <span style="color: #6b7280;">Shipping:</span>
               <span style="color: #1f2937; font-weight: 600;">${(data.shipping || 0).toFixed(2)}€</span>
             </div>
-            ${data.paymentMethod === 'Pagamento à Cobrança' ? `
-            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <span style="color: #6b7280;">Taxa à cobrança:</span>
-              <span style="color: #1f2937; font-weight: 600;">8.00€</span>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 5px; background-color: #d1fae5; padding: 8px; border-radius: 4px;">
-              <span style="color: #064e3b; font-weight: bold;">✅ Pago antecipadamente:</span>
-              <span style="color: #064e3b; font-weight: bold;">${(data.upfrontPayment || 0).toFixed(2)}€</span>
-            </div>
-            <div style="display: flex; justify-content: space-between; background-color: #fef3c7; padding: 8px; border-radius: 4px;">
-              <span style="color: #92400e; font-weight: bold;">💰 A cobrar na entrega:</span>
-              <span style="color: #92400e; font-weight: bold;">${(data.remainingPayment || 0).toFixed(2)}€</span>
-            </div>
-            ` : ''}
             <div style="display: flex; justify-content: space-between; padding: 10px 0; border-top: 2px solid #2563eb; margin-top: 10px;">
               <span style="color: #2563eb; font-size: 18px; font-weight: bold;">TOTAL:</span>
               <span style="color: #2563eb; font-size: 20px; font-weight: bold;">${(data.total || 0).toFixed(2)}€</span>
@@ -134,16 +120,16 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
 
           <!-- Informações de pagamento -->
           <div style="background-color: #f0f9ff; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #3b82f6;">
-            <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">💳 Método de Pagamento</h3>
+            <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">💳 Payment Method</h3>
             <p style="color: #6b7280; margin: 0; font-size: 16px;">
-              <strong>${data.paymentMethod || 'Pagamento Online'}</strong>
+              <strong>${data.paymentMethod || 'Online Payment'}</strong>
             </p>
           </div>
 
           <!-- Ações -->
           <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
             <p style="color: #6b7280; font-size: 14px; margin: 0;">
-              Acesse o painel administrativo para gerir este pedido.
+              Access the admin panel to manage this order.
             </p>
           </div>
         </div>
@@ -151,9 +137,9 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
     `
 
     const formData = new FormData()
-    formData.append('from', `Fanzone12.pt <${MAILGUN_FROM_EMAIL}>`)
-    formData.append('to', 'geral@fanzone12.pt')
-    formData.append('subject', `🛒 Novo Pedido #${data.orderNumber} - ${data.customerName} - ${(data.total || 0).toFixed(2)}€`)
+    formData.append('from', `Fanzone12.com <${MAILGUN_FROM_EMAIL}>`)
+    formData.append('to', 'sales@fanzone12.com')
+    formData.append('subject', `🛒 New Order #${data.orderNumber} - ${data.customerName} - ${(data.total || 0).toFixed(2)}€`)
     formData.append('html', emailHtml)
 
     const response = await fetch(`https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`, {
@@ -196,7 +182,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
       <div style="padding: 10px 0; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between;">
         <div>
           <strong style="color: #1f2937;">${item.name}</strong><br>
-          <span style="color: #6b7280; font-size: 14px;">Tamanho: ${item.size} | Quantidade: ${item.quantity}</span>
+          <span style="color: #6b7280; font-size: 14px;">Size: ${item.size} | Quantity: ${item.quantity}</span>
           ${item.customization ? `<br><span style="color: #2563eb; font-size: 14px;">Personalização: ${JSON.stringify(item.customization)}</span>` : ''}
         </div>
         <div style="text-align: right;">
@@ -208,34 +194,34 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
     const emailData = {
       from: MAILGUN_FROM_EMAIL,
       to: data.customerEmail,
-      subject: `✅ Pedido Confirmado #${data.orderNumber} - fanzone12.pt`,
+      subject: `✅ Order Confirmed #${data.orderNumber} - fanzone12.com`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f8f9fa; padding: 20px;">
           <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             
             <!-- Header -->
             <div style="text-align: center; margin-bottom: 30px;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 28px;">✅ Pedido Confirmado!</h1>
-              <p style="color: #6b7280; margin: 10px 0 0 0;">Obrigado pela sua confiança</p>
+              <h1 style="color: #2563eb; margin: 0; font-size: 28px;">✅ Order Confirmed!</h1>
+              <p style="color: #6b7280; margin: 10px 0 0 0;">Thank you for your trust</p>
             </div>
 
             <!-- Saudação -->
             <div style="margin-bottom: 25px;">
-              <h2 style="color: #1f2937; margin: 0 0 10px 0; font-size: 20px;">Olá ${data.customerName}!</h2>
+              <h2 style="color: #1f2937; margin: 0 0 10px 0; font-size: 20px;">Hello ${data.customerName}!</h2>
               <p style="color: #6b7280; margin: 0; line-height: 1.6;">
-                Recebemos a sua encomenda e já estamos a prepará-la. Aqui estão os detalhes:
+                We have received your order and are already preparing it. Here are the details:
               </p>
             </div>
 
             <!-- Número da encomenda -->
             <div style="background-color: #f3f4f6; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #2563eb;">
-              <h3 style="color: #1f2937; margin: 0 0 5px 0; font-size: 16px;">Número da Encomenda</h3>
+              <h3 style="color: #1f2937; margin: 0 0 5px 0; font-size: 16px;">Order Number</h3>
               <p style="color: #2563eb; margin: 0; font-size: 24px; font-weight: bold;">#${data.orderNumber}</p>
             </div>
 
             <!-- Itens da encomenda -->
             <div style="margin-bottom: 25px;">
-              <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">Itens da Encomenda</h3>
+              <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">Order Items</h3>
               <div style="background-color: #f9fafb; padding: 15px; border-radius: 6px;">
                 ${itemsHtml}
               </div>
@@ -243,160 +229,111 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
 
             <!-- Resumo financeiro -->
             <div style="background-color: #f3f4f6; padding: 20px; margin-bottom: 25px; border-radius: 6px;">
-              <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">Resumo do Pedido</h3>
+              <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">Order Summary</h3>
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
                 <span style="color: #6b7280;">Subtotal:</span>
                 <span style="color: #1f2937; font-weight: 600;">${(data.subtotal || 0).toFixed(2)}€</span>
               </div>
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="color: #6b7280;">Envio:</span>
+                <span style="color: #6b7280;">Shipping:</span>
                 <span style="color: #1f2937; font-weight: 600;">${(data.shipping || 0).toFixed(2)}€</span>
               </div>
-              ${data.paymentMethod === 'Pagamento à Cobrança' ? `
-              <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                <span style="color: #6b7280;">Taxa à cobrança:</span>
-                <span style="color: #1f2937; font-weight: 600;">8.00€</span>
-              </div>
-              ` : ''}
               <div style="display: flex; justify-content: space-between; padding: 10px 0; border-top: 2px solid #2563eb; margin-top: 10px;">
                 <span style="color: #2563eb; font-size: 18px; font-weight: bold;">Total:</span>
                 <span style="color: #2563eb; font-size: 20px; font-weight: bold;">${(data.total || 0).toFixed(2)}€</span>
               </div>
             </div>
 
-            <!-- Informações de Pagamento -->
-            ${data.paymentMethod === 'Pagamento à Cobrança' ? `
-            <div style="background-color: #d1fae5; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #10b981;">
-              <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">💰 Informações de Pagamento</h3>
-              <p style="color: #6b7280; margin: 0 0 10px 0; font-size: 16px;">
-                <strong>Método:</strong> Pagamento à Cobrança
-              </p>
-              <div style="background-color: #10b981; padding: 15px; border-radius: 4px; margin: 10px 0;">
-                <p style="color: #064e3b; margin: 0; font-weight: bold; font-size: 16px;">
-                  ✅ PAGAMENTO ANTECIPADO CONFIRMADO
-                </p>
-                <p style="color: #064e3b; margin: 5px 0 0 0; font-size: 14px;">
-                  Já pagou 8€ antecipadamente. O restante será pago na entrega.
-                </p>
-              </div>
-              <div style="display: flex; justify-content: space-between; margin-bottom: 5px; background-color: #f0f9ff; padding: 8px; border-radius: 4px;">
-                <span style="color: #1e40af; font-weight: bold;">✅ Já pago antecipadamente:</span>
-                <span style="color: #1e40af; font-weight: bold;">${(data.upfrontPayment || 0).toFixed(2)}€</span>
-              </div>
-              <div style="display: flex; justify-content: space-between; background-color: #fef3c7; padding: 8px; border-radius: 4px;">
-                <span style="color: #92400e; font-weight: bold;">💰 A pagar na entrega:</span>
-                <span style="color: #92400e; font-weight: bold;">${(data.remainingPayment || 0).toFixed(2)}€</span>
-              </div>
-            </div>
-            ` : ''}
-
             <!-- Morada de envio -->
             <div style="margin-bottom: 25px;">
-              <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">Morada de Envio</h3>
+              <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">Shipping Address</h3>
               <div style="background-color: #f9fafb; padding: 15px; border-radius: 6px; color: #6b7280; line-height: 1.6;">
                 ${data.shippingAddress ? `
-                  ${data.shippingAddress.name || 'Cliente'}<br>
-                  ${data.shippingAddress.address || 'Endereço não disponível'}<br>
+                  ${data.shippingAddress.name || 'Customer'}<br>
+                  ${data.shippingAddress.address || 'Address not available'}<br>
                   ${data.shippingAddress.city || ''}, ${data.shippingAddress.postalCode || ''}<br>
                   ${data.shippingAddress.country || ''}
-                ` : 'Morada não disponível'}
+                ` : 'Address not available'}
               </div>
             </div>
 
             <!-- Próximos passos -->
             <div style="background-color: #fef3c7; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #f59e0b;">
-              <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">Próximos Passos</h3>
+              <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">Next Steps</h3>
               <ul style="color: #6b7280; margin: 0; padding-left: 20px; line-height: 1.6;">
-                ${data.paymentMethod === 'Pagamento à Cobrança' ? '<li>Pagamento antecipado de 8€</li>' : ''}
-                <li>Preparação da encomenda (1-2 dias úteis)</li>
-                <li>Envio via CTT (7-8 dias úteis)</li>
-                <li>Tempo total estimado: 10-12 dias úteis</li>
-                ${data.paymentMethod === 'Pagamento à Cobrança' ? '<li>Pagamento do restante valor à cobrança</li>' : ''}
+                <li>Order preparation (1-2 business days)</li>
+                <li>Shipping (7-12 business days)</li>
+                <li>Estimated total time: 7-12 business days</li>
               </ul>
               <p style="color: #2563eb; margin: 10px 0 0 0; font-weight: 600;">
-                Tempo total estimado: 10-12 dias úteis
+                Estimated total time: 7-12 business days
               </p>
             </div>
 
             <!-- Call to action -->
             <div style="text-align: center; margin: 25px 0;">
-              <a href="https://www.fanzone12.pt/contacto" style="background-color: #2563eb; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; display: inline-block;">
-                Contactar Loja
+              <a href="https://www.fanzone12.com/contacto" style="background-color: #2563eb; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; display: inline-block;">
+                Contact Store
               </a>
             </div>
 
             <!-- Mensagem final -->
             <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
               <p style="color: #6b7280; margin: 0; font-size: 16px;">
-                Obrigado por escolher a fanzone12.pt!
+                Thank you for choosing fanzone12.com!
               </p>
               <p style="color: #9ca3af; margin: 5px 0 0 0; font-size: 14px;">
-                Se tiver alguma dúvida, não hesite em contactar-nos.
+                If you have any questions, please don't hesitate to contact us.
               </p>
             </div>
           </div>
 
           <!-- Footer -->
           <div style="text-align: center; padding: 20px; color: #9ca3af; font-size: 14px;">
-            <p style="margin: 0;">fanzone12.pt</p>
-            <p style="margin: 5px 0 0 0; font-size: 12px;">Email automático - não responder</p>
+            <p style="margin: 0;">fanzone12.com</p>
+            <p style="margin: 5px 0 0 0; font-size: 12px;">Automatic email - do not reply</p>
           </div>
         </div>
       `,
       text: `
-        ✅ PEDIDO CONFIRMADO!
+        ✅ ORDER CONFIRMED!
 
-        Olá ${data.customerName}!
+        Hello ${data.customerName}!
 
-        Recebemos a sua encomenda e já estamos a prepará-la. Aqui estão os detalhes:
+        We have received your order and are already preparing it. Here are the details:
 
-        Número da Encomenda: #${data.orderNumber}
+        Order Number: #${data.orderNumber}
 
-        ITENS DA ENCOMENDA:
+        ORDER ITEMS:
         ${data.items.map(item => `
-        - ${item.name} (Tamanho: ${item.size}, Quantidade: ${item.quantity}) - ${(item.price * item.quantity).toFixed(2)}€
+        - ${item.name} (Size: ${item.size}, Quantity: ${item.quantity}) - ${(item.price * item.quantity).toFixed(2)}€
         `).join('')}
 
-        RESUMO DO PEDIDO:
+        ORDER SUMMARY:
         Subtotal: ${(data.subtotal || 0).toFixed(2)}€
-        Envio: ${(data.shipping || 0).toFixed(2)}€
-        ${data.paymentMethod === 'Pagamento à Cobrança' ? `Taxa à cobrança: 8.00€` : ''}
+        Shipping: ${(data.shipping || 0).toFixed(2)}€
         Total: ${(data.total || 0).toFixed(2)}€
 
-        ${data.paymentMethod === 'Pagamento à Cobrança' ? `
-        INFORMAÇÕES DE PAGAMENTO:
-        Método: Pagamento à Cobrança
-        ✅ PAGAMENTO ANTECIPADO CONFIRMADO
-        Já pagou 8€ antecipadamente. O restante será pago na entrega.
-
-        ✅ Já pago antecipadamente: ${(data.upfrontPayment || 0).toFixed(2)}€
-        💰 A pagar na entrega: ${(data.remainingPayment || 0).toFixed(2)}€
-        ` : ''}
-
-        MORADA DE ENVIO:
+        SHIPPING ADDRESS:
         ${data.shippingAddress ? `
-        ${data.shippingAddress.name || 'Cliente'}
-        ${data.shippingAddress.address || 'Endereço não disponível'}
+        ${data.shippingAddress.name || 'Customer'}
+        ${data.shippingAddress.address || 'Address not available'}
         ${data.shippingAddress.city || ''}, ${data.shippingAddress.postalCode || ''}
         ${data.shippingAddress.country || ''}
-        ` : 'Morada não disponível'}
+        ` : 'Address not available'}
 
-        PRÓXIMOS PASSOS:
-        ${data.paymentMethod === 'Pagamento à Cobrança' ? '- Pagamento antecipado de 8€' : ''}
-        - Preparação da encomenda (1-2 dias úteis)
-        - Envio via CTT (7-8 dias úteis)
-        - Tempo total estimado: 10-12 dias úteis
-        ${data.paymentMethod === 'Pagamento à Cobrança' ? '- Pagamento do restante valor à cobrança' : ''}
+        NEXT STEPS:
+        - Order preparation (1-2 business days)
+        - Shipping (7-12 business days)
+        - Estimated total time: 7-12 business days
 
-        - Tempo total estimado: 10-12 dias úteis  
+        Thank you for choosing fanzone12.com!
 
-        Obrigado por escolher a fanzone12.pt!
-
-        Se tiver alguma dúvida, contacte-nos através de geral@fanzone12.pt
+        If you have any questions, contact us at sales@fanzone12.com
 
         ---
-        fanzone12.pt
-        Email automático - não responder
+        fanzone12.com
+        Automatic email - do not reply
       `
     }
 
@@ -453,35 +390,35 @@ export async function sendShippingConfirmationEmail(data: {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Encomenda Enviada - fanzone12.pt</title>
+        <title>Order Shipped - fanzone12.com</title>
       </head>
       <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
         <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #1f2937; margin: 0;">🚚 Encomenda Enviada!</h1>
+            <h1 style="color: #1f2937; margin: 0;">🚚 Order Shipped!</h1>
           </div>
           
           <div style="background-color: #d1fae5; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #10b981;">
-            <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">📦 Informações de Envio</h3>
+            <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">📦 Shipping Information</h3>
             <p style="color: #6b7280; margin: 0; font-size: 16px;">
-              A sua encomenda <strong>#${data.orderNumber}</strong> foi enviada e está a caminho!
+              Your order <strong>#${data.orderNumber}</strong> has been shipped and is on its way!
             </p>
           </div>
 
           <div style="background-color: #f0f9ff; padding: 20px; margin-bottom: 25px; border-radius: 6px;">
-            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📋 Próximos Passos</h3>
+            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📋 Next Steps</h3>
             <ul style="color: #6b7280; margin: 0; padding-left: 20px; line-height: 1.6;">
-              <li>Receberá um email com o código de rastreamento</li>
-              <li>Pode acompanhar o envio através do site dos CTT</li>
-              <li>Tempo estimado de entrega: 7-8 dias úteis</li>
-              <li>Em caso de dúvidas, contacte-nos</li>
+              <li>You will receive an email with the tracking code</li>
+              <li>You can track the shipment through the carrier's website</li>
+              <li>Estimated delivery time: 7-12 business days</li>
+              <li>If you have any questions, please contact us</li>
             </ul>
           </div>
 
           <div style="text-align: center; margin-top: 30px;">
             <p style="color: #6b7280; font-size: 14px; margin: 0;">
-              Obrigado pela sua compra!<br>
-              <strong>fanzone12.pt</strong>
+              Thank you for your purchase!<br>
+              <strong>fanzone12.com</strong>
             </p>
           </div>
         </div>
@@ -490,9 +427,9 @@ export async function sendShippingConfirmationEmail(data: {
     `
 
     const formData = new FormData()
-    formData.append('from', `Fanzone12.pt <${MAILGUN_FROM_EMAIL}>`)
+    formData.append('from', `Fanzone12.com <${MAILGUN_FROM_EMAIL}>`)
     formData.append('to', data.customerEmail)
-    formData.append('subject', `🚚 Encomenda #${data.orderNumber} Enviada - fanzone12.pt`)
+    formData.append('subject', `🚚 Order #${data.orderNumber} Shipped - fanzone12.com`)
     formData.append('html', emailHtml)
 
     const response = await fetch(`https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`, {

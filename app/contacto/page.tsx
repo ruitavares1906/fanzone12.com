@@ -4,22 +4,21 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata = {
-  title: "Contacto | fanzone12.pt",
-  description: "Entre em contacto connosco para dúvidas, sugestões ou reclamações. Estamos aqui para ajudar!",
+  title: "Contact | fanzone12.com",
+  description: "Contact us for questions, suggestions or complaints. We're here to help!",
 }
 
 export default function ContactoPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 animate-fade-in">
-      <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">Contacte-nos</h1>
+      <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">Contact Us</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Informações de Contacto */}
         <div>
           <div className="mb-8">
             <p className="text-lg text-gray-600 mb-6">
-              Tem alguma dúvida, sugestão ou reclamação? Estamos aqui para ajudar! Preencha o formulário ou utilize um
-              dos nossos canais de contacto abaixo.
+              Have any questions, suggestions or complaints? We're here to help! Fill out the form or use one of our contact channels below.
             </p>
 
             <div className="space-y-4">
@@ -29,7 +28,7 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-600">geral@fanzone12.pt</p>
+                  <p className="text-gray-600">sales@fanzone12.com</p>
                 </div>
               </div>
 
@@ -38,11 +37,11 @@ export default function ContactoPage() {
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Horário de Atendimento</h3>
+                  <h3 className="font-medium">Business Hours</h3>
                   <p className="text-gray-600">
-                    Segunda a Sexta: 9h às 18h
+                    Monday to Friday: 9am to 6pm
                     <br />
-                    Sábado: 10h às 13h
+                    Saturday: 10am to 1pm
                   </p>
                 </div>
               </div>
@@ -50,7 +49,7 @@ export default function ContactoPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold mb-4">Contacte-nos Diretamente</h2>
+            <h2 className="text-xl font-semibold mb-4">Contact Us Directly</h2>
             <div className="flex gap-4">
               <Link
                 href="https://instagram.com/fanzone12.pt__"
@@ -94,7 +93,7 @@ export default function ContactoPage() {
         {/* Formulário de Contacto */}
         <div>
           <div className="bg-white rounded-lg border p-6">
-            <h2 className="text-xl font-semibold mb-6">Envie-nos uma Mensagem</h2>
+            <h2 className="text-xl font-semibold mb-6">Send Us a Message</h2>
             <ContactForm />
           </div>
         </div>

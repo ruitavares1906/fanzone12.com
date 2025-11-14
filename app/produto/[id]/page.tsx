@@ -13,12 +13,12 @@ export async function generateMetadata({
 
   if (!produto) {
     return {
-      title: "Produto não encontrado | fanzone12.pt",
+      title: "Product not found | fanzone12.com",
     }
   }
 
   return {
-    title: `${produto.nome} | fanzone12.pt`,
+    title: `${produto.nome} | fanzone12.com`,
     description: produto.descricao,
   }
 }

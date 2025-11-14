@@ -3,8 +3,8 @@ import { Shield, FileText, Scale, Users } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata = {
-  title: "Termos e Condições | fanzone12.pt",
-  description: "Termos e condições de utilização da loja online fanzone12.pt.",
+  title: "Terms and Conditions | fanzone12.com",
+  description: "Terms and conditions of use for the fanzone12.com online store.",
 }
 
 export default function TermosPage() {
@@ -22,15 +22,15 @@ export default function TermosPage() {
           <div className="glass-effect rounded-3xl p-8 sm:p-12 animate-fade-in">
             <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-6">
               <FileText className="w-4 h-4 mr-2" />
-              Informações Legais
+              Legal Information
             </Badge>
             
             <h1 className="text-responsive-xl text-gray-900 mb-6 leading-tight">
-              Termos e <span className="gradient-text-cool">Condições</span>
+              Terms & <span className="gradient-text-cool">Conditions</span>
             </h1>
             
             <p className="text-responsive-md text-black max-w-2xl mx-auto leading-relaxed" style={{color: 'black'}}>
-              Bem-vindo aos Termos e Condições da fanzone12.pt. Estes termos regem a utilização do nosso website e os serviços oferecidos pela nossa loja online de camisolas e sneakers.
+              Welcome to the Terms and Conditions of fanzone12.com. These terms govern the use of our website and the services offered by our online store of jerseys and sneakers.
             </p>
           </div>
         </div>
@@ -47,16 +47,16 @@ export default function TermosPage() {
                 <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-3 rounded-full">
                   <Shield className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">1. Aceitação dos Termos</h2>
+                <h2 className="text-2xl font-bold text-gray-900">1. Acceptance of Terms</h2>
               </div>
               <div className="space-y-4 text-black leading-relaxed">
                 <p>
-                  Ao aceder e utilizar o nosso website, o utilizador concorda em cumprir e ficar vinculado aos presentes Termos e Condições.
+                  By accessing and using our website, the user agrees to comply with and be bound by these Terms and Conditions.
                 </p>
                 <p>
-                  A utilização contínua dos nossos serviços após a publicação de quaisquer alterações aos Termos constitui a sua aceitação dessas alterações.
+                  Continued use of our services after the publication of any changes to the Terms constitutes your acceptance of those changes.
                 </p>
-                <p>Se não concordar com algum dos termos, pedimos que não utilize o nosso website ou serviços.</p>
+                <p>If you do not agree with any of the terms, please do not use our website or services.</p>
               </div>
             </div>
 
@@ -66,16 +66,16 @@ export default function TermosPage() {
                 <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-3 rounded-full">
                   <FileText className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">2. Alterações aos Termos</h2>
+                <h2 className="text-2xl font-bold text-gray-900">2. Changes to Terms</h2>
               </div>
               <div className="space-y-4 text-black leading-relaxed">
                 <p>
-                  A fanzone12.pt reserva-se o direito de modificar estes termos a qualquer momento. As alterações entram em vigor imediatamente após a sua publicação no website.
+                  fanzone12.com reserves the right to modify these terms at any time. Changes take effect immediately after their publication on the website.
                 </p>
                 <p>
-                  Faremos todos os esforços razoáveis para informar os utilizadores sobre alterações significativas, mas é responsabilidade do utilizador verificar periodicamente se existem atualizações.
+                  We will make all reasonable efforts to inform users about significant changes, but it is the user's responsibility to periodically check for updates.
                 </p>
-                <p>A continuação do uso do site após as alterações constitui a aceitação dos novos termos.</p>
+                <p>Continued use of the site after changes constitutes acceptance of the new terms.</p>
               </div>
             </div>
 
@@ -85,17 +85,17 @@ export default function TermosPage() {
                 <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-3 rounded-full">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">3. Conta de Utilizador</h2>
+                <h2 className="text-2xl font-bold text-gray-900">3. User Account</h2>
               </div>
               <div className="space-y-4 text-black leading-relaxed">
                 <p>
-                  Para efetuar compras no nosso website, poderá ser necessário criar uma conta. O utilizador é responsável por manter a confidencialidade da sua conta e senha.
+                  To make purchases on our website, you may need to create an account. The user is responsible for maintaining the confidentiality of their account and password.
                 </p>
                 <p>
-                  Deve restringir o acesso ao seu computador e outros dispositivos, e concorda em aceitar a responsabilidade por todas as atividades que ocorram na sua conta.
+                  You must restrict access to your computer and other devices, and agree to accept responsibility for all activities that occur in your account.
                 </p>
                 <p>
-                  A fanzone12.pt reserva-se o direito de recusar o serviço, encerrar contas ou cancelar encomendas a seu critério.
+                  fanzone12.com reserves the right to refuse service, close accounts or cancel orders at its discretion.
                 </p>
               </div>
             </div>
@@ -103,89 +103,89 @@ export default function TermosPage() {
             {/* Continue with remaining sections... */}
             {[
               {
-                title: "4. Produtos e Preços",
+                title: "4. Products and Prices",
                 icon: <Scale className="h-6 w-6 text-white" />,
                 gradient: "from-purple-500 to-pink-500",
                 content: [
-                  "A fanzone12.pt esforça-se por apresentar descrições precisas dos produtos. No entanto, não garantimos que as descrições ou outros conteúdos do website sejam precisos, completos, fiáveis, atuais ou livres de erros.",
-                  "As imagens dos produtos são ilustrativas e podem variar ligeiramente do produto real, especialmente em termos de cor, dependendo do dispositivo utilizado para visualização.",
-                  "Os preços dos produtos estão sujeitos a alterações sem aviso prévio. Reservamo-nos o direito de descontinuar qualquer produto a qualquer momento.",
-                  "Todos os preços incluem IVA à taxa legal em vigor, salvo indicação em contrário."
+                  "fanzone12.com strives to present accurate product descriptions. However, we do not guarantee that descriptions or other website content are accurate, complete, reliable, current or error-free.",
+                  "Product images are illustrative and may vary slightly from the actual product, especially in terms of color, depending on the device used for viewing.",
+                  "Product prices are subject to change without notice. We reserve the right to discontinue any product at any time.",
+                  "All prices include VAT at the applicable legal rate, unless otherwise indicated."
                 ]
               },
               {
-                title: "5. Encomendas e Pagamentos",
+                title: "5. Orders and Payments",
                 icon: <FileText className="h-6 w-6 text-white" />,
                 gradient: "from-blue-500 to-cyan-500",
                 content: [
-                  "Ao efetuar uma encomenda, o utilizador oferece-se para comprar o produto nas condições especificadas. A aceitação da encomenda está sujeita à disponibilidade do produto e à validação dos dados de pagamento.",
-                  "Aceitamos várias formas de pagamento, incluindo cartões de crédito/débito, MB WAY, referência multibanco, PayPal e pagamento à cobrança. Todos os pagamentos são processados de forma segura.",
-                  "Para pagamento à cobrança: taxa adicional de 8€ (paga antecipadamente) + restante pago na entrega. Esta opção oferece maior segurança ao cliente, que só paga o restante quando receber o produto."
+                  "By placing an order, the user offers to purchase the product under the specified conditions. Order acceptance is subject to product availability and payment data validation.",
+                  "We accept various forms of payment, including credit/debit cards, PayPal, Klarna, Apple Pay and Google Pay. All payments are processed securely.",
+                  "All payments are processed securely through encrypted connections to ensure the protection of your financial information."
                 ]
               },
               {
-                title: "6. Envios e Entregas",
+                title: "6. Shipping & Delivery",
                 icon: <Shield className="h-6 w-6 text-white" />,
                 gradient: "from-red-500 to-rose-500",
                 content: [
                   <>
-                    As informações sobre envios e entregas estão disponíveis na nossa página de{" "}
+                    Information about shipping and delivery is available on our{" "}
                     <Link href="/envios" className="text-blue-600 hover:text-blue-800 font-medium underline decoration-2 underline-offset-2">
-                      Envios e Entregas
+                      Shipping & Delivery
                     </Link>
-                    . A fanzone12.pt não se responsabiliza por atrasos causados por circunstâncias fora do nosso controlo.
+                    {" "}page. fanzone12.com is not responsible for delays caused by circumstances beyond our control.
                   </>
                 ]
               },
               {
-                title: "7. Devoluções e Trocas",
+                title: "7. Returns & Exchanges",
                 icon: <Users className="h-6 w-6 text-white" />,
                 gradient: "from-teal-500 to-green-500",
                 content: [
                   <>
-                    A nossa política de devoluções e trocas está disponível na página de{" "}
+                    Our returns and exchanges policy is available on the{" "}
                     <Link href="/devolucoes" className="text-blue-600 hover:text-blue-800 font-medium underline decoration-2 underline-offset-2">
-                      Devoluções e Trocas
+                      Returns & Exchanges
                     </Link>
-                    . Todas as devoluções devem ser feitas de acordo com estas políticas.
+                    {" "}page. All returns must be made in accordance with these policies.
                   </>
                 ]
               },
               {
-                title: "8. Propriedade Intelectual",
+                title: "8. Intellectual Property",
                 icon: <Scale className="h-6 w-6 text-white" />,
                 gradient: "from-indigo-500 to-purple-500",
                 content: [
-                  "Todo o conteúdo do website, incluindo textos, gráficos, logótipos, ícones, imagens, clipes de áudio, downloads digitais e compilações de dados, é propriedade da fanzone12.pt ou dos seus fornecedores de conteúdo e está protegido por leis de direitos de autor portuguesas e internacionais."
+                  "All website content, including texts, graphics, logos, icons, images, audio clips, digital downloads and data compilations, is the property of fanzone12.com or its content suppliers and is protected by Portuguese and international copyright laws."
                 ]
               },
               {
-                title: "9. Limitação de Responsabilidade",
+                title: "9. Limitation of Liability",
                 icon: <Shield className="h-6 w-6 text-white" />,
                 gradient: "from-orange-500 to-red-500",
                 content: [
-                  "A fanzone12.pt não será responsável por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos resultantes da utilização ou incapacidade de utilização dos nossos serviços ou produtos."
+                  "fanzone12.com will not be liable for any direct, indirect, incidental, consequential or punitive damages resulting from the use or inability to use our services or products."
                 ]
               },
               {
-                title: "10. Lei Aplicável",
+                title: "10. Applicable Law",
                 icon: <FileText className="h-6 w-6 text-white" />,
                 gradient: "from-violet-500 to-purple-500",
                 content: [
-                  "Estes Termos e Condições são regidos e interpretados de acordo com as leis de Portugal. Qualquer disputa relacionada com estes termos será sujeita à jurisdição exclusiva dos tribunais portugueses."
+                  "These Terms and Conditions are governed and interpreted in accordance with European Union laws. Any dispute related to these terms will be subject to the exclusive jurisdiction of the competent courts."
                 ]
               },
               {
-                title: "11. Contacto",
+                title: "11. Contact",
                 icon: <Users className="h-6 w-6 text-white" />,
                 gradient: "from-emerald-500 to-teal-500",
                 content: [
                   <>
-                    Se tiver alguma dúvida sobre estes Termos e Condições, por favor contacte-nos através do email geral@fanzone12.pt ou visite a nossa página de{" "}
+                    If you have any questions about these Terms and Conditions, please contact us via email sales@fanzone12.com or visit our{" "}
                     <Link href="/contacto" className="text-blue-600 hover:text-blue-800 font-medium underline decoration-2 underline-offset-2">
-                      Contacto
+                      Contact
                     </Link>
-                    .
+                    {" "}page.
                   </>
                 ]
               }
@@ -209,7 +209,7 @@ export default function TermosPage() {
             <div className="glass-effect rounded-2xl p-8 text-center animate-fade-in">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-100 to-gray-200 rounded-full">
                 <FileText className="w-4 h-4 text-black" />
-                <span className="text-sm text-black font-medium">Última atualização: 21 de Maio de 2025</span>
+                <span className="text-sm text-black font-medium">Last updated: May 21, 2025</span>
               </div>
             </div>
           </div>

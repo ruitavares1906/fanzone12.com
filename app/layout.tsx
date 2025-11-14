@@ -17,9 +17,9 @@ import { ErrorCapture } from "@/components/error-capture"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "fanzone12.pt | Loja Online de Camisolas de Futebol",
+  title: "fanzone12.com | Official Football Jerseys & Sneakers Store",
   description:
-    "Compre camisolas de futebol oficiais dos seus clubes e seleções favoritas. Entrega rápida e personalização disponível.",
+    "Shop official football jerseys from your favorite clubs and national teams. Fast delivery across Europe and customization available.",
   generator: "v0.dev",
   icons: {
     icon: "/favicon.ico",
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt">
+    <html lang="en">
       <head>
         {/* Viewport fixa para impedir pinch/double-tap zoom em mobile */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />

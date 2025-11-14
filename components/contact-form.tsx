@@ -63,15 +63,15 @@ export function ContactForm() {
         }, 5000)
       } else {
         toast({
-          title: "Erro ao enviar mensagem",
-          description: data.message || "Ocorreu um erro. Tente novamente mais tarde.",
+          title: "Error sending message",
+          description: data.message || "An error occurred. Please try again later.",
           variant: "destructive",
         })
       }
     } catch (error) {
       toast({
-        title: "Erro ao enviar mensagem",
-        description: "Ocorreu um erro de conexão. Verifique sua internet e tente novamente.",
+        title: "Error sending message",
+        description: "A connection error occurred. Please check your internet and try again.",
         variant: "destructive",
       })
     } finally {
@@ -102,7 +102,7 @@ export function ContactForm() {
               transition={{ delay: 0.4 }}
               className="text-2xl font-bold text-green-700 mb-2"
             >
-              Mensagem Enviada!
+              Message Sent!
             </motion.h3>
             <motion.p
               initial={{ opacity: 0 }}
@@ -110,7 +110,7 @@ export function ContactForm() {
               transition={{ delay: 0.6 }}
               className="text-center text-gray-700 mb-4"
             >
-              Obrigado pelo seu contacto. Responderemos o mais brevemente possível.
+              Thank you for contacting us. We will respond as soon as possible.
             </motion.p>
             <motion.button
               initial={{ opacity: 0 }}
@@ -119,7 +119,7 @@ export function ContactForm() {
               onClick={() => setShowSuccess(false)}
               className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
             >
-              Fechar
+              Close
             </motion.button>
           </motion.div>
         )}
@@ -128,13 +128,13 @@ export function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="nome">Nome</Label>
+            <Label htmlFor="nome">Name</Label>
             <Input
               id="nome"
               name="nome"
               value={formData.nome}
               onChange={handleChange}
-              placeholder="O seu nome"
+              placeholder="Your name"
               required
             />
           </div>
@@ -146,7 +146,7 @@ export function ContactForm() {
               type="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="O seu email"
+              placeholder="Your email"
               required
             />
           </div>
@@ -154,43 +154,43 @@ export function ContactForm() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="telefone">Telefone</Label>
+            <Label htmlFor="telefone">Phone</Label>
             <Input
               id="telefone"
               name="telefone"
               value={formData.telefone}
               onChange={handleChange}
-              placeholder="O seu telefone"
+              placeholder="Your phone"
             />
           </div>
           <div>
-            <Label htmlFor="assunto">Assunto</Label>
+            <Label htmlFor="assunto">Subject</Label>
             <Input
               id="assunto"
               name="assunto"
               value={formData.assunto}
               onChange={handleChange}
-              placeholder="Assunto da mensagem"
+              placeholder="Message subject"
               required
             />
           </div>
         </div>
 
         <div>
-          <Label htmlFor="mensagem">Mensagem</Label>
+          <Label htmlFor="mensagem">Message</Label>
           <Textarea
             id="mensagem"
             name="mensagem"
             value={formData.mensagem}
             onChange={handleChange}
-            placeholder="A sua mensagem"
+            placeholder="Your message"
             rows={5}
             required
           />
         </div>
 
         <Button type="submit" className="w-full" disabled={isSubmitting}>
-          {isSubmitting ? "A enviar..." : "Enviar Mensagem"}
+          {isSubmitting ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </div>

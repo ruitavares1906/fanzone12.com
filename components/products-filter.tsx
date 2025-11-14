@@ -15,11 +15,11 @@ export function ProductsFilter() {
   const [clubeSearch, setClubeSearch] = useState("")
 
   const categorias = [
-    { id: "clubes", label: "Clubes" },
-    { id: "selecoes", label: "Seleções Nacionais" },
-    { id: "crianca", label: "Equipamento Criança" },
-    { id: "body", label: "Body Bebé" },
-    { id: "retro", label: "Retrô" },
+    { id: "clubes", label: "Clubs" },
+    { id: "selecoes", label: "National Teams" },
+    { id: "crianca", label: "Kids Equipment" },
+    { id: "body", label: "Baby Body" },
+    { id: "retro", label: "Retro" },
   ]
 
   const clubes = [
@@ -92,7 +92,7 @@ export function ProductsFilter() {
   ]
 
   const ligas = [
-    { id: "liga-portuguesa", label: "Liga Portuguesa" },
+    { id: "liga-portuguesa", label: "Portuguese League" },
     { id: "premier-league", label: "Premier League" },
     { id: "la-liga", label: "La Liga" },
     { id: "ligue-1", label: "Ligue 1" },
@@ -103,8 +103,8 @@ export function ProductsFilter() {
     { id: "mls", label: "MLS" },
     { id: "eredivisie", label: "Eredivisie" },
     { id: "scottish-premiership", label: "Scottish Premiership" },
-    { id: "selecoes-nacionais", label: "Seleções Nacionais" },
-    { id: "outras-ligas", label: "Outras Ligas" }
+    { id: "selecoes-nacionais", label: "National Teams" },
+    { id: "outras-ligas", label: "Other Leagues" }
   ]
 
   const handleFilter = (type: string, value: string) => {
@@ -129,15 +129,15 @@ export function ProductsFilter() {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold mb-3">Filtros</h3>
+        <h3 className="text-lg font-semibold mb-3">Filters</h3>
         <Button variant="outline" size="sm" onClick={handleClearFilters}>
-          Limpar Filtros
+          Clear Filters
         </Button>
       </div>
 
       <Accordion type="multiple" defaultValue={["categorias", "clubes", "ligas"]}>
         <AccordionItem value="categorias">
-          <AccordionTrigger>Categorias</AccordionTrigger>
+          <AccordionTrigger>Categories</AccordionTrigger>
           <AccordionContent>
             <div className="space-y-2">
               {categorias.map((categoria) => (
@@ -157,13 +157,13 @@ export function ProductsFilter() {
         </AccordionItem>
 
         <div className="space-y-3">
-          <h4 className="text-sm font-medium">Clubes</h4>
+          <h4 className="text-sm font-medium">Clubs</h4>
           
           {/* Barra de pesquisa para clubes */}
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="Pesquisar clube..."
+              placeholder="Search club..."
               value={clubeSearch}
               onChange={(e) => setClubeSearch(e.target.value)}
               className="pl-10"
@@ -187,14 +187,14 @@ export function ProductsFilter() {
               ))
             ) : (
               <p className="text-sm text-muted-foreground text-center py-2">
-                Nenhum clube encontrado
+                No club found
               </p>
             )}
           </div>
         </div>
 
         <AccordionItem value="ligas">
-          <AccordionTrigger>Ligas</AccordionTrigger>
+          <AccordionTrigger>Leagues</AccordionTrigger>
           <AccordionContent>
             <div className="space-y-2">
               {ligas.map((liga) => (

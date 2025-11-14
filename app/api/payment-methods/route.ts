@@ -30,9 +30,14 @@ export async function GET() {
         availableMethods.push({ id: "multibanco", name: "Multibanco", icon: "/images/payment-multibanco.webp" })
       }
 
-      // Adicionar MBWay se disponível em Portugal
-      if (account.country === "PT") {
-        availableMethods.push({ id: "mbway", name: "MB Way", icon: "/images/payment-mbway.webp" })
+      // Add payment methods available in EU/EEE + UK
+      // MB Way is Portugal-specific, so we check for EU countries
+      const euCountries = ['PT', 'ES', 'FR', 'DE', 'IT', 'NL', 'BE', 'AT', 'GR', 'IE', 'FI', 'DK', 'SE', 'PL', 'CZ', 'HU', 'RO', 'BG', 'HR', 'SK', 'SI', 'EE', 'LV', 'LT', 'CY', 'MT', 'LU', 'IS', 'LI', 'NO', 'CH', 'GB']
+      if (account.country && euCountries.includes(account.country)) {
+        // Add region-specific payment methods if needed
+        if (account.country === "PT") {
+          availableMethods.push({ id: "mbway", name: "MB Way", icon: "/images/payment-mbway.webp" })
+        }
       }
 
       // Adicionar PayPal se integrado

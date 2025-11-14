@@ -72,12 +72,12 @@ function SimpleReplyForm({
 
   return (
     <div className="bg-gray-50 p-4 rounded-lg border mt-4">
-      <h4 className="font-medium mb-3">Responder</h4>
+      <h4 className="font-medium mb-3">Reply</h4>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <input
             type="text"
-            placeholder="Nome"
+            placeholder="Name"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
             className="px-3 py-2 border border-gray-300 rounded-md text-sm"
@@ -93,7 +93,7 @@ function SimpleReplyForm({
           />
         </div>
         <textarea
-          placeholder="Escreva a sua resposta..."
+          placeholder="Write your reply..."
           value={conteudo}
           onChange={(e) => setConteudo(e.target.value)}
           className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm"
@@ -106,14 +106,14 @@ function SimpleReplyForm({
             onClick={onCancel}
             className="px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50"
           >
-            Cancelar
+            Cancel
           </button>
           <button
             type="submit"
             disabled={isSubmitting}
             className="px-4 py-2 bg-primary text-white rounded-md text-sm hover:bg-primary/90 disabled:opacity-50"
           >
-            {isSubmitting ? "Enviando..." : "Enviar"}
+            {isSubmitting ? "Sending..." : "Send"}
           </button>
         </div>
       </form>
@@ -149,7 +149,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
   const router = useRouter()
 
   // Email de admin (pode ser configurado)
-  const ADMIN_EMAIL = "geral@fanzone12.pt"
+  const ADMIN_EMAIL = "sales@fanzone12.com"
 
   useEffect(() => {
     async function loadProdutosRelacionados() {
@@ -330,7 +330,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
       setReplyingTo(null)
     } catch (error) {
       console.error("Erro ao enviar resposta:", error)
-      alert("Erro ao enviar resposta. Tente novamente.")
+      alert("Error sending reply. Please try again.")
     }
   }
 
@@ -511,8 +511,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                     className="text-sm text-gray-600 hover:text-blue-600 hover:underline cursor-pointer font-medium"
                   >
                     {estatisticas.total > 0 
-                      ? `${estatisticas.media.toFixed(1)} (${estatisticas.total} avaliações)` 
-                      : "Sem avaliações"}
+                      ? `${estatisticas.media.toFixed(1)} (${estatisticas.total} reviews)` 
+                      : "No reviews"}
                   </a>
                 </div>
               </div>
@@ -573,11 +573,11 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                   <svg viewBox="0 0 24 24" className="h-5 w-5 text-primary" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  Selecione o Tamanho
+                  Select Size
                 </h3>
                 {produto.subcategoria !== "sneakers" && (
                   <a href="#tabela-medidas" className="text-sm text-primary hover:text-primary/80 hover:underline font-medium bg-accent px-3 py-1 rounded-lg transition-colors">
-                    📏 Ver tabela de medidas
+                    📏 View size chart
                   </a>
                 )}
               </div>
@@ -586,7 +586,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                 {produto.subcategoria === "sneakers" ? (
                   <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-xl p-5 border border-red-100">
                     <h4 className="text-sm font-semibold text-red-800 mb-4 flex items-center gap-2">
-                      👟 TAMANHOS SNEAKERS
+                      👟 SNEAKER SIZES
                     </h4>
                     <div className="flex flex-wrap gap-3">
                       {["36", "36.5", "37.5", "38", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "45"].map((size) => (
@@ -611,7 +611,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                 ) : produto.categoria === "body" ? (
                   <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-5 border border-pink-100">
                     <h4 className="text-sm font-semibold text-pink-800 mb-4 flex items-center gap-2">
-                      👶 TAMANHOS BEBÉ
+                      👶 BABY SIZES
                     </h4>
                     <div className="flex flex-wrap gap-3">
                       {["0 a 6 meses", "6 a 12 meses"].map((size) => (
@@ -637,7 +637,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                   <>
                     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-5 border border-blue-100">
                       <h4 className="text-sm font-semibold text-blue-800 mb-4 flex items-center gap-2">
-                        👥 TAMANHOS ADULTO
+                        👥 ADULT SIZES
                       </h4>
                       <div className="flex flex-wrap gap-3">
                         {["S", "M", "L", "XL", "2XL", "3XL", "4XL"].map((size) => (
@@ -662,7 +662,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
 
                     <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-100">
                       <h4 className="text-sm font-semibold text-green-800 mb-4 flex items-center gap-2">
-                        👶 TAMANHOS INFANTIL
+                        👶 KIDS SIZES
                         <span className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full">calções incluídos,se for aplicável</span>
                       </h4>
                       <div className="flex flex-wrap gap-3">
@@ -715,7 +715,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
               </div>
               {sizeError && (
                 <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-red-600 font-medium text-sm">⚠️ Por favor, selecione um tamanho</p>
+                  <p className="text-red-600 font-medium text-sm">⚠️ Please select a size</p>
                 </div>
               )}
             </div>
@@ -771,7 +771,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                           <div className="flex items-center gap-2">
                             <span className="text-red-600 text-xl">⚠️</span>
                             <p className="text-red-700 font-semibold">
-                              Por favor, selecione a marca e o modelo do telemóvel
+                              Please select the phone brand and model
                             </p>
                           </div>
                         </div>
@@ -783,7 +783,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                           <div className="flex items-center gap-2">
                             <span className="text-red-600 text-xl">⚠️</span>
                             <p className="text-red-700 font-semibold">
-                              Por favor, selecione uma cor para a sua capa
+                              Please select a color for your phone case
                             </p>
                           </div>
                         </div>
@@ -895,7 +895,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                           className="flex-1 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
                         >
                           <ShoppingCart className="w-5 h-5" />
-                          Adicionar ao Carrinho
+                          Add to Cart
                         </button>
                       </div>
                     </div>
@@ -1011,8 +1011,8 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-purple-900">🏆 Mais Vendido</h4>
-                      <p className="text-sm text-purple-700">Entre os produtos da coleção</p>
+                      <h4 className="font-semibold text-purple-900">🏆 Best Seller</h4>
+                      <p className="text-sm text-purple-700">Among the collection products</p>
                     </div>
                   </div>
                 </div>
@@ -1028,41 +1028,41 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
         <Tabs value={activeTab} onValueChange={setActiveTab}>
           <TabsList className={`w-full grid gap-1 h-auto p-1 bg-muted ${produto.categoria === "capas" ? "grid-cols-2" : produto.subcategoria === "sneakers" ? "grid-cols-3" : "grid-cols-2 sm:grid-cols-4"}`}>
             {produto.subcategoria !== "sneakers" && produto.categoria !== "capas" && (
-              <TabsTrigger value="tabela-medidas" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Tabela de Medidas</TabsTrigger>
+              <TabsTrigger value="tabela-medidas" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Size Chart</TabsTrigger>
             )}
-            <TabsTrigger value="descricao" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Descrição</TabsTrigger>
+            <TabsTrigger value="descricao" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Description</TabsTrigger>
             {produto.categoria !== "capas" && (
-              <TabsTrigger value="detalhes" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Detalhes</TabsTrigger>
+              <TabsTrigger value="detalhes" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Details</TabsTrigger>
             )}
-            <TabsTrigger value="avaliacoes" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Avaliações</TabsTrigger>
+            <TabsTrigger value="avaliacoes" className="text-xs sm:text-sm px-2 py-2 h-auto whitespace-normal text-center">Reviews</TabsTrigger>
           </TabsList>
           {produto.subcategoria !== "sneakers" && (
             <TabsContent value="tabela-medidas" className="pt-4" id="tabela-medidas">
-              <h3 className="text-xl font-semibold">Tabela de Medidas</h3>
+              <h3 className="text-xl font-semibold">Size Chart</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                 <div className="flex flex-col items-center">
                   <Image
                     src="/images/tabelaadepto.png"
-                    alt="Tabela de medidas versão adepto"
+                    alt="Size chart - fan version"
                     width={520}
                     height={360}
                     className="rounded-lg border shadow-sm w-96 h-auto object-contain"
                     sizes="(max-width: 768px) 98vw, 520px"
                     onError={() => console.error("Erro ao carregar tabelaadepto.png")}
                   />
-                  <p className="text-center text-xs text-muted-foreground mt-2">Tabela de medidas versão adepto</p>
+                  <p className="text-center text-xs text-muted-foreground mt-2">Size chart - fan version</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <Image
                     src="/images/tabelainfantil22.png"
-                    alt="Tabela de medidas infantil"
+                    alt="Kids size chart"
                     width={520}
                     height={360}
                     className="rounded-lg border shadow-sm w-96 h-auto object-contain"
                     sizes="(max-width: 768px) 98vw, 520px"
                     onError={() => console.error("Erro ao carregar tabelainfantil22.png")}
                   />
-                  <p className="text-center text-xs text-muted-foreground mt-2">Tabela de medidas infantil</p>
+                  <p className="text-center text-xs text-muted-foreground mt-2">Kids size chart</p>
                 </div>
               </div>
             </TabsContent>
@@ -1075,42 +1075,42 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                 {produto.categoria === "capas" ? (
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>
-                      Na Fanzone12.pt, cada capa é pensada para quem quer proteger o telemóvel sem perder o estilo.
+                      At Fanzone12.com, each phone case is designed for those who want to protect their phone without losing style.
                     </p>
                     <p>
-                      Utilizamos <strong>TPU (poliuretano termoplástico) 📱</strong> — um material resistente, flexível e duradouro, que garante proteção de alto nível contra riscos, quedas e desgaste do dia a dia 💪.
+                      We use <strong>TPU (thermoplastic polyurethane) 📱</strong> — a resistant, flexible and durable material that guarantees high-level protection against scratches, drops and daily wear 💪.
                     </p>
                     <p>
-                      Além de proteger, o TPU adapta-se perfeitamente ao teu dispositivo, oferecendo um encaixe preciso e confortável 🔐.
+                      In addition to protecting, TPU fits perfectly to your device, offering a precise and comfortable fit 🔐.
                     </p>
                     <p>
-                      As nossas capas são <strong>produzidas manualmente e personalizadas 🎨</strong>, o que faz com que nenhuma seja igual à outra.
+                      Our cases are <strong>handcrafted and customized 🎨</strong>, making each one unique.
                     </p>
                     <p>
-                      Cada peça é criada com cuidado artesanal, resultando num design único e autêntico ✨.
+                      Each piece is created with artisanal care, resulting in a unique and authentic design ✨.
                     </p>
                     <p>
-                      Por serem feitas à mão, podem existir ligeiras diferenças em relação às imagens apresentadas 🖼️ — sinal da sua exclusividade e autenticidade 💎.
+                      As they are handmade, there may be slight differences from the images shown 🖼️ — a sign of their exclusivity and authenticity 💎.
                     </p>
                     <p>
-                      As cores e tonalidades podem apresentar pequenas variações dependendo do ecrã do teu dispositivo 🌈, mas garantimos sempre acabamentos de qualidade premium e atenção ao detalhe 🧵.
+                      Colors and tones may show small variations depending on your device screen 🌈, but we always guarantee premium quality finishes and attention to detail 🧵.
                     </p>
                     <p className="font-medium text-gray-900">
-                      Mais do que uma simples proteção, as nossas capas são uma extensão do teu estilo pessoal 🎯.
+                      More than simple protection, our cases are an extension of your personal style 🎯.
                     </p>
                   </div>
                 ) : (
                   <>
                     <p className="mb-4">
                       {produto.descricaoLonga ||
-                        `A camisola oficial ${produto.nome} é fabricada com materiais de alta qualidade para garantir conforto e durabilidade. Feita com tecnologia de ponta, esta camisola oferece respirabilidade e gestão da humidade durante o uso.`}
+                        `The official ${produto.nome} jersey is manufactured with high-quality materials to ensure comfort and durability. Made with cutting-edge technology, this jersey offers breathability and moisture management during use.`}
                     </p>
-                    <h3 className="text-lg font-medium mb-3">Características:</h3>
+                    <h3 className="text-lg font-medium mb-3">Features:</h3>
                     <ul className="list-disc pl-5 space-y-2">
-                      <li>Material leve e respirável de alta qualidade</li>
-                      <li>Tecnologia avançada de gestão da humidade</li>
-                      <li>100% Poliéster de alta durabilidade</li>
-                      <li>Acabamentos premium para maior conforto</li>
+                      <li>Lightweight and breathable high-quality material</li>
+                      <li>Advanced moisture management technology</li>
+                      <li>100% High-durability Polyester</li>
+                      <li>Premium finishes for enhanced comfort</li>
                     </ul>
                   </>
                 )}
@@ -1121,36 +1121,36 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
             <TabsContent value="detalhes" className="pt-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="text-lg font-medium mb-3">Especificações</h3>
+                  <h3 className="text-lg font-medium mb-3">Specifications</h3>
                   <div className="space-y-2">
                     <div className="flex justify-between border-b pb-2">
                       <span className="text-gray-600">Material</span>
-                      <span>{produto.material || "100% Poliéster"}</span>
+                      <span>{produto.material || "100% Polyester"}</span>
                     </div>
                     <div className="flex justify-between border-b pb-2">
-                      <span className="text-gray-600">Tipo</span>
+                      <span className="text-gray-600">Type</span>
                       <span>{produto.categoria}</span>
                     </div>
                     <div className="flex justify-between border-b pb-2">
-                      <span className="text-gray-600">Temporada</span>
+                      <span className="text-gray-600">Season</span>
                       <span>{produto.temporada || "2023/2024"}</span>
                     </div>
                     <div className="flex justify-between border-b pb-2">
-                      <span className="text-gray-600">Marca</span>
-                      <span>{produto.marca || "Oficial"}</span>
+                      <span className="text-gray-600">Brand</span>
+                      <span>{produto.marca || "Official"}</span>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium mb-3">Cuidados</h3>
+                  <h3 className="text-lg font-medium mb-3">Care Instructions</h3>
                   <div className="space-y-2">
-                    <p className="text-gray-600">Para manter a sua camisola em ótimas condições, recomendamos:</p>
+                    <p className="text-gray-600">To keep your jersey in excellent condition, we recommend:</p>
                     <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                      <li>Lavar à máquina a 30°C</li>
-                      <li>Não usar lixívia</li>
-                      <li>Não secar na máquina</li>
-                      <li>Passar a ferro a baixa temperatura</li>
-                      <li>Não limpar a seco</li>
+                      <li>Machine wash at 30°C</li>
+                      <li>Do not use bleach</li>
+                      <li>Do not tumble dry</li>
+                      <li>Iron at low temperature</li>
+                      <li>Do not dry clean</li>
                     </ul>
                   </div>
                 </div>
@@ -1174,7 +1174,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                       </svg>
                     ))}
                   </div>
-                  <p className="text-sm text-gray-600 mt-1">{estatisticas.total} avaliações</p>
+                  <p className="text-sm text-gray-600 mt-1">{estatisticas.total} reviews</p>
                 </div>
                 <div className="flex-1">
                   {[5, 4, 3, 2, 1].map((rating) => {
@@ -1432,7 +1432,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
 
       {/* Produtos Relacionados */}
       <div>
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-6">Produtos Relacionados</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-6">Related Products</h2>
         <div className="product-grid">
           {produtosRelacionados.map((produto) => (
             <ProductCard key={produto.id} product={produto} />

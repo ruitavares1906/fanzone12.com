@@ -17,17 +17,17 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Sneakers", href: "/sneakers" },
-    { name: "Capas de Telemóvel", href: "/catalogo/capas" },
-    { name: "Clubes", href: "/catalogo" },
+    { name: "Phone Cases", href: "/catalogo/capas" },
+    { name: "Clubs", href: "/catalogo" },
     { name: "Retro", href: "/catalogo?categoria=retro" },
-    { name: "Seleções", href: "/catalogo?categoria=selecoes" },
-    { name: "Equipamento Criança", href: "/catalogo?categoria=crianca" },
-    { name: "Body Bebé", href: "/catalogo?categoria=body" },
-    { name: "Liga Portuguesa", href: "/catalogo?liga=liga-portuguesa" },
+    { name: "National Teams", href: "/catalogo?categoria=selecoes" },
+    { name: "Kids", href: "/catalogo?categoria=crianca" },
+    { name: "Baby", href: "/catalogo?categoria=body" },
     { name: "Premier League", href: "/catalogo?liga=premier-league" },
     { name: "La Liga", href: "/catalogo?liga=la-liga" },
     { name: "Serie A", href: "/catalogo?liga=serie-a" },
     { name: "Bundesliga", href: "/catalogo?liga=bundesliga" },
+    { name: "Ligue 1", href: "/catalogo?liga=ligue-1" },
   ]
 
   return (
@@ -36,9 +36,9 @@ export function Navbar() {
        <div className="bg-gradient-to-r from-purple-600 via-purple-700 to-purple-800 text-white text-center py-1 px-4">
          <div className="text-xs sm:text-sm font-medium">
             <span className="md:animate-pulse motion-reduce:animate-none">🎁</span>
-           <span className="mx-2">LEVA 4 PAGA 3</span>
+           <span className="mx-2">BUY 4 GET 1 FREE</span>
             <span className="md:animate-pulse motion-reduce:animate-none">🎁</span>
-           <span className="hidden sm:inline ml-2 text-purple-200">• Desconto automático no carrinho</span>
+           <span className="hidden sm:inline ml-2 text-purple-200">• Automatic discount at checkout</span>
          </div>
        </div>
       
@@ -50,15 +50,15 @@ export function Navbar() {
               <SheetTrigger asChild>
                  <Button variant="outline" size="icon" className="ml-2 mr-1 modern-button border-gray-400 text-gray-800 hover:bg-gray-100">
                    <Menu className="h-5 w-5" />
-                  <span className="sr-only">Abrir menu</span>
+                  <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
                <SheetContent side="left" className="bg-white border-gray-200 text-gray-900 overflow-y-auto" forceMount>
-                <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex items-center mb-6 justify-center">
                   <Image
                     src="/images/dbe5a8e3-94bb-400a-aedf-f737d748eb6f.webp"
-                    alt="fanzone12.pt"
+                    alt="fanzone12.com"
                     width={140}
                     height={49}
                   />
@@ -102,7 +102,7 @@ export function Navbar() {
                             <span>{link.name}</span>
                              <Footprints className="w-4 h-4 md:animate-bounce motion-reduce:animate-none" />
                           </div>
-                        ) : link.name === "Capas de Telemóvel" ? (
+                        ) : link.name === "Phone Cases" ? (
                           <div className="flex items-center gap-2">
                             <span>{link.name}</span>
                             <span className="text-lg">📱</span>
@@ -124,7 +124,7 @@ export function Navbar() {
                {/* Primeiro logo - responsivo - Otimizado para LCP */}
                <Image 
                  src="/images/dbe5a8e3-94bb-400a-aedf-f737d748eb6f.webp" 
-                 alt="fanzone12.pt" 
+                 alt="fanzone12.com" 
                  width={150} 
                  height={52} 
                  className="hidden lg:block mr-3 transition-transform group-hover:scale-105" 
@@ -153,7 +153,7 @@ export function Navbar() {
                {/* Segundo logo - sempre visível - Otimizado */}
                <Image 
                  src="/images/506271e6-0123-4529-8c72-bbc5679a47bd.webp" 
-                 alt="fanzone12.pt" 
+                 alt="fanzone12.com" 
                  width={60} 
                  height={21} 
                  className="transition-transform group-hover:scale-105" 
@@ -179,18 +179,16 @@ export function Navbar() {
                      ? "text-blue-600 bg-gray-100 shadow-lg" 
                      : link.name === "Sneakers"
                      ? "text-orange-600 hover:text-orange-700 font-bold"
-                     : link.name === "Capas de Telemóvel"
+                     : link.name === "Phone Cases"
                      ? "text-sky-600 hover:text-sky-700 font-bold"
                      : link.name === "Retro"
                      ? "text-amber-600 hover:text-amber-700 font-bold"
-                     : link.name === "Seleções"
+                     : link.name === "National Teams"
                      ? "text-red-600 hover:text-red-700 font-bold"
-                     : link.name === "Equipamento Criança"
+                     : link.name === "Kids"
                      ? "text-green-600 hover:text-green-700 font-bold"
-                     : link.name === "Body Bebé"
+                     : link.name === "Baby"
                      ? "text-pink-600 hover:text-pink-700 font-bold"
-                     : link.name === "Liga Portuguesa"
-                     ? "text-emerald-600 hover:text-emerald-700 font-bold"
                      : link.name === "Premier League"
                      ? "text-purple-600 hover:text-purple-700 font-bold"
                      : link.name === "La Liga"
@@ -201,8 +199,6 @@ export function Navbar() {
                      ? "text-cyan-600 hover:text-cyan-700 font-bold"
                      : link.name === "Ligue 1"
                      ? "text-rose-600 hover:text-rose-700 font-bold"
-                     : link.name === "Outras Ligas"
-                     ? "text-slate-600 hover:text-slate-700 font-bold"
                      : "text-gray-700 hover:text-blue-600"
                  }`}
               >
@@ -211,7 +207,7 @@ export function Navbar() {
                     <span>{link.name}</span>
                     <Footprints className="w-4 h-4 md:animate-bounce motion-reduce:animate-none" />
                   </div>
-                ) : link.name === "Capas de Telemóvel" ? (
+                ) : link.name === "Phone Cases" ? (
                   <div className="flex items-center gap-2">
                     <span>{link.name}</span>
                     <span className="text-lg">📱</span>
@@ -233,7 +229,7 @@ export function Navbar() {
                     {totalItems}
                   </span>
                 )}
-                <span className="sr-only">Carrinho</span>
+                <span className="sr-only">Cart</span>
               </Link>
             </Button>
           </div>
@@ -243,7 +239,7 @@ export function Navbar() {
          <div className="lg:hidden pb-4 pt-2 px-2">
           <SearchBox 
             size="normal"
-            placeholder="Pesquisar produtos..."
+            placeholder="Search products..."
              className="w-full glass-effect border-gray-300 text-gray-700 placeholder-gray-500"
           />
         </div>
@@ -255,7 +251,7 @@ export function Navbar() {
           <div className="flex items-center justify-center">
             <SearchBox 
               size="normal"
-              placeholder="🔍 Pesquise por clubes, ligas, jogadores ou temporadas..."
+              placeholder="🔍 Search for clubs, leagues, players or seasons..."
                className="max-w-2xl glass-effect text-gray-700 placeholder-gray-500 shadow-lg"
             />
           </div>

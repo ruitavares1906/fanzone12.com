@@ -21,16 +21,13 @@ export interface Discount {
 }
 
 export interface PaymentState {
-  method: "online" | "cash_on_delivery"
+  method: "online"
   hasPersonalizedItems: boolean
   subtotalOriginal: number
   totalDiscounts: number
   subtotalWithDiscounts: number
   shipping: number
-  cashOnDeliveryFee: number
   total: number
-  upfrontPayment: number
-  remainingPayment: number
 }
 
 export interface PaymentSummary {
@@ -41,11 +38,8 @@ export interface PaymentSummary {
     label: string
     value: number
   }>
-  upfrontPayment?: number
-  remainingPayment?: number
 }
 
-const CASH_ON_DELIVERY_FEE = 8
 const DEFAULT_SHIPPING = 3.99
 const FREE_SHIPPING_THRESHOLD = 68
 const FREE_SHIPPING_QUANTITY = 3
@@ -57,29 +51,25 @@ export function useCartPayment(
   items: CartItem[] = [],
   discounts: Discount[] = []
 ) {
-  const [paymentMethod, setPaymentMethod] = useState<
-    "online" | "cash_on_delivery"
-  >("online")
-
   const safeItems = Array.isArray(items) ? items : []
   const safeDiscounts = Array.isArray(discounts) ? discounts : []
 
-  // 1. Calcular subtotal original
+  // 1. Calculate original subtotal
   const subtotalOriginal = roundTo2(
     safeItems.reduce((sum, item) => sum + item.price * item.quantity, 0)
   )
 
-  // 2. Calcular total de descontos
+  // 2. Calculate total discounts
   const totalDiscounts = roundTo2(
     safeDiscounts.reduce((sum, discount) => sum + discount.amount, 0)
   )
 
-  // 3. Calcular subtotal com descontos aplicados
+  // 3. Calculate subtotal with discounts applied
   const subtotalWithDiscounts = roundTo2(
     Math.max(0, subtotalOriginal - totalDiscounts)
   )
 
-  // 4. Verificar se há produtos personalizados
+  // 4. Check if there are personalized items
   const hasPersonalizedItems = safeItems.some(
     (item) =>
       item.isPersonalized ||
@@ -87,92 +77,48 @@ export function useCartPayment(
         (item.customization.name || item.customization.number))
   )
 
-  // 5. Calcular quantidade total
+  // 5. Calculate total quantity
   const totalQuantity = safeItems.reduce((sum, item) => sum + item.quantity, 0)
 
-  // 6. Calcular portes grátis
+  // 6. Calculate free shipping
   const isFreeShipping = 
     totalQuantity >= FREE_SHIPPING_QUANTITY || 
     subtotalOriginal >= FREE_SHIPPING_THRESHOLD
   const shipping = isFreeShipping ? 0 : DEFAULT_SHIPPING
 
-  // 7. Calcular taxa à cobrança
-  const cashOnDeliveryFee = paymentMethod === "cash_on_delivery" ? CASH_ON_DELIVERY_FEE : 0
+  // 7. Calculate final total
+  const total = roundTo2(subtotalWithDiscounts + shipping)
 
-  // 8. Calcular total final
-  const total = roundTo2(subtotalWithDiscounts + shipping + cashOnDeliveryFee)
-  
-
-  // 9. Calcular pagamento antecipado e restante
-  let upfrontPayment = 0
-  let remainingPayment = total
-
-  if (paymentMethod === "cash_on_delivery") {
-    // SEMPRE: 8€ antecipadamente + restante = total - 8€
-    upfrontPayment = CASH_ON_DELIVERY_FEE
-    remainingPayment = roundTo2(total - CASH_ON_DELIVERY_FEE)
-  }
-
-  // 10. Criar paymentState
+  // 8. Create paymentState
   const paymentState: PaymentState = {
-    method: paymentMethod,
+    method: "online",
     hasPersonalizedItems,
     subtotalOriginal,
     totalDiscounts,
     subtotalWithDiscounts,
     shipping,
-    cashOnDeliveryFee,
     total,
-    upfrontPayment,
-    remainingPayment,
   }
 
-  // 11. Função para trocar método de pagamento
-  const setPaymentMethodHook = (method: "online" | "cash_on_delivery") => {
-    setPaymentMethod(method)
-  }
-
-  // 12. Função para obter resumo do pagamento
+  // 9. Function to get payment summary
   const getPaymentSummary = (): PaymentSummary => {
-    if (paymentState.method === "online") {
-      return {
-        method: "Pagamento Online",
-        description: "Pague com cartão de crédito/débito de forma segura",
-        total: paymentState.total,
-        breakdown: [
-          { label: "Subtotal", value: paymentState.subtotalOriginal },
-          ...(paymentState.totalDiscounts > 0 ? [
-            { label: "Descontos", value: -paymentState.totalDiscounts }
-          ] : []),
-          { label: "Envio", value: paymentState.shipping },
-          { label: "Total", value: paymentState.total },
-        ],
-      }
-    } else {
-      return {
-        method: "Pagamento à Cobrança",
-        description: hasPersonalizedItems
-          ? "8€ antecipadamente + restante à cobrança"
-          : "Pague quando receber o produto",
-        total: paymentState.total,
-        breakdown: [
-          { label: "Subtotal", value: paymentState.subtotalOriginal },
-          ...(paymentState.totalDiscounts > 0 ? [
-            { label: "Descontos", value: -paymentState.totalDiscounts }
-          ] : []),
-          { label: "Envio", value: paymentState.shipping },
-          { label: "Taxa à cobrança", value: paymentState.cashOnDeliveryFee },
-          { label: "Total", value: paymentState.total },
-        ],
-        upfrontPayment: paymentState.upfrontPayment,
-        remainingPayment: paymentState.remainingPayment,
-      }
+    return {
+      method: "Online Payment",
+      description: "Pay securely with credit/debit card",
+      total: paymentState.total,
+      breakdown: [
+        { label: "Subtotal", value: paymentState.subtotalOriginal },
+        ...(paymentState.totalDiscounts > 0 ? [
+          { label: "Discounts", value: -paymentState.totalDiscounts }
+        ] : []),
+        { label: "Shipping", value: paymentState.shipping },
+        { label: "Total", value: paymentState.total },
+      ],
     }
   }
 
   return {
     paymentState,
-    setPaymentMethod: setPaymentMethodHook,
     getPaymentSummary,
     hasPersonalizedItems,
   }

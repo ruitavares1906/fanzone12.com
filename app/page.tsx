@@ -103,12 +103,12 @@ export default async function Home() {
           <div className="text-center">
               <div className="flex items-center justify-center gap-2 text-sm sm:text-base font-semibold">
                <span>🎁</span>
-              <span className="text-blue-700">PROMOÇÃO ESPECIAL:</span>
-              <span className="text-foreground">Leva 4 Camisolas e Paga Apenas 3!</span>
+              <span className="text-blue-700">SPECIAL PROMOTION:</span>
+              <span className="text-foreground">Buy 4 Jerseys and Pay for Only 3!</span>
                <span>🎁</span>
             </div>
             <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-              Desconto automático aplicado no carrinho • Válido em toda a loja
+              Automatic discount applied at checkout • Valid storewide
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default async function Home() {
         <div className="absolute inset-0 overflow-hidden">
           <Image 
            src="/images/1751647533_9cc7b4a154af3f78533665e36b695936.webp"
-            alt="Muito mais que uma loja"
+            alt="Much more than a store"
             className="object-cover scale-105 md:scale-105"
             priority
             fetchPriority="high"
@@ -149,17 +149,17 @@ export default async function Home() {
             <div className="flex items-center justify-center mb-6">
               <Sparkles className="w-8 h-8 text-blue-700 mr-2" />
               <span className="text-yellow-400 font-semibold text-sm uppercase tracking-wider">
-                Fanzone12.pt 
+                Fanzone12.com 
               </span>
             </div>
             
             <h1 className="text-responsive-xl text-foreground mb-6 leading-tight">
-            Muito mais que 
-              <span className="text-blue-700 font-bold block sm:inline"> uma loja </span>
+            Much more than 
+              <span className="text-blue-700 font-bold block sm:inline"> a store </span>
             </h1>
             
             <p className="text-responsive-md text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Aqui cada camisola conta a tua história. Personalização única, qualidade garantida e entregas rápidas em toda a Europa.
+              Every jersey tells your story. Unique customization, guaranteed quality and fast delivery across Europe.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -170,7 +170,7 @@ export default async function Home() {
               >
                 <Link href="/catalogo" className="flex items-center gap-2">
                   <Search className="w-5 h-5" />
-                  Ver Catálogo
+                  View Catalog
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
@@ -183,7 +183,7 @@ export default async function Home() {
       <section className="py-8 bg-card border-t border-b border-border hidden md:block">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-foreground mb-3 text-sm sm:text-base">Não encontrou a camisola que procura?</p>
+            <p className="text-foreground mb-3 text-sm sm:text-base">Can't find the jersey you're looking for?</p>
             <Button 
               asChild 
               size="lg" 
@@ -191,7 +191,7 @@ export default async function Home() {
             >
               <Link href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Search className="w-5 h-5" />
-                Ver catálogo completo
+                View full catalog
               </Link>
             </Button>
           </div>
@@ -203,10 +203,10 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6 animate-slide-up">
             <h2 className="text-responsive-lg text-foreground mb-4">
-              Lançamentos Exclusivos
+              Exclusive Launches
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Descubra as últimas novidades da nossa coleção com designs únicos e qualidade premium
+              Discover the latest additions to our collection with unique designs and premium quality
             </p>
           </div>
 
@@ -219,7 +219,7 @@ export default async function Home() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-md">
                   <Image 
                     src="/images/535951790_1318704906288192_8737859712710652925_n.jpg"
-                    alt="Camisola 3º Equipamento Sporting 25/26"
+                    alt="Sporting CP 3rd Kit 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     priority
@@ -230,10 +230,10 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-green-300 transition-colors">
-                      Camisola 3º Equipamento Sporting 25/26
+                      Sporting CP 3rd Kit 25/26
                     </h3>
                     <p className="text-green-200 text-sm mb-1.5">Sporting CP</p>
                     <span className="text-xl font-black text-white">17.99€</span>
@@ -246,7 +246,7 @@ export default async function Home() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-md">
                   <Image 
                     src="/images/546365886_1334743178017698_7136686953264947284_n.jpg"
-                    alt="Camisola Away Sporting 25/26"
+                    alt="Sporting CP Away Jersey 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     priority
@@ -257,10 +257,10 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-green-300 transition-colors">
-                      Camisola Away Sporting 25/26
+                      Sporting CP Away Jersey 25/26
                     </h3>
                     <p className="text-green-200 text-sm mb-1.5">Sporting CP</p>
                     <span className="text-xl font-black text-white">17.99€</span>
@@ -276,7 +276,7 @@ export default async function Home() {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
                   <Image 
                    src="/images/535951790_1318704906288192_8737859712710652925_n.webp"
-                    alt="Camisola Third Sporting 25/26"
+                    alt="Sporting CP Third Kit 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     priority
@@ -287,10 +287,10 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-green-300 transition-colors line-clamp-1">
-                      Camisola 3º Equipamento Sporting 25/26
+                      Sporting CP 3rd Kit 25/26
                     </h3>
                     <p className="text-green-200 text-xs mb-1">Sporting CP</p>
                     <span className="text-lg font-black text-white">17.99€</span>
@@ -303,7 +303,7 @@ export default async function Home() {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
                   <Image 
                    src="/images/546365886_1334743178017698_7136686953264947284_n.webp"
-                    alt="Camisola Away Sporting 25/26"
+                    alt="Sporting CP Away Jersey 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     priority
@@ -314,10 +314,10 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-green-300 transition-colors line-clamp-1">
-                      Camisola Away Sporting 25/26
+                      Sporting CP Away Jersey 25/26
                     </h3>
                     <p className="text-green-200 text-xs mb-1">Sporting CP</p>
                     <span className="text-lg font-black text-white">17.99€</span>
@@ -334,7 +334,7 @@ export default async function Home() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-md">
                   <Image 
                     src="/images/5b338259fa495d16e8ca7713be1eec58d0201338.webp"
-                    alt="Jogador Porto com Camisola Away 25/26"
+                    alt="FC Porto Away Jersey 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     priority
@@ -345,12 +345,12 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-blue-300 transition-colors">
-                      Camisola Porto 25/26
+                      FC Porto Jersey 25/26
                     </h3>
-                    <p className="text-blue-200 text-sm mb-1.5">FC Porto - Equipamento Alternativo</p>
+                    <p className="text-blue-200 text-sm mb-1.5">FC Porto - Away Kit</p>
                     <span className="text-xl font-black text-white">
                       17.99€
                     </span>
@@ -363,7 +363,7 @@ export default async function Home() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-md">
                   <Image 
                     src="/images/porto-25-26-.webp"
-                    alt="Jogador Porto com Camisola 25/26"
+                    alt="FC Porto Jersey 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -373,12 +373,12 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-blue-300 transition-colors">
-                      Camisola Porto 25/26
+                      FC Porto Jersey 25/26
                     </h3>
-                    <p className="text-blue-200 text-sm mb-1.5">FC Porto - Nova Temporada</p>
+                    <p className="text-blue-200 text-sm mb-1.5">FC Porto - New Season</p>
                     <span className="text-xl font-black text-white">
                       17.99€
                     </span>
@@ -394,7 +394,7 @@ export default async function Home() {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
                   <Image 
                    src="/images/5b338259fa495d16e8ca7713be1eec58d0201338.webp"
-                    alt="Jogador Porto com Camisola Away 25/26"
+                    alt="FC Porto Away Jersey 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     priority
@@ -405,10 +405,10 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-blue-300 transition-colors line-clamp-1">
-                      Camisola Porto 25/26
+                      FC Porto Jersey 25/26
                     </h3>
                     <p className="text-blue-200 text-xs mb-1">FC Porto</p>
                     <span className="text-lg font-black text-white">
@@ -423,7 +423,7 @@ export default async function Home() {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
                   <Image 
                    src="/images/porto-25-26-.webp"
-                    alt="Jogador Porto com Camisola 25/26"
+                    alt="FC Porto Jersey 25/26"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -433,10 +433,10 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-blue-300 transition-colors line-clamp-1">
-                      Camisola Porto 25/26
+                      FC Porto Jersey 25/26
                     </h3>
                     <p className="text-blue-200 text-xs mb-1">FC Porto</p>
                     <span className="text-lg font-black text-white">
@@ -451,11 +451,11 @@ export default async function Home() {
             {/* Desktop Grid */}
             <div className="hidden md:grid md:grid-cols-2 gap-6">
               {/* Jogador Benfica 1 */}
-              <Link href="https://www.fanzone12.pt/catalogo?categoria=selecoes&clube=portugal" className="group block">
+              <Link href="https://www.fanzone12.com/catalogo?categoria=selecoes&clube=portugal" className="group block">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-md">
                   <Image 
                     src="/images/572277611_18392022271132395_7836676579277369328_n.webp"
-                    alt="Camisola Seleção Portugal"
+                    alt="Portugal National Team Jersey"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -465,12 +465,12 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-red-500 to-red-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Disponível
+                      Available
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-red-300 transition-colors">
-                      Camisola Seleção Portugal
+                      Portugal National Team Jersey
                     </h3>
-                    <p className="text-red-200 text-sm mb-1.5">Seleção Nacional - Portugal</p>
+                    <p className="text-red-200 text-sm mb-1.5">National Team - Portugal</p>
                     <span className="text-xl font-black text-white">
                       17.99€
                     </span>
@@ -483,7 +483,7 @@ export default async function Home() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-md">
                   <Image 
                     src="/images/casaco_retro_slbenfica_adidas_originals_1.jpg"
-                    alt="Jogador Benfica com Casaco Retro"
+                    alt="SL Benfica Retro Jacket"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -493,14 +493,14 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-red-500 to-red-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Disponível
+                      Available
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-red-300 transition-colors">
-                      Coleção Retro Benfica
+                      Benfica Retro Collection
                     </h3>
-                    <p className="text-red-200 text-sm mb-1.5">SL Benfica - Coleção Retro</p>
+                    <p className="text-red-200 text-sm mb-1.5">SL Benfica - Retro Collection</p>
                     <span className="text-xl font-black text-white">
-                      desde 17.99€
+                      from 17.99€
                     </span>
                   </div>
                 </div>
@@ -510,11 +510,11 @@ export default async function Home() {
             {/* Mobile Grid - Showing 2 items */}
             <div className="md:hidden grid grid-cols-2 gap-4">
               {/* Jogador Benfica 1 */}
-              <Link href="https://www.fanzone12.pt/catalogo?categoria=selecoes&clube=portugal" className="group block">
+              <Link href="https://www.fanzone12.com/catalogo?categoria=selecoes&clube=portugal" className="group block">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
                   <Image 
                     src="/images/572277611_18392022271132395_7836676579277369328_n.webp"
-                    alt="Camisola Seleção Portugal"
+                    alt="Portugal National Team Jersey"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -524,12 +524,12 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-red-500 to-red-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Disponível
+                      Available
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-red-300 transition-colors line-clamp-1">
-                      Camisola Seleção Portugal
+                      Portugal National Team Jersey
                     </h3>
-                    <p className="text-red-200 text-xs mb-1">Seleção Nacional</p>
+                    <p className="text-red-200 text-xs mb-1">National Team</p>
                     <span className="text-lg font-black text-white">
                       17.99€
                     </span>
@@ -542,7 +542,7 @@ export default async function Home() {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
                   <Image 
                     src="/images/casaco_retro_slbenfica_adidas_originals_1.jpg"
-                    alt="Jogador Benfica com Casaco Retro"
+                    alt="SL Benfica Retro Jacket"
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -552,14 +552,14 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-red-500 to-red-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Disponível
+                      Available
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-red-300 transition-colors line-clamp-1">
-                      Coleção Retro Benfica
+                      Benfica Retro Collection
                     </h3>
                     <p className="text-red-200 text-xs mb-1">SL Benfica</p>
                     <span className="text-lg font-black text-white">
-                      desde 17.99€
+                      from 17.99€
                     </span>
                   </div>
                 </div>
@@ -583,14 +583,14 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-orange-300 transition-colors line-clamp-1">
                       Sneakers
                     </h3>
-                    <p className="text-orange-200 text-xs mb-1">Coleção de ténis</p>
+                    <p className="text-orange-200 text-xs mb-1">Sneakers collection</p>
                     <span className="text-lg font-black text-white">
-                      Ver coleção
+                      View collection
                     </span>
                   </div>
                 </div>
@@ -611,12 +611,12 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
                     <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2 py-1 rounded-full mb-2 text-xs">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-sm mb-1 group-hover:text-blue-300 transition-colors line-clamp-1">
-                      Capas de Telemóvel
+                      Phone Cases
                     </h3>
-                    <p className="text-blue-200 text-xs mb-1">Personalização grátis</p>
+                    <p className="text-blue-200 text-xs mb-1">Free customization</p>
                     <span className="text-lg font-black text-white">
                       11.99€
                     </span>
@@ -642,13 +642,13 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-orange-300 transition-colors">
                       Sneakers
                     </h3>
-                    <p className="text-orange-200 text-sm mb-1.5">Coleção de ténis</p>
-                    <span className="text-xl font-black text-white">Ver coleção</span>
+                    <p className="text-orange-200 text-sm mb-1.5">Sneakers collection</p>
+                    <span className="text-xl font-black text-white">View collection</span>
                   </div>
                 </div>
               </Link>
@@ -668,12 +668,12 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                     <Badge className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg px-2.5 py-1.5 rounded-full mb-2.5">
-                      Novo
+                      New
                     </Badge>
                     <h3 className="font-bold text-lg mb-1.5 group-hover:text-blue-300 transition-colors">
-                      Capas de Telemóvel
+                      Phone Cases
                     </h3>
-                    <p className="text-blue-200 text-sm mb-1.5">Personalização grátis</p>
+                    <p className="text-blue-200 text-sm mb-1.5">Free customization</p>
                     <span className="text-xl font-black text-white">11.99€</span>
                   </div>
                 </div>
@@ -689,13 +689,13 @@ export default async function Home() {
           <div className="text-center mb-8 animate-slide-up">
             <Badge className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Sparkles className="w-4 h-4 mr-2" />
-              Novidades
+              Latest
             </Badge>
             <h2 className="text-responsive-lg text-foreground mb-4">
-              Últimas Novidades
+              Latest Arrivals
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              As camisolas mais recentes que acabaram de chegar à nossa coleção
+              The most recent jerseys that just arrived in our collection
             </p>
           </div>
 
@@ -709,7 +709,7 @@ export default async function Home() {
                      name: "Camisola Seleção Portugal Principal 2026",
                      image: "/images/2025092114284096_20_281_29.webp",
                      price: 17.99,
-                     badge: "Novo",
+                     badge: "New",
                      href: "/produto/portugal-principal-2026"
                    },
                    {
@@ -717,7 +717,7 @@ export default async function Home() {
                      name: "Camisola Portugal Edição Especial Pantera Negra",
                      image: "/images/2025092114282251_20_281_29.webp",
                      price: 17.99,
-                     badge: "Novo",
+                     badge: "New",
                      href: "/produto/portugal-pantera-negra"
                    },
                   {
@@ -725,7 +725,7 @@ export default async function Home() {
                     name: "Camisola Benfica guarda-redes rosa 2025/26",
                     image: "/images/0371ad58.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/benfica-edicao-especial-25-26"
                   },
                   {
@@ -733,7 +733,7 @@ export default async function Home() {
                     name: "Camisola Sporting C.P. Stromp 25/26",
                     image: "/images/2025102310182442.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-stromp-25-26"
                   },
                   {
@@ -741,7 +741,7 @@ export default async function Home() {
                     name: "Camisola Sporting CP Edição Especial 2025/26",
                     image: "/images/a3d81a71.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-special-25-26"
                   },
                   {
@@ -749,7 +749,7 @@ export default async function Home() {
                     name: "Camisola Sporting C.P. Outubro Rosa 2025",
                     image: "/images/2025110416210851.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-outubro-rosa-2025"
                   },
                   {
@@ -757,7 +757,7 @@ export default async function Home() {
                     name: "Camisola Sporting CP Special Edition 2025/26",
                     image: "/images/16a8dee8.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-special-25-26"
                   },
                   {
@@ -765,7 +765,7 @@ export default async function Home() {
                     name: "Camisola FC Porto Edição Especial 2025/26",
                     image: "/images/82e839c6.jpg",
                     price: 23.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/t-shirt-treino-plantel-fc-porto-2526"
                   },
                   {
@@ -773,7 +773,7 @@ export default async function Home() {
                     name: "Camisola Vitoria SC Principal 2025/26",
                     image: "/images/01_25_26 Guimarães Home S-XXL _ Yupoo.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/vitoria-sc-principal-25-26"
                   },
                   {
@@ -781,7 +781,7 @@ export default async function Home() {
                     name: "Camisola Vitoria SC Alternativa 2025/26",
                     image: "/images/b82c2c0a.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/vitoria-sc-alternativa-25-26"
                   },
                   {
@@ -789,7 +789,7 @@ export default async function Home() {
                     name: "Camisola Flamengo 3º Equipamento 2025/26",
                     image: "/images/82c0ccdf.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/flamengo-third-25-26"
                   },
                   {
@@ -797,7 +797,7 @@ export default async function Home() {
                     name: "Camisola Roma 3º Equipamento Away 2025/26",
                     image: "/images/01_25_26 Roma third away S-4XL _ Yupoo.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/roma-third-away-25-26"
                   }
                 ].map((product, index) => (
@@ -856,7 +856,7 @@ export default async function Home() {
                      name: "Camisola Seleção Portugal Principal 2026",
                      image: "/images/2025092114284096_20_281_29.webp",
                      price: 17.99,
-                     badge: "Novo",
+                     badge: "New",
                      href: "/produto/portugal-principal-2026"
                    },
                    {
@@ -864,7 +864,7 @@ export default async function Home() {
                      name: "Camisola Portugal Edição Especial Pantera Negra",
                      image: "/images/2025092114282251_20_281_29.webp",
                      price: 17.99,
-                     badge: "Novo",
+                     badge: "New",
                      href: "/produto/portugal-pantera-negra"
                    },
                   {
@@ -872,7 +872,7 @@ export default async function Home() {
                     name: "Camisola Benfica guarda-redes rosa 2025/26",
                     image: "/images/0371ad58.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/benfica-edicao-especial-25-26"
                   },
                   {
@@ -880,7 +880,7 @@ export default async function Home() {
                     name: "Camisola Sporting C.P. Stromp 25/26",
                     image: "/images/2025102310182442.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-stromp-25-26"
                   },
                   {
@@ -888,7 +888,7 @@ export default async function Home() {
                     name: "Camisola Sporting CP Edição Especial 2025/26",
                     image: "/images/a3d81a71.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-edicao-especial-25-26"
                   },
                   {
@@ -896,7 +896,7 @@ export default async function Home() {
                     name: "Camisola Sporting C.P. Outubro Rosa 2025",
                     image: "/images/2025110416210851.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-outubro-rosa-2025"
                   },
                   {
@@ -904,7 +904,7 @@ export default async function Home() {
                     name: "Camisola Sporting CP Special Edition 2025/26",
                     image: "/images/16a8dee8.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/sporting-special-25-26"
                   },
                   {
@@ -912,7 +912,7 @@ export default async function Home() {
                     name: "Camisola FC Porto Edição Especial 2025/26",
                     image: "/images/82e839c6.jpg",
                     price: 23.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/t-shirt-treino-plantel-fc-porto-2526"
                   },
                   {
@@ -920,7 +920,7 @@ export default async function Home() {
                     name: "Camisola Vitoria SC Principal 2025/26",
                     image: "/images/01_25_26 Guimarães Home S-XXL _ Yupoo.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/vitoria-sc-principal-25-26"
                   },
                   {
@@ -928,7 +928,7 @@ export default async function Home() {
                     name: "Camisola Vitoria SC Alternativa 2025/26",
                     image: "/images/b82c2c0a.jpg",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/vitoria-sc-alternativa-25-26"
                   },
                   {
@@ -936,7 +936,7 @@ export default async function Home() {
                     name: "Camisola Flamengo 3º Equipamento 2025/26",
                     image: "/images/82c0ccdf.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/flamengo-third-25-26"
                   },
                   {
@@ -944,7 +944,7 @@ export default async function Home() {
                     name: "Camisola Roma 3º Equipamento Away 2025/26",
                     image: "/images/01_25_26 Roma third away S-4XL _ Yupoo.webp",
                     price: 17.99,
-                    badge: "Novo",
+                    badge: "New",
                     href: "/produto/roma-third-away-25-26"
                   }
                 ].map((product, index) => (
@@ -998,7 +998,7 @@ export default async function Home() {
             <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 shadow-lg px-8 py-4 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
               <Link href="/catalogo" className="flex items-center gap-2">
                 <Sparkles className="w-5 h-5" />
-                Ver Todas as Novidades
+                View All Latest Arrivals
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -1117,10 +1117,10 @@ export default async function Home() {
                   },
                   {
                     id: "psg-25-26-jogador-home",
-                    name: "Camisola PSG Jogador 2025/26 Principal",
+                    name: "PSG Player Jersey 2025/26 Home",
                     image: "/images/CAMISOLAPARISI2526homem_VERSAOJOGADOR_1_700x.webp",
                     price: 17.99,
-                    badge: "Jogador",
+                    badge: "Player",
                     href: "/produto/psg-25-26-jogador-home"
                   },
                   {
@@ -1296,10 +1296,10 @@ export default async function Home() {
                   },
                   {
                     id: "psg-25-26-jogador-home",
-                    name: "Camisola PSG Jogador 2025/26 Principal",
+                    name: "PSG Player Jersey 2025/26 Home",
                     image: "/images/CAMISOLAPARISI2526homem_VERSAOJOGADOR_1_700x.webp",
                     price: 17.99,
-                    badge: "Jogador",
+                    badge: "Player",
                     href: "/produto/psg-25-26-jogador-home"
                   },
                   {
@@ -1384,7 +1384,7 @@ export default async function Home() {
             >
               <Link href="/catalogo" className="flex items-center gap-2">
                 <Star className="w-5 h-5" />
-                Ver Todas as Mais Vendidas
+                View All Best Sellers
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -1400,7 +1400,7 @@ export default async function Home() {
               Top Clubs
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Encontre as camisolas dos maiores clubes europeus com qualidade premium e designs autênticos
+              Find jerseys from the biggest European clubs with premium quality and authentic designs
             </p>
           </div>
 
@@ -1462,7 +1462,7 @@ export default async function Home() {
           <div className="flex justify-center mt-8">
             <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
               <Link href="/catalogo" className="flex items-center gap-2">
-                Ver todos os clubes
+                View all clubs
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -1476,24 +1476,24 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 animate-slide-up">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Top Ligas
+              Top Leagues
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore as principais ligas europeias e encontre a camisola perfeita do seu clube favorito
+              Explore the main European leagues and find the perfect jersey from your favorite club
             </p>
           </div>
 
           {/* Desktop Grid */}
           <div className="hidden md:grid md:grid-cols-4 lg:grid-cols-4 gap-6">
             {[
-              { name: "Liga Portuguesa", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
+              { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
               { name: "Premier League", logo: "Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent.webp", href: "/catalogo?liga=premier-league" },
               { name: "La Liga", logo: "LaLiga-Logo-PNG-Official-Symbol-for-Football-League-Transparent.webp", href: "/catalogo?liga=la-liga" },
               { name: "Serie A", logo: "SerieA_logo.webp", href: "/catalogo?liga=serie-a" },
               { name: "Bundesliga", logo: "Bundesliga_logo_(2017).webp", href: "/catalogo?liga=bundesliga" },
               { name: "Ligue 1", logo: "Ligue1_Uber_Eats_logo.webp", href: "/catalogo?liga=ligue-1" },
-              { name: "Outras Ligas", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
-              { name: "Seleções", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
+              { name: "Other Leagues", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
+              { name: "National Teams", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
             ].map((liga, index) => (
               <ClientAnimationWrapper
                 key={liga.name}
@@ -1526,14 +1526,14 @@ export default async function Home() {
           {/* Mobile Grid - 2 colunas */}
           <div className="md:hidden grid grid-cols-2 gap-4">
             {[
-              { name: "Liga Portuguesa", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
+              { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
               { name: "Premier League", logo: "Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent.webp", href: "/catalogo?liga=premier-league" },
               { name: "La Liga", logo: "LaLiga-Logo-PNG-Official-Symbol-for-Football-League-Transparent.webp", href: "/catalogo?liga=la-liga" },
               { name: "Serie A", logo: "SerieA_logo.webp", href: "/catalogo?liga=serie-a" },
               { name: "Bundesliga", logo: "Bundesliga_logo_(2017).webp", href: "/catalogo?liga=bundesliga" },
               { name: "Ligue 1", logo: "Ligue1_Uber_Eats_logo.webp", href: "/catalogo?liga=ligue-1" },
-              { name: "Outras Ligas", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
-              { name: "Seleções", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
+              { name: "Other Leagues", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
+              { name: "National Teams", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
             ].map((liga, index) => (
               <ClientAnimationWrapper
                 key={liga.name}
@@ -1570,10 +1570,10 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 animate-slide-up">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Coleção Sneakers
+              Sneakers Collection
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Descobre as últimas novidades em sneakers das melhores marcas para completar o teu estilo.
+              Discover the latest sneakers from the best brands to complete your style.
             </p>
           </div>
 
@@ -1609,7 +1609,7 @@ export default async function Home() {
                     </div>
                   </div>
                   <div className="absolute bottom-3 right-6">
-                    <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explorar →</span>
+                    <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explore →</span>
                   </div>
                 </div>
               </div>
@@ -1645,7 +1645,7 @@ export default async function Home() {
                     </div>
                   </div>
                   <div className="absolute bottom-3 right-6">
-                    <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explorar →</span>
+                    <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explore →</span>
                   </div>
                 </div>
               </div>
@@ -1681,7 +1681,7 @@ export default async function Home() {
                     </div>
                   </div>
                   <div className="absolute bottom-3 right-6">
-                    <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explorar →</span>
+                    <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explore →</span>
                   </div>
                 </div>
               </div>
@@ -1721,7 +1721,7 @@ export default async function Home() {
                         </div>
                       </div>
                       <div className="absolute bottom-2 right-4">
-                        <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explorar →</span>
+                        <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explore →</span>
                       </div>
                     </div>
                   </Link>
@@ -1755,7 +1755,7 @@ export default async function Home() {
                         </div>
                       </div>
                       <div className="absolute bottom-2 right-4">
-                        <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explorar →</span>
+                        <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explore →</span>
                       </div>
                     </div>
                   </Link>
@@ -1789,7 +1789,7 @@ export default async function Home() {
                         </div>
                       </div>
                       <div className="absolute bottom-2 right-4">
-                        <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explorar →</span>
+                        <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explore →</span>
                       </div>
                     </div>
                   </Link>
@@ -1804,7 +1804,7 @@ export default async function Home() {
           <div className="flex justify-center mt-8">
             <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
               <Link href="/sneakers" className="flex items-center gap-2">
-                Ver todos os sneakers
+                View all sneakers
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -1820,7 +1820,7 @@ export default async function Home() {
               🏆 Best Sellers
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Os sneakers mais vendidos e amados pelos nossos clientes
+              The best-selling and most loved sneakers by our customers
             </p>
           </div>
 
@@ -1889,10 +1889,10 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 animate-slide-up">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Camisolas das Principais Ligas
+              Jerseys from Top Leagues
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Descubra as melhores camisolas das principais ligas europeias com qualidade premium
+              Discover the best jerseys from the main European leagues with premium quality
             </p>
           </div>
 
@@ -2002,7 +2002,7 @@ export default async function Home() {
             <div className="flex justify-center mt-6">
               <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg px-6 py-3 rounded-full transition-all duration-300 hover:shadow-xl">
                 <Link href="/catalogo?liga=liga-portuguesa" className="flex items-center gap-2">
-                  Ver todas as camisolas
+                  View all jerseys
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
@@ -2117,7 +2117,7 @@ export default async function Home() {
             <div className="flex justify-center mt-6">
               <Button asChild className="modern-button bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white border-0 shadow-lg px-6 py-3 text-sm rounded-full transition-all duration-300 hover:shadow-xl">
                 <Link href="/catalogo?liga=premier-league" className="flex items-center gap-2">
-                  Ver todas as camisolas
+                  View all jerseys
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
@@ -2232,7 +2232,7 @@ export default async function Home() {
             <div className="flex justify-center mt-6">
               <Button asChild className="modern-button bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white border-0 shadow-lg px-6 py-3 text-sm rounded-full transition-all duration-300 hover:shadow-xl">
                 <Link href="/catalogo?liga=la-liga" className="flex items-center gap-2">
-                  Ver todas as camisolas
+                  View all jerseys
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
@@ -2248,13 +2248,13 @@ export default async function Home() {
           <div className="text-center mb-8 animate-slide-up">
             <Badge className="bg-gradient-to-r from-green-600 to-emerald-800 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Baby className="w-4 h-4 mr-2" />
-              Kits de Criança
+              Kids Kits
             </Badge>
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Equipamentos para os Pequenos Adeptos
+              Equipment for Young Fans
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Kits completos especialmente desenhados para crianças, com tamanhos e conforto adaptados aos mais novos
+              Complete kits specially designed for children, with sizes and comfort adapted for the youngest
             </p>
           </div>
 
@@ -2427,7 +2427,7 @@ export default async function Home() {
             <Button asChild size="lg" className="modern-button bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 rounded-full">
               <Link href="/catalogo?categoria=crianca" className="flex items-center gap-3">
                 <Baby className="h-5 w-5" />
-                Ver Todos os Kits de Criança
+                View All Kids Kits
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
@@ -2441,13 +2441,13 @@ export default async function Home() {
           <div className="text-center mb-8 animate-slide-up">
             <Badge className="bg-gradient-to-r from-pink-600 to-rose-800 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Baby className="w-4 h-4 mr-2" />
-              Body Bebé
+              Baby Body
             </Badge>
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Body para os Mais Pequenos
+              Body for the Little Ones
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Body confortáveis e suaves especialmente desenhados para bebés, com tamanhos de 0 a 6 meses e 6 a 12 meses
+              Comfortable and soft body suits specially designed for babies, with sizes from 0 to 6 months and 6 to 12 months
             </p>
           </div>
 
@@ -2592,7 +2592,7 @@ export default async function Home() {
             <Button asChild size="lg" className="modern-button bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 rounded-full">
               <Link href="/catalogo?categoria=body" className="flex items-center gap-3">
                 <Baby className="h-5 w-5" />
-                Ver Todos os Body Bebé
+                View All Baby Body
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
@@ -2841,7 +2841,7 @@ export default async function Home() {
             <Button asChild size="lg" className="modern-button bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 rounded-full">
               <Link href="/catalogo?categoria=retro" className="flex items-center gap-3">
                 <Clock className="h-5 w-5" />
-                Ver Todas as Camisolas Retro
+                View All Retro Jerseys
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
@@ -2857,10 +2857,10 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 animate-slide-up">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Por que escolher a fanzone12.pt?
+              Why choose fanzone12.com?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Oferecemos a melhor experiência de compra com produtos de qualidade e serviço excepcional
+              We offer the best shopping experience with quality products and exceptional service
             </p>
           </div>
 
@@ -2875,10 +2875,10 @@ export default async function Home() {
                   <Truck className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
-                  Entrega Rápida
+                  Fast Delivery
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Portes de apenas 4€ e grátis para 3 ou mais camisolas. Entrega rápida em toda a Europa.
+                  Shipping from just €4 and free for 3 or more jerseys. Fast delivery across Europe.
                 </p>
               </div>
             </ClientAnimationWrapper>
@@ -2892,10 +2892,10 @@ export default async function Home() {
                   <CreditCard className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors">
-                  Pagamento Seguro
+                  Secure Payment
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Múltiplas opções de pagamento seguro com proteção total dos seus dados.
+                  Multiple secure payment options with complete protection of your data.
                 </p>
               </div>
             </ClientAnimationWrapper>
@@ -2909,10 +2909,10 @@ export default async function Home() {
                   <Star className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-yellow-600 transition-colors">
-                  Qualidade Garantida
+                  Guaranteed Quality
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Produtos oficiais com garantia de autenticidade e qualidade premium.
+                  Official products with authenticity guarantee and premium quality.
                 </p>
               </div>
             </ClientAnimationWrapper>
@@ -2932,10 +2932,10 @@ export default async function Home() {
                         <Truck className="h-8 w-8 text-white" />
                       </div>
                       <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
-                        Entrega Rápida
+                        Fast Delivery
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Portes de apenas 4€ e grátis para 3 ou mais camisolas. Entrega rápida em toda a Europa.
+                        Shipping from just €4 and free for 3 or more jerseys. Fast delivery across Europe.
                       </p>
                     </div>
                   </ClientAnimationWrapper>
@@ -3052,7 +3052,7 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-blue-600 bg-white border border-blue-200 rounded-full hover:bg-blue-50 transition-all duration-300"
               >
                 <Search className="w-4 h-4 sm:w-5 sm:h-5" />
-                Ver catálogo completo
+                View full catalog
               </a>
             </div>
           </div>

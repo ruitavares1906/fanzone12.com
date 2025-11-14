@@ -46,12 +46,12 @@ export default async function CatalogoPage({
             <div className="text-center relative">
               <div className="flex items-center justify-center gap-2 text-sm sm:text-lg font-bold mb-2">
                 <span className="md:animate-bounce motion-reduce:animate-none">🎁</span>
-                <span className="text-yellow-300">PROMOÇÃO ATIVA:</span>
-                <span>Leva 4 Camisolas e Paga Apenas 3!</span>
+                <span className="text-yellow-300">ACTIVE PROMOTION:</span>
+                <span>Buy 4 Jerseys and Pay for Only 3!</span>
                 <span className="md:animate-bounce motion-reduce:animate-none">🎁</span>
               </div>
               <div className="text-xs sm:text-sm text-purple-200">
-                Desconto automático aplicado no carrinho • Válido em toda a loja • Escolha as suas favoritas!
+                Automatic discount applied at checkout • Valid storewide • Choose your favorites!
               </div>
             </div>
           </div>
@@ -63,18 +63,18 @@ export default async function CatalogoPage({
             <div className="flex items-center mb-4">
               <Search className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600 mr-3" />
               <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gray-800">
-                {pesquisa ? `Resultados para "${pesquisa}"` : "Catálogo de Produtos"}
+                {pesquisa ? `Results for "${pesquisa}"` : "Product Catalog"}
               </h1>
             </div>
             {/* Nota superior para catálogo completo na Drive */}
             <div className="rounded-xl bg-blue-50 border border-blue-100 p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
               <p className="text-blue-800 text-sm sm:text-base font-medium">
-                Não encontrou a camisola que procura? Veja o nosso catálogo completo na Drive.
+                Can't find the jersey you're looking for? View our full catalog on Drive.
               </p>
               <Button asChild size="sm" variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
                 <Link href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <Search className="w-4 h-4" />
-                  Ver catálogo completo
+                  View full catalog
                 </Link>
               </Button>
             </div>
@@ -84,13 +84,13 @@ export default async function CatalogoPage({
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-5 h-5 text-blue-600" />
                   <p className="text-gray-600 font-medium">
-                    {total} produto{total !== 1 ? 's' : ''} encontrado{total !== 1 ? 's' : ''}
+                    {total} product{total !== 1 ? 's' : ''} found
                   </p>
                 </div>
                 <Button asChild variant="outline" size="sm" className="modern-button border-blue-200 text-blue-600 hover:bg-blue-50 rounded-full">
                   <Link href="/catalogo" className="flex items-center gap-2">
                     <X className="h-4 w-4" />
-                    Limpar pesquisa
+                    Clear search
                   </Link>
                 </Button>
               </div>
@@ -105,7 +105,7 @@ export default async function CatalogoPage({
           <div className="glass-effect rounded-2xl p-4 shadow-modern">
             <div className="mb-4">
               <h3 className="text-lg font-semibold text-gray-800 text-center mb-3">Top Clubs</h3>
-              <p className="text-sm text-gray-600 text-center">Navega rapidamente pelos clubes mais populares</p>
+              <p className="text-sm text-gray-600 text-center">Quickly browse the most popular clubs</p>
             </div>
             <Carousel className="w-full">
               <CarouselContent>
@@ -175,7 +175,7 @@ export default async function CatalogoPage({
             <div className="glass-effect rounded-2xl p-6 shadow-modern sticky top-8">
               <div className="flex items-center gap-2 mb-6">
                 <Filter className="w-6 h-6 text-blue-600" />
-                <h2 className="text-xl font-bold text-gray-800">Filtros</h2>
+                <h2 className="text-xl font-bold text-gray-800">Filters</h2>
               </div>
               <ProductsFilter />
             </div>
@@ -189,7 +189,7 @@ export default async function CatalogoPage({
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-5 h-5 text-blue-600" />
                   <p className="text-gray-600 font-medium">
-                    {total} produtos encontrados
+                    {total} products found
                   </p>
                 </div>
                 <ProductsSort />
@@ -219,31 +219,31 @@ export default async function CatalogoPage({
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4">
                       {pesquisa 
-                        ? `Nenhum produto encontrado para "${pesquisa}"`
-                        : "Nenhum produto encontrado com os filtros selecionados."
+                        ? `No products found for "${pesquisa}"`
+                        : "No products found with the selected filters."
                       }
                     </h3>
                     {pesquisa && (
                       <div className="space-y-4">
-                        <p className="text-gray-600 font-medium">Sugestões:</p>
+                        <p className="text-gray-600 font-medium">Suggestions:</p>
                         <ul className="text-sm text-gray-600 space-y-2 bg-blue-50 rounded-lg p-4">
                           <li className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                            Verifique a ortografia
+                            Check spelling
                           </li>
                           <li className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                            Use termos mais gerais
+                            Use more general terms
                           </li>
                           <li className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                            Tente pesquisar por clube, liga ou temporada
+                            Try searching by club, league or season
                           </li>
                         </ul>
                         <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8 py-3">
                           <Link href="/catalogo" className="flex items-center gap-2">
                             <Sparkles className="w-4 h-4" />
-                            Ver todos os produtos
+                            View all products
                           </Link>
                         </Button>
                       </div>
@@ -273,11 +273,11 @@ export default async function CatalogoPage({
               <ContactMessage />
               {/* Nota inferior para catálogo completo na Drive */}
               <div className="glass-effect rounded-2xl p-4 sm:p-6 text-center">
-                <p className="text-gray-700 mb-3">Não encontrou a camisola nesta categoria?</p>
+                <p className="text-gray-700 mb-3">Can't find the jersey in this category?</p>
                 <Button asChild variant="outline" className="modern-button border-blue-200 text-blue-600 hover:bg-blue-50 rounded-full px-6 py-3">
                   <Link href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
                     <Search className="w-5 h-5" />
-                    Ver catálogo completo na Drive
+                    View full catalog on Drive
                   </Link>
                 </Button>
               </div>

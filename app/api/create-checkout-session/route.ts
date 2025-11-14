@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 function ensureValidUrl(url: string | undefined): string {
   // Se a URL for undefined ou vazia, usar um domínio padrão
   if (!url || url.trim() === "") {
-    return "https://www.fanzone12.pt"
+    return "https://www.fanzone12.com"
   }
 
   // Se a URL já começar com http:// ou https://, está correta
@@ -54,10 +54,10 @@ function computePromotionInfo(cartItems: CartItem[]) {
 
 export async function POST(request: Request) {
   try {
-    const { cartItems, customerEmail, discountCode, paymentMethod = 'online' } = await request.json()
+    const { cartItems, customerEmail, discountCode } = await request.json()
 
     if (!cartItems || cartItems.length === 0) {
-      return NextResponse.json({ error: "Carrinho vazio" }, { status: 400 })
+      return NextResponse.json({ error: "Cart is empty" }, { status: 400 })
     }
 
     // Obter a URL base do site e garantir que seja válida
@@ -340,18 +340,6 @@ export async function POST(request: Request) {
     console.log("Envio gratuito:", shippingAmount === 0)
     console.log("Valor do envio:", shippingAmount / 100, "€")
     
-    // Ajustar valor baseado no método de pagamento
-    let finalTotal = itemsSubtotal - (totalDiscountCents / 100) + (shippingAmount / 100)
-    
-    if (paymentMethod === 'cash_on_delivery') {
-      // Para pagamento à cobrança, sempre cobrar apenas €8
-      finalTotal = 8.00
-      console.log("=== PAGAMENTO À COBRANÇA ===")
-      console.log("Valor original:", itemsSubtotal - (totalDiscountCents / 100) + (shippingAmount / 100))
-      console.log("Valor ajustado para €8:", finalTotal)
-    }
-    
-
     // Construir URLs absolutas para sucesso e cancelamento
     const successUrl = `${siteUrl}/sucesso?session_id={CHECKOUT_SESSION_ID}`
     const cancelUrl = `${siteUrl}/carrinho`
@@ -359,75 +347,48 @@ export async function POST(request: Request) {
     console.log("URL de sucesso:", successUrl)
     console.log("URL de cancelamento:", cancelUrl)
 
-    // Preparar line items baseado no método de pagamento
-    let finalLineItems = lineItems
-    let finalShippingOptions: any[] = []
-    
-    if (paymentMethod === 'cash_on_delivery') {
-      // Para pagamento à cobrança, mostrar produtos com preço €0 + taxa de €8
-      const productsWithZeroPrice = lineItems.map((item: Stripe.Checkout.SessionCreateParams.LineItem) => ({
-        ...item,
-        price_data: {
-          ...item.price_data,
-          unit_amount: 0, // Produtos com preço €0
-        }
-      }))
-      
-      // Adicionar taxa de €8 como item separado
-      const taxItem = {
-        price_data: {
-          currency: "eur",
-          product_data: {
-            name: "Taxa antecipada - Pagamento à Cobrança",
-            description: "Taxa de €8 para garantir a encomenda",
+    // Preparar opções de envio internacionais
+    const finalShippingOptions: Stripe.Checkout.SessionCreateParams.ShippingOption[] = [
+      {
+        shipping_rate_data: {
+          type: 'fixed_amount',
+          fixed_amount: {
+            amount: shippingAmount,
+            currency: 'eur',
           },
-          unit_amount: 800, // €8 em centavos
-        },
-        quantity: 1,
-      }
-      
-      // Incluir produtos (€0) + taxa (€8)
-      finalLineItems = [...productsWithZeroPrice, taxItem]
-      
-      // Não incluir opções de envio para pagamento à cobrança
-      finalShippingOptions = []
-    } else {
-      // Para pagamento online, incluir opções de envio normais
-      finalShippingOptions = [
-        {
-          shipping_rate_data: {
-            type: 'fixed_amount',
-            fixed_amount: {
-              amount: shippingAmount,
-              currency: 'eur',
+          display_name: (totalItems >= 3 || subtotal >= 68) ? 'Standard Shipping (Free)' : 'Standard Shipping',
+          delivery_estimate: {
+            minimum: {
+              unit: 'business_day' as const,
+              value: 7,
             },
-            display_name: (totalItems >= 3 || subtotal >= 68) ? 'Envio CTT (Grátis)' : 'Envio CTT',
-            delivery_estimate: {
-              minimum: {
-                unit: 'business_day',
-                value: 7,
-              },
-              maximum: {
-                unit: 'business_day',
-                value: 12,
-              },
+            maximum: {
+              unit: 'business_day' as const,
+              value: 12,
             },
           },
         },
-      ]
-    }
+      },
+    ]
+
+    // Lista completa de países UE/EEE + UK
+    const allowedCountries: Stripe.Checkout.SessionCreateParams.ShippingAddressCollection.AllowedCountry[] = [
+      'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 
+      'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 
+      'SE', 'IS', 'LI', 'NO', 'CH', 'GB'
+    ]
 
     // Preparar opções da sessão
     const sessionOptions: Stripe.Checkout.SessionCreateParams = {
-      line_items: finalLineItems,
+      line_items: lineItems,
       mode: 'payment',
       success_url: successUrl,
       cancel_url: cancelUrl,
       shipping_address_collection: {
-        allowed_countries: ['PT', 'ES', 'FR', 'LU', 'IT', 'DE', 'CH', 'NL', 'BE'],
+        allowed_countries: allowedCountries,
       },
-      shipping_options: finalShippingOptions,
-      locale: 'pt',
+      shipping_options: finalShippingOptions as Stripe.Checkout.SessionCreateParams.ShippingOption[],
+      locale: 'en',
       billing_address_collection: 'required',
       phone_number_collection: {
         enabled: true,
@@ -437,7 +398,7 @@ export async function POST(request: Request) {
           key: 'shipping_notes',
           label: {
             type: 'custom',
-            custom: 'Notas para entrega (opcional)',
+            custom: 'Delivery notes (optional)',
           },
           type: 'text',
           optional: true,
@@ -468,7 +429,7 @@ export async function POST(request: Request) {
     const truncatedCartItems = truncateString(cartItemsJson, 500)
     
      const sessionMetadata: Record<string, string> = {
-       payment_method: paymentMethod,
+       payment_method: 'online',
        customer_email: customerEmail,
        cart_items: truncatedCartItems,
        original_total: (itemsSubtotal - (totalDiscountCents / 100) + (shippingAmount / 100)).toString()
@@ -477,8 +438,8 @@ export async function POST(request: Request) {
        sessionMetadata.discount_code = String(validPartnerCode)
      }
     
-    console.log("=== METADADOS DA SESSÃO ===")
-    console.log("Payment method:", paymentMethod)
+    console.log("=== SESSION METADATA ===")
+    console.log("Payment method: online")
     console.log("Customer email:", customerEmail)
     console.log("Valid partner code:", validPartnerCode)
     console.log("Original total:", sessionMetadata.original_total)
@@ -498,12 +459,12 @@ export async function POST(request: Request) {
 
     // Verificar se a URL de checkout é válida
     if (!session.url) {
-      throw new Error("O Stripe não retornou uma URL de checkout válida")
+      throw new Error("Stripe did not return a valid checkout URL")
     }
 
     return NextResponse.json({ sessionId: session.id, url: session.url })
   } catch (error: any) {
-    console.error("Erro ao criar sessão do Stripe:", error)
-    return NextResponse.json({ error: error.message || "Erro ao processar o pagamento" }, { status: 500 })
+    console.error("Error creating Stripe session:", error)
+    return NextResponse.json({ error: error.message || "Error processing payment" }, { status: 500 })
   }
 }

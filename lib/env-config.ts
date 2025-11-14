@@ -13,7 +13,7 @@ export function getSiteUrl(): string {
     }
 
     // Em produção, usar um domínio padrão
-    return "https://www.fanzone12.pt"
+    return "https://www.fanzone12.com"
   }
 
   return envUrl

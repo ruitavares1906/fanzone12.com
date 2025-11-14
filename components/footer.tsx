@@ -21,7 +21,7 @@ export function Footer() {
             <div className="flex items-center mb-6">
               <Image 
                 src="/images/506271e6-0123-4529-8c72-bbc5679a47bd.webp" 
-                alt="fanzone12.pt" 
+                alt="fanzone12.com" 
                 width={120} 
                 height={45} 
                 className="mr-3 w-20 h-auto sm:w-[120px]" 
@@ -29,7 +29,7 @@ export function Footer() {
               />
             </div>
             <p className="text-gray-800 mb-6 leading-relaxed">
-              Aqui cada camisola conta a tua história. Personalização única, qualidade garantida e entregas rápidas em toda a Europa.
+              Every jersey tells your story. Unique customization, guaranteed quality and fast delivery across Europe.
             </p>
             <div className="flex flex-col space-y-4">
               <div className="flex space-x-4">
@@ -59,7 +59,7 @@ export function Footer() {
                   <Image src="/images/tik-tok.webp" alt="TikTok Feedbacks" width={20} height={20} className="h-5 w-5" />
                   <span className="text-sm font-semibold">@fanzone12.pt_</span>
                 </Link>
-                <p className="text-sm text-gray-700 font-medium ml-7">Feedbacks dos nossos clientes</p>
+                <p className="text-sm text-gray-700 font-medium ml-7">Customer feedback</p>
               </div>
             </div>
           </div>
@@ -68,17 +68,17 @@ export function Footer() {
           <div className="glass-effect rounded-2xl p-6 shadow-modern">
             <h3 className="font-bold text-lg mb-6 text-yellow-400 flex items-center gap-2">
               <Sparkles className="w-5 h-5" />
-              Links Rápidos
+              Quick Links
             </h3>
             <ul className="space-y-3">
               {[
-                { name: "Início", href: "/" },
-                { name: "Catálogo", href: "/catalogo" },
-                { name: "Clubes", href: "/catalogo?categoria=clubes" },
-                { name: "Seleções", href: "/catalogo?categoria=selecoes" },
-                { name: "Seja Parceiro", href: "/info-parceiros" },
-                { name: "Sobre Nós", href: "/sobre" },
-                { name: "Contacto", href: "/contacto" },
+                { name: "Home", href: "/" },
+                { name: "Catalog", href: "/catalogo" },
+                { name: "Clubs", href: "/catalogo?categoria=clubes" },
+                { name: "National Teams", href: "/catalogo?categoria=selecoes" },
+                { name: "Become a Partner", href: "/info-parceiros" },
+                { name: "About Us", href: "/sobre" },
+                { name: "Contact", href: "/contacto" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link 
@@ -96,15 +96,15 @@ export function Footer() {
           <div className="glass-effect rounded-2xl p-6 shadow-modern">
             <h3 className="font-bold text-lg mb-6 text-yellow-400 flex items-center gap-2">
               <Sparkles className="w-5 h-5" />
-              Informações
+              Information
             </h3>
             <ul className="space-y-3">
               {[
-                { name: "Termos e Condições", href: "/termos" },
-                { name: "Política de Privacidade", href: "/privacidade" },
-                { name: "Envios e Entregas", href: "/envios" },
-                { name: "Devoluções e Trocas", href: "/devolucoes" },
-                { name: "Perguntas Frequentes", href: "/faq" },
+                { name: "Terms and Conditions", href: "/termos" },
+                { name: "Privacy Policy", href: "/privacidade" },
+                { name: "Shipping & Delivery", href: "/envios" },
+                { name: "Returns & Exchanges", href: "/devolucoes" },
+                { name: "FAQ", href: "/faq" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link 
@@ -123,12 +123,12 @@ export function Footer() {
           <div className="bg-white rounded-2xl p-6 shadow-modern border border-gray-200">
             <h3 className="font-bold text-lg mb-6 text-gray-800 flex items-center gap-2">
               <Mail className="w-5 h-5" />
-              Contacto
+              Contact
             </h3>
             <div className="mb-6 space-y-3">
               <Link href="/contacto" className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <Mail className="h-5 w-5 text-gray-600 flex-shrink-0" />
-                <span className="text-gray-800 font-medium">Preencher formulário</span>
+                <span className="text-gray-800 font-medium">Contact form</span>
               </Link>
               <Link href="https://wa.me/351934244455" className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <svg className="h-5 w-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
@@ -144,7 +144,7 @@ export function Footer() {
                 <Image src="/images/tik-tok.webp" alt="TikTok Feedbacks" width={20} height={20} className="h-5 w-5" />
                 <div className="flex flex-col">
                   <span className="text-gray-800 font-medium">@fanzone12.pt_</span>
-                  <span className="text-xs text-gray-600">Feedbacks dos clientes</span>
+                  <span className="text-xs text-gray-600">Customer feedback</span>
                 </div>
               </Link>
               <Link href="https://instagram.com/fanzone12.pt__" className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
@@ -160,17 +160,15 @@ export function Footer() {
           <div className="bg-white rounded-2xl p-4 sm:p-8 shadow-modern border border-gray-200">
             <h3 className="font-bold text-lg sm:text-xl mb-6 sm:mb-8 text-center text-gray-800 flex items-center justify-center gap-2">
               <Sparkles className="w-6 h-6" />
-              Métodos de Pagamento Aceites
+              Accepted Payment Methods
             </h3>
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
               {/* Linha única horizontal em todos os tamanhos */}
               <div className="grid grid-flow-col auto-cols-max overflow-x-auto md:overflow-x-visible justify-center gap-2 md:gap-2">
                  {[
-                   { name: "Método", src: "/images/1086741.png", width: 100, height: 60 },
-                   { name: "Multibanco", src: "/images/payment-multibanco.png", width: 80, height: 80 },
+                   { name: "Credit Card", src: "/images/1086741.png", width: 100, height: 60 },
                   { name: "Klarna", src: "/images/payment-klarna.webp", width: 100, height: 50 },
                   { name: "PayPal", src: "/images/PayPal_Logo2014.png", width: 100, height: 50 },
-                  { name: "MB WAY", src: "/images/logo-mbway-1536x960.png", width: 80, height: 40 },
                 ].map((payment) => (
                   <div 
                     key={payment.name}
@@ -186,30 +184,17 @@ export function Footer() {
                   </div>
                 ))}
               </div>
-              
-              {/* Segunda linha - Pagamento à Cobrança sozinho e maior */}
-              <div className="flex justify-center">
-                <div className="flex items-center justify-center transition-all duration-300 hover:scale-105">
-                  <Image
-                    src="/images/cobranca_logo.jpg"
-                    alt="Pagamento à Cobrança"
-                    width={140}
-                    height={84}
-                    className="h-12 sm:h-14 w-auto object-contain mx-auto"
-                  />
-                </div>
-              </div>
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center pt-6 sm:pt-8 border-t border-black/30">
               <p className="text-black text-sm mb-4 md:mb-0 flex items-center gap-2">
                 <Sparkles className="w-4 h-4" />
-                &copy; 2025 fanzone12.pt. Todos os direitos reservados.
+                &copy; 2025 fanzone12.com. All rights reserved.
               </p>
               <div className="flex items-center gap-2 text-black text-sm">
-                <span>Feito com</span>
+                <span>Made with</span>
                 <span className="text-red-400 md:animate-pulse motion-reduce:animate-none text-xs sm:text-base">❤️</span>
-                <span>em Portugal</span>
+                <span>in Europe</span>
               </div>
             </div>
           </div>

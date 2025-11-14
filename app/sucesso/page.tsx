@@ -43,8 +43,8 @@ export default function SucessoPage() {
     if (!sessionId && !orderParam) {
       toast({
         variant: "destructive",
-        title: "Erro",
-        description: "Sessão de pagamento não encontrada.",
+        title: "Error",
+        description: "Payment session not found.",
       })
       setIsLoading(false)
       return;
@@ -75,20 +75,20 @@ export default function SucessoPage() {
           
           if (!response.ok) {
             console.error("Erro ao buscar pedido:", response.status, response.statusText)
-            throw new Error("Falha ao buscar dados do pedido")
+            throw new Error("Failed to fetch order data")
           }
 
           const orderData = await response.json()
           console.log("Dados do pedido recebidos:", orderData)
           
           if (!orderData) {
-            throw new Error("Dados do pedido inválidos")
+            throw new Error("Invalid order data")
           }
 
           setOrderNumber(orderData.order_number || "")
           setCustomerEmail(orderData.customer_email || "")
-          setOrderDate(new Date(orderData.created_at).toLocaleDateString("pt-PT") + " " + 
-                      new Date(orderData.created_at).toLocaleTimeString("pt-PT", { hour: "2-digit", minute: "2-digit" }))
+          setOrderDate(new Date(orderData.created_at).toLocaleDateString("en-GB") + " " + 
+                      new Date(orderData.created_at).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }))
           
           // Definir método de pagamento baseado nos dados do pedido
           console.log("=== DADOS DO PEDIDO PARA MÉTODO DE PAGAMENTO ===")
@@ -96,15 +96,10 @@ export default function SucessoPage() {
           console.log("Upfront payment:", orderData.upfront_payment)
           console.log("Remaining payment:", orderData.remaining_payment)
           
-          if (orderData.payment_method === 'cash_on_delivery') {
-            setPaymentMethod('Pagamento à Cobrança')
-            setIsUpfrontPayment(true)
-            console.log("✅ Definido como Pagamento à Cobrança")
-          } else {
-            setPaymentMethod('Pagamento Online')
-            setIsUpfrontPayment(false)
-            console.log("✅ Definido como Pagamento Online")
-          }
+          // Payment method is always online now
+          setPaymentMethod('Online Payment')
+          setIsUpfrontPayment(false)
+          console.log("✅ Set as Online Payment")
           
           // Processar itens do pedido
           const items = orderData.order_items?.map((item: any) => ({
@@ -152,30 +147,25 @@ export default function SucessoPage() {
 
         // Atualizar o estado com os dados da sessão
         setCustomerEmail(session.customer_details?.email || "")
-        setOrderDate(new Date(session.created * 1000).toLocaleDateString("pt-PT") + " " + 
-                    new Date(session.created * 1000).toLocaleTimeString("pt-PT", { hour: "2-digit", minute: "2-digit" }))
+        setOrderDate(new Date(session.created * 1000).toLocaleDateString("en-GB") + " " + 
+                    new Date(session.created * 1000).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }))
         
         // Definir método de pagamento baseado na sessão do Stripe
         console.log("=== DADOS DA SESSÃO STRIPE ===")
         console.log("Session metadata:", session.metadata)
         console.log("Payment method from metadata:", session.metadata?.payment_method)
         
-        if (session.metadata?.payment_method === 'cash_on_delivery') {
-          setPaymentMethod('Pagamento à Cobrança')
-          setIsUpfrontPayment(true)
-          console.log("✅ Definido como Pagamento à Cobrança (via metadata)")
-        } else {
-          setPaymentMethod('Pagamento Online')
-          setIsUpfrontPayment(false)
-          console.log("✅ Definido como Pagamento Online (via metadata)")
-        }
+        // Payment method is always online now
+        setPaymentMethod('Online Payment')
+        setIsUpfrontPayment(false)
+        console.log("✅ Set as Online Payment (via metadata)")
         
         // Processar itens do pedido
         const items = session.line_items.data.map((item: any) => {
           const description = item.description || ""
-          const size = description.match(/Tamanho: ([A-Z]+)/)?.[1] || "M"
-          const customization = description.includes("Personalização")
-            ? description.match(/Personalização: (.+?)(?:,|$)/)?.[1]
+          const size = description.match(/Size: ([A-Z]+)/)?.[1] || description.match(/Tamanho: ([A-Z]+)/)?.[1] || "M"
+          const customization = description.includes("Customization") || description.includes("Personalização")
+            ? description.match(/Customization: (.+?)(?:,|$)/)?.[1] || description.match(/Personalização: (.+?)(?:,|$)/)?.[1]
             : undefined
 
           return {
@@ -199,8 +189,8 @@ export default function SucessoPage() {
         console.error("Erro ao buscar detalhes da sessão:", error)
         toast({
           variant: "destructive",
-          title: "Erro",
-          description: "Não foi possível carregar os detalhes do pedido.",
+        title: "Error",
+        description: "Could not load order details.",
         })
         setIsLoading(false)
         dataFetched.current = false
@@ -241,12 +231,9 @@ export default function SucessoPage() {
               <CheckCircle className="h-12 w-12 text-primary" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold tracking-tight text-foreground mb-2">Pedido Confirmado!</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-foreground mb-2">Order Confirmed!</h1>
           <p className="text-xl text-muted-foreground">
-            {isUpfrontPayment 
-              ? 'Obrigado! Pagou 8€ antecipadamente. O restante será cobrado na entrega.'
-              : 'Obrigado pela sua compra. O seu pedido foi recebido e está a ser processado.'
-            }
+            Thank you for your purchase. Your order has been received and is being processed.
           </p>
         </div>
 
@@ -254,11 +241,11 @@ export default function SucessoPage() {
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row justify-between mb-6">
               <div>
-                <h2 className="text-lg font-semibold mb-1">Detalhes do Pedido</h2>
-                <p className="text-muted-foreground">Enviámos um email de confirmação para {customerEmail}</p>
+                <h2 className="text-lg font-semibold mb-1">Order Details</h2>
+                <p className="text-muted-foreground">We've sent a confirmation email to {customerEmail}</p>
               </div>
               <div className="mt-4 md:mt-0 flex flex-col items-start md:items-end">
-                <div className="text-sm text-muted-foreground">Número do Pedido</div>
+                <div className="text-sm text-muted-foreground">Order Number</div>
                 <div className="font-semibold">{orderNumber}</div>
               </div>
             </div>
@@ -267,32 +254,32 @@ export default function SucessoPage() {
 
             <div className="space-y-4">
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Data do Pedido</span>
+                <span className="text-muted-foreground">Order Date</span>
                 <span>{orderDate}</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Estado do Pedido</span>
+                <span className="text-muted-foreground">Order Status</span>
                 <span className="bg-accent text-foreground px-2 py-0.5 rounded-full text-xs font-medium">
-                  Pagamento Confirmado
+                  Payment Confirmed
                 </span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Método de Pagamento</span>
-                <span>{paymentMethod || (isUpfrontPayment ? 'Pagamento à Cobrança (8€ antecipados)' : 'Pagamento Online')}</span>
+                <span className="text-muted-foreground">Payment Method</span>
+                <span>{paymentMethod || 'Online Payment'}</span>
               </div>
             </div>
 
             <Separator className="my-4" />
 
-            <h3 className="font-medium mb-3">Itens do Pedido</h3>
+            <h3 className="font-medium mb-3">Order Items</h3>
             <div className="space-y-3 mb-4">
               {orderItems.map((item, index) => (
                 <div key={index} className="flex justify-between">
                   <div>
                     <div className="font-medium">{item.name}</div>
                     <div className="text-sm text-muted-foreground">
-                      Tamanho: {item.size} • Quantidade: {item.quantity}
-                      {item.customization && ` • Personalização: ${item.customization}`}
+                      Size: {item.size} • Quantity: {item.quantity}
+                      {item.customization && ` • Customization: ${item.customization}`}
                     </div>
                   </div>
                   <div className="font-medium">{(item.price * item.quantity).toFixed(2)} €</div>
@@ -308,21 +295,9 @@ export default function SucessoPage() {
                 <span>{orderTotal.toFixed(2)} €</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Envio</span>
+                <span className="text-muted-foreground">Shipping</span>
                 <span>{shippingCost.toFixed(2)} €</span>
               </div>
-              {isUpfrontPayment && (
-                <>
-                  <div className="flex justify-between text-sm text-green-600">
-                    <span>Pago Antecipadamente</span>
-                    <span>8.00 €</span>
-                  </div>
-                  <div className="flex justify-between text-sm text-orange-600">
-                    <span>Restante à Cobrança</span>
-                    <span>{(orderTotal + shippingCost - 8).toFixed(2)} €</span>
-                  </div>
-                </>
-              )}
               <div className="flex justify-between font-semibold mt-2">
                 <span>Total</span>
                 <span className="text-primary">{(orderTotal + shippingCost).toFixed(2)} €</span>
@@ -336,11 +311,11 @@ export default function SucessoPage() {
             <CardContent className="p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Package className="h-5 w-5 text-primary" />
-                <h3 className="font-semibold">Informações de Envio</h3>
+                <h3 className="font-semibold">Shipping Information</h3>
               </div>
-              <p className="text-muted-foreground mb-2">Prazo estimado de entrega: 7-12 dias úteis</p>
+              <p className="text-muted-foreground mb-2">Estimated delivery time: 7-12 business days</p>
               <p className="text-muted-foreground">
-                Você receberá um email com o código de rastreio assim que o seu pedido for expedido.
+                You will receive an email with the tracking code once your order is shipped.
               </p>
             </CardContent>
           </Card>
@@ -349,11 +324,11 @@ export default function SucessoPage() {
             <CardContent className="p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Printer className="h-5 w-5 text-primary" />
-                <h3 className="font-semibold">Precisa de Ajuda?</h3>
+                <h3 className="font-semibold">Need Help?</h3>
               </div>
-              <p className="text-muted-foreground mb-3">Se tiver alguma dúvida sobre o seu pedido, entre em contacto connosco.</p>
+              <p className="text-muted-foreground mb-3">If you have any questions about your order, please contact us.</p>
               <Button variant="outline" size="sm" asChild>
-                <Link href="/contacto">Contactar Suporte</Link>
+                <Link href="/contacto">Contact Support</Link>
               </Button>
             </CardContent>
           </Card>
@@ -363,13 +338,13 @@ export default function SucessoPage() {
           <Button asChild size="lg">
             <Link href="/catalogo">
               <Package className="mr-2 h-5 w-5" />
-              Ver Catálogo
+              View Catalog
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg">
             <Link href="/catalogo">
               <ShoppingBag className="mr-2 h-5 w-5" />
-              Continuar Comprando
+              Continue Shopping
             </Link>
           </Button>
         </div>

@@ -14,7 +14,6 @@ import { useAuth } from "@/components/auth-provider"
 import { ClientAnimationWrapper } from "@/components/client-animation-wrapper"
 import { PaymentMethodSelector } from "@/components/payment-method-selector"
 import { useCartPayment } from "@/hooks/use-cart-payment"
-import { CashOnDeliveryInfoCompact } from "@/components/cash-on-delivery-info"
 
 export default function CarrinhoPage() {
   const { cart, removeFromCart, updateQuantity, clearCart, discountCode, setDiscountCode, appliedDiscount, setAppliedDiscount, promotionDiscount, getPromotionInfo } = useCart()
@@ -71,7 +70,6 @@ export default function CarrinhoPage() {
   // Hook de pagamento
   const {
     paymentState,
-    setPaymentMethod: setPaymentMethodHook,
     getPaymentSummary,
     hasPersonalizedItems
   } = useCartPayment(cartItems, discounts)
@@ -116,8 +114,8 @@ export default function CarrinhoPage() {
         })
         setDiscountError("")
         toast({
-          title: "Código aplicado automaticamente!",
-          description: `Código ${data.code} aplicado da URL`,
+          title: "Code applied automatically!",
+          description: `Code ${data.code} applied from URL`,
         })
       }
     } catch (error) {
@@ -179,11 +177,11 @@ export default function CarrinhoPage() {
 
   const validateEmailField = () => {
     if (!email) {
-      setEmailError("Por favor, insira o seu email")
+      setEmailError("Please enter your email")
       return false
     }
     if (!validateEmail(email)) {
-      setEmailError("Por favor, insira um email válido")
+      setEmailError("Please enter a valid email")
       return false
     }
     return true
@@ -198,154 +196,72 @@ export default function CarrinhoPage() {
 
     try {
       toast({
-        title: "Processando",
-        description: paymentState.method === 'cash_on_delivery' 
-          ? "Estamos a preparar o seu pedido à cobrança..." 
-          : "Estamos preparando o seu checkout...",
+        title: "Processing",
+        description: "Preparing your checkout...",
       })
 
       // Verificar se o carrinho está vazio
       if (cart.length === 0) {
-        throw new Error("O carrinho está vazio")
+        throw new Error("Cart is empty")
       }
 
-      if (paymentState.method === 'cash_on_delivery') {
-        // Processar pedido à cobrança
-        const response = await fetch("/api/create-cash-on-delivery-order", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            customerName: user?.user_metadata?.full_name || "Cliente",
-            customerEmail: email,
-            customerPhone: user?.user_metadata?.phone || "",
-            shippingAddress: {
-              name: user?.user_metadata?.full_name || "Cliente",
-              address: "Morada a definir",
-              city: "Cidade",
-              postalCode: "0000-000",
-              country: "Portugal"
-            },
-            items: cartItems,
-            subtotal: subtotal,
-            shipping: paymentState.shipping,
-            cashOnDeliveryFee: 8,
-            total: paymentState.total,
-            upfrontPayment: paymentState.upfrontPayment,
-            remainingPayment: paymentState.remainingPayment,
-            hasPersonalizedItems,
-            discountCode: discountCode,
-            discountAmount: appliedDiscount?.amount || 0
-          }),
-        })
+      // Process online payment (Stripe)
+      const response = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          cartItems: cart,
+          customerEmail: email,
+          discountCode: (discountCode && discountCode.trim()) ? discountCode.trim() : (appliedDiscount?.code || null),
+          promotionInfo: promotionInfo,
+        }),
+      })
 
-        if (!response.ok) {
-          const errorData = await response.json()
-          throw new Error(errorData.error || "Erro ao criar pedido à cobrança")
-        }
-
-        const result = await response.json()
-        
-        // Usar checkout normal do Stripe (igual ao pagamento online)
-        const checkoutResponse = await fetch("/api/create-checkout-session", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            cartItems: cart,
-            customerEmail: email,
-            discountCode: (discountCode && discountCode.trim()) ? discountCode.trim() : (appliedDiscount?.code || null),
-            promotionInfo: promotionInfo,
-            paymentMethod: 'cash_on_delivery'
-          }),
-        })
-
-        // Verificar se a resposta é OK
-        if (!checkoutResponse.ok) {
-          const errorText = await checkoutResponse.text()
-          console.error("Resposta da API não OK:", checkoutResponse.status, errorText)
-          throw new Error(`Erro na resposta do servidor: ${checkoutResponse.status}`)
-        }
-
-        // Analisar a resposta JSON
-        let data
-        try {
-          data = await checkoutResponse.json()
-        } catch (e) {
-          console.error("Erro ao analisar JSON:", e)
-          throw new Error("Erro ao processar a resposta do servidor")
-        }
-
-        // Verificar se a URL foi retornada
-        if (!data.url) {
-          console.error("Dados recebidos:", data)
-          throw new Error("URL de checkout não encontrada na resposta")
-        }
-
-        console.log("Redirecionando para:", data.url)
-        window.location.href = data.url
-      } else {
-        // Processar pagamento online (Stripe)
-        const response = await fetch("/api/create-checkout-session", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            cartItems: cart,
-            customerEmail: email,
-            discountCode: (discountCode && discountCode.trim()) ? discountCode.trim() : (appliedDiscount?.code || null),
-            promotionInfo: promotionInfo,
-            paymentMethod: 'online',
-          }),
-        })
-
-        // Verificar se a resposta é OK
-        if (!response.ok) {
-          const errorText = await response.text()
-          console.error("Resposta da API não OK:", response.status, errorText)
-          throw new Error(`Erro na resposta do servidor: ${response.status}`)
-        }
-
-        // Analisar a resposta JSON
-        let data
-        try {
-          data = await response.json()
-        } catch (e) {
-          console.error("Erro ao analisar JSON:", e)
-          throw new Error("Erro ao processar a resposta do servidor")
-        }
-
-        // Verificar se há erro na resposta
-        if (data.error) {
-          console.error("Erro na resposta:", data.error)
-          throw new Error(data.error)
-        }
-
-        // Verificar se a URL está presente
-        if (!data.url) {
-          console.error("URL ausente na resposta:", data)
-          throw new Error("URL de checkout não recebida")
-        }
-
-        // Verificar se a URL é válida
-        if (typeof data.url !== "string" || !isValidUrl(data.url)) {
-          console.error("URL inválida:", data.url)
-          throw new Error("URL de checkout inválida")
-        }
-
-        console.log("Redirecionando para:", data.url)
-
-        // Usar window.location.href para garantir um redirecionamento completo
-        window.location.href = data.url
+      // Verificar se a resposta é OK
+      if (!response.ok) {
+        const errorText = await response.text()
+        console.error("API response not OK:", response.status, errorText)
+        throw new Error(`Server error: ${response.status}`)
       }
+
+      // Analisar a resposta JSON
+      let data
+      try {
+        data = await response.json()
+      } catch (e) {
+        console.error("Error parsing JSON:", e)
+        throw new Error("Error processing server response")
+      }
+
+      // Verificar se há erro na resposta
+      if (data.error) {
+        console.error("Error in response:", data.error)
+        throw new Error(data.error)
+      }
+
+      // Verificar se a URL está presente
+      if (!data.url) {
+        console.error("URL missing in response:", data)
+        throw new Error("Checkout URL not received")
+      }
+
+      // Verificar se a URL é válida
+      if (typeof data.url !== "string" || !isValidUrl(data.url)) {
+        console.error("Invalid URL:", data.url)
+        throw new Error("Invalid checkout URL")
+      }
+
+      console.log("Redirecting to:", data.url)
+
+      // Usar window.location.href para garantir um redirecionamento completo
+      window.location.href = data.url
     } catch (error: any) {
-      console.error("Erro ao processar pedido:", error)
+      console.error("Error processing order:", error)
       toast({
-        title: "Erro ao processar",
-        description: error.message || "Ocorreu um erro ao processar o seu pedido. Por favor, tente novamente.",
+        title: "Error processing",
+        description: error.message || "An error occurred while processing your order. Please try again.",
         variant: "destructive",
       })
     } finally {
@@ -378,7 +294,7 @@ export default function CarrinhoPage() {
 
   const validateDiscountCode = async () => {
     if (!discountCode.trim()) {
-      setDiscountError("Por favor, insira um código de desconto")
+      setDiscountError("Please enter a discount code")
       return
     }
 
@@ -401,11 +317,11 @@ export default function CarrinhoPage() {
       setAppliedDiscount({ code, amount: discountAmount, percentage: isFixed ? 0 : 10 })
       setDiscountError("")
       toast({
-        title: "Código aplicado!",
-        description: `Código ${code} validado${isFixed ? " (desconto fixo €7)" : " (10%)"}`,
+        title: "Code applied!",
+        description: `Code ${code} validated${isFixed ? " (fixed discount €7)" : " (10%)"}`,
       })
     } catch (e) {
-      setDiscountError("Erro ao validar código. Tente novamente.")
+      setDiscountError("Error validating code. Please try again.")
     } finally {
       setIsValidatingDiscount(false)
     }
@@ -416,8 +332,8 @@ export default function CarrinhoPage() {
     setAppliedDiscount(null)
     setDiscountError("")
     toast({
-      title: "Código removido",
-      description: "O código de desconto foi removido do carrinho",
+      title: "Code removed",
+      description: "The discount code has been removed from the cart",
     })
   }
 
@@ -438,18 +354,18 @@ export default function CarrinhoPage() {
               <Button variant="ghost" size="sm" onClick={() => router.back()} className="rounded-full p-2 hover:bg-accent">
                 <ArrowLeft className="h-4 w-4" />
               </Button>
-              <span>Voltar</span>
+              <span>Back</span>
             </div>
           </ClientAnimationWrapper>
 
           {/* Header */}
           <ClientAnimationWrapper delay={0.2} className="animate-slide-up">
             <div className="text-center mb-12">
-              <h1 className="text-4xl font-bold text-foreground mb-4">Carrinho de Compras</h1>
+              <h1 className="text-4xl font-bold text-foreground mb-4">Shopping Cart</h1>
               <p className="text-lg text-muted-foreground">
                 {cart.length === 0 
-                  ? "O seu carrinho está vazio" 
-                  : `${totalItems} ${totalItems === 1 ? 'item' : 'itens'} no seu carrinho`
+                  ? "Your cart is empty" 
+                  : `${totalItems} ${totalItems === 1 ? 'item' : 'items'} in your cart`
                 }
               </p>
             </div>
@@ -460,12 +376,12 @@ export default function CarrinhoPage() {
             <ClientAnimationWrapper delay={0.3} className="animate-scale-in">
               <div className="glass-effect rounded-3xl p-16 text-center shadow-modern max-w-2xl mx-auto">
                 <ShoppingBag className="h-24 w-24 text-muted-foreground mx-auto mb-8" />
-                <h2 className="text-2xl font-bold text-foreground mb-4">O seu carrinho está vazio</h2>
-                <p className="text-muted-foreground mb-8 text-lg">Descubra a nossa coleção de camisolas oficiais</p>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Your cart is empty</h2>
+                <p className="text-muted-foreground mb-8 text-lg">Discover our collection of official jerseys</p>
                 <Link href="/catalogo">
                   <Button className="px-8 py-4 text-lg font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                     <ShoppingBag className="h-5 w-5 mr-2" />
-                    Explorar Produtos
+                    Explore Products
           </Button>
                 </Link>
         </div>
@@ -477,14 +393,14 @@ export default function CarrinhoPage() {
                 <ClientAnimationWrapper delay={0.3} className="animate-slide-up">
                   <div className="glass-effect rounded-3xl p-8 shadow-modern">
                     <div className="flex items-center justify-between mb-8">
-                      <h2 className="text-2xl font-bold text-foreground">Itens no Carrinho</h2>
+                      <h2 className="text-2xl font-bold text-foreground">Cart Items</h2>
                       <Button 
                         variant="ghost" 
                         onClick={clearCart}
                         className="text-destructive hover:text-destructive hover:bg-destructive/10 rounded-xl"
                       >
                         <Trash2 className="h-4 w-4 mr-2" />
-                        Limpar Carrinho
+                        Clear Cart
                       </Button>
                     </div>
 
@@ -517,29 +433,29 @@ export default function CarrinhoPage() {
                                       <h3 className="text-sm lg:text-lg font-semibold text-foreground mb-1 lg:mb-2 truncate">{item.nome}</h3>
                                       <div className="space-y-1 text-xs lg:text-sm text-muted-foreground">
                                         <div className="flex gap-4">
-                                        <p>Tamanho: <span className="font-medium text-foreground">{item.tamanhoSelecionado}</span></p>
-                                          <p>Qtd: <span className="font-medium text-foreground">{item.quantidade}</span></p>
+                                        <p>Size: <span className="font-medium text-foreground">{item.tamanhoSelecionado}</span></p>
+                                          <p>Qty: <span className="font-medium text-foreground">{item.quantidade}</span></p>
                                         </div>
                                         
                                         {/* Personalization Details - More compact on mobile */}
                               {item.personalizacao?.ativar && (
                                           <div className="mt-2 p-2 lg:p-3 bg-accent rounded-lg border border-border">
-                                            <h4 className="font-medium text-foreground mb-1 text-xs lg:text-sm">Personalização:</h4>
+                                            <h4 className="font-medium text-foreground mb-1 text-xs lg:text-sm">Customization:</h4>
                                             <div className="text-xs lg:text-sm space-y-1 text-foreground">
                                               {item.personalizacao.cor && (
-                                                <p>Cor: <span className="font-semibold">{item.personalizacao.cor}</span></p>
+                                                <p>Color: <span className="font-semibold">{item.personalizacao.cor}</span></p>
                                               )}
                                               {item.personalizacao.padrao && (
-                                                <p>Padrão: <span className="font-semibold">{item.personalizacao.padrao}</span></p>
+                                                <p>Pattern: <span className="font-semibold">{item.personalizacao.padrao}</span></p>
                                               )}
                                               {item.personalizacao.nome && (
-                                                <p>Nome: {item.personalizacao.nome}</p>
+                                                <p>Name: {item.personalizacao.nome}</p>
                                               )}
                                               {item.personalizacao.numero && (
-                                                <p>Número: {item.personalizacao.numero}</p>
+                                                <p>Number: {item.personalizacao.numero}</p>
                                               )}
                                               {item.personalizacao.fonte && (
-                                                <p>Fonte: {
+                                                <p>Font: {
                                                   item.personalizacao.fonte === "liga-betclic" ? "LIGA BETCLIC" :
                                                   item.personalizacao.fonte === "clube" ? "CLUBE" :
                                                   item.personalizacao.fonte === "champions-liga-europa" ? "CHAMPIONS / LIGA EUROPA" :
@@ -628,17 +544,17 @@ export default function CarrinhoPage() {
                                               let custoPersonalizacao = 0;
                                               let detalhes = [];
                                               
-                                              // Custo da personalização (nome e número)
+                                              // Customization cost (name and number)
                                               if (item.personalizacao.nome || item.personalizacao.numero) {
                                                 custoPersonalizacao += 3;
-                                                detalhes.push("3€ (nome/número)");
+                                                detalhes.push("€3 (name/number)");
                                               }
                                               
-                                              // Custo dos patches
+                                              // Patches cost
                                               if (Array.isArray(item.personalizacao?.patches) && item.personalizacao.patches.length > 0) {
                                                 const patchCost = item.personalizacao.patches.length * 1;
                                                 custoPersonalizacao += patchCost;
-                                                detalhes.push(`${patchCost}€ (${item.personalizacao.patches.length} patches)`);
+                                                detalhes.push(`€${patchCost} (${item.personalizacao.patches.length} patches)`);
                                               }
                                               
                                               return custoPersonalizacao > 0 ? `+ ${detalhes.join(" + ")}` : "";
@@ -676,19 +592,19 @@ export default function CarrinhoPage() {
                 <div className="sticky top-8">
                   <ClientAnimationWrapper delay={0.3} className="animate-slide-in-right">
                     <div className="glass-effect rounded-3xl p-8 shadow-modern bg-card text-card-foreground border border-border">
-                      <h2 className="text-2xl font-bold text-foreground mb-8">Resumo da Encomenda</h2>
+                      <h2 className="text-2xl font-bold text-foreground mb-8">Order Summary</h2>
                       
                       {/* Order Details */}
                       <div className="space-y-4 mb-8">
                         <div className="flex justify-between text-muted-foreground">
-                          <span>Subtotal ({cart.reduce((total, item) => total + item.quantidade, 0)} {cart.reduce((total, item) => total + item.quantidade, 0) === 1 ? 'item' : 'itens'})</span>
+                          <span>Subtotal ({cart.reduce((total, item) => total + item.quantidade, 0)} {cart.reduce((total, item) => total + item.quantidade, 0) === 1 ? 'item' : 'items'})</span>
                           <span className="font-medium text-foreground">€{subtotal.toFixed(2)}</span>
             </div>
 
                         <div className="flex justify-between text-muted-foreground">
-                          <span>Envio</span>
+                          <span>Shipping</span>
                           {envio === 0 ? (
-                          <span className="font-medium text-primary">Grátis</span>
+                          <span className="font-medium text-primary">Free</span>
                           ) : (
                             <span className="font-medium text-foreground">€{envio.toFixed(2)}</span>
                           )}
@@ -697,27 +613,27 @@ export default function CarrinhoPage() {
                         {/* Shipping Info */}
                         {envio > 0 && (
                           <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
-                            💡 <strong>Portes grátis</strong> a partir de 3 produtos ou compras acima de 68€! Adicione mais {3 - totalItems} {3 - totalItems === 1 ? 'produto' : 'produtos'} ou {Math.max(0, 68 - subtotal).toFixed(2)}€ para envio gratuito.
+                            💡 <strong>Free shipping</strong> from 3 products or orders above €68! Add {3 - totalItems} more {3 - totalItems === 1 ? 'product' : 'products'} or €{Math.max(0, 68 - subtotal).toFixed(2)} for free shipping.
                           </div>
                         )}
                         
                         {envio === 0 && totalItems >= 3 && (
                           <div className="text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg p-3">
-                            🎉 <strong>Parabéns!</strong> Tem portes grátis por ter 3 ou mais produtos ou compra acima de 68€!
+                            🎉 <strong>Congratulations!</strong> You have free shipping for 3 or more products or orders above €68!
                           </div>
                         )}
 
                         {/* Promoção Leva 4 Paga 3 */}
                         {promotionInfo.applied && (
                           <div className="text-xs text-primary bg-accent border border-border rounded-lg p-3">
-                            🎁 <strong>Promoção Ativa!</strong> Leva 4 camisolas paga 3 - {promotionInfo.freeItems} {promotionInfo.freeItems === 1 ? 'camisola grátis' : 'camisolas grátis'}!
+                            🎁 <strong>Active Promotion!</strong> Buy 4 jerseys pay for 3 - {promotionInfo.freeItems} {promotionInfo.freeItems === 1 ? 'free jersey' : 'free jerseys'}!
                           </div>
                         )}
 
                         {/* Informação sobre promoção quando não aplicada */}
                         {!promotionInfo.applied && totalItems > 0 && (
                           <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
-                            🔥 <strong>Promoção Leva 4 Paga 3!</strong> Aplicável apenas a camisolas. Adicione mais {4 - (camisolaCount % 4)} {4 - (camisolaCount % 4) === 1 ? 'camisola' : 'camisolas'} para ganhar 1 item grátis!
+                            🔥 <strong>Buy 4 Pay 3 Promotion!</strong> Applies only to jerseys. Add {4 - (camisolaCount % 4)} more {4 - (camisolaCount % 4) === 1 ? 'jersey' : 'jerseys'} to get 1 free item!
                           </div>
                         )}
 
@@ -725,14 +641,14 @@ export default function CarrinhoPage() {
                         <div className="border-t border-border pt-4">
                           <div className="mb-4">
                             <Label htmlFor="discount-code" className="text-sm font-semibold text-foreground mb-2 block">
-                              Código de Desconto
+                              Discount Code
                             </Label>
                             {!appliedDiscount ? (
                               <div className="flex gap-2">
                                 <Input
                                   id="discount-code"
                                   type="text"
-                                  placeholder={"Insira o código de desconto"}
+                                  placeholder={"Enter discount code"}
                                   value={discountCode}
                                   onChange={handleDiscountCodeChange}
                                   className={`flex-1 ${discountError ? 'border-red-500' : 'border-border'} rounded-lg`}
@@ -772,7 +688,7 @@ export default function CarrinhoPage() {
                             )}
                             {appliedDiscount?.code && (
                               <p className="text-primary text-sm mt-1">
-                                Código {appliedDiscount.code} aplicado: {partnerHasFixed ? "desconto fixo de €7" : "desconto de 10%"}
+                                Code {appliedDiscount.code} applied: {partnerHasFixed ? "fixed discount €7" : "10% discount"}
                               </p>
                             )}
                           </div>
@@ -781,7 +697,7 @@ export default function CarrinhoPage() {
                         {/* Discount Applied */}
                         {appliedDiscount && (
                           <div className="flex justify-between text-primary">
-                            <span>Desconto parceiro {partnerHasFixed ? "(fixo)" : "(10%)"}</span>
+                            <span>Partner discount {partnerHasFixed ? "(fixed)" : "(10%)"}</span>
                             <span className="font-medium">-€{discountValue.toFixed(2)}</span>
                           </div>
                         )}
@@ -789,7 +705,7 @@ export default function CarrinhoPage() {
                         {/* Promotion Applied */}
                         {promotionInfo.applied && (
                           <div className="flex justify-between text-purple-600">
-                            <span>Promoção Leva 4 Paga 3 - Camisolas ({promotionInfo.freeItems} {promotionInfo.freeItems === 1 ? 'camisola grátis' : 'camisolas grátis'})</span>
+                            <span>Buy 4 Pay 3 Promotion - Jerseys ({promotionInfo.freeItems} {promotionInfo.freeItems === 1 ? 'free jersey' : 'free jerseys'})</span>
                             <span className="font-medium">-€{promotionInfo.savedAmount.toFixed(2)}</span>
                           </div>
                         )}
@@ -797,7 +713,7 @@ export default function CarrinhoPage() {
                         <div className="border-t border-gray-200 pt-4">
                           {totalDiscounts > 0 && (
                           <div className="flex justify-between text-muted-foreground mb-2">
-                              <span>Descontos totais</span>
+                              <span>Total discounts</span>
                               <span className="font-medium">-€{totalDiscounts.toFixed(2)}</span>
                             </div>
                           )}
@@ -812,23 +728,18 @@ export default function CarrinhoPage() {
                       <div className="grid grid-cols-2 gap-4 mb-8">
                         <div className="flex items-center gap-2 p-3 bg-accent rounded-xl">
                           <Shield className="h-4 w-4 text-primary" />
-                          <span className="text-xs font-medium text-foreground">Pagamento Seguro</span>
+                          <span className="text-xs font-medium text-foreground">Secure Payment</span>
                     </div>
                         <div className="flex items-center gap-2 p-3 bg-accent rounded-xl">
                           <Check className="h-4 w-4 text-primary" />
-                          <span className="text-xs font-medium text-foreground">SSL Protegido</span>
+                          <span className="text-xs font-medium text-foreground">SSL Protected</span>
                   </div>
                 </div>
 
 
-                      {/* Seleção de Método de Pagamento */}
+                      {/* Payment Method Selection */}
                       <div className="mb-6">
                         <PaymentMethodSelector
-                          selectedMethod={paymentState.method}
-                          onMethodChange={(method) => setPaymentMethodHook(method as 'online' | 'cash_on_delivery')}
-                          hasPersonalizedItems={hasPersonalizedItems}
-                          totalAmount={paymentState.total}
-                          paymentState={paymentState}
                           onCheckout={handleCheckout}
                           isLoading={isLoading}
                           email={email}
@@ -837,57 +748,7 @@ export default function CarrinhoPage() {
                         />
                       </div>
 
-                      {/* Métodos de Pagamento Disponíveis - Apenas para pagamento online */}
-
-
-                      {/* Resumo do pagamento */}
-                      {paymentState.method === 'cash_on_delivery' && (
-                        <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                          <h4 className="font-semibold text-green-800 mb-2">Resumo do Pagamento à Cobrança</h4>
-                          <div className="space-y-1 text-sm">
-                            <div className="flex justify-between">
-                              <span>Subtotal:</span>
-                              <span>{subtotal.toFixed(2)}€</span>
-                            </div>
-                            {appliedDiscount && (
-                              <div className="flex justify-between text-green-600">
-                                <span>Desconto ({appliedDiscount.code}):</span>
-                                <span>-{appliedDiscount.amount.toFixed(2)}€</span>
-                              </div>
-                            )}
-                            {promotionDiscount > 0 && (
-                              <div className="flex justify-between text-green-600">
-                                <span>Promoção Leva 4 Paga 3:</span>
-                                <span>-{promotionDiscount.toFixed(2)}€</span>
-                              </div>
-                            )}
-                            <div className="flex justify-between">
-                              <span>Envio:</span>
-                              <span>{paymentState.shipping === 0 ? 'Grátis' : `${paymentState.shipping.toFixed(2)}€`}</span>
-                            </div>
-                            <div className="flex justify-between">
-                              <span>Taxa à cobrança:</span>
-                              <span>8.00€</span>
-                            </div>
-                            <div className="flex justify-between font-semibold border-t pt-1">
-                              <span>Total:</span>
-                              <span>{paymentState.total.toFixed(2)}€</span>
-                            </div>
-                            <div className="flex justify-between text-orange-600">
-                              <span>Pagamento antecipado:</span>
-                              <span>8.00€</span>
-                            </div>
-                            <div className="flex justify-between text-green-600">
-                              <span>Restante à cobrança:</span>
-                              <span>{paymentState.remainingPayment.toFixed(2)}€</span>
-                            </div>
-                          </div>
-                        </div>
-                      )}
-
-
-
-                        <div className="text-center">
+                      <div className="text-center">
                           <Link href="/catalogo">
                             <Button variant="ghost" className="text-primary hover:text-primary hover:bg-accent rounded-xl">
                               <ArrowLeft className="h-4 w-4 mr-2" />
