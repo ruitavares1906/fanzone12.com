@@ -320,7 +320,7 @@ export default async function Home() {
 
           {/* Desktop Grid */}
           <div className="hidden md:grid md:grid-cols-4 lg:grid-cols-4 gap-6">
-            {[
+                 {[
               { name: "Premier League", logo: "Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent.webp", href: "/catalogo?liga=premier-league" },
               { name: "La Liga", logo: "LaLiga-Logo-PNG-Official-Symbol-for-Football-League-Transparent.webp", href: "/catalogo?liga=la-liga" },
               { name: "Serie A", logo: "SerieA_logo.webp", href: "/catalogo?liga=serie-a" },
@@ -330,37 +330,37 @@ export default async function Home() {
               { name: "National Teams", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
               { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
             ].map((liga, index) => (
-              <ClientAnimationWrapper
+                    <ClientAnimationWrapper
                 key={liga.name}
-                delay={index * 0.1}
-                className="animate-scale-in"
-              >
+                      delay={index * 0.1}
+                      className="animate-scale-in"
+                    >
                 <Link
                   href={liga.href}
                   className="modern-card group p-6 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block"
                 >
                   <div className="relative w-20 h-20 mx-auto mb-4">
-                    <Image
+                            <Image 
                       src={`/images/${liga.logo}`}
                       alt={liga.name}
-                      fill
+                              fill
                       className="object-contain transition-transform group-hover:scale-110"
-                      loading="lazy"
+                              loading="lazy"
                       sizes="80px"
-                      quality={85}
-                    />
-                  </div>
+                              quality={85}
+                            />
+                            </div>
                   <p className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
                     {liga.name}
                   </p>
-                </Link>
-              </ClientAnimationWrapper>
-            ))}
+                        </Link>
+                    </ClientAnimationWrapper>
+                ))}
           </div>
 
           {/* Mobile Grid - 2 colunas */}
           <div className="md:hidden grid grid-cols-2 gap-4">
-            {[
+                 {[
               { name: "Premier League", logo: "Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent.webp", href: "/catalogo?liga=premier-league" },
               { name: "La Liga", logo: "LaLiga-Logo-PNG-Official-Symbol-for-Football-League-Transparent.webp", href: "/catalogo?liga=la-liga" },
               { name: "Serie A", logo: "SerieA_logo.webp", href: "/catalogo?liga=serie-a" },
@@ -370,32 +370,32 @@ export default async function Home() {
               { name: "National Teams", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
               { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
             ].map((liga, index) => (
-              <ClientAnimationWrapper
+                    <ClientAnimationWrapper
                 key={liga.name}
-                delay={index * 0.1}
-                className="animate-scale-in"
-              >
+                      delay={index * 0.1}
+                      className="animate-scale-in"
+                    >
                 <Link
                   href={liga.href}
                   className="modern-card group p-4 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block"
                 >
                   <div className="relative w-16 h-16 mx-auto mb-3">
-                    <Image
+                            <Image 
                       src={`/images/${liga.logo}`}
                       alt={liga.name}
-                      fill
+                              fill
                       className="object-contain transition-transform group-hover:scale-110"
-                      loading="lazy"
+                              loading="lazy"
                       sizes="64px"
-                      quality={85}
-                    />
-                  </div>
+                              quality={85}
+                            />
+                            </div>
                   <p className="font-semibold text-sm text-gray-800 group-hover:text-blue-600 transition-colors">
                     {liga.name}
                   </p>
-                </Link>
-              </ClientAnimationWrapper>
-            ))}
+                        </Link>
+                    </ClientAnimationWrapper>
+                ))}
           </div>
         </div>
       </section>
@@ -631,17 +631,17 @@ export default async function Home() {
                     <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                         <div className="relative aspect-square overflow-hidden">
-                          <Image 
+                    <Image
                             src={product.imagem}
                             alt={product.nome}
-                            fill
+                      fill
                             className="object-cover transition-all duration-500 group-hover:scale-105"
-                            loading="lazy"
+                      loading="lazy"
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            quality={85}
-                          />
+                      quality={85}
+                    />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
+                  </div>
                         <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
                             {product.nome}
@@ -650,11 +650,11 @@ export default async function Home() {
                             <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
                             </span>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
+          </div>
+                  </div>
+                </Link>
+          </div>
+                </CarouselItem>
                 ))}
               </CarouselContent>
               <CarouselPrevious />
@@ -669,37 +669,37 @@ export default async function Home() {
                 {fanFavorites.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
                     <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
-                      <Link href={`/produto/${product.id}`} className="block">
-                        <div className="relative aspect-square overflow-hidden">
-                          <Image 
-                            src={product.imagem}
-                            alt={product.nome}
-                            fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
+                    <Link href={`/produto/${product.id}`} className="block">
+                      <div className="relative aspect-square overflow-hidden">
+                        <Image 
+                          src={product.imagem}
+                          alt={product.nome}
+                          fill
+                          className="object-cover transition-all duration-500 group-hover:scale-105"
                             loading="lazy"
                             sizes="80vw"
-                            quality={85}
-                          />
+                          quality={85}
+                        />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
+                          </div>
                         <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
-                            {product.nome}
-                          </h3>
+                          {product.nome}
+                        </h3>
                           <div className="flex items-center justify-start">
                             <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
                             </span>
-                          </div>
                         </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+                      </div>
+                    </Link>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
           </div>
 
           {/* View More Button */}
@@ -724,87 +724,87 @@ export default async function Home() {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Support your national team with official jerseys from the biggest tournaments
             </p>
-          </div>
-
-          {/* Desktop Carousel */}
-          <div className="hidden md:block">
-            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
-              <CarouselContent className="-ml-2 md:-ml-4">
+            </div>
+            
+            {/* Desktop Carousel */}
+            <div className="hidden md:block">
+              <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+                <CarouselContent className="-ml-2 md:-ml-4">
                 {nationalTeams.map((product) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
-                        <div className="relative aspect-square overflow-hidden">
-                          <Image 
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
                             src={product.imagem}
                             alt={product.nome}
-                            fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
-                            loading="lazy"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            quality={85}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                        <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              quality={85}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-red-600 transition-colors line-clamp-2">
                             {product.nome}
-                          </h3>
-                          <div className="flex items-center justify-start">
-                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            </h3>
+                            <div className="flex items-center justify-start">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
-                            </span>
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                        </Link>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
 
-          {/* Mobile Carousel */}
-          <div className="md:hidden">
+            {/* Mobile Carousel */}
+            <div className="md:hidden">
             <Carousel className="w-full">
               <CarouselContent>
                 {nationalTeams.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
-                        <div className="relative aspect-square overflow-hidden">
-                          <Image 
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
                             src={product.imagem}
                             alt={product.nome}
-                            fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
-                            loading="lazy"
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
                             sizes="80vw"
-                            quality={85}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                        <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                              quality={85}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-red-600 transition-colors line-clamp-2">
                             {product.nome}
-                          </h3>
-                          <div className="flex items-center justify-start">
-                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            </h3>
+                            <div className="flex items-center justify-start">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
-                            </span>
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                        </Link>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
 
           {/* View More Button */}
           <div className="flex justify-center mt-8">
@@ -812,10 +812,10 @@ export default async function Home() {
               <Link href="/catalogo?liga=selecoes-nacionais" className="flex items-center gap-2">
                 View All National Teams
                 <ArrowRight className="w-5 h-5" />
-              </Link>
-            </Button>
+                </Link>
+              </Button>
+            </div>
           </div>
-        </div>
       </section>
 
       {/* All Barcelona Kits Section - 6th Section */}
@@ -828,87 +828,87 @@ export default async function Home() {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Discover the complete collection of FC Barcelona jerseys and kits
             </p>
-          </div>
-
-          {/* Desktop Carousel */}
-          <div className="hidden md:block">
-            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
-              <CarouselContent className="-ml-2 md:-ml-4">
+            </div>
+            
+            {/* Desktop Carousel */}
+            <div className="hidden md:block">
+              <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+                <CarouselContent className="-ml-2 md:-ml-4">
                 {barcelonaKits.map((product) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
-                        <div className="relative aspect-square overflow-hidden">
-                          <Image 
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
                             src={product.imagem}
                             alt={product.nome}
-                            fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
-                            loading="lazy"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            quality={85}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                        <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              quality={85}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
                             {product.nome}
-                          </h3>
-                          <div className="flex items-center justify-start">
-                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            </h3>
+                            <div className="flex items-center justify-start">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
-                            </span>
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                        </Link>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
 
-          {/* Mobile Carousel */}
-          <div className="md:hidden">
+            {/* Mobile Carousel */}
+            <div className="md:hidden">
             <Carousel className="w-full">
               <CarouselContent>
                 {barcelonaKits.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
-                        <div className="relative aspect-square overflow-hidden">
-                          <Image 
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
                             src={product.imagem}
                             alt={product.nome}
-                            fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
-                            loading="lazy"
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
                             sizes="80vw"
-                            quality={85}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                        <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                              quality={85}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
                             {product.nome}
-                          </h3>
-                          <div className="flex items-center justify-start">
-                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            </h3>
+                            <div className="flex items-center justify-start">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
-                            </span>
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                        </Link>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
 
           {/* View More Button */}
           <div className="flex justify-center mt-8">
@@ -916,10 +916,10 @@ export default async function Home() {
               <Link href="/catalogo?clube=barcelona" className="flex items-center gap-2">
                 View All Barcelona Kits
                 <ArrowRight className="w-5 h-5" />
-              </Link>
-            </Button>
+                </Link>
+              </Button>
+            </div>
           </div>
-        </div>
       </section>
 
       {/* All Real Madrid Kits Section - 7th Section */}
@@ -932,87 +932,87 @@ export default async function Home() {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Explore the complete collection of Real Madrid jerseys and kits
             </p>
-          </div>
-
-          {/* Desktop Carousel */}
-          <div className="hidden md:block">
-            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
-              <CarouselContent className="-ml-2 md:-ml-4">
+            </div>
+            
+            {/* Desktop Carousel */}
+            <div className="hidden md:block">
+              <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+                <CarouselContent className="-ml-2 md:-ml-4">
                 {realMadridKits.map((product) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
-                        <div className="relative aspect-square overflow-hidden">
-                          <Image 
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
                             src={product.imagem}
                             alt={product.nome}
-                            fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
-                            loading="lazy"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            quality={85}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                        <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              quality={85}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
                             {product.nome}
-                          </h3>
-                          <div className="flex items-center justify-start">
-                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            </h3>
+                            <div className="flex items-center justify-start">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
-                            </span>
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                        </Link>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
 
-          {/* Mobile Carousel */}
-          <div className="md:hidden">
+            {/* Mobile Carousel */}
+            <div className="md:hidden">
             <Carousel className="w-full">
               <CarouselContent>
                 {realMadridKits.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
-                        <div className="relative aspect-square overflow-hidden">
-                          <Image 
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
                             src={product.imagem}
                             alt={product.nome}
-                            fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
-                            loading="lazy"
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
                             sizes="80vw"
-                            quality={85}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                        <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                              quality={85}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
                           <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
                             {product.nome}
-                          </h3>
-                          <div className="flex items-center justify-start">
-                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            </h3>
+                            <div className="flex items-center justify-start">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {product.preco.toFixed(2)}€
-                            </span>
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                        </Link>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
 
           {/* View More Button */}
           <div className="flex justify-center mt-8">
@@ -1020,12 +1020,12 @@ export default async function Home() {
               <Link href="/catalogo?clube=real-madrid" className="flex items-center gap-2">
                 View All Real Madrid Kits
                 <ArrowRight className="w-5 h-5" />
-              </Link>
-            </Button>
-          </div>
+                </Link>
+              </Button>
+            </div>
         </div>
       </section>
-
+      
       {/* Equipment for Young Fans Section - 7th Section */}
       <section className="py-8 bg-gradient-to-br from-white to-green-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -1074,7 +1074,7 @@ export default async function Home() {
                         {kit.nome}
                       </h3>
                       <div className="flex items-center justify-start">
-                        <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                           {kit.preco.toFixed(2)}€
                         </span>
                       </div>
@@ -1115,7 +1115,7 @@ export default async function Home() {
                             {kit.nome}
                           </h3>
                           <div className="flex items-center justify-start">
-                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
                               {kit.preco.toFixed(2)}€
                             </span>
                           </div>
@@ -1165,19 +1165,19 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-black/10" />
                   <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
                   <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
-                  <Image
+                      <Image 
                     src="/images/1000541110.webp"
                     alt="Sneakers Nike"
-                    fill
+                        fill
                     className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    quality={85}
-                  />
+                        quality={85}
+                      />
                   <div className="absolute top-6 left-6">
                     <Badge className="bg-white text-orange-600 text-sm px-4 py-2 font-bold rounded-full shadow-lg">
                       NIKE
-                    </Badge>
-                  </div>
+                        </Badge>
+                      </div>
                   <div className="absolute bottom-3 left-6 text-white">
                     <h3 className="text-3xl font-bold mb-2">Nike</h3>
                     <p className="text-orange-100 text-base">Just Do It - American innovation</p>
@@ -1185,12 +1185,12 @@ export default async function Home() {
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                       <span className="text-sm text-orange-100">Just Do It</span>
                     </div>
-                  </div>
+                      </div>
                   <div className="absolute bottom-3 right-6">
                     <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explore →</span>
-                  </div>
+                    </div>
                 </div>
-              </div>
+          </div>
             </Link>
 
             {/* Categoria Adidas */}
@@ -1201,33 +1201,33 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-black/10" />
                   <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
                   <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
-                  <Image
+                          <Image 
                     src="/images/1362796-full_product.jpg"
                     alt="Sneakers Adidas"
-                    fill
+                            fill
                     className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    quality={85}
-                  />
+                            quality={85}
+                          />
                   <div className="absolute top-6 left-6">
                     <Badge className="bg-white text-green-600 text-sm px-4 py-2 font-bold rounded-full shadow-lg">
                       ADIDAS
-                    </Badge>
-                  </div>
+                            </Badge>
+                          </div>
                   <div className="absolute bottom-3 left-6 text-white">
                     <h3 className="text-3xl font-bold mb-2">Adidas</h3>
                     <p className="text-green-100 text-base">Classic German sneakers</p>
                     <div className="flex items-center gap-2 mt-2">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                       <span className="text-sm text-green-100">Impossible is Nothing</span>
-                    </div>
-                  </div>
+                        </div>
+                          </div>
                   <div className="absolute bottom-3 right-6">
                     <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explore →</span>
-                  </div>
-                </div>
-              </div>
-            </Link>
+                        </div>
+                    </div>
+          </div>
+              </Link>
 
             {/* Categoria New Balance */}
             <Link href="/sneakers/new-balance" className="group">
@@ -1237,19 +1237,19 @@ export default async function Home() {
                   <div className="absolute inset-0 bg-black/10" />
                   <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
                   <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
-                  <Image
+                      <Image 
                     src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                     alt="Sneakers New Balance"
-                    fill
+                        fill
                     className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    quality={85}
-                  />
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        quality={85}
+                      />
                   <div className="absolute top-6 left-6">
                     <Badge className="bg-white text-gray-800 text-sm px-4 py-2 font-bold rounded-full shadow-lg">
                       NEW BALANCE
-                    </Badge>
-                  </div>
+                        </Badge>
+                      </div>
                   <div className="absolute bottom-3 left-6 text-white">
                     <h3 className="text-3xl font-bold mb-2">New Balance</h3>
                     <p className="text-gray-200 text-base">American comfort and quality</p>
@@ -1257,10 +1257,10 @@ export default async function Home() {
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                       <span className="text-sm text-gray-200">Fearlessly Independent</span>
                     </div>
-                  </div>
+                      </div>
                   <div className="absolute bottom-3 right-6">
                     <span className="text-white font-bold text-lg bg-white/20 px-4 py-2 rounded-full">Explore →</span>
-                  </div>
+                    </div>
                 </div>
               </div>
             </Link>
@@ -1277,7 +1277,7 @@ export default async function Home() {
                       <div className="absolute inset-0 bg-black/10" />
                       <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
                       <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
-                      <Image
+                      <Image 
                         src="/images/1000541110.webp"
                         alt="Sneakers Nike"
                         fill
@@ -1296,7 +1296,7 @@ export default async function Home() {
                         <div className="flex items-center gap-1 mt-1">
                           <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                           <span className="text-xs text-orange-100">Just Do It</span>
-                        </div>
+                    </div>
                       </div>
                       <div className="absolute bottom-2 right-4">
                         <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explore →</span>
@@ -1323,14 +1323,14 @@ export default async function Home() {
                         <Badge className="bg-white text-green-600 text-xs px-3 py-1 font-bold rounded-full shadow-lg">
                           ADIDAS
                         </Badge>
-                      </div>
+                </div>
                       <div className="absolute bottom-2 left-4 text-white">
                         <h3 className="text-2xl font-bold mb-1">Adidas</h3>
                         <p className="text-green-100 text-sm">Sneakers clássicos alemães</p>
                         <div className="flex items-center gap-1 mt-1">
                           <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                           <span className="text-xs text-green-100">Impossible is Nothing</span>
-                        </div>
+          </div>
                       </div>
                       <div className="absolute bottom-2 right-4">
                         <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explore →</span>
@@ -1345,19 +1345,19 @@ export default async function Home() {
                       <div className="absolute inset-0 bg-black/10" />
                       <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
                       <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
-                      <Image
+                          <Image 
                         src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                         alt="Sneakers New Balance"
-                        fill
+                            fill
                         className="object-contain p-6 group-hover:scale-110 transition-transform duration-500"
                         sizes="100vw"
-                        quality={85}
-                      />
+                            quality={85}
+                          />
                       <div className="absolute top-4 left-4">
                         <Badge className="bg-white text-gray-800 text-xs px-3 py-1 font-bold rounded-full shadow-lg">
                           NEW BALANCE
-                        </Badge>
-                      </div>
+                            </Badge>
+                          </div>
                       <div className="absolute bottom-2 left-4 text-white">
                         <h3 className="text-2xl font-bold mb-1">New Balance</h3>
                         <p className="text-gray-200 text-sm">Conforto e qualidade americana</p>
@@ -1365,13 +1365,13 @@ export default async function Home() {
                           <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                           <span className="text-xs text-gray-200">Fearlessly Independent</span>
                         </div>
-                      </div>
+                          </div>
                       <div className="absolute bottom-2 right-4">
                         <span className="text-white font-bold text-sm bg-white/20 px-3 py-1 rounded-full">Explore →</span>
-                      </div>
+                        </div>
                     </div>
                   </Link>
-                </CarouselItem>
+                  </CarouselItem>
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
@@ -1389,7 +1389,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
+      
       {/* Parceiros Section */}
       <ParceirosSection />
 

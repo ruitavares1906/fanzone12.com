@@ -41951,14 +41951,14 @@ if (clube) {
               
               // Ordenar produtos não-body por temporada 2025/26
               produtosOutros.sort((a, b) => {
-                const aIs2526 = a.temporada === "2025/26"
-                const bIs2526 = b.temporada === "2025/26"
-                
-                if (aIs2526 && !bIs2526) return -1
-                if (!aIs2526 && bIs2526) return 1
-                
-                return 0
-              })
+              const aIs2526 = a.temporada === "2025/26"
+              const bIs2526 = b.temporada === "2025/26"
+              
+              if (aIs2526 && !bIs2526) return -1
+              if (!aIs2526 && bIs2526) return 1
+              
+              return 0
+            })
               
               // Reconstruir: produtos não-body primeiro, body no final
               produtosFiltrados = [...produtosOutros, ...produtosBody]

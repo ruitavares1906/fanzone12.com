@@ -44,18 +44,18 @@ export async function GET() {
   try {
     // Buscar as configurações da conta Stripe
     const account = await stripe.accounts.retrieve()
-    
+
     // Estrutura para armazenar os métodos de pagamento disponíveis
     const availableMethods: { id: string; name: string; icon: string }[] = []
 
     // Adicionar cartões (sempre disponíveis se a conta aceita pagamentos)
     // Verificar se a conta tem a capability de card payments
     if (account.capabilities?.card_payments === "active" || !account.capabilities) {
-      availableMethods.push(
-        { id: "visa", name: "Visa", icon: "/images/payment-visa.webp" },
-        { id: "mastercard", name: "Mastercard", icon: "/images/payment-mastercard.webp" },
+    availableMethods.push(
+      { id: "visa", name: "Visa", icon: "/images/payment-visa.webp" },
+      { id: "mastercard", name: "Mastercard", icon: "/images/payment-mastercard.webp" },
         { id: "amex", name: "American Express", icon: "/images/payment-amex.webp" },
-      )
+    )
     }
 
     // Verificar todas as capabilities da conta
@@ -78,7 +78,7 @@ export async function GET() {
     // Verificar métodos específicos por país
     if (account.country) {
       // MB Way é específico de Portugal
-      if (account.country === "PT") {
+        if (account.country === "PT") {
         // Verificar se MB Way está disponível através de capabilities
         // MB Way pode estar disponível como uma capability específica ou através de settings
         const mbwayMethod = paymentMethodMap["mbway"]

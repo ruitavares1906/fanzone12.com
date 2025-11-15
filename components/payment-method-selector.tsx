@@ -106,7 +106,7 @@ export function PaymentMethodSelector({
                         target.src = "/images/payment-visa.webp"
                       }}
                     />
-                  </div>
+              </div>
                 ))}
               </div>
             ) : (

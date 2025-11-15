@@ -166,7 +166,7 @@ export function Footer() {
               {/* Linha única horizontal em todos os tamanhos */}
               <div className="grid grid-flow-col auto-cols-max overflow-x-auto md:overflow-x-visible justify-center gap-2 md:gap-2">
                  {[
-                   { name: "Credit Card", src: "/images/1086741.png", width: 100, height: 60 },
+                   { name: "Credit Card", src: "/images/logo-stripe3.png", width: 200, height: 120 },
                   { name: "Klarna", src: "/images/payment-klarna.webp", width: 100, height: 50 },
                   { name: "PayPal", src: "/images/PayPal_Logo2014.png", width: 100, height: 50 },
                 ].map((payment) => (
@@ -179,7 +179,8 @@ export function Footer() {
                       alt={payment.name}
                       width={payment.width}
                       height={payment.height}
-                      className={`${payment.name === "PayPal" ? "h-10 sm:h-16" : "h-9 sm:h-14"} w-auto object-contain mx-auto`}
+                      quality={100}
+                      className={`${payment.name === "PayPal" ? "h-10 sm:h-16" : payment.name === "Credit Card" ? "h-12 sm:h-16" : "h-9 sm:h-14"} w-auto object-contain mx-auto`}
                     />
                   </div>
                 ))}
