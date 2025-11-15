@@ -430,8 +430,8 @@ export default function CarrinhoPage() {
                           >
                             <div className="glass-effect rounded-2xl p-3 lg:p-6 border border-border shadow-modern bg-card text-card-foreground">
                               <div className="flex gap-3 lg:gap-6">
-                                {/* Product Image - Smaller on mobile */}
-                                <div className="relative w-20 h-20 lg:w-32 lg:h-32 rounded-xl overflow-hidden bg-muted flex-shrink-0">
+                                {/* Product Image - More visible */}
+                                <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-xl overflow-hidden bg-muted flex-shrink-0">
                               <Image
                                 src={item.imagem}
                                 alt={item.nome}
@@ -506,33 +506,47 @@ export default function CarrinhoPage() {
                             </div>
                                     </div>
 
-                                    {/* Price and Controls - Horizontal layout on mobile */}
-                                    <div className="flex items-center justify-between gap-2">
-                                      {/* Quantity Controls */}
-                                      <div className="flex items-center gap-2">
-                                        <Button
-                                          variant="outline"
-                                          size="sm"
-                                          onClick={() => handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade - 1, item.personalizacao)}
-                                          disabled={item.quantidade <= 1}
-                                          className="w-7 h-7 lg:w-8 lg:h-8 p-0 rounded-full"
-                                        >
-                                          <Minus className="h-3 w-3" />
-                                        </Button>
-                                        <span className="font-medium text-gray-900 w-6 lg:w-8 text-center text-sm lg:text-base">{item.quantidade}</span>
-                                        <Button
-                                          variant="outline"
-                                          size="sm"
-                                          onClick={() => handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade + 1, item.personalizacao)}
-                                          className="w-7 h-7 lg:w-8 lg:h-8 p-0 rounded-full"
-                                        >
-                                          <Plus className="h-3 w-3" />
-                                        </Button>
-                        </div>
-
-                                      {/* Item Price */}
-                                      <div className="text-right">
-                                        <p className="text-lg lg:text-xl font-bold text-primary">
+                                    {/* Price and Controls - Different layout for mobile and desktop */}
+                                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-2">
+                                      {/* Mobile: Price on top, then controls */}
+                                      {/* Desktop: Controls on left, price on right */}
+                                      
+                                      {/* Item Price - Full width on mobile, right-aligned on desktop */}
+                                      <div className="flex flex-col lg:items-end gap-1.5 w-full lg:min-w-[120px] lg:text-right">
+                                        {/* Base Price */}
+                                        <div className="flex flex-col lg:items-end">
+                                          <p className="text-xs text-muted-foreground">
+                                            Base: €{((item.preco ?? 0) * (item.quantidade ?? 0)).toFixed(2)}
+                                          </p>
+                                          {/* Personalization Costs - Show separately */}
+                                          {item.personalizacao?.ativar && item.categoria !== 'capas' && (() => {
+                                            let detalhes = [];
+                                            
+                                            // Customization cost (name and number)
+                                            if (item.personalizacao.nome || item.personalizacao.numero) {
+                                              detalhes.push(`€${(3 * (item.quantidade ?? 0)).toFixed(2)} customization`);
+                                            }
+                                            
+                                            // Patches cost
+                                            if (Array.isArray(item.personalizacao?.patches) && item.personalizacao.patches.length > 0) {
+                                              const patchCost = item.personalizacao.patches.length * 1 * (item.quantidade ?? 0);
+                                              detalhes.push(`€${patchCost.toFixed(2)} patches`);
+                                            }
+                                            
+                                            return detalhes.length > 0 ? (
+                                              <div className="flex flex-col lg:items-end gap-0.5 mt-0.5">
+                                                {detalhes.map((detail, idx) => (
+                                                  <p key={idx} className="text-xs text-muted-foreground">
+                                                    + {detail}
+                                                  </p>
+                                                ))}
+                                              </div>
+                                            ) : null;
+                                          })()}
+                                        </div>
+                                        
+                                        {/* Total Price */}
+                                        <p className="text-lg lg:text-xl font-bold text-primary border-t border-border pt-1.5 w-full lg:text-right">
                                           €{(() => {
                                             let itemTotal = (item.preco ?? 0) * (item.quantidade ?? 0);
                                             
@@ -552,40 +566,42 @@ export default function CarrinhoPage() {
                                             return (itemTotal ?? 0).toFixed(2);
                                           })()}
                                         </p>
-                        {item.personalizacao?.ativar && item.categoria !== 'capas' && (
-                                          <p className="text-xs text-muted-foreground">
-                                            {(() => {
-                                              let custoPersonalizacao = 0;
-                                              let detalhes = [];
-                                              
-                                              // Customization cost (name and number)
-                                              if (item.personalizacao.nome || item.personalizacao.numero) {
-                                                custoPersonalizacao += 3;
-                                                detalhes.push("€3 (name/number)");
-                                              }
-                                              
-                                              // Patches cost
-                                              if (Array.isArray(item.personalizacao?.patches) && item.personalizacao.patches.length > 0) {
-                                                const patchCost = item.personalizacao.patches.length * 1;
-                                                custoPersonalizacao += patchCost;
-                                                detalhes.push(`€${patchCost} (${item.personalizacao.patches.length} patches)`);
-                                              }
-                                              
-                                              return custoPersonalizacao > 0 ? `+ ${detalhes.join(" + ")}` : "";
-                                            })()}
-                                          </p>
-                            )}
-                          </div>
+                                      </div>
 
-                                      {/* Remove Button */}
-                                      <Button
-                                        variant="ghost"
-                                        size="sm"
-                                        onClick={() => removeFromCart(item.id, item.tamanhoSelecionado, item.personalizacao)}
-                                        className="text-destructive hover:text-destructive hover:bg-destructive/10 p-1 lg:p-2"
-                                      >
-                                        <Trash2 className="h-4 w-4" />
-                                      </Button>
+                                      {/* Controls - Quantity and Remove */}
+                                      <div className="flex items-center justify-between lg:justify-start gap-2">
+                                        {/* Quantity Controls */}
+                                        <div className="flex items-center gap-2">
+                                          <Button
+                                            variant="outline"
+                                            size="sm"
+                                            onClick={() => handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade - 1, item.personalizacao)}
+                                            disabled={item.quantidade <= 1}
+                                            className="w-7 h-7 lg:w-8 lg:h-8 p-0 rounded-full"
+                                          >
+                                            <Minus className="h-3 w-3" />
+                                          </Button>
+                                          <span className="font-medium text-gray-900 w-6 lg:w-8 text-center text-sm lg:text-base">{item.quantidade}</span>
+                                          <Button
+                                            variant="outline"
+                                            size="sm"
+                                            onClick={() => handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade + 1, item.personalizacao)}
+                                            className="w-7 h-7 lg:w-8 lg:h-8 p-0 rounded-full"
+                                          >
+                                            <Plus className="h-3 w-3" />
+                                          </Button>
+                                        </div>
+
+                                        {/* Remove Button */}
+                                        <Button
+                                          variant="ghost"
+                                          size="sm"
+                                          onClick={() => removeFromCart(item.id, item.tamanhoSelecionado, item.personalizacao)}
+                                          className="text-destructive hover:text-destructive hover:bg-destructive/10 p-1 lg:p-2"
+                                        >
+                                          <Trash2 className="h-4 w-4" />
+                                        </Button>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>

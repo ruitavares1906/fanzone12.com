@@ -46,74 +46,48 @@ export async function GET() {
     const account = await stripe.accounts.retrieve()
 
     // Estrutura para armazenar os métodos de pagamento disponíveis
+    // Apenas retornar cartões, PayPal e Klarna
     const availableMethods: { id: string; name: string; icon: string }[] = []
 
     // Adicionar cartões (sempre disponíveis se a conta aceita pagamentos)
     // Verificar se a conta tem a capability de card payments
     if (account.capabilities?.card_payments === "active" || !account.capabilities) {
-    availableMethods.push(
-      { id: "visa", name: "Visa", icon: "/images/payment-visa.webp" },
-      { id: "mastercard", name: "Mastercard", icon: "/images/payment-mastercard.webp" },
-        { id: "amex", name: "American Express", icon: "/images/payment-amex.webp" },
-    )
+      availableMethods.push(
+        { id: "visa", name: "Visa", icon: "/images/payment-visa.png" },
+        { id: "mastercard", name: "Mastercard", icon: "/images/payment-mastercard.webp" },
+      )
     }
 
-    // Verificar todas as capabilities da conta
-    if (account.capabilities) {
-      // Iterar sobre todas as capabilities e verificar quais estão ativas
-      Object.keys(account.capabilities).forEach((capability) => {
-        const capabilityValue = account.capabilities?.[capability as keyof typeof account.capabilities]
-        
-        // Se a capability está ativa e temos um mapeamento para ela
-        if (capabilityValue === "active" && paymentMethodMap[capability]) {
-          const method = paymentMethodMap[capability]
-          // Evitar duplicados
-          if (!availableMethods.find(m => m.id === method.id)) {
-            availableMethods.push(method)
-          }
-        }
-      })
+    // Verificar Klarna se disponível
+    if (account.capabilities?.klarna_payments === "active") {
+      availableMethods.push({ id: "klarna", name: "Klarna", icon: "/images/payment-klarna.webp" })
     }
 
-    // Verificar métodos específicos por país
-    if (account.country) {
-      // MB Way é específico de Portugal
-        if (account.country === "PT") {
-        // Verificar se MB Way está disponível através de capabilities
-        // MB Way pode estar disponível como uma capability específica ou através de settings
-        const mbwayMethod = paymentMethodMap["mbway"]
-        if (mbwayMethod && !availableMethods.find(m => m.id === mbwayMethod.id)) {
-          // Adicionar MB Way se estiver em Portugal (pode ser verificado através de uma tentativa de criar sessão)
-          // Por enquanto, adicionamos se o país for PT
-          availableMethods.push(mbwayMethod)
-        }
-      }
-    }
+    // Adicionar PayPal (assumir que está disponível)
+    availableMethods.push({ id: "paypal", name: "PayPal", icon: "/images/paypal-logo-small-min-1.png" })
 
-    // Verificar PayPal através de integração separada (não é uma capability)
-    // PayPal geralmente aparece nas configurações ou pode ser verificado através de uma tentativa de criar uma sessão
-    // Por enquanto, vamos assumir que se não há restrições específicas, PayPal pode estar disponível
-    // Isso pode ser melhorado verificando as configurações específicas do PayPal
-
-    // Ordenar métodos: cartões primeiro, depois outros métodos
+    // Ordenar métodos: cartões primeiro, depois PayPal, depois Klarna
     const sortedMethods = availableMethods.sort((a, b) => {
-      const cardIds = ["visa", "mastercard", "amex", "card"]
-      const aIsCard = cardIds.includes(a.id)
-      const bIsCard = cardIds.includes(b.id)
+      const order = ["visa", "mastercard", "paypal", "klarna"]
+      const aIndex = order.indexOf(a.id)
+      const bIndex = order.indexOf(b.id)
       
-      if (aIsCard && !bIsCard) return -1
-      if (!aIsCard && bIsCard) return 1
-      return a.name.localeCompare(b.name)
+      if (aIndex === -1 && bIndex === -1) return 0
+      if (aIndex === -1) return 1
+      if (bIndex === -1) return -1
+      return aIndex - bIndex
     })
 
     return NextResponse.json({ methods: sortedMethods })
   } catch (error: any) {
     console.error("Erro ao obter métodos de pagamento:", error)
-    // Em caso de erro, retornar apenas cartões como métodos padrão
+    // Em caso de erro, retornar apenas cartões, PayPal e Klarna como métodos padrão
     return NextResponse.json({
       methods: [
-        { id: "visa", name: "Visa", icon: "/images/payment-visa.webp" },
+        { id: "visa", name: "Visa", icon: "/images/payment-visa.png" },
         { id: "mastercard", name: "Mastercard", icon: "/images/payment-mastercard.webp" },
+        { id: "paypal", name: "PayPal", icon: "/images/paypal-logo-small-min-1.png" },
+        { id: "klarna", name: "Klarna", icon: "/images/payment-klarna.webp" },
       ],
     })
   }
