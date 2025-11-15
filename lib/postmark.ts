@@ -159,7 +159,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
           <!-- Contacto -->
           <div style="text-align: center; margin-top: 30px;">
             <p style="margin: 0 0 15px 0; font-size: 14px; color: #666;">Se tiver dúvidas, contacte-nos:</p>
-            <a href="mailto:geral@fanzone12.pt" style="background-color: #1d4ed8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">📧 Contactar-nos</a>
+            <a href="mailto:sales@fanzone12.com" style="background-color: #1d4ed8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">📧 Contactar-nos</a>
           </div>
         </div>
         
@@ -169,7 +169,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
             © 2025 fanzone12.pt. Todos os direitos reservados.
           </p>
           <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 12px;">
-            🌐 <a href="https://www.fanzone12.pt" style="color: #1d4ed8; text-decoration: none;">fanzone12.pt</a> | 📧 geral@fanzone12.pt
+            🌐 <a href="https://www.fanzone12.com" style="color: #1d4ed8; text-decoration: none;">fanzone12.com</a> | 📧 sales@fanzone12.com
           </p>
         </div>
       </div>
@@ -214,7 +214,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
       📱 Tracking disponível - Poderá acompanhar a entrega em tempo real
       
       Se tiver alguma dúvida sobre o seu pedido, não hesite em contactar-nos:
-      📧 Email: geral@fanzone12.pt
+      📧 Email: sales@fanzone12.com
       🌐 Site: https://www.fanzone12.pt
       
       Obrigado por escolher a fanzone12.pt!
@@ -310,7 +310,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
     `
 
     console.log("📧 Preparando envio para cliente:", data.customerEmail)
-    console.log("📧 Preparando envio para loja: geral@fanzone12.pt")
+    console.log("📧 Preparando envio para loja: sales@fanzone12.com")
     console.log("📧 Assunto do email para loja:", `🚨 NOVA ENCOMENDA #${data.orderNumber} - ${data.customerName} - ${data.total.toFixed(2)}€`)
 
     // Enviar ambos os emails usando Postmark
@@ -319,7 +319,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
     const results = await Promise.allSettled([
       // Email para o cliente
       client.sendEmail({
-        From: "geral@fanzone12.pt",
+        From: "sales@fanzone12.com",
         To: data.customerEmail,
         Subject: `✅ Pedido Confirmado #${data.orderNumber} - fanzone12.pt`,
         TextBody: emailText,
@@ -329,8 +329,8 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
       
       // Email para a loja
       client.sendEmail({
-        From: "geral@fanzone12.pt",
-        To: "geral@fanzone12.pt",
+        From: "sales@fanzone12.com",
+        To: "sales@fanzone12.com",
         Subject: `🚨 NOVA ENCOMENDA #${data.orderNumber} - ${data.customerName} - ${data.total.toFixed(2)}€`,
         TextBody: `NOVA ENCOMENDA RECEBIDA:
 
@@ -450,7 +450,7 @@ export async function sendShippingConfirmationEmail(data: {
 
     // Enviar email usando Postmark
     await client.sendEmail({
-      From: "geral@fanzone12.pt",
+      From: "sales@fanzone12.com",
       To: data.customerEmail,
       Subject: `O seu pedido #${data.orderNumber} foi enviado - fanzone12.pt`,
       TextBody: emailText,

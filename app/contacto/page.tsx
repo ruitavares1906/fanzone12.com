@@ -68,7 +68,7 @@ export default function ContactoPage() {
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="https://www.tiktok.com/@fanzone12.pt"
+                href="https://www.tiktok.com/@fanzone12.com"
                 className="bg-primary/10 p-3 rounded-full hover:bg-primary/20 transition-colors"
               >
                 <Image src="/images/tik-tok.webp" alt="TikTok" width={20} height={20} className="h-5 w-5" />
@@ -101,37 +101,34 @@ export default function ContactoPage() {
 
       {/* FAQ */}
       <div className="mt-16">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-6">Perguntas Frequentes</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-6">Frequently Asked Questions</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white rounded-lg border p-6">
-            <h3 className="font-semibold mb-2">Qual é o prazo de entrega?</h3>
+            <h3 className="font-semibold mb-2">What is the delivery time?</h3>
             <p className="text-gray-600">
-              As entregas são realizadas em 7-12 dias úteis para Portugal Continental e Ilhas. Para entregas
-              internacionais, o prazo pode variar entre 5-10 dias úteis.
+              Deliveries are made within 7-12 business days across Europe. For international deliveries, the delivery time may vary between 5-10 business days.
             </p>
           </div>
 
           <div className="bg-white rounded-lg border p-6">
-            <h3 className="font-semibold mb-2">Como posso acompanhar a minha encomenda?</h3>
+            <h3 className="font-semibold mb-2">How can I track my order?</h3>
             <p className="text-gray-600">
-              Após a expedição da sua encomenda, receberá um email com o código de rastreio que poderá utilizar no site
-              da transportadora.
+              After your order is shipped, you will receive an email with the tracking code that you can use on the carrier's website.
             </p>
           </div>
 
           <div className="bg-white rounded-lg border p-6">
-            <h3 className="font-semibold mb-2">Posso devolver ou trocar um produto?</h3>
+            <h3 className="font-semibold mb-2">Can I return or exchange a product?</h3>
             <p className="text-gray-600">
-              Sim, aceitamos devoluções e trocas no prazo de 30 dias após a receção da encomenda, desde que o produto
-              esteja em perfeitas condições e na embalagem original.
+              Yes, we accept returns and exchanges within 30 days of receiving the order, provided the product is in perfect condition and in its original packaging.
             </p>
           </div>
 
           <div className="bg-white rounded-lg border p-6">
-            <h3 className="font-semibold mb-2">Quais são os métodos de pagamento disponíveis?</h3>
+            <h3 className="font-semibold mb-2">What payment methods are available?</h3>
             <p className="text-gray-600">
-              Aceitamos pagamentos por cartão de crédito/débito, MB WAY, referência multibanco e PayPal.
+              We accept payments by credit/debit card, PayPal, Klarna, Apple Pay, and Google Pay.
             </p>
           </div>
         </div>
@@ -145,7 +142,7 @@ export default function ContactoPage() {
             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
           />
         </svg>
-        <span>geral@fanzone12.pt</span>
+        <span>sales@fanzone12.com</span>
       </div>
     </div>
   )

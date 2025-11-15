@@ -593,7 +593,7 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
                 />
               </div>
             </div>
-          </div>
+            </div>
           
           {carrier && trackingNumber && (
             <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
@@ -608,7 +608,7 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
               >
                 {getTrackingUrl(carrier, trackingNumber)}
               </a>
-            </div>
+          </div>
           )}
 
           <div className="flex flex-col sm:flex-row gap-3 mt-4">
@@ -640,14 +640,14 @@ export default function OrderDetailsPage({ params }: { params: Promise<{ id: str
                     Número de rastreio: {trackingNumber}
                   </p>
                   {getTrackingUrl(carrier, trackingNumber) && (
-                    <a
+                  <a
                       href={getTrackingUrl(carrier, trackingNumber)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline text-sm flex items-center mt-1"
-                    >
-                      Rastrear encomenda <Truck className="h-3 w-3 ml-1" />
-                    </a>
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline text-sm flex items-center mt-1"
+                  >
+                    Rastrear encomenda <Truck className="h-3 w-3 ml-1" />
+                  </a>
                   )}
                 </div>
               </div>

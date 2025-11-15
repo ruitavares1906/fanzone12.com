@@ -160,7 +160,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
           <!-- Contacto -->
           <div style="text-align: center; margin-top: 30px;">
             <p style="margin: 0 0 15px 0; font-size: 14px; color: #666;">Se tiver dúvidas, contacte-nos:</p>
-            <a href="mailto:geral@fanzone12.pt" style="background-color: #1d4ed8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">📧 Contactar-nos</a>
+            <a href="mailto:sales@fanzone12.com" style="background-color: #1d4ed8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">📧 Contactar-nos</a>
           </div>
         </div>
         
@@ -170,7 +170,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
             © 2025 fanzone12.pt. Todos os direitos reservados.
           </p>
           <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 12px;">
-            🌐 <a href="https://www.fanzone12.pt" style="color: #1d4ed8; text-decoration: none;">fanzone12.pt</a> | 📧 geral@fanzone12.pt
+            🌐 <a href="https://www.fanzone12.com" style="color: #1d4ed8; text-decoration: none;">fanzone12.com</a> | 📧 sales@fanzone12.com
           </p>
         </div>
       </div>
@@ -215,7 +215,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
       📱 Tracking disponível - Poderá acompanhar a entrega em tempo real
       
       Se tiver alguma dúvida sobre o seu pedido, não hesite em contactar-nos:
-      📧 Email: geral@fanzone12.pt
+      📧 Email: sales@fanzone12.com
       🌐 Site: https://www.fanzone12.pt
       
       Obrigado por escolher a fanzone12.pt!
@@ -227,7 +227,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
     // Email para o cliente
     const msgToCustomer = {
       to: data.customerEmail,
-      from: "geral@fanzone12.pt", // Email verificado no SendGrid
+      from: "sales@fanzone12.com", // Email verificado no Mailgun
       subject: `Confirmação de Pedido #${data.orderNumber} - fanzone12.pt`,
       text: emailText,
       html: emailHtml,
@@ -321,7 +321,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
 
     // Email para a loja (com informações completas)
     const msgToStore = {
-      to: "geral@fanzone12.pt",
+      to: "sales@fanzone12.com",
       from: "noreply@fanzone12.pt", // Usar remetente diferente para evitar problemas
       subject: `🚨 NOVA ENCOMENDA #${data.orderNumber} - ${data.customerName} - ${data.total.toFixed(2)}€`,
       text: `NOVA ENCOMENDA RECEBIDA:
@@ -355,20 +355,20 @@ Total: ${data.total.toFixed(2)} €`,
     }
 
     console.log("📧 Preparando envio para cliente:", data.customerEmail)
-    console.log("📧 Preparando envio para loja: geral@fanzone12.pt")
+    console.log("📧 Preparando envio para loja: sales@fanzone12.com")
     console.log("📧 Assunto do email para loja:", `🚨 NOVA ENCOMENDA #${data.orderNumber} - ${data.customerName} - ${data.total.toFixed(2)}€`)
 
     // Enviar ambos os emails
     console.log("🚀 Enviando emails...")
     console.log("📧 Email para cliente:", JSON.stringify({
       to: data.customerEmail,
-      from: "geral@fanzone12.pt",
+      from: "sales@fanzone12.com",
       subject: `✅ Pedido Confirmado #${data.orderNumber} - fanzone12.pt`
     }, null, 2))
     
     console.log("📧 Email para loja:", JSON.stringify({
-      to: "geral@fanzone12.pt",
-      from: "geral@fanzone12.pt",
+      to: "sales@fanzone12.com",
+      from: "sales@fanzone12.com",
       subject: `🚨 NOVA ENCOMENDA #${data.orderNumber} - ${data.customerName} - ${data.total.toFixed(2)}€`
     }, null, 2))
     
@@ -464,7 +464,7 @@ export async function sendShippingConfirmationEmail(data: {
     // Email para o cliente
     const msgToCustomer = {
       to: data.customerEmail,
-      from: "fanzone12.pt <geral@fanzone12.pt>",
+      from: "fanzone12.com <sales@fanzone12.com>",
       subject: `O seu pedido #${data.orderNumber} foi enviado - fanzone12.pt`,
       text: emailText,
       html: emailHtml,

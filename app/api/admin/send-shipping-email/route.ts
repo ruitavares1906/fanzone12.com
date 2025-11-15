@@ -108,12 +108,12 @@ export async function POST(request: Request) {
                   <p style="margin: 5px 0;"><strong>Carrier:</strong> ${carrierName}</p>
                   <p style="margin: 5px 0;"><strong>Tracking Number:</strong> ${trackingNumber}</p>
                   ${trackingUrl ? `
-                    <p style="margin: 10px 0;">
+                  <p style="margin: 10px 0;">
                       <a href="${trackingUrl}" 
-                         style="background-color: #2563eb; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 600;">
-                        🔍 Track Order
-                      </a>
-                    </p>
+                       style="background-color: #2563eb; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 600;">
+                      🔍 Track Order
+                    </a>
+                  </p>
                   ` : ''}
                 </div>
               ` : ''}

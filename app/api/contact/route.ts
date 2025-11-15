@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     // Email para a loja
     const emailToStore = {
       from: MAILGUN_FROM_EMAIL,
-      to: "geral@fanzone12.pt",
+      to: "sales@fanzone12.com",
       subject: `Nova mensagem de contato: ${assunto}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

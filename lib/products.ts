@@ -2841,6 +2841,32 @@ const produtosArray = ([
     "tamanho": "Criança"
   },
   {
+    id: "barcelona-2526-special-edition-bright-pink-jersey",
+    nome: "Barcelona 2025/26 Special Edition Bright Pink Jersey",
+    descricao: "Barcelona 2025/26 Special Edition Bright Pink Jersey",
+    descricaoLonga: "Barcelona 2025/26 Special Edition Bright Pink Jersey",
+    preco: 17.99,
+    precoAntigo: 29.99,
+    imagem: "/images/barcelona-2025-bright-pink-special-shirt-6815904.webp", 
+    imagensAdicionais: [
+      "/images/barcelona-2025-bright-pink-special-shirt-3933692.webp",
+      "/images/barcelona-2025-bright-pink-special-shirt-8806066.webp",
+      "/images/barcelona-2025-bright-pink-special-shirt-5447470.webp"
+    ],
+    categoria: "clubes",
+    clube: "barcelona",
+    liga: "la-liga",
+    temporada: "2025/26",
+    cor: "rosa",
+    material: "100% Poliéster",
+    marca: "Nike",
+    avaliacao: 4.8,
+    numAvaliacoes: 4,
+    destaque: false,
+    edicao_especial: false,
+    tamanho: "Criança"
+  },
+  {
     id: "benfica-aquecimento-2425",
     nome: "Benfica 2024/25 Warm-up Jersey",
     descricao: "Camisola de aquecimento oficial do SL Benfica para a temporada 2024/25. Design moderno e tecnologia avançada para preparação ideal.",
@@ -3413,27 +3439,6 @@ const produtosArray = ([
     stock: 50,
     destaque: true,
     tags: ["real madrid", "2025/26", "special", "edição-limitada"]
-  },
-  {
-    id: "realmadrid-terceira-2526",
-    nome: "Real Madrid 2025/26 Third Jersey",
-    preco: 17.99,
-    precoAntigo: 29.99,
-    categoria: "clubes",
-    clube: "real-madrid",
-    liga: "la-liga",
-    temporada: "2025/26",
-    cor: "preto", // ajustar conforme visual
-    descricao: "Camisola terceira do Real Madrid para a temporada 2025/26 – estilo arrojado para os verdadeiros madridistas.",
-    imagem: "/images/9b41930.webp",
-    imagensAdicionais: [
-      "/images/2b101e4.webp",
-      "/images/5561a9.webp"
-    ],
-    tamanhos: ["XS", "S", "M", "L", "XL", "XXL"],
-    stock: 50,
-    destaque: false,
-    tags: ["real madrid", "2025/26", "terceira", "alternativa"]
   },
   {
     id: "kit-crianca-realmadrid-terceira-2526",
@@ -41848,18 +41853,116 @@ if (clube) {
               return 0
             })
           } else {
-            // Organizar por prioridade: temporada 2025/26 primeiro, depois resto
-            produtosFiltrados.sort((a, b) => {
-              // Primeiro critério: temporada 2025/26
-              const aIs2526 = a.temporada === "2025/26"
-              const bIs2526 = b.temporada === "2025/26"
+            // Definir prioridade dos maiores clubes da Europa
+            const topEuropeanClubs = [
+              "barcelona",
+              "real-madrid",
+              "manchester-united",
+              "liverpool",
+              "manchester-city",
+              "psg",
+              "bayern-munich",
+              "arsenal",
+              "chelsea",
+              "milan",
+              "inter",
+              "juventus",
+              "tottenham",
+              "atletico-madrid",
+              "borussia-dortmund",
+              "napoli",
+              "roma"
+            ]
+            
+            // Função para verificar se um produto é de um top clube
+            const isTopClub = (produto: Product) => {
+              const clubeLower = produto.clube?.toLowerCase()
+              return clubeLower && topEuropeanClubs.includes(clubeLower)
+            }
+            
+            // Separar produtos em grupos para depois misturar
+            // Apenas aplicar se não houver filtro de clube específico
+            if (!clube) {
+              const produtos2526TopClubs: Product[] = []
+              const produtos2526Outros: Product[] = []
+              const produtosOutrosTopClubs: Product[] = []
+              const produtosOutros: Product[] = []
+              const produtosBody: Product[] = []
               
-              if (aIs2526 && !bIs2526) return -1
-              if (!aIs2526 && bIs2526) return 1
+              produtosFiltrados.forEach(produto => {
+                // Separar produtos "body" para o final
+                const isBody = produto.categoria === "body"
+                
+                if (isBody) {
+                  produtosBody.push(produto)
+                  return
+                }
+                
+                const is2526 = produto.temporada === "2025/26"
+                const isTop = isTopClub(produto)
+                
+                if (is2526 && isTop) {
+                  produtos2526TopClubs.push(produto)
+                } else if (is2526 && !isTop) {
+                  produtos2526Outros.push(produto)
+                } else if (!is2526 && isTop) {
+                  produtosOutrosTopClubs.push(produto)
+                } else {
+                  produtosOutros.push(produto)
+                }
+              })
               
-              // Se ambos têm a mesma prioridade, manter ordem original
-              return 0
-            })
+              // Função para baralhar array mantendo alguma aleatoriedade baseada no ID
+              const shuffleArray = (array: Product[]) => {
+                const shuffled = [...array]
+                // Usar um hash simples baseado no ID para criar uma ordem pseudo-aleatória mas consistente
+                shuffled.sort((a, b) => {
+                  const hashA = a.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
+                  const hashB = b.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
+                  return (hashA % 1000) - (hashB % 1000)
+                })
+                return shuffled
+              }
+              
+              // Baralhar os grupos de top clubs
+              const produtos2526TopClubsShuffled = shuffleArray(produtos2526TopClubs)
+              const produtosOutrosTopClubsShuffled = shuffleArray(produtosOutrosTopClubs)
+              
+              // Reconstruir array na ordem: 2025/26 top clubs (baralhados), 2025/26 outros, outros top clubs (baralhados), outros, body (no final)
+              produtosFiltrados = [
+                ...produtos2526TopClubsShuffled,
+                ...produtos2526Outros,
+                ...produtosOutrosTopClubsShuffled,
+                ...produtosOutros,
+                ...produtosBody
+              ]
+            } else {
+              // Se houver filtro de clube, separar body para o final e ordenar resto por temporada 2025/26
+              const produtosBody: Product[] = []
+              const produtosOutros: Product[] = []
+              
+              produtosFiltrados.forEach(produto => {
+                if (produto.categoria === "body") {
+                  produtosBody.push(produto)
+                } else {
+                  produtosOutros.push(produto)
+                }
+              })
+              
+              // Ordenar produtos não-body por temporada 2025/26
+              produtosOutros.sort((a, b) => {
+                const aIs2526 = a.temporada === "2025/26"
+                const bIs2526 = b.temporada === "2025/26"
+                
+                if (aIs2526 && !bIs2526) return -1
+                if (!aIs2526 && bIs2526) return 1
+                
+                return 0
+              })
+              
+              // Reconstruir: produtos não-body primeiro, body no final
+              produtosFiltrados = [...produtosOutros, ...produtosBody]
+            }
           }
           break
   }

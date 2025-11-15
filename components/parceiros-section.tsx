@@ -18,6 +18,7 @@ interface Parceiro {
   redesSociais: {
     instagram?: string
     tiktok?: string
+    tiktokUrl?: string // URL específica para vídeo ou perfil
   }
 }
 
@@ -33,33 +34,45 @@ const parceirosExemplo: Parceiro[] = [
   },
   {
     id: "2",
-    nome: "Natacha",
+    nome: "Leonor Ferreira",
     foto: "",
     redesSociais: {
-      instagram: "_natachaa.___",
-      tiktok: "_natachaa._"
+      tiktok: "leonorr.ferreira___",
+      tiktokUrl: "https://www.tiktok.com/@leonorr.ferreira___/video/7571958294722497825?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
     }
   },
   {
     id: "3",
-    nome: "Constança Sá",
+    nome: "Natacha",
     foto: "",
     redesSociais: {
-      instagram: "concasnsa",
-      tiktok: "concasnsaa"
+      instagram: "_natachaa.___",
+      tiktok: "_natachaa._",
+      tiktokUrl: "https://www.tiktok.com/@_natachaa._/video/7565979514669403425?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
     }
   },
   {
     id: "4",
-    nome: "Daniela Mendes",
+    nome: "Constança Sá",
     foto: "",
     redesSociais: {
-      instagram: "_dany._ofc_",
-      tiktok: "daniela.ofc_"
+      instagram: "concasnsa",
+      tiktok: "concasnsaa",
+      tiktokUrl: "https://www.tiktok.com/@concasnsaa/video/7565558614736342305?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
     }
   },
   {
     id: "5",
+    nome: "Daniela Mendes",
+    foto: "",
+    redesSociais: {
+      instagram: "_dany._ofc_",
+      tiktok: "daniela.ofc_",
+      tiktokUrl: "https://www.tiktok.com/@daniela.ofc_/video/7564129007185268000?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
+    }
+  },
+  {
+    id: "6",
     nome: "Matilde Patrão",
     foto: "",
     redesSociais: {
@@ -88,10 +101,10 @@ export default function ParceirosSection() {
         <div className="text-center mb-12">
           <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 shadow-lg px-6 py-3 rounded-full mb-6 text-lg">
             <Users className="w-5 h-5 mr-2" />
-            Nossos Parceiros
+            Our Partners
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Conheça os Nossos Parceiros
+            Meet Our Partners
           </h2>
         </div>
 
@@ -154,7 +167,7 @@ export default function ParceirosSection() {
                               className="rounded-full h-9 px-3 gap-2 hover:bg-gray-50"
                               asChild
                             >
-                              <a href={`https://tiktok.com/@${parceiro.redesSociais.tiktok}`} target="_blank" rel="noopener noreferrer">
+                              <a href={parceiro.redesSociais.tiktokUrl || `https://tiktok.com/@${parceiro.redesSociais.tiktok}`} target="_blank" rel="noopener noreferrer">
                                 <div className="flex items-center gap-2">
                                   <Image src="/images/tik-tok.webp" alt="TikTok" width={16} height={16} className="w-4 h-4" />
                                   <span className="text-sm">@{parceiro.redesSociais.tiktok}</span>
@@ -179,10 +192,10 @@ export default function ParceirosSection() {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Quer ser nosso parceiro?
+              Want to become our partner?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Junte-se à nossa comunidade de especialistas e influenciadores
+              Join our community of experts and influencers
             </p>
             <Button 
               size="lg" 
@@ -190,7 +203,7 @@ export default function ParceirosSection() {
               asChild
             >
               <Link href="/info-parceiros">
-                Candidatar-se como Parceiro
+                Apply as Partner
               </Link>
             </Button>
           </div>

@@ -12,14 +12,14 @@ export default function InfoParceirosPage() {
         <div className="text-center mb-16 animate-slide-up">
           <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
             <Users className="w-4 h-4 mr-2" />
-            Programa de Parceiros
+            Partner Program
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Junte-se à Nossa Rede de Parceiros
+            Join Our Partner Network
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transforme a sua paixão pelo futebol numa oportunidade de negócio lucrativa. 
-            Seja um parceiro oficial da Fanzone12 e ganhe comissões atrativas.
+            Turn your passion for football into a profitable business opportunity. 
+            Become an official Fanzone12 partner and earn attractive commissions.
           </p>
         </div>
 
@@ -31,13 +31,13 @@ export default function InfoParceirosPage() {
                 <div className="p-3 bg-green-100 rounded-full">
                   <TrendingUp className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle className="text-xl">Comissões Atrativas</CardTitle>
+                <CardTitle className="text-xl">Attractive Commissions</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
                <p className="text-gray-600">
-                 Ganhe 10% de comissão em cada venda realizada através do seu código único. 
-                 Pagamentos semanais automáticos!
+                 Earn 10% commission on each sale made through your unique code. 
+                 Automatic weekly payments!
                </p>
             </CardContent>
           </Card>
@@ -48,13 +48,13 @@ export default function InfoParceirosPage() {
                 <div className="p-3 bg-blue-100 rounded-full">
                   <Gift className="h-6 w-6 text-blue-600" />
                 </div>
-                <CardTitle className="text-xl">Bónus e Prémios</CardTitle>
+                <CardTitle className="text-xl">Bonuses and Prizes</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
-                Acesso a produtos exclusivos, descontos especiais e prémios mensais 
-                para os melhores parceiros.
+                Access to exclusive products, special discounts and monthly prizes 
+                for top partners.
               </p>
             </CardContent>
           </Card>
@@ -65,13 +65,13 @@ export default function InfoParceirosPage() {
                 <div className="p-3 bg-purple-100 rounded-full">
                   <Shield className="h-6 w-6 text-purple-600" />
                 </div>
-                <CardTitle className="text-xl">Suporte Total</CardTitle>
+                <CardTitle className="text-xl">Full Support</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
-                Equipa dedicada para apoiar o seu sucesso. Materiais promocionais, 
-                treino e acompanhamento personalizado.
+                Dedicated team to support your success. Promotional materials, 
+                training and personalized follow-up.
               </p>
             </CardContent>
           </Card>
@@ -80,32 +80,32 @@ export default function InfoParceirosPage() {
         {/* Como Funciona */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Como Funciona o Programa
+            How the Program Works
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             {[
               {
                 step: "1",
-                title: "Inscreva-se",
-                description: "Preencha o formulário e aguarde aprovação em 24h",
+                title: "Sign Up",
+                description: "Fill out the form and wait for approval within 24h",
                 icon: "📝"
               },
               {
                 step: "2", 
-                title: "Receba o Seu Link",
-                description: "Obtenha o seu link único de afiliado personalizado",
+                title: "Get Your Link",
+                description: "Receive your unique personalized affiliate link",
                 icon: "🔗"
               },
               {
                 step: "3",
-                title: "Promova Produtos",
-                description: "Partilhe produtos nas suas redes sociais e grupos",
+                title: "Promote Products",
+                description: "Share products on your social media and groups",
                 icon: "📱"
               },
               {
                 step: "4",
-                title: "Ganhe Comissões",
-                description: "Receba pagamentos semanais das suas vendas",
+                title: "Earn Commissions",
+                description: "Receive weekly payments from your sales",
                 icon: "💰"
               }
             ].map((item, index) => (
@@ -127,25 +127,25 @@ export default function InfoParceirosPage() {
         {/* Requisitos */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Requisitos para Ser Parceiro
+            Requirements to Become a Partner
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="modern-card shadow-modern">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span>Obrigatórios</span>
+                  <span>Required</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                  <ul className="space-y-3">
                    <li className="flex items-start space-x-2">
                      <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                     <span>Mínimo 5.000 seguidores no TikTok ou Instagram</span>
+                     <span>Minimum 5,000 followers on TikTok or Instagram</span>
                    </li>
                    <li className="flex items-start space-x-2">
                      <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                     <span>Engajamento ativo nas redes sociais</span>
+                     <span>Active engagement on social media</span>
                    </li>
                  </ul>
               </CardContent>
@@ -157,14 +157,14 @@ export default function InfoParceirosPage() {
          {/* Comissões */}
          <div className="mb-16">
            <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-             Como Funcionam as Comissões
+             How Commissions Work
            </h2>
            <div className="grid md:grid-cols-2 gap-8">
              <Card className="modern-card shadow-modern">
                <CardHeader>
                  <CardTitle className="flex items-center space-x-2">
                    <TrendingUp className="h-5 w-5 text-green-600" />
-                   <span>Comissão Fixa</span>
+                   <span>Fixed Commission</span>
                  </CardTitle>
                </CardHeader>
                <CardContent>
@@ -173,7 +173,7 @@ export default function InfoParceirosPage() {
                      10%
                    </div>
                    <p className="text-gray-600">
-                     Comissão fixa de 10% sobre todas as vendas realizadas com o seu código
+                     Fixed 10% commission on all sales made with your code
                    </p>
                  </div>
                </CardContent>
@@ -183,26 +183,26 @@ export default function InfoParceirosPage() {
                <CardHeader>
                  <CardTitle className="flex items-center space-x-2">
                    <Gift className="h-5 w-5 text-blue-600" />
-                   <span>Pagamentos</span>
+                   <span>Payments</span>
                  </CardTitle>
                </CardHeader>
                <CardContent>
                  <ul className="space-y-3">
                    <li className="flex items-start space-x-2">
                      <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                     <span>Pagamentos semanais automáticos</span>
+                     <span>Automatic weekly payments</span>
                    </li>
                    <li className="flex items-start space-x-2">
                      <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                     <span>MB WAY ou Transferência Bancária</span>
+                     <span>Bank Transfer or other methods</span>
                    </li>
                    <li className="flex items-start space-x-2">
                      <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                     <span>Baseado em encomendas pagas</span>
+                     <span>Based on paid orders</span>
                    </li>
                    <li className="flex items-start space-x-2">
                      <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                     <span>Ranking mensal com prémios</span>
+                     <span>Monthly ranking with prizes</span>
                    </li>
                  </ul>
                </CardContent>
@@ -213,7 +213,7 @@ export default function InfoParceirosPage() {
          {/* Contacto */}
          <div className="mb-16">
            <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-             Contacte-nos
+             Contact Us
            </h2>
            <div className="grid md:grid-cols-2 gap-8">
              <Card className="modern-card shadow-modern text-center">
@@ -224,7 +224,7 @@ export default function InfoParceirosPage() {
                  <CardTitle>Email</CardTitle>
                </CardHeader>
                <CardContent>
-                 <p className="text-gray-600">geral@fanzone12.pt</p>
+                 <p className="text-gray-600">sales@fanzone12.com</p>
                </CardContent>
              </Card>
 
@@ -245,7 +245,7 @@ export default function InfoParceirosPage() {
                      className="inline-flex items-center space-x-2"
                    >
                      <MessageCircle className="h-4 w-4" />
-                     <span>Enviar Mensagem</span>
+                     <span>Send Message</span>
                    </a>
                  </Button>
                </CardContent>
@@ -258,21 +258,21 @@ export default function InfoParceirosPage() {
           <Card className="modern-card shadow-modern bg-gradient-to-r from-blue-50 to-purple-50 border-0">
             <CardContent className="py-12">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Pronto para Começar?
+                Ready to Get Started?
               </h3>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-                Junte-se a centenas de parceiros que já estão a ganhar com a Fanzone12. 
-                O processo de candidatura é simples e rápido.
+                Join hundreds of partners who are already earning with Fanzone12. 
+                The application process is simple and fast.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 rounded-full">
                   <Link href="/candidatura-parceiro">
-                    Candidatar-se Agora
+                    Apply Now
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="modern-button border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 rounded-full">
                   <Link href="/contacto">
-                    Saber Mais
+                    Learn More
                   </Link>
                 </Button>
               </div>

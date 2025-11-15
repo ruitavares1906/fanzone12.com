@@ -941,7 +941,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-100">
                   <div className="mb-3">
-                    <p className="text-sm text-purple-600 font-medium">✨ Free shipping on 3 products or €68+</p>
+                      <p className="text-sm text-purple-600 font-medium">✨ Free shipping on 3 products or €68+</p>
                   </div>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

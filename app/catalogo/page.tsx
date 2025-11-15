@@ -110,11 +110,6 @@ export default async function CatalogoPage({
             <Carousel className="w-full">
               <CarouselContent>
                 {[
-                  { name: "Sporting CP", logo: "pngwing.com (1).webp", href: "/catalogo?clube=sporting" },
-                  { name: "Benfica", logo: "pngwing.com.webp", href: "/catalogo?clube=benfica" },
-                  { name: "Porto", logo: "pngwing.com (2).webp", href: "/catalogo?clube=porto" },
-                  { name: "Braga", logo: "braga-logo.png", href: "/catalogo?clube=sc-braga" },
-                  { name: "Vitória SC", logo: "Vitoria-Sport-Clube-logo.png", href: "/catalogo?clube=vitoria-sc" },
                   { name: "Barcelona", logo: "pngwing.com (3).webp", href: "/catalogo?clube=barcelona" },
                   { name: "Real Madrid", logo: "pngwing.com (9).webp", href: "/catalogo?clube=real-madrid" },
                   { name: "Manchester United", logo: "pngwing.com (8).webp", href: "/catalogo?clube=manchester-united" },
@@ -126,7 +121,12 @@ export default async function CatalogoPage({
                   { name: "Inter Milan", logo: "Inter-Milan-logo.png", href: "/catalogo?clube=inter" },
                   { name: "Chelsea", logo: "Chelsea-logo.webp", href: "/catalogo?clube=chelsea" },
                   { name: "AC Milan", logo: "Milan-logo.png", href: "/catalogo?clube=milan" },
-                  { name: "Tottenham", logo: "Tottenham-logo.png", href: "/catalogo?clube=tottenham" }
+                  { name: "Tottenham", logo: "Tottenham-logo.png", href: "/catalogo?clube=tottenham" },
+                  { name: "Sporting CP", logo: "pngwing.com (1).webp", href: "/catalogo?clube=sporting" },
+                  { name: "Benfica", logo: "pngwing.com.webp", href: "/catalogo?clube=benfica" },
+                  { name: "Porto", logo: "pngwing.com (2).webp", href: "/catalogo?clube=porto" },
+                  { name: "Braga", logo: "braga-logo.png", href: "/catalogo?clube=sc-braga" },
+                  { name: "Vitória SC", logo: "Vitoria-Sport-Clube-logo.png", href: "/catalogo?clube=vitoria-sc" }
                 ].map((club, index) => (
                   <CarouselItem key={`club-${club.name}-${index}`} className="basis-1/3">
                     <Link

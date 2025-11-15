@@ -47,7 +47,7 @@ export async function POST(request: Request) {
             </div>
             <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280;">
               <p>Esta mensagem foi enviada através do painel administrativo da fanzone12.pt</p>
-              <p>Para responder, utilize: <a href="mailto:geral@fanzone12.pt">geral@fanzone12.pt</a></p>
+              <p>Para responder, utilize: <a href="mailto:sales@fanzone12.com">sales@fanzone12.com</a></p>
             </div>
           </div>
         </div>

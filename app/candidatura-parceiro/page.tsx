@@ -38,19 +38,19 @@ export default function CandidaturaParceiroPage() {
   const validateForm = () => {
     const newErrors: Record<string, string> = {}
 
-    if (!formData.nome.trim()) newErrors.nome = "Nome é obrigatório"
-    if (!formData.email.trim()) newErrors.email = "Email é obrigatório"
-    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Email inválido"
-    if (!formData.telefone.trim()) newErrors.telefone = "Telefone é obrigatório"
+    if (!formData.nome.trim()) newErrors.nome = "Name is required"
+    if (!formData.email.trim()) newErrors.email = "Email is required"
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Invalid email"
+    if (!formData.telefone.trim()) newErrors.telefone = "Phone is required"
     if (!formData.instagram.trim() && !formData.tiktok.trim()) {
-      newErrors.instagram = "Deve preencher pelo menos uma rede social"
+      newErrors.instagram = "You must fill at least one social network"
     }
-    if (!formData.seguidores.trim()) newErrors.seguidores = "Número de seguidores é obrigatório"
+    if (!formData.seguidores.trim()) newErrors.seguidores = "Number of followers is required"
     else if (parseInt(formData.seguidores) < 5000) {
-      newErrors.seguidores = "Mínimo de 5.000 seguidores"
+      newErrors.seguidores = "Minimum of 5,000 followers"
     }
-    if (!formData.visualizacoes.trim()) newErrors.visualizacoes = "Visualizações são obrigatórias"
-    if (!formData.motivacao.trim()) newErrors.motivacao = "Motivação é obrigatória"
+    if (!formData.visualizacoes.trim()) newErrors.visualizacoes = "Views are required"
+    if (!formData.motivacao.trim()) newErrors.motivacao = "Motivation is required"
 
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
@@ -77,11 +77,11 @@ export default function CandidaturaParceiroPage() {
       if (result.success) {
         setIsSubmitted(true)
       } else {
-        throw new Error(result.message || 'Erro ao submeter candidatura')
+        throw new Error(result.message || 'Error submitting application')
       }
     } catch (error) {
-      console.error('Erro:', error)
-      alert('Erro ao submeter candidatura. Tente novamente.')
+      console.error('Error:', error)
+      alert('Error submitting application. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -96,16 +96,16 @@ export default function CandidaturaParceiroPage() {
               <CheckCircle className="h-12 w-12 text-green-600" />
             </div>
             <h1 className="text-3xl font-bold text-gray-800 mb-4">
-              Candidatura Enviada com Sucesso!
+              Application Submitted Successfully!
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Obrigado pela sua candidatura! Vamos analisar o seu perfil e entrar em contacto 
-              consigo em até 24 horas.
+              Thank you for your application! We will review your profile and contact 
+              you within 24 hours.
             </p>
             <div className="space-y-4">
               <Button asChild size="lg" className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 rounded-full">
                 <Link href="/info-parceiros">
-                  Voltar às Informações
+                  Back to Information
                 </Link>
               </Button>
             </div>
@@ -122,23 +122,23 @@ export default function CandidaturaParceiroPage() {
         <div className="text-center mb-12 animate-slide-up">
           <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
             <Users className="w-4 h-4 mr-2" />
-            Candidatura de Parceiro
+            Partner Application
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Candidate-se Agora
+            Apply Now
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Preencha o formulário abaixo e junte-se à nossa rede de parceiros. 
-            Analisaremos a sua candidatura em até 24 horas.
+            Fill out the form below and join our partner network. 
+            We will review your application within 24 hours.
           </p>
         </div>
 
         {/* Formulário */}
         <Card className="modern-card shadow-modern">
           <CardHeader>
-            <CardTitle className="text-2xl text-center">Formulário de Candidatura</CardTitle>
+            <CardTitle className="text-2xl text-center">Application Form</CardTitle>
             <CardDescription className="text-center">
-              Preencha todos os campos obrigatórios para processarmos a sua candidatura
+              Fill in all required fields so we can process your application
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -146,20 +146,20 @@ export default function CandidaturaParceiroPage() {
               {/* Informações Pessoais */}
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">
-                  Informações Pessoais
+                  Personal Information
                 </h3>
                 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="nome" className="text-sm font-medium">
-                      Nome Completo *
+                      Full Name *
                     </Label>
                     <Input
                       id="nome"
                       value={formData.nome}
                       onChange={(e) => handleInputChange("nome", e.target.value)}
                       className={errors.nome ? "border-red-500" : ""}
-                      placeholder="O seu nome completo"
+                      placeholder="Your full name"
                     />
                     {errors.nome && (
                       <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -179,7 +179,7 @@ export default function CandidaturaParceiroPage() {
                       value={formData.email}
                       onChange={(e) => handleInputChange("email", e.target.value)}
                       className={errors.email ? "border-red-500" : ""}
-                      placeholder="seu@email.com"
+                      placeholder="your@email.com"
                     />
                     {errors.email && (
                       <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -192,7 +192,7 @@ export default function CandidaturaParceiroPage() {
 
                 <div>
                   <Label htmlFor="telefone" className="text-sm font-medium">
-                    Telefone/WhatsApp *
+                    Phone/WhatsApp *
                   </Label>
                   <Input
                     id="telefone"
@@ -213,7 +213,7 @@ export default function CandidaturaParceiroPage() {
               {/* Redes Sociais */}
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">
-                  Redes Sociais
+                  Social Media
                 </h3>
                 
                 <div className="grid md:grid-cols-2 gap-4">
@@ -226,7 +226,7 @@ export default function CandidaturaParceiroPage() {
                       value={formData.instagram}
                       onChange={(e) => handleInputChange("instagram", e.target.value)}
                       className={errors.instagram ? "border-red-500" : ""}
-                      placeholder="@seuusuario"
+                      placeholder="@yourusername"
                     />
                     {errors.instagram && (
                       <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -244,7 +244,7 @@ export default function CandidaturaParceiroPage() {
                       id="tiktok"
                       value={formData.tiktok}
                       onChange={(e) => handleInputChange("tiktok", e.target.value)}
-                      placeholder="@seuusuario"
+                      placeholder="@yourusername"
                     />
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function CandidaturaParceiroPage() {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="seguidores" className="text-sm font-medium">
-                      Número de Seguidores *
+                      Number of Followers *
                     </Label>
                     <Input
                       id="seguidores"
@@ -272,7 +272,7 @@ export default function CandidaturaParceiroPage() {
 
                   <div>
                     <Label htmlFor="visualizacoes" className="text-sm font-medium">
-                      Visualizações Médias por Vídeo/Reels *
+                      Average Views per Video/Reels *
                     </Label>
                     <Input
                       id="visualizacoes"
@@ -280,7 +280,7 @@ export default function CandidaturaParceiroPage() {
                       value={formData.visualizacoes}
                       onChange={(e) => handleInputChange("visualizacoes", e.target.value)}
                       className={errors.visualizacoes ? "border-red-500" : ""}
-                      placeholder="ex: 10000"
+                      placeholder="e.g.: 10000"
                     />
                     {errors.visualizacoes && (
                       <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -295,32 +295,32 @@ export default function CandidaturaParceiroPage() {
               {/* Experiência e Motivação */}
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">
-                  Sobre Si
+                  About You
                 </h3>
                 
                 <div>
                   <Label htmlFor="experiencia" className="text-sm font-medium">
-                    Experiência com Marketing Digital
+                    Digital Marketing Experience
                   </Label>
                   <Textarea
                     id="experiencia"
                     value={formData.experiencia}
                     onChange={(e) => handleInputChange("experiencia", e.target.value)}
-                    placeholder="Conte-nos sobre a sua experiência com marketing digital, afiliações, etc."
+                    placeholder="Tell us about your experience with digital marketing, affiliations, etc."
                     rows={3}
                   />
                 </div>
 
                 <div>
                   <Label htmlFor="motivacao" className="text-sm font-medium">
-                    Por que quer ser parceiro da Fanzone12? *
+                    Why do you want to be a Fanzone12 partner? *
                   </Label>
                   <Textarea
                     id="motivacao"
                     value={formData.motivacao}
                     onChange={(e) => handleInputChange("motivacao", e.target.value)}
                     className={errors.motivacao ? "border-red-500" : ""}
-                    placeholder="Explique a sua motivação para se juntar ao nosso programa de parceiros..."
+                    placeholder="Explain your motivation for joining our partner program..."
                     rows={4}
                   />
                   {errors.motivacao && (
@@ -344,12 +344,12 @@ export default function CandidaturaParceiroPage() {
                   {isSubmitting ? (
                     <>
                       <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                      A Enviar...
+                      Sending...
                     </>
                   ) : (
                     <>
                       <Send className="h-5 w-5 mr-2" />
-                      Enviar Candidatura
+                      Submit Application
                     </>
                   )}
                 </Button>
@@ -363,7 +363,7 @@ export default function CandidaturaParceiroPage() {
           <Card className="modern-card shadow-modern bg-gradient-to-r from-blue-50 to-purple-50 border-0">
             <CardContent className="py-8">
               <h3 className="text-xl font-bold text-gray-800 mb-4">
-                O que acontece depois?
+                What happens next?
               </h3>
               <div className="grid md:grid-cols-3 gap-6 text-sm">
                 <div className="text-center">
@@ -371,7 +371,7 @@ export default function CandidaturaParceiroPage() {
                     <span className="text-blue-600 font-bold">1</span>
                   </div>
                   <p className="text-gray-600">
-                    Analisamos a sua candidatura em até 24 horas
+                    We review your application within 24 hours
                   </p>
                 </div>
                 <div className="text-center">
@@ -379,7 +379,7 @@ export default function CandidaturaParceiroPage() {
                     <span className="text-green-600 font-bold">2</span>
                   </div>
                   <p className="text-gray-600">
-                    Entramos em contacto consigo via WhatsApp
+                    We contact you via WhatsApp
                   </p>
                 </div>
                 <div className="text-center">
@@ -387,7 +387,7 @@ export default function CandidaturaParceiroPage() {
                     <span className="text-purple-600 font-bold">3</span>
                   </div>
                   <p className="text-gray-600">
-                    Recebe o seu código único e começa a ganhar
+                    You receive your unique code and start earning
                   </p>
                 </div>
               </div>

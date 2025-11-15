@@ -77,7 +77,7 @@ export async function POST(request: Request) {
         
         return NextResponse.json({
           success: true,
-          message: `Email de teste de encomenda enviado para ${email}. Verifique também geral@fanzone12.pt.pt para ver o email da loja com a morada.`
+          message: `Email de teste de encomenda enviado para ${email}. Verifique também sales@fanzone12.com para ver o email da loja com a morada.`
         })
       } catch (error: any) {
         console.error("Erro ao enviar email de teste de encomenda:", error)
@@ -117,7 +117,7 @@ export async function POST(request: Request) {
             
             <div style="border-top: 1px solid #ecf0f1; padding-top: 25px; margin-top: 30px; font-size: 14px; color: #7f8c8d;">
               <p style="margin: 5px 0;">Este é um email automático de teste. Se você não esperava receber este email, pode ignorá-lo com segurança.</p>
-              <p style="margin: 15px 0 5px 0;">📧 <a href="mailto:geral@fanzone12.pt.pt" style="color: #3498db; text-decoration: none;">geral@fanzone12.pt.pt</a></p>
+              <p style="margin: 15px 0 5px 0;">📧 <a href="mailto:sales@fanzone12.com" style="color: #3498db; text-decoration: none;">sales@fanzone12.com</a></p>
               <p style="margin: 5px 0;">🌐 <a href="${siteUrl}" style="color: #3498db; text-decoration: none;">fanzone12.pt.pt</a></p>
               <p style="margin: 20px 0 0 0; font-size: 12px; color: #95a5a6;">© ${new Date().getFullYear()} fanzone12.pt. Todos os direitos reservados.</p>
             </div>
@@ -136,7 +136,7 @@ export async function POST(request: Request) {
         
         Este é um email automático de teste. Se você não esperava receber este email, pode ignorá-lo com segurança.
         
-        Para dúvidas, contacte-nos através de geral@fanzone12.pt.pt.
+        Para dúvidas, contacte-nos através de sales@fanzone12.com.
         
         © ${new Date().getFullYear()} fanzone12.pt. Todos os direitos reservados.
         fanzone12.pt.pt

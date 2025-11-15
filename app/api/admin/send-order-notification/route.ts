@@ -63,7 +63,7 @@ export async function POST(request: Request) {
               <p>Obrigado por escolher a fanzone12.pt!</p>
             </div>
             <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280;">
-              <p>Para dúvidas, contacte-nos através de <a href="mailto:geral@fanzone12.pt">geral@fanzone12.pt</a></p>
+              <p>Para dúvidas, contacte-nos através de <a href="mailto:sales@fanzone12.com">sales@fanzone12.com</a></p>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export async function POST(request: Request) {
         
         Obrigado por escolher a fanzone12.pt!
         
-        Para dúvidas, contacte-nos através de geral@fanzone12.pt
+        Para dúvidas, contacte-nos através de sales@fanzone12.com
       `
     }
     

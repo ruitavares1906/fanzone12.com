@@ -99,11 +99,11 @@ export default function ConfiguracoesPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="admin-email">Email de Administração</Label>
-                  <Input id="admin-email" defaultValue="geral@fanzone12.pt" />
+                  <Input id="admin-email" defaultValue="sales@fanzone12.com" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="support-email">Email de Suporte</Label>
-                  <Input id="support-email" defaultValue="geral@fanzone12.pt" />
+                  <Input id="support-email" defaultValue="sales@fanzone12.com" />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -147,7 +147,7 @@ export default function ConfiguracoesPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="tiktok">TikTok</Label>
-                  <Input id="tiktok" defaultValue="https://www.tiktok.com/@fanzone12.pt" />
+                  <Input id="tiktok" defaultValue="https://www.tiktok.com/@fanzone12.com" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="whatsapp">WhatsApp</Label>
@@ -410,7 +410,7 @@ export default function ConfiguracoesPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="sender-email">Email do Remetente</Label>
-                <Input id="sender-email" defaultValue="geral@fanzone12.pt" />
+                <Input id="sender-email" defaultValue="sales@fanzone12.com" />
               </div>
             </CardContent>
           </Card>

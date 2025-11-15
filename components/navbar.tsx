@@ -42,7 +42,7 @@ export function Navbar() {
        </div>
       
       <div className="mx-auto max-w-full px-2 sm:px-4 lg:px-6">
-        <div className="flex h-16 items-center justify-between">
+        <div className="relative flex h-16 items-center justify-between">
           {/* Modern Mobile Menu Button */}
           <div className="flex items-center lg:hidden">
             <Sheet>
@@ -111,7 +111,7 @@ export function Navbar() {
           </div>
 
           {/* Modern Logo */}
-          <div className="flex-shrink-0 flex items-center justify-center lg:justify-end flex-1 mt-2 lg:mt-0 lg:mr-16">
+          <div className="hidden lg:flex flex-shrink-0 items-center absolute left-6">
             <Link href="/" className="flex items-center group">
                {/* Primeiro logo - responsivo - Otimizado para LCP */}
                <Image 
@@ -119,26 +119,12 @@ export function Navbar() {
                  alt="fanzone12.com" 
                  width={150} 
                  height={52} 
-                 className="hidden lg:block mr-3 transition-transform group-hover:scale-105" 
+                 className="mr-3 transition-transform group-hover:scale-105" 
                  priority
                  fetchPriority="high"
                  loading="eager"
                  decoding="sync"
                  sizes="(max-width: 1024px) 0px, 150px"
-                  quality={85}
-                 suppressHydrationWarning
-               />
-               <Image 
-                 src="/images/dbe5a8e3-94bb-400a-aedf-f737d748eb6f.webp" 
-                 alt="fanzone12.pt" 
-                 width={140} 
-                 height={49} 
-                 className="lg:hidden mr-2 transition-transform group-hover:scale-105" 
-                 priority
-                 fetchPriority="high"
-                 loading="eager"
-                 decoding="sync"
-                 sizes="(max-width: 1024px) 140px, 0px"
                   quality={85}
                  suppressHydrationWarning
                />
@@ -160,8 +146,42 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Modern Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1 mx-4 flex-grow justify-center">
+          {/* Logo Mobile */}
+          <div className="flex lg:hidden flex-shrink-0 items-center justify-center flex-1 mt-2">
+            <Link href="/" className="flex items-center group">
+               <Image 
+                 src="/images/dbe5a8e3-94bb-400a-aedf-f737d748eb6f.webp" 
+                 alt="fanzone12.pt" 
+                 width={140} 
+                 height={49} 
+                 className="mr-2 transition-transform group-hover:scale-105" 
+                 priority
+                 fetchPriority="high"
+                 loading="eager"
+                 decoding="sync"
+                 sizes="(max-width: 1024px) 140px, 0px"
+                  quality={85}
+                 suppressHydrationWarning
+               />
+               <Image 
+                 src="/images/506271e6-0123-4529-8c72-bbc5679a47bd.webp" 
+                 alt="fanzone12.com" 
+                 width={60} 
+                 height={21} 
+                 className="transition-transform group-hover:scale-105" 
+                 priority
+                 fetchPriority="high"
+                 loading="eager"
+                 decoding="sync"
+                 sizes="60px"
+                  quality={85}
+                 suppressHydrationWarning
+               />
+            </Link>
+          </div>
+
+          {/* Modern Desktop Navigation - Centralized */}
+          <nav className="hidden lg:flex items-center space-x-1 flex-1 justify-center">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -205,7 +225,7 @@ export function Navbar() {
           </nav>
 
           {/* Modern Cart Button */}
-          <div className="flex items-center space-x-1 flex-shrink-0 mr-6">
+          <div className="flex items-center space-x-1 flex-shrink-0 absolute right-6">
              <Button variant="ghost" size="sm" asChild className="relative modern-button text-gray-800 hover:text-blue-600 hover:bg-gray-100 p-3">
               <Link href="/carrinho">
                 <ShoppingCart className="h-5 w-5 mr-2" />

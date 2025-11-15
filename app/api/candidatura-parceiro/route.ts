@@ -10,7 +10,7 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN
 const MAILGUN_FROM = process.env.MAILGUN_FROM || 'noreply@fanzone12.pt'
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'geral@fanzone12.pt'
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'sales@fanzone12.com'
 
 export async function POST(request: NextRequest) {
   try {
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     // Validar dados obrigatórios
     if (!nome || !email || !telefone || !seguidores || !visualizacoes || !motivacao) {
       return NextResponse.json(
-        { success: false, message: 'Dados obrigatórios em falta' },
+        { success: false, message: 'Required data missing' },
         { status: 400 }
       )
     }
@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     // Validar número de seguidores
     if (parseInt(seguidores) < 5000) {
       return NextResponse.json(
-        { success: false, message: 'Mínimo de 5.000 seguidores necessário' },
+        { success: false, message: 'Minimum of 5,000 followers required' },
         { status: 400 }
       )
     }
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
     // Validar pelo menos uma rede social
     if (!instagram && !tiktok) {
       return NextResponse.json(
-        { success: false, message: 'Deve preencher pelo menos uma rede social' },
+        { success: false, message: 'You must fill at least one social network' },
         { status: 400 }
       )
     }
@@ -99,7 +99,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ 
       success: true, 
-      message: 'Candidatura enviada com sucesso',
+      message: 'Application submitted successfully',
       candidaturaId 
     })
 
@@ -108,7 +108,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       { 
         success: false, 
-        message: 'Erro interno do servidor',
+        message: 'Internal server error',
         error: process.env.NODE_ENV === 'development' ? (error as Error).message : undefined
       },
       { status: 500 }
@@ -121,35 +121,35 @@ async function sendNotificationEmail(data: any) {
     const formData = new FormData()
     formData.append('from', MAILGUN_FROM)
     formData.append('to', ADMIN_EMAIL)
-    formData.append('subject', `Nova Candidatura de Parceiro - ${data.nome}`)
+    formData.append('subject', `New Partner Application - ${data.nome}`)
     
     const emailBody = `
-      <h2>Nova Candidatura de Parceiro</h2>
-      <p><strong>ID da Candidatura:</strong> ${data.candidaturaId}</p>
+      <h2>New Partner Application</h2>
+      <p><strong>Application ID:</strong> ${data.candidaturaId}</p>
       
-      <h3>Informações Pessoais:</h3>
+      <h3>Personal Information:</h3>
       <ul>
-        <li><strong>Nome:</strong> ${data.nome}</li>
+        <li><strong>Name:</strong> ${data.nome}</li>
         <li><strong>Email:</strong> ${data.email}</li>
-        <li><strong>Telefone:</strong> ${data.telefone}</li>
+        <li><strong>Phone:</strong> ${data.telefone}</li>
       </ul>
       
-      <h3>Redes Sociais:</h3>
+      <h3>Social Media:</h3>
       <ul>
-        <li><strong>Instagram:</strong> ${data.instagram || 'Não preenchido'}</li>
-        <li><strong>TikTok:</strong> ${data.tiktok || 'Não preenchido'}</li>
-        <li><strong>Seguidores:</strong> ${data.seguidores.toLocaleString()}</li>
-        <li><strong>Visualizações Médias:</strong> ${data.visualizacoes.toLocaleString()}</li>
+        <li><strong>Instagram:</strong> ${data.instagram || 'Not provided'}</li>
+        <li><strong>TikTok:</strong> ${data.tiktok || 'Not provided'}</li>
+        <li><strong>Followers:</strong> ${data.seguidores.toLocaleString()}</li>
+        <li><strong>Average Views:</strong> ${data.visualizacoes.toLocaleString()}</li>
       </ul>
       
-      <h3>Experiência:</h3>
-      <p>${data.experiencia || 'Não preenchido'}</p>
+      <h3>Experience:</h3>
+      <p>${data.experiencia || 'Not provided'}</p>
       
-      <h3>Motivação:</h3>
+      <h3>Motivation:</h3>
       <p>${data.motivacao}</p>
       
       <hr>
-      <p><em>Esta candidatura foi enviada através do site Fanzone12.</em></p>
+      <p><em>This application was submitted through the Fanzone12 website.</em></p>
     `
     
     formData.append('html', emailBody)

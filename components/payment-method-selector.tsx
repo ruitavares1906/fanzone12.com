@@ -4,6 +4,13 @@ import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/
 import { Label } from "@/components/ui/label"
 import { CreditCard } from "lucide-react"
 import Image from "next/image"
+import { useEffect, useState } from "react"
+
+interface PaymentMethod {
+  id: string
+  name: string
+  icon: string
+}
 
 interface PaymentMethodSelectorProps {
   onCheckout?: () => void
@@ -20,6 +27,41 @@ export function PaymentMethodSelector({
   onEmailChange,
   emailError
 }: PaymentMethodSelectorProps) {
+  const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>([])
+  const [loadingMethods, setLoadingMethods] = useState(true)
+
+  useEffect(() => {
+    // Buscar métodos de pagamento disponíveis da API
+    const fetchPaymentMethods = async () => {
+      try {
+        setLoadingMethods(true)
+        const response = await fetch('/api/payment-methods')
+        const data = await response.json()
+        
+        if (data.methods && Array.isArray(data.methods)) {
+          setPaymentMethods(data.methods)
+        } else {
+          // Fallback para métodos padrão se a API não retornar dados válidos
+          setPaymentMethods([
+            { id: "visa", name: "Visa", icon: "/images/payment-visa.webp" },
+            { id: "mastercard", name: "Mastercard", icon: "/images/payment-mastercard.webp" },
+          ])
+        }
+      } catch (error) {
+        console.error("Erro ao buscar métodos de pagamento:", error)
+        // Fallback para métodos padrão em caso de erro
+        setPaymentMethods([
+          { id: "visa", name: "Visa", icon: "/images/payment-visa.webp" },
+          { id: "mastercard", name: "Mastercard", icon: "/images/payment-mastercard.webp" },
+        ])
+      } finally {
+        setLoadingMethods(false)
+      }
+    }
+
+    fetchPaymentMethods()
+  }, [])
+
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-semibold">Payment Method</h3>
@@ -40,20 +82,38 @@ export function PaymentMethodSelector({
           {/* Available payment methods */}
           <div className="mt-3">
             <h4 className="font-semibold text-foreground mb-3 text-center text-sm">Available Payment Methods</h4>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-              <div className="bg-card rounded-lg p-3 shadow-sm border border-border">
-                <Image src="/images/payment-visa.png" alt="Visa" width={60} height={30} className="h-6 w-auto object-contain mx-auto" />
+            {loadingMethods ? (
+              <div className="flex justify-center items-center py-4">
+                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-green-600"></div>
               </div>
-              <div className="bg-card rounded-lg p-3 shadow-sm border border-border">
-                <Image src="/images/payment-mastercard.webp" alt="Mastercard" width={60} height={30} className="h-6 w-auto object-contain mx-auto" />
+            ) : paymentMethods.length > 0 ? (
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                {paymentMethods.map((method) => (
+                  <div 
+                    key={method.id} 
+                    className="bg-card rounded-lg p-3 shadow-sm border border-border flex items-center justify-center"
+                    title={method.name}
+                  >
+                    <Image 
+                      src={method.icon} 
+                      alt={method.name} 
+                      width={60} 
+                      height={30} 
+                      className="h-6 w-auto object-contain mx-auto"
+                      onError={(e) => {
+                        // Fallback para um ícone genérico se a imagem não carregar
+                        const target = e.target as HTMLImageElement
+                        target.src = "/images/payment-visa.webp"
+                      }}
+                    />
+                  </div>
+                ))}
               </div>
-              <div className="bg-card rounded-lg p-3 shadow-sm border border-border">
-                <Image src="/images/payment-klarna.webp" alt="Klarna" width={60} height={30} className="h-6 w-auto object-contain mx-auto" />
+            ) : (
+              <div className="text-center text-sm text-gray-500 py-4">
+                Loading payment methods...
               </div>
-              <div className="bg-card rounded-lg p-3 shadow-sm border border-border">
-                <Image src="/images/paypal-logo-small-min-1.png" alt="PayPal" width={60} height={30} className="h-6 w-auto object-contain mx-auto" />
-              </div>
-            </div>
+            )}
           </div>
         </CardContent>
       </Card>

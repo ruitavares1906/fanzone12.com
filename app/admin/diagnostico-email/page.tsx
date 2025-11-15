@@ -431,7 +431,7 @@ export default function DiagnosticoEmailPage() {
                 <AlertCircle className="h-4 w-4" />
                 <AlertTitle>Verificação de Domínio</AlertTitle>
                 <AlertDescription>
-                  O email <code>geral@fanzone12.pt</code> deve estar verificado na sua conta do SendGrid.
+                  O email <code>sales@fanzone12.com</code> deve estar verificado na sua conta do Mailgun.
                 </AlertDescription>
               </Alert>
 
@@ -447,7 +447,7 @@ export default function DiagnosticoEmailPage() {
                 <Mail className="h-4 w-4" />
                 <AlertTitle>Email da Loja com Morada</AlertTitle>
                 <AlertDescription>
-                  Quando uma encomenda é feita, são enviados 2 emails: um para o cliente com confirmação e outro para <code>geral@fanzone12.pt</code> com todos os detalhes incluindo a morada de envio e telefone do cliente.
+                  Quando uma encomenda é feita, são enviados 2 emails: um para o cliente com confirmação e outro para <code>sales@fanzone12.com</code> com todos os detalhes incluindo a morada de envio e telefone do cliente.
                 </AlertDescription>
               </Alert>
             </CardContent>

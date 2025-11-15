@@ -661,14 +661,14 @@ export default function OrdersPage() {
                       <TableCell>
                         {order.tracking_number ? (
                           order.tracking_url ? (
-                            <a
+                          <a
                               href={order.tracking_url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-blue-600 hover:underline"
-                            >
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
                               {order.tracking_number} {order.carrier ? `(${getCarrierLabel(order.carrier)})` : ''}
-                            </a>
+                          </a>
                           ) : (
                             <span className="text-gray-600">{order.tracking_number}</span>
                           )
@@ -812,14 +812,14 @@ export default function OrdersPage() {
                           {order.tracking_number ? (
                             <div className="flex items-center gap-2">
                               {order.tracking_url ? (
-                                <a
+                              <a
                                   href={order.tracking_url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-blue-600 hover:text-blue-800 text-xs underline"
-                                >
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:text-blue-800 text-xs underline"
+                              >
                                   {order.tracking_number} {order.carrier ? `(${getCarrierLabel(order.carrier)})` : ''}
-                                </a>
+                              </a>
                               ) : (
                                 <span className="text-gray-600 text-xs">{order.tracking_number}</span>
                               )}
@@ -849,24 +849,24 @@ export default function OrdersPage() {
                                   ))}
                                 </SelectContent>
                               </Select>
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="text"
-                                  placeholder="Número de rastreio"
-                                  className="border rounded px-2 py-1 text-xs flex-1"
-                                  value={trackingInputs[order.id] || ""}
-                                  onChange={e => setTrackingInputs(prev => ({ ...prev, [order.id]: e.target.value }))}
-                                  disabled={trackingLoading[order.id]}
-                                />
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  onClick={() => handleSaveTracking(order)}
+                            <div className="flex items-center gap-2">
+                              <input
+                                type="text"
+                                placeholder="Número de rastreio"
+                                className="border rounded px-2 py-1 text-xs flex-1"
+                                value={trackingInputs[order.id] || ""}
+                                onChange={e => setTrackingInputs(prev => ({ ...prev, [order.id]: e.target.value }))}
+                                disabled={trackingLoading[order.id]}
+                              />
+                              <Button
+                                size="sm"
+                                variant="outline"
+                                onClick={() => handleSaveTracking(order)}
                                   disabled={trackingLoading[order.id] || !trackingInputs[order.id]?.trim() || !carrierInputs[order.id]}
-                                  className="px-2 text-xs"
-                                >
-                                  {trackingLoading[order.id] ? "..." : "Enviar"}
-                                </Button>
+                                className="px-2 text-xs"
+                              >
+                                {trackingLoading[order.id] ? "..." : "Enviar"}
+                              </Button>
                               </div>
                             </div>
                           )}

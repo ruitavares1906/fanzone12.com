@@ -43,7 +43,7 @@ export function Footer() {
                   </svg>
                   <span className="sr-only">Facebook</span>
                 </Link>
-                <Link href="https://www.tiktok.com/@fanzone12.pt" className="modern-button p-3 rounded-full bg-gradient-to-r from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600 transition-all duration-300 shadow-lg">
+                <Link href="https://www.tiktok.com/@fanzone12.com" className="modern-button p-3 rounded-full bg-gradient-to-r from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600 transition-all duration-300 shadow-lg">
                   <Image src="/images/tik-tok.webp" alt="TikTok" width={20} height={20} className="h-5 w-5" />
                   <span className="sr-only">TikTok</span>
                 </Link>
@@ -55,9 +55,9 @@ export function Footer() {
                 </Link>
               </div>
               <div className="pt-3 border-t border-gray-200">
-                <Link href="https://www.tiktok.com/@fanzone12.pt_" className="flex items-center gap-2 text-gray-800 hover:text-gray-600 transition-colors mb-1">
+                <Link href="https://www.tiktok.com/@fanzone12.com_" className="flex items-center gap-2 text-gray-800 hover:text-gray-600 transition-colors mb-1">
                   <Image src="/images/tik-tok.webp" alt="TikTok Feedbacks" width={20} height={20} className="h-5 w-5" />
-                  <span className="text-sm font-semibold">@fanzone12.pt_</span>
+                  <span className="text-sm font-semibold">@fanzone12.com_</span>
                 </Link>
                 <p className="text-sm text-gray-700 font-medium ml-7">Customer feedback</p>
               </div>
@@ -136,14 +136,14 @@ export function Footer() {
                 </svg>
                 <span className="text-gray-800 font-medium">WhatsApp</span>
               </Link>
-              <Link href="https://www.tiktok.com/@fanzone12.pt" className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <Link href="https://www.tiktok.com/@fanzone12.com" className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <Image src="/images/tik-tok.webp" alt="TikTok" width={20} height={20} className="h-5 w-5" />
-                <span className="text-gray-800 font-medium">@fanzone12.pt</span>
+                <span className="text-gray-800 font-medium">@fanzone12.com</span>
               </Link>
-              <Link href="https://www.tiktok.com/@fanzone12.pt_" className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <Link href="https://www.tiktok.com/@fanzone12.com_" className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <Image src="/images/tik-tok.webp" alt="TikTok Feedbacks" width={20} height={20} className="h-5 w-5" />
                 <div className="flex flex-col">
-                  <span className="text-gray-800 font-medium">@fanzone12.pt_</span>
+                  <span className="text-gray-800 font-medium">@fanzone12.com_</span>
                   <span className="text-xs text-gray-600">Customer feedback</span>
                 </div>
               </Link>

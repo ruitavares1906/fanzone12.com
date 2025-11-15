@@ -821,7 +821,7 @@ export default function CarrinhoPage() {
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-yellow-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-                    <p className="text-sm text-yellow-800">Depois, envia mensagem para o nosso <strong>TikTok ou fanzone12.pt</strong> a pedir o pagamento por MB WAY.</p>
+                    <p className="text-sm text-yellow-800">Depois, envia mensagem para o nosso <strong>TikTok ou fanzone12.com</strong> a pedir o pagamento por MB WAY.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-yellow-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
@@ -854,7 +854,7 @@ export default function CarrinhoPage() {
                 {/* Social Media Buttons */}
                 <div className="grid grid-cols-3 gap-3 mb-6">
                   <a 
-                    href="https://tiktok.com/@fanzone12.pt" 
+                    href="https://tiktok.com/@fanzone12.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 py-3 px-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-colors"
