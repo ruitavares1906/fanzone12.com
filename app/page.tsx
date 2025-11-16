@@ -226,180 +226,291 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Modern Hero Section - Desktop Only */}
-       <section className="relative min-h-screen hidden md:flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 overflow-hidden">
-          <Image 
-           src="/images/1751647533_9cc7b4a154af3f78533665e36b695936.webp"
-            alt="Much more than a store"
-            className="object-cover scale-105 md:scale-105"
-            priority
-            fetchPriority="high"
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1920px"
-            quality={75}
-            loading="eager"
-            decoding="sync"
-            suppressHydrationWarning
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-          />
-        </div>
-        {/* Background Overlay */}
-         <div className="absolute inset-0 bg-black/60 md:backdrop-blur-sm" />
-         {/* Glows estáticos no mobile (equivalente visual sem animação) */}
-         <div className="absolute inset-0 md:hidden pointer-events-none bg-[radial-gradient(160px_160px_at_10%_20%,rgba(255,255,255,0.10),transparent),radial-gradient(220px_220px_at_90%_80%,rgba(59,130,246,0.18),transparent),radial-gradient(200px_200px_at_25%_60%,rgba(250,204,21,0.12),transparent)]"></div>
-        
-        {/* Floating Elements */}
-         <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse motion-reduce:animate-none hidden md:block" />
-         <div className="absolute bottom-32 right-16 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse motion-reduce:animate-none delay-1000 hidden md:block" />
-         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-yellow-400/20 rounded-full blur-lg animate-pulse motion-reduce:animate-none delay-500 hidden md:block" />
-        
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <div className="glass-effect rounded-3xl p-12 lg:p-16 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center mb-6">
-              <Sparkles className="w-8 h-8 text-blue-700 mr-2" />
-              <span className="text-yellow-400 font-semibold text-sm uppercase tracking-wider">
-                Fanzone12.com 
-              </span>
-            </div>
-            
-            <h1 className="text-responsive-xl text-foreground mb-6 leading-tight">
-            Much more than 
-              <span className="text-blue-700 font-bold block sm:inline"> a store </span>
-            </h1>
-            
-            <p className="text-responsive-md text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Every jersey tells your story. Unique customization, guaranteed quality and fast delivery across Europe.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                asChild 
-                size="lg" 
-                className="modern-button bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 shadow-lg px-8 py-4 text-lg rounded-full transition-all duration-300 hover:shadow-xl"
-              >
-                <Link href="/catalogo" className="flex items-center gap-2">
-                  <Search className="w-5 h-5" />
-                  View Catalog
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action for Complete Catalog - Desktop Only */}
-      <section className="py-8 bg-card border-t border-b border-border hidden md:block">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-foreground mb-3 text-sm sm:text-base">Can't find the jersey you're looking for?</p>
-            <Button 
-              asChild 
-              size="lg" 
-                className="modern-button bg-blue-700 text-white hover:bg-blue-800 border-0 shadow-lg px-6 py-5 rounded-full"
-            >
-              <Link href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Search className="w-5 h-5" />
-                View full catalog
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Top Leagues Section - 1st Section */}
-      <section className="py-8 modern-section">
+      {/* Top Ligas Section */}
+      <section className="bg-gradient-to-br from-slate-50 to-gray-50 py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 animate-slide-up">
-            <h2 className="text-responsive-lg text-gray-800 mb-4">
+            <Badge className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               Top Leagues
+            </Badge>
+            <h2 className="text-responsive-lg text-gray-800 mb-4">
+              Explore the Best Leagues
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore the main European leagues and find the perfect jersey from your favorite club
+              Discover products from the main leagues and competitions around the world
             </p>
           </div>
 
-          {/* Desktop Grid */}
-          <div className="hidden md:grid md:grid-cols-4 lg:grid-cols-4 gap-6">
-                 {[
-              { name: "Premier League", logo: "Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent.webp", href: "/catalogo?liga=premier-league" },
-              { name: "La Liga", logo: "LaLiga-Logo-PNG-Official-Symbol-for-Football-League-Transparent.webp", href: "/catalogo?liga=la-liga" },
-              { name: "Serie A", logo: "SerieA_logo.webp", href: "/catalogo?liga=serie-a" },
-              { name: "Bundesliga", logo: "Bundesliga_logo_(2017).webp", href: "/catalogo?liga=bundesliga" },
-              { name: "Ligue 1", logo: "Ligue1_Uber_Eats_logo.webp", href: "/catalogo?liga=ligue-1" },
-              { name: "Other Leagues", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
-              { name: "National Teams", logo: "Logo_copa_2026.png", href: "/catalogo?liga=selecoes-nacionais" },
-              { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
+          {/* Desktop Grid - 3 colunas */}
+          <div className="hidden md:grid md:grid-cols-3 gap-6">
+            {[
+              { 
+                id: "premier-league",
+                name: "Premier League", 
+                image: "/images/premier-league-2025-26-81f589.webp", 
+                href: "/catalogo?liga=premier-league",
+                objectPosition: "object-top"
+              },
+              { 
+                id: "la-liga",
+                name: "La Liga", 
+                image: "/images/534364999_18523853707014415_2061336633682321964_n.webp", 
+                href: "/catalogo?liga=la-liga",
+                objectPosition: "object-[center_45%]"
+              },
+              { 
+                id: "ligue-1",
+                name: "Ligue 1", 
+                image: "/images/496967650_18407572888103417_4204304631253123566_n.jpg", 
+                href: "/catalogo?liga=ligue-1",
+                objectPosition: "object-[center_10%]"
+              },
+              { 
+                id: "liga-portuguesa",
+                name: "Portuguese League", 
+                image: "/images/liga-portugal-2025-26-a07d17-1-1-square.webp", 
+                href: "/catalogo?liga=liga-portuguesa",
+                objectPosition: "object-[center_30%]"
+              },
+              { 
+                id: "kits-crianca",
+                name: "Kids Kits", 
+                image: "/images/MIC25_MAD_FCE_DS-6.webp", 
+                href: "/catalogo?categoria=crianca",
+                objectPosition: "object-[center_20%]"
+              },
+              { 
+                id: "retro",
+                name: "Retro", 
+                image: "/images/NINTCHDBPICT000004408735.webp", 
+                href: "/catalogo?categoria=retro",
+                objectPosition: "object-top"
+              },
             ].map((liga, index) => (
-                    <ClientAnimationWrapper
-                key={liga.name}
-                      delay={index * 0.1}
-                      className="animate-scale-in"
-                    >
+              <ClientAnimationWrapper
+                key={liga.id}
+                delay={index * 0.1}
+                className="animate-scale-in"
+              >
                 <Link
                   href={liga.href}
-                  className="modern-card group p-6 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block"
+                  className="modern-card group rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block overflow-hidden"
                 >
-                  <div className="relative w-20 h-20 mx-auto mb-4">
-                            <Image 
-                      src={`/images/${liga.logo}`}
+                  <div className="relative aspect-square overflow-hidden">
+                    <Image 
+                      src={liga.image}
                       alt={liga.name}
-                              fill
-                      className="object-contain transition-transform group-hover:scale-110"
-                              loading="lazy"
-                      sizes="80px"
-                              quality={85}
-                            />
-                            </div>
-                  <p className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                    {liga.name}
-                  </p>
-                        </Link>
-                    </ClientAnimationWrapper>
-                ))}
+                      fill
+                      className={`object-cover ${liga.objectPosition} transition-transform duration-500 group-hover:scale-105`}
+                      loading="lazy"
+                      sizes="(max-width: 768px) 50vw, 33vw"
+                      quality={85}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <h3 className="text-lg font-bold text-white mb-3 text-center">{liga.name}</h3>
+                      <Button 
+                        size="default"
+                        className="bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white border-0 shadow-lg px-6 py-2 rounded-full"
+                      >
+                        VIEW MORE
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-lg font-semibold text-gray-800 text-center group-hover:text-blue-600 transition-colors">
+                      {liga.name}
+                    </h3>
+                  </div>
+                </Link>
+              </ClientAnimationWrapper>
+            ))}
           </div>
 
           {/* Mobile Grid - 2 colunas */}
           <div className="md:hidden grid grid-cols-2 gap-4">
-                 {[
-              { name: "Premier League", logo: "Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent.webp", href: "/catalogo?liga=premier-league" },
-              { name: "La Liga", logo: "LaLiga-Logo-PNG-Official-Symbol-for-Football-League-Transparent.webp", href: "/catalogo?liga=la-liga" },
-              { name: "Serie A", logo: "SerieA_logo.webp", href: "/catalogo?liga=serie-a" },
-              { name: "Bundesliga", logo: "Bundesliga_logo_(2017).webp", href: "/catalogo?liga=bundesliga" },
-              { name: "Ligue 1", logo: "Ligue1_Uber_Eats_logo.webp", href: "/catalogo?liga=ligue-1" },
-              { name: "Other Leagues", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
-              { name: "National Teams", logo: "Logo_copa_2026.png", href: "/catalogo?liga=selecoes-nacionais" },
-              { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
+            {[
+              { 
+                id: "premier-league",
+                name: "Premier League", 
+                image: "/images/premier-league-2025-26-81f589.webp", 
+                href: "/catalogo?liga=premier-league",
+                objectPosition: "object-top"
+              },
+              { 
+                id: "la-liga",
+                name: "La Liga", 
+                image: "/images/534364999_18523853707014415_2061336633682321964_n.webp", 
+                href: "/catalogo?liga=la-liga",
+                objectPosition: "object-[center_45%]"
+              },
+              { 
+                id: "ligue-1",
+                name: "Ligue 1", 
+                image: "/images/496967650_18407572888103417_4204304631253123566_n.jpg", 
+                href: "/catalogo?liga=ligue-1",
+                objectPosition: "object-[center_10%]"
+              },
+              { 
+                id: "liga-portuguesa",
+                name: "Portuguese League", 
+                image: "/images/liga-portugal-2025-26-a07d17-1-1-square.webp", 
+                href: "/catalogo?liga=liga-portuguesa",
+                objectPosition: "object-[center_30%]"
+              },
+              { 
+                id: "kits-crianca",
+                name: "Kids Kits", 
+                image: "/images/MIC25_MAD_FCE_DS-6.webp", 
+                href: "/catalogo?categoria=crianca",
+                objectPosition: "object-[center_20%]"
+              },
+              { 
+                id: "retro",
+                name: "Retro", 
+                image: "/images/NINTCHDBPICT000004408735.webp", 
+                href: "/catalogo?categoria=retro",
+                objectPosition: "object-top"
+              },
             ].map((liga, index) => (
-                    <ClientAnimationWrapper
-                key={liga.name}
-                      delay={index * 0.1}
-                      className="animate-scale-in"
-                    >
+              <ClientAnimationWrapper
+                key={liga.id}
+                delay={index * 0.1}
+                className="animate-scale-in"
+              >
                 <Link
                   href={liga.href}
-                  className="modern-card group p-4 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block"
+                  className="modern-card group rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block overflow-hidden"
                 >
-                  <div className="relative w-16 h-16 mx-auto mb-3">
-                            <Image 
-                      src={`/images/${liga.logo}`}
+                  <div className="relative aspect-square overflow-hidden">
+                    <Image 
+                      src={liga.image}
                       alt={liga.name}
-                              fill
-                      className="object-contain transition-transform group-hover:scale-110"
-                              loading="lazy"
-                      sizes="64px"
-                              quality={85}
-                            />
-                            </div>
-                  <p className="font-semibold text-sm text-gray-800 group-hover:text-blue-600 transition-colors">
-                    {liga.name}
-                  </p>
-                        </Link>
-                    </ClientAnimationWrapper>
-                ))}
+                      fill
+                      className={`object-cover ${liga.objectPosition} transition-transform duration-500 group-hover:scale-105`}
+                      loading="lazy"
+                      sizes="50vw"
+                      quality={85}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <h3 className="text-sm font-bold text-white mb-2 text-center">{liga.name}</h3>
+                      <Button 
+                        size="sm"
+                        className="bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white border-0 shadow-lg px-4 py-1 text-xs rounded-full"
+                      >
+                        VIEW MORE
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-sm font-semibold text-gray-800 text-center group-hover:text-blue-600 transition-colors">
+                      {liga.name}
+                    </h3>
+                  </div>
+                </Link>
+              </ClientAnimationWrapper>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leagues Circles Section */}
+      <section className="bg-gray-50 py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+            {[
+              {
+                id: "national-teams",
+                name: "National Teams",
+                image: "/images/Logo_copa_2026.png",
+                href: "/catalogo?liga=selecoes-nacionais"
+              },
+              {
+                id: "serie-a",
+                name: "Serie A",
+                image: "/images/SerieA_logo.webp",
+                href: "/catalogo?liga=serie-a"
+              },
+              {
+                id: "bundesliga",
+                name: "Bundesliga",
+                image: "/images/Bundesliga_logo_(2017).webp",
+                href: "/catalogo?liga=bundesliga"
+              },
+              {
+                id: "other-leagues",
+                name: "Other Leagues",
+                image: "/images/ligasoutras.png",
+                href: "/catalogo?liga=outras-ligas"
+              },
+            ].map((categoria) => (
+              <Link
+                key={categoria.id}
+                href={categoria.href}
+                className="group flex flex-col items-center"
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-full hover:scale-110 transition-transform duration-300">
+                  <div className="relative w-full h-full rounded-full bg-white overflow-hidden">
+                    <Image
+                      src={categoria.image}
+                      alt={categoria.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 96px, 128px"
+                      quality={85}
+                    />
+                  </div>
+                </div>
+                <p className="mt-3 text-sm md:text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
+                  {categoria.name}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Product Categories Squares Section */}
+      <section className="bg-white py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+            {[
+              {
+                id: "sneakers",
+                name: "Sneakers",
+                image: "/images/www-001017731202531-08.avif",
+                href: "/sneakers"
+              },
+              {
+                id: "bolas",
+                name: "Soccer Balls",
+                image: "/images/Bola_Pro_da_Fase_da_Liga_da_UCL_25-26_Branco_JD0188_HM1.avif",
+                href: "/catalogo?categoria=bolas"
+              },
+            ].map((categoria) => (
+              <Link
+                key={categoria.id}
+                href={categoria.href}
+                className="group flex flex-col items-center"
+              >
+                <div className="w-40 h-40 md:w-48 md:h-48 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-2xl hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="relative w-full h-full rounded-xl bg-white overflow-hidden">
+                    <Image
+                      src={categoria.image}
+                      alt={categoria.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 160px, 192px"
+                      quality={85}
+                    />
+                  </div>
+                </div>
+                <p className="mt-4 text-base md:text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
+                  {categoria.name}
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
