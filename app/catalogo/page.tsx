@@ -27,11 +27,12 @@ export default async function CatalogoPage({
   const liga = typeof params.liga === "string" ? params.liga : undefined
   const ordenar = typeof params.ordenar === "string" ? params.ordenar : "recentes"
   const pesquisa = typeof params.pesquisa === "string" ? params.pesquisa : undefined
+  const versao = typeof params.versao === "string" ? params.versao : undefined
 
   const pagina = typeof params.pagina === "string" ? parseInt(params.pagina) : 1
   const porPagina = 30
 
-  const todosProdutos = await getProdutos({ categoria, clube, cor, liga, ordenar, pesquisa })
+  const todosProdutos = await getProdutos({ categoria, clube, cor, liga, ordenar, pesquisa, versao })
   const total = todosProdutos.length
   const inicio = (pagina - 1) * porPagina
   const produtos = todosProdutos.slice(inicio, inicio + porPagina)

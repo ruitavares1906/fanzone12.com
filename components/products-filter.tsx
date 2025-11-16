@@ -135,7 +135,7 @@ export function ProductsFilter() {
         </Button>
       </div>
 
-      <Accordion type="multiple" defaultValue={["categorias", "clubes", "ligas"]}>
+      <Accordion type="multiple" defaultValue={["categorias", "versao", "clubes", "ligas"]}>
         <AccordionItem value="categorias">
           <AccordionTrigger>Categories</AccordionTrigger>
           <AccordionContent>
@@ -152,6 +152,34 @@ export function ProductsFilter() {
                   </Label>
                 </div>
               ))}
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="versao">
+          <AccordionTrigger>Versão</AccordionTrigger>
+          <AccordionContent>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Checkbox
+                  id="versao-adepto"
+                  checked={searchParams.get("versao") === "adepto"}
+                  onCheckedChange={() => handleFilter("versao", "adepto")}
+                />
+                <Label htmlFor="versao-adepto" className="cursor-pointer">
+                  Camisola de Adepto
+                </Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Checkbox
+                  id="versao-jogador"
+                  checked={searchParams.get("versao") === "jogador"}
+                  onCheckedChange={() => handleFilter("versao", "jogador")}
+                />
+                <Label htmlFor="versao-jogador" className="cursor-pointer">
+                  Camisola de Jogador
+                </Label>
+              </div>
             </div>
           </AccordionContent>
         </AccordionItem>

@@ -154,6 +154,10 @@ export default async function Home() {
   const realMadridKits = (await Promise.all(realMadridKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   const youngFansKits = (await Promise.all(youngFansKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
+  // Player Version Jerseys - Camisolas versão jogador
+  const playerVersionJerseys = await getProdutos({ versao: "jogador" })
+  const playerVersionJerseysLimited = playerVersionJerseys.slice(0, 12)
+  
   // Lista fixa para Premier League conforme pedido
   const premierLeagueIds = [
     "arsenal-home-2526",
@@ -327,7 +331,7 @@ export default async function Home() {
               { name: "Bundesliga", logo: "Bundesliga_logo_(2017).webp", href: "/catalogo?liga=bundesliga" },
               { name: "Ligue 1", logo: "Ligue1_Uber_Eats_logo.webp", href: "/catalogo?liga=ligue-1" },
               { name: "Other Leagues", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
-              { name: "National Teams", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
+              { name: "National Teams", logo: "Logo_copa_2026.png", href: "/catalogo?liga=selecoes-nacionais" },
               { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
             ].map((liga, index) => (
                     <ClientAnimationWrapper
@@ -367,7 +371,7 @@ export default async function Home() {
               { name: "Bundesliga", logo: "Bundesliga_logo_(2017).webp", href: "/catalogo?liga=bundesliga" },
               { name: "Ligue 1", logo: "Ligue1_Uber_Eats_logo.webp", href: "/catalogo?liga=ligue-1" },
               { name: "Other Leagues", logo: "images.webp", href: "/catalogo?liga=outras-ligas" },
-              { name: "National Teams", logo: "Portugal_FPF.webp", href: "/catalogo?liga=selecoes-nacionais" },
+              { name: "National Teams", logo: "Logo_copa_2026.png", href: "/catalogo?liga=selecoes-nacionais" },
               { name: "Portuguese League", logo: "Liga_Portugal_Betclic_2023.webp", href: "/catalogo?liga=liga-portuguesa" },
             ].map((liga, index) => (
                     <ClientAnimationWrapper
@@ -1023,6 +1027,129 @@ export default async function Home() {
                 </Link>
               </Button>
             </div>
+        </div>
+      </section>
+
+      {/* Player Version Jerseys Section - 8th Section */}
+      <section className="py-8 bg-gradient-to-br from-white to-yellow-50/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 animate-slide-up">
+            <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
+              <Star className="w-4 h-4 mr-2" />
+              Player Version
+            </Badge>
+            <h2 className="text-responsive-lg text-gray-800 mb-4">
+              Player Version Jerseys
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Discover official player jerseys with professional quality and advanced technology
+            </p>
+          </div>
+
+          {/* Desktop Carousel */}
+          <div className="hidden md:block">
+            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {playerVersionJerseysLimited.map((product, index) => (
+                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
+                    <ClientAnimationWrapper
+                      delay={index * 0.1}
+                      className="animate-scale-in"
+                    >
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                        <Link href={`/produto/${product.id}`} className="block">
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
+                              src={product.imagem}
+                              alt={product.nome}
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              quality={85}
+                            />
+                            <div className="absolute top-3 left-3">
+                              <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
+                                Player
+                              </Badge>
+                            </div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                            <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-yellow-600 transition-colors line-clamp-2">
+                              {product.nome}
+                            </h3>
+                            <div className="flex items-center justify-start">
+                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                                {product.preco.toFixed(2)}€
+                              </span>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </ClientAnimationWrapper>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+
+          {/* Mobile Carousel */}
+          <div className="md:hidden">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {playerVersionJerseysLimited.map((product) => (
+                  <CarouselItem key={product.id} className="basis-4/5">
+                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <Link href={`/produto/${product.id}`} className="block">
+                        <div className="relative aspect-square overflow-hidden">
+                          <Image 
+                            src={product.imagem}
+                            alt={product.nome}
+                            fill
+                            className="object-cover transition-all duration-500 group-hover:scale-105"
+                            loading="lazy"
+                            sizes="80vw"
+                            quality={85}
+                          />
+                          <div className="absolute top-3 left-3">
+                            <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
+                              Player
+                            </Badge>
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </div>
+                        <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-yellow-600 transition-colors line-clamp-2">
+                            {product.nome}
+                          </h3>
+                          <div className="flex items-center justify-start">
+                            <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                              {product.preco.toFixed(2)}€
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+
+          {/* View More Button */}
+          <div className="flex justify-center mt-8">
+            <Button asChild className="modern-button bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
+              <Link href="/catalogo?versao=jogador" className="flex items-center gap-2">
+                View All Player Version Jerseys
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
       

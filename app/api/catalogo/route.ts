@@ -42,6 +42,7 @@ export async function GET(req: Request) {
     precoMax: url.searchParams.get("precoMax") ?? undefined,
     temporada: url.searchParams.get("temporada") ?? undefined,
     pesquisa: url.searchParams.get("pesquisa") ?? undefined,
+    versao: url.searchParams.get("versao") ?? undefined,
   } as const;
 
   // Obtém lista filtrada usando utilidade existente

@@ -29,6 +29,7 @@ export interface Product {
   novo?: boolean
   edicao_especial?: boolean
   preVenda?: boolean
+  versao?: "jogador" | "adepto" // Versão da camisola: jogador ou adepto (padrão: adepto)
   // Campos para capas de telemóvel
   marcaTelemovel?: "Apple" | "Samsung"
   modeloTelemovel?: string

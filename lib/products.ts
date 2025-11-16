@@ -430,7 +430,8 @@ const produtosArray = ([
   avaliacao: 4.9,
   numAvaliacoes: 52,
   destaque: true,
-  edicao_especial: false
+  edicao_especial: false,
+  versao: "jogador"
   },
   {
     id: "portugal-principal-2026",
@@ -3418,7 +3419,8 @@ const produtosArray = ([
     avaliacao: 4.8,
     numAvaliacoes: 30,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "realmadrid-special-2526",
@@ -3889,7 +3891,8 @@ const produtosArray = ([
     avaliacao: 4.8,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "barcelona-25-26-joint-edition",
@@ -3936,7 +3939,8 @@ const produtosArray = ([
     avaliacao: 4.9,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "barcelona-25-26-jogador-special-edition-ii",
@@ -3960,7 +3964,8 @@ const produtosArray = ([
     avaliacao: 4.8,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "barcelona-25-26-jogador-special-edition-iii",
@@ -3984,7 +3989,8 @@ const produtosArray = ([
     avaliacao: 4.9,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "inter-25-26-special-edition",
@@ -4178,7 +4184,8 @@ const produtosArray = ([
     avaliacao: 4.9,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "psg-25-26-jogador-gk",
@@ -4202,7 +4209,8 @@ const produtosArray = ([
     avaliacao: 4.8,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "palmeiras-25-26-away",
@@ -4424,7 +4432,8 @@ const produtosArray = ([
     avaliacao: 4.9,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "dortmund-25-26-special-edition",
@@ -4475,7 +4484,8 @@ const produtosArray = ([
     avaliacao: 4.9,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "portugal-25-26-home",
@@ -4608,7 +4618,7 @@ const produtosArray = ([
     imagensAdicionais: [
       "/images/ac7e1593.webp"
     ],
-    categoria: "jogador",
+    categoria: "clubes",
     clube: "barcelona",
     liga: "la-liga",
     temporada: "2025/26",
@@ -4618,7 +4628,8 @@ const produtosArray = ([
     avaliacao: 5.0,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "real-madrid-25-26-jogador-special-edition-vii",
@@ -4631,7 +4642,7 @@ const produtosArray = ([
     imagensAdicionais: [
       "/images/e5ed5bc1.webp"
     ],
-    categoria: "jogador",
+    categoria: "clubes",
     clube: "real-madrid",
     liga: "la-liga",
     temporada: "2025/26",
@@ -4641,7 +4652,8 @@ const produtosArray = ([
     avaliacao: 4.9,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "barcelona-25-26-special-edition-vii",
@@ -4700,7 +4712,7 @@ const produtosArray = ([
     imagensAdicionais: [
       "/images/b5f5c549.webp"
     ],
-    categoria: "jogador",
+    categoria: "clubes",
     clube: "inter-miami",
     liga: "mls",
     temporada: "2025/26",
@@ -4710,7 +4722,8 @@ const produtosArray = ([
     avaliacao: 4.7,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "miami-25-26-players-home",
@@ -4723,7 +4736,7 @@ const produtosArray = ([
     imagensAdicionais: [
       "/images/e2d06827.webp"
     ],
-    categoria: "jogador",
+    categoria: "clubes",
     clube: "inter-miami",
     liga: "mls",
     temporada: "2025/26",
@@ -4733,7 +4746,8 @@ const produtosArray = ([
     avaliacao: 4.6,
     numAvaliacoes: 0,
     destaque: true,
-    edicao_especial: false
+    edicao_especial: false,
+    versao: "jogador"
   },
   {
     id: "fluminense-25-26-home",
@@ -8307,7 +8321,8 @@ const produtosArray = ([
   avaliacao: 4.9,
   numAvaliacoes: 35,
     destaque: true,
-  edicao_especial: false
+  edicao_especial: false,
+  versao: "jogador"
 },
 {
   id: "dortmund-25-26-player-home",
@@ -8333,7 +8348,8 @@ const produtosArray = ([
   avaliacao: 4.8,
   numAvaliacoes: 0,
   destaque: true,
-  edicao_especial: false
+  edicao_especial: false,
+  versao: "jogador"
 },
 
 // Camisola Retro Benfica x Adidas Originals
@@ -9831,7 +9847,8 @@ const produtosArray = ([
   tamanhos: ["XS", "S", "M", "L", "XL", "XXL"],
   stock: 50,
   destaque: true,
-  tags: ["arsenal", "2025/26", "white", "player", "version"]
+  tags: ["arsenal", "2025/26", "white", "player", "version"],
+  versao: "jogador"
 },
 {
   id: "portugal-2526-bebe-equipamento-principal-vermelho",
@@ -10185,7 +10202,8 @@ const produtosArray = ([
   tamanhos: ["XS", "S", "M", "L", "XL", "XXL"],
   stock: 50,
   destaque: true,
-  tags: ["real madrid", "2025/26", "jogador", "rosa"]
+  tags: ["real madrid", "2025/26", "jogador", "rosa"],
+  versao: "jogador"
 },
 {
   id: "barcelona-2526-concept-edition-player-version",
@@ -10206,7 +10224,8 @@ const produtosArray = ([
   tamanhos: ["XS", "S", "M", "L", "XL", "XXL"],
   stock: 50,
   destaque: true,
-  tags: ["barcelona", "2025/26", "concept", "edition", "player", "version"]
+  tags: ["barcelona", "2025/26", "concept", "edition", "player", "version"],
+  versao: "jogador"
 },
 { 
   id: "kit-crianca-liverpool-i-2425",
@@ -10432,6 +10451,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         tamanhos: ["S", "M", "L", "XL", "XXL"],
         stock: 40,
         destaque: true,
+        versao: "jogador",
         tags: ["lyon", "2526", "i", "principal"]
       },
       {
@@ -41660,6 +41680,7 @@ export async function getProdutos({
   temporada,
   edicao_especial,
   pesquisa,
+  versao,
 }: {
   categoria?: string
   clube?: string
@@ -41671,10 +41692,11 @@ export async function getProdutos({
   temporada?: string
   edicao_especial?: boolean
   pesquisa?: string
+  versao?: string
 }) {
   // Criar chave de cache baseada nos filtros
   const cacheKey = CACHE_KEYS.PRODUTOS_FILTERED(
-    JSON.stringify({ categoria, clube, cor, liga, ordenar, precoMin, precoMax, temporada, edicao_especial, pesquisa })
+    JSON.stringify({ categoria, clube, cor, liga, ordenar, precoMin, precoMax, temporada, edicao_especial, pesquisa, versao })
   )
   
   // Verificar cache primeiro
@@ -41792,6 +41814,19 @@ if (clube) {
       produtosFiltrados = produtosFiltrados.filter(
         (p) => p.edicao_especial === edicao_especial,
       );
+    }
+  
+    // Filtrar por versão (jogador ou adepto)
+    if (versao) {
+      if (versao === "jogador") {
+        // Mostrar apenas produtos marcados como versão jogador
+        produtosFiltrados = produtosFiltrados.filter((p) => p.versao === "jogador");
+      } else if (versao === "adepto") {
+        // Mostrar apenas produtos sem versao ou marcados como adepto (padrão)
+        produtosFiltrados = produtosFiltrados.filter(
+          (p) => !p.versao || p.versao === "adepto"
+        );
+      }
     }
   
     // Filtrar por intervalo de preço
