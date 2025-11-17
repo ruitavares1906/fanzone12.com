@@ -1593,6 +1593,151 @@ const produtosArray = ([
     destaque: false,
   },
   {
+    "id": "barcelona-x-kobe-bryant-pre-match-kit-25-26",
+    "nome": "Barcelona X Kobe Bryant Pre-Match Kit 25/26",
+    "descricao": "Pre-Match Kit do Barcelona X Kobe Bryant, temporada 25/26, tamanho S-4XL",
+    "descricaoLonga": "Pre-Match Kit oficial do Barcelona X Kobe Bryant, disponível do S ao 4XL.",
+    "preco": 17.99,
+    "precoAntigo": 29.99,
+    "imagem": "/images/688fc9ad4d9b03b107fb2a2b.jpg",
+  "imagensAdicionais": [
+    "/images/ebc91eeffa5c8db506d7c5b0.jpg",
+    "/images/055413b470b19f3beeb692e9.jpg",
+    "/images/8191fac13f983ebe636d20ea.jpg",
+    "/images/c091bbfef917e34c9e38eefb.jpg"
+  ],
+  "categoria": "clubes",
+  "clube": "barcelona",
+  "liga": "la-liga",
+  "temporada": "25/26",
+  "cor": "laranja",
+  "material": "Poliéster",
+  "marca": "Adidas",
+  "avaliacao": 4.5,
+  "numAvaliacoes": 25,
+  "destaque": false,
+  "tamanho": "S-4XL"
+  },
+  {
+    "id": "barcelona-edition-special-25-26",
+    "nome": "Barcelona Special Edition 25/26",
+    "descricao": "Camisola Special Edition do Barcelona, temporada 25/26, tamanho S-4XL",
+    "descricaoLonga": "Camisola oficial Special Edition do Barcelona, disponível do S ao 4XL.",
+    "preco": 17.99,
+    "precoAntigo": 29.99,
+    "imagem": "/images/AnyConv.com__7078c920-min.webp",
+    "imagensAdicionais": [
+      "/images/AnyConv.com__eb1c6f24-min.webp",
+      "/images/AnyConv.com__3219fcf6-min.webp",
+      "/images/AnyConv.com__aec222ea-min.webp"
+    ],
+    "categoria": "clubes",
+    "clube": "barcelona",
+    "liga": "la-liga",
+    "temporada": "25/26",
+    "cor": "laranja",
+    "material": "Poliéster",
+    "marca": "Adidas",
+    "avaliacao": 4.5,
+    "numAvaliacoes": 25,
+    "destaque": false,
+    "tamanho": "S-4XL"
+  },
+  {
+    "id": "barcelona-special-edition-222-25-26",
+    "nome": "Barcelona Special Edition 25/26",
+    "descricao": "Camisola Special Edition do Barcelona, temporada 25/26, tamanho S-4XL",
+    "descricaoLonga": "Camisola oficial Special Edition do Barcelona, disponível do S ao 4XL.",
+    "preco": 17.99,
+    "precoAntigo": 29.99,
+    "imagem": "/images/25-26-BAR-yellow-pink-special-edition-Jersey-4.webp",
+    "imagensAdicionais": [
+      "/images/25-26-BAR-yellow-pink-special-edition-Jersey-2.webp",
+      "/images/25-26-BAR-yellow-pink-special-edition-Jersey-3.webp",
+      "/images/25-26-BAR-yellow-pink-special-edition-Jersey-1.webp"
+    ],
+    "categoria": "clubes",
+    "clube": "barcelona",
+    "liga": "la-liga",
+    "temporada": "25/26",
+    "cor": "laranja",
+    "material": "Poliéster",
+    "marca": "Adidas",
+    "avaliacao": 4.5,
+    "numAvaliacoes": 25,
+    "destaque": false,
+    "tamanho": "S-4XL"
+  },
+  {
+    "id": "barcelona-special-edition-25-26-ii",
+    "nome": "Barcelona Special Edition 25/26",
+    "descricao": "Camisola Special Edition do Barcelona, temporada 25/26, tamanho S-4XL",
+    "descricaoLonga": "Camisola oficial Special Edition do Barcelona, disponível do S ao 4XL.",
+    "preco": 17.99,
+    "precoAntigo": 29.99,
+    "imagem": "/images/2F62C2B8-9AC2-451E-91A0-92F4743DBD6C.webp",
+    "imagensAdicionais": [
+      "/images/38D59158-E4F3-49DC-9D7B-45116F868383.webp"
+    ],
+    "categoria": "clubes",
+    "clube": "barcelona",
+    "liga": "la-liga",
+    "temporada": "25/26",
+    "cor": "laranja",
+    "material": "Poliéster",
+    "marca": "Adidas",
+    "avaliacao": 4.5,
+    "numAvaliacoes": 25,
+    "destaque": false,
+    "tamanho": "S-4XL"
+  },
+  {
+    "id": "barcelona-special-edition-25-26-iii",
+    "nome": "Barcelona Special Edition II 25/26",
+    "descricao": "Segunda edição especial da camisola do Barcelona, temporada 25/26, tamanho S-4XL",
+    "descricaoLonga": "Segunda edição especial da camisola do Barcelona, temporada 25/26, tamanho S-4XL.",
+    "preco": 17.99,
+    "precoAntigo": 29.99,
+    "imagem": "/images/4558241B-F05B-49E8-9319-92E24EFF0A2B.webp",
+    "imagensAdicionais": [
+      "/images/080EEC61-7CF4-4B95-B4E1-B3F25A2E80E9.webp"
+    ],
+    "categoria": "clubes",
+    "clube": "barcelona",
+    "liga": "la-liga",
+    "temporada": "25/26",
+    "cor": "laranja",
+    "material": "Poliéster",
+    "marca": "Adidas",
+    "avaliacao": 4.5,
+    "numAvaliacoes": 25,
+    "destaque": false,
+    "tamanho": "S-4XL"
+  },
+  {
+    "id": "fcporto-special-edition-25-26-iv",
+    "nome": "FC Porto Special Edition IV 25/26",
+    "descricao": "Quarta edição especial da camisola do FC Porto, temporada 25/26, tamanho S-4XL",
+    "descricaoLonga": "Quarta edição especial da camisola do FC Porto, temporada 25/26, tamanho S-4XL.",
+    "preco": 17.99,
+    "precoAntigo": 29.99,
+    "imagem": "/images/IMG-1004.webp",
+    "imagensAdicionais": [
+      "/images/IMG-1005.webp"
+    ],
+    "categoria": "clubes",
+    "clube": "porto",
+    "liga": "liga-portuguesa",
+    "temporada": "25/26",
+    "cor": "azul",
+    "material": "Poliéster",
+    "marca": "Nike",
+    "avaliacao": 4.5,
+    "numAvaliacoes": 25,
+    "destaque": false,
+    "tamanho": "S-4XL"
+  },
+  {
     id: "kit-crianca-barcelona-alternativo-edicao-especial-202425",
     nome: "Barcelona 2024/25 Kids Special Edition Away Kit",
     descricao: "Kit oficial alternativo de criança do FC Barcelona para a temporada 2024/25. Design especial em dourado com detalhes em azul e grená, fabricado pela Nike com tecnologia Dri-FIT para máximo conforto.",
@@ -41204,25 +41349,110 @@ if (clube) {
     })
   }
 
+  // Função auxiliar para verificar se é temporada nova
+  const isNovaTemporada = (temporada?: string) => {
+    if (!temporada) return false
+    return temporada === "2025/26" || 
+           temporada === "25/26" || 
+           temporada === "2025-2026" || 
+           temporada.includes("2025") || 
+           temporada.includes("25/26")
+  }
+
+  // Função auxiliar para verificar se é categoria de clubes
+  const isCategoriaClubes = categoria === "clubes" || clube !== undefined
+
   // Aplicar ordenação
   switch (ordenar) {
     case "preco-asc":
-      produtosFiltrados.sort((a, b) => a.preco - b.preco)
+      produtosFiltrados.sort((a, b) => {
+        // Primeiro: priorizar temporadas novas
+        const aNovaTemporada = isNovaTemporada(a.temporada)
+        const bNovaTemporada = isNovaTemporada(b.temporada)
+        
+        if (aNovaTemporada && !bNovaTemporada) return -1
+        if (!aNovaTemporada && bNovaTemporada) return 1
+        
+        // Dentro do mesmo grupo, ordenar por preço
+        return a.preco - b.preco
+      })
       break
     case "preco-desc":
-      produtosFiltrados.sort((a, b) => b.preco - a.preco)
+      produtosFiltrados.sort((a, b) => {
+        // Primeiro: priorizar temporadas novas
+        const aNovaTemporada = isNovaTemporada(a.temporada)
+        const bNovaTemporada = isNovaTemporada(b.temporada)
+        
+        if (aNovaTemporada && !bNovaTemporada) return -1
+        if (!aNovaTemporada && bNovaTemporada) return 1
+        
+        // Dentro do mesmo grupo, ordenar por preço (desc)
+        return b.preco - a.preco
+      })
       break
     case "populares":
-      produtosFiltrados.sort((a, b) => (b.numAvaliacoes || 0) - (a.numAvaliacoes || 0))
+      produtosFiltrados.sort((a, b) => {
+        // Primeiro: priorizar temporadas novas
+        const aNovaTemporada = isNovaTemporada(a.temporada)
+        const bNovaTemporada = isNovaTemporada(b.temporada)
+        
+        if (aNovaTemporada && !bNovaTemporada) return -1
+        if (!aNovaTemporada && bNovaTemporada) return 1
+        
+        // Dentro do mesmo grupo, ordenar por popularidade
+        return (b.numAvaliacoes || 0) - (a.numAvaliacoes || 0)
+      })
       break
     case "avaliacao":
-      produtosFiltrados.sort((a, b) => (b.avaliacao || 0) - (a.avaliacao || 0))
+      produtosFiltrados.sort((a, b) => {
+        // Primeiro: priorizar temporadas novas
+        const aNovaTemporada = isNovaTemporada(a.temporada)
+        const bNovaTemporada = isNovaTemporada(b.temporada)
+        
+        if (aNovaTemporada && !bNovaTemporada) return -1
+        if (!aNovaTemporada && bNovaTemporada) return 1
+        
+        // Dentro do mesmo grupo, ordenar por avaliação
+        return (b.avaliacao || 0) - (a.avaliacao || 0)
+      })
       break
       case "recentes":
         default:
-          // Se for categoria retro, priorizar os novos produtos do Benfica
-          if (categoria === "retro") {
+          // Ordenação especial para Barcelona
+          if (clube === "barcelona") {
             produtosFiltrados.sort((a, b) => {
+              // Primeiro: Produtos com "Special Edition" ou "Edição Especial" ou "Edicao Especial" no nome
+              const aIsSpecial = a.nome.toLowerCase().includes("special edition") || 
+                                a.nome.toLowerCase().includes("edição especial") || 
+                                a.nome.toLowerCase().includes("edicao especial")
+              const bIsSpecial = b.nome.toLowerCase().includes("special edition") || 
+                                b.nome.toLowerCase().includes("edição especial") || 
+                                b.nome.toLowerCase().includes("edicao especial")
+              
+              if (aIsSpecial && !bIsSpecial) return -1
+              if (!aIsSpecial && bIsSpecial) return 1
+              
+              // Dentro de cada grupo, priorizar temporadas novas
+              if (aIsSpecial === bIsSpecial) {
+                const aNovaTemporada = isNovaTemporada(a.temporada)
+                const bNovaTemporada = isNovaTemporada(b.temporada)
+                
+                if (aNovaTemporada && !bNovaTemporada) return -1
+                if (!aNovaTemporada && bNovaTemporada) return 1
+              }
+              
+              return 0
+            })
+          } else if (categoria === "retro") {
+            // Se for categoria retro, priorizar os novos produtos do Benfica
+            produtosFiltrados.sort((a, b) => {
+              // Primeiro: priorizar temporadas novas
+              const aNovaTemporada = isNovaTemporada(a.temporada)
+              const bNovaTemporada = isNovaTemporada(b.temporada)
+              
+              if (aNovaTemporada && !bNovaTemporada) return -1
+              if (!aNovaTemporada && bNovaTemporada) return 1
+              
               // Produtos novos do Benfica retro têm prioridade máxima
               const produtosNovos = ["calcas-retro-slbenfica-adidas-originals", "fato-treino-slbenfica-adidas-originals", "sneakers-slbenfica-adidas-samba", "benfica-retro-adidas-originals-2526", "casaco-retro-benfica-adidas-originals-2526"]
               const aIsNovo = produtosNovos.includes(a.id)
@@ -41287,7 +41517,7 @@ if (clube) {
                   return
                 }
                 
-                const is2526 = produto.temporada === "2025/26"
+                const is2526 = isNovaTemporada(produto.temporada)
                 const isTop = isTopClub(produto)
                 
                 if (is2526 && isTop) {
@@ -41338,10 +41568,10 @@ if (clube) {
                 }
               })
               
-              // Ordenar produtos não-body por temporada 2025/26
+              // Ordenar produtos não-body por temporada nova
               produtosOutros.sort((a, b) => {
-              const aIs2526 = a.temporada === "2025/26"
-              const bIs2526 = b.temporada === "2025/26"
+              const aIs2526 = isNovaTemporada(a.temporada)
+              const bIs2526 = isNovaTemporada(b.temporada)
               
               if (aIs2526 && !bIs2526) return -1
               if (!aIs2526 && bIs2526) return 1
@@ -41354,6 +41584,44 @@ if (clube) {
             }
           }
           break
+  }
+
+  // ORDENAÇÃO FINAL: BODYS E KITS DE CRIANÇA
+  // Sempre colocar BODYS por último (em todas as categorias)
+  // Nas categorias de CLUBES, colocar KITS DE CRIANÇA em antepenúltimo
+  const produtosNormais: Product[] = []
+  const produtosCrianca: Product[] = []
+  const produtosBody: Product[] = []
+  
+  produtosFiltrados.forEach(produto => {
+    // Identificar se é body
+    const isBody = produto.categoria === "body" || 
+                   (typeof produto.categoria === "string" && produto.categoria.includes("body")) ||
+                   (Array.isArray(produto.categoria) && produto.categoria.includes("body"))
+    
+    // Identificar se é kit de criança (apenas em categorias de clubes)
+    const isCrianca = isCategoriaClubes && (
+      produto.categoria === "crianca" || 
+      (typeof produto.categoria === "string" && produto.categoria.includes("crianca")) ||
+      (Array.isArray(produto.categoria) && produto.categoria.includes("crianca"))
+    )
+    
+    if (isBody) {
+      produtosBody.push(produto)
+    } else if (isCrianca) {
+      produtosCrianca.push(produto)
+    } else {
+      produtosNormais.push(produto)
+    }
+  })
+  
+  // Reconstruir array na ordem final:
+  // Categorias de CLUBES: produtos normais, kits de criança (antepenúltimo), bodys (último)
+  // Outras categorias: produtos normais, bodys (último)
+  if (isCategoriaClubes) {
+    produtosFiltrados = [...produtosNormais, ...produtosCrianca, ...produtosBody]
+  } else {
+    produtosFiltrados = [...produtosNormais, ...produtosBody]
   }
 
   // Armazenar no cache antes de retornar
