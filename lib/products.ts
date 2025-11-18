@@ -43170,3 +43170,26 @@ export async function getProdutosRelacionados(id: string, categoria: string) {
     })
     .slice(0, 4)
 }
+
+// Função para obter todos os produtos (usado para sitemap)
+export async function getAllProducts() {
+  // Usar cache para evitar processamento desnecessário
+  const cacheKey = CACHE_KEYS.PRODUTOS_FILTERED(JSON.stringify({}))
+  
+  // Verificar cache primeiro
+  const cached = getCachedData<Product[]>(cacheKey)
+  if (cached) {
+    return cached
+  }
+  
+  // Simular um atraso de rede
+  await new Promise((resolve) => setTimeout(resolve, 50))
+  
+  // Retornar todos os produtos
+  const todosProdutos = [...produtos]
+  
+  // Armazenar no cache
+  setCachedData(cacheKey, todosProdutos)
+  
+  return todosProdutos
+}
