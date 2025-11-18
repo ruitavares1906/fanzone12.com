@@ -48,56 +48,6 @@ export default function RootLayout({
 
         <CriticalCSS />
         
-        {/* Preload da imagem hero principal - LCP Critical */}
-        <link 
-          rel="preload" 
-          href="/images/1751647533_9cc7b4a154af3f78533665e36b695936.webp" 
-          as="image" 
-          type="image/webp"
-          fetchPriority="high"
-        />
-        
-        {/* Preload das imagens LCP da secção Lançamentos Exclusivos */}
-        <link 
-          rel="preload" 
-          href="/images/535951790_1318704906288192_8737859712710652925_n.jpg" 
-          as="image" 
-          type="image/jpeg"
-          fetchPriority="high"
-          media="(min-width: 768px)"
-        />
-        <link 
-          rel="preload" 
-          href="/images/546365886_1334743178017698_7136686953264947284_n.jpg" 
-          as="image" 
-          type="image/jpeg"
-          fetchPriority="high"
-          media="(min-width: 768px)"
-        />
-        <link 
-          rel="preload" 
-          href="/images/535951790_1318704906288192_8737859712710652925_n.webp" 
-          as="image" 
-          type="image/webp"
-          fetchPriority="high"
-          media="(max-width: 767px)"
-        />
-        <link 
-          rel="preload" 
-          href="/images/546365886_1334743178017698_7136686953264947284_n.webp" 
-          as="image" 
-          type="image/webp"
-          fetchPriority="high"
-          media="(max-width: 767px)"
-        />
-        <link 
-          rel="preload" 
-          href="/images/5b338259fa495d16e8ca7713be1eec58d0201338.webp" 
-          as="image" 
-          type="image/webp"
-          fetchPriority="high"
-        />
-        
         {/* Preconnect para domínios externos - Otimizado para LCP */}
         <link rel="preconnect" href="https://tfionqfszlmrzfllwcxm.supabase.co" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

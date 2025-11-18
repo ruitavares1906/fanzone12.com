@@ -8,9 +8,20 @@ interface ProductCardProps {
   href?: string
   index?: number
   variant?: 'default' | 'dark'
+  sizes?: string
+  quality?: number
+  priority?: boolean
 }
 
-export function ProductCard({ product, href, index = 0, variant = 'default' }: ProductCardProps) {
+export function ProductCard({ 
+  product, 
+  href, 
+  index = 0, 
+  variant = 'default',
+  sizes = "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw",
+  quality = 75,
+  priority = false
+}: ProductCardProps) {
   const rawImage = product.imagem || (product.imagensAdicionais && product.imagensAdicionais[0]) || "/placeholder.svg"
   const imageSrc = rawImage.startsWith("/") ? rawImage : `/images/${rawImage}`
   
@@ -26,9 +37,10 @@ export function ProductCard({ product, href, index = 0, variant = 'default' }: P
             alt={product.nome}
             fill
             className="object-cover transition-transform group-hover:scale-105"
-            loading="lazy"
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            quality={85}
+            loading={priority ? "eager" : "lazy"}
+            priority={priority}
+            sizes={sizes}
+            quality={quality}
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
           />
@@ -72,4 +84,3 @@ export function ProductCard({ product, href, index = 0, variant = 'default' }: P
     </div>
   )
 }
-

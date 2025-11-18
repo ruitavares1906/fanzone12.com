@@ -20,11 +20,12 @@ import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 import { ClientAnimationWrapper } from "@/components/client-animation-wrapper"
-import { DesktopClubsExpander } from "@/components/desktop-clubs-expander"
+import { DesktopClubsWrapper } from "@/components/desktop-clubs-wrapper"
 import { StaticProductSection, StaticProductCarousel } from "@/components/static-product-section"
 import { StaticInfoSections } from "@/components/static-info-sections"
 import ParceirosSection from "@/components/parceiros-section"
 import DisablePinchZoom from "@/components/disable-pinch-zoom"
+
  
 
 export default async function Home() {
@@ -190,9 +191,9 @@ export default async function Home() {
                       alt={liga.name}
                       fill
                       className={`object-cover ${liga.objectPosition} transition-transform duration-500 group-hover:scale-105`}
-                      loading="lazy"
+                      priority={index < 4}
                       sizes="(max-width: 768px) 50vw, 33vw"
-                      quality={85}
+                      quality={70}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -276,9 +277,9 @@ export default async function Home() {
                       alt={liga.name}
                       fill
                       className={`object-cover ${liga.objectPosition} transition-transform duration-500 group-hover:scale-105`}
-                      loading="lazy"
+                      priority={index < 4}
                       sizes="50vw"
-                      quality={85}
+                      quality={70}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -346,7 +347,7 @@ export default async function Home() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 96px, 128px"
-                      quality={85}
+                      quality={75}
                     />
                   </div>
                 </div>
@@ -390,7 +391,7 @@ export default async function Home() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 160px, 192px"
-                      quality={85}
+                      quality={75}
                     />
                   </div>
                 </div>
@@ -439,7 +440,7 @@ export default async function Home() {
                               className="object-cover transition-all duration-500 group-hover:scale-105"
                               loading="lazy"
                               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 25vw, 20vw"
-                              quality={85}
+                              quality={75}
                             />
                             <div className="absolute top-3 left-3">
                               <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
@@ -485,7 +486,7 @@ export default async function Home() {
                             className="object-cover transition-all duration-500 group-hover:scale-105"
                             loading="lazy"
                             sizes="80vw"
-                            quality={85}
+                            quality={75}
                           />
                           <div className="absolute top-3 left-3">
                             <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
@@ -544,7 +545,7 @@ export default async function Home() {
           </div>
 
           {/* Desktop Grid */}
-          <DesktopClubsExpander />
+          <DesktopClubsWrapper />
 
           {/* Mobile Carousel */}
           <div className="md:hidden">
@@ -582,7 +583,7 @@ export default async function Home() {
                           className="object-contain transition-transform group-hover:scale-110"
                           loading="lazy"
                           sizes="48px"
-                          quality={85}
+                          quality={75}
                         />
                       </div>
                       <p className="font-semibold text-sm text-gray-800 group-hover:text-blue-600 transition-colors">
@@ -640,8 +641,8 @@ export default async function Home() {
                       fill
                             className="object-cover transition-all duration-500 group-hover:scale-105"
                       loading="lazy"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      quality={85}
+                            sizes="(max-width: 768px) 80vw, 25vw"
+                      quality={70}
                     />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
@@ -681,7 +682,7 @@ export default async function Home() {
                           className="object-cover transition-all duration-500 group-hover:scale-105"
                             loading="lazy"
                             sizes="80vw"
-                          quality={85}
+                          quality={70}
                         />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
@@ -1064,8 +1065,8 @@ export default async function Home() {
                               fill
                               className="object-cover transition-all duration-500 group-hover:scale-105"
                               loading="lazy"
-                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                              quality={85}
+                              sizes="(max-width: 768px) 80vw, 25vw"
+                              quality={70}
                             />
                             <div className="absolute top-3 left-3">
                               <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
@@ -1111,7 +1112,7 @@ export default async function Home() {
                             className="object-cover transition-all duration-500 group-hover:scale-105"
                             loading="lazy"
                             sizes="80vw"
-                            quality={85}
+                            quality={75}
                           />
                           <div className="absolute top-3 left-3">
                             <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
@@ -1176,23 +1177,23 @@ export default async function Home() {
                 delay={index * 0.1}
                 className="animate-scale-in"
               >
-                <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
-                  <Link href={`/produto/${kit.id}`} className="block">
-                    <div className="relative aspect-square overflow-hidden">
-                      <Image 
-                        src={kit.imagem}
-                        alt={kit.nome}
-                        fill
-                        className="object-cover transition-all duration-500 group-hover:scale-105"
-                        loading="lazy"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        quality={85}
-                      />
-                      <div className="absolute top-3 left-3">
-                        <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
-                          Kids
-                        </Badge>
-                      </div>
+                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                        <Link href={`/produto/${kit.id}`} className="block">
+                          <div className="relative aspect-square overflow-hidden">
+                            <Image 
+                              src={kit.imagem}
+                              alt={kit.nome}
+                              fill
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              loading="lazy"
+                              sizes="(max-width: 768px) 50vw, 20vw"
+                              quality={70}
+                            />
+                            <div className="absolute top-3 left-3">
+                              <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
+                                Kids
+                              </Badge>
+                            </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
@@ -1227,7 +1228,7 @@ export default async function Home() {
                             className="object-cover transition-all duration-500 group-hover:scale-105"
                             loading="lazy"
                             sizes="80vw"
-                            quality={85}
+                            quality={70}
                           />
                           <div className="absolute top-3 left-3">
                             <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
@@ -1297,7 +1298,7 @@ export default async function Home() {
                         fill
                     className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                        quality={85}
+                        quality={75}
                       />
                   <div className="absolute top-6 left-6">
                     <Badge className="bg-white text-orange-600 text-sm px-4 py-2 font-bold rounded-full shadow-lg">
@@ -1409,7 +1410,7 @@ export default async function Home() {
                         fill
                         className="object-contain p-6 group-hover:scale-110 transition-transform duration-500"
                         sizes="100vw"
-                        quality={85}
+                        quality={75}
                       />
                       <div className="absolute top-4 left-4">
                         <Badge className="bg-white text-orange-600 text-xs px-3 py-1 font-bold rounded-full shadow-lg">
@@ -1443,7 +1444,7 @@ export default async function Home() {
                         fill
                         className="object-contain p-6 group-hover:scale-110 transition-transform duration-500"
                         sizes="100vw"
-                        quality={85}
+                        quality={75}
                       />
                       <div className="absolute top-4 left-4">
                         <Badge className="bg-white text-green-600 text-xs px-3 py-1 font-bold rounded-full shadow-lg">
