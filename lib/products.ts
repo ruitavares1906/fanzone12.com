@@ -41857,16 +41857,16 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "marca": "Adidas",
       "preco": 39.99,
       "precoAntigo": 77.99,
-      "imagem": "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 01.jpeg",
+      "imagem": "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 01.jpeg",
       "imagensAdicionais": [
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 02.jpeg",
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 03.jpeg",
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 04.jpeg",
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 05.jpeg",
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 06.jpeg",
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 07.jpeg",
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 08.jpeg",
-        "/images/27USD Adidas Originals Campus 00s HL051200401 Size 36~40半 - 09.jpeg"
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 02.jpeg",
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 03.jpeg",
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 04.jpeg",
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 05.jpeg",
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 06.jpeg",
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 07.jpeg",
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 08.jpeg",
+        "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 09.jpeg"
       ]
     },
     {
@@ -42237,16 +42237,16 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "marca": "Adidas",
       "preco": 43.99,
       "precoAntigo": 89.99,
-      "imagem": "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 01.jpeg",
+      "imagem": "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 01.jpeg",
       "imagensAdicionais": [
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 02.jpeg",
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 03.jpeg",
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 04.jpeg",
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 05.jpeg",
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 06.jpeg",
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 07.jpeg",
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 08.jpeg",
-        "/images/33USD SPORTY &amp; RICH x Adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 09.jpeg"
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 02.jpeg",
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 03.jpeg",
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 04.jpeg",
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 05.jpeg",
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 06.jpeg",
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 07.jpeg",
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 08.jpeg",
+        "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 09.jpeg"
       ]
     },
     {
@@ -42257,16 +42257,16 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "marca": "Adidas",
       "preco": 36.99,
       "precoAntigo": 79.99,
-      "imagem": "/images/25USD Adidas Originals Campus 00s HQ8707 - 01.jpeg",
+      "imagem": "/images/25USD adidas Originals Campus 00s HQ8707 - 01.jpeg",
       "imagensAdicionais": [
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 02.jpeg",
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 03.jpeg",
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 04.jpeg",
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 05.jpeg",
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 06.jpeg",
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 07.jpeg",
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 08.jpeg",
-        "/images/25USD Adidas Originals Campus 00s HQ8707 - 09.jpeg"
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 02.jpeg",
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 03.jpeg",
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 04.jpeg",
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 05.jpeg",
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 06.jpeg",
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 07.jpeg",
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 08.jpeg",
+        "/images/25USD adidas Originals Campus 00s HQ8707 - 09.jpeg"
       ]
     },
     {
@@ -42457,16 +42457,16 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "marca": "Adidas",
       "preco": 46.99,
       "precoAntigo": 89.99,
-      "imagem": "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 01.jpeg",
+      "imagem": "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 01.jpeg",
       "imagensAdicionais": [
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 02.jpeg",
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 03.jpeg",
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 04.jpeg",
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 05.jpeg",
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 06.jpeg",
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 07.jpeg",
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 08.jpeg",
-        "/images/36USD Adidas Campus 00s HP6286 06HHLL120721 - 09.jpeg"
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 02.jpeg",
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 03.jpeg",
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 04.jpeg",
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 05.jpeg",
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 06.jpeg",
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 07.jpeg",
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 08.jpeg",
+        "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 09.jpeg"
       ]
     },
     {
@@ -42477,16 +42477,16 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "marca": "Adidas",
       "preco": 46.99,
       "precoAntigo": 89.99,
-      "imagem": "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 01.jpeg",
+      "imagem": "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 01.jpeg",
       "imagensAdicionais": [
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 02.jpeg",
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 03.jpeg",
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 04.jpeg",
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 05.jpeg",
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 06.jpeg",
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 07.jpeg",
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 08.jpeg",
-        "/images/150 公司级Adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 09.jpeg"
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 02.jpeg",
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 03.jpeg",
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 04.jpeg",
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 05.jpeg",
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 06.jpeg",
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 07.jpeg",
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 08.jpeg",
+        "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 09.jpeg"
       ]
     },
     {
@@ -42569,11 +42569,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "/images/29USD Adidas Originals Campus 00s HQ8706 ID HL141300809 Size 36~45半 - 09.jpeg"
       ]
     },
-    
-
-
-                                                                            
-                                                                        
+                                    
 
                                   
                                                                 
