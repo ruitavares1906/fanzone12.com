@@ -1,9 +1,7 @@
 import { Suspense } from "react"
 import { getProdutos } from "@/lib/products"
-import { aplicarFiltroCor } from "@/lib/color-filter-utils"
 import { ProductCard } from "@/components/product-card"
 import { ProductsSkeleton } from "@/components/products-skeleton"
-import { SneakersColorFilter } from "@/components/sneakers-color-filter"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Pagination } from "@/components/pagination"
@@ -22,19 +20,15 @@ async function SuperstarContent({
   const params = await searchParams
   const pagina = typeof params.pagina === "string" ? parseInt(params.pagina) : 1
   const porPagina = 30
-  const cor = typeof params.cor === "string" ? params.cor : undefined
 
   // Filtrar produtos Superstar
   const allProducts = await getProdutos({ categoria: "sneakers" })
-  let superstarProducts = allProducts.filter(
+  const superstarProducts = allProducts.filter(
     (product) => 
       product.subcategoria === "sneakers" && 
       product.marca?.toLowerCase().includes("adidas") &&
       product.categoria === "superstar"
   )
-
-  // Aplicar filtro de cor se especificado
-  superstarProducts = aplicarFiltroCor(superstarProducts, cor)
   
   const total = superstarProducts.length
   const inicio = (pagina - 1) * porPagina
@@ -57,9 +51,6 @@ async function SuperstarContent({
             O ícone do basquetebol alemão
           </p>
         </div>
-
-        {/* Filtros de Cor */}
-        <SneakersColorFilter basePath="/catalogo/superstar" />
 
         {produtos.length > 0 ? (
           <>

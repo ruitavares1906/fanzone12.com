@@ -455,7 +455,11 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                         src={img || "/placeholder.svg"}
                         alt={`${produto.nome} - Vista ${i + 1}`}
                         fill
-                        className="object-contain bg-white"
+                        className={`object-contain bg-white ${
+                          produto.marca?.toLowerCase().includes("adidas") && produto.subcategoria === "sneakers"
+                            ? "scale-125"
+                            : ""
+                        }`}
                         sizes="(max-width: 768px) 100vw, 50vw"
                         quality={85}
                         priority={i === 0}
