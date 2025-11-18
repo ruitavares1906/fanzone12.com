@@ -1,6 +1,18 @@
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
 import { getDestaques, getProdutos, getProdutoById } from "@/lib/products"
+import { 
+  LIGA_BETCLIC_IDS, 
+  BEST_SELLERS_IDS, 
+  ALL_TIME_BEST_SELLERS_IDS, 
+  YOUNG_FANS_KITS_IDS, 
+  FAN_FAVORITES_IDS, 
+  NATIONAL_TEAMS_IDS, 
+  BARCELONA_KITS_IDS, 
+  REAL_MADRID_KITS_IDS, 
+  PREMIER_LEAGUE_IDS, 
+  LA_LIGA_IDS 
+} from "@/lib/constants"
 import type { Product } from "@/lib/types"
 import Link from "next/link"
 import { ArrowRight, Truck, CreditCard, Star, Sparkles, Baby, Clock, Search, MessageCircle } from "lucide-react"
@@ -20,140 +32,34 @@ export default async function Home() {
   
   // Buscar produtos por liga e filtrar apenas camisolas principais (sem kits de criança)
   // Lista fixa para Liga Betclic conforme pedido
-  const ligaBetclicIds = [
-    "sporting-alternativa-preta-2526-1",
-    "benfica-2025-26-home-long-sleeve",
-    "camisola-aquecimento-slbenfica-2025-2026",
-    "sporting-away-2526",
-    "porto-2025-26-special-edition",
-    "porto-2025-26-third",
-    "retro-sporting-00-01",
-    "retro-porto-90-93",
-    "benfica-retro-98-99-casa"
-  ] as const
+  const ligaBetclicIds = LIGA_BETCLIC_IDS
   const ligaPortuguesa = (await Promise.all(ligaBetclicIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // Buscar produtos best sellers (sneakers)
-  const bestSellersIds = [
-    "nike-air-force-1-low-triple-white", 
-    "new-balance-9060-crystal-pink",
-    "air-force-1-low-fontanka-branco-puro", 
-    "af1-low-mini-swoosh-branco-cinza",
-    "air-force-1-shadow-branco-puro",
-    "air-force-1-low-panda-preto-branco",
-    "nk-dunk-low-team-red",
-    "air-force-1-07-mid-branco-e-cinzento"
-  ] as const
+  const bestSellersIds = BEST_SELLERS_IDS
   const bestSellers = (await Promise.all(bestSellersIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // All-Time Best Sellers - Camisolas de grandes clubes europeus
-  const allTimeBestSellersIds = [
-    "real-madrid-25-26-home",
-    "barcelona-principal-2526",
-    "manchester-united-terceira-2526",
-    "camisola-liverpool-principal-2025-26",
-    "man-city-25-26-home",
-    "arsenal-home-2526",
-    "chelsea-home-2526",
-    "psg-25-26-jogador-home",
-    "bayern-25-26-home",
-    "milan-25-26-home",
-    "barcelona-travis-scott-2526",
-    "real-madrid-special-edition-4-2526"
-  ] as const
+  const allTimeBestSellersIds = ALL_TIME_BEST_SELLERS_IDS
   const allTimeBestSellers = (await Promise.all(allTimeBestSellersIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // Equipment for Young Fans - Kits de criança das equipas mais populares da Europa
-  const youngFansKitsIds = [
-    "kit-crianca-barcelona-principal-kids-2526",
-    "kit-crianca-real-madrid-25-26",
-    "kit-crianca-manchester-united-principal-2526",
-    "kit-crianca-liverpool-i-2425",
-    "kit-crianca-manchester-city-principal-2526",
-    "kit-crianca-psg-principal-2526"
-  ] as const
+  const youngFansKitsIds = YOUNG_FANS_KITS_IDS
   
   // Fan Favorites - Favoritas dos Fans
-  const fanFavoritesIds = [
-    "arsenal-25-26-terceiro",
-    "real-madrid-special-edition-rosa-2526",
-    "psg-25-26-third-away",
-    "camisola-juventus-principal-2526",
-    "camisola-man-city-alternativa-2526",
-    "liverpool-25-26-alternativa",
-    "napoli-25-26-away",
-    "barcelona-2526-special-edition-bright-pink-jersey",
-    "chelsea-away-2526",
-    "ac-milan-25-26-terceiro",
-    "roma-third-away-25-26",
-    "bayern-munich-alternativa-25-26",
-    "camisola-inter-principal-2526",
-    "manchester-united-terceira-2526",
-    "tottenham-away-2526"
-  ] as const
+  const fanFavoritesIds = FAN_FAVORITES_IDS
   const fanFavorites = (await Promise.all(fanFavoritesIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // National Teams - Seleções nacionais (2025/26 e 2026) - Special editions first
-  const nationalTeamsIds = [
-    "portugal-pantera-negra",
-    "portugal-pantera-negra-versao-jogador",
-    "portugal-principal-2026",
-    "portugal-25-26-home",
-    "portugal-alternativa-2025"
-  ] as const
+  const nationalTeamsIds = NATIONAL_TEAMS_IDS
   const nationalTeams = (await Promise.all(nationalTeamsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // Barcelona Kits (2025/26) - Ordem específica
-  const barcelonaKitsIds = [
-    "barcelona-2526-special-edition-bright-pink-jersey",
-    "barcelona-special-vi-2526",
-    "barcelona-25-26-special-edition-iv",
-    "barcelona-special-vii-2526",
-    "barcelona-special-viii-2526",
-    "barcelona-preta-special-edition-2526",
-    "barcelona-cf-special-edition-2526",
-    "barcelona-25-26-special-edition-v",
-    "barcelona-edition-special-25-26",
-    "barcelona-special-edition-222-25-26",
-    "barcelona-x-kobe-bryant-pre-match-kit-25-26",
-    "barcelona-25-26-special-edition-vii",
-    "barcelona-travis-scott-2526",
-    "barcelona-travis-scott-preta-2526",
-    "barcelona-special-edition-2526",
-    "barcelona-special-edition-2-2526",
-    "barcelona-special-edition-3-2526",
-    "barcelona-25-26-jogador-special-edition",
-    "barcelona-25-26-jogador-special-edition-ii",
-    "barcelona-25-26-jogador-special-edition-iii",
-    "barcelona-25-26-jogador-125th-anniversary",
-    "barcelona-25-26-jogador-rosa",
-    "barcelona-25-26-joint-edition",
-    "barcelona-principal-2526",
-    "barcelona-25-26-home",
-    "barcelona-25-26-third-away"
-  ] as const
+  const barcelonaKitsIds = BARCELONA_KITS_IDS
   const barcelonaKits = (await Promise.all(barcelonaKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // Real Madrid Kits (2025/26) - Ordem específica
-  const realMadridKitsIds = [
-    "real-madrid-special-edition-rosa-2526",
-    "real-madrid-special-edition-3-2526",
-    "real-madrid-special-edition-4-2526",
-    "realmadrid-2526-jogador-rosa",
-    "real-madrid-cf-special-edition-2526",
-    "real-madrid-25-26-home",
-    "real-madrid-25-26-away",
-    "real-madrid-terceira-fora-2526",
-    "camisola-real-madrid-gr-2526",
-    "real-madrid-special-edition-2526",
-    "real-madrid-special-edition-2-2526",
-    "real-madrid-special-edition-5-2526",
-    "real-madrid-special-edition-6-2526",
-    "real-madrid-special-edition-2-player-2526",
-    "real-madrid-special-edition-player-2526",
-    "real-madrid-25-26-jogador-special-edition-vii",
-    "realmadrid-special-2526"
-  ] as const
+  const realMadridKitsIds = REAL_MADRID_KITS_IDS
   const realMadridKits = (await Promise.all(realMadridKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   const youngFansKits = (await Promise.all(youngFansKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
@@ -162,32 +68,11 @@ export default async function Home() {
   const playerVersionJerseysLimited = playerVersionJerseys.slice(0, 12)
   
   // Lista fixa para Premier League conforme pedido
-  const premierLeagueIds = [
-    "arsenal-home-2526",
-    "manchester-united-terceira-2526",
-    "camisola-man-city-alternativa-2526",
-    "camisola-arsenal-alternativa-2526",
-    "camisola-liverpool-principal-2025-26",
-    "man-city-25-26-home",
-    "man-city-25-26-away",
-    "liverpool-25-26-especial-jordan",
-    "liverpool-25-26-alternativa",
-    "arsenal-25-26-terceiro",
-    "chelsea-home-2526"
-  ] as const
+  const premierLeagueIds = PREMIER_LEAGUE_IDS
   const premierLeague = (await Promise.all(premierLeagueIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // Lista fixa para La Liga conforme pedido
-  const laLigaIds = [
-    "real-madrid-25-26-home",
-    "barcelona-principal-2526",
-    "real-madrid-special-edition-4-2526",
-    "realmadrid-special-2526",
-    "barcelona-special-vi-2526",
-    "real-betis-special-edition-2526",
-    "atletico-madrid-25-26-home",
-    "real-madrid-terceira-fora-2526"
-  ] as const
+  const laLigaIds = LA_LIGA_IDS
   const laLiga = (await Promise.all(laLigaIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
   // Filtrar apenas camisolas principais (excluir kits de criança)
