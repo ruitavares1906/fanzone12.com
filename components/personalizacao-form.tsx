@@ -103,7 +103,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                 <h3 className="text-lg sm:text-xl font-bold mb-1 bg-gradient-to-r from-primary via-purple-600 to-pink-500 bg-clip-text text-transparent">
                   Premium Personalization
                 </h3>
-                <p className="text-xs sm:text-sm text-primary/70">Make your jersey unique and special</p>
+                <p className="text-xs sm:text-sm text-black">Make your jersey unique and special</p>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full shadow-md border border-primary/20 transition-all duration-300 hover:shadow-lg hover:border-primary/40">
@@ -142,7 +142,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     id="nome"
                     value={nome}
                     onChange={(e) => setNome(e.target.value)}
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 px-2"
+                    className="block w-full rounded-md border-0 py-3 px-4 font-medium text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
                     placeholder="Name for the jersey"
                   />
                 </div>
@@ -160,9 +160,9 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     value={numero}
                     onChange={(e) => handleChange("numero", e.target.value)}
                     maxLength={2}
-                    className="font-medium text-base sm:text-lg border-primary/20 focus:border-primary/40 focus:ring-2 focus:ring-primary/20 transition-all duration-300"
+                    className="py-3 px-4 font-medium text-gray-900 border-primary/20 focus:border-primary/40 focus:ring-2 focus:ring-primary/20 transition-all duration-300"
                   />
-                  <p className="text-[10px] sm:text-xs text-primary/60 mt-2 ml-1">Numbers from 0 to 99</p>
+                  <p className="text-[10px] sm:text-xs text-black mt-2 ml-1">Numbers from 0 to 99</p>
                 </div>
               </div>
 
@@ -178,23 +178,23 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   <RadioGroup 
                     value={fonte} 
                     onValueChange={(value) => handleChange("fonte", value as "liga-betclic" | "clube" | "champions-liga-europa")}
-                    className="flex flex-wrap gap-4"
+                    className="flex flex-wrap gap-3"
                   >
-                    <div className="flex items-center space-x-2">
+                    <div className={`flex items-center space-x-2 px-3 py-2 rounded-lg border transition-all ${fonte === "liga-betclic" ? "ring-1 ring-primary border-primary bg-primary/5" : "border-gray-200"}`}>
                       <RadioGroupItem value="liga-betclic" id="liga-betclic" />
-                      <Label htmlFor="liga-betclic" className="text-sm font-medium cursor-pointer">
+                      <Label htmlFor="liga-betclic" className="text-xs font-medium cursor-pointer">
                         LIGA BETCLIC
                       </Label>
                     </div>
-                    <div className="flex items-center space-x-2">
+                    <div className={`flex items-center space-x-2 px-3 py-2 rounded-lg border transition-all ${fonte === "clube" ? "ring-1 ring-primary border-primary bg-primary/5" : "border-gray-200"}`}>
                       <RadioGroupItem value="clube" id="clube" />
-                      <Label htmlFor="clube" className="text-sm font-medium cursor-pointer">
+                      <Label htmlFor="clube" className="text-xs font-medium cursor-pointer">
                         CLUBE
                       </Label>
                     </div>
-                    <div className="flex items-center space-x-2">
+                    <div className={`flex items-center space-x-2 px-3 py-2 rounded-lg border transition-all ${fonte === "champions-liga-europa" ? "ring-1 ring-primary border-primary bg-primary/5" : "border-gray-200"}`}>
                       <RadioGroupItem value="champions-liga-europa" id="champions-liga-europa" />
-                      <Label htmlFor="champions-liga-europa" className="text-sm font-medium cursor-pointer">
+                      <Label htmlFor="champions-liga-europa" className="text-xs font-medium cursor-pointer">
                         CHAMPIONS / LIGA EUROPA
                       </Label>
                     </div>
@@ -209,14 +209,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-nations-2025"
                           checked={patches.includes("nations-2025")}
                           onCheckedChange={() => handlePatchChange("nations-2025")}
                         />
                         <Label htmlFor="patch-nations-2025" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PatchNationsLeague2025_700x.webp"
                               alt="Patch Liga das Nações 2025"
@@ -228,21 +228,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Liga das Nações 2025
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official 2025 Nations League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official 2025 Nations League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-nations-foundation"
                           checked={patches.includes("nations-foundation")}
                           onCheckedChange={() => handlePatchChange("nations-foundation")}
                         />
                         <Label htmlFor="patch-nations-foundation" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PatchNationsLeague2025_UEFAFoundation10AnosEdicaoComemorativa_700x.webp"
                               alt="Patch Liga das Nações 2025 + UEFA Foundation"
@@ -254,8 +254,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Liga das Nações 2025 + UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">10th anniversary commemorative edition</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+2€</p>
+                            <p className="text-xs sm:text-sm text-black">10th anniversary commemorative edition</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+2€</p>
                           </div>
                         </Label>
                       </div>
@@ -271,14 +271,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-portugal"
                           checked={patches.includes("portugal")}
                           onCheckedChange={() => handlePatchChange("portugal")}
                         />
                         <Label htmlFor="patch-portugal" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/patch-portugal.webp"
                               alt="Patch de Campeão Português"
@@ -290,21 +290,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Portuguese Champion Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Adds a special touch to your jersey</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Adds a special touch to your jersey</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-liga"
                           checked={patches.includes("liga")}
                           onCheckedChange={() => handlePatchChange("liga")}
                         />
                         <Label htmlFor="patch-liga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-CAMPEAONACIONALPORTUGAL_2_700x.webp"
                               alt="Patch de Campeão Liga Portuguesa"
@@ -316,21 +316,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Portuguese League Champion Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Celebrate the championship victory</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Celebrate the championship victory</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -342,21 +342,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-betclic"
                           checked={patches.includes("betclic")}
                           onCheckedChange={() => handlePatchChange("betclic")}
                         />
                         <Label htmlFor="patch-betclic" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHLIGA.jpg"
                               alt="Patch Liga Portugal Betclic"
@@ -368,21 +368,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Liga Portugal Betclic
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official league patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official league patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-uefa-foundation"
                           checked={patches.includes("uefa-foundation")}
                           onCheckedChange={() => handlePatchChange("uefa-foundation")}
                         />
                         <Label htmlFor="patch-uefa-foundation" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/2021-25-womens-champions-league-uefa-foundation-official-player-issue-size-football-badge-patch-6606-p.webp"
                               alt="Patch UEFA Foundation"
@@ -394,8 +394,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official UEFA Foundation patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -411,14 +411,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-premier-champion-gold"
                           checked={patches.includes("premier-champion-gold")}
                           onCheckedChange={() => handlePatchChange("premier-champion-gold")}
                         />
                         <Label htmlFor="patch-premier-champion-gold" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-CAMPEAOPREMIERLEAGUE-INGLATERRA_700x.webp"
                               alt="Patch Campeão Premier League Dourado"
@@ -430,21 +430,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Premier League Champion Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Golden patch for English champions</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Golden patch for English champions</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-premier-league-blue"
                           checked={patches.includes("premier-league-blue")}
                           onCheckedChange={() => handlePatchChange("premier-league-blue")}
                         />
                         <Label htmlFor="patch-premier-league-blue" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-PREMIERLEAGUE-INGLATERRA_700x.webp"
                               alt="Patch Premier League Azul"
@@ -456,21 +456,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Premier League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Premier League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Premier League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-no-room-racism"
                           checked={patches.includes("no-room-racism")}
                           onCheckedChange={() => handlePatchChange("no-room-racism")}
                         />
                         <Label htmlFor="patch-no-room-racism" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-NOROOMFORRACISM-PREMIERLEAGUE_700x.webp"
                               alt="Patch No Room for Racism"
@@ -482,21 +482,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               No Room for Racism
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Anti-racism campaign</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Anti-racism campaign</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -508,8 +508,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -517,14 +517,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     
                     {/* Patch UEFA Foundation para Premier League */}
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-uefa-foundation-premier"
                           checked={patches.includes("uefa-foundation")}
                           onCheckedChange={() => handlePatchChange("uefa-foundation")}
                         />
                         <Label htmlFor="patch-uefa-foundation-premier" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/2021-25-womens-champions-league-uefa-foundation-official-player-issue-size-football-badge-patch-6606-p.webp"
                               alt="Patch UEFA Foundation"
@@ -536,8 +536,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official UEFA Foundation patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -548,14 +548,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                       <>
                         {/* Patch Diogo Jota Original */}
                         <div className="relative overflow-hidden group">
-                          <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                          <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                             <Checkbox
                               id="patch-diogo-jota"
                               checked={patches.includes("diogo-jota")}
                               onCheckedChange={() => handlePatchChange("diogo-jota")}
                             />
                             <Label htmlFor="patch-diogo-jota" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                              <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                              <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                                 <Image
                                   src="/images/dj.avif"
                                   alt="Patch Diogo Jota"
@@ -567,8 +567,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                                 <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                                   Diogo Jota
                                 </p>
-                                <p className="text-xs sm:text-sm text-primary/60">Exclusive patch for the Portuguese player</p>
-                                <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                                <p className="text-xs sm:text-sm text-black">Exclusive patch for the Portuguese player</p>
+                                <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                               </div>
                             </Label>
                           </div>
@@ -576,14 +576,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
 
                         {/* Patch Diogo Jota Manga */}
                         <div className="relative overflow-hidden group">
-                          <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                          <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                             <Checkbox
                               id="patch-diogo-jota-manga"
                               checked={patches.includes("diogo-jota-manga")}
                               onCheckedChange={() => handlePatchChange("diogo-jota-manga")}
                             />
                             <Label htmlFor="patch-diogo-jota-manga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                              <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                              <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                                 <Image
                                   src="/images/il_1140xN.7041450932_ct2i.webp"
                                   alt="Patch Diogo Jota Manga"
@@ -595,8 +595,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                                 <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                                   Diogo Jota Manga
                                 </p>
-                                <p className="text-xs sm:text-sm text-primary/60">Sleeve patch for the Portuguese player</p>
-                                <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                                <p className="text-xs sm:text-sm text-black">Sleeve patch for the Portuguese player</p>
+                                <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                               </div>
                             </Label>
                           </div>
@@ -614,14 +614,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-la-liga"
                           checked={patches.includes("la-liga")}
                           onCheckedChange={() => handlePatchChange("la-liga")}
                         />
                         <Label htmlFor="patch-la-liga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-LALIGA-ESPANHA_700x.webp"
                               alt="Patch La Liga"
@@ -633,21 +633,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch La Liga
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official La Liga patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official La Liga patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-la-liga-24-25"
                           checked={patches.includes("la-liga-24-25")}
                           onCheckedChange={() => handlePatchChange("la-liga-24-25")}
                         />
                         <Label htmlFor="patch-la-liga-24-25" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-LALIGA2425-ESPANHA_300x.webp"
                               alt="Patch La Liga 24/25"
@@ -659,22 +659,22 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch La Liga 24/25
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official 24/25 season patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official 24/25 season patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     {/* Patches Champions League e UEFA Foundation para La Liga */}
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions-laliga"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions-laliga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -686,22 +686,22 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-uefa-foundation-laliga"
                           checked={patches.includes("uefa-foundation")}
                           onCheckedChange={() => handlePatchChange("uefa-foundation")}
                         />
                         <Label htmlFor="patch-uefa-foundation-laliga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/2021-25-womens-champions-league-uefa-foundation-official-player-issue-size-football-badge-patch-6606-p.webp"
                               alt="Patch UEFA Foundation"
@@ -713,8 +713,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official UEFA Foundation patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -730,14 +730,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-ligue-1-black"
                           checked={patches.includes("ligue-1-black")}
                           onCheckedChange={() => handlePatchChange("ligue-1-black")}
                         />
                         <Label htmlFor="patch-ligue-1-black" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-LIGUE1-FRANCA_300x.webp"
                               alt="Patch Ligue 1 Preto"
@@ -749,21 +749,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Ligue 1 Black Patch
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Ligue 1 patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Ligue 1 patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-ligue-1"
                           checked={patches.includes("ligue-1")}
                           onCheckedChange={() => handlePatchChange("ligue-1")}
                         />
                         <Label htmlFor="patch-ligue-1" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-LIGUE1-FRANCA1_300x.webp"
                               alt="Patch Ligue 1"
@@ -775,21 +775,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Ligue 1
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Patch oficial da Ligue 1</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Patch oficial da Ligue 1</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-ligue-1-2025"
                           checked={patches.includes("ligue-1-2025")}
                           onCheckedChange={() => handlePatchChange("ligue-1-2025")}
                         />
                         <Label htmlFor="patch-ligue-1-2025" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH-BADGE-LIGUE-1-FRANCA-2025_300x.webp"
                               alt="Patch Ligue 1 2025"
@@ -801,21 +801,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Ligue 1 2025
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">2025 season patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">2025 season patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -827,8 +827,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -836,14 +836,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     
                     {/* Patches Champions League e UEFA Foundation para Ligue 1 */}
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions-ligue1"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions-ligue1" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -855,22 +855,22 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-uefa-foundation-ligue1"
                           checked={patches.includes("uefa-foundation")}
                           onCheckedChange={() => handlePatchChange("uefa-foundation")}
                         />
                         <Label htmlFor="patch-uefa-foundation-ligue1" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/2021-25-womens-champions-league-uefa-foundation-official-player-issue-size-football-badge-patch-6606-p.webp"
                               alt="Patch UEFA Foundation"
@@ -882,8 +882,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official UEFA Foundation patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -899,14 +899,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   </Label>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-bundesliga"
                           checked={patches.includes("bundesliga")}
                           onCheckedChange={() => handlePatchChange("bundesliga")}
                         />
                         <Label htmlFor="patch-bundesliga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-BUNDESLIGA-ALEMANHA_300x.webp"
                               alt="Patch Bundesliga"
@@ -918,21 +918,21 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Bundesliga
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Bundesliga patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Bundesliga patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -944,8 +944,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -953,14 +953,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     
                     {/* Patches Champions League e UEFA Foundation para Bundesliga */}
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions-bundesliga"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions-bundesliga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -972,22 +972,22 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-uefa-foundation-bundesliga"
                           checked={patches.includes("uefa-foundation")}
                           onCheckedChange={() => handlePatchChange("uefa-foundation")}
                         />
                         <Label htmlFor="patch-uefa-foundation-bundesliga" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/2021-25-womens-champions-league-uefa-foundation-official-player-issue-size-football-badge-patch-6606-p.webp"
                               alt="Patch UEFA Foundation"
@@ -999,8 +999,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official UEFA Foundation patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -1017,14 +1017,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                   <div className="space-y-3 sm:space-y-4">
                     {/* Patch Serie A 2024-26 Enilive */}
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-serie-a-enilive"
                           checked={patches.includes("serie-a-enilive")}
                           onCheckedChange={() => handlePatchChange("serie-a-enilive")}
                         />
                         <Label htmlFor="patch-serie-a-enilive" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/93db02725ad1b20cb0afae8824062b0027fcaf180fcea452c9d48c07fe695aec.webp"
                               alt="Patch Serie A Enilive 2024-26"
@@ -1036,8 +1036,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               2024-26 Patch Serie A Enilive
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Serie A 2024-26 patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Serie A 2024-26 patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -1045,14 +1045,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
 
                     {/* Patch Serie A 23/24 TIM */}
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-serie-a-tim"
                           checked={patches.includes("serie-a-tim")}
                           onCheckedChange={() => handlePatchChange("serie-a-tim")}
                         />
                         <Label htmlFor="patch-serie-a-tim" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCHBADGE-SERIEATIM_300x.webp"
                               alt="Patch Serie A TIM 23/24"
@@ -1064,8 +1064,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               23/24 Patch Serie A TIM
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Serie A 23/24 patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Serie A 23/24 patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -1073,14 +1073,14 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     
                     {/* Patches Champions League e UEFA Foundation para Serie A */}
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-champions-seriea"
                           checked={patches.includes("champions")}
                           onCheckedChange={() => handlePatchChange("champions")}
                         />
                         <Label htmlFor="patch-champions-seriea" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/PATCH_BADGE_-_CHAMPIONS_LEAGUE_BOLA_700x.webp"
                               alt="Patch Champions League"
@@ -1092,22 +1092,22 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch Champions League
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official Champions League patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official Champions League patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
                     </div>
                     
                     <div className="relative overflow-hidden group">
-                      <div className="flex items-center space-x-3 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
+                      <div className="flex items-center space-x-3 p-2 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:border-primary hover:bg-primary/5 cursor-pointer group-hover:shadow-lg">
                         <Checkbox
                           id="patch-uefa-foundation-seriea"
                           checked={patches.includes("uefa-foundation")}
                           onCheckedChange={() => handlePatchChange("uefa-foundation")}
                         />
                         <Label htmlFor="patch-uefa-foundation-seriea" className="flex items-center gap-3 sm:gap-4 cursor-pointer flex-1">
-                          <div className="w-12 h-12 sm:w-16 sm:h-16 relative transform transition-transform duration-300 group-hover:scale-110">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 relative transform transition-transform duration-300 group-hover:scale-110">
                             <Image
                               src="/images/2021-25-womens-champions-league-uefa-foundation-official-player-issue-size-football-badge-patch-6606-p.webp"
                               alt="Patch UEFA Foundation"
@@ -1119,8 +1119,8 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                             <p className="font-bold text-sm sm:text-lg bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                               Patch UEFA Foundation
                             </p>
-                            <p className="text-xs sm:text-sm text-primary/60">Official UEFA Foundation patch</p>
-                            <p className="text-primary font-semibold mt-1 text-sm sm:text-base">+1€</p>
+                            <p className="text-xs sm:text-sm text-black">Official UEFA Foundation patch</p>
+                            <p className="text-black font-semibold mt-1 text-sm sm:text-base">+1€</p>
                           </div>
                         </Label>
                       </div>
@@ -1140,7 +1140,7 @@ export function PersonalizacaoForm({ onChange, clube }: PersonalizacaoFormProps)
                     <p className="text-xs sm:text-sm font-medium bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                       Personalization Costs:
                     </p>
-                    <ul className="mt-2 space-y-1 text-xs sm:text-sm text-primary/70">
+                    <ul className="mt-2 space-y-1 text-xs sm:text-sm text-black">
                       <li className="flex items-center gap-2">
                         <Sparkles className="h-3 w-3 text-yellow-500" />
                         Name and Number: +€3

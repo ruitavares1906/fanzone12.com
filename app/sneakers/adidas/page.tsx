@@ -54,6 +54,23 @@ async function SneakersAdidasContent({
 
         {/* Filtros de Categoria */}
         <div className="mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3">
+          {/* Campus */}
+          <Link href="/catalogo/campus" className="group">
+            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
+              <div className="flex flex-col items-center text-center gap-1">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <span className="text-sm sm:text-base">👟</span>
+                </div>
+                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
+                  Campus
+                </h3>
+                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
+                  Adidas
+                </Badge>
+              </div>
+            </div>
+          </Link>
+
           {/* Originals Samba */}
           <Link href="/catalogo/samba" className="group">
             <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
@@ -63,6 +80,23 @@ async function SneakersAdidasContent({
                 </div>
                 <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
                   Originals Samba
+                </h3>
+                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
+                  Adidas
+                </Badge>
+              </div>
+            </div>
+          </Link>
+
+          {/* Spezial */}
+          <Link href="/catalogo/speziale" className="group">
+            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
+              <div className="flex flex-col items-center text-center gap-1">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <span className="text-sm sm:text-base">👟</span>
+                </div>
+                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
+                  Spezial
                 </h3>
                 <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
                   Adidas
@@ -105,32 +139,15 @@ async function SneakersAdidasContent({
             </div>
           </Link>
 
-          {/* Handball SPZL */}
-          <Link href="/catalogo/handball-spzl" className="group">
+          {/* Forum */}
+          <Link href="/catalogo/forum" className="group">
             <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
               <div className="flex flex-col items-center text-center gap-1">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
                   <span className="text-sm sm:text-base">👟</span>
                 </div>
                 <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Handball SPZL
-                </h3>
-                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
-                  Adidas
-                </Badge>
-              </div>
-            </div>
-          </Link>
-
-          {/* Campus */}
-          <Link href="/catalogo/campus" className="group">
-            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
-              <div className="flex flex-col items-center text-center gap-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-sm sm:text-base">👟</span>
-                </div>
-                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Campus
+                  Forum
                 </h3>
                 <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
                   Adidas

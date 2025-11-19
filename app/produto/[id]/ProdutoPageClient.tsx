@@ -599,12 +599,12 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                     <h4 className="text-sm font-semibold text-red-800 mb-4 flex items-center gap-2">
                       👟 SNEAKER SIZES
                     </h4>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2 sm:gap-3">
                       {["36", "36.5", "37.5", "38", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "45"].map((size) => (
                         <button
                           key={size}
                           type="button"
-                          className={`rounded-xl border-2 font-semibold transition-all duration-200 px-4 py-3 min-w-[50px] ${
+                          className={`rounded-xl border-2 font-semibold transition-all duration-200 px-2 py-2 sm:px-3 sm:py-2 text-xs sm:text-sm min-w-[40px] sm:min-w-[45px] ${
                             selectedSize === size
                               ? "border-red-500 bg-red-500 text-white shadow-lg transform scale-105"
                               : "border-gray-200 bg-white hover:border-red-300 hover:bg-red-50 hover:shadow-md"
@@ -624,12 +624,12 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                     <h4 className="text-sm font-semibold text-pink-800 mb-4 flex items-center gap-2">
                       👶 BABY SIZES
                     </h4>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2 sm:gap-3">
                       {["0 a 6 meses", "6 a 12 meses"].map((size) => (
                         <button
                           key={size}
                           type="button"
-                          className={`rounded-xl border-2 font-semibold transition-all duration-200 px-4 py-3 min-w-[100px] ${
+                          className={`rounded-xl border-2 font-semibold transition-all duration-200 px-2 py-2 sm:px-3 sm:py-2 text-xs sm:text-sm min-w-[80px] sm:min-w-[90px] ${
                             selectedSize === size
                               ? "border-pink-500 bg-pink-500 text-white shadow-lg transform scale-105"
                               : "border-gray-200 bg-white hover:border-pink-300 hover:bg-pink-50 hover:shadow-md"
@@ -650,12 +650,12 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                       <h4 className="text-sm font-semibold text-blue-800 mb-4 flex items-center gap-2">
                         👥 ADULT SIZES
                       </h4>
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-wrap gap-2 sm:gap-3">
                         {["S", "M", "L", "XL", "2XL", "3XL", "4XL"].map((size) => (
                           <button
                             key={size}
                             type="button"
-                            className={`rounded-xl border-2 font-semibold transition-all duration-200 px-4 py-3 min-w-[50px] ${
+                            className={`rounded-xl border-2 font-semibold transition-all duration-200 px-2 py-2 sm:px-3 sm:py-2 text-xs sm:text-sm min-w-[40px] sm:min-w-[45px] ${
                               selectedSize === size
                                 ? "border-blue-500 bg-blue-500 text-white shadow-lg transform scale-105"
                                 : "border-gray-200 bg-white hover:border-blue-300 hover:bg-blue-50 hover:shadow-md"
@@ -676,12 +676,12 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                         👶 KIDS SIZES
                         <span className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full">calções incluídos,se for aplicável</span>
                       </h4>
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-wrap gap-2 sm:gap-3">
                         {["02-03", "03-04", "04-05", "05-06", "06-07", "08-09", "10-11", "12-13"].map((size) => (
                           <button
                             key={size}
                             type="button"
-                            className={`rounded-xl border-2 font-semibold transition-all duration-200 px-4 py-3 min-w-[70px] ${
+                            className={`rounded-xl border-2 font-semibold transition-all duration-200 px-2 py-2 sm:px-3 sm:py-2 text-xs sm:text-sm min-w-[50px] sm:min-w-[65px] ${
                               selectedSize === `${size} anos`
                                 ? "border-green-500 bg-green-500 text-white shadow-lg transform scale-105"
                                 : "border-gray-200 bg-white hover:border-green-300 hover:bg-green-50 hover:shadow-md"
@@ -702,12 +702,12 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                     <h4 className="text-sm font-semibold text-green-800 mb-4 flex items-center gap-2">
                       👶 KIDS SIZES
                     </h4>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2 sm:gap-3">
                       {["02-03", "03-04", "04-05", "05-06", "06-07", "08-09", "10-11", "12-13"].map((size) => (
                         <button
                           key={size}
                           type="button"
-                          className={`rounded-xl border-2 font-semibold transition-all duration-200 px-4 py-3 min-w-[70px] ${
+                          className={`rounded-xl border-2 font-semibold transition-all duration-200 px-2 py-2 sm:px-3 sm:py-2 text-xs sm:text-sm min-w-[50px] sm:min-w-[65px] ${
                             selectedSize === `${size} years`
                               ? "border-green-500 bg-green-500 text-white shadow-lg transform scale-105"
                               : "border-gray-200 bg-white hover:border-green-300 hover:bg-green-50 hover:shadow-md"
