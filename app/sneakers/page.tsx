@@ -44,8 +44,8 @@ function SneakersContent() {
         {/* Categorias por Marca */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {/* Categoria Adidas */}
-          <Link href="/sneakers/adidas" className="group">
-            <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg rounded-2xl overflow-hidden h-full aspect-[0.85] sm:aspect-[0.9]">
+          <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg rounded-2xl overflow-hidden h-full aspect-[0.85] sm:aspect-[0.9]">
+            <Link href="/sneakers/adidas" className="block h-full">
               <CardContent className="p-0 h-full flex flex-col relative">
                 <div className="relative w-full flex-1 bg-gradient-to-br from-green-400 via-green-500 to-green-600">
                   <Image
@@ -74,12 +74,12 @@ function SneakersContent() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          </Link>
+            </Link>
+          </Card>
 
           {/* Categoria Nike */}
-          <Link href="/sneakers/nike" className="group">
-            <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg rounded-2xl overflow-hidden h-full aspect-[0.85] sm:aspect-[0.9]">
+          <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg rounded-2xl overflow-hidden h-full aspect-[0.85] sm:aspect-[0.9]">
+            <Link href="/sneakers/nike" className="block h-full">
               <CardContent className="p-0 h-full flex flex-col relative">
                 <div className="relative w-full flex-1 bg-gradient-to-br from-orange-400 via-orange-500 to-red-500">
                   <Image
@@ -108,12 +108,12 @@ function SneakersContent() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          </Link>
+            </Link>
+          </Card>
 
           {/* Categoria New Balance */}
-          <Link href="/sneakers/new-balance" className="group">
-            <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg rounded-2xl overflow-hidden h-full aspect-[0.85] sm:aspect-[0.9]">
+          <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg rounded-2xl overflow-hidden h-full aspect-[0.85] sm:aspect-[0.9]">
+            <Link href="/sneakers/new-balance" className="block h-full">
               <CardContent className="p-0 h-full flex flex-col relative">
                 <div className="relative w-full flex-1 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800">
                   <Image
@@ -142,8 +142,8 @@ function SneakersContent() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          </Link>
+            </Link>
+          </Card>
         </div>
 
 

@@ -43,15 +43,25 @@ const parceirosExemplo: Parceiro[] = [
   },
   {
     id: "2",
+    nome: "Constança Sá",
+    foto: "/images/24b8abc6-f277-408d-8418-3a12fc91ed94.JPG",
+    redesSociais: {
+      instagram: "concasnsa",
+      tiktok: "concasnsaa",
+      tiktokUrl: "https://www.tiktok.com/@concasnsaa/video/7565558614736342305?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
+    }
+  },
+  {
+    id: "3",
     nome: "Leonor Ferreira",
     foto: "",
     redesSociais: {
       tiktok: "leonorr.ferreira___",
       tiktokUrl: "https://www.tiktok.com/@leonorr.ferreira___/video/7571958294722497825?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
-    }
+    },
   },
   {
-    id: "3",
+    id: "4",
     nome: "Luana Fonseca",
     foto: "",
     redesSociais: {
@@ -60,7 +70,7 @@ const parceirosExemplo: Parceiro[] = [
     },
   },
   {
-    id: "4",
+    id: "5",
     nome: "Natacha",
     foto: "",
     redesSociais: {
@@ -69,16 +79,7 @@ const parceirosExemplo: Parceiro[] = [
       tiktokUrl: "https://www.tiktok.com/@_natachaa._/video/7565979514669403425?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
     }
   },
-  {
-    id: "5",
-    nome: "Constança Sá",
-    foto: "",
-    redesSociais: {
-      instagram: "concasnsa",
-      tiktok: "concasnsaa",
-      tiktokUrl: "https://www.tiktok.com/@concasnsaa/video/7565558614736342305?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
-    }
-  },
+
   {
     id: "6",
     nome: "Daniela Mendes",
