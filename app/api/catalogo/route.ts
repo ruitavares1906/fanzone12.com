@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getProdutos } from "@/lib/products";
 
-export const runtime = "edge";
+// export const runtime = "edge"; // Temporarily disabled - may cause issues with getProdutos
 
 // Cache em memória que vive enquanto a instância Edge estiver "quente"
 let cache: Record<string, any> | null = null;
@@ -16,48 +16,64 @@ function gerarCacheKey(url: URL) {
 }
 
 export async function GET(req: Request) {
-  const url = new URL(req.url);
-  const cacheKey = gerarCacheKey(url);
+  try {
+    const url = new URL(req.url);
+    const cacheKey = gerarCacheKey(url);
 
-  // Se existir resposta em cache devolve imediatamente
-  if (cache && cache[cacheKey]) {
-    return new NextResponse(JSON.stringify(cache[cacheKey]), {
+    // Se existir resposta em cache devolve imediatamente
+    if (cache && cache[cacheKey]) {
+      return new NextResponse(JSON.stringify(cache[cacheKey]), {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+          // Entregamos instantaneamente de memória, mas mantemos cache CDN
+          "Cache-Control": "s-maxage=86400, stale-while-revalidate",
+        },
+      });
+    }
+
+    // Extrai parâmetros de pesquisa
+    const params = {
+      categoria: url.searchParams.get("categoria") ?? undefined,
+      clube: url.searchParams.get("clube") ?? undefined,
+      cor: url.searchParams.get("cor") ?? undefined,
+      liga: url.searchParams.get("liga") ?? undefined,
+      ordenar: url.searchParams.get("ordenar") ?? undefined,
+      precoMin: url.searchParams.get("precoMin") ?? undefined,
+      precoMax: url.searchParams.get("precoMax") ?? undefined,
+      temporada: url.searchParams.get("temporada") ?? undefined,
+      pesquisa: url.searchParams.get("pesquisa") ?? undefined,
+      versao: url.searchParams.get("versao") ?? undefined,
+    } as const;
+
+    // Obtém lista filtrada usando utilidade existente
+    const produtos = await getProdutos(params as any);
+
+    // Inicializa cache se necessário e armazena resultado
+    if (!cache) cache = {};
+    cache[cacheKey] = produtos;
+
+    return new NextResponse(JSON.stringify(produtos), {
       status: 200,
       headers: {
         "Content-Type": "application/json",
-        // Entregamos instantaneamente de memória, mas mantemos cache CDN
+        // 24 h em CDN; stale-while-revalidate devolve imediatamente enquanto refresca
         "Cache-Control": "s-maxage=86400, stale-while-revalidate",
       },
     });
+  } catch (error) {
+    console.error("Error in /api/catalogo:", error);
+    return new NextResponse(
+      JSON.stringify({ 
+        error: "Internal server error",
+        message: error instanceof Error ? error.message : "Unknown error"
+      }),
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
   }
-
-  // Extrai parâmetros de pesquisa
-  const params = {
-    categoria: url.searchParams.get("categoria") ?? undefined,
-    clube: url.searchParams.get("clube") ?? undefined,
-    cor: url.searchParams.get("cor") ?? undefined,
-    liga: url.searchParams.get("liga") ?? undefined,
-    ordenar: url.searchParams.get("ordenar") ?? undefined,
-    precoMin: url.searchParams.get("precoMin") ?? undefined,
-    precoMax: url.searchParams.get("precoMax") ?? undefined,
-    temporada: url.searchParams.get("temporada") ?? undefined,
-    pesquisa: url.searchParams.get("pesquisa") ?? undefined,
-    versao: url.searchParams.get("versao") ?? undefined,
-  } as const;
-
-  // Obtém lista filtrada usando utilidade existente
-  const produtos = await getProdutos(params as any);
-
-  // Inicializa cache se necessário e armazena resultado
-  if (!cache) cache = {};
-  cache[cacheKey] = produtos;
-
-  return new NextResponse(JSON.stringify(produtos), {
-    status: 200,
-    headers: {
-      "Content-Type": "application/json",
-      // 24 h em CDN; stale-while-revalidate devolve imediatamente enquanto refresca
-      "Cache-Control": "s-maxage=86400, stale-while-revalidate",
-    },
-  });
 } 

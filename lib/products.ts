@@ -43143,15 +43143,20 @@ export async function getProdutos({
   // Filtrar por pesquisa de texto
   if (pesquisa && pesquisa.trim()) {
     const termoPesquisa = pesquisa.toLowerCase().trim()
-    produtosFiltrados = produtosFiltrados.filter((produto) => 
-      produto.nome.toLowerCase().includes(termoPesquisa) ||
-      produto.descricao.toLowerCase().includes(termoPesquisa) ||
-      produto.clube?.toLowerCase().includes(termoPesquisa) ||
-      produto.liga?.toLowerCase().includes(termoPesquisa) ||
-      produto.temporada?.toLowerCase().includes(termoPesquisa) ||
-      produto.cor?.toLowerCase().includes(termoPesquisa) ||
-      produto.marca?.toLowerCase().includes(termoPesquisa)
-    )
+    produtosFiltrados = produtosFiltrados.filter((produto) => {
+      // Buscar em todos os campos relevantes
+      const nomeMatch = produto.nome?.toLowerCase().includes(termoPesquisa) || false
+      const descricaoMatch = produto.descricao?.toLowerCase().includes(termoPesquisa) || false
+      const clubeMatch = produto.clube?.toLowerCase().includes(termoPesquisa) || false
+      const ligaMatch = produto.liga?.toLowerCase().includes(termoPesquisa) || false
+      const temporadaMatch = produto.temporada?.toLowerCase().includes(termoPesquisa) || false
+      const corMatch = produto.cor?.toLowerCase().includes(termoPesquisa) || false
+      const marcaMatch = produto.marca?.toLowerCase().includes(termoPesquisa) || false
+      const subcategoriaMatch = produto.subcategoria?.toLowerCase().includes(termoPesquisa) || false
+      const tagsMatch = produto.tags?.some(tag => tag.toLowerCase().includes(termoPesquisa)) || false
+      
+      return nomeMatch || descricaoMatch || clubeMatch || ligaMatch || temporadaMatch || corMatch || marcaMatch || subcategoriaMatch || tagsMatch
+    })
   }
 
     // Filtrar por categoria
@@ -43353,12 +43358,12 @@ if (clube) {
           if (clube === "barcelona") {
             produtosFiltrados.sort((a, b) => {
               // Primeiro: Produtos com "Special Edition" ou "Edição Especial" ou "Edicao Especial" no nome
-              const aIsSpecial = a.nome.toLowerCase().includes("special edition") || 
-                                a.nome.toLowerCase().includes("edição especial") || 
-                                a.nome.toLowerCase().includes("edicao especial")
-              const bIsSpecial = b.nome.toLowerCase().includes("special edition") || 
-                                b.nome.toLowerCase().includes("edição especial") || 
-                                b.nome.toLowerCase().includes("edicao especial")
+              const aIsSpecial = a.nome?.toLowerCase().includes("special edition") || 
+                                a.nome?.toLowerCase().includes("edição especial") || 
+                                a.nome?.toLowerCase().includes("edicao especial")
+              const bIsSpecial = b.nome?.toLowerCase().includes("special edition") || 
+                                b.nome?.toLowerCase().includes("edição especial") || 
+                                b.nome?.toLowerCase().includes("edicao especial")
               
               if (aIsSpecial && !bIsSpecial) return -1
               if (!aIsSpecial && bIsSpecial) return 1

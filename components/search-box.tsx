@@ -5,7 +5,6 @@ import { Search, X } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
-import { getProdutos } from "@/lib/products"
 import type { Product } from "@/lib/types"
 import Image from "next/image"
 import Link from "next/link"
@@ -19,7 +18,7 @@ interface SearchBoxProps {
 
 export function SearchBox({ 
   size = "normal", 
-  placeholder = "Pesquisar produtos...",
+  placeholder = "Search products...",
   className = ""
 }: SearchBoxProps) {
   const [searchTerm, setSearchTerm] = useState("")
@@ -30,14 +29,14 @@ export function SearchBox({
   const router = useRouter()
   const searchRef = useRef<HTMLDivElement>(null)
 
-  // Definir que o componente está montado no cliente
+  // Set that component is mounted on client
   useEffect(() => {
     setIsMounted(true)
   }, [])
 
-  // Fechar sugestões quando clicar fora (apenas no cliente)
+  // Close suggestions when clicking outside (client only)
   useEffect(() => {
-    // Verificar se está no cliente
+    // Check if on client
     if (typeof window === 'undefined') return
 
     function handleClickOutside(event: MouseEvent) {
@@ -50,9 +49,9 @@ export function SearchBox({
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
-  // Buscar sugestões em tempo real (apenas no cliente)
+  // Search suggestions in real time (client only)
   useEffect(() => {
-    // Verificar se está no cliente
+    // Check if on client
     if (typeof window === 'undefined') return
 
     const searchProducts = async () => {
@@ -63,13 +62,36 @@ export function SearchBox({
       }
 
       setIsLoading(true)
+      setIsOpen(true) // Open dropdown while loading
       try {
-        const produtos = await getProdutos({ pesquisa: searchTerm })
-        setSuggestions(produtos.slice(0, 6)) // Mostrar apenas 6 sugestões
-        setIsOpen(true)
+        const url = `/api/catalogo?pesquisa=${encodeURIComponent(searchTerm.trim())}`
+        const response = await fetch(url)
+        
+        if (!response.ok) {
+          const errorData = await response.json().catch(() => ({}))
+          console.error(`API Error ${response.status}:`, errorData)
+          throw new Error(`Error ${response.status}: ${response.statusText}`)
+        }
+        
+        const produtos = await response.json()
+        
+        // Verify if response is a valid array
+        if (!Array.isArray(produtos)) {
+          console.error("API response is not an array:", produtos)
+          setSuggestions([])
+          setIsOpen(true) // Keep open to show error message
+          return
+        }
+        
+        // Filter valid products (with name and id)
+        const produtosValidos = produtos.filter(p => p && p.id && p.nome)
+        
+        setSuggestions(produtosValidos.slice(0, 6)) // Show only 6 suggestions
+        setIsOpen(true) // Ensure it's open
       } catch (error) {
-        console.error("Erro ao buscar produtos:", error)
+        console.error("Error searching products:", error)
         setSuggestions([])
+        setIsOpen(true) // Keep open to show error message
       } finally {
         setIsLoading(false)
       }
@@ -115,6 +137,11 @@ export function SearchBox({
             placeholder={placeholder}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            onFocus={() => {
+              if (suggestions.length > 0 || searchTerm.trim().length >= 2) {
+                setIsOpen(true)
+              }
+            }}
             className={`pl-12 pr-12 outline-none ring-0 focus:ring-0 focus:outline-none transition-all duration-200 text-black bg-white rounded-none ${isLarge ? "h-14 text-lg" : "h-12"}`}
             autoComplete="off"
           />
@@ -133,24 +160,24 @@ export function SearchBox({
         
         {isLarge && (
           <p className="text-center text-sm text-gray-600 mt-2">
-            Digite para ver sugestões instantâneas ou pressione Enter para buscar
+            Type to see instant suggestions or press Enter to search
           </p>
         )}
       </form>
 
-      {/* Sugestões */}
-      {isMounted && isOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white shadow-xl z-[9999] max-h-80 overflow-y-auto">
+      {/* Suggestions */}
+      {isMounted && isOpen && searchTerm.trim().length >= 2 && (
+        <div className="absolute top-full left-0 right-0 mt-1 bg-white shadow-xl z-[9999] max-h-80 overflow-y-auto border border-gray-200 rounded-md">
           {isLoading ? (
             <div className="p-4 text-center">
               <div className="inline-block animate-spin rounded-full h-6 w-6 border-b-2 border-primary"></div>
-              <p className="mt-2 text-sm text-gray-600">Procurando...</p>
+              <p className="mt-2 text-sm text-gray-600">Searching...</p>
             </div>
           ) : suggestions.length > 0 ? (
             <>
               <div className="p-3 border-b bg-gray-50">
                 <p className="text-sm font-medium text-black">
-                  {suggestions.length} produto{suggestions.length !== 1 ? 's' : ''} encontrado{suggestions.length !== 1 ? 's' : ''}
+                  {suggestions.length} product{suggestions.length !== 1 ? 's' : ''} found
                 </p>
               </div>
               <div className="py-2">
@@ -163,13 +190,13 @@ export function SearchBox({
                     <div className="relative w-12 h-12 flex-shrink-0">
                       <Image
                         src={produto.imagem || "/placeholder.svg"}
-                        alt={produto.nome}
+                        alt={produto.nome || "Product"}
                         fill
                         className="object-cover rounded"
                       />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-medium text-sm truncate text-black">{produto.nome}</h4>
+                      <h4 className="font-medium text-sm truncate text-black">{produto.nome || "No name"}</h4>
                       <div className="flex items-center gap-2 mt-1">
                         <span className="font-bold text-gray-900">{produto.preco.toFixed(2)}€</span>
                         {produto.precoAntigo && (
@@ -191,17 +218,17 @@ export function SearchBox({
                   className="w-full bg-primary hover:bg-primary/90"
                   size="sm"
                 >
-                  Ver todos os resultados para "{searchTerm}"
+                  View all results for "{searchTerm}"
                 </Button>
               </div>
             </>
           ) : searchTerm.trim().length >= 2 ? (
             <div className="p-6 text-center">
-              <p className="text-gray-600 mb-3">Nenhum produto encontrado para "{searchTerm}"</p>
+              <p className="text-gray-600 mb-3">No products found for "{searchTerm}"</p>
               <div className="space-y-1 text-sm text-gray-500">
-                <p>• Verifique a ortografia</p>
-                <p>• Use termos mais gerais</p>
-                <p>• Tente pesquisar por clube ou liga</p>
+                <p>• Check spelling</p>
+                <p>• Use more general terms</p>
+                <p>• Try searching by club or league</p>
               </div>
               <Button 
                 onClick={() => router.push('/catalogo')}
@@ -209,7 +236,7 @@ export function SearchBox({
                 size="sm"
                 className="mt-3"
               >
-                Ver todos os produtos
+                View all products
               </Button>
             </div>
           ) : null}
@@ -217,4 +244,4 @@ export function SearchBox({
       )}
     </div>
   )
-} 
+}
