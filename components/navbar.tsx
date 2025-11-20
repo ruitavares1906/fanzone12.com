@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ShoppingCart, Menu, Sparkles, Footprints } from "lucide-react"
+import { ShoppingCart, Menu, Footprints } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet"
 import { useCart } from "./cart-provider"
 import { usePathname } from "next/navigation"
@@ -68,30 +68,10 @@ export function Navbar() {
                     <SheetClose asChild key={link.href}>
                       <Link
                         href={link.href}
-                 className={`text-sm font-medium transition-all duration-300 hover:text-blue-600 px-3 py-2 hover:bg-gray-100 ${
+                 className={`text-sm font-bold text-black transition-all duration-300 hover:text-black px-3 py-2 hover:bg-gray-100 ${
                    pathname === link.href 
-                     ? "text-blue-600 bg-gray-100" 
-                     : link.name === "Sneakers"
-                     ? "text-orange-600 hover:text-orange-700 font-bold"
-                     : link.name === "Retro"
-                     ? "text-amber-600 hover:text-amber-700 font-bold"
-                     : link.name === "Seleções"
-                     ? "text-red-600 hover:text-red-700 font-bold"
-                     : link.name === "Equipamento Criança"
-                     ? "text-green-600 hover:text-green-700 font-bold"
-                     : link.name === "Body Bebé"
-                     ? "text-pink-600 hover:text-pink-700 font-bold"
-                     : link.name === "Liga Portuguesa"
-                     ? "text-emerald-600 hover:text-emerald-700 font-bold"
-                     : link.name === "Premier League"
-                     ? "text-purple-600 hover:text-purple-700 font-bold"
-                     : link.name === "La Liga"
-                     ? "text-yellow-600 hover:text-yellow-700 font-bold"
-                     : link.name === "Serie A"
-                     ? "text-indigo-600 hover:text-indigo-700 font-bold"
-                     : link.name === "Bundesliga"
-                     ? "text-cyan-600 hover:text-cyan-700 font-bold"
-                     : "text-gray-700 hover:text-blue-600"
+                     ? "text-black bg-gray-100" 
+                     : ""
                  }`}
                       >
                         {link.name === "Sneakers" ? (
@@ -186,30 +166,10 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                 className={`text-sm font-semibold transition-all duration-300 px-4 py-2 hover:bg-gray-100 whitespace-nowrap ${
+                 className={`text-sm font-bold text-black transition-all duration-300 px-4 py-2 hover:bg-gray-100 whitespace-nowrap hover:text-black ${
                    pathname === link.href 
-                     ? "text-blue-600 bg-gray-100 shadow-lg" 
-                     : link.name === "Sneakers"
-                     ? "text-orange-600 hover:text-orange-700 font-bold"
-                     : link.name === "Retro"
-                     ? "text-amber-600 hover:text-amber-700 font-bold"
-                     : link.name === "National Teams"
-                     ? "text-red-600 hover:text-red-700 font-bold"
-                     : link.name === "Kids"
-                     ? "text-green-600 hover:text-green-700 font-bold"
-                     : link.name === "Baby"
-                     ? "text-pink-600 hover:text-pink-700 font-bold"
-                     : link.name === "Premier League"
-                     ? "text-purple-600 hover:text-purple-700 font-bold"
-                     : link.name === "La Liga"
-                     ? "text-yellow-600 hover:text-yellow-700 font-bold"
-                     : link.name === "Serie A"
-                     ? "text-indigo-600 hover:text-indigo-700 font-bold"
-                     : link.name === "Bundesliga"
-                     ? "text-cyan-600 hover:text-cyan-700 font-bold"
-                     : link.name === "Ligue 1"
-                     ? "text-rose-600 hover:text-rose-700 font-bold"
-                     : "text-gray-700 hover:text-blue-600"
+                     ? "text-black bg-gray-100 shadow-lg" 
+                     : ""
                  }`}
               >
                 {link.name === "Sneakers" ? (
