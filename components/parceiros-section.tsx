@@ -97,6 +97,15 @@ const parceirosExemplo: Parceiro[] = [
     redesSociais: {
       tiktok: "matilde.patraoo"
     }
+  },
+  {
+    id: "8",
+    nome: "Lara Silva Santos",
+    foto: "",
+    redesSociais: {
+      tiktok: "larassantos11",
+      tiktokUrl: "https://www.tiktok.com/@larassantos11/video/7574408965803576609?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
+    }
   }
 ]
 
