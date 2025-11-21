@@ -21,6 +21,7 @@ import { Badge } from "@/components/ui/badge"
 import { useCart } from "@/components/cart-provider"
 import { useRouter } from "next/navigation"
 import { AddToCartModal } from "@/components/add-to-cart-modal"
+import { ParceirosSectionCompact } from "@/components/parceiros-section"
 
 declare global {
   interface Window {
@@ -1031,19 +1032,50 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
           {produto.subcategoria !== "sneakers" && (
             <TabsContent value="tabela-medidas" className="pt-4" id="tabela-medidas">
               <h3 className="text-xl font-semibold">Size Chart</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-                <div className="flex flex-col items-center">
-                  <Image
-                    src="/images/tabelaadepto.png"
-                    alt="Size chart - fan version"
-                    width={520}
-                    height={360}
-                    className="rounded-lg border shadow-sm w-96 h-auto object-contain"
-                    sizes="(max-width: 768px) 98vw, 520px"
-                    onError={() => console.error("Erro ao carregar tabelaadepto.png")}
-                  />
-                  <p className="text-center text-xs text-muted-foreground mt-2">Size chart - fan version</p>
-                </div>
+              
+              {/* Mobile: Carrossel */}
+              <div className="md:hidden mt-4">
+                <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+                  <CarouselContent>
+                    {/* Tabela Infantil primeiro */}
+                    <CarouselItem className="basis-full">
+                      <div className="flex flex-col items-center">
+                        <Image
+                          src="/images/tabelainfantil22.png"
+                          alt="Kids size chart"
+                          width={520}
+                          height={360}
+                          className="rounded-lg border shadow-sm max-w-sm h-auto object-contain"
+                          sizes="(max-width: 768px) 98vw, 400px"
+                          onError={() => console.error("Erro ao carregar tabelainfantil22.png")}
+                        />
+                        <p className="text-center text-xs text-muted-foreground mt-2">Kids size chart</p>
+                      </div>
+                    </CarouselItem>
+                    {/* Tabela Adepto depois */}
+                    <CarouselItem className="basis-full">
+                      <div className="flex flex-col items-center">
+                        <Image
+                          src="/images/tabelaadepto.png"
+                          alt="Size chart - fan version"
+                          width={520}
+                          height={360}
+                          className="rounded-lg border shadow-sm max-w-sm h-auto object-contain"
+                          sizes="(max-width: 768px) 98vw, 400px"
+                          onError={() => console.error("Erro ao carregar tabelaadepto.png")}
+                        />
+                        <p className="text-center text-xs text-muted-foreground mt-2">Size chart - fan version</p>
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </div>
+
+              {/* Desktop: Grid de 2 colunas */}
+              <div className="hidden md:grid grid-cols-2 gap-6 mt-4">
+                {/* Tabela Infantil primeiro */}
                 <div className="flex flex-col items-center">
                   <Image
                     src="/images/tabelainfantil22.png"
@@ -1055,6 +1087,19 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                     onError={() => console.error("Erro ao carregar tabelainfantil22.png")}
                   />
                   <p className="text-center text-xs text-muted-foreground mt-2">Kids size chart</p>
+                </div>
+                {/* Tabela Adepto depois */}
+                <div className="flex flex-col items-center">
+                  <Image
+                    src="/images/tabelaadepto.png"
+                    alt="Size chart - fan version"
+                    width={520}
+                    height={360}
+                    className="rounded-lg border shadow-sm w-96 h-auto object-contain"
+                    sizes="(max-width: 768px) 98vw, 520px"
+                    onError={() => console.error("Erro ao carregar tabelaadepto.png")}
+                  />
+                  <p className="text-center text-xs text-muted-foreground mt-2">Size chart - fan version</p>
                 </div>
               </div>
             </TabsContent>
@@ -1341,6 +1386,9 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
           ))}
         </div>
       </div>
+
+      {/* Seção de Parceiros Compacta */}
+      <ParceirosSectionCompact />
     </div>
   )
 }

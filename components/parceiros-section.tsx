@@ -34,21 +34,21 @@ const parceirosExemplo: Parceiro[] = [
   },
   {
     id: "1",
-    nome: "Diana Guedes",
-    foto: "/images/dianafoto.jpg",
-    redesSociais: {
-      instagram: "dii.guedess",
-      tiktok: "dii.guedess"
-    }
-  },
-  {
-    id: "2",
     nome: "Constança Sá",
     foto: "/images/24b8abc6-f277-408d-8418-3a12fc91ed94.JPG",
     redesSociais: {
       instagram: "concasnsa",
       tiktok: "concasnsaa",
       tiktokUrl: "https://www.tiktok.com/@concasnsaa/video/7565558614736342305?is_from_webapp=1&sender_device=pc&web_id=7512216959863293472"
+    }
+  },
+  {
+    id: "2",
+    nome: "Diana Guedes",
+    foto: "/images/dianafoto.jpg",
+    redesSociais: {
+      instagram: "dii.guedess",
+      tiktok: "dii.guedess"
     }
   },
   {
@@ -99,6 +99,105 @@ const parceirosExemplo: Parceiro[] = [
     }
   }
 ]
+
+export function ParceirosSectionCompact() {
+  return (
+    <section className="py-6 sm:py-8 bg-gradient-to-br from-gray-50 to-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Header Compacto */}
+        <div className="text-center mb-4 sm:mb-6">
+          <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 shadow-md px-3 py-1 sm:px-4 sm:py-2 rounded-full mb-2 sm:mb-3 text-xs sm:text-sm">
+            <Users className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-1.5" />
+            Our Partners
+          </Badge>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2 sm:mb-3">
+            Meet Our Partners
+          </h2>
+        </div>
+
+        {/* Carrossel de Parceiros Compacto */}
+        <div className="relative">
+          <Carousel className="w-full" opts={{ loop: true, align: "start", containScroll: "trimSnaps" }}>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {parceirosExemplo.map((parceiro) => (
+                <CarouselItem key={parceiro.id} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+                  <Card className="group hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 bg-white border-0 shadow-md rounded-xl overflow-hidden h-full aspect-[0.6] sm:aspect-[0.65]">
+                    <CardContent className="p-0 h-full flex flex-col relative">
+                      {/* Foto do Parceiro */}
+                      <div className="relative w-full flex-1 bg-gradient-to-br from-blue-100 to-purple-100">
+                        {parceiro.foto ? (
+                          <Image 
+                            src={parceiro.foto}
+                            alt={parceiro.nome}
+                            fill
+                            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                            className="object-cover"
+                          />
+                        ) : (
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold">
+                              {parceiro.nome.split(' ').map(n => n[0]).join('')}
+                            </div>
+                          </div>
+                        )}
+                        
+                        {/* Overlay com gradiente na parte inferior */}
+                        <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-20 bg-gradient-to-t from-black/70 via-black/50 to-transparent"></div>
+                        
+                        {/* Nome e Redes Sociais */}
+                        <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3">
+                          <h3 className="text-sm sm:text-base font-bold text-white drop-shadow-lg mb-1 sm:mb-2 line-clamp-1">
+                            {parceiro.nome}
+                          </h3>
+                          
+                          {/* Redes Sociais - Apenas ícones no mobile */}
+                          <div className="flex justify-start gap-1.5 sm:gap-2 flex-wrap">
+                            {parceiro.redesSociais.instagram && (
+                              <Button
+                                size="sm"
+                                variant="outline"
+                                className="rounded-full h-6 sm:h-7 px-1.5 sm:px-2 gap-1 bg-white/90 backdrop-blur-sm border-pink-500 text-pink-600 hover:bg-white"
+                                asChild
+                              >
+                                <a href={`https://instagram.com/${parceiro.redesSociais.instagram}`} target="_blank" rel="noopener noreferrer">
+                                  <div className="flex items-center gap-1">
+                                    <Instagram className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                                    <span className="hidden sm:inline text-xs">@{parceiro.redesSociais.instagram}</span>
+                                  </div>
+                                </a>
+                              </Button>
+                            )}
+                            {parceiro.redesSociais.tiktok && (
+                              <Button
+                                size="sm"
+                                variant="outline"
+                                className="rounded-full h-6 sm:h-7 px-1.5 sm:px-2 gap-1 bg-white/90 backdrop-blur-sm hover:bg-white"
+                                asChild
+                              >
+                                <a href={parceiro.redesSociais.tiktokUrl || `https://tiktok.com/@${parceiro.redesSociais.tiktok}`} target="_blank" rel="noopener noreferrer">
+                                  <div className="flex items-center gap-1">
+                                    <Image src="/images/tik-tok.webp" alt="TikTok" width={12} height={12} className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                                    <span className="hidden sm:inline text-xs">@{parceiro.redesSociais.tiktok}</span>
+                                  </div>
+                                </a>
+                              </Button>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default function ParceirosSection() {
   // Componente SVG para TikTok

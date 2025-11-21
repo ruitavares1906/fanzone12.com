@@ -14,6 +14,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import Image from "next/image"
 import { MobileFiltersTrigger } from "@/components/mobile-filters-trigger"
 import { ContactMessage } from "@/components/contact-message"
+import { ParceirosSectionCompact } from "@/components/parceiros-section"
 
 export default async function CatalogoPage({
   searchParams,
@@ -30,12 +31,15 @@ export default async function CatalogoPage({
   const versao = typeof params.versao === "string" ? params.versao : undefined
 
   const pagina = typeof params.pagina === "string" ? parseInt(params.pagina) : 1
-  const porPagina = 30
+  const porPagina = 33 // 34 no mobile (17 linhas × 2), 33 no desktop (34º oculto com lg:hidden)
 
   const todosProdutos = await getProdutos({ categoria, clube, cor, liga, ordenar, pesquisa, versao })
   const total = todosProdutos.length
   const inicio = (pagina - 1) * porPagina
-  const produtos = todosProdutos.slice(inicio, inicio + porPagina)
+  // Buscar 34 produtos para mobile, mas usar 33 para paginação
+  const produtosSlice = todosProdutos.slice(inicio, inicio + porPagina + 1)
+  const produtos = produtosSlice.slice(0, porPagina) // Primeiros 33 para paginação
+  const produtoExtra = produtosSlice[porPagina] // 34º produto para mobile
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50/30">
@@ -210,6 +214,16 @@ export default async function CatalogoPage({
                         <ProductCard product={produto} />
                       </ClientAnimationWrapper>
                     ))}
+                    {/* 34º produto apenas no mobile */}
+                    {produtoExtra && (
+                      <ClientAnimationWrapper
+                        key={`product-${produtoExtra.id || produtos.length}-${produtos.length}`}
+                        delay={produtos.length * 0.05}
+                        className="animate-scale-in w-full lg:hidden"
+                      >
+                        <ProductCard product={produtoExtra} />
+                      </ClientAnimationWrapper>
+                    )}
                   </div>
                 </div>
               ) : (
@@ -286,6 +300,9 @@ export default async function CatalogoPage({
           </div>
         </div>
       </div>
+
+      {/* Seção de Parceiros Compacta */}
+      <ParceirosSectionCompact />
     </div>
   )
 }

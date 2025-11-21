@@ -1296,7 +1296,7 @@ export default async function Home() {
                     src="/images/1000541110.webp"
                     alt="Sneakers Nike"
                         fill
-                    className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"
                         quality={75}
                       />
@@ -1332,7 +1332,7 @@ export default async function Home() {
                     src="/images/1362796-full_product.jpg"
                     alt="Sneakers Adidas"
                             fill
-                    className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 33vw"
                             quality={85}
                           />
@@ -1368,7 +1368,7 @@ export default async function Home() {
                     src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                     alt="Sneakers New Balance"
                         fill
-                    className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, 33vw"
                         quality={85}
                       />
@@ -1408,7 +1408,7 @@ export default async function Home() {
                         src="/images/1000541110.webp"
                         alt="Sneakers Nike"
                         fill
-                        className="object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
                         sizes="100vw"
                         quality={75}
                       />
@@ -1442,7 +1442,7 @@ export default async function Home() {
                         src="/images/1362796-full_product.jpg"
                         alt="Sneakers Adidas"
                         fill
-                        className="object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
                         sizes="100vw"
                         quality={75}
                       />
@@ -1476,7 +1476,7 @@ export default async function Home() {
                         src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                         alt="Sneakers New Balance"
                             fill
-                        className="object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
                         sizes="100vw"
                             quality={85}
                           />
