@@ -675,7 +675,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                     <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-100">
                       <h4 className="text-sm font-semibold text-green-800 mb-4 flex items-center gap-2">
                         👶 KIDS SIZES
-                        <span className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full">calções incluídos,se for aplicável</span>
+                        <span className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full">shorts included, if applicable</span>
                       </h4>
                       <div className="flex flex-wrap gap-2 sm:gap-3">
                         {["02-03", "03-04", "04-05", "05-06", "06-07", "08-09", "10-11", "12-13"].map((size) => (
@@ -683,12 +683,12 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                             key={size}
                             type="button"
                             className={`rounded-xl border-2 font-semibold transition-all duration-200 px-2 py-2 sm:px-3 sm:py-2 text-xs sm:text-sm min-w-[50px] sm:min-w-[65px] ${
-                              selectedSize === `${size} anos`
+                              selectedSize === `${size} years`
                                 ? "border-green-500 bg-green-500 text-white shadow-lg transform scale-105"
                                 : "border-gray-200 bg-white hover:border-green-300 hover:bg-green-50 hover:shadow-md"
                             }`}
                             onClick={() => {
-                              setSelectedSize(`${size} anos`)
+                              setSelectedSize(`${size} years`)
                               setSizeError(false)
                             }}
                           >

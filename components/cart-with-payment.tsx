@@ -41,7 +41,7 @@ export function CartWithPayment({
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <ShoppingBag className="h-5 w-5" />
-            <span>Resumo do Carrinho</span>
+            <span>Cart Summary</span>
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -51,10 +51,10 @@ export function CartWithPayment({
                 <div>
                   <p className="font-medium">{item.name}</p>
                   <p className="text-sm text-gray-600">
-                    Tamanho: {item.size} | Quantidade: {item.quantity}
+                    Size: {item.size?.replace(' anos', ' years') || item.size} | Quantity: {item.quantity}
                     {item.customization && (
                       <span className="text-blue-600 ml-2">
-                        (Personalizado)
+                        (Customized)
                       </span>
                     )}
                   </p>
@@ -71,12 +71,12 @@ export function CartWithPayment({
                 <span>{subtotal.toFixed(2)}€</span>
               </div>
               <div className="flex justify-between">
-                <span>Envio:</span>
+                <span>Shipping:</span>
                 <span>{shipping.toFixed(2)}€</span>
               </div>
               {paymentState.method === 'cash_on_delivery' && (
                 <div className="flex justify-between">
-                  <span>Taxa à cobrança:</span>
+                  <span>Cash on delivery fee:</span>
                   <span>8.00€</span>
                 </div>
               )}
@@ -95,7 +95,7 @@ export function CartWithPayment({
       {/* Seleção de método de pagamento */}
       <Card>
         <CardHeader>
-          <CardTitle>Método de Pagamento</CardTitle>
+          <CardTitle>Payment Method</CardTitle>
         </CardHeader>
         <CardContent>
           <PaymentMethodSelector
@@ -111,20 +111,20 @@ export function CartWithPayment({
       {paymentState.method === 'cash_on_delivery' && (
         <Card className="border-green-200 bg-green-50">
           <CardHeader>
-            <CardTitle className="text-green-800">Resumo do Pagamento à Cobrança</CardTitle>
+            <CardTitle className="text-green-800">Cash on Delivery Payment Summary</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span>Pagamento antecipado:</span>
+                <span>Upfront payment:</span>
                 <span className="font-bold text-orange-600">8.00€</span>
               </div>
               <div className="flex justify-between">
-                <span>Restante à cobrança:</span>
+                <span>Remaining on delivery:</span>
                 <span className="font-bold text-green-600">{paymentState.remainingPayment.toFixed(2)}€</span>
               </div>
               <p className="text-orange-700 text-xs mt-2">
-                ⚠️ Produtos personalizados requerem pagamento antecipado
+                ⚠️ Personalized products require upfront payment
               </p>
             </div>
           </CardContent>
@@ -148,11 +148,11 @@ export function CartWithPayment({
         {isLoading ? (
           <>
             <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
-            Processando...
+            Processing...
           </>
         ) : (
           <>
-            {paymentState.method === 'online' ? 'Pagar Agora' : 'Confirmar Encomenda'}
+            {paymentState.method === 'online' ? 'Pay Now' : 'Confirm Order'}
             <ArrowRight className="ml-2 h-4 w-4" />
           </>
         )}

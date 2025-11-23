@@ -56,13 +56,13 @@ export default function CarrinhoPage() {
   const discounts = []
   if (appliedDiscount?.amount) {
     discounts.push({
-      label: appliedDiscount.code || 'Desconto',
+      label: appliedDiscount.code || 'Discount',
       amount: appliedDiscount.amount
     })
   }
   if (promotionDiscount > 0) {
     discounts.push({
-      label: 'Leva 4 Paga 3',
+      label: 'Buy 4 Pay 3',
       amount: promotionDiscount
     })
   }
@@ -132,7 +132,7 @@ export default function CarrinhoPage() {
         })
       }
     } catch (error) {
-      console.error("Erro ao aplicar desconto da URL:", error)
+      console.error("Error applying discount from URL:", error)
     }
   }
 
@@ -320,7 +320,7 @@ export default function CarrinhoPage() {
       })
       const data = await res.json()
       if (!data.valid) {
-        setDiscountError(data.error || "Código inválido")
+        setDiscountError(data.error || "Invalid code")
         return
       }
 
@@ -447,7 +447,7 @@ export default function CarrinhoPage() {
                                       <h3 className="text-sm lg:text-lg font-semibold text-foreground mb-1 lg:mb-2 truncate">{item.nome}</h3>
                                       <div className="space-y-1 text-xs lg:text-sm text-muted-foreground">
                                         <div className="flex gap-4">
-                                        <p>Size: <span className="font-medium text-foreground">{item.tamanhoSelecionado}</span></p>
+                                        <p>Size: <span className="font-medium text-foreground">{item.tamanhoSelecionado?.replace(' anos', ' years') || item.tamanhoSelecionado}</span></p>
                                           <p>Qty: <span className="font-medium text-foreground">{item.quantidade}</span></p>
                                         </div>
                                         
@@ -782,7 +782,7 @@ export default function CarrinhoPage() {
                           <Link href="/catalogo">
                             <Button variant="ghost" className="text-primary hover:text-primary hover:bg-accent rounded-xl">
                               <ArrowLeft className="h-4 w-4 mr-2" />
-                              Continuar Comprando
+                              Continue Shopping
                             </Button>
                           </Link>
                   </div>
@@ -809,7 +809,7 @@ export default function CarrinhoPage() {
                   height={30}
                   className="h-8 w-auto object-contain"
                 />
-                <h2 className="text-2xl font-bold text-gray-900">Pagamento MB WAY</h2>
+                <h2 className="text-2xl font-bold text-gray-900">MB WAY Payment</h2>
               </div>
               <button
                 onClick={() => setShowMBWayModal(false)}
@@ -823,37 +823,37 @@ export default function CarrinhoPage() {
             <div className="p-6">
               <div className="bg-gradient-to-br from-yellow-50 via-orange-50 to-yellow-100 rounded-xl p-6 border border-yellow-200">
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-yellow-900 mb-2">Como funciona?</h3>
+                  <h3 className="text-xl font-bold text-yellow-900 mb-2">How does it work?</h3>
                 </div>
                 
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-yellow-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
-                    <p className="text-sm text-yellow-800">Finaliza a encomenda normalmente e <strong>seleciona a opção Multibanco</strong>.</p>
+                    <p className="text-sm text-yellow-800">Complete your order normally and <strong>select the Multibanco option</strong>.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-yellow-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
-                    <p className="text-sm text-yellow-800">A tua encomenda fica <strong>registada no sistema</strong>.</p>
+                    <p className="text-sm text-yellow-800">Your order will be <strong>registered in the system</strong>.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-yellow-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-                    <p className="text-sm text-yellow-800">Depois, envia mensagem para o nosso <strong>TikTok ou fanzone12.com</strong> a pedir o pagamento por MB WAY.</p>
+                    <p className="text-sm text-yellow-800">Then, send a message to our <strong>TikTok or fanzone12.com</strong> requesting MB WAY payment.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-yellow-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
-                    <p className="text-sm text-yellow-800">Iremos enviar-te os dados para <strong>pagamento MB WAY</strong> por mensagem!</p>
+                    <p className="text-sm text-yellow-800">We will send you the <strong>MB WAY payment details</strong> via message!</p>
                   </div>
                 </div>
 
                 {/* Email Field for MB WAY */}
                 <div className="mb-6 p-4 bg-white rounded-xl border border-yellow-300">
                   <Label htmlFor="mbway-email" className="text-sm font-semibold text-gray-900 mb-2 block">
-                    Email para confirmação *
+                    Email for confirmation *
                   </Label>
                   <Input
                     id="mbway-email"
                     type="email"
-                    placeholder="seu@email.com"
+                    placeholder="your@email.com"
                     value={email}
                     onChange={handleEmailChange}
                     className={`w-full ${emailError ? 'border-red-500' : 'border-gray-300'} rounded-lg`}
@@ -863,7 +863,7 @@ export default function CarrinhoPage() {
                     <p className="text-red-500 text-sm mt-1">{emailError}</p>
                   )}
                   <p className="text-xs text-gray-600 mt-2">
-                    Receberá a confirmação da encomenda neste email
+                    You will receive the order confirmation at this email
                   </p>
                 </div>
 
@@ -919,7 +919,7 @@ export default function CarrinhoPage() {
                 {/* Important Note */}
                 <div className="bg-yellow-200 border border-yellow-300 rounded-xl p-4 mb-6">
                   <p className="text-xs text-yellow-800 text-center">
-                    <strong>Atenção:</strong> Só conseguimos registar a encomenda se escolheres <strong>Multibanco</strong> no checkout!
+                    <strong>Attention:</strong> We can only register the order if you choose <strong>Multibanco</strong> at checkout!
                   </p>
                 </div>
               </div>
@@ -933,7 +933,7 @@ export default function CarrinhoPage() {
                   onClick={() => setShowMBWayModal(false)}
                   className="flex-1"
                 >
-                  Fechar
+                  Close
                 </Button>
                 <Button
                   onClick={() => {
@@ -946,12 +946,12 @@ export default function CarrinhoPage() {
                   {isLoading ? (
                     <>
                       <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                      Processando...
+                      Processing...
                     </>
                   ) : (
                     <>
                       <CreditCard className="h-4 w-4 mr-2" />
-                      Finalizar Compra
+                      Complete Purchase
                     </>
                   )}
                 </Button>
