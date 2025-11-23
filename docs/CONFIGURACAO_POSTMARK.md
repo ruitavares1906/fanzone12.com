@@ -18,11 +18,11 @@ No arquivo `.env.local`, **SUBSTITUA**:
 ```env
 # ❌ REMOVER ESTAS LINHAS (SendGrid)
 # SENDGRID_API_KEY=SG.xxxxxxxxx
-# SENDGRID_FROM_EMAIL=geral@fanzone12.pt
+# SENDGRID_FROM_EMAIL=sales@fanzone12.com
 
 # ✅ ADICIONAR ESTAS LINHAS (Postmark)
 POSTMARK_API_TOKEN=your_postmark_api_token_here
-POSTMARK_FROM_EMAIL=geral@fanzone12.pt
+POSTMARK_FROM_EMAIL=sales@fanzone12.com
 ```
 
 ### 🚀 Como Obter o Token do Postmark:

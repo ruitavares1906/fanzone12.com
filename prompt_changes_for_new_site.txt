@@ -32,9 +32,9 @@ PROMPT DE ALTERAÇÕES – MIGRAÇÃO FANZONE12.PT ➜ FANZONE12.COM
 | `app/layout.tsx` | `lang="en"`, títulos/descrições em EN, `NEXT_PUBLIC_SITE_URL` novo domínio, remover fallback para `.pt`. |
 | `app/page.tsx` | Secções com “Seleção Portugal”, “Liga Portuguesa”, carrosséis com produtos PT-first. Redefinir copy e destaques internacionais. |
 | `components/navbar.tsx` | Links “Capas de Telemóvel”, “Liga Portuguesa”, “Body Bebé” (PT). Adaptar menu EN, remover copy “Capas Tele”. |
-| `components/footer.tsx` | Texto “Feito em Portugal”, email `geral@fanzone12.pt`, WhatsApp +351, logos MB WAY/Multibanco/Pagamento à Cobrança. Atualizar para contactos internacionais e novos métodos. |
+| `components/footer.tsx` | Texto “Feito em Portugal”, email `sales@fanzone12.com`, WhatsApp +351, logos MB WAY/Multibanco/Pagamento à Cobrança. Atualizar para contactos internacionais e novos métodos. |
 | `app/envios`, `app/faq`, `app/devolucoes`, `app/termos`, `app/privacidade`, `app/contacto`, `app/sobre` | Todo o conteúdo PT menciona CTT, prazos PT, legislação portuguesa. Reescrever em EN com regras UE. |
-| `lib/email-templates.ts`, `lib/postmark.ts`, `lib/mailgun.ts` | Corpo PT, menções CTT, “Pagamento à Cobrança”, email `geral@fanzone12.pt`. Traduzir, atualizar remetentes, remover fluxo COD. |
+| `lib/email-templates.ts`, `lib/postmark.ts`, `lib/mailgun.ts` | Corpo PT, menções CTT, “Pagamento à Cobrança”, email `sales@fanzone12.com`. Traduzir, atualizar remetentes, remover fluxo COD. |
 | `app/api` (checkout, shipping email, payment methods) | País default PT, shipping options “Envio CTT”, allowed countries limitados, validações `country: "Portugal"`. Tornar internacionais. |
 | `hooks/use-cart-payment.ts`, `components/cash-on-delivery-info.tsx`, `app/carrinho` | Textos PT e lógica COD. Remover método e rever cálculos frete. |
 | `public/robots.txt`, `public/sitemap.xml` | URLs `.pt`. Regenerar para `.com`. |

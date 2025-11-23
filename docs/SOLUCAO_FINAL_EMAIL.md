@@ -70,11 +70,11 @@ CNAME: email.fanzone12.pt -> mailgun.org
 # Comentar Mailgun (problema atual)
 # MAILGUN_API_KEY=key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # MAILGUN_DOMAIN=fanzone12.pt
-# MAILGUN_FROM_EMAIL=geral@fanzone12.pt
+# MAILGUN_FROM_EMAIL=sales@fanzone12.com
 
 # Ativar SendGrid
 SENDGRID_API_KEY=SG.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-SENDGRID_FROM_EMAIL=geral@fanzone12.pt
+SENDGRID_FROM_EMAIL=sales@fanzone12.com
 ```
 
 #### **2.3. Instalar SendGrid**

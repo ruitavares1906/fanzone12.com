@@ -8,7 +8,7 @@ O site foi completamente migrado de **camisola12** para **fanzone12.pt**, inclui
 
 ### 1. **Configuração do Site**
 - ✅ Nome do site: `camisola12` → `fanzone12.pt`
-- ✅ Email principal: `geral@camisola12.pt` → `geral@fanzone12.pt`
+- ✅ Email principal: `geral@camisola12.pt` → `sales@fanzone12.com`
 - ✅ Domínio: `camisola12.pt` → `fanzone12.pt`
 - ✅ URLs: Todas as referências atualizadas
 
@@ -22,7 +22,7 @@ O site foi completamente migrado de **camisola12** para **fanzone12.pt**, inclui
   - `climate.order.created`
 
 ### 3. **Configuração do Mailgun**
-- ✅ Email de envio: `geral@fanzone12.pt`
+- ✅ Email de envio: `sales@fanzone12.com`
 - ✅ Domínio: `fanzone12.pt`
 - ✅ Templates atualizados com novo branding
 - ✅ Links sociais atualizados
@@ -114,7 +114,7 @@ STRIPE_WEBHOOK_SECRET=whsec_...
 # Mailgun
 MAILGUN_API_KEY=your_mailgun_api_key_here
 MAILGUN_DOMAIN=fanzone12.pt
-MAILGUN_FROM_EMAIL=geral@fanzone12.pt
+MAILGUN_FROM_EMAIL=sales@fanzone12.com
 ```
 
 ### **Configuração do Stripe Dashboard**
@@ -128,7 +128,7 @@ MAILGUN_FROM_EMAIL=geral@fanzone12.pt
 1. Acesse [mailgun.com](https://www.mailgun.com)
 2. Configure domínio: `fanzone12.pt`
 3. Verifique registros DNS
-4. Configure email: `geral@fanzone12.pt`
+4. Configure email: `sales@fanzone12.com`
 
 ## 🧪 Testes Realizados
 
@@ -164,7 +164,7 @@ MAILGUN_FROM_EMAIL=geral@fanzone12.pt
 
 **Migração 100% Completa**
 - ✅ Site: fanzone12.pt
-- ✅ Email: geral@fanzone12.pt
+- ✅ Email: sales@fanzone12.com
 - ✅ Stripe: Configurado
 - ✅ Mailgun: Configurado
 - ✅ Build: Funcional

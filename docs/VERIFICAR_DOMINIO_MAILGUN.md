@@ -42,7 +42,7 @@ O Mailgun vai mostrar:
 ```env
 MAILGUN_API_KEY=key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 MAILGUN_DOMAIN=fanzone12.pt
-MAILGUN_FROM_EMAIL=geral@fanzone12.pt
+MAILGUN_FROM_EMAIL=sales@fanzone12.com
 ```
 
 ### **3. Testar Configuração**

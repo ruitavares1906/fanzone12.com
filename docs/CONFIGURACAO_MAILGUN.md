@@ -12,7 +12,7 @@ Adicione as seguintes variáveis ao seu arquivo `.env.local`:
 # Mailgun Configuration
 MAILGUN_API_KEY=your_mailgun_api_key_here
 MAILGUN_DOMAIN=your_mailgun_domain_here
-MAILGUN_FROM_EMAIL=geral@fanzone12.pt
+MAILGUN_FROM_EMAIL=sales@fanzone12.com
 ```
 
 ## Como Obter as Credenciais
@@ -34,7 +34,7 @@ MAILGUN_FROM_EMAIL=geral@fanzone12.pt
 - Use o domínio verificado no `MAILGUN_DOMAIN`
 
 ### 4. Configurar Email de Envio
-- Use `geral@fanzone12.pt` como `MAILGUN_FROM_EMAIL`
+- Use `sales@fanzone12.com` como `MAILGUN_FROM_EMAIL`
 - Certifique-se de que este email está verificado no domínio
 
 ## Arquivos Modificados

@@ -33,7 +33,7 @@ DATABASE_URL=postgresql://username:password@localhost:5432/fanzone12
 MAILGUN_API_KEY=your_mailgun_api_key_here
 MAILGUN_DOMAIN=your_mailgun_domain_here
 MAILGUN_FROM=noreply@fanzone12.pt
-ADMIN_EMAIL=geral@fanzone12.pt
+ADMIN_EMAIL=sales@fanzone12.com
 ```
 
 ### 2. **Base de Dados**

@@ -67,7 +67,7 @@ NEXTAUTH_SECRET=your_nextauth_secret_here
    yarn dev
    ```
 4. **Teste o webhook** fazendo uma compra de teste
-5. **Verifique os emails** para admin em `geral@fanzone12.pt`
+5. **Verifique os emails** para admin em `sales@fanzone12.com`
 
 ## 🔧 Teste Rápido
 

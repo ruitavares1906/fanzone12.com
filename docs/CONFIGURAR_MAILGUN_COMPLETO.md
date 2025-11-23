@@ -67,7 +67,7 @@ CNAME: email.fanzone12.pt -> mailgun.org
 # Mailgun Configuration
 MAILGUN_API_KEY=key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 MAILGUN_DOMAIN=fanzone12.pt
-MAILGUN_FROM_EMAIL=geral@fanzone12.pt
+MAILGUN_FROM_EMAIL=sales@fanzone12.com
 
 # Outras configurações
 NEXT_PUBLIC_SITE_URL=https://www.fanzone12.pt
@@ -138,7 +138,7 @@ Se o Mailgun não funcionar, podes usar SendGrid:
 ```env
 # SendGrid Configuration
 SENDGRID_API_KEY=SG.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-SENDGRID_FROM_EMAIL=geral@fanzone12.pt
+SENDGRID_FROM_EMAIL=sales@fanzone12.com
 ```
 
 #### **8.2. Atualizar API de Contacto**
@@ -160,7 +160,7 @@ O sistema já suporta SendGrid como alternativa.
 2. Preencher formulário
 3. Enviar mensagem
 4. Verificar email de confirmação
-5. Verificar email em `geral@fanzone12.pt`
+5. Verificar email em `sales@fanzone12.com`
 
 ## 📞 Suporte
 

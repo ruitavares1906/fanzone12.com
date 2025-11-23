@@ -23,7 +23,7 @@ O formulário de contacto estava a enviar campos em português (`nome`, `email`,
 - ✅ **Mensagem**: `mensagem` (obrigatório)
 
 #### **3. Emails Enviados**
-- ✅ **Email para a loja**: `geral@fanzone12.pt`
+- ✅ **Email para a loja**: `sales@fanzone12.com`
 - ✅ **Email de confirmação**: Para o cliente
 - ✅ **Templates atualizados**: Com novo branding
 
@@ -36,7 +36,7 @@ Certifica-te de que estas variáveis estão configuradas no `.env.local`:
 # Mailgun Configuration
 MAILGUN_API_KEY=sua_api_key_do_mailgun
 MAILGUN_DOMAIN=fanzone12.pt
-MAILGUN_FROM_EMAIL=geral@fanzone12.pt
+MAILGUN_FROM_EMAIL=sales@fanzone12.com
 ```
 
 ### **2. Configuração do Mailgun**
@@ -73,7 +73,7 @@ node test-contact-api.js
 2. Preenche o formulário
 3. Clica em "Enviar Mensagem"
 4. Verifica se recebes o email de confirmação
-5. Verifica se o email chega a `geral@fanzone12.pt`
+5. Verifica se o email chega a `sales@fanzone12.com`
 
 ### **3. Verificar Logs**
 - Verifica o console do servidor para erros
@@ -110,7 +110,7 @@ curl https://www.fanzone12.pt/api/test-mailgun-config
 ### **🔧 Próximos Passos**
 1. **Configurar variáveis de ambiente** do Mailgun
 2. **Testar envio de emails** localmente
-3. **Verificar receção de emails** em `geral@fanzone12.pt`
+3. **Verificar receção de emails** em `sales@fanzone12.com`
 4. **Configurar domínio** no Mailgun se necessário
 
 ## 📝 Logs de Debug

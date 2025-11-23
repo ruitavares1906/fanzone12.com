@@ -36,11 +36,11 @@ No arquivo `.env.local`, substitua:
 ```env
 # ❌ REMOVER (SendGrid)
 # SENDGRID_API_KEY=SG.xxxxxxxxx
-# SENDGRID_FROM_EMAIL=geral@fanzone12.pt
+# SENDGRID_FROM_EMAIL=sales@fanzone12.com
 
 # ✅ ADICIONAR (Postmark)
 POSTMARK_API_TOKEN=your_postmark_api_token_here
-POSTMARK_FROM_EMAIL=geral@fanzone12.pt
+POSTMARK_FROM_EMAIL=sales@fanzone12.com
 ```
 
 ### 5. Verificar Configuração

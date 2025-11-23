@@ -3,7 +3,7 @@ import { getCarrierLabel } from "@/lib/shipping-carriers"
 
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || "your_mailgun_api_key_here"
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || "your_mailgun_domain_here"
-const MAILGUN_FROM_EMAIL = process.env.MAILGUN_FROM_EMAIL || "sales@fanzone12.com"
+const MAILGUN_FROM_EMAIL = "sales@fanzone12.com"
 
 console.log("=== CONFIGURAÇÃO MAILGUN ===")
 console.log("MAILGUN_API_KEY:", MAILGUN_API_KEY ? "Configurado" : "Não configurado")

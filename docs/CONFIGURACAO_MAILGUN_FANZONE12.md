@@ -12,7 +12,7 @@ Adicione as seguintes variáveis ao seu arquivo `.env.local`:
 # Mailgun Configuration
 MAILGUN_API_KEY=your_mailgun_api_key_here
 MAILGUN_DOMAIN=fanzone12.pt
-MAILGUN_FROM_EMAIL=geral@fanzone12.pt
+MAILGUN_FROM_EMAIL=sales@fanzone12.com
 ```
 
 ## Como Obter as Credenciais
@@ -34,7 +34,7 @@ MAILGUN_FROM_EMAIL=geral@fanzone12.pt
 - Use o domínio verificado no `MAILGUN_DOMAIN`
 
 ### 4. Configurar Email de Envio
-- Use `geral@fanzone12.pt` como `MAILGUN_FROM_EMAIL`
+- Use `sales@fanzone12.com` como `MAILGUN_FROM_EMAIL`
 - Certifique-se de que este email está verificado no domínio
 
 ## Configuração DNS
@@ -68,7 +68,7 @@ CNAME: email.fanzone12.pt -> mailgun.org
 ### 1. Biblioteca Principal
 - **Arquivo**: `lib/mailgun.ts`
 - **Mudanças**: 
-  - Email padrão atualizado para `geral@fanzone12.pt`
+  - Email padrão atualizado para `sales@fanzone12.com`
   - Templates atualizados com novo domínio
 
 ### 2. Rotas API Atualizadas
@@ -103,7 +103,7 @@ CNAME: email.fanzone12.pt -> mailgun.org
 ### 3. Emails de Contato
 - Formulário de contato
 - Confirmação para o cliente
-- Notificação para a loja (geral@fanzone12.pt)
+- Notificação para a loja (sales@fanzone12.com)
 
 ### 4. Emails Administrativos
 - Teste de configuração
@@ -188,7 +188,7 @@ Para problemas com o Mailgun:
 ---
 
 **Status**: ✅ Configuração atualizada para fanzone12.pt
-**Email**: geral@fanzone12.pt
+**Email**: sales@fanzone12.com
 **Domínio**: fanzone12.pt
 **Data**: $(date)
 **Versão**: 2.0
