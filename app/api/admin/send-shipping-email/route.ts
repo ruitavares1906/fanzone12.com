@@ -9,7 +9,7 @@ import { getTrackingUrl, getCarrierLabel } from "@/lib/shipping-carriers"
 // Configurar Mailgun
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || ""
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || ""
-const MAILGUN_FROM_EMAIL = process.env.MAILGUN_FROM_EMAIL || "sales@fanzone12.com"
+const MAILGUN_FROM_EMAIL = "sales@fanzone12.com"
 
 // Função para criar cliente Mailgun
 function createMailgunClient() {
@@ -83,7 +83,7 @@ export async function POST(request: Request) {
       .eq('id', orderId)
     
     if (updateError) {
-      console.error("Erro ao atualizar tracking number:", updateError)
+      console.error("Error updating tracking number:", updateError)
       return NextResponse.json(
         { success: false, error: "Error updating tracking number" },
         { status: 500 }
@@ -183,10 +183,10 @@ export async function POST(request: Request) {
     })
     
   } catch (error: any) {
-    console.error("Erro ao enviar email de envio:", error)
+    console.error("Error sending shipping email:", error)
     
     if (error.message) {
-      console.error("Erro Mailgun:", error.message)
+      console.error("Mailgun Error:", error.message)
     }
     
     return NextResponse.json(

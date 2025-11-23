@@ -6,7 +6,7 @@ import FormData from 'form-data'
 // Configurar Mailgun
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY || ""
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || ""
-const MAILGUN_FROM_EMAIL = process.env.MAILGUN_FROM_EMAIL || "sales@fanzone12.com"
+const MAILGUN_FROM_EMAIL = "sales@fanzone12.com"
 
 // Função para criar cliente Mailgun
 function createMailgunClient() {
@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     
     if (!orderId) {
       return NextResponse.json(
-        { success: false, error: "ID do pedido é obrigatório" },
+        { success: false, error: "Order ID is required" },
         { status: 400 }
       )
     }
@@ -37,14 +37,14 @@ export async function POST(request: Request) {
     
     if (orderError || !order) {
       return NextResponse.json(
-        { success: false, error: "Pedido não encontrado" },
+        { success: false, error: "Order not found" },
         { status: 404 }
       )
     }
     
     if (!order.customer_email) {
       return NextResponse.json(
-        { success: false, error: "Email do cliente não encontrado" },
+        { success: false, error: "Customer email not found" },
         { status: 400 }
       )
     }
@@ -52,32 +52,32 @@ export async function POST(request: Request) {
     const emailData = {
       from: MAILGUN_FROM_EMAIL,
       to: order.customer_email,
-      subject: `Atualização do Pedido #${order.order_number} - fanzone12.pt`,
+      subject: `Order Update #${order.order_number} - fanzone12.com`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-            <h2 style="color: #2563eb; margin-bottom: 20px;">Atualização do Pedido #${order.order_number}</h2>
+            <h2 style="color: #2563eb; margin-bottom: 20px;">Order Update #${order.order_number}</h2>
             <div style="background-color: white; padding: 20px; border-radius: 6px; border-left: 4px solid #2563eb;">
-              <p>Olá ${order.customer_name},</p>
-              <p>${message || 'Temos uma atualização sobre o seu pedido.'}</p>
-              <p>Obrigado por escolher a fanzone12.pt!</p>
+              <p>Hello ${order.customer_name},</p>
+              <p>${message || 'We have an update regarding your order.'}</p>
+              <p>Thank you for choosing fanzone12.com!</p>
             </div>
             <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280;">
-              <p>Para dúvidas, contacte-nos através de <a href="mailto:sales@fanzone12.com">sales@fanzone12.com</a></p>
+              <p>For any questions, please contact us at <a href="mailto:sales@fanzone12.com">sales@fanzone12.com</a></p>
             </div>
           </div>
         </div>
       `,
       text: `
-        Atualização do Pedido #${order.order_number}
+        Order Update #${order.order_number}
         
-        Olá ${order.customer_name},
+        Hello ${order.customer_name},
         
-        ${message || 'Temos uma atualização sobre o seu pedido.'}
+        ${message || 'We have an update regarding your order.'}
         
-        Obrigado por escolher a fanzone12.pt!
+        Thank you for choosing fanzone12.com!
         
-        Para dúvidas, contacte-nos através de sales@fanzone12.com
+        For any questions, please contact us at sales@fanzone12.com
       `
     }
     
@@ -86,20 +86,20 @@ export async function POST(request: Request) {
     
     return NextResponse.json({
       success: true,
-      message: `Notificação enviada com sucesso para ${order.customer_email}`
+      message: `Notification sent successfully to ${order.customer_email}`
     })
     
   } catch (error: any) {
-    console.error("Erro ao enviar notificação de pedido:", error)
+    console.error("Error sending order notification:", error)
     
     if (error.message) {
-      console.error("Erro Mailgun:", error.message)
+      console.error("Mailgun Error:", error.message)
     }
     
     return NextResponse.json(
       { 
         success: false, 
-        error: `Erro ao enviar notificação: ${error.message || 'Erro desconhecido'}` 
+        error: `Error sending notification: ${error.message || 'Unknown error'}` 
       },
       { status: 500 }
     )
