@@ -43,15 +43,15 @@ export interface OrderEmailData {
 
 export async function sendAdminOrderNotification(data: OrderEmailData) {
   try {
-    console.log("=== ENVIANDO NOTIFICAÇÃO PARA ADMIN ===")
-    console.log("Dados do pedido:", JSON.stringify(data, null, 2))
+    console.log("=== SENDING ADMIN NOTIFICATION ===")
+    console.log("Order data:", JSON.stringify(data, null, 2))
 
     const itemsHtml = data.items.map(item => `
       <div style="padding: 10px 0; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between;">
         <div>
           <strong style="color: #1f2937;">${item.name}</strong><br>
           <span style="color: #6b7280; font-size: 14px;">Size: ${item.size} | Quantity: ${item.quantity}</span>
-          ${item.customization ? `<br><span style="color: #2563eb; font-size: 14px;">Personalização: ${JSON.stringify(item.customization)}</span>` : ''}
+          ${item.customization ? `<br><span style="color: #2563eb; font-size: 14px;">Customization: ${JSON.stringify(item.customization)}</span>` : ''}
         </div>
         <div style="text-align: right;">
           <span style="color: #2563eb; font-weight: bold;">${(item.price * item.quantity).toFixed(2)}€</span>
@@ -160,18 +160,18 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
     const result = await response.json()
     console.log("Resposta do Mailgun (admin):", result)
 
-    console.log("✅ Notificação para admin enviada via Mailgun")
+    console.log("✅ Admin notification sent via Mailgun")
     return { success: true }
   } catch (error) {
-    console.error("Erro ao enviar notificação para admin via Mailgun:", error)
+    console.error("Error sending admin notification via Mailgun:", error)
     throw error
   }
 }
 
 export async function sendOrderConfirmationEmail(data: OrderEmailData) {
   try {
-    console.log("=== ENVIANDO EMAIL DE CONFIRMAÇÃO ===")
-    console.log("Dados recebidos:", JSON.stringify(data, null, 2))
+    console.log("=== SENDING CONFIRMATION EMAIL ===")
+    console.log("Received data:", JSON.stringify(data, null, 2))
     console.log("Subtotal:", data.subtotal)
     console.log("Shipping:", data.shipping)
     console.log("Total:", data.total)
@@ -184,7 +184,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
         <div>
           <strong style="color: #1f2937;">${item.name}</strong><br>
           <span style="color: #6b7280; font-size: 14px;">Size: ${item.size} | Quantity: ${item.quantity}</span>
-          ${item.customization ? `<br><span style="color: #2563eb; font-size: 14px;">Personalização: ${JSON.stringify(item.customization)}</span>` : ''}
+          ${item.customization ? `<br><span style="color: #2563eb; font-size: 14px;">Customization: ${JSON.stringify(item.customization)}</span>` : ''}
         </div>
         <div style="text-align: right;">
           <span style="color: #2563eb; font-weight: bold;">${(item.price * item.quantity).toFixed(2)}€</span>
@@ -338,8 +338,8 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
       `
     }
 
-    // Enviar email para o cliente usando API direta
-    console.log("=== ENVIANDO EMAIL VIA MAILGUN ===")
+    // Send email to customer using direct API
+    console.log("=== SENDING EMAIL VIA MAILGUN ===")
     console.log("Domain:", MAILGUN_DOMAIN)
     console.log("From:", emailData.from)
     console.log("To:", emailData.to)
@@ -362,13 +362,13 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
     })
     
     const result = await response.text()
-    console.log("Resultado do Mailgun:", result)
+    console.log("Mailgun result:", result)
     
     if (!response.ok) {
-      throw new Error(`Erro do Mailgun: ${response.status} - ${result}`)
+      throw new Error(`Mailgun error: ${response.status} - ${result}`)
     }
 
-    console.log("✅ Email de confirmação enviado via Mailgun")
+    console.log("✅ Confirmation email sent via Mailgun")
     return { success: true }
   } catch (error) {
     console.error("Erro ao enviar email de confirmação via Mailgun:", error)
@@ -385,8 +385,8 @@ export async function sendShippingConfirmationEmail(data: {
   trackingUrl?: string
 }) {
   try {
-    console.log("=== ENVIANDO EMAIL DE CONFIRMAÇÃO DE ENVIO ===")
-    console.log("Dados recebidos:", JSON.stringify(data, null, 2))
+    console.log("=== SENDING SHIPPING CONFIRMATION EMAIL ===")
+    console.log("Received data:", JSON.stringify(data, null, 2))
 
     const emailHtml = `
       <!DOCTYPE html>
@@ -479,10 +479,10 @@ export async function sendShippingConfirmationEmail(data: {
     const result = await response.json()
     console.log("Resposta do Mailgun:", result)
 
-    console.log("✅ Email de confirmação de envio enviado via Mailgun")
+    console.log("✅ Shipping confirmation email sent via Mailgun")
     return { success: true }
   } catch (error) {
-    console.error("Erro ao enviar email de confirmação de envio via Mailgun:", error)
+    console.error("Error sending shipping confirmation email via Mailgun:", error)
     throw error
   }
 }

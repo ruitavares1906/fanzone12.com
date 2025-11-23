@@ -283,7 +283,7 @@ async function sendEmails(order: any, orderItems: any[], paymentMethodText: stri
       customerName: customerData.name,
       customerEmail: customerData.email,
       customerPhone: customerData.phone,
-      orderDate: new Date(order.created_at).toLocaleDateString('pt-PT'),
+      orderDate: new Date(order.created_at).toLocaleDateString('en-US'),
       items: orderItems.map(item => {
         if (!isProduction) {
           logger("Mapeando item para email:", {
@@ -610,7 +610,7 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
        phone: customerPhone
      }
      
-     const paymentMethodText = paymentMethod === 'cash_on_delivery' ? "Pagamento à Cobrança" : "Pagamento Online"
+     const paymentMethodText = paymentMethod === 'cash_on_delivery' ? "Cash on Delivery" : "Online Payment"
      
      // Preparar endereço de envio no formato correto
      console.log("=== PREPARANDO ENDEREÇO DE ENVIO ===")
@@ -618,7 +618,7 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
      console.log("CustomerName:", customerName)
      
      const formattedShippingAddress = shippingAddress ? {
-       name: customerName || 'Cliente',
+       name: customerName || 'Customer',
        address: shippingAddress.line1 || '',
        city: shippingAddress.city || '',
        postalCode: shippingAddress.postal_code || '',
@@ -733,7 +733,7 @@ async function processUpfrontPaymentWithOrderNumber(session: Stripe.Checkout.Ses
        phone: order.customer_phone
      }
      
-     await sendEmails(order, orderItems, 'Pagamento à Cobrança (8€ antecipados)', customerData)
+     await sendEmails(order, orderItems, 'Cash on Delivery (€8 upfront)', customerData)
     
     console.log("✅ PAGAMENTO ANTECIPADO PROCESSADO COM SUCESSO")
     

@@ -118,7 +118,7 @@ export default async function Home() {
       {/* Top Ligas Section */}
       <section className="bg-gradient-to-br from-slate-50 to-gray-50 py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <Badge className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               Top Leagues
             </Badge>
@@ -176,43 +176,28 @@ export default async function Home() {
                 objectPosition: "object-top"
               },
             ].map((liga, index) => (
-              <ClientAnimationWrapper
+              <Link
                 key={liga.id}
-                delay={index * 0.1}
-                className="animate-scale-in"
+                href={liga.href}
+                className="modern-card rounded-2xl shadow-modern block overflow-hidden"
               >
-                <Link
-                  href={liga.href}
-                  className="modern-card group rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block overflow-hidden"
-                >
-                  <div className="relative aspect-square overflow-hidden">
-                    <Image 
-                      src={liga.image}
-                      alt={liga.name}
-                      fill
-                      className={`object-cover ${liga.objectPosition} transition-transform duration-500 group-hover:scale-105`}
-                      priority={index < 4}
-                      sizes="(max-width: 768px) 50vw, 33vw"
-                      quality={70}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <h3 className="text-lg font-bold text-white mb-3 text-center">{liga.name}</h3>
-                      <Button 
-                        size="default"
-                        className="bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white border-0 shadow-lg px-6 py-2 rounded-full"
-                      >
-                        VIEW MORE
-                      </Button>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-semibold text-gray-800 text-center group-hover:text-blue-600 transition-colors">
-                      {liga.name}
-                    </h3>
-                  </div>
-                </Link>
-              </ClientAnimationWrapper>
+                <div className="relative aspect-square overflow-hidden">
+                  <Image 
+                    src={liga.image}
+                    alt={liga.name}
+                    fill
+                    className={`object-cover ${liga.objectPosition}`}
+                    priority={index < 4}
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    quality={70}
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-800 text-center">
+                    {liga.name}
+                  </h3>
+                </div>
+              </Link>
             ))}
           </div>
 
@@ -262,43 +247,28 @@ export default async function Home() {
                 objectPosition: "object-top"
               },
             ].map((liga, index) => (
-              <ClientAnimationWrapper
+              <Link
                 key={liga.id}
-                delay={index * 0.1}
-                className="animate-scale-in"
+                href={liga.href}
+                className="modern-card rounded-2xl shadow-modern block overflow-hidden"
               >
-                <Link
-                  href={liga.href}
-                  className="modern-card group rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block overflow-hidden"
-                >
-                  <div className="relative aspect-square overflow-hidden">
-                    <Image 
-                      src={liga.image}
-                      alt={liga.name}
-                      fill
-                      className={`object-cover ${liga.objectPosition} transition-transform duration-500 group-hover:scale-105`}
-                      priority={index < 4}
-                      sizes="50vw"
-                      quality={70}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <h3 className="text-sm font-bold text-white mb-2 text-center">{liga.name}</h3>
-                      <Button 
-                        size="sm"
-                        className="bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white border-0 shadow-lg px-4 py-1 text-xs rounded-full"
-                      >
-                        VIEW MORE
-                      </Button>
-                    </div>
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-sm font-semibold text-gray-800 text-center group-hover:text-blue-600 transition-colors">
-                      {liga.name}
-                    </h3>
-                  </div>
-                </Link>
-              </ClientAnimationWrapper>
+                <div className="relative aspect-square overflow-hidden">
+                  <Image 
+                    src={liga.image}
+                    alt={liga.name}
+                    fill
+                    className={`object-cover ${liga.objectPosition}`}
+                    priority={index < 4}
+                    sizes="50vw"
+                    quality={70}
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-sm font-semibold text-gray-800 text-center">
+                    {liga.name}
+                  </h3>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -339,7 +309,7 @@ export default async function Home() {
                 href={categoria.href}
                 className="group flex flex-col items-center"
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-full hover:scale-110 transition-transform duration-300">
+                <div className="w-24 h-24 md:w-32 md:h-32 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-full">
                   <div className="relative w-full h-full rounded-full bg-white overflow-hidden">
                     <Image
                       src={categoria.image}
@@ -383,7 +353,7 @@ export default async function Home() {
                 href={categoria.href}
                 className="group flex flex-col items-center"
               >
-                <div className="w-40 h-40 md:w-48 md:h-48 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-2xl hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-40 h-40 md:w-48 md:h-48 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-2xl shadow-lg">
                   <div className="relative w-full h-full rounded-xl bg-white overflow-hidden">
                     <Image
                       src={categoria.image}
@@ -407,7 +377,7 @@ export default async function Home() {
       {/* All-Time Best Sellers Section - 2nd Section */}
       <section className="py-8 bg-gradient-to-br from-gray-50 to-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Star className="w-4 h-4 mr-2" />
               All-Time Best Sellers
@@ -426,18 +396,14 @@ export default async function Home() {
               <CarouselContent className="-ml-2 md:-ml-4">
                 {allTimeBestSellers.map((product, index) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-[85%] md:basis-[28%] lg:basis-[22%]">
-                    <ClientAnimationWrapper
-                      delay={index * 0.1}
-                      className="animate-scale-in"
-                    >
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                         <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                               src={product.imagem}
                               alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 25vw, 20vw"
                               quality={75}
@@ -447,10 +413,9 @@ export default async function Home() {
                                 Best Seller
                               </Badge>
                             </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                            <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
+                            <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                               {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -461,7 +426,6 @@ export default async function Home() {
                           </div>
                         </Link>
                       </div>
-                    </ClientAnimationWrapper>
                   </CarouselItem>
                 ))}
               </CarouselContent>
@@ -476,14 +440,14 @@ export default async function Home() {
               <CarouselContent>
                 {allTimeBestSellers.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                         <div className="relative aspect-square overflow-hidden">
                           <Image 
                             src={product.imagem}
                             alt={product.nome}
                             fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
+                            className="object-cover"
                             loading="lazy"
                             sizes="80vw"
                             quality={75}
@@ -493,10 +457,9 @@ export default async function Home() {
                               Best Seller
                             </Badge>
                           </div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </div>
                         <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                           </h3>
                           <div className="flex items-center justify-start">
@@ -535,7 +498,7 @@ export default async function Home() {
       {/* Modern Top Clubs Section - 3rd Section */}
       <section className="py-8 bg-gradient-to-br from-white to-blue-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
               Top Clubs
             </h2>
@@ -573,14 +536,14 @@ export default async function Home() {
                   <CarouselItem key={club.name} className="basis-1/3">
                     <Link
                       href={club.href}
-                      className="modern-card group p-4 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block"
+                      className="modern-card group p-4 text-center rounded-2xl shadow-modern block"
                     >
                       <div className="relative w-12 h-12 mx-auto mb-3">
                         <Image
                           src={`/images/${club.logo}`}
                           alt={club.name}
                           fill
-                          className="object-contain transition-transform group-hover:scale-110"
+                          className="object-contain"
                           loading="lazy"
                           sizes="48px"
                           quality={75}
@@ -613,7 +576,7 @@ export default async function Home() {
       {/* Fan Favorites Section - 4th Section */}
       <section className="py-8 bg-gradient-to-br from-purple-50 to-pink-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <Badge className="bg-gradient-to-r from-purple-600 to-pink-600 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Star className="w-4 h-4 mr-2" />
               Fan Favorites
@@ -632,22 +595,21 @@ export default async function Home() {
               <CarouselContent className="-ml-2 md:-ml-4">
                 {fanFavorites.map((product) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                         <div className="relative aspect-square overflow-hidden">
                     <Image
                             src={product.imagem}
                             alt={product.nome}
                       fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
+                            className="object-cover"
                       loading="lazy"
                             sizes="(max-width: 768px) 80vw, 25vw"
                       quality={70}
                     />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                         <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                           </h3>
                           <div className="flex items-center justify-start">
@@ -672,22 +634,21 @@ export default async function Home() {
               <CarouselContent>
                 {fanFavorites.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                     <Link href={`/produto/${product.id}`} className="block">
                       <div className="relative aspect-square overflow-hidden">
                         <Image 
                           src={product.imagem}
                           alt={product.nome}
                           fill
-                          className="object-cover transition-all duration-500 group-hover:scale-105"
+                          className="object-cover"
                             loading="lazy"
                             sizes="80vw"
                           quality={70}
                         />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                         <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                           {product.nome}
                         </h3>
                           <div className="flex items-center justify-start">
@@ -721,7 +682,7 @@ export default async function Home() {
       {/* National Teams Section - 5th Section */}
       <section className="py-8 bg-gradient-to-br from-white to-red-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
               National Teams
             </h2>
@@ -736,22 +697,21 @@ export default async function Home() {
                 <CarouselContent className="-ml-2 md:-ml-4">
                 {nationalTeams.map((product) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                             src={product.imagem}
                             alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                               quality={85}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-red-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -776,22 +736,21 @@ export default async function Home() {
               <CarouselContent>
                 {nationalTeams.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                             src={product.imagem}
                             alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                             sizes="80vw"
                               quality={85}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-red-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -825,7 +784,7 @@ export default async function Home() {
       {/* All Barcelona Kits Section - 6th Section */}
       <section className="py-8 bg-gradient-to-br from-blue-50 to-red-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
               All Barcelona Kits
             </h2>
@@ -840,22 +799,21 @@ export default async function Home() {
                 <CarouselContent className="-ml-2 md:-ml-4">
                 {barcelonaKits.map((product) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                             src={product.imagem}
                             alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                               quality={85}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -880,22 +838,21 @@ export default async function Home() {
               <CarouselContent>
                 {barcelonaKits.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                             src={product.imagem}
                             alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                             sizes="80vw"
                               quality={85}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -929,7 +886,7 @@ export default async function Home() {
       {/* All Real Madrid Kits Section - 7th Section */}
       <section className="py-8 bg-gradient-to-br from-white to-purple-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
               All Real Madrid Kits
             </h2>
@@ -944,22 +901,21 @@ export default async function Home() {
                 <CarouselContent className="-ml-2 md:-ml-4">
                 {realMadridKits.map((product) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                             src={product.imagem}
                             alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                               quality={85}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -984,22 +940,21 @@ export default async function Home() {
               <CarouselContent>
                 {realMadridKits.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                             src={product.imagem}
                             alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                             sizes="80vw"
                               quality={85}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-purple-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -1033,7 +988,7 @@ export default async function Home() {
       {/* Player Version Jerseys Section - 8th Section */}
       <section className="py-8 bg-gradient-to-br from-white to-yellow-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Star className="w-4 h-4 mr-2" />
               Player Version
@@ -1052,18 +1007,14 @@ export default async function Home() {
               <CarouselContent className="-ml-2 md:-ml-4">
                 {playerVersionJerseysLimited.map((product, index) => (
                   <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/4 lg:basis-1/5">
-                    <ClientAnimationWrapper
-                      delay={index * 0.1}
-                      className="animate-scale-in"
-                    >
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                         <Link href={`/produto/${product.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                               src={product.imagem}
                               alt={product.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                               sizes="(max-width: 768px) 80vw, 25vw"
                               quality={70}
@@ -1073,10 +1024,9 @@ export default async function Home() {
                                 Player
                               </Badge>
                             </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
                           <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                            <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-yellow-600 transition-colors line-clamp-2">
+                            <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                               {product.nome}
                             </h3>
                             <div className="flex items-center justify-start">
@@ -1087,7 +1037,6 @@ export default async function Home() {
                           </div>
                         </Link>
                       </div>
-                    </ClientAnimationWrapper>
                   </CarouselItem>
                 ))}
               </CarouselContent>
@@ -1102,14 +1051,14 @@ export default async function Home() {
               <CarouselContent>
                 {playerVersionJerseysLimited.map((product) => (
                   <CarouselItem key={product.id} className="basis-4/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${product.id}`} className="block">
                         <div className="relative aspect-square overflow-hidden">
                           <Image 
                             src={product.imagem}
                             alt={product.nome}
                             fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
+                            className="object-cover"
                             loading="lazy"
                             sizes="80vw"
                             quality={75}
@@ -1119,10 +1068,9 @@ export default async function Home() {
                               Player
                             </Badge>
                           </div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </div>
                         <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-yellow-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {product.nome}
                           </h3>
                           <div className="flex items-center justify-start">
@@ -1156,7 +1104,7 @@ export default async function Home() {
       {/* Equipment for Young Fans Section - 7th Section */}
       <section className="py-8 bg-gradient-to-br from-white to-green-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <Badge className="bg-gradient-to-r from-green-600 to-emerald-800 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Baby className="w-4 h-4 mr-2" />
               Kids Kits
@@ -1172,19 +1120,14 @@ export default async function Home() {
           {/* Desktop Grid */}
           <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
             {youngFansKits.map((kit, index) => (
-              <ClientAnimationWrapper
-                key={kit.id}
-                delay={index * 0.1}
-                className="animate-scale-in"
-              >
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                      <div key={kit.id} className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                         <Link href={`/produto/${kit.id}`} className="block">
                           <div className="relative aspect-square overflow-hidden">
                             <Image 
                               src={kit.imagem}
                               alt={kit.nome}
                               fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
+                              className="object-cover"
                               loading="lazy"
                               sizes="(max-width: 768px) 50vw, 20vw"
                               quality={70}
@@ -1194,10 +1137,9 @@ export default async function Home() {
                                 Kids
                               </Badge>
                             </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                      <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-green-600 transition-colors line-clamp-2">
+                      <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                         {kit.nome}
                       </h3>
                       <div className="flex items-center justify-start">
@@ -1208,7 +1150,6 @@ export default async function Home() {
                     </div>
                   </Link>
                 </div>
-              </ClientAnimationWrapper>
             ))}
           </div>
 
@@ -1218,14 +1159,14 @@ export default async function Home() {
               <CarouselContent>
                 {youngFansKits.map((kit) => (
                   <CarouselItem key={kit.id} className="basis-4/5">
-                    <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                       <Link href={`/produto/${kit.id}`} className="block">
                         <div className="relative aspect-square overflow-hidden">
                           <Image 
                             src={kit.imagem}
                             alt={kit.nome}
                             fill
-                            className="object-cover transition-all duration-500 group-hover:scale-105"
+                            className="object-cover"
                             loading="lazy"
                             sizes="80vw"
                             quality={70}
@@ -1235,10 +1176,9 @@ export default async function Home() {
                               Kids
                             </Badge>
                           </div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </div>
                         <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                          <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-green-600 transition-colors line-clamp-2">
+                          <h3 className="font-bold text-lg mb-3 text-gray-800 line-clamp-2">
                             {kit.nome}
                           </h3>
                           <div className="flex items-center justify-start">
@@ -1259,7 +1199,7 @@ export default async function Home() {
 
           {/* Ver Mais Kits Button */}
           <div className="text-center mt-12">
-            <Button asChild size="lg" className="modern-button bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 rounded-full">
+            <Button asChild size="lg" className="modern-button bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 text-lg font-bold shadow-lg rounded-full">
               <Link href="/catalogo?categoria=crianca" className="flex items-center gap-3">
                 <Baby className="h-5 w-5" />
                 View All Kids Kits
@@ -1273,7 +1213,7 @@ export default async function Home() {
       {/* Sneakers Section - 8th Section */}
       <section className="py-8 modern-section">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
               Sneakers Collection
             </h2>
@@ -1286,7 +1226,7 @@ export default async function Home() {
           <div className="hidden md:grid md:grid-cols-3 gap-8">
             {/* Categoria Nike */}
             <Link href="/sneakers/nike" className="group">
-              <div className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 rounded-2xl">
+              <div className="overflow-hidden border-0 shadow-xl rounded-2xl">
                 <div className="relative h-96 bg-gradient-to-br from-orange-400 via-orange-500 to-red-500">
                   <div className="absolute inset-0 bg-gradient-to-br from-orange-600/30 to-red-600/30" />
                   <div className="absolute inset-0 bg-black/10" />
@@ -1296,7 +1236,7 @@ export default async function Home() {
                     src="/images/1000541110.webp"
                     alt="Sneakers Nike"
                         fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
                         quality={75}
                       />
@@ -1322,7 +1262,7 @@ export default async function Home() {
 
             {/* Categoria Adidas */}
             <Link href="/sneakers/adidas" className="group">
-              <div className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 rounded-2xl">
+              <div className="overflow-hidden border-0 shadow-xl rounded-2xl">
                 <div className="relative h-96 bg-gradient-to-br from-green-400 via-green-500 to-green-600">
                   <div className="absolute inset-0 bg-gradient-to-br from-green-600/30 to-green-800/30" />
                   <div className="absolute inset-0 bg-black/10" />
@@ -1332,7 +1272,7 @@ export default async function Home() {
                     src="/images/1362796-full_product.jpg"
                     alt="Sneakers Adidas"
                             fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
                             quality={85}
                           />
@@ -1358,7 +1298,7 @@ export default async function Home() {
 
             {/* Categoria New Balance */}
             <Link href="/sneakers/new-balance" className="group">
-              <div className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 rounded-2xl">
+              <div className="overflow-hidden border-0 shadow-xl rounded-2xl">
                 <div className="relative h-96 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800">
                   <div className="absolute inset-0 bg-gradient-to-br from-gray-700/30 to-gray-900/30" />
                   <div className="absolute inset-0 bg-black/10" />
@@ -1368,7 +1308,7 @@ export default async function Home() {
                     src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                     alt="Sneakers New Balance"
                         fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover"
                         sizes="(max-width: 768px) 100vw, 33vw"
                         quality={85}
                       />
@@ -1408,7 +1348,7 @@ export default async function Home() {
                         src="/images/1000541110.webp"
                         alt="Sneakers Nike"
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover"
                         sizes="100vw"
                         quality={75}
                       />
@@ -1442,7 +1382,7 @@ export default async function Home() {
                         src="/images/1362796-full_product.jpg"
                         alt="Sneakers Adidas"
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover"
                         sizes="100vw"
                         quality={75}
                       />
@@ -1476,7 +1416,7 @@ export default async function Home() {
                         src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                         alt="Sneakers New Balance"
                             fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover"
                         sizes="100vw"
                             quality={85}
                           />
@@ -1523,7 +1463,7 @@ export default async function Home() {
       {/* Modern Vantagens Section */}
       <section className="py-8 modern-section">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
               Why choose fanzone12.com?
             </h2>
@@ -1534,56 +1474,41 @@ export default async function Home() {
 
           {/* Desktop Grid - Hidden on mobile */}
           <div className="hidden md:grid grid-cols-3 gap-8">
-            <ClientAnimationWrapper
-              delay={0}
-              className="animate-scale-in"
-            >
-              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
+              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern">
                 <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
                   <Truck className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">
                   Fast Delivery
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   Shipping from just €4 and free for 3 or more jerseys. Fast delivery across Europe.
                 </p>
               </div>
-            </ClientAnimationWrapper>
 
-            <ClientAnimationWrapper
-              delay={0.1}
-              className="animate-scale-in"
-            >
-              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
+              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern">
                 <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
                   <CreditCard className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">
                   Secure Payment
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   Multiple secure payment options with complete protection of your data.
                 </p>
               </div>
-            </ClientAnimationWrapper>
 
-            <ClientAnimationWrapper
-              delay={0.2}
-              className="animate-scale-in"
-            >
-              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
+              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern">
                 <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
                   <Star className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-yellow-600 transition-colors">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">
                   Guaranteed Quality
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   Official products with authenticity guarantee and premium quality.
                 </p>
               </div>
-            </ClientAnimationWrapper>
           </div>
 
           {/* Mobile Carousel - Hidden on desktop */}
@@ -1591,60 +1516,45 @@ export default async function Home() {
             <Carousel className="w-full">
               <CarouselContent className="-ml-2">
                 <CarouselItem className="pl-2">
-                  <ClientAnimationWrapper
-                    delay={0}
-                    className="animate-scale-in"
-                  >
-                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
+                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern">
                       <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
                         <Truck className="h-8 w-8 text-white" />
                       </div>
-                      <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-xl font-bold mb-4 text-gray-800">
                         Fast Delivery
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
                         Shipping from just €4 and free for 3 or more jerseys. Fast delivery across Europe.
                       </p>
                     </div>
-                  </ClientAnimationWrapper>
                 </CarouselItem>
 
                 <CarouselItem className="pl-2">
-                  <ClientAnimationWrapper
-                    delay={0.1}
-                    className="animate-scale-in"
-                  >
-                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
+                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern">
                       <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
                         <CreditCard className="h-8 w-8 text-white" />
                       </div>
-                      <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors">
+                      <h3 className="text-xl font-bold mb-4 text-gray-800">
                         Pagamento Seguro
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
                         Múltiplas opções de pagamento seguro com proteção total dos seus dados.
                       </p>
                     </div>
-                  </ClientAnimationWrapper>
                 </CarouselItem>
 
                 <CarouselItem className="pl-2">
-                  <ClientAnimationWrapper
-                    delay={0.2}
-                    className="animate-scale-in"
-                  >
-                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
+                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern">
                       <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
                         <Star className="h-8 w-8 text-white" />
                       </div>
-                      <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-yellow-600 transition-colors">
+                      <h3 className="text-xl font-bold mb-4 text-gray-800">
                         Qualidade Garantida
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
                         Produtos oficiais com garantia de autenticidade e qualidade premium.
                       </p>
                     </div>
-                  </ClientAnimationWrapper>
                 </CarouselItem>
               </CarouselContent>
               <CarouselPrevious />

@@ -81,7 +81,7 @@ export async function sendPaymentFailedEmail(data: {
 
     return { success: true }
   } catch (error) {
-    console.error("Erro ao enviar email de pagamento falhado:", error)
+    console.error("Error sending payment failed email:", error)
     throw error
   }
 }
@@ -160,7 +160,7 @@ export async function sendOrderDeliveredEmail(data: {
 
     return { success: true }
   } catch (error) {
-    console.error("Erro ao enviar email de entrega:", error)
+    console.error("Error sending delivery email:", error)
     throw error
   }
 }
@@ -241,7 +241,7 @@ export async function sendOrderCancelledEmail(data: {
 
     return { success: true }
   } catch (error) {
-    console.error("Erro ao enviar email de cancelamento:", error)
+    console.error("Error sending cancellation email:", error)
     throw error
   }
 }
@@ -317,7 +317,7 @@ export async function sendPasswordResetEmail(data: {
 
     return { success: true }
   } catch (error) {
-    console.error("Erro ao enviar email de reset de senha:", error)
+    console.error("Error sending password reset email:", error)
     throw error
   }
 }
@@ -397,7 +397,7 @@ export async function sendAccountCreatedEmail(data: {
 
     return { success: true }
   } catch (error) {
-    console.error("Erro ao enviar email de criação de conta:", error)
+    console.error("Error sending account creation email:", error)
     throw error
   }
 }

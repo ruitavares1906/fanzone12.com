@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     
     if (!nome || !email || !assunto || !mensagem) {
       return NextResponse.json(
-        { success: false, error: "Todos os campos são obrigatórios" },
+        { success: false, error: "All fields are required" },
         { status: 400 }
       )
     }
@@ -31,31 +31,31 @@ export async function POST(request: Request) {
     const emailToStore = {
       from: MAILGUN_FROM_EMAIL,
       to: "sales@fanzone12.com",
-      subject: `Nova mensagem de contato: ${assunto}`,
+      subject: `New contact message: ${assunto}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #2563eb;">Nova mensagem de contato</h2>
+          <h2 style="color: #2563eb;">New Contact Message</h2>
           <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-            <p><strong>Nome:</strong> ${nome}</p>
+            <p><strong>Name:</strong> ${nome}</p>
             <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Telefone:</strong> ${telefone || 'Não fornecido'}</p>
-            <p><strong>Assunto:</strong> ${assunto}</p>
+            <p><strong>Phone:</strong> ${telefone || 'Not provided'}</p>
+            <p><strong>Subject:</strong> ${assunto}</p>
             <div style="background-color: white; padding: 15px; border-radius: 6px; margin-top: 15px;">
-              <p><strong>Mensagem:</strong></p>
+              <p><strong>Message:</strong></p>
               <p>${mensagem.replace(/\n/g, '<br>')}</p>
             </div>
           </div>
         </div>
       `,
       text: `
-        Nova mensagem de contato
+        New contact message
         
-        Nome: ${nome}
+        Name: ${nome}
         Email: ${email}
-        Telefone: ${telefone || 'Não fornecido'}
-        Assunto: ${assunto}
+        Phone: ${telefone || 'Not provided'}
+        Subject: ${assunto}
         
-        Mensagem:
+        Message:
         ${mensagem}
       `
     }
@@ -64,33 +64,33 @@ export async function POST(request: Request) {
     const emailToCustomer = {
       from: MAILGUN_FROM_EMAIL,
       to: email,
-      subject: "Confirmação de receção - fanzone12.pt",
+      subject: "Message Received - fanzone12.com",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #2563eb;">Mensagem recebida!</h2>
+          <h2 style="color: #2563eb;">Message Received!</h2>
           <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-            <p>Olá ${nome},</p>
-            <p>Recebemos a sua mensagem e entraremos em contacto consigo em breve.</p>
+            <p>Hello ${nome},</p>
+            <p>We have received your message and will contact you soon.</p>
             <div style="background-color: white; padding: 15px; border-radius: 6px; margin: 15px 0;">
-              <p><strong>Assunto:</strong> ${assunto}</p>
-              <p><strong>Sua mensagem:</strong></p>
+              <p><strong>Subject:</strong> ${assunto}</p>
+              <p><strong>Your message:</strong></p>
               <p>${mensagem.replace(/\n/g, '<br>')}</p>
             </div>
-            <p>Obrigado por contactar a fanzone12.pt!</p>
+            <p>Thank you for contacting fanzone12.com!</p>
           </div>
         </div>
       `,
       text: `
-        Mensagem recebida!
+        Message Received!
         
-        Olá ${nome},
+        Hello ${nome},
         
-        Recebemos a sua mensagem e entraremos em contacto consigo em breve.
+        We have received your message and will contact you soon.
         
-        Assunto: ${assunto}
-        Sua mensagem: ${mensagem}
+        Subject: ${assunto}
+        Your message: ${mensagem}
         
-        Obrigado por contactar a fanzone12.pt!
+        Thank you for contacting fanzone12.com!
       `
     }
     
@@ -103,16 +103,16 @@ export async function POST(request: Request) {
     
     return NextResponse.json({
       success: true,
-      message: "Mensagem enviada com sucesso!"
+      message: "Message sent successfully!"
     })
     
   } catch (error: any) {
-    console.error("Erro ao enviar mensagem de contato:", error)
+    console.error("Error sending contact message:", error)
     
     return NextResponse.json(
       { 
         success: false, 
-        error: "Erro ao enviar mensagem. Tente novamente mais tarde." 
+        error: "Error sending message. Please try again later." 
       },
       { status: 500 }
     )
