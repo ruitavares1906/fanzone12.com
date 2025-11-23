@@ -42,7 +42,8 @@ export async function POST(request: Request) {
         orderNumber,
         paymentType: 'upfront',
         customerName,
-        amount: '8.00'
+        amount: '8.00',
+        store: 'fanzone12' // Identificador único da loja
       },
     })
 

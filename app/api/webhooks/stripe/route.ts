@@ -151,6 +151,20 @@ export async function POST(request: Request) {
 
     // Lidar com o evento
     console.log(`🔄 Processando evento: ${event.type}`)
+
+    // Verificar se o evento pertence a esta loja
+    if (event.type === 'checkout.session.completed') {
+      const session = event.data.object as Stripe.Checkout.Session
+      const storeId = session.metadata?.store
+      
+      // Se for um pagamento desta loja (tem 'store: fanzone12') OU se for um pagamento antigo/legacy que devemos tentar processar
+      // Mas para resolver o conflito atual, vamos ser estritos: só processar se tiver a tag correta
+      if (storeId !== 'fanzone12') {
+        console.log(`⚠️ Evento ignorado: Pertence a outra loja (store: ${storeId || 'undefined'})`)
+        return NextResponse.json({ received: true, status: 'ignored_other_store' })
+      }
+    }
+
     switch (event.type) {
       case "checkout.session.completed":
         const session = event.data.object as Stripe.Checkout.Session

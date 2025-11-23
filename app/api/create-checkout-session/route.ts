@@ -432,7 +432,8 @@ export async function POST(request: Request) {
        payment_method: 'online',
        customer_email: customerEmail,
        cart_items: truncatedCartItems,
-       original_total: (itemsSubtotal - (totalDiscountCents / 100) + (shippingAmount / 100)).toString()
+       original_total: (itemsSubtotal - (totalDiscountCents / 100) + (shippingAmount / 100)).toString(),
+       store: 'fanzone12' // Identificador único da loja
      }
      if (validPartnerCode) {
        sessionMetadata.discount_code = String(validPartnerCode)
