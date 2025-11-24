@@ -43052,7 +43052,709 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "/images/38USD DB3570 36-44 Adidas Handball Spezial - 08.jpg",
         "/images/38USD DB3570 36-44 Adidas Handball Spezial - 09.jpg"
       ]
-    }
+    },
+    {
+      "id": "adidas-samba-xlg-ie1379",
+      "nome": "Adidas Samba XLG",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 02.jpeg",
+        "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 03.jpeg",
+        "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 04.jpeg",
+        "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 05.jpeg",
+        "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 06.jpeg",
+        "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 07.jpeg",
+        "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 08.jpeg"
+      ]
+    },
+    {
+      "id": "ad-samba-sporty-rich-hq6075",
+      "nome": "Sporty & Rich x Adidas Samba OG",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 02.jpeg",
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 03.jpeg",
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 04.jpeg",
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 05.jpeg",
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 06.jpeg",
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 07.jpeg",
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 08.jpeg",
+        "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 09.jpeg"
+      ]
+    },
+  
+    {
+      "id": "ad-samba-xlg-cq2640",
+      "nome": "Adidas Samba XLG Low",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 02.jpeg",
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 03.jpeg",
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 04.jpeg",
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 05.jpeg",
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 06.jpeg",
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 07.jpeg",
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 08.jpeg",
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 09.jpeg"
+      ]
+    },
+    {
+      "id": "ad-samba-vegan-ig7572",
+      "nome": "Adidas Samba Vegan",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 02.jpeg",
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 03.jpeg",
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 04.jpeg",
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 05.jpeg",
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 06.jpeg",
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 07.jpeg",
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 08.jpeg",
+        "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 09.jpeg"
+      ]
+    },
+    {
+      "id": "ad-samba-vegan-og-ig1025-2",
+      "nome": "Adidas Originals Samba Vegan OG",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 07.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 02.jpeg"
+      ]
+    },
+    {
+      "id": "ad-samba-vegan-og-ig1025-3",
+      "nome": "Adidas Originals Samba Vegan OG",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 08.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 03.jpeg"
+      ]
+    },
+    {
+      "id": "ad-samba-vegan-og-ig1025-4",
+      "nome": "Adidas Originals Samba Vegan OG",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 09.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 04.jpeg"
+      ]
+    },
+    {
+      "id": "ad-samba-vegan-og-ig1025-5",
+      "nome": "Adidas Originals Samba Vegan OG",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 06.jpeg"
+  
+      ]
+    },
+    {
+      "id": "ad-samba-vegan-og-ig1025-6",
+      "nome": "Adidas Originals Samba Vegan OG",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 10.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 05.jpeg"
+        
+      ]
+    },
+  
+    {
+      "id": "adidas-originals-samba-vegan-og-spd-id2056",
+      "nome": "Adidas Originals Samba Vegan OG SPD",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 32.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 02.jpeg",
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 03.jpeg",
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 04.jpeg",
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 05.jpeg",
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 06.jpeg",
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 07.jpeg",
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 08.jpeg",
+        "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 09.jpeg"
+      ]
+    },
+   
+    {
+      "id": "adidas-samba-xlg-low-ie1379",
+      "nome": "Adidas Originals Samba XLG Low ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 04.jpeg",
+      ]
+    },
+    {
+      "id": "adidas-samba-xlg-low-ie1379-2",
+      "nome": "Adidas Originals Samba XLG Low ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 05.jpeg",
+      "imagensAdicionais": [
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 02.jpeg",
+      ]
+    },
+    {
+      "id": "adidas-samba-xlg-low-ie1379-3",
+      "nome": "Adidas Originals Samba XLG Low ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 06.jpeg",
+      "imagensAdicionais": [
+        "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 03.jpeg",
+      ]
+    },
+    {
+      "id": "adidas-samba-vegan-og-fw4455-3",
+      "nome": "Adidas Originals Samba Vegan OG ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 01.jpeg",
+      "imagensAdicionais": ["/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 05.jpeg"]
+    },
+    {
+      "id": "adidas-originals-samba-og-id2055",
+      "nome": "Adidas Originals Samba OG ID2055",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 02.jpeg",
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 03.jpeg",
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 04.jpeg",
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 05.jpeg",
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 06.jpeg",
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 07.jpeg",
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 08.jpeg",
+        "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 09.jpeg"
+      ]
+    },
+    {
+      "id": "adidas-samba-id2784",
+      "nome": "Adidas Originals Samba",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 35.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "36-45",
+      "imagem": "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 02.jpeg",
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 03.jpeg",
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 04.jpeg",
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 05.jpeg",
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 06.jpeg",
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 07.jpeg",
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 08.jpeg",
+        "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 09.jpeg"
+      ]
+    },
+    {
+      "id": "adidas-samba-og-gy1889",
+      "nome": "Adidas Originals Samba OG ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 07.jpeg"
+      ]
+    },
+    {
+      "id": "adidas-samba-og-gy1889-2",
+      "nome": "Adidas Originals Samba OG ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 12.jpeg",
+      "imagensAdicionais": ["/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 06.jpeg"]
+    },
+    {
+      "id": "adidas-samba-og-gy1889-3",
+      "nome": "Adidas Originals Samba OG ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 10.jpeg",
+      "imagensAdicionais": ["/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 04.jpeg"]
+    },
+    {
+      "id": "adidas-samba-og-gy1889-4",
+      "nome": "Adidas Originals Samba OG ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 09.jpeg",
+      "imagensAdicionais": ["/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 03.jpeg"]
+    },
+    {
+      "id": "adidas-samba-og-gy1889-5",
+      "nome": "Adidas Originals Samba OG ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 08.jpeg",
+      "imagensAdicionais": ["/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 02.jpeg",
+      
+      ]
+    },
+  {
+    "id": "adidas-samba-og-if0642",
+    "nome": "Adidas Originals Samba OG ",
+    "categoria": "samba",
+    "subcategoria": "sneakers",
+    "marca": "Adidas",
+    "preco": 29.99,
+    "precoAntigo": 79.99,
+    "tamanhos": "",
+    "imagem": "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 01.jpeg",
+    "imagensAdicionais": ["/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 02.jpeg",
+    "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 03.jpeg",
+      "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 04.jpeg",
+      "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 05.jpeg",
+      "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 06.jpeg",
+      "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 07.jpeg",
+      "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 08.jpeg",
+      "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 09.jpeg"
+    ]
+    },
+      {
+        "id": "adidas-samba-vegan-og-gx2913",
+        "nome": "Adidas Originals Samba Vegan OG ",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "35-45",
+        "imagem": "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 02.jpeg",
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 03.jpeg",
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 04.jpeg",
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 05.jpeg",
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 06.jpeg",
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 07.jpeg",
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 08.jpeg",
+          "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "wales-bonner-x-adidas-samba-hl20800924",
+        "nome": "Wales Bonner x Adidas Originals Samba",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 29.99,
+        "precoAntigo": 59.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 02.jpeg",
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 03.jpeg",
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 04.jpeg",
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 05.jpeg",
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 06.jpeg",
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 07.jpeg",
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 08.jpeg",
+          "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-samba-og-id2055",
+        "nome": "Adidas Originals Samba OG ",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 29.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "",
+        "imagem": "/images/22USD Adidas originals Samba Og ID2055 HL201000924 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": ["/images/22USD Adidas originals Samba Og ID2055 HL201000924 Size 36~45半 - 03.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-samba-og-id2055-2",
+        "nome": "Adidas Originals Samba OG ",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 29.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "",
+        "imagem": "/images/22USD Adidas originals Samba Og ID2055 HL201000924 Size 36~45半 - 06.jpeg",
+        "imagensAdicionais": ["/images/22USD Adidas originals Samba Og ID2055 HL201000924 Size 36~45半 - 02.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-originals-samba-x-wales-bonner-hl401600816",
+        "nome": "Adidas Originals Samba x Wales Bonner",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 49.99,
+        "precoAntigo": 99.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 02.jpeg",
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 03.jpeg",
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 04.jpeg",
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 05.jpeg",
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 06.jpeg",
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 07.jpeg",
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 08.jpeg",
+          "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "sporty-rich-x-adidas-originals-samba-og-hl351000806",
+        "nome": "SPORTY & RICH x Adidas Originals Samba OG",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 02.jpeg",
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 03.jpeg",
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 04.jpeg",
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 05.jpeg",
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 06.jpeg",
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 07.jpeg",
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 08.jpeg",
+          "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-samba-og-gv8358",
+      "nome": "Adidas Originals Samba  ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/25USD Adidas Originals Samba 货号 GV8358 ID HL111100805 Size 36~45半 - 01.jpeg",
+      "imagensAdicionais": ["/images/25USD Adidas Originals Samba 货号 GV8358 ID HL111100805 Size 36~45半 - 02.jpeg"
+      ]
+      },
+      {
+        "id": "adidas-samba-og-gv8358-2",
+      "nome": "Adidas Originals Samba  ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 29.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/25USD Adidas Originals Samba 货号 GV8358 ID HL111100805 Size 36~45半 - 06.jpeg",
+      "imagensAdicionais": ["/images/25USD Adidas Originals Samba 货号 GV8358 ID HL111100805 Size 36~45半 - 03.jpeg"
+      ]
+      },
+      {
+        "id": "ad-samba-classic-id7339",
+        "nome": "Adidas Samba Classic",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 29.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 02.jpeg",
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 03.jpeg",
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 04.jpeg",
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 05.jpeg",
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 06.jpeg",
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 07.jpeg",
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 08.jpeg",
+          "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "ad-samba-wales-bonner-h06259",
+        "nome": "Adidas Gazelle Wales Bonner",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "S",
+        "imagem": "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 02.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 03.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 04.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 05.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 06.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 07.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 08.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 09.jpeg"
+        ]
+      },
+      {
+        "id": "ad-samba-og-b75807",
+        "nome": "Adidas Samba OG",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 02.jpeg",
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 03.jpeg",
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 04.jpeg",
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 05.jpeg",
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 06.jpeg",
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 07.jpeg",
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 08.jpeg",
+          "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-samba-vegan-hp9085",
+        "nome": "Adidas Originals Samba VEGAN HP9085",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 02.jpeg",
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 03.jpeg",
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 04.jpeg",
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 05.jpeg",
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 06.jpeg",
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 07.jpeg",
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 08.jpeg",
+          "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-samba-vegan-og-spd-gx6925",
+        "nome": "Adidas Originals Samba Vegan OG SPD ",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 02.jpeg",
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 03.jpeg",
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 04.jpeg",
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 05.jpeg",
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 06.jpeg",
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 07.jpeg",
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 08.jpeg",
+          "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-samba-xlg-low-ie1379-4",
+      "nome": "Adidas Originals Samba Vegan OG ",
+      "categoria": "samba",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "tamanhos": "",
+      "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 08.jpeg",
+      "imagensAdicionais": [
+        "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 04.jpeg"
+      ]
+    },
+      {
+        "id": "ad-samba-classic-hl111201017",
+        "nome": "AD Originals Samba Classic Silver Metallic",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-44",
+        "imagem": "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 02.jpeg",
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 03.jpeg",
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 04.jpeg",
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 05.jpeg",
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 06.jpeg",
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 07.jpeg",
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 08.jpeg",
+          "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-originals-samba-og-ig1024",
+        "nome": "Adidas Originals Samba OG ",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "",
+        "imagem": "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 02.jpeg",
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 03.jpeg",
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 04.jpeg",
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 05.jpeg",
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 06.jpeg",
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 07.jpeg",
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 08.jpeg",
+          "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-samba-vegan-og-fw4455",
+        "nome": "Adidas Originals Samba Vegan OG ",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "",
+        "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 07.jpeg",
+        "imagensAdicionais": ["/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 03.jpeg"]
+      },
+      {
+        "id": "adidas-samba-vegan-og-fw4455-2",
+        "nome": "Adidas Originals Samba Vegan OG ",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "",
+        "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 06.jpeg",
+        "imagensAdicionais": ["/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 02.jpeg"]
+      },
+      {
+        "id": "ad-samba-og-ig5932",
+        "nome": "Adidas Samba OG",
+        "categoria": "samba",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 32.99,
+        "precoAntigo": 69.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 02.jpeg",
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 03.jpeg",
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 04.jpeg",
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 05.jpeg",
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 06.jpeg",
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 07.jpeg",
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 08.jpeg",
+          "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 09.jpeg"
+        ]
+      },
+      
                                     
 
                                   

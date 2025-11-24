@@ -11,7 +11,6 @@ import { ScrollTop } from "@/components/scroll-top"
 import { DiscountUrlHandler } from "@/components/discount-url-handler"
 import { NonBlockingScripts } from "@/components/non-blocking-scripts"
 import { ConsentManager } from "@/components/consent-manager"
-import { ErrorCapture } from "@/components/error-capture"
 import { CriticalCSS } from "@/components/critical-css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -76,7 +75,6 @@ export default function RootLayout({
             <ScrollTop />
             <NonBlockingScripts />
             <ConsentManager />
-            <ErrorCapture />
           </CartProvider>
         </AuthProvider>
       </body>

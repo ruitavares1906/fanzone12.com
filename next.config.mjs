@@ -71,10 +71,9 @@ const nextConfig = {
   },
 
   experimental: {
-    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
     scrollRestoration: true,
     serverActions: {
-      allowedOrigins: ['fanzone12.pt', 'localhost:3000'],
+      allowedOrigins: ['fanzone12.pt', 'localhost:3000', 'localhost:3001'],
     },
     optimizeServerReact: true,
     // Otimizações para reduzir bloqueio do thread
