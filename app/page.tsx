@@ -23,8 +23,12 @@ import { ClientAnimationWrapper } from "@/components/client-animation-wrapper"
 import { DesktopClubsWrapper } from "@/components/desktop-clubs-wrapper"
 import { StaticProductSection, StaticProductCarousel } from "@/components/static-product-section"
 import { StaticInfoSections } from "@/components/static-info-sections"
-import ParceirosSection from "@/components/parceiros-section"
-import DisablePinchZoom from "@/components/disable-pinch-zoom"
+import dynamic from "next/dynamic"
+import DisablePinchZoomWrapper from "@/components/disable-pinch-zoom-wrapper"
+
+const ParceirosSection = dynamic(() => import("@/components/parceiros-section").then(mod => mod.default), {
+  ssr: true
+})
 
  
 
@@ -94,7 +98,7 @@ export default async function Home() {
 
   return (
     <div className="animate-fade-in">
-      <DisablePinchZoom />
+      <DisablePinchZoomWrapper />
       {/* Promoção Banner */}
         <section className="bg-card text-card-foreground py-3 relative overflow-hidden border-b border-border">
          {/* Fundo animado no desktop, estático no mobile */}
