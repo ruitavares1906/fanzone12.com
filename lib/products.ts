@@ -41990,6 +41990,37 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       ]
     },
     {
+      "id": "adidas-if3741-04hhll1210271",
+      "nome": "Adidas Originals HandBall Spezial",
+      "categoria": "spezial",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "imagem": "/images/31USD Adidas originals HandBall Spezial 阿迪达斯 低帮 白黑货号 IF3741 04HHLL121027 Size 36 - 06.jpeg",
+      "imagensAdicionais": [
+        "/images/31USD Adidas originals HandBall Spezial 阿迪达斯 低帮 白黑货号 IF3741 04HHLL121027 Size 36 - 02.jpeg",
+        "/images/31USD Adidas originals HandBall Spezial 阿迪达斯 低帮 白黑货号 IF3741 04HHLL121027 Size 36 - 04.jpeg",
+        "/images/31USD Adidas originals HandBall Spezial 阿迪达斯 低帮 白黑货号 IF3741 04HHLL121027 Size 36 - 07.jpeg",
+      ]
+    },
+    {
+      "id": "adidas-L2812011231",
+      "nome": "Adidas Originals HandBall Spezial",
+      "categoria": "spezial",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 37.99,
+      "precoAntigo": 79.99,
+      "imagem": "/images/79f1da40.jpeg",
+      "imagensAdicionais": [
+        "/images/f226ab6e.jpeg",
+        "/images/ccee9e6e.jpeg",
+        "/images/c1ec5fec.jpeg",
+        "/images/d3884314.jpeg"
+      ]
+    },
+    {
       "id": "adidas-campus-00s-gy0037",
       "nome": "Adidas Originals Campus 00S",
       "categoria": "campus",
@@ -42250,7 +42281,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       ]
     },
     {
-      "id": "adidas-campus-00s-hq8707",
+      "id": "adidas-campus-00s-hq8707-2",
       "nome": "Adidas Originals Campus 00s",
       "categoria": "campus",
       "subcategoria": "sneakers",
@@ -43570,27 +43601,6 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         ]
       },
       {
-        "id": "ad-samba-wales-bonner-h06259",
-        "nome": "Adidas Gazelle Wales Bonner",
-        "categoria": "gazelle",
-        "subcategoria": "sneakers",
-        "marca": "Adidas",
-        "preco": 39.99,
-        "precoAntigo": 79.99,
-        "tamanhos": "S",
-        "imagem": "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 01.jpeg",
-        "imagensAdicionais": [
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 02.jpeg",
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 03.jpeg",
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 04.jpeg",
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 05.jpeg",
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 06.jpeg",
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 07.jpeg",
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 08.jpeg",
-          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 09.jpeg"
-        ]
-      },
-      {
         "id": "ad-samba-og-b75807",
         "nome": "Adidas Samba OG",
         "categoria": "samba",
@@ -43754,6 +43764,813 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 09.jpeg"
         ]
       },
+      {
+        "id": "ad-samba-wales-bonner-h06259",
+        "nome": "Adidas Gazelle Wales Bonner",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "S",
+        "imagem": "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 02.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 03.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 04.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 05.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 06.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 07.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 08.jpeg",
+          "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-originals-gazelle-indoor-hq8716id",
+        "nome": "Adidas Originals Gazelle Indoor ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 34.99,
+        "precoAntigo": 48.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 02.jpeg",
+          "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 03.jpeg",
+          "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 04.jpeg",
+          "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 05.jpeg",
+          "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 06.jpeg",
+          "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 07.jpeg",
+          "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 08.jpeg"
+        ]
+      },    
+      {
+        "id": "adidas-originals-gazelle-bb5478",
+        "nome": "Adidas Originals Gazelle ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 62.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 02.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 03.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 04.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 05.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 06.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 07.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 08.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-originals-gazelle-indoor-hl771101128",
+        "nome": "Adidas Originals Gazelle Indoor ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 36.99,
+        "precoAntigo": 50.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 02.jpeg",
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 03.jpeg",
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 04.jpeg",
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 05.jpeg",
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 06.jpeg",
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 07.jpeg",
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 08.jpeg",
+          "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 09.jpeg"
+        ]
+      },     
+      {
+        "id": "adidas-originals-gazelle-indoor-hl281201121",
+        "nome": "Adidas Originals Gazelle Indoor ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 37.99,
+        "precoAntigo": 55.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 02.jpeg",
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 03.jpeg",
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 04.jpeg",
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 05.jpeg",
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 06.jpeg",
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 07.jpeg",
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 08.jpeg",
+          "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 09.jpeg"
+        ]
+      },    
+      {
+        "id": "adidas-originals-gazelle-hl771101118",
+        "nome": "Adidas Originals Gazelle ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 35.99,
+        "precoAntigo": 50.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 02.jpeg",
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 03.jpeg",
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 04.jpeg",
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 05.jpeg",
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 06.jpeg",
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 07.jpeg",
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 08.jpeg",
+          "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 09.jpeg"
+        ]
+      },    
+      {
+        "id": "adidas-originals-gazelle-ie0546",
+        "nome": "Adidas Originals Gazelle Shoes ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 62.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 02.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 03.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 04.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 05.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 06.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 07.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 08.jpeg",
+          "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-originals-gazelle-indoor-hq8716",
+        "nome": "Adidas Originals Gazelle Indoor ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 58.00,
+        "tamanhos": "35-45",
+        "imagem": "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 02.jpeg",
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 03.jpeg",
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 04.jpeg",
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 05.jpeg",
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 06.jpeg",
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 07.jpeg",
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 08.jpeg",
+          "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 09.jpeg"
+        ]
+      },           
+      {
+        "id": "kith-adidas-gazelle-ie257202",
+        "nome": "KITH x Adidas Originals Gazelle Indoor",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 37.99,
+        "precoAntigo": 55.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 02.jpeg",
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 03.jpeg",
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 04.jpeg",
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 05.jpeg",
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 06.jpeg",
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 07.jpeg",
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 08.jpeg",
+          "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 09.jpeg"
+        ]
+      },  
+      {
+        "id": "adidas-originals-gazelle-ig3507",
+        "nome": "Adidas Originals Gazelle ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 62.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 02.jpeg",
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 03.jpeg",
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 04.jpeg",
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 05.jpeg",
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 06.jpeg",
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 07.jpeg",
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 08.jpeg",
+          "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-if3233",
+        "nome": "Adidas Originals Gazelle ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 37.99,
+        "precoAntigo": 54.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 02.jpeg",
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 03.jpeg",
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 04.jpeg",
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 05.jpeg",
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 06.jpeg",
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 07.jpeg",
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 08.jpeg",
+          "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 09.jpeg"
+        ]
+      },    
+      {
+        "id": "adidas-originals-gazelle-w-if3235",
+        "nome": "Adidas Originals Gazelle ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 35.99,
+        "precoAntigo": 50.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 02.jpeg",
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 03.jpeg",
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 04.jpeg",
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 05.jpeg",
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 06.jpeg",
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 07.jpeg",
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 08.jpeg",
+          "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 09.jpeg"
+        ]
+      },    
+      {
+        "id": "adidas-originals-gazelle-indoor-hl051701018",
+        "nome": "Adidas Originals Gazelle Indoor ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 48.99,
+        "precoAntigo": 76.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 02.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 03.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 04.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 05.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 06.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 07.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 08.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 09.jpeg"
+        ]
+      },    
+      {
+        "id": "adidas-originals-gazelle-indoor-hl051701019",
+        "nome": "Adidas Originals Gazelle Indoor ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 48.99,
+        "precoAntigo": 76.00,
+        "tamanhos": "35-45",
+        "imagem": "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 02.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 03.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 04.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 05.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 06.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 07.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 08.jpeg",
+          "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 09.jpeg"
+        ]
+      },    
+        
+      {
+        "id": "adidas-gazelle-ji2716",
+        "nome": "Adidas Gazelle Pink",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 49.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "N/A",
+        "imagem": "/images/💰USD40 Adidas 粉色 JI2716 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/💰USD40 Adidas 粉色 JI2716 - 02.jpeg",
+          "/images/💰USD40 Adidas 粉色 JI2716 - 03.jpeg",
+          "/images/💰USD40 Adidas 粉色 JI2716 - 04.jpeg",
+          "/images/💰USD40 Adidas 粉色 JI2716 - 05.jpeg",
+          "/images/💰USD40 Adidas 粉色 JI2716 - 06.jpeg",
+          "/images/💰USD40 Adidas 粉色 JI2716 - 07.jpeg",
+          "/images/💰USD40 Adidas 粉色 JI2716 - 08.jpeg",
+          "/images/💰USD40 Adidas 粉色 JI2716 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-hl091101221",
+        "nome": "Adidas Gazelle Indoor Trainers",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 35.99,
+        "precoAntigo": 50.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 02.jpeg",
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 03.jpeg",
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 04.jpeg",
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 05.jpeg",
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 06.jpeg",
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 07.jpeg",
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 08.jpeg",
+          "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-bold-hl771201216",
+        "nome": "Adidas Gazelle BoldID",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 37.99,
+        "precoAntigo": 54.00,
+        "tamanhos": "36-45",
+        "imagem": "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 02.jpeg",
+          "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 03.jpeg",
+          "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 04.jpeg",
+          "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 05.jpeg",
+          "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 06.jpeg",
+          "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 07.jpeg",
+          "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 08.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-bold-w-id7056",
+        "nome": "Adidas Gazelle Bold W ",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 62.00,
+        "tamanhos": "36-40",
+        "imagem": "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 02.jpeg",
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 03.jpeg",
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 04.jpeg",
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 05.jpeg",
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 06.jpeg",
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 07.jpeg",
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 08.jpeg",
+          "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 09.jpeg"
+        ]
+      },        
+      {
+        "id": "adidas-gazelle-bold-w-hl971201214",
+        "nome": "Adidas Gazelle Bold W",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 37.99,
+        "precoAntigo": 54.00,
+        "tamanhos": "35.5-45",
+        "imagem": "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 02.jpeg",
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 03.jpeg",
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 04.jpeg",
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 05.jpeg",
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 06.jpeg",
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 07.jpeg",
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 08.jpeg",
+          "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 09.jpeg"
+        ]
+      },
+      {
+      "id": "adidas-gazelle-bold-w-HQ6912ID",
+      "nome": "Adidas Gazelle Bold W",
+      "categoria": "gazelle",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 37.99,
+      "precoAntigo": 54.00,
+      "tamanhos": "35.5-45",
+      "imagem": "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 01.jpeg",
+      "imagensAdicionais": [
+       "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 03.jpeg",
+       "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 05.jpeg",
+       "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 08.jpeg"
+      ]
+    },
+    {
+      "id": "adidas-gazelle-bold-w-HQ6912ID-2",
+      "nome": "Adidas Gazelle Bold W",
+      "categoria": "gazelle",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 37.99,
+      "precoAntigo": 54.00,
+      "tamanhos": "35.5-45",
+      "imagem": "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 06.jpeg",
+      "imagensAdicionais": [
+       "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 02.jpeg",
+       "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 04.jpeg",
+       "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 07.jpeg"
+      ]
+    },
+    {
+      "id": "adidas-originals-gazelle-indoor-hl771201208",
+      "nome": "Adidas Originals Gazelle Indoor",
+      "categoria": "gazelle",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",
+      "preco": 37.99,
+      "precoAntigo": 54.00,
+      "tamanhos": "36-45",
+      "imagem": "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 01.jpeg",
+      "imagensAdicionais": [
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 02.jpeg",
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 03.jpeg",
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 04.jpeg",
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 05.jpeg",
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 06.jpeg",
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 07.jpeg",
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 08.jpeg",
+        "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 09.jpeg"
+      ]
+    },  
+      {
+        "id": "adidas-gazelle-ji2756",
+        "nome": "Adidas Gazelle Red White",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 49.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "N/A",
+        "imagem": "/images/💰USD35 Adidas 红白 JI2756 3 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 02.jpeg",
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 03.jpeg",
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 04.jpeg",
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 05.jpeg",
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 06.jpeg",
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 07.jpeg",
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 08.jpeg",
+          "/images/💰USD35 Adidas 红白 JI2756 3 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-azul-branco",
+        "nome": "Adidas Gazelle Blue White",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 45.99,
+        "precoAntigo": 89.99,
+        "tamanhos": "N/A",
+        "imagem": "/images/💰USD35 Adidas 蓝白 JI2717.5 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 02.jpeg",
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 03.jpeg",
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 04.jpeg",
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 05.jpeg",
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 06.jpeg",
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 07.jpeg",
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 08.jpeg",
+          "/images/💰USD35 Adidas 蓝白 JI2717.5 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-branco-preto",
+        "nome": "Adidas Gazelle White Black",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 54.99,
+        "precoAntigo": 99.99,
+        "tamanhos": "N/A",
+        "imagem": "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 02.jpeg",
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 03.jpeg",
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 04.jpeg",
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 05.jpeg",
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 06.jpeg",
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 07.jpeg",
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 08.jpeg",
+          "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-branco-vermelho-kitty",
+        "nome": "Adidas Gazelle White Red Kitty",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 45.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "N/A",
+        "imagem": "/images/💰USD35 Adidas 白红kitty II0013 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/💰USD35 Adidas 白红kitty II0013 - 02.jpeg",
+          "/images/💰USD35 Adidas 白红kitty II0013 - 03.jpeg",
+          "/images/💰USD35 Adidas 白红kitty II0013 - 04.jpeg",
+          "/images/💰USD35 Adidas 白红kitty II0013 - 05.jpeg",
+          "/images/💰USD35 Adidas 白红kitty II0013 - 06.jpeg",
+          "/images/💰USD35 Adidas 白红kitty II0013 - 07.jpeg",
+          "/images/💰USD35 Adidas 白红kitty II0013 - 08.jpeg",
+          "/images/💰USD35 Adidas 白红kitty II0013 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-branco-cinza",
+        "nome": "Adidas Gazelle White Grey",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 54.99,
+        "precoAntigo": 89.99,
+        "tamanhos": "N/A",
+        "imagem": "/images/💰USD44 Adidas 白灰 LJ9904 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 02.jpeg",
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 03.jpeg",
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 04.jpeg",
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 05.jpeg",
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 06.jpeg",
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 07.jpeg",
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 08.jpeg",
+          "/images/💰USD44 Adidas 白灰 LJ9904 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-azul-amarelo-gum",
+        "nome": "Adidas Gazelle Blue Yellow Gum",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "N/A",
+        "imagem": "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 02.jpeg",
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 03.jpeg",
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 04.jpeg",
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 05.jpeg",
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 06.jpeg",
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 07.jpeg",
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 08.jpeg",
+          "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 09.jpeg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-indoor-id1008",
+        "nome": "Adidas Gazelle Indoor",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "35-44, 45",
+        "imagem": "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 02.jpg",
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 03.jpg",
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 04.jpg",
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 05.jpg",
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 06.jpg",
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 07.jpg",
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 08.jpg",
+          "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-id6104",
+        "nome": "Adidas Gazelle",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "35-44, 45",
+        "imagem": "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 02.jpg",
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 03.jpg",
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 04.jpg",
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 05.jpg",
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 06.jpg",
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 07.jpg",
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 08.jpg",
+          "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-if9734",
+        "nome": "BAD BUNNY Adidas Gazelle Indoor",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 02.jpg",
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 03.jpg",
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 04.jpg",
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 05.jpg",
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 06.jpg",
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 07.jpg",
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 08.jpg",
+          "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-if9735",
+        "nome": "Adidas Gazelle Bad Bunny",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 02.jpg",
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 03.jpg",
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 04.jpg",
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 05.jpg",
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 06.jpg",
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 07.jpg",
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 08.jpg",
+          "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-if9641",
+        "nome": "Adidas Gazelle Indoor KITH",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "35-44",
+        "imagem": "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 02.jpg",
+          "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 03.jpg",
+          "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 04.jpg",
+          "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 05.jpg",
+          "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 06.jpg",
+          "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 08.jpg",
+          "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-if9642",
+        "nome": "Adidas Gazelle Indoor",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "35-44",
+        "imagem": "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 02.jpg",
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 03.jpg",
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 04.jpg",
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 05.jpg",
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 06.jpg",
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 07.jpg",
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 08.jpg",
+          "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-ih5483",
+        "nome": "Adidas Gazelle Indoor Kith",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-44",
+        "imagem": "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 02.jpg",
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 03.jpg",
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 04.jpg",
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 05.jpg",
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 06.jpg",
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 07.jpg",
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 08.jpg",
+          "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-ih9986",
+        "nome": "Adidas Gazelle Indoor Kith",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-44",
+        "imagem": "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 02.jpg",
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 03.jpg",
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 04.jpg",
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 05.jpg",
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 06.jpg",
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 07.jpg",
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 08.jpg",
+          "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-ji2076",
+        "nome": "Adidas Gazelle Blue",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 44.99,
+        "precoAntigo": 79.99,
+        "tamanhos": "36-44, 45",
+        "imagem": "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 02.jpg",
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 03.jpg",
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 04.jpg",
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 05.jpg",
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 06.jpg",
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 07.jpg",
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 08.jpg",
+          "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-ih0120",
+        "nome": "Adidas Gazelle purple",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 51.99,
+        "precoAntigo": 89.99,
+        "tamanhos": "35-46",
+        "imagem": "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 01.jpg",
+        "imagensAdicionais": [
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 02.jpg",
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 03.jpg",
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 04.jpg",
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 05.jpg",
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 06.jpg",
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 07.jpg",
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 08.jpg",
+          "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 09.jpg"
+        ]
+      },
+      {
+        "id": "adidas-gazelle-ig49902",
+        "nome": "Adidas Originals Gazelle",
+        "categoria": "gazelle",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 37.99,
+        "precoAntigo": 65.99,
+        "tamanhos": "36-45",
+        "imagem": "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 01.jpeg",
+        "imagensAdicionais": [
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 02.jpeg",
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 03.jpeg",
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 04.jpeg",
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 05.jpeg",
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 06.jpeg",
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 07.jpeg",
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 08.jpeg",
+          "/images/P💰US$27 Adidas originals Gazelle IG49902 HHLL1219 Size 36~45半 - 09.jpeg"
+        ]
+      }
       
                                     
 

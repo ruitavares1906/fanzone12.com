@@ -49,7 +49,7 @@ function SneakersContent() {
               <CardContent className="p-0 h-full flex flex-col relative">
                 <div className="relative w-full flex-1 bg-gradient-to-br from-green-400 via-green-500 to-green-600">
                   <Image
-                    src="/images/1362796-full_product.jpg"
+                    src="/images/tenis-adidas-campus-00s-feminino-core-black-preto-7.webp"
                     alt="Sneakers Adidas"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

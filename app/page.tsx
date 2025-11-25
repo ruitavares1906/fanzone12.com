@@ -1236,7 +1236,7 @@ export default async function Home() {
                     src="/images/1000541110.webp"
                     alt="Sneakers Nike"
                         fill
-                    className="object-cover"
+                    className="object-cover object-[center_center] scale-110 transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                         quality={75}
                       />
@@ -1269,10 +1269,10 @@ export default async function Home() {
                   <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
                   <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
                           <Image 
-                    src="/images/1362796-full_product.jpg"
+                    src="/images/tenis-adidas-campus-00s-feminino-core-black-preto-7.webp"
                     alt="Sneakers Adidas"
                             fill
-                    className="object-cover"
+                    className="object-cover object-[center_center] scale-110 transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                             quality={85}
                           />
@@ -1308,7 +1308,7 @@ export default async function Home() {
                     src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                     alt="Sneakers New Balance"
                         fill
-                    className="object-cover"
+                    className="object-cover object-[center_center] scale-110 transition-transform duration-700 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, 33vw"
                         quality={85}
                       />
@@ -1379,7 +1379,7 @@ export default async function Home() {
                       <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
                       <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
                       <Image
-                        src="/images/1362796-full_product.jpg"
+                        src="/images/tenis-adidas-campus-00s-feminino-core-black-preto-7.webp"
                         alt="Sneakers Adidas"
                         fill
                         className="object-cover"

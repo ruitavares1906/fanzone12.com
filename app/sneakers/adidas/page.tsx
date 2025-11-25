@@ -21,6 +21,16 @@ async function SneakersAdidasContent({
   const pagina = typeof params.pagina === "string" ? parseInt(params.pagina) : 1
   const porPagina = 30
 
+  // Função para embaralhar array (Fisher-Yates Shuffle)
+  function shuffleArray<T>(array: T[]): T[] {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+  }
+
   // Filtrar produtos que são sneakers da marca Adidas
   const allProducts = await getProdutos({ categoria: "sneakers" })
   const todosAdidasSneakers = allProducts.filter(
@@ -29,9 +39,13 @@ async function SneakersAdidasContent({
       product.marca?.toLowerCase().includes("adidas")
   )
   
-  const total = todosAdidasSneakers.length
+  // Embaralhar os produtos apenas na primeira página para garantir aleatoriedade mas manter consistência na navegação
+  // Nota: Idealmente a aleatoriedade devia ser consistente por sessão, mas para simplicidade aqui aplicamos sempre
+  const produtosExibicao = pagina === 1 ? shuffleArray(todosAdidasSneakers) : todosAdidasSneakers;
+  
+  const total = produtosExibicao.length
   const inicio = (pagina - 1) * porPagina
-  const adidasSneakers = todosAdidasSneakers.slice(inicio, inicio + porPagina)
+  const adidasSneakers = produtosExibicao.slice(inicio, inicio + porPagina)
 
   return (
     <div className="min-h-screen bg-gray-50">

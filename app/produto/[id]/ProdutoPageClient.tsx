@@ -374,6 +374,16 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
   // Preparar todas as imagens do produto (principal + adicionais)
   const allImages = [produto.imagem, ...(produto.imagensAdicionais || [])]
 
+  // Detecção completa de sneakers
+  const isSneakers = produto.subcategoria === "sneakers" || produto.categoria === "sneakers" || 
+                     produto.categoria === "campus" || produto.categoria === "samba" || 
+                     produto.categoria === "gazelle" || produto.categoria === "superstar" ||
+                     produto.categoria === "handball-spzl" || produto.categoria === "air-force-1-low" ||
+                     produto.categoria === "air-jordan-1-low" || produto.categoria === "air-force-1-high" ||
+                     produto.categoria === "air-force-1-fontanka" || produto.categoria === "air-force-shadow" ||
+                     produto.categoria === "dunk-sb" || produto.categoria === "dunk-low" ||
+                     produto.categoria === "newbalance" || (produto.categoria && produto.categoria.includes("nb-"))
+
   // Calcular estatísticas de avaliações
   const calcularEstatisticasAvaliacoes = () => {
     const estatisticas = {
@@ -456,11 +466,7 @@ export const ProdutoPageClient = ({ produto, params }: ProdutoPageClientProps) =
                         src={img || "/placeholder.svg"}
                         alt={`${produto.nome} - Vista ${i + 1}`}
                         fill
-                        className={`object-contain bg-white ${
-                          produto.marca?.toLowerCase().includes("adidas") && produto.subcategoria === "sneakers"
-                            ? "scale-125"
-                            : ""
-                        }`}
+                        className={`object-contain bg-white ${isSneakers ? "scale-150" : ""}`}
                         sizes="(max-width: 768px) 100vw, 50vw"
                         quality={85}
                         priority={i === 0}

@@ -27,6 +27,7 @@ export function ProductCard({
   
   const isDark = variant === 'dark'
   const isEdicaoEspecial = product.edicao_especial
+  const isSneaker = product.categoria === "sneakers" || product.subcategoria === "sneakers"
   
   return (
     <div className={`${isDark ? 'bg-black text-white border-gray-700' : 'bg-white text-gray-900 border-gray-200'} ${isEdicaoEspecial ? 'border-2 border-yellow-400 shadow-yellow-200 shadow-lg' : ''} rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group border`}>
@@ -36,7 +37,7 @@ export function ProductCard({
             src={imageSrc}
             alt={product.nome}
             fill
-            className="object-cover transition-transform group-hover:scale-105"
+            className={`object-cover transition-transform duration-700 group-hover:scale-105 ${isSneaker ? 'scale-110' : ''}`}
             loading={priority ? "eager" : "lazy"}
             priority={priority}
             sizes={sizes}
