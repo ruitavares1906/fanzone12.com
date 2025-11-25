@@ -179,7 +179,7 @@ async function SneakersAdidasContent({
             <div className="flex flex-col items-center text-center gap-2 transition-all duration-200 hover:scale-105">
               <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
                 <Image 
-                  src="/images/Spezial.jpg" 
+                  src="/images/gazelle.webp" 
                   alt="Originals Gazelle" 
                   fill
                   className="object-cover"
