@@ -10185,6 +10185,77 @@ const produtosArray = ([
   tags: ["barcelona", "2025/26", "equipamento", "principal", "vermelho"]
 },
 {
+  "id": "man-city-away-25-26-kids",
+  "nome": "Kit Kids Manchester City Away 25/26",
+  "descricao": "Camisola Away da Manchester City, temporada 25/26, tamanho 16-28",
+  "descricaoLonga": "Camisola oficial Away da Manchester City, disponível em tamanhos 16 a 28.",
+  "preco": 17.99,
+  "precoAntigo": 29.99,
+  "imagem": "/images/6543645645.webp",
+  "imagensAdicionais": [
+    "/images/TDTTR.webp",
+    "/images/53453535.webp",
+    "/images/534533.webp"
+  ],
+  "categoria": "crianca",
+  "clube": "manchester-city",
+  "liga": "premier-league",
+  "temporada": "25/26",
+  "cor": "Away",
+  "material": "Poliéster",
+  "marca": "Adidas",
+  "avaliacao": 4.5,
+  "numAvaliacoes": 25,
+  "destaque": false,
+  "tamanho": "16-28"
+},
+{
+  "id": "juventus-home-25-26-kids",
+  "nome": "Kit Kids Juventus Home 25/26",
+  "descricao": "Camisola Home da Juventus, temporada 25/26, tamanho 16-28",
+  "descricaoLonga": "Camisola oficial Home da Juventus, disponível em tamanhos 16 a 28.",
+  "preco": 17.99,
+  "precoAntigo": 29.99,
+  "imagem": "/images/9584397b-scaled.webp",
+  "imagensAdicionais": [
+    "/images/d46d8b7a-scaled.webp"
+  ],
+  "categoria": "crianca",
+  "clube": "juventus",
+  "liga": "serie-a",
+  "temporada": "25/26",
+  "cor": "Home",
+  "material": "Poliéster",
+  "marca": "Adidas",
+  "avaliacao": 4.5,
+  "numAvaliacoes": 25,
+  "destaque": false,
+  "tamanho": "16-28"
+},
+{
+  "id": "juventus-away-25-26-kids",
+  "nome": "Kit Kids Juventus Away 25/26",
+  "descricao": "Camisola Away da Juventus, temporada 25/26, tamanho 16-28",
+  "descricaoLonga": "Camisola oficial Away da Juventus, disponível em tamanhos 16 a 28.",
+  "preco": 17.99,
+  "precoAntigo": 29.99,
+  "imagem": "/images/bd640ff2-scaled.webp",
+  "imagensAdicionais": [
+    "/images/f638e7de-600x600.webp"
+  ],
+  "categoria": "crianca",
+  "clube": "juventus",
+  "liga": "serie-a",
+  "temporada": "25/26",
+  "cor": "Away",
+  "material": "Poliéster",
+  "marca": "Adidas",
+  "avaliacao": 4.5,
+  "numAvaliacoes": 25,
+  "destaque": false,
+  "tamanho": "16-28"
+},
+{
   id: "body-barcelona-rosa-2526",
   nome: "Barcelona Pink Baby Body 2025/26",
   descricao: "Body Barcelona Rosa 2025/26.",
