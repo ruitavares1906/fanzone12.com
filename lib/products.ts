@@ -42870,12 +42870,8 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "precoAntigo": 79.99,
       "imagem": "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 01.jpeg",
       "imagensAdicionais": [
-        "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 02.jpeg",
         "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 03.jpeg",
-        "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 04.jpeg",
         "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 05.jpeg",
-        "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 06.jpeg",
-        "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 07.jpeg",
         "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 08.jpeg"
       ]
     },
