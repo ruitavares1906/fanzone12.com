@@ -45,7 +45,7 @@ const parceirosExemplo: Parceiro[] = [
   {
     id: "2.5",
     nome: "Tatiana Moreira",
-    foto: "/images/626c89f0-66a2-492f-9835-376f6d46c2c3.jpg",
+    foto: "/images/626c89f0-66a2-492f-9835-376f6d46c2c3.JPG",
     redesSociais: {
       tiktok: "user734167786982",
       tiktokUrl: "https://www.tiktok.com/@user734167786982/video/7575248951062859041"
