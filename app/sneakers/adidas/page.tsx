@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Pagination } from "@/components/pagination"
 import Link from "next/link"
+import Image from "next/image"
 
 export const metadata = {
   title: "Sneakers Adidas | fanzone12.pt",
@@ -21,15 +22,25 @@ async function SneakersAdidasContent({
   const pagina = typeof params.pagina === "string" ? parseInt(params.pagina) : 1
   const porPagina = 30
 
-  // Função para embaralhar array (Fisher-Yates Shuffle)
-  function shuffleArray<T>(array: T[]): T[] {
-    const newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-    }
-    return newArray;
-  }
+  // IDs dos produtos que devem aparecer sempre nos primeiros lugares (ordem fixa)
+  const produtosPrioritariosIds = [
+    "adidas-campus-id6139",
+    "adidas-campus-h03472",
+    "adidas-if3741-04hhll121027",
+    "ad-samba-xlg-cq2640",
+    "adidas-originals-gazelle-indoor-hq8716id",
+    "adidas-campus-hl11121",
+    "adidas-campus-00s-hq8707",
+    "kith-adidas-gazelle-ie257202",
+    "adidas-campus-00s-h03471",
+    "adidas-if8914-02hhll1210166",
+    "adidas-L2812011231",
+    "adidas-gazelle-bold-w-HQ6912ID-2",
+    "adidas-if6562-hl051301028",
+    "adidas-samba-xlg-low-ie1379-3",
+    "adidas-campus-00s-hp6395",
+    "adidas-samba-xlg-low-ie1379-2"
+  ]
 
   // Filtrar produtos que são sneakers da marca Adidas
   const allProducts = await getProdutos({ categoria: "sneakers" })
@@ -39,9 +50,50 @@ async function SneakersAdidasContent({
       product.marca?.toLowerCase().includes("adidas")
   )
   
-  // Embaralhar os produtos apenas na primeira página para garantir aleatoriedade mas manter consistência na navegação
-  // Nota: Idealmente a aleatoriedade devia ser consistente por sessão, mas para simplicidade aqui aplicamos sempre
-  const produtosExibicao = pagina === 1 ? shuffleArray(todosAdidasSneakers) : todosAdidasSneakers;
+  // Separar produtos prioritários, samba e restantes
+  const produtosPrioritarios: typeof todosAdidasSneakers = []
+  const produtosSamba: typeof todosAdidasSneakers = []
+  const produtosRestantes: typeof todosAdidasSneakers = []
+  const produtosPrioritariosMap = new Map<string, typeof todosAdidasSneakers[0]>()
+
+  // Primeiro, criar um mapa dos produtos prioritários e separar os demais
+  todosAdidasSneakers.forEach(product => {
+    if (produtosPrioritariosIds.includes(product.id)) {
+      produtosPrioritariosMap.set(product.id, product)
+    } else {
+      // Verificar se é um produto samba (pelo nome, categoria ou ID)
+      const nomeLower = product.nome?.toLowerCase() || ""
+      const categoriaLower = product.categoria?.toLowerCase() || ""
+      const subcategoriaLower = product.subcategoria?.toLowerCase() || ""
+      const idLower = product.id.toLowerCase()
+      
+      if (nomeLower.includes("samba") || 
+          categoriaLower.includes("samba") || 
+          subcategoriaLower.includes("samba") ||
+          idLower.includes("samba")) {
+        produtosSamba.push(product)
+      } else {
+        produtosRestantes.push(product)
+      }
+    }
+  })
+
+  // Ordenar produtos prioritários na ordem especificada
+  produtosPrioritariosIds.forEach(id => {
+    const produto = produtosPrioritariosMap.get(id)
+    if (produto) {
+      produtosPrioritarios.push(produto)
+    }
+  })
+
+  // Ordenar produtos samba por ID para manter ordem fixa
+  produtosSamba.sort((a, b) => a.id.localeCompare(b.id))
+
+  // Ordenar produtos restantes por ID para manter ordem fixa (não aleatória)
+  produtosRestantes.sort((a, b) => a.id.localeCompare(b.id))
+
+  // Combinar: primeiro os prioritários, depois os samba, depois os restantes
+  const produtosExibicao = [...produtosPrioritarios, ...produtosSamba, ...produtosRestantes]
   
   const total = produtosExibicao.length
   const inicio = (pagina - 1) * porPagina
@@ -67,106 +119,112 @@ async function SneakersAdidasContent({
         </div>
 
         {/* Filtros de Categoria */}
-        <div className="mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3">
+        <div className="mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
           {/* Campus */}
           <Link href="/catalogo/campus" className="group">
-            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
-              <div className="flex flex-col items-center text-center gap-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-sm sm:text-base">👟</span>
-                </div>
-                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Campus
-                </h3>
-                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
-                  Adidas
-                </Badge>
+            <div className="flex flex-col items-center text-center gap-2 transition-all duration-200 hover:scale-105">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <Image 
+                  src="/images/campus.jpeg" 
+                  alt="Campus" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                />
               </div>
+              <h3 className="text-sm sm:text-base font-semibold text-gray-900">
+                Campus
+              </h3>
             </div>
           </Link>
 
           {/* Originals Samba */}
           <Link href="/catalogo/samba" className="group">
-            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
-              <div className="flex flex-col items-center text-center gap-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-sm sm:text-base">👟</span>
-                </div>
-                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Originals Samba
-                </h3>
-                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
-                  Adidas
-                </Badge>
+            <div className="flex flex-col items-center text-center gap-2 transition-all duration-200 hover:scale-105">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <Image 
+                  src="/images/samba.webp" 
+                  alt="Originals Samba" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                />
               </div>
+              <h3 className="text-sm sm:text-base font-semibold text-gray-900">
+                Originals Samba
+              </h3>
             </div>
           </Link>
 
           {/* Spezial */}
           <Link href="/catalogo/speziale" className="group">
-            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
-              <div className="flex flex-col items-center text-center gap-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-sm sm:text-base">👟</span>
-                </div>
-                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Spezial
-                </h3>
-                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
-                  Adidas
-                </Badge>
+            <div className="flex flex-col items-center text-center gap-2 transition-all duration-200 hover:scale-105">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <Image 
+                  src="/images/spezial.jpg" 
+                  alt="Spezial" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                />
               </div>
+              <h3 className="text-sm sm:text-base font-semibold text-gray-900">
+                Spezial
+              </h3>
             </div>
           </Link>
 
           {/* Originals Gazelle */}
           <Link href="/catalogo/gazelle" className="group">
-            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
-              <div className="flex flex-col items-center text-center gap-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-sm sm:text-base">👟</span>
-                </div>
-                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Originals Gazelle
-                </h3>
-                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
-                  Adidas
-                </Badge>
+            <div className="flex flex-col items-center text-center gap-2 transition-all duration-200 hover:scale-105">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <Image 
+                  src="/images/gazelle.webp" 
+                  alt="Originals Gazelle" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                />
               </div>
+              <h3 className="text-sm sm:text-base font-semibold text-gray-900">
+                Originals Gazelle
+              </h3>
             </div>
           </Link>
 
           {/* Superstar */}
           <Link href="/catalogo/superstar" className="group">
-            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
-              <div className="flex flex-col items-center text-center gap-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-sm sm:text-base">👟</span>
-                </div>
-                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Superstar
-                </h3>
-                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
-                  Adidas
-                </Badge>
+            <div className="flex flex-col items-center text-center gap-2 transition-all duration-200 hover:scale-105">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <Image 
+                  src="/images/Superstar.avif" 
+                  alt="Superstar" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                />
               </div>
+              <h3 className="text-sm sm:text-base font-semibold text-gray-900">
+                Superstar
+              </h3>
             </div>
           </Link>
 
           {/* Forum */}
           <Link href="/catalogo/forum" className="group">
-            <div className="p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:border-green-300 transition-all duration-200 hover:shadow-md group-hover:scale-105">
-              <div className="flex flex-col items-center text-center gap-1">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-sm sm:text-base">👟</span>
-                </div>
-                <h3 className="text-xs sm:text-sm font-semibold text-gray-900 leading-tight">
-                  Forum
-                </h3>
-                <Badge className="bg-green-600 text-white px-1.5 py-0.5 text-xs font-semibold">
-                  Adidas
-                </Badge>
+            <div className="flex flex-col items-center text-center gap-2 transition-all duration-200 hover:scale-105">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <Image 
+                  src="/images/forum.avif" 
+                  alt="Forum" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                />
               </div>
+              <h3 className="text-sm sm:text-base font-semibold text-gray-900">
+                Forum
+              </h3>
             </div>
           </Link>
         </div>

@@ -42172,26 +42172,6 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       ]
     },
     {
-      "id": "adidas-campus-00s-h03471",
-      "nome": "Adidas Originals Campus 00s",
-      "categoria": "campus",
-      "subcategoria": "sneakers",
-      "marca": "Adidas",
-      "preco": 39.99,
-      "precoAntigo": 77.99,
-      "imagem": "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 01.jpeg",
-      "imagensAdicionais": [
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 02.jpeg",
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 03.jpeg",
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 04.jpeg",
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 05.jpeg",
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 06.jpeg",
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 07.jpeg",
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 08.jpeg",
-        "/images/27USD Adidas Originals Campus 00s H03471 HL771200728 - 09.jpeg"
-      ]
-    },
-    {
       "id": "adidas-campus-00s-gx9405",
       "nome": "Adidas Originals Campus 00s",
       "categoria": "campus",
@@ -42412,25 +42392,25 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       ]
     },
     {
-      "id": "adidas-campus-00s-hp2924",
-      "nome": "Adidas Originals Campus 00s",
-      "categoria": "campus",
-      "subcategoria": "sneakers",
-      "marca": "Adidas",
-      "preco": 32.99,
-      "precoAntigo": 79.99,
-      "imagem": "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 01.jpeg",
-      "imagensAdicionais": [
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 02.jpeg",
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 03.jpeg",
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 04.jpeg",
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 05.jpeg",
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 06.jpeg",
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 07.jpeg",
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 08.jpeg",
-        "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL771001006 Size 36~45半货号 HP2924 - 09.jpeg"
-      ]
-    },
+    "id": "adidas-campus-00s-hp29241",
+    "nome": "Adidas Originals Campus 00S Low Top Khaki",
+    "categoria": "campus",
+    "subcategoria": "sneakers",
+    "marca": "Adidas",
+    "preco": 39.99,
+    "precoAntigo": 89.99,
+    "imagem": "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 01.jpeg",
+    "imagensAdicionais": [
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 02.jpeg",
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 03.jpeg",
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 04.jpeg",
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 05.jpeg",
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 06.jpeg",
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 07.jpeg",
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 08.jpeg",
+      "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 09.jpeg"
+    ]
+  },
     {
       "id": "adidas-campus-00s-hq8710",
       "nome": "Adidas originals Campus 00S",
@@ -42552,8 +42532,8 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       ]
     },
     {
-      "id": "adidas-campus-00s-hp6286",
-      "nome": "Adidas Campus 00s",
+      "id": "adidas-campus-00s-hp62861",
+      "nome": "Adidas Originals Campus 00s",
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
