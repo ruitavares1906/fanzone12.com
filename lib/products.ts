@@ -27096,7 +27096,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "destaque": true
                                                             },
                                                             {
-                                                              "id": "air-force-1-07-low-cream-green",
+                                                              "id": "air-force-1-07-low-cream-green-2",
                                                               "nome": "Air Force 1 '07 Low Creme e Verde",
                                                               "descricao": "Air Force 1 '07 Low com combinação de creme e verde.",
                                                               "descricaoLonga": "O Air Force 1 '07 Low Creme e Verde mistura conforto premium com design moderno. Feito em couro de alta qualidade, perfeito para uso diário e streetwear.",
@@ -29222,7 +29222,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "destaque": true
                                                                       },
                                                                       {
-                                                                        "id": "air-force-1-07-low-branco-azul-escuro",
+                                                                        "id": "air-force-1-07-low-branco-azul-escuro-2",
                                                                         "nome": "Air Force 1 '07 Low Branco e Azul Escuro",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de branco e azul escuro - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Branco e Azul Escuro combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
@@ -42612,7 +42612,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       ]
     },
     {
-      "id": "adidas-campus-00s-ie4740",
+      "id": "adidas-campus-00s-ie4740-2",
       "nome": "Adidas Originals Campus 00s",
       "categoria": "campus",
       "subcategoria": "sneakers",
