@@ -25,7 +25,9 @@ export function Footer() {
                 width={120} 
                 height={45} 
                 className="mr-3 w-20 h-auto sm:w-[120px]" 
-                sizes="(max-width: 640px) 80px, 120px"
+                priority={false}
+                quality={85}
+                unoptimized={true}
               />
             </div>
             <p className="text-gray-800 mb-6 leading-relaxed">
@@ -180,6 +182,8 @@ export function Footer() {
                       width={payment.width}
                       height={payment.height}
                       quality={100}
+                      priority={false}
+                      unoptimized={true}
                       className={`${payment.name === "PayPal" ? "h-10 sm:h-16" : payment.name === "Credit Card" ? "h-12 sm:h-16" : "h-9 sm:h-14"} w-auto object-contain mx-auto`}
                     />
                   </div>

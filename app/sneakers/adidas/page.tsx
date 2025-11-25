@@ -130,6 +130,8 @@ async function SneakersAdidasContent({
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  priority={false}
+                  quality={85}
                 />
               </div>
               <h3 className="text-sm sm:text-base font-semibold text-gray-900">
@@ -148,6 +150,8 @@ async function SneakersAdidasContent({
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  priority={false}
+                  quality={85}
                 />
               </div>
               <h3 className="text-sm sm:text-base font-semibold text-gray-900">
@@ -166,6 +170,8 @@ async function SneakersAdidasContent({
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  priority={false}
+                  quality={85}
                 />
               </div>
               <h3 className="text-sm sm:text-base font-semibold text-gray-900">
@@ -184,6 +190,8 @@ async function SneakersAdidasContent({
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  priority={false}
+                  quality={85}
                 />
               </div>
               <h3 className="text-sm sm:text-base font-semibold text-gray-900">
@@ -202,6 +210,8 @@ async function SneakersAdidasContent({
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  priority={false}
+                  quality={85}
                 />
               </div>
               <h3 className="text-sm sm:text-base font-semibold text-gray-900">
@@ -220,6 +230,8 @@ async function SneakersAdidasContent({
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  priority={false}
+                  quality={85}
                 />
               </div>
               <h3 className="text-sm sm:text-base font-semibold text-gray-900">
