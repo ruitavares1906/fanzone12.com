@@ -43,7 +43,16 @@ const parceirosExemplo: Parceiro[] = [
     }
   },
   {
-    id: "2",
+    id: "2.5",
+    nome: "Tatiana Moreira",
+    foto: "/images/626c89f0-66a2-492f-9835-376f6d46c2c3.jpg",
+    redesSociais: {
+      tiktok: "user734167786982",
+      tiktokUrl: "https://www.tiktok.com/@user734167786982/video/7575248951062859041"
+    }
+  },
+  {
+    id: "3",
     nome: "Diana Guedes",
     foto: "/images/dianafoto.jpg",
     redesSociais: {
@@ -52,7 +61,7 @@ const parceirosExemplo: Parceiro[] = [
     }
   },
   {
-    id: "3",
+    id: "4",
     nome: "Leonor Ferreira",
     foto: "",
     redesSociais: {
@@ -61,7 +70,7 @@ const parceirosExemplo: Parceiro[] = [
     },
   },
   {
-    id: "4",
+    id: "5",
     nome: "Luana Fonseca",
     foto: "",
     redesSociais: {
@@ -70,7 +79,7 @@ const parceirosExemplo: Parceiro[] = [
     },
   },
   {
-    id: "5",
+    id: "6",
     nome: "Natacha",
     foto: "",
     redesSociais: {
@@ -81,7 +90,7 @@ const parceirosExemplo: Parceiro[] = [
   },
 
   {
-    id: "6",
+    id: "7",
     nome: "Daniela Mendes",
     foto: "",
     redesSociais: {
@@ -91,7 +100,7 @@ const parceirosExemplo: Parceiro[] = [
     }
   },
   {
-    id: "7",
+    id: "8",
     nome: "Matilde Patrão",
     foto: "",
     redesSociais: {
@@ -99,7 +108,7 @@ const parceirosExemplo: Parceiro[] = [
     }
   },
   {
-    id: "8",
+    id: "9",
     nome: "Lara Silva Santos",
     foto: "",
     redesSociais: {
