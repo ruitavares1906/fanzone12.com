@@ -1,6 +1,18 @@
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
 import { getDestaques, getProdutos, getProdutoById } from "@/lib/products"
+import { 
+  LIGA_BETCLIC_IDS, 
+  BEST_SELLERS_IDS, 
+  ALL_TIME_BEST_SELLERS_IDS, 
+  YOUNG_FANS_KITS_IDS, 
+  FAN_FAVORITES_IDS, 
+  NATIONAL_TEAMS_IDS, 
+  BARCELONA_KITS_IDS, 
+  REAL_MADRID_KITS_IDS, 
+  PREMIER_LEAGUE_IDS, 
+  LA_LIGA_IDS 
+} from "@/lib/constants"
 import type { Product } from "@/lib/types"
 import Link from "next/link"
 import { ArrowRight, Truck, CreditCard, Star, Sparkles, Baby, Clock, Search, MessageCircle } from "lucide-react"
@@ -8,170 +20,77 @@ import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 import { ClientAnimationWrapper } from "@/components/client-animation-wrapper"
-import { DesktopClubsExpander } from "@/components/desktop-clubs-expander"
+import { DesktopClubsWrapper } from "@/components/desktop-clubs-wrapper"
 import { StaticProductSection, StaticProductCarousel } from "@/components/static-product-section"
 import { StaticInfoSections } from "@/components/static-info-sections"
 import ParceirosSection from "@/components/parceiros-section"
 import DisablePinchZoomWrapper from "@/components/disable-pinch-zoom-wrapper"
-import { 
-  BEST_SELLERS_IDS as bestSellersIds
-} from "@/lib/constants"
+
+ 
 
 export default async function Home() {
   const produtosDestaque = await getDestaques()
   
-  // Buscar produtos best sellers
+  // Buscar produtos por liga e filtrar apenas camisolas principais (sem kits de criança)
+  // Lista fixa para Liga Betclic conforme pedido
+  const ligaBetclicIds = LIGA_BETCLIC_IDS
+  const ligaPortuguesa = (await Promise.all(ligaBetclicIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // Buscar produtos best sellers (sneakers)
+  const bestSellersIds = BEST_SELLERS_IDS
   const bestSellers = (await Promise.all(bestSellersIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
   
-  // Adicionar adidas-originals-gazelle-indoor-hq8716 na 4ª posição
-  const gazelleProduct = await getProdutoById("adidas-originals-gazelle-indoor-hq8716id")
-  if (gazelleProduct) {
-    bestSellers.splice(3, 0, gazelleProduct)
+  // All-Time Best Sellers - Camisolas de grandes clubes europeus
+  const allTimeBestSellersIds = ALL_TIME_BEST_SELLERS_IDS
+  const allTimeBestSellers = (await Promise.all(allTimeBestSellersIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // Equipment for Young Fans - Kits de criança das equipas mais populares da Europa
+  const youngFansKitsIds = YOUNG_FANS_KITS_IDS
+  
+  // Fan Favorites - Favoritas dos Fans
+  const fanFavoritesIds = FAN_FAVORITES_IDS
+  const fanFavorites = (await Promise.all(fanFavoritesIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // National Teams - Seleções nacionais (2025/26 e 2026) - Special editions first
+  const nationalTeamsIds = NATIONAL_TEAMS_IDS
+  const nationalTeams = (await Promise.all(nationalTeamsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // Barcelona Kits (2025/26) - Ordem específica
+  const barcelonaKitsIds = BARCELONA_KITS_IDS
+  const barcelonaKits = (await Promise.all(barcelonaKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // Real Madrid Kits (2025/26) - Ordem específica
+  const realMadridKitsIds = REAL_MADRID_KITS_IDS
+  const realMadridKits = (await Promise.all(realMadridKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  const youngFansKits = (await Promise.all(youngFansKitsIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // Player Version Jerseys - Camisolas versão jogador
+  const playerVersionJerseys = await getProdutos({ versao: "jogador" })
+  const playerVersionJerseysLimited = playerVersionJerseys.slice(0, 12)
+  
+  // Lista fixa para Premier League conforme pedido
+  const premierLeagueIds = PREMIER_LEAGUE_IDS
+  const premierLeague = (await Promise.all(premierLeagueIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // Lista fixa para La Liga conforme pedido
+  const laLigaIds = LA_LIGA_IDS
+  const laLiga = (await Promise.all(laLigaIds.map(id => getProdutoById(id)))).filter(Boolean) as Product[]
+  
+  // Filtrar apenas camisolas principais (excluir kits de criança)
+  const filtrarCamisolasPrincipais = (produtos: any[]) => {
+    return produtos.filter(produto => 
+      !produto.nome.toLowerCase().includes('criança') && 
+      !produto.nome.toLowerCase().includes('child') &&
+      !produto.nome.toLowerCase().includes('kit') &&
+      produto.categoria !== "crianca"
+    )
   }
   
-  // Adicionar adidas-if6562-hl051301028 na 5ª posição
-  const adidasProduct = await getProdutoById("adidas-if6562-hl051301028")
-  if (adidasProduct) {
-    bestSellers.splice(4, 0, adidasProduct)
-  }
-  
-  // Buscar produtos versão jogador (limitar a 12)
-  const versaoJogador = await getProdutos({ versao: "jogador" })
-  const versaoJogadorLimitada = versaoJogador.slice(0, 12)
+  // Não precisamos filtrar as listas fixas pois já são os produtos específicos
+  const ligaPortuguesaFiltrada = ligaPortuguesa
+  const premierLeagueFiltrada = premierLeague
+  const laLigaFiltrada = laLiga
 
-  // Dados para Top Ligas
-  const topLigas = [
-    { id: "liga-portuguesa", name: "Liga Portuguesa", image: "/images/liga-portugal-2025-26-a07d17-1-1-square.webp", link: "/catalogo?liga=liga-portuguesa", objectPosition: "object-[center_30%]" },
-    { id: "premier-league", name: "Premier League", image: "/images/premier-league-2025-26-81f589.webp", link: "/catalogo?liga=premier-league", objectPosition: "object-top" },
-    { id: "la-liga", name: "La Liga", image: "/images/534364999_18523853707014415_2061336633682321964_n.webp", link: "/catalogo?liga=la-liga", objectPosition: "object-[center_45%]" },
-    { id: "ligue-1", name: "Ligue 1", image: "/images/496967650_18407572888103417_4204304631253123566_n.jpg", link: "/catalogo?liga=ligue-1", objectPosition: "object-[center_10%]" },
-    { id: "kits-crianca", name: "Kits Criança", image: "/images/MIC25_MAD_FCE_DS-6.webp", link: "/catalogo?categoria=crianca", objectPosition: "object-[center_20%]" },
-    { id: "retro", name: "Retro", image: "/images/NINTCHDBPICT000004408735.webp", link: "/catalogo?categoria=retro", objectPosition: "object-top" },
-  ];
-
-  // Dados para Novidades
-  const novidades = [
-    {
-      id: "portugal-principal-2026",
-      name: "Camisola Seleção Portugal Principal 2026",
-      image: "/images/2025092114284096_20_281_29.webp",
-      price: 17.99,
-      badge: "Novo",
-      href: "/produto/portugal-principal-2026"
-    },
-    {
-      id: "portugal-pantera-negra",
-      name: "Camisola Portugal Edição Especial Pantera Negra",
-      image: "/images/2025092114282251_20_281_29.webp",
-      price: 17.99,
-      badge: "Novo",
-      href: "/produto/portugal-pantera-negra"
-    },
-   {
-     id: "fcporto-special-edition-25-26-iv",
-     name: "FC Porto Special Edition IV 25/26",
-     image: "/images/IMG-1004.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/fcporto-special-edition-25-26-iv"
-   },
-   {
-     id: "benfica-special-edition-25-26-10",
-     name: "Benfica Special Edition 25/26",
-     image: "/images/896AFF59-187D-486A-92EC-4522003C558F.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/benfica-special-edition-25-26-10"
-   },
-   {
-     id: "barcelona-2526-special-edition-bright-pink-jersey",
-     name: "Camisola Barcelona Special Edition Bright Pink 2025/26",
-     image: "/images/barcelona-2025-bright-pink-special-shirt-6815904.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/barcelona-2526-special-edition-bright-pink-jersey"
-   },
-   {
-     id: "benfica-edicao-especial-25-26",
-     name: "Camisola Benfica guarda-redes rosa 2025/26",
-     image: "/images/0371ad58.jpg",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/benfica-edicao-especial-25-26"
-   },
-   {
-     id: "sporting-stromp-25-26",
-     name: "Camisola Sporting C.P. Stromp 25/26",
-     image: "/images/2025102310182442.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/sporting-stromp-25-26"
-   },
-   {
-     id: "sporting-edicao-especial-25-26",
-     name: "Camisola Sporting CP Edição Especial 2025/26",
-     image: "/images/a3d81a71.jpg",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/sporting-special-25-26"
-   },
-   {
-     id: "sporting-outubro-rosa-2025",
-     name: "Camisola Sporting C.P. Outubro Rosa 2025",
-     image: "/images/2025110416210851.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/sporting-outubro-rosa-2025"
-   },
-   {
-     id: "sporting-special-25-26",
-     name: "Camisola Sporting CP Special Edition 2025/26",
-     image: "/images/16a8dee8.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/sporting-special-25-26"
-   },
-   {
-     id: "t-shirt-treino-plantel-fc-porto-2526",
-     name: "Camisola FC Porto Edição Especial 2025/26",
-     image: "/images/82e839c6.jpg",
-     price: 23.99,
-     badge: "Novo",
-     href: "/produto/t-shirt-treino-plantel-fc-porto-2526"
-   },
-   {
-     id: "vitoria-sc-principal-25-26",
-     name: "Camisola Vitoria SC Principal 2025/26",
-     image: "/images/01_25_26 Guimarães Home S-XXL _ Yupoo.jpg",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/vitoria-sc-principal-25-26"
-   },
-   {
-     id: "vitoria-sc-alternativa-25-26",
-     name: "Camisola Vitoria SC Alternativa 2025/26",
-     image: "/images/b82c2c0a.jpg",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/vitoria-sc-alternativa-25-26"
-   },
-   {
-     id: "flamengo-third-25-26",
-     name: "Camisola Flamengo 3º Equipamento 2025/26",
-     image: "/images/82c0ccdf.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/flamengo-third-25-26"
-   },
-   {
-     id: "roma-third-away-25-26",
-     name: "Camisola Roma 3º Equipamento Away 2025/26",
-     image: "/images/01_25_26 Roma third away S-4XL _ Yupoo.webp",
-     price: 17.99,
-     badge: "Novo",
-     href: "/produto/roma-third-away-25-26"
-   }
- ];
 
   return (
     <div className="animate-fade-in">
@@ -185,147 +104,198 @@ export default async function Home() {
           <div className="text-center">
               <div className="flex items-center justify-center gap-2 text-sm sm:text-base font-semibold">
                <span>🎁</span>
-              <span className="text-blue-700">PROMOÇÃO ESPECIAL:</span>
-              <span className="text-foreground">Leva 4 Camisolas e Paga Apenas 3!</span>
+              <span className="text-blue-700">SPECIAL PROMOTION:</span>
+              <span className="text-foreground">Buy 4 Jerseys and Pay for Only 3!</span>
                <span>🎁</span>
             </div>
             <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-              Desconto automático aplicado no carrinho • Válido em toda a loja
+              Automatic discount applied at checkout • Valid storewide
             </div>
           </div>
         </div>
       </section>
 
-      {/* Top Ligas Section - Unificada */}
+      {/* Top Ligas Section */}
       <section className="bg-gradient-to-br from-slate-50 to-gray-50 py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <Badge className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4 inline-block">
-              Top Ligas
+            <Badge className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
+              Top Leagues
             </Badge>
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Explore as Melhores Ligas
+              Explore the Best Leagues
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Descubra os produtos das principais ligas e competições do mundo
+              Discover products from the main leagues and competitions around the world
             </p>
           </div>
 
-          {/* Grid Única Responsiva */}
+          {/* Unified Responsive Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            {topLigas.map((card, index) => (
-              <ClientAnimationWrapper
-                key={card.id}
-                delay={index * 0.1}
-                className="animate-scale-in"
+            {[
+              { 
+                id: "premier-league",
+                name: "Premier League", 
+                image: "/images/premier-league-2025-26-81f589.webp", 
+                href: "/catalogo?liga=premier-league",
+                objectPosition: "object-top"
+              },
+              { 
+                id: "la-liga",
+                name: "La Liga", 
+                image: "/images/534364999_18523853707014415_2061336633682321964_n.webp", 
+                href: "/catalogo?liga=la-liga",
+                objectPosition: "object-[center_45%]"
+              },
+              { 
+                id: "ligue-1",
+                name: "Ligue 1", 
+                image: "/images/496967650_18407572888103417_4204304631253123566_n.jpg", 
+                href: "/catalogo?liga=ligue-1",
+                objectPosition: "object-[center_10%]"
+              },
+              { 
+                id: "liga-portuguesa",
+                name: "Portuguese League", 
+                image: "/images/liga-portugal-2025-26-a07d17-1-1-square.webp", 
+                href: "/catalogo?liga=liga-portuguesa",
+                objectPosition: "object-[center_30%]"
+              },
+              { 
+                id: "kits-crianca",
+                name: "Kids Kits", 
+                image: "/images/MIC25_MAD_FCE_DS-6.webp", 
+                href: "/catalogo?categoria=crianca",
+                objectPosition: "object-[center_20%]"
+              },
+              { 
+                id: "retro",
+                name: "Retro", 
+                image: "/images/NINTCHDBPICT000004408735.webp", 
+                href: "/catalogo?categoria=retro",
+                objectPosition: "object-top"
+              },
+            ].map((liga, index) => (
+              <Link
+                key={liga.id}
+                href={liga.href}
+                className="modern-card rounded-2xl shadow-modern block overflow-hidden"
               >
-                <Link
-                  href={card.link}
-                  className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group block h-full"
-                >
-                  <div className="relative aspect-square overflow-hidden">
-                    <Image
-                      src={card.image}
-                      alt={card.name}
-                      fill
-                      className={`object-cover ${card.objectPosition} transition-all duration-500 group-hover:scale-105`}
-                      sizes="(max-width: 768px) 45vw, 33vw"
-                      quality={80}
-                      priority={true}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                  <div className="p-4 md:p-6 text-center">
-                    <h3 className="text-sm md:text-lg font-semibold text-gray-800 mb-3 md:mb-4 group-hover:text-blue-600 transition-colors">
-                      {card.name}
-                    </h3>
-                    <Button
-                      size="default"
-                      className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-1 md:px-6 md:py-2 text-xs md:text-sm rounded-full hover:from-blue-600 hover:to-indigo-600 transition-all w-full md:w-auto"
-                    >
-                      VER MAIS
-                    </Button>
-                  </div>
-                </Link>
-              </ClientAnimationWrapper>
+                <div className="relative aspect-square overflow-hidden">
+                  <Image 
+                    src={liga.image}
+                    alt={liga.name}
+                    fill
+                    className={`object-cover ${liga.objectPosition}`}
+                    priority={index < 4}
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    quality={70}
+                  />
+                </div>
+                <div className="p-4 md:p-6">
+                  <h3 className="text-sm md:text-lg font-semibold text-gray-800 text-center">
+                    {liga.name}
+                  </h3>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Círculos de Ligas Adicionais Section */}
+      {/* Leagues Circles Section */}
+      <section className="bg-gray-50 py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+            {[
+              {
+                id: "national-teams",
+                name: "National Teams",
+                image: "/images/Logo_copa_2026.png",
+                href: "/catalogo?liga=selecoes-nacionais"
+              },
+              {
+                id: "serie-a",
+                name: "Serie A",
+                image: "/images/SerieA_logo.webp",
+                href: "/catalogo?liga=serie-a"
+              },
+              {
+                id: "bundesliga",
+                name: "Bundesliga",
+                image: "/images/Bundesliga_logo_(2017).webp",
+                href: "/catalogo?liga=bundesliga"
+              },
+              {
+                id: "other-leagues",
+                name: "Other Leagues",
+                image: "/images/ligasoutras.png",
+                href: "/catalogo?liga=outras-ligas"
+              },
+            ].map((categoria) => (
+              <Link
+                key={categoria.id}
+                href={categoria.href}
+                className="group flex flex-col items-center"
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-full">
+                  <div className="relative w-full h-full rounded-full bg-white overflow-hidden">
+                    <Image
+                      src={categoria.image}
+                      alt={categoria.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 96px, 128px"
+                      quality={75}
+                    />
+                  </div>
+                </div>
+                <p className="mt-3 text-sm md:text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
+                  {categoria.name}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Product Categories Squares Section */}
       <section className="bg-white py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {[
-              { name: "Serie A", logo: "SerieA_logo.webp", link: "/catalogo?liga=serie-a" },
-              { name: "Bundesliga", logo: "Bundesliga_logo_(2017).webp", link: "/catalogo?liga=bundesliga" },
-              { name: "Seleções", logo: "Portugal_FPF.webp", link: "/catalogo?liga=selecoes-nacionais" },
-              { name: "Outras Ligas", logo: "ligasoutras.png", link: "/catalogo?liga=outras-ligas" },
-            ].map((liga) => (
+              {
+                id: "sneakers",
+                name: "Sneakers",
+                image: "/images/www-001017731202531-08.avif",
+                href: "/sneakers"
+              },
+              {
+                id: "bolas",
+                name: "Soccer Balls",
+                image: "/images/Bola_Pro_da_Fase_da_Liga_da_UCL_25-26_Branco_JD0188_HM1.avif",
+                href: "/catalogo?categoria=bolas"
+              },
+            ].map((categoria) => (
               <Link
-                key={liga.name}
-                href={liga.link}
+                key={categoria.id}
+                href={categoria.href}
                 className="group flex flex-col items-center"
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-full hover:scale-110 transition-transform duration-300">
-                  <div className="relative w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
-                    <Image
-                      src={`/images/${liga.logo}`}
-                      alt={liga.name}
-                      fill
-                      className="object-contain p-2"
-                      sizes="(max-width: 768px) 96px, 128px"
-                      quality={80}
-                    />
-                  </div>
-                </div>
-                <p className="mt-3 text-sm md:text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                  {liga.name}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Categorias em Quadrado Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-gray-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Categorias
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Descubra as nossas principais categorias de produtos
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-            {[
-              { name: "Camisolas", image: "/images/1751647533_9cc7b4a154af3f78533665e36b695936.webp", link: "/catalogo" },
-              { name: "Sneakers", image: "/images/www-001017731202531-08.avif", link: "/sneakers" },
-              { name: "Capas de Telemóvel", image: "/images/personalized-soccer-01-caseitup-6617908.webp", link: "/catalogo/capas" },
-              { name: "Bolas", image: "/images/Bola_Pro_da_Fase_da_Liga_da_UCL_25-26_Branco_JD0188_HM1.avif", link: "/catalogo?categoria=bolas" },
-            ].map((category) => (
-              <Link
-                key={category.name}
-                href={category.link}
-                className="group flex flex-col items-center"
-              >
-                <div className="w-40 h-40 md:w-56 md:h-56 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1.5 rounded-2xl hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl">
+                <div className="w-40 h-40 md:w-48 md:h-48 border-4 border-transparent bg-gradient-to-r from-purple-500 to-orange-500 p-1 rounded-2xl shadow-lg">
                   <div className="relative w-full h-full rounded-xl bg-white overflow-hidden">
                     <Image
-                      src={category.image}
-                      alt={category.name}
+                      src={categoria.image}
+                      alt={categoria.name}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 160px, 224px"
-                      quality={80}
+                      sizes="(max-width: 768px) 160px, 192px"
+                      quality={75}
                     />
                   </div>
                 </div>
-                <p className="mt-4 text-lg md:text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                  {category.name}
+                <p className="mt-4 text-base md:text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors text-center">
+                  {categoria.name}
                 </p>
               </Link>
             ))}
@@ -333,151 +303,63 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Últimas Novidades Section - Unificado */}
-      <section className="py-8 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
-            <Badge className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
-              <Sparkles className="w-4 h-4 mr-2" />
-              Novidades
-            </Badge>
-            <h2 className="text-responsive-lg text-foreground mb-4">
-              Últimas Novidades
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              As camisolas mais recentes que acabaram de chegar à nossa coleção
-            </p>
-          </div>
-
-          {/* Carousel Único Responsivo */}
-          <div>
-            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
-              <CarouselContent className="-ml-2 md:-ml-4">
-                 {novidades.map((product, index) => (
-                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-[85%] md:basis-[28%] lg:basis-[22%]">
-                    <ClientAnimationWrapper
-                      delay={index * 0.1}
-                      className="animate-scale-in"
-                    >
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group">
-                        <Link href={product.href} className="block">
-                          <div className="relative aspect-square overflow-hidden">
-                            <Image 
-                              src={product.image}
-                              alt={product.name}
-                              fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
-                              loading="lazy"
-                              sizes="(max-width: 768px) 80vw, (max-width: 1200px) 30vw, 25vw"
-                              quality={80}
-                            />
-                            <div className="absolute top-3 left-3">
-                              <Badge className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
-                                {product.badge}
-                              </Badge>
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          </div>
-                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                            <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
-                              {product.name}
-                            </h3>
-                            <div className="flex items-center justify-start">
-                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-                                {product.price}€
-                              </span>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                    </ClientAnimationWrapper>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
-
-          {/* Ver Todas as Novidades Button */}
-          <div className="text-center mt-12">
-            <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 shadow-lg px-8 py-4 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
-              <Link href="/catalogo" className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5" />
-                Ver Todas as Novidades
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Mais Vendidas Section - Unificado */}
+      {/* All-Time Best Sellers Section - 2nd Section */}
       <section className="py-8 bg-gradient-to-br from-gray-50 to-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
               <Star className="w-4 h-4 mr-2" />
-              Mais Vendidas
+              All-Time Best Sellers
             </Badge>
             <h2 className="text-responsive-lg text-foreground mb-4">
-              Best Sellers
+              All-Time Best Sellers
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Descubra as camisolas mais populares escolhidas pelos nossos clientes
+              Discover the most popular jerseys from the biggest European clubs, chosen by our customers
             </p>
           </div>
 
-          {/* Carousel Único Responsivo */}
-          <div>
-            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
-              <CarouselContent className="-ml-2 md:-ml-4">
-                {/* Best Sellers Mapeado Automaticamente com Dados Reais */}
-                {bestSellers.map((product, index) => (
-                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-[85%] md:basis-[28%] lg:basis-[22%]">
-                    <ClientAnimationWrapper
-                      delay={index * 0.1}
-                      className="animate-scale-in"
-                    >
-                      <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group bg-white">
-                        <Link href={`/produto/${product.id}`} className="block">
-                          <div className="relative aspect-square overflow-hidden">
-                            <Image 
-                              src={product.imagem}
-                              alt={product.nome}
-                              fill
-                              className="object-cover transition-all duration-500 group-hover:scale-105"
-                              loading="lazy"
-                              sizes="(max-width: 768px) 80vw, (max-width: 1200px) 30vw, 25vw"
-                              quality={80}
-                            />
-                            <div className="absolute top-3 left-3">
-                              <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
-                                {product.edicao_especial ? "Mais Vendida" : "Popular"}
-                              </Badge>
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          </div>
-                          <div className="p-6 bg-gradient-to-br from-white to-gray-50/50">
-                            <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
-                              {product.nome}
-                            </h3>
-                            <div className="flex items-center justify-start">
-                              <span className="text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-                                {product.preco}€
-                              </span>
-                            </div>
-                          </div>
-                        </Link>
+          {/* Unified Responsive Carousel */}
+          <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {allTimeBestSellers.map((product, index) => (
+                <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-4/5 md:basis-[28%] lg:basis-[22%]">
+                  <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
+                    <Link href={`/produto/${product.id}`} className="block">
+                      <div className="relative aspect-square overflow-hidden">
+                        <Image 
+                          src={product.imagem}
+                          alt={product.nome}
+                          fill
+                          className="object-cover"
+                          loading="lazy"
+                          sizes="(max-width: 768px) 80vw, (max-width: 1024px) 28vw, 22vw"
+                          quality={75}
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
+                            Best Seller
+                          </Badge>
+                        </div>
                       </div>
-                    </ClientAnimationWrapper>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                      <div className="p-4 md:p-6 bg-gradient-to-br from-white to-gray-50/50">
+                        <h3 className="font-bold text-base md:text-lg mb-3 text-gray-800 line-clamp-2">
+                          {product.nome}
+                        </h3>
+                        <div className="flex items-center justify-start">
+                          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            {product.preco.toFixed(2)}€
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
 
           {/* Call to Action */}
           <div className="text-center mt-12">
@@ -488,7 +370,7 @@ export default async function Home() {
             >
               <Link href="/catalogo" className="flex items-center gap-2">
                 <Star className="w-5 h-5" />
-                Ver Todas as Mais Vendidas
+                View All Best Sellers
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -496,31 +378,26 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Modern Top Clubs Section */}
+      {/* Modern Top Clubs Section - 3rd Section */}
       <section className="py-8 bg-gradient-to-br from-white to-blue-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
               Top Clubs
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Encontre as camisolas dos maiores clubes europeus com qualidade premium e designs autênticos
+              Find jerseys from the biggest European clubs with premium quality and authentic designs
             </p>
           </div>
 
           {/* Desktop Grid */}
-          <DesktopClubsExpander />
+          <DesktopClubsWrapper />
 
           {/* Mobile Carousel */}
           <div className="md:hidden">
             <Carousel className="w-full">
               <CarouselContent>
                 {[
-                  { name: "Sporting CP", logo: "pngwing.com (1).webp", href: "/catalogo?clube=sporting" },
-                  { name: "Benfica", logo: "pngwing.com.webp", href: "/catalogo?clube=benfica" },
-                  { name: "Porto", logo: "pngwing.com (2).webp", href: "/catalogo?clube=porto" },
-                  { name: "Braga", logo: "braga-logo.png", href: "/catalogo?clube=sc-braga" },
-                  { name: "Vitória SC", logo: "Vitoria-Sport-Clube-logo.png", href: "/catalogo?clube=vitoria-sc" },
                   { name: "Barcelona", logo: "pngwing.com (3).webp", href: "/catalogo?clube=barcelona" },
                   { name: "Real Madrid", logo: "pngwing.com (9).webp", href: "/catalogo?clube=real-madrid" },
                   { name: "Manchester United", logo: "pngwing.com (8).webp", href: "/catalogo?clube=manchester-united" },
@@ -533,21 +410,26 @@ export default async function Home() {
                   { name: "Chelsea", logo: "Chelsea-logo.webp", href: "/catalogo?clube=chelsea" },
                   { name: "AC Milan", logo: "Milan-logo.png", href: "/catalogo?clube=milan" },
                   { name: "Tottenham", logo: "Tottenham-logo.png", href: "/catalogo?clube=tottenham" },
+                  { name: "Sporting CP", logo: "pngwing.com (1).webp", href: "/catalogo?clube=sporting" },
+                  { name: "Benfica", logo: "pngwing.com.webp", href: "/catalogo?clube=benfica" },
+                  { name: "Porto", logo: "pngwing.com (2).webp", href: "/catalogo?clube=porto" },
+                  { name: "Braga", logo: "braga-logo.png", href: "/catalogo?clube=sc-braga" },
+                  { name: "Vitória SC", logo: "Vitoria-Sport-Clube-logo.png", href: "/catalogo?clube=vitoria-sc" },
                 ].map((club) => (
                   <CarouselItem key={club.name} className="basis-1/3">
                     <Link
                       href={club.href}
-                      className="modern-card group p-4 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300 block"
+                      className="modern-card group p-4 text-center rounded-2xl shadow-modern block"
                     >
                       <div className="relative w-12 h-12 mx-auto mb-3">
                         <Image
                           src={`/images/${club.logo}`}
                           alt={club.name}
                           fill
-                          className="object-contain transition-transform group-hover:scale-110"
+                          className="object-contain"
                           loading="lazy"
                           sizes="48px"
-                          quality={85}
+                          quality={75}
                         />
                       </div>
                       <p className="font-semibold text-sm text-gray-800 group-hover:text-blue-600 transition-colors">
@@ -566,7 +448,7 @@ export default async function Home() {
           <div className="flex justify-center mt-8">
             <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
               <Link href="/catalogo" className="flex items-center gap-2">
-                Ver todos os clubes
+                View all clubs
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -574,60 +456,48 @@ export default async function Home() {
         </div>
       </section>
 
-
-      {/* Versão Jogador Section */}
-      <section className="py-12 bg-gradient-to-br from-gray-50 to-white">
+      {/* Fan Favorites Section - 4th Section */}
+      <section className="py-8 bg-gradient-to-br from-purple-50 to-pink-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
+            <Badge className="bg-gradient-to-r from-purple-600 to-pink-600 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
+              <Star className="w-4 h-4 mr-2" />
+              Fan Favorites
+            </Badge>
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              ⚽ Versão Jogador
+              Fan Favorites
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Camisolas de qualidade profissional, idênticas às usadas pelos jogadores em campo
+              The most loved jerseys chosen by our fans from the biggest European clubs
             </p>
           </div>
 
-          <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+          {/* Unified Responsive Carousel */}
+          <Carousel className="w-full" opts={{ align: "start", loop: false }}>
             <CarouselContent className="-ml-2 md:-ml-4">
-              {versaoJogadorLimitada.map((product) => (
-                <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group bg-white">
+              {fanFavorites.map((product) => (
+                <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-4/5 md:basis-1/4 lg:basis-1/5">
+                  <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
                     <Link href={`/produto/${product.id}`} className="block">
                       <div className="relative aspect-square overflow-hidden">
-                        <Image 
+                        <Image
                           src={product.imagem}
                           alt={product.nome}
                           fill
-                          className="object-cover transition-all duration-500 group-hover:scale-105"
-                          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                          quality={85}
+                          className="object-cover"
+                          loading="lazy"
+                          sizes="(max-width: 768px) 80vw, (max-width: 1024px) 25vw, 20vw"
+                          quality={70}
                         />
-                        <div className="absolute top-2 right-2">
-                          <Badge className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold shadow-lg">
-                            ⚽ Jogador
-                          </Badge>
-                        </div>
                       </div>
-                      <div className="p-4">
-                        <h3 className="font-semibold text-gray-900 text-sm mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                      <div className="p-4 md:p-6 bg-gradient-to-br from-white to-gray-50/50">
+                        <h3 className="font-bold text-base md:text-lg mb-3 text-gray-800 line-clamp-2">
                           {product.nome}
                         </h3>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <span className="text-lg font-bold text-gray-900">
-                              €{product.preco.toFixed(2)}
-                            </span>
-                            {product.precoAntigo && (
-                              <span className="text-sm text-gray-500 line-through">
-                                €{product.precoAntigo.toFixed(2)}
-                              </span>
-                            )}
-                          </div>
-                          {product.precoAntigo && (
-                            <Badge className="bg-red-100 text-red-800 text-xs">
-                              -{Math.round(((product.precoAntigo - product.preco) / product.precoAntigo) * 100)}%
-                            </Badge>
-                          )}
+                        <div className="flex items-center justify-start">
+                          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            {product.preco.toFixed(2)}€
+                          </span>
                         </div>
                       </div>
                     </Link>
@@ -639,11 +509,11 @@ export default async function Home() {
             <CarouselNext />
           </Carousel>
 
-          {/* Ver Mais Button */}
+          {/* View More Button */}
           <div className="flex justify-center mt-8">
-            <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
-              <Link href="/catalogo?versao=jogador" className="flex items-center gap-2">
-                Ver mais camisolas de jogador
+            <Button asChild className="modern-button bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
+              <Link href="/catalogo" className="flex items-center gap-2">
+                View All Fan Favorites
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -651,49 +521,375 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Sneakers Section */}
-      <section className="py-8 modern-section">
+      {/* National Teams Section - 5th Section */}
+      <section className="py-8 bg-gradient-to-br from-white to-red-50/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Coleção Sneakers
+              National Teams
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Descobre as últimas novidades em sneakers das melhores marcas para completar o teu estilo.
+              Support your national team with official jerseys from the biggest tournaments
+            </p>
+            </div>
+            
+            {/* Unified Responsive Carousel */}
+            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {nationalTeams.map((product) => (
+                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-4/5 md:basis-1/4 lg:basis-1/5">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
+                      <Link href={`/produto/${product.id}`} className="block">
+                        <div className="relative aspect-square overflow-hidden">
+                          <Image 
+                            src={product.imagem}
+                            alt={product.nome}
+                            fill
+                            className="object-cover"
+                            loading="lazy"
+                            sizes="(max-width: 768px) 80vw, (max-width: 1024px) 25vw, 20vw"
+                            quality={85}
+                          />
+                        </div>
+                        <div className="p-4 md:p-6 bg-gradient-to-br from-white to-gray-50/50">
+                          <h3 className="font-bold text-base md:text-lg mb-3 text-gray-800 line-clamp-2">
+                            {product.nome}
+                          </h3>
+                          <div className="flex items-center justify-start">
+                            <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                              {product.preco.toFixed(2)}€
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+
+          {/* View More Button */}
+          <div className="flex justify-center mt-8">
+            <Button asChild className="modern-button bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
+              <Link href="/catalogo?liga=selecoes-nacionais" className="flex items-center gap-2">
+                View All National Teams
+                <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+      </section>
+
+      {/* All Barcelona Kits Section - 6th Section */}
+      <section className="py-8 bg-gradient-to-br from-blue-50 to-red-50/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-responsive-lg text-gray-800 mb-4">
+              All Barcelona Kits
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Discover the complete collection of FC Barcelona jerseys and kits
+            </p>
+            </div>
+            
+            {/* Unified Responsive Carousel */}
+            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {barcelonaKits.map((product) => (
+                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-4/5 md:basis-1/4 lg:basis-1/5">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
+                      <Link href={`/produto/${product.id}`} className="block">
+                        <div className="relative aspect-square overflow-hidden">
+                          <Image 
+                            src={product.imagem}
+                            alt={product.nome}
+                            fill
+                            className="object-cover"
+                            loading="lazy"
+                            sizes="(max-width: 768px) 80vw, (max-width: 1024px) 25vw, 20vw"
+                            quality={85}
+                          />
+                        </div>
+                        <div className="p-4 md:p-6 bg-gradient-to-br from-white to-gray-50/50">
+                          <h3 className="font-bold text-base md:text-lg mb-3 text-gray-800 line-clamp-2">
+                            {product.nome}
+                          </h3>
+                          <div className="flex items-center justify-start">
+                            <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                              {product.preco.toFixed(2)}€
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+
+          {/* View More Button */}
+          <div className="flex justify-center mt-8">
+            <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
+              <Link href="/catalogo?clube=barcelona" className="flex items-center gap-2">
+                View All Barcelona Kits
+                <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+      </section>
+
+      {/* All Real Madrid Kits Section - 7th Section */}
+      <section className="py-8 bg-gradient-to-br from-white to-purple-50/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-responsive-lg text-gray-800 mb-4">
+              All Real Madrid Kits
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore the complete collection of Real Madrid jerseys and kits
+            </p>
+            </div>
+            
+            {/* Unified Responsive Carousel */}
+            <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {realMadridKits.map((product) => (
+                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-4/5 md:basis-1/4 lg:basis-1/5">
+                    <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
+                      <Link href={`/produto/${product.id}`} className="block">
+                        <div className="relative aspect-square overflow-hidden">
+                          <Image 
+                            src={product.imagem}
+                            alt={product.nome}
+                            fill
+                            className="object-cover"
+                            loading="lazy"
+                            sizes="(max-width: 768px) 80vw, (max-width: 1024px) 25vw, 20vw"
+                            quality={85}
+                          />
+                        </div>
+                        <div className="p-4 md:p-6 bg-gradient-to-br from-white to-gray-50/50">
+                          <h3 className="font-bold text-base md:text-lg mb-3 text-gray-800 line-clamp-2">
+                            {product.nome}
+                          </h3>
+                          <div className="flex items-center justify-start">
+                            <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                              {product.preco.toFixed(2)}€
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+
+          {/* View More Button */}
+          <div className="flex justify-center mt-8">
+            <Button asChild className="modern-button bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
+              <Link href="/catalogo?clube=real-madrid" className="flex items-center gap-2">
+                View All Real Madrid Kits
+                <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+            </div>
+        </div>
+      </section>
+
+      {/* Player Version Jerseys Section - 8th Section */}
+      <section className="py-8 bg-gradient-to-br from-white to-yellow-50/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
+              <Star className="w-4 h-4 mr-2" />
+              Player Version
+            </Badge>
+            <h2 className="text-responsive-lg text-gray-800 mb-4">
+              Player Version Jerseys
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Discover official player jerseys with professional quality and advanced technology
             </p>
           </div>
 
-          {/* Desktop Grid */}
-          <div className="hidden md:grid md:grid-cols-3 gap-8">
+          {/* Unified Responsive Carousel */}
+          <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {playerVersionJerseysLimited.map((product, index) => (
+                <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-4/5 md:basis-1/4 lg:basis-1/5">
+                  <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
+                    <Link href={`/produto/${product.id}`} className="block">
+                      <div className="relative aspect-square overflow-hidden">
+                        <Image 
+                          src={product.imagem}
+                          alt={product.nome}
+                          fill
+                          className="object-cover"
+                          loading="lazy"
+                          sizes="(max-width: 768px) 80vw, (max-width: 1024px) 25vw, 20vw"
+                          quality={70}
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
+                            Player
+                          </Badge>
+                        </div>
+                      </div>
+                      <div className="p-4 md:p-6 bg-gradient-to-br from-white to-gray-50/50">
+                        <h3 className="font-bold text-base md:text-lg mb-3 text-gray-800 line-clamp-2">
+                          {product.nome}
+                        </h3>
+                        <div className="flex items-center justify-start">
+                          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            {product.preco.toFixed(2)}€
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+
+          {/* View More Button */}
+          <div className="flex justify-center mt-8">
+            <Button asChild className="modern-button bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
+              <Link href="/catalogo?versao=jogador" className="flex items-center gap-2">
+                View All Player Version Jerseys
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+      
+      {/* Equipment for Young Fans Section - 7th Section */}
+      <section className="py-8 bg-gradient-to-br from-white to-green-50/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <Badge className="bg-gradient-to-r from-green-600 to-emerald-800 text-white border-0 shadow-lg px-4 py-2 rounded-full mb-4">
+              <Baby className="w-4 h-4 mr-2" />
+              Kids Kits
+            </Badge>
+            <h2 className="text-responsive-lg text-gray-800 mb-4">
+              Equipment for Young Fans
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Complete kits specially designed for children, with sizes and comfort adapted for the youngest
+            </p>
+          </div>
+
+          {/* Unified Responsive Carousel */}
+          <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {youngFansKits.map((kit) => (
+                <CarouselItem key={kit.id} className="pl-2 md:pl-4 basis-4/5 md:basis-[28%] lg:basis-[22%]">
+                  <div className="modern-card rounded-2xl shadow-modern overflow-hidden group">
+                    <Link href={`/produto/${kit.id}`} className="block">
+                      <div className="relative aspect-square overflow-hidden">
+                        <Image 
+                          src={kit.imagem}
+                          alt={kit.nome}
+                          fill
+                          className="object-cover"
+                          loading="lazy"
+                          sizes="(max-width: 768px) 80vw, (max-width: 1024px) 28vw, 22vw"
+                          quality={70}
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-0 shadow-lg px-2 py-1 rounded-full text-xs">
+                            Kids
+                          </Badge>
+                        </div>
+                      </div>
+                      <div className="p-4 md:p-6 bg-gradient-to-br from-white to-gray-50/50">
+                        <h3 className="font-bold text-base md:text-lg mb-3 text-gray-800 line-clamp-2">
+                          {kit.nome}
+                        </h3>
+                        <div className="flex items-center justify-start">
+                          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                            {kit.preco.toFixed(2)}€
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+
+          {/* Ver Mais Kits Button */}
+          <div className="text-center mt-12">
+            <Button asChild size="lg" className="modern-button bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 text-lg font-bold shadow-lg rounded-full">
+              <Link href="/catalogo?categoria=crianca" className="flex items-center gap-3">
+                <Baby className="h-5 w-5" />
+                View All Kids Kits
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Sneakers Section - 8th Section */}
+      <section className="py-8 modern-section">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-responsive-lg text-gray-800 mb-4">
+              Sneakers Collection
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Discover the latest sneakers from the best brands to complete your style.
+            </p>
+          </div>
+
+          {/* Unified Responsive Grid/Carousel */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             {/* Categoria Nike */}
             <Link href="/sneakers/nike" className="group">
-              <div className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 rounded-2xl aspect-[0.85] sm:aspect-[0.9]">
-                <div className="relative w-full h-full bg-gradient-to-br from-orange-400 via-orange-500 to-red-500">
-                  <Image
+              <div className="overflow-hidden border-0 shadow-xl rounded-2xl">
+                <div className="relative h-80 md:h-96 bg-gradient-to-br from-orange-400 via-orange-500 to-red-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-600/30 to-red-600/30" />
+                  <div className="absolute inset-0 bg-black/10" />
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
+                  <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
+                  <Image 
                     src="/images/1000541110.webp"
                     alt="Sneakers Nike"
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover object-[center_center] scale-110 transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    quality={85}
+                    quality={75}
                   />
-                  
-                  {/* Overlay com gradiente na parte inferior */}
-                  <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-40 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
-                  
-                  <div className="absolute top-4 left-4 z-10">
-                    <Badge className="bg-white text-orange-600 text-sm px-3 py-1.5 sm:px-4 sm:py-2 font-bold rounded-full shadow-lg">
+                  <div className="absolute top-4 md:top-6 left-4 md:left-6">
+                    <Badge className="bg-white text-orange-600 text-xs md:text-sm px-3 md:px-4 py-1 md:py-2 font-bold rounded-full shadow-lg">
                       NIKE
                     </Badge>
                   </div>
-                  
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 z-10">
-                    <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white drop-shadow-lg">Nike</h3>
-                    <p className="text-orange-100 text-sm sm:text-base mb-2 drop-shadow-md">Just Do It - Inovação americana</p>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                      <span className="text-xs sm:text-sm text-orange-100">Just Do It</span>
+                  <div className="absolute bottom-2 md:bottom-3 left-4 md:left-6 text-white">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2">Nike</h3>
+                    <p className="text-orange-100 text-sm md:text-base">Just Do It - American innovation</p>
+                    <div className="flex items-center gap-1 md:gap-2 mt-1 md:mt-2">
+                      <div className="w-1.5 md:w-2 h-1.5 md:h-2 bg-white rounded-full"></div>
+                      <span className="text-xs md:text-sm text-orange-100">Just Do It</span>
                     </div>
+                  </div>
+                  <div className="absolute bottom-2 md:bottom-3 right-4 md:right-6">
+                    <span className="text-white font-bold text-sm md:text-lg bg-white/20 px-3 md:px-4 py-1 md:py-2 rounded-full">Explore →</span>
                   </div>
                 </div>
               </div>
@@ -701,33 +897,35 @@ export default async function Home() {
 
             {/* Categoria Adidas */}
             <Link href="/sneakers/adidas" className="group">
-              <div className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 rounded-2xl aspect-[0.85] sm:aspect-[0.9]">
-                <div className="relative w-full h-full bg-gradient-to-br from-green-400 via-green-500 to-green-600">
-                  <Image
+              <div className="overflow-hidden border-0 shadow-xl rounded-2xl">
+                <div className="relative h-80 md:h-96 bg-gradient-to-br from-green-400 via-green-500 to-green-600">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600/30 to-green-800/30" />
+                  <div className="absolute inset-0 bg-black/10" />
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
+                  <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
+                  <Image 
                     src="/images/tenis-adidas-campus-00s-feminino-core-black-preto-7.webp"
                     alt="Sneakers Adidas"
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover object-[center_center] scale-110 transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                     quality={85}
                   />
-                  
-                  {/* Overlay com gradiente na parte inferior */}
-                  <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-40 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
-                  
-                  <div className="absolute top-4 left-4 z-10">
-                    <Badge className="bg-white text-green-600 text-sm px-3 py-1.5 sm:px-4 sm:py-2 font-bold rounded-full shadow-lg">
+                  <div className="absolute top-4 md:top-6 left-4 md:left-6">
+                    <Badge className="bg-white text-green-600 text-xs md:text-sm px-3 md:px-4 py-1 md:py-2 font-bold rounded-full shadow-lg">
                       ADIDAS
                     </Badge>
                   </div>
-                  
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 z-10">
-                    <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white drop-shadow-lg">Adidas</h3>
-                    <p className="text-green-100 text-sm sm:text-base mb-2 drop-shadow-md">Sneakers clássicos alemães</p>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                      <span className="text-xs sm:text-sm text-green-100">Impossible is Nothing</span>
+                  <div className="absolute bottom-2 md:bottom-3 left-4 md:left-6 text-white">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2">Adidas</h3>
+                    <p className="text-green-100 text-sm md:text-base">Classic German sneakers</p>
+                    <div className="flex items-center gap-1 md:gap-2 mt-1 md:mt-2">
+                      <div className="w-1.5 md:w-2 h-1.5 md:h-2 bg-white rounded-full"></div>
+                      <span className="text-xs md:text-sm text-green-100">Impossible is Nothing</span>
                     </div>
+                  </div>
+                  <div className="absolute bottom-2 md:bottom-3 right-4 md:right-6">
+                    <span className="text-white font-bold text-sm md:text-lg bg-white/20 px-3 md:px-4 py-1 md:py-2 rounded-full">Explore →</span>
                   </div>
                 </div>
               </div>
@@ -735,358 +933,105 @@ export default async function Home() {
 
             {/* Categoria New Balance */}
             <Link href="/sneakers/new-balance" className="group">
-              <div className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 rounded-2xl aspect-[0.85] sm:aspect-[0.9]">
-                <div className="relative w-full h-full bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800">
-                  <Image
+              <div className="overflow-hidden border-0 shadow-xl rounded-2xl">
+                <div className="relative h-80 md:h-96 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800">
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-700/30 to-gray-900/30" />
+                  <div className="absolute inset-0 bg-black/10" />
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full"></div>
+                  <div className="absolute -top-8 -left-8 w-24 h-24 bg-white/5 rounded-full"></div>
+                  <Image 
                     src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
                     alt="Sneakers New Balance"
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover object-[center_center] scale-110 transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                     quality={85}
                   />
-                  
-                  {/* Overlay com gradiente na parte inferior */}
-                  <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-40 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
-                  
-                  <div className="absolute top-4 left-4 z-10">
-                    <Badge className="bg-white text-gray-800 text-sm px-3 py-1.5 sm:px-4 sm:py-2 font-bold rounded-full shadow-lg">
+                  <div className="absolute top-4 md:top-6 left-4 md:left-6">
+                    <Badge className="bg-white text-gray-800 text-xs md:text-sm px-3 md:px-4 py-1 md:py-2 font-bold rounded-full shadow-lg">
                       NEW BALANCE
                     </Badge>
                   </div>
-                  
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 z-10">
-                    <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white drop-shadow-lg">New Balance</h3>
-                    <p className="text-gray-200 text-sm sm:text-base mb-2 drop-shadow-md">Conforto e qualidade americana</p>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                      <span className="text-xs sm:text-sm text-gray-200">Fearlessly Independent</span>
+                  <div className="absolute bottom-2 md:bottom-3 left-4 md:left-6 text-white">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2">New Balance</h3>
+                    <p className="text-gray-200 text-sm md:text-base">American comfort and quality</p>
+                    <div className="flex items-center gap-1 md:gap-2 mt-1 md:mt-2">
+                      <div className="w-1.5 md:w-2 h-1.5 md:h-2 bg-white rounded-full"></div>
+                      <span className="text-xs md:text-sm text-gray-200">Fearlessly Independent</span>
                     </div>
+                  </div>
+                  <div className="absolute bottom-2 md:bottom-3 right-4 md:right-6">
+                    <span className="text-white font-bold text-sm md:text-lg bg-white/20 px-3 md:px-4 py-1 md:py-2 rounded-full">Explore →</span>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
 
-          {/* Mobile Carousel */}
-          <div className="md:hidden">
-            <Carousel className="w-full">
-              <CarouselContent>
-                <CarouselItem className="basis-full">
-                  <Link href="/sneakers/nike" className="group block">
-                    <div className="relative aspect-[0.85] bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 rounded-2xl overflow-hidden shadow-xl">
-                      <Image
-                        src="/images/1000541110.webp"
-                        alt="Sneakers Nike"
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                        sizes="100vw"
-                        quality={85}
-                      />
-                      
-                      {/* Overlay com gradiente na parte inferior */}
-                      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
-                      
-                      <div className="absolute top-3 left-3 z-10">
-                        <Badge className="bg-white text-orange-600 text-xs px-2.5 py-1 font-bold rounded-full shadow-lg">
-                          NIKE
-                        </Badge>
-                      </div>
-                      
-                      <div className="absolute bottom-0 left-0 right-0 p-3 z-10">
-                        <h3 className="text-xl font-bold mb-1 text-white drop-shadow-lg">Nike</h3>
-                        <p className="text-orange-100 text-xs mb-1 drop-shadow-md">Just Do It - Inovação americana</p>
-                        <div className="flex items-center gap-1">
-                          <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                          <span className="text-xs text-orange-100">Just Do It</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </CarouselItem>
-                <CarouselItem className="basis-full">
-                  <Link href="/sneakers/adidas" className="group block">
-                    <div className="relative aspect-[0.85] bg-gradient-to-br from-green-400 via-green-500 to-green-600 rounded-2xl overflow-hidden shadow-xl">
-                      <Image
-                        src="/images/tenis-adidas-campus-00s-feminino-core-black-preto-7.webp"
-                        alt="Sneakers Adidas"
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                        sizes="100vw"
-                        quality={85}
-                      />
-                      
-                      {/* Overlay com gradiente na parte inferior */}
-                      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
-                      
-                      <div className="absolute top-3 left-3 z-10">
-                        <Badge className="bg-white text-green-600 text-xs px-2.5 py-1 font-bold rounded-full shadow-lg">
-                          ADIDAS
-                        </Badge>
-                      </div>
-                      
-                      <div className="absolute bottom-0 left-0 right-0 p-3 z-10">
-                        <h3 className="text-xl font-bold mb-1 text-white drop-shadow-lg">Adidas</h3>
-                        <p className="text-green-100 text-xs mb-1 drop-shadow-md">Sneakers clássicos alemães</p>
-                        <div className="flex items-center gap-1">
-                          <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                          <span className="text-xs text-green-100">Impossible is Nothing</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </CarouselItem>
-                <CarouselItem className="basis-full">
-                  <Link href="/sneakers/new-balance" className="group block">
-                    <div className="relative aspect-[0.85] bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800 rounded-2xl overflow-hidden shadow-xl">
-                      <Image
-                        src="/images/cb4d358aa715b83d7eaed7d06ff42d3b.webp"
-                        alt="Sneakers New Balance"
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                        sizes="100vw"
-                        quality={85}
-                      />
-                      
-                      {/* Overlay com gradiente na parte inferior */}
-                      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
-                      
-                      <div className="absolute top-3 left-3 z-10">
-                        <Badge className="bg-white text-gray-800 text-xs px-2.5 py-1 font-bold rounded-full shadow-lg">
-                          NEW BALANCE
-                        </Badge>
-                      </div>
-                      
-                      <div className="absolute bottom-0 left-0 right-0 p-3 z-10">
-                        <h3 className="text-xl font-bold mb-1 text-white drop-shadow-lg">New Balance</h3>
-                        <p className="text-gray-200 text-xs mb-1 drop-shadow-md">Conforto e qualidade americana</p>
-                        <div className="flex items-center gap-1">
-                          <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                          <span className="text-xs text-gray-200">Fearlessly Independent</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
-
           {/* Ver Sneakers Button */}
           <div className="flex justify-center mt-8">
             <Button asChild className="modern-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 hover:shadow-xl">
               <Link href="/sneakers" className="flex items-center gap-2">
-                Ver todos os sneakers
+                View all sneakers
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
           </div>
         </div>
       </section>
-
-      {/* Best Sellers Sneakers Carousel */}
-      <section className="py-12 bg-gradient-to-br from-gray-50 to-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
-            <h2 className="text-responsive-lg text-gray-800 mb-4">
-              🏆 Best Sellers
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Os sneakers mais vendidos e amados pelos nossos clientes
-            </p>
-          </div>
-
-          <Carousel className="w-full" opts={{ align: "start", loop: true }}>
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {bestSellers.map((product) => (
-                <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
-                  <div className="modern-card rounded-2xl shadow-modern hover:shadow-modern-hover overflow-hidden group bg-white">
-                    <Link href={`/produto/${product.id}`} className="block">
-                      <div className="relative aspect-square overflow-hidden">
-                        <Image 
-                          src={product.imagem}
-                          alt={product.nome}
-                          fill
-                          className="object-cover transition-all duration-500 group-hover:scale-105"
-                          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                          quality={85}
-                        />
-                        {product.edicao_especial && (
-                          <div className="absolute top-2 right-2">
-                            <Badge className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold shadow-lg">
-                              🏆 Mais Vendido
-                            </Badge>
-                          </div>
-                        )}
-                      </div>
-                      <div className="p-4">
-                        <h3 className="font-semibold text-gray-900 text-sm mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
-                          {product.nome}
-                        </h3>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <span className="text-lg font-bold text-gray-900">
-                              €{product.preco}
-                            </span>
-                            {product.precoAntigo && (
-                              <span className="text-sm text-gray-500 line-through">
-                                €{product.precoAntigo}
-                              </span>
-                            )}
-                          </div>
-                          {product.precoAntigo && (
-                            <Badge className="bg-red-100 text-red-800 text-xs">
-                              -{Math.round(((product.precoAntigo - product.preco) / product.precoAntigo) * 100)}%
-                            </Badge>
-                          )}
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
-      </section>
-
+      
       {/* Parceiros Section */}
       <ParceirosSection />
 
       {/* Modern Vantagens Section */}
       <section className="py-8 modern-section">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-slide-up">
+          <div className="text-center mb-8">
             <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Por que escolher a fanzone12.pt?
+              Why choose fanzone12.com?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Oferecemos a melhor experiência de compra com produtos de qualidade e serviço excepcional
+              We offer the best shopping experience with quality products and exceptional service
             </p>
           </div>
 
-          {/* Desktop Grid - Hidden on mobile */}
-          <div className="hidden md:grid grid-cols-3 gap-8">
-            <ClientAnimationWrapper
-              delay={0}
-              className="animate-scale-in"
-            >
-              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
-                <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                  <Truck className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
-                  Entrega Rápida
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Portes de apenas 4€ e grátis para 3 ou mais camisolas. Entrega rápida em toda a Europa.
-                </p>
+          {/* Unified Responsive Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="modern-card group p-6 md:p-8 text-center rounded-2xl shadow-modern">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
+                <Truck className="h-8 w-8 text-white" />
               </div>
-            </ClientAnimationWrapper>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">
+                Fast Delivery
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                Shipping from just €4 and free for 3 or more jerseys. Fast delivery across Europe.
+              </p>
+            </div>
 
-            <ClientAnimationWrapper
-              delay={0.1}
-              className="animate-scale-in"
-            >
-              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
-                <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                  <CreditCard className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors">
-                  Pagamento Seguro
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Múltiplas opções de pagamento seguro com proteção total dos seus dados.
-                </p>
+            <div className="modern-card group p-6 md:p-8 text-center rounded-2xl shadow-modern">
+              <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
+                <CreditCard className="h-8 w-8 text-white" />
               </div>
-            </ClientAnimationWrapper>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">
+                Secure Payment
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                Multiple secure payment options with complete protection of your data.
+              </p>
+            </div>
 
-            <ClientAnimationWrapper
-              delay={0.2}
-              className="animate-scale-in"
-            >
-              <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
-                <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                  <Star className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-yellow-600 transition-colors">
-                  Qualidade Garantida
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Produtos oficiais com garantia de autenticidade e qualidade premium.
-                </p>
+            <div className="modern-card group p-6 md:p-8 text-center rounded-2xl shadow-modern">
+              <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
+                <Star className="h-8 w-8 text-white" />
               </div>
-            </ClientAnimationWrapper>
-          </div>
-
-          {/* Mobile Carousel - Hidden on desktop */}
-          <div className="md:hidden">
-            <Carousel className="w-full">
-              <CarouselContent className="-ml-2">
-                <CarouselItem className="pl-2">
-                  <ClientAnimationWrapper
-                    delay={0}
-                    className="animate-scale-in"
-                  >
-                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
-                      <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                        <Truck className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
-                        Entrega Rápida
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        Portes de apenas 4€ e grátis para 3 ou mais camisolas. Entrega rápida em toda a Europa.
-                      </p>
-                    </div>
-                  </ClientAnimationWrapper>
-                </CarouselItem>
-
-                <CarouselItem className="pl-2">
-                  <ClientAnimationWrapper
-                    delay={0.1}
-                    className="animate-scale-in"
-                  >
-                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
-                      <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                        <CreditCard className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors">
-                        Pagamento Seguro
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        Múltiplas opções de pagamento seguro com proteção total dos seus dados.
-                      </p>
-                    </div>
-                  </ClientAnimationWrapper>
-                </CarouselItem>
-
-                <CarouselItem className="pl-2">
-                  <ClientAnimationWrapper
-                    delay={0.2}
-                    className="animate-scale-in"
-                  >
-                    <div className="modern-card group p-8 text-center rounded-2xl shadow-modern hover:shadow-modern-hover transition-all duration-300">
-                      <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                        <Star className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-yellow-600 transition-colors">
-                        Qualidade Garantida
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        Produtos oficiais com garantia de autenticidade e qualidade premium.
-                      </p>
-                    </div>
-                  </ClientAnimationWrapper>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">
+                Guaranteed Quality
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                Official products with authenticity guarantee and premium quality.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1100,23 +1045,23 @@ export default async function Home() {
                 <Search className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">
-                Não encontrou a camisola que procura?
+                Can't find the jersey you're looking for?
               </h2>
               <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-                Temos um catálogo completo com mais de <span className="font-bold text-blue-600">5000 camisolas</span> que não estão aqui publicadas!
+                We have a complete catalog with over <span className="font-bold text-blue-600">5000 jerseys</span> that are not published here!
               </p>
             </div>
             
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8">
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">Como proceder:</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">How to proceed:</h3>
               <div className="grid md:grid-cols-2 gap-4 sm:gap-6 text-left">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white font-bold text-xs sm:text-sm">1</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">Veja o catálogo completo na Drive</h4>
-                    <p className="text-gray-600 text-xs sm:text-sm">Temos milhares de modelos adicionais. Consulte aqui:</p>
+                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">View the full catalog on Drive</h4>
+                    <p className="text-gray-600 text-xs sm:text-sm">We have thousands of additional models. Check here:</p>
                     <div className="mt-2">
                       <a 
                         href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" 
@@ -1125,7 +1070,7 @@ export default async function Home() {
                         className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-blue-700 bg-blue-50 border border-blue-200 rounded-full hover:bg-blue-100 transition-colors"
                       >
                         <Search className="w-3 h-3 sm:w-4 sm:h-4" />
-                        Abrir catálogo na Drive
+                        Open catalog on Drive
                       </a>
                     </div>
                   </div>
@@ -1135,8 +1080,8 @@ export default async function Home() {
                     <span className="text-white font-bold text-xs sm:text-sm">2</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">Se não encontrar, fale connosco</h4>
-                    <p className="text-gray-600 text-xs sm:text-sm">Envie-nos uma mensagem com clube, temporada e modelo pretendido.</p>
+                    <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">If you can't find it, contact us</h4>
+                    <p className="text-gray-600 text-xs sm:text-sm">Send us a message with club, season and desired model.</p>
                   </div>
                 </div>
               </div>
@@ -1148,7 +1093,7 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
-                Enviar mensagem
+                Send message
               </a>
               <a 
                 href="https://drive.google.com/drive/folders/1Q8PIDdtkDY-bUAvET_mqpRyvz0t7AMHH?usp=sharing" 
@@ -1157,7 +1102,7 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-blue-600 bg-white border border-blue-200 rounded-full hover:bg-blue-50 transition-all duration-300"
               >
                 <Search className="w-4 h-4 sm:w-5 sm:h-5" />
-                Ver catálogo completo
+                View full catalog
               </a>
             </div>
           </div>
