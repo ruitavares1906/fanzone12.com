@@ -7158,6 +7158,28 @@ const produtosArray = ([
       "numAvaliacoes": 12,
       "destaque": true,
       "edicao_especial": false
+    },
+    {
+      id: "sporting-lisbon-25-26-player-version-alternative",
+      nome: "Sporting Away Jersey 25/26 Player Version",
+      descricao: "Camisola oficial do Sporting Lisbon para a temporada 2025/26. Design moderno e exclusivo.",
+      descricaoLonga: "A nova camisola do Sporting Lisbon para a temporada 2025/26 apresenta um design moderno e exclusivo, oferecendo uma alternativa moderna e estilosa para os adeptos do Sporting Lisbon. Fabricada com tecnologia de jogador para máximo conforto e performance, esta camisola é perfeita para quem procura algo diferente e exclusivo.",
+      preco: 19.99,
+      precoAntigo: 29.99,
+      imagem: "/images/39391bf1.jpg",
+      imagensAdicionais: ["/images/bf66c257.jpg"],
+      versao: "jogador",
+      categoria: "clubes",
+      clube: "sporting",
+      liga: "liga-portuguesa",
+      temporada: "2025/26",
+      cor: "azul",
+      material: "100% Poliéster",
+      marca: "Nike",
+      avaliacao: 4.9,
+      numAvaliacoes: 0,
+      destaque: true,
+      edicao_especial: false
     },  
     {
       "id": "arsenal-especial-25-26",
