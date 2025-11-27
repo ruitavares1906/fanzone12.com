@@ -44171,6 +44171,240 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       ]
     },
     {
+      "id": "adidas-handball-spezial-black",
+      "nome": "Adidas Originals Handball Spezial JH5435",
+      "categoria": "spezial",
+      "subcategoria": "sneakers",
+      "marca": "Adidas",  
+      "preco": 39.99,
+      "precoAntigo": 77.99,
+      "imagem": "/images/1b5b980e.jpg",
+      "imagensAdicionais": [
+          "/images/4d05b20f.jpg",
+          "/images/24b60cdd.jpg",
+          "/images/0301f8bd.jpg",
+          "/images/761e3ca9.jpg",
+          "/images/9864b333.jpg",
+          "/images/64774bb3.jpg",
+          "/images/a6563dc7.jpg",
+          "/images/b8b00263.jpg",
+          "/images/ff905380.jpg"
+        ]
+      },
+      {
+        "id": "adidas-handball-spezial-pink1",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/f606b1a4.jpg",
+        "imagensAdicionais":[
+          "/images/1a17b9f9.jpg",
+          "/images/6e71f170.jpg",
+          "/images/9aed1689.jpg",
+          "/images/8514527c.jpg",
+          "/images/a368d534.jpg",
+          "/images/b853632e.jpg",
+          "/images/c45835c3.jpg",
+          "/images/cb854836.jpg"
+        ]
+      },
+      {
+        "id": "adidas-handball-spezial-green",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/9b9b6cce.jpg",
+        "imagensAdicionais": [
+          "/images/6fcba94e.jpg",
+          "/images/8e086a57.jpg",
+          "/images/49d4e14d.jpg",
+          "/images/80aeee8e.jpg",
+          "/images/223ce889.jpg",
+          "/images/809a8c09.jpg",
+          "/images/650776c7.jpg",
+        ]    
+      },
+      {
+        "id": "adidas-handball-spezial-green-blue",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/1997969c.jpg",
+        "imagensAdicionais": [
+          "/images/44e8fc95.jpg",
+          "/images/cea1c812.jpg",
+          "/images/d1a20834.jpg",
+          "/images/e50e119e.jpg",
+          "/images/f43b794f.jpg",
+          "/images/fa20edfd.jpg"
+        ]    
+      },
+      {
+        "id": "adidas-handball-spezial-red1",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/10f8d6fc.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/cb57ae59.jpg",
+          "/images/db9f226d.jpg",
+          "/images/fb40edf0.jpg",
+          "/images/2f04cf91.jpg",
+          "/images/7108fb83.jpg",
+          "/images/b98bb03f.jpg"
+        ]
+      },
+      {
+        "id": "adidas-handball-spezial-red2",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/52526a83.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/2f2fcbe4.jpg",
+          "/images/07fb5055.jpg",
+          "/images/7cf91f90.jpg",
+          "/images/15c78dd4.jpg",
+          "/images/a291aac0.jpg",
+          "/images/b238eb5c.jpg"
+        ]
+        
+      },
+      {
+        "id": "adidas-handball-spezial-pink11",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/387eb137.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/c45accb4.jpg",
+          "/images/da11bffb.jpg",
+          "/images/f853fb60.jpg",
+          "/images/6324e27f.jpg",
+          "/images/8413e288.jpg",
+          "/images/1974546d.jpg",
+          "/images/af0a22a5.jpg",
+          "/images/b01887fb.jpg"
+        ]
+        
+      },
+    
+      {
+        "id": "adidas-handball-spezial-castanho",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/61b8225f.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/6ec9ada9.jpg",
+          "/images/9c7c4ece.jpg",
+          "/images/35bf97c8.jpg",
+          "/images/84ce1e69.jpg",
+          "/images/613245ff.jpg",
+          "/images/db8cb779.jpg"
+        ]
+      },  
+      {
+        "id": "adidas-handball-spezial-verde",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/6fcf4d80.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/688ed7c9.jpg",
+          "/images/13184675 (1).jpeg",
+          "/images/e4f0b663.jpg",
+          "/images/e205c0eb.jpg"
+        ]
+      },
+      {
+        "id": "adidas-handball-spezial-casta",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/764b9393.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/4a003ef0.jpg",
+          "/images/47fd4790.jpg",
+          "/images/925d98ef.jpg",
+          "/images/b0afd804.jpg",
+          "/images/c521d463.jpg",
+          "/images/d83eac14.jpg"
+        ]
+      },
+      {
+        "id": "adidas-handball-spezial-redd",
+        "nome": "Adidas Originals Handball Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/dcc39012.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/388e0c2f.jpg",
+          "/images/3875dee8.jpg",
+          "/images/a66080d2.jpg",
+          "/images/e09d7170.jpg",
+          "/images/3d11ac50.jpg"
+        ]
+        
+      },
+    {
+        "id": "adidas-spezial-pink-black",
+        "nome": "Adidas Originals Spezial",
+        "categoria": "spezial",
+        "subcategoria": "sneakers",
+        "marca": "Adidas",
+        "preco": 39.99,
+        "precoAntigo": 77.99,
+        "imagem": "/images/7e3ac75f.jpg",
+        "imagensAdicionais": 
+        [
+          "/images/7e3ac75f.jpg",
+          "/images/67a97f3a.jpg",
+          "/images/203f06ec.jpg",
+          "/images/917ee894.jpg",
+          "/images/6131ac97.jpg",
+          "/images/64464173.jpg"
+        ]
+        
+      },    
+    {
       "id": "adidas-jh5435",
       "nome": "Adidas Originals Handball Spezial",
       "categoria": "spezial",
