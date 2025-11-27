@@ -24,6 +24,7 @@ export default function CarrinhoPage() {
   const [showMBWayModal, setShowMBWayModal] = useState(false)
   const [discountError, setDiscountError] = useState("")
   const [isValidatingDiscount, setIsValidatingDiscount] = useState(false)
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null)
   const { toast } = useToast()
   const router = useRouter()
 
@@ -431,20 +432,30 @@ export default function CarrinhoPage() {
                             <div className="glass-effect rounded-2xl p-3 lg:p-6 border border-border shadow-modern bg-card text-card-foreground">
                               <div className="flex gap-3 lg:gap-6">
                                 {/* Product Image - More visible */}
-                                <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-xl overflow-hidden bg-muted flex-shrink-0">
-                              <Image
-                                src={item.imagem}
-                                alt={item.nome}
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation()
+                                    setSelectedImage({ src: item.imagem, alt: item.nome })
+                                  }}
+                                  className="relative w-20 h-20 lg:w-32 lg:h-32 rounded-xl overflow-hidden bg-muted flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity group"
+                                  aria-label={`Ver imagem de ${item.nome} em grande`}
+                                >
+                                  <Image
+                                    src={item.imagem}
+                                    alt={item.nome}
                                     fill
-                                    className="object-cover"
-                              />
-                            </div>
+                                    className="object-cover group-hover:scale-105 transition-transform"
+                                  />
+                                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+                                </button>
 
                                 {/* Product Info */}
                                 <div className="flex-1 min-w-0">
                                   <div className="flex flex-col gap-2 lg:gap-4">
                                     <div className="flex-1">
-                                      <h3 className="text-sm lg:text-lg font-semibold text-foreground mb-1 lg:mb-2 truncate">{item.nome}</h3>
+                                      <Link href={`/produto/${item.id}`}>
+                                        <h3 className="text-sm lg:text-lg font-semibold text-foreground mb-1 lg:mb-2 truncate hover:text-primary transition-colors cursor-pointer">{item.nome}</h3>
+                                      </Link>
                                       <div className="space-y-1 text-xs lg:text-sm text-muted-foreground">
                                         <div className="flex gap-4">
                                         <p>Size: <span className="font-medium text-foreground">{item.tamanhoSelecionado?.replace(' anos', ' years') || item.tamanhoSelecionado}</span></p>
@@ -575,7 +586,10 @@ export default function CarrinhoPage() {
                                           <Button
                                             variant="outline"
                                             size="sm"
-                                            onClick={() => handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade - 1, item.personalizacao)}
+                                            onClick={(e) => {
+                                              e.stopPropagation()
+                                              handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade - 1, item.personalizacao)
+                                            }}
                                             disabled={item.quantidade <= 1}
                                             className="w-7 h-7 lg:w-8 lg:h-8 p-0 rounded-full"
                                           >
@@ -585,7 +599,10 @@ export default function CarrinhoPage() {
                                           <Button
                                             variant="outline"
                                             size="sm"
-                                            onClick={() => handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade + 1, item.personalizacao)}
+                                            onClick={(e) => {
+                                              e.stopPropagation()
+                                              handleQuantityChange(item.id, item.tamanhoSelecionado, item.quantidade + 1, item.personalizacao)
+                                            }}
                                             className="w-7 h-7 lg:w-8 lg:h-8 p-0 rounded-full"
                                           >
                                             <Plus className="h-3 w-3" />
@@ -596,7 +613,10 @@ export default function CarrinhoPage() {
                                         <Button
                                           variant="ghost"
                                           size="sm"
-                                          onClick={() => removeFromCart(item.id, item.tamanhoSelecionado, item.personalizacao)}
+                                          onClick={(e) => {
+                                            e.stopPropagation()
+                                            removeFromCart(item.id, item.tamanhoSelecionado, item.personalizacao)
+                                          }}
                                           className="text-destructive hover:text-destructive hover:bg-destructive/10 p-1 lg:p-2"
                                         >
                                           <Trash2 className="h-4 w-4" />
@@ -794,6 +814,41 @@ export default function CarrinhoPage() {
           )}
         </div>
       </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-[100] bg-black/90"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div 
+            onClick={(e) => e.stopPropagation()} 
+            className="absolute inset-0 flex items-center justify-center p-4 sm:p-8 pointer-events-none"
+          >
+            <div className="relative bg-white rounded-lg p-2 sm:p-4 max-w-[95vw] max-h-[95vh] pointer-events-auto">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setSelectedImage(null)
+                }}
+                className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 z-20 bg-black hover:bg-gray-800 text-white rounded-full p-1.5 sm:p-2 transition-colors shadow-lg"
+                aria-label="Fechar"
+              >
+                <X className="h-4 w-4 sm:h-5 sm:w-5" />
+              </button>
+              <Image
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                width={1200}
+                height={1200}
+                className="w-auto h-auto max-w-full max-h-[90vh] object-contain rounded"
+                sizes="(max-width: 768px) 95vw, 90vw"
+                quality={95}
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* MB WAY Modal */}
       {showMBWayModal && (
