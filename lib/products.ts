@@ -10775,7 +10775,7 @@ const produtosArray = ([
   nome: "Sneakers SL Benfica x Adidas Samba",
   descricao: "Sneakers exclusivos SL Benfica x Adidas Samba. Design clássico com as cores do Benfica, perfeitos para o dia-a-dia com estilo e conforto.",
   descricaoLonga: "Os Sneakers SL Benfica x Adidas Samba são uma colaboração única entre o clube mais titulado de Portugal e a icônica marca alemã. Baseados no design clássico dos Adidas Samba, estes sneakers apresentam detalhes exclusivos nas cores do Benfica - vermelho e branco. A silhueta atemporal do Samba combina perfeitamente com os elementos distintivos do SL Benfica, criando um calçado que é simultaneamente um statement de moda e uma declaração de amor ao clube. Fabricados com materiais premium, oferecem conforto superior e durabilidade excecional. A sola em borracha proporciona excelente aderência, enquanto o interior acolchoado garante conforto durante todo o dia. Perfeitos para benfiquistas que querem mostrar as suas cores com estilo, seja no estádio, na rua ou em qualquer ocasião casual.",
-  preco: 65.99,
+  preco: 72.99,
   precoAntigo: 109.99,
   imagem: "/images/adidas-samba.png",
   categoria: "retro",
@@ -13621,7 +13621,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Nike Air Force 1 Low 'Triple White'",
       "descricao": "Nike Air Force 1 Low totalmente branco, o clássico 'Triple White'.",
       "descricaoLonga": "O Nike Air Force 1 Low 'Triple White' é o ícone máximo da simplicidade e estilo. Com o seu design totalmente branco, é um dos modelos mais versáteis e populares da linha Air Force. Fabricado em couro premium e com sola de borracha durável, oferece conforto, durabilidade e um visual limpo que combina com qualquer outfit.",
-      "preco": 49.99,
+      "preco": 56.99,
       "precoAntigo": 99.99,
       "imagem": "/images/6a5ecbac.webp",
       "imagensAdicionais": [
@@ -13655,7 +13655,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Preto e Branco",
       "descricao": "AF1 clássico em preto e branco com design elegante.",
       "descricaoLonga": "O Air Force 1 '07 Low Preto e Branco combina o clássico design da Nike com um contraste elegante entre preto e branco, feito em couro premium para conforto e durabilidade.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/bed5447f.jpg",
       "categoria": "air-force-1-low",
@@ -13685,7 +13685,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Branco e Vermelho",
       "descricao": "Air Force 1 '07 Low com combinação clássica de branco e vermelho.",
       "descricaoLonga": "O Air Force 1 '07 Low Branco e Vermelho mantém o design icónico da Nike com um toque vibrante e desportivo. Feito em couro premium, oferece conforto, durabilidade e um visual intemporal, perfeito tanto para uso diário como para ocasiões casuais.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/a4b66672.jpg",
       "imagensAdicionais": [
@@ -13714,7 +13714,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low Branco com Mini Swoosh Preto",
         "descricao": "Air Force 1 '07 Low branco com mini Swoosh preto lateral.",
         "descricaoLonga": "O Air Force 1 '07 Low Branco com Mini Swoosh Preto é uma versão refinada do clássico modelo da Nike. Com o corpo em couro branco e um pequeno Swoosh em preto, oferece um visual minimalista e moderno. Confortável e versátil, adapta-se facilmente a qualquer estilo urbano.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/02aff1ec.jpg",
         "imagensAdicionais": [
@@ -13742,7 +13742,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low Verde Militar Starlight",
         "descricao": "Air Force 1 '07 Low em verde militar com detalhe starlight.",
         "descricaoLonga": "Edição Air Force 1 '07 Low verde militar com design starlight, perfeita para streetwear e colecionadores.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1'07 Low 军绿满天星 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -13775,7 +13775,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Nike Air Force 1 '07 Branco com Mini Swoosh Vermelho",
       "descricao": "Nike Air Force 1 '07 branco com detalhe de mini Swoosh em vermelho.",
       "descricaoLonga": "O Nike Air Force 1 '07 Branco com Mini Swoosh Vermelho combina o estilo clássico da linha Air Force 1 com um toque de modernidade e detalhe marcante. Fabricado em couro premium, oferece conforto, resistência e um visual limpo, perfeito para o dia a dia.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/27da4f2c.jpg",
       "imagensAdicionais": [
@@ -13804,7 +13804,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Nike Air Force 1 '07 Azul Escuro com Mini Swoosh",
       "descricao": "Nike Air Force 1 '07 em azul escuro com mini Swoosh lateral.",
       "descricaoLonga": "O Nike Air Force 1 '07 Azul Escuro com Mini Swoosh é uma versão elegante e minimalista do clássico modelo. Apresenta couro premium em tom azul profundo e um pequeno logótipo Swoosh que adiciona um detalhe distinto e moderno. Ideal para quem aprecia estilo discreto e sofisticação urbana.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/abbfb278.jpg",
       "imagensAdicionais": [
@@ -13832,7 +13832,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Preto e Branco Panda",
         "descricao": "Edição clássica Panda em preto e branco com acabamento premium.",
         "descricaoLonga": "O Air Force 1 '07 Preto e Branco, também conhecido como 'Panda', apresenta um design minimalista e elegante com o contraste marcante entre o preto profundo e o branco puro. Fabricado em couro de alta qualidade, é perfeito para qualquer ocasião, mantendo o conforto e estilo icónico da linha Air Force 1.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/86c497a6.jpeg",
         "categoria": "air-force-1-low",
@@ -13861,7 +13861,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Low Branco Goma",
           "descricao": "Air Force 1 Low totalmente branco com sola em tom caramelo (goma).",
           "descricaoLonga": "O Air Force 1 Low Branco Goma combina o icónico design minimalista da Nike com uma sola em tom caramelo, proporcionando um visual clássico e versátil. Fabricado em couro premium, este modelo oferece conforto, durabilidade e estilo intemporal — ideal para qualquer ocasião.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/d0b99c49.jpeg",
           "categoria": "air-force-1-low",
@@ -13891,7 +13891,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Air Force 1 Low Duplo Swoosh Branco Preto Dourado",
             "descricao": "AF1 branco com dois logos Swoosh em preto e dourado.",
             "descricaoLonga": "O Air Force 1 Low Duplo Swoosh Branco Preto Dourado destaca-se pelos dois logos laterais — um preto e outro dourado — que conferem um visual moderno ao clássico design em couro branco.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/cf08e3a6.webp",
             "categoria": "air-force-1-low",
@@ -13919,7 +13919,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Air Force 1 Low Mini Swoosh Branco Cinza",
             "descricao": "AF1 branco com mini logo Swoosh em cinza discreto.",
             "descricaoLonga": "O Air Force 1 Low Mini Swoosh Branco Cinza é uma versão elegante do clássico, com o mini logo em tom cinza e base branca em couro suave.",
-            "preco": 55.99, 
+            "preco": 62.99, 
             "precoAntigo": 99.99,
             "imagem": "/images/f2e47724.webp",
             "categoria": "air-force-1-low",
@@ -13947,7 +13947,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Air Force 1 Low Mini Swoosh Branco Rosa",
             "descricao": "AF1 branco com mini logo Swoosh em rosa suave.",
             "descricaoLonga": "O Air Force 1 Low Mini Swoosh Branco Rosa combina o icónico estilo da Nike com um toque feminino, graças ao pequeno Swoosh em rosa pastel sobre a base branca em couro.",
-            "preco": 55.99, 
+            "preco": 62.99, 
             "precoAntigo": 99.99,
             "imagem": "/images/fdf79500.webp",
             "categoria": "air-force-1-low",
@@ -13976,7 +13976,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Air Force 1 Low Mini Swoosh Branco Vermelho",
             "descricao": "AF1 branco com mini logo Swoosh em vermelho vibrante.",
             "descricaoLonga": "O Air Force 1 Low Mini Swoosh Branco Vermelho oferece um contraste forte e desportivo, com o mini logo vermelho a destacar-se sobre o fundo branco em couro.",
-            "preco": 55.99, 
+            "preco": 62.99, 
             "precoAntigo": 99.99,
             "imagem": "/images/aabb4315.webp",
             "categoria": "air-force-1-low",
@@ -14004,7 +14004,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Air Force 1 Low Mini Swoosh Branco Preto",
             "descricao": "AF1 branco com mini logo Swoosh em preto.",
             "descricaoLonga": "O Air Force 1 Low Mini Swoosh Branco Preto é um modelo clean e moderno, que combina a versatilidade do branco com o contraste do mini Swoosh preto.",
-            "preco": 55.99, 
+            "preco": 62.99, 
             "precoAntigo": 99.99,
             "imagem": "/images/cdecc907.webp",
             "categoria": "air-force-1-low",
@@ -14032,7 +14032,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Air Force 1 Low Mini Swoosh Branco Amarelo",
             "descricao": "AF1 branco com mini logo Swoosh em amarelo.",
             "descricaoLonga": "O Air Force 1 Low Mini Swoosh Branco Amarelo combina frescura e estilo, com o mini Swoosh amarelo a destacar-se num fundo branco imaculado.",
-            "preco": 55.99, 
+            "preco": 62.99, 
             "precoAntigo": 99.99,
             "imagem": "/images/cf08e3a6.webp",
             "categoria": "air-force-1-low",
@@ -14060,7 +14060,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Cinzento Frio e Rosa",
       "descricao": "Air Force 1 '07 Low em tons de cinzento frio e rosa suave.",
       "descricaoLonga": "O Air Force 1 '07 Low Cinzento Frio e Rosa combina o icónico design clássico da Nike com uma paleta moderna e elegante. Feito em couro premium, oferece conforto, durabilidade e um toque distinto de cor.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 '07 Low 清冷灰粉 _ Yupoo - 01.jpg",
       "imagensAdicionais": [
@@ -14093,7 +14093,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 Low Preto e Vermelho com Brilhantes Estrela",
       "descricao": "Air Force 1 Low em preto e vermelho, destacando-se pelos brilhantes 'flash diamond' e detalhes com padrão Estrela.",
       "descricaoLonga": "Estes Air Force 1 Low transformam o clássico com um cabedal preto e detalhes em vermelho, adornado com a tecnologia 'flash diamond' e o padrão 'Estrela' (Starlight), garantindo um brilho único a cada passo. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 Low 黑红闪钻满天星 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14143,7 +14143,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Bape Sta x Air Force 1 Verde Fluorescente e Gancho Preto",
       "descricao": "Colaboração ousada inspirada no Bape Sta, em verde fluorescente vibrante com o icónico gancho (swoosh) em preto.",
       "descricaoLonga": "Esta edição especial mistura o DNA do Air Force 1 com a estética Bape Sta, apresentando um cabedal em verde fluorescente de alto impacto e o swoosh contrastante em preto. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Bape Sta x Air Force 1 荧光绿黑钩 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14193,7 +14193,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 Low Preto e Cinzento com Mini Gancho",
       "descricao": "Versão Low do AF1 em preto e cinzento, com um subtil e elegante 'mini-swoosh' bordado.",
       "descricaoLonga": "O Air Force 1 Low Preto e Cinzento oferece um visual discreto e moderno. O esquema de cores sóbrio é complementado por um mini-swoosh bordado, adicionando um toque de design minimalista ao clássico. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 Low 黑灰小钩 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14243,7 +14243,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Couro Envernizado Preto",
       "descricao": "Versão '07 Low totalmente em preto, com o cabedal em couro envernizado para um brilho premium.",
       "descricaoLonga": "Um clássico elevado. O Air Force 1 '07 Low em preto utiliza couro envernizado, conferindo-lhe um acabamento de alto brilho e um toque de luxo, perfeito para um look urbano sofisticado. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 '07 Low 黑色漆皮 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14292,7 +14292,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Supreme Bege e Preto com Gancho Duplo",
       "descricao": "Colaboração 'Supreme' (estilo) na silhueta Low, com o cabedal bege, Swoosh duplo em preto e detalhes contrastantes.",
       "descricaoLonga": "Uma versão elegante e única do AF1 Low, utilizando uma combinação de bege e preto, com um swoosh duplicado para um visual moderno e desconstruído. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1'07 Low Supreme-米黑双勾 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14342,7 +14342,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low The North Face Couro Lichia Preto",
       "descricao": "Air Force 1 Low com uma textura de 'couro lichia' em preto, numa colaboração 'The North Face' (estilo) não oficial.",
       "descricaoLonga": "Uma interpretação robusta do AF1 Low em preto. O cabedal apresenta uma distinta textura que imita a casca de lichia, conferindo profundidade e um toque premium ao clássico. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1'07 Low 北面-荔纹黑 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14391,7 +14391,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Ciano e Jade",
       "descricao": "Edição Low-Top em tons de verde-azulado profundo, remetendo à cor ciano ou jade. Uma paleta de cores refrescante.",
       "descricaoLonga": "Este Air Force 1 Low destaca-se pela sua cor 'Ciano Jade' rara e vibrante. A tonalidade verde-azulada oferece uma estética única e é uma excelente peça para dar um toque de cor ao seu estilo. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1'07 Low 青碧 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14441,7 +14441,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Supreme x Air Force 1 Low Cinzento Preto e Verde",
       "descricao": "Colaboração 'Supreme' (estilo) na silhueta Low, em cinzento, preto e toques vibrantes de verde.",
       "descricaoLonga": "Esta colaboração 'Sup' apresenta o AF1 Low num esquema de cores ousado de cinzento, preto e verde. O contraste entre o neutro e o vibrante confere um estilo streetwear de alta visibilidade. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Sup x Air Force 1 Low 灰黑绿 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14492,7 +14492,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Stussy x Air Force 1 Low Bege Cinzento e Castanho Escuro",
       "descricao": "Colaboração no estilo Stüssy no AF1 Low, combinando bege, cinzento e um profundo castanho escuro.",
       "descricaoLonga": "Inspirado nas colaborações da Stüssy com a Nike (estilo), este AF1 Low utiliza materiais premium e uma paleta de cores terrosas e neutras. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Stussy x Air Force 1 Low 米灰深棕 _ Yupoo/Stussy x Air Force 1 Low 米灰深棕 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14544,7 +14544,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 Low Preto e Cinzento com Pele de Cobra",
       "descricao": "AF1 Low em preto e cinzento com painéis texturizados de imitação de pele de cobra.",
       "descricaoLonga": "Um Air Force 1 arrojado, que utiliza preto e cinzento como base e incorpora detalhes de pele de cobra texturizada em certas áreas. O padrão exótico confere um toque luxuoso e selvagem. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 Low 黑灰蛇纹 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14594,7 +14594,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "CPFM x Nike Air Force 1 Low Branco",
       "descricao": "Colaboração inspirada em Cactus Plant Flea Market (CPFM), no clássico branco total com detalhes de design únicos.",
       "descricaoLonga": "Esta edição 'CPFM' do Air Force 1 Low em branco reimagina o ícone com detalhes distintos da marca, como gráficos invulgares e uma estética artesanal, mantendo a base 'Triple White'. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/CPFM x NK Air Force 1 Low 白色 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14643,7 +14643,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Trigo Desconstruído com Tiras",
       "descricao": "AF1 Low na cor 'Trigo', com um design desconstruído e sistema de tiras/atacadores alternativos.",
       "descricaoLonga": "Com um visual de trabalho e aventura, este AF1 Low na cor 'Trigo' apresenta um design desconstruído com painéis distintos e um sistema de tiras que envolve o cabedal. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 '07 Low 小麦解构绑带 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14694,7 +14694,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Stüssy Verde e Castanho",
       "descricao": "Versão Low-Top de estilo Stüssy, combinando tons de verde e castanho, com uma construção em lona/tecido.",
       "descricaoLonga": "Uma paleta de cores terrosas e robustas (verde e castanho) aplicada ao clássico AF1 Low, seguindo a estética das colaborações de Stüssy. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1'07 Low 斯图西-绿棕 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14745,7 +14745,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 X GUCCI Roxo com Tiras",
       "descricao": "Colaboração ousada e (estilo) Air Force 1 X GUCCI, apresentando tiras 'Gucci' e detalhes roxos.",
       "descricaoLonga": "Esta peça de afirmação combina o clássico Air Force 1 Low com a estética de luxo da GUCCI (estilo), nomeadamente através de tiras decorativas e um vibrante tom roxo. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 X GUCCI 空军一号板鞋 “古驰绑带紫” _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14798,7 +14798,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 Low Ano da Cobra Branco e Castanho",
       "descricao": "Edição comemorativa do Ano da Cobra na silhueta Low, combinando branco e castanho com detalhes inspirados em répteis.",
       "descricaoLonga": "Este Air Force 1 Low celebra o Ano da Cobra com um esquema de cores branco e castanho, incorporando texturas de pele de cobra ou detalhes alusivos ao réptil. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 Low 蛇年白棕 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14848,7 +14848,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Bape Camuflado da Selva",
       "descricao": "Versão Low com o icónico padrão 'Camuflado da Selva' da BAPE (estilo), misturando verde, castanho e bege.",
       "descricaoLonga": "Uma fusão de dois ícones: o Air Force 1 '07 Low e o padrão de camuflagem da BAPE (estilo). O cabedal é coberto pelo padrão 'Jungle Camo', conferindo-lhe um estilo streetwear agressivo. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1'07 Low Bape-丛林迷彩 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14900,7 +14900,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Camurça Cinzento e Verde Mini Gancho Estrela",
       "descricao": "Edição 'Campeão em título' em camurça cinzento e verde, com mini-swoosh e detalhes com padrão Estrela.",
       "descricaoLonga": "Com um acabamento premium em camurça cinzento e verde, este AF1 Low '07 combina um estilo subtil com detalhes de destaque. Inclui um elegante mini-swoosh e o popular padrão 'Estrela' (Starlight). Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 '07 Low 麂皮灰绿 卫冕冠军 小勾满天星 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -14952,7 +14952,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "AKIRA x Nike Air Force 1 Low ’07 Cinzento Azul Camurça Estrela",
       "descricao": "Colaboração no estilo AKIRA (anime) no AF1 Low '07, em cinzento e azul com camurça premium e detalhes Estrela.",
       "descricaoLonga": "Inspirado no estilo futurista de AKIRA, este Air Force 1 Low utiliza camurça cinzento e azul de alta qualidade e integra o padrão 'Estrela' (Starlight). Uma peça de destaque que funde a cultura pop com o streetwear. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/AKIRA×Nike Air Force 1 Low ’07 灰蓝 头成麂皮 满天星配色 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -15004,7 +15004,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low 'Pessegueiros' Edição Noite de Natal",
       "descricao": "Edição limitada em tons que remetem a pessegueiros (cor pêssego/rosa claro), lançada para a época natalícia (Noite de Natal).",
       "descricaoLonga": "Uma versão suave e festiva do AF1 Low, utilizando uma cor pêssego ou rosa claro (Peach Trees). Esta edição especial evoca um ambiente calmo e é perfeita para a temporada. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1'07 Low _Peach trees_ 桃之夭夭 平安夜限定 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -15056,7 +15056,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 Low Confissão de Amor Branco e Cinzento Grafíti Tiras",
       "descricao": "Edição 'Confissão de Amor' (Love Confession) em branco/cinzento, com grafíti, design desconstruído e tiras decorativas.",
       "descricaoLonga": "Um design ousado e temático, com base em branco e cinzento, enriquecido com grafíti e um design desconstruído único que inclui tiras. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 Low 爱情宣言 白灰涂鸦解构绑带 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -15106,7 +15106,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 '07 Low Preto Corrente Desconstruído com Tiras",
       "descricao": "AF1 Low em preto total, com corrente metálica, design desconstruído e sistema de tiras/atacadores externos.",
       "descricaoLonga": "Um Air Force 1 ousado em preto monocromático. O design é desconstruído e incorpora um elemento de corrente metálica (chain) para um toque punk/streetwear. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 '07 Low 黑色链条解构绑带 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -15155,7 +15155,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Stussy x Air Force 1 Low Camurça Preto e Azul",
       "descricao": "Colaboração no estilo Stüssy no AF1 Low, em camurça preto e azul escuro, com um toque premium.",
       "descricaoLonga": "Um Air Force 1 de estilo Stüssy em camurça de alta qualidade, combinando preto e um azul escuro profundo. O material e a paleta de cores conferem um visual elegante e discreto. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Stussy x Air Force 1 Low 黑蓝麂皮 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -15206,7 +15206,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Nike Air Force 1 Low 07 Halloween Castanho e Roxo",
       "descricao": "Edição especial de Halloween, combinando cores temáticas de castanho e roxo com possíveis detalhes assustadores.",
       "descricaoLonga": "Este Air Force 1 Low '07 celebra o Halloween com uma combinação sazonal de castanho (outono) e roxo. Apresenta detalhes alusivos à temática. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Nike Air Force 1 Low 07 万圣节 棕紫 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -15257,7 +15257,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "Air Force 1 Low Branco e Preto com Gancho Metálico",
       "descricao": "Versão Low em branco e preto com um Swoosh (gancho) em acabamento metálico, conferindo um toque de luxo.",
       "descricaoLonga": "Um Air Force 1 clássico em branco e preto, distinguido pelo seu Swoosh (gancho) com acabamento metálico. O detalhe brilhante eleva o look básico. Conforto clássico e estilo urbano moderno.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/Air Force 1 Low 白黑金属钩 _ Yupoo - 01.jpg",
       "categoria": "air-force-1-low",
@@ -15308,7 +15308,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low Azul e Branco",
         "descricao": "Um clássico Air Force 1 Low '07 com a combinação de cores intemporal azul e branco.",
         "descricaoLonga": "O Air Force 1 '07 Low Azul e Branco é uma edição fresca e limpa, ideal para qualquer estação. O azul vibrante contrasta perfeitamente com a base branca, oferecendo um visual clássico com um toque de cor. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 '07 Low 蓝白 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15357,7 +15357,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low Colaboração Stüssy Branco e Preto",
         "descricao": "Air Force 1 Low '07 de estilo colaborativo Stüssy, apresentando um esquema de cores branco e preto com textura.",
         "descricaoLonga": "Uma peça inspirada nas famosas colaborações Stüssy, combinando o clássico Air Force 1 com detalhes texturizados e o branding subtil da streetwear. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1'07 Low 斯图西联名 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15407,7 +15407,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low Cinzento Biscoito de Leite",
         "descricao": "AF1 Low com uma cor cinzenta suave e cremosa, apelidada de 'Biscoito de Leite'.",
         "descricaoLonga": "Esta edição 'Milk Biscuit Grey' oferece uma paleta de cores neutra e agradável. O tom cinzento suave, quase bege, é versátil e confere um visual descontraído ao AF1 clássico. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 '07 Low 牛奶饼干灰色 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15457,7 +15457,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "【Custom】Air Force 1 Low Ténis Personalizado",
         "descricao": "Ténis Air Force 1 Low com um conceito de design personalizado e único (Customizado).",
         "descricaoLonga": "Esta é uma peça de design único, representando um conceito de Air Force 1 Low personalizado (Custom). O design e a paleta de cores são únicos, refletindo um estilo exclusivo. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/【定制球鞋】Air Force 1 Low _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15506,7 +15506,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Low Doraemon Cinzento e Azul",
         "descricao": "Edição temática Doraemon, combinando as cores cinzento e azul do famoso personagem de anime.",
         "descricaoLonga": "Um Air Force 1 Low divertido, inspirado no popular personagem Doraemon. Apresenta o esquema de cores cinzento, azul e detalhes subtis que remetem ao visual do gato robô. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Low 哆啦A梦灰蓝 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15557,7 +15557,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Low 07 x Chrome Hearts Cinzento e Verde",
         "descricao": "Colaboração ousada (estilo) com Chrome Hearts, apresentando cinzento, verde e detalhes inspirados em joalharia.",
         "descricaoLonga": "Esta edição 'Chrome Hearts' (estilo) do Air Force 1 Low '07 funde o estilo streetwear com o luxo gótico. Combina um esquema de cores cinzento e verde com detalhes metálicos inspirados na estética de joalharia. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Low 07 x Chrome Hearts 灰绿 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15608,7 +15608,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 '07 Low Colaboração Mamba Negra",
         "descricao": "Air Force 1 Low '07 de estilo colaborativo 'Mamba Negra' (Kobe Bryant), em preto com detalhes temáticos.",
         "descricaoLonga": "Esta edição presta homenagem ao legado de Kobe Bryant ('Mamba Negra') com um esquema de cores predominantemente preto e detalhes que refletem a sua alcunha e estilo. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nk Air Force 1'07 Low 黑曼巴联名 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15658,7 +15658,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low Stüssy Verde e Castanho Claro",
         "descricao": "Versão Low-Top de estilo Stüssy, combinando tons terrosos de verde e castanho claro.",
         "descricaoLonga": "Uma paleta de cores terrosas e robustas (verde musgo e castanho claro) aplicada ao clássico AF1 Low, seguindo a estética das colaborações de Stüssy. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1'07 Low 斯图西-绿浅棕 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15709,7 +15709,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low Verde Jade com Tecnologia Flywire",
         "descricao": "AF1 Low em verde jade vibrante, com detalhes que imitam a tecnologia Flywire ou costura especial (飞线).",
         "descricaoLonga": "Um Air Force 1 com foco no design e na cor. O tom 'Verde Jade' é marcante, complementado por detalhes de costura que dão a aparência de tecnologia Flywire (cabos de suporte). Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1'07 Low  玉石绿飞线 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15758,7 +15758,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 '07 Low 'Rei Macaco Selvagem'",
         "descricao": "Edição especial temática 'Rei Macaco Selvagem' (Wild Monkey King - Sun Wukong), com cores e detalhes alusivos.",
         "descricaoLonga": "Esta edição presta homenagem à lenda do 'Rei Macaco' (Sun Wukong), com cores arrojadas, materiais mistos e detalhes gráficos que remetem à sua natureza 'selvagem'. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1'07 _Wild Monkey King_ 野猿悟空 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15809,7 +15809,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 Low 07 Edição Limitada 'Ano do Dragão'",
         "descricao": "Edição limitada do Ano Novo Chinês, celebrando o 'Ano do Dragão' com detalhes e texturas especiais.",
         "descricaoLonga": "Uma peça de coleção, este AF1 Low '07 'Ano do Dragão' apresenta detalhes intrincados, padrões e cores que honram o Dragão no zodíaco chinês, sendo uma edição limitada. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nike Air Force 1 Low 07 龙年限定 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15861,7 +15861,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike AF1 Low 07 x Supreme Bege Vermelho Mini Gancho Estrela",
         "descricao": "Colaboração (estilo) Supreme no AF1 Low, em bege, vermelho, com mini-swoosh e padrão Estrela.",
         "descricaoLonga": "Uma fusão de estética: a base neutra em bege, o contraste do vermelho, o toque minimalista do mini-swoosh e o brilho do padrão Estrela. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nike Air Force 1 Low 07 x Supreme 米红小钩满天星 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15912,7 +15912,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike AF1 Low 07 Colaboração The North Face x Supreme",
         "descricao": "Tripla colaboração (estilo) de Nike, The North Face e Supreme no AF1 Low '07, em cores e materiais robustos.",
         "descricaoLonga": "Esta peça de estilo 'triple-collab' combina a durabilidade da The North Face e a estética arrojada da Supreme, aplicada ao Air Force 1 Low. Ideal para um estilo utilitário e streetwear. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nike Air Force 1 Low 07 x The North Face x Supreme _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -15963,7 +15963,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 Low 07 x Stüssy Bege e Preto",
         "descricao": "Colaboração (estilo) Stüssy no AF1 Low '07, com cabedal em bege e detalhes contrastantes em preto.",
         "descricaoLonga": "Esta colaboração (estilo) Stüssy oferece uma abordagem elegante e minimalista, utilizando um cabedal de lona ou tecido texturizado em bege, com o Swoosh e a sola em preto. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nike Air Force 1 Low 07 x Stussy _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -16013,7 +16013,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 '07 Low Colaboração Stüssy Castanho",
         "descricao": "AF1 Low '07 de estilo colaborativo Stüssy, em tons de castanho terroso.",
         "descricaoLonga": "Esta edição de estilo Stüssy utiliza uma cor castanha rica e profunda (possivelmente camurça ou lona) para um visual de inspiração utilitária e streetwear. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nk Air Force 1'07 Low 斯图西联名 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -16062,7 +16062,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 '07 Low UN Colaboração Verde Musgo",
         "descricao": "Colaboração (estilo) 'UN' no AF1 Low '07, num tom profundo de verde musgo.",
         "descricaoLonga": "Um Air Force 1 Low com uma cor rica e terrosa de 'Verde Musgo'. O design de colaboração (Estilo UN) confere-lhe um visual único, muitas vezes ligado a temas de sustentabilidade ou utilitários. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nk Air Force 1'07 Low UN联名-青苔绿 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -16111,7 +16111,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Stüssy x Air Force 1 Low Bege e Cinzento Escuro",
         "descricao": "Colaboração no estilo Stüssy no AF1 Low, combinando bege claro com cinzento escuro contrastante.",
         "descricaoLonga": "Esta colaboração (estilo) utiliza lona ou tecido texturizado. O bege claro forma a base, contrastando com o cinzento escuro/preto do Swoosh e da sola. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Stussy x Air Force 1 Low 米白深灰 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -16161,7 +16161,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Stüssy x Air Force 1 Low Branco, Castanho e Preto",
         "descricao": "Colaboração no estilo Stüssy no AF1 Low, com branco, castanho e preto para um visual contrastante.",
         "descricaoLonga": "Esta versão de estilo Stüssy utiliza um esquema de cores mais variado: branco como base, castanho nos painéis e detalhes em preto. Uma abordagem multi-tonal e robusta. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Stussy x Air Force 1 Low 白棕黑 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -16213,7 +16213,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 Low ’07 Branco Total (Básico)",
         "descricao": "O Air Force 1 Low '07 mais icónico no seu esquema de cores 'Triple White' (Branco Total).",
         "descricaoLonga": "O clássico atemporal. O Air Force 1 Low '07 'Triple White' é um item essencial, conhecido pelo seu cabedal em couro branco imaculado e versatilidade incomparável. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nike Air Force 1 Low ’07 _ Yupoo - 01.jpg",
         "categoria": "air-force-1-low",
@@ -16261,7 +16261,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "A Bathing Ape BAPE STA Low Azul Envernizado",
         "descricao": "Ténis A Bathing Ape (BAPE STA) em couro azul envernizado (Patent Leather Blue).",
         "descricaoLonga": "Esta versão do BAPE STA utiliza couro envernizado em um azul intenso, oferecendo um brilho e um visual de luxo ao modelo streetwear. Conforto e estilo arrojado. Conforto clássico e estilo urbano moderno.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/A Bathing Ape _ Yupoo - 10.jpg",
         "categoria": "bape-sta",
@@ -16309,7 +16309,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Low Fontanka Cinza Azul Castanho",
           "descricao": "Edição deconstruída do Air Force 1 Low Fontanka em tons de cinza, azul e castanho.",
           "descricaoLonga": "O Nike Air Force 1 Low Fontanka Cinza Azul Castanho apresenta um design arrojado e desconstruído, inspirado na energia criativa do streetwear contemporâneo, mantendo o conforto clássico do AF1.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Fontanka 灰蓝棕解构 _ Yupoo - 01.jpg",
           "categoria": "air-force-1-low",
@@ -16342,7 +16342,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Low 07 LX White Onyx Bling",
           "descricao": "Edição LX White Onyx Bling com detalhes dourados e acabamento de luxo.",
           "descricaoLonga": "O Nike Air Force 1 Low 07 LX White Onyx Bling combina a elegância do branco com toques de ouro e um acabamento luxuoso, oferecendo um visual sofisticado e moderno.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 07 LX White Onyx Bling LF _ Yupoo - 01.jpg",
           "categoria": "air-force-1-low",
@@ -16375,7 +16375,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nocta x Nike Air Force 1 Low Branco",
           "descricao": "Colaboração exclusiva Nocta x Nike Air Force 1 Low em branco total.",
           "descricaoLonga": "O Nocta x Nike Air Force 1 Low Branco é uma colaboração exclusiva assinada por Drake, com acabamento premium e detalhes minimalistas, mantendo o DNA clássico do AF1.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Nocta x Air Force 1 Low 纯白 _ Yupoo - 01.jpg",
           "categoria": "air-force-1-low",
@@ -16408,7 +16408,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Low 07 x Stussy",
           "descricao": "Colaboração entre Nike e Stussy na icónica silhueta Air Force 1 Low 07.",
           "descricaoLonga": "O Nike Air Force 1 Low 07 x Stussy une o design clássico do AF1 à estética urbana da Stussy, com materiais têxteis e detalhes bordados exclusivos.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Low 07 x Stussy _ Yupoo - 01.jpg",
           "categoria": "air-force-1-low",
@@ -16441,7 +16441,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Low 07 x Travis Scott",
           "descricao": "Edição exclusiva assinada por Travis Scott, com detalhes metálicos e estilo arrojado.",
           "descricaoLonga": "O Nike Air Force 1 Low 07 x Travis Scott é uma colaboração icónica que mistura o design clássico do AF1 com elementos criativos e materiais premium, refletindo o estilo do artista.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Low 07 x Travis Scott _ Yupoo - 01.jpg",
           "categoria": "air-force-1-low",
@@ -16474,7 +16474,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Stussy x Nike Air Force 1 Low 07",
             "descricao": "Colaboração exclusiva Stussy x Nike Air Force 1 Low 07 em tons neutros.",
             "descricaoLonga": "A parceria entre Stussy e Nike traz um Air Force 1 Low 07 com materiais premium e detalhes bordados exclusivos, perfeito para quem aprecia streetwear de luxo.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/Stussy x Nk Air Force 1'07 Low _ Yupoo - 01.jpg",
             "imagensAdicionais": [
@@ -16507,7 +16507,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Stussy x Nike Air Force 1 Low 07 Cinza",
             "descricao": "Versão em cinza do Stussy x Nike Air Force 1 Low 07, moderna e elegante.",
             "descricaoLonga": "Com um design minimalista e materiais de alta qualidade, este Stussy x Nike Air Force 1 Low 07 em cinza combina conforto e sofisticação urbana, ideal para o dia a dia.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/4aa72023.jpg",
             "imagensAdicionais": [
@@ -16538,7 +16538,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Nike Air Force 1 Low Branco Clássico",
             "descricao": "Versão branca do Air Force 1 Low — um ícone do estilo urbano.",
             "descricaoLonga": "O Nike Air Force 1 Low Branco Clássico é conhecido pelo seu design limpo e versátil. Ideal para qualquer outfit, continua a ser uma das silhuetas mais populares da Nike.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/Nike Air Force 1 Low _ Yupoo - 01.jpg",
             "imagensAdicionais": [
@@ -16571,7 +16571,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "1V x Nike Air Force 1 Low Xadrez Preto e Cinza",
             "descricao": "Air Force 1 Low em colaboração com 1V, com padrão xadrez preto e cinza.",
             "descricaoLonga": "O 1V x Nike Air Force 1 Low destaca-se pelo seu padrão xadrez e acabamento elegante. Uma fusão perfeita entre design moderno e tradição Air Force.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/1v x Air Force 1 Low 黑灰棋盘格印花 _ Yupoo - 01.jpg",
             "imagensAdicionais": [
@@ -16604,7 +16604,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Air Force 1 Low 07 Cinza e Verde",
               "descricao": "Air Force 1 Low 07 em tons de cinza e verde, com estilo urbano moderno.",
               "descricaoLonga": "O Nike Air Force 1 Low 07 Cinza e Verde apresenta um visual sofisticado com sobreposições em tons neutros e detalhes em verde. Um equilíbrio perfeito entre elegância e conforto.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/Air Force 1 '07 Low 米灰绿 _ Yupoo - 01.jpg",
               "imagensAdicionais": [
@@ -16637,7 +16637,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Air Force 1 Low Camurça Bege e Castanho",
               "descricao": "Air Force 1 Low em camurça bege e castanha, com um visual premium e suave.",
               "descricaoLonga": "O Nike Air Force 1 Low em camurça bege e castanha combina tons terrosos e materiais de qualidade. Ideal para quem procura conforto e estilo discreto.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/Nk Air Force 1'07 Low 米黄棕麂皮 _ Yupoo - 01.jpg",
               "imagensAdicionais": [
@@ -16670,7 +16670,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Air Force 1 Low Cleanfit",
               "descricao": "Air Force 1 Low Cleanfit — estilo minimalista e conforto total.",
               "descricaoLonga": "Com o conceito 'Cleanfit', este modelo do Air Force 1 Low destaca-se pela leveza e pela construção respirável, mantendo o estilo clássico da linha Air Force.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/Nk Air Force 1'07 Low Cleanfit _ Yupoo - 01.jpg",
               "imagensAdicionais": [
@@ -16703,7 +16703,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Air Force 1 Low 07 Preto e Azul",
               "descricao": "Air Force 1 Low 07 com detalhes em preto e azul, elegante e versátil.",
               "descricaoLonga": "O Nike Air Force 1 Low 07 Preto e Azul apresenta um design moderno com base preta e detalhes em azul vibrante. Ideal para quem procura um visual distinto sem perder o conforto.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/Air Force 1 '07 Low 黑蓝编织钩 _ Yupoo - 01.jpg",
               "imagensAdicionais": [
@@ -16736,7 +16736,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Air Force 1 Low 07 Branco e Preto",
               "descricao": "Versão moderna do Air Force 1 Low 07 com combinação branca e preta.",
               "descricaoLonga": "Um dos modelos mais populares, o Nike Air Force 1 Low 07 Branco e Preto mantém o estilo original da linha Air Force com um toque moderno e contrastante.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/5cc7f24e.jpg",
               "imagensAdicionais": [
@@ -16765,7 +16765,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "Ambush x Nike Air Force 1 Low SP Roxo",
                 "descricao": "Colaboração Ambush x Nike Air Force 1 Low SP em roxo elegante com detalhes exclusivos.",
                 "descricaoLonga": "O Ambush x Nike Air Force 1 Low SP combina o estilo urbano da Nike com o design ousado da Ambush. Um modelo limitado com acabamentos premium e visual arrojado.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/e9d14d8e.jpg",
                 "imagensAdicionais": [
@@ -16794,7 +16794,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "Nike Air Force 1 Low Verde Matcha",
                 "descricao": "Air Force 1 Low em verde matcha com sola em borracha natural.",
                 "descricaoLonga": "Inspirado no tom refrescante do chá matcha, este Nike Air Force 1 Low combina conforto e originalidade, com uma sola em borracha que garante aderência e durabilidade.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/Air Force 1 '07 Low 抹茶绿生胶 _ Yupoo - 01.jpg",
                 "imagensAdicionais": [
@@ -16827,7 +16827,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "Nike Air Force 1 Low Verde e Laranja",
                 "descricao": "Air Force 1 Low com combinação de cores vibrante — verde e laranja.",
                 "descricaoLonga": "Este Nike Air Force 1 Low traz uma fusão ousada de verde e laranja, ideal para quem gosta de se destacar. Confortável e durável, perfeito para o uso diário.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/Nike Air Force 1 Low 绿橙色 _ Yupoo - 01.jpg",
                 "imagensAdicionais": [
@@ -16860,7 +16860,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "Nike Air Force 1 Low Preto e Verde Escuro",
                 "descricao": "Air Force 1 Low em preto com detalhes em verde escuro — um clássico moderno.",
                 "descricaoLonga": "Combinação de sobriedade e estilo: o Nike Air Force 1 Low Preto e Verde Escuro mantém o design icónico, adicionando um toque moderno com tons contrastantes.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/Air Force 1 '07 Low 纯黑墨绿 _ Yupoo - 01.jpg",
                 "imagensAdicionais": [
@@ -16893,7 +16893,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "Nike Air Force 1 Low Digimon 'Angewomon'",
                 "descricao": "Edição especial inspirada em Digimon — Air Force 1 Low 'Angewomon'.",
                 "descricaoLonga": "Inspirado na personagem Angewomon da série Digimon, este Air Force 1 Low combina branco e dourado com detalhes digitais únicos. Um par colecionável e cheio de personalidade.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/Nk Air Force 1'07 Low _Angewomon_ 数码宝贝 天女兽 _ Yupoo - 01.jpg",
                 "imagensAdicionais": [
@@ -16926,7 +16926,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                   "nome": "Nike Air Force 1 Low Estampado Trigo",
                   "descricao": "Air Force 1 Low em tons de trigo com detalhes estampados únicos.",
                   "descricaoLonga": "O Nike Air Force 1 Low Estampado Trigo combina o visual clássico com um toque moderno através de padrões sutis e materiais premium. Ideal para quem aprecia estilo e conforto no dia a dia.",
-                  "preco": 55.99,
+                  "preco": 62.99,
                   "precoAntigo": 99.99,
                   "imagem": "/images/Air Force 1 '07 Low 印花小麦 _ Yupoo - 01.jpg",
                   "imagensAdicionais": [
@@ -16959,7 +16959,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                   "nome": "Ambush x Nike Air Force 1 Low SP Vermelho",
                   "descricao": "Versão especial Ambush x Nike Air Force 1 Low SP em azul vibrante.",
                   "descricaoLonga": "O Ambush x Nike Air Force 1 Low SP Vermelho apresenta um design ousado e detalhes tridimensionais característicos da Ambush. Um sneaker moderno que mistura luxo e streetwear.",
-                  "preco": 55.99,
+                  "preco": 62.99,
                   "precoAntigo": 99.99,
                   "imagem": "/images/64373312.jpg",
                   "imagensAdicionais": [
@@ -16988,7 +16988,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                   "nome": "Nike Air Force 1 Low 'By You' Paris",
                   "descricao": "Edição personalizada Nike Air Force 1 Low 'By You' inspirada em Paris.",
                   "descricaoLonga": "Inspirado nas ruas de Paris, o Air Force 1 Low 'By You' apresenta tons neutros e detalhes personalizados que refletem o charme parisiense. Um modelo único para colecionadores.",
-                  "preco": 55.99,
+                  "preco": 62.99,
                   "precoAntigo": 99.99,
                   "imagem": "/images/Air Force 1 Low _By You_ 巴黎米白黑 _ Yupoo - 01.jpg",
                   "imagensAdicionais": [
@@ -17021,7 +17021,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                     "nome": "Nike Air Force 1 Low 'By You' Bege Gelo",
                     "descricao": "Edição exclusiva Nike Air Force 1 Low 'By You' em tons de bege e azul gelo.",
                     "descricaoLonga": "Inspirado no estilo urbano, o Air Force 1 Low 'By You' combina um elegante bege com detalhes em azul gelo. Um sneaker que reflete estilo e sofisticação com a personalização clássica da linha 'By You'.",
-                    "preco": 55.99,
+                    "preco": 62.99,
                     "precoAntigo": 99.99,
                     "imagem": "/images/Air Force 1 Low _By You_ 米白冰蓝 _ Yupoo - 01.jpg",
                     "imagensAdicionais": [
@@ -17054,7 +17054,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                     "nome": "Nike Air Force 1 '07 Low Black Warrior",
                     "descricao": "O clássico Air Force 1 '07 Low em versão totalmente preta.",
                     "descricaoLonga": "Conhecido como 'Black Warrior', este Air Force 1 '07 Low apresenta um design minimalista e sofisticado com acabamento em preto integral, mantendo o conforto e durabilidade lendários da Nike.",
-                    "preco": 55.99,
+                    "preco": 62.99,
                     "precoAntigo": 99.99,
                     "imagem": "/images/Air Force 1 '07 Low 黑武士纯黑 _ Yupoo - 01.jpg",
                     "imagensAdicionais": [
@@ -17087,7 +17087,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                     "nome": "Akira x Nike Air Force 1 Low Suede Stars",
                     "descricao": "Colaboração Akira x Nike Air Force 1 com cabedal em camurça e detalhes em estrelas.",
                     "descricaoLonga": "Inspirado na estética Akira, este Air Force 1 apresenta uma mistura de cores e texturas com cabedal em camurça e aplicação de estrelas cintilantes, mantendo a silhueta icónica do modelo.",
-                    "preco": 55.99,
+                    "preco": 62.99,
                     "precoAntigo": 99.99,
                     "imagem": "/images/Akira x Nk Air Force 1'07 Low 高志麂皮 满天星配色 _ Yupoo - 01.jpg",
                     "imagensAdicionais": [
@@ -17120,7 +17120,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                     "nome": "Nike Air Force 1 Low Supreme",
                     "descricao": "Edição limitada Air Force 1 Low Supreme, com design minimalista e branding discreto.",
                     "descricaoLonga": "A colaboração entre Nike e Supreme mantém a silhueta clássica do Air Force 1, destacando-se pelo logo vermelho da Supreme e acabamento premium. Um ícone para colecionadores.",
-                    "preco": 55.99,
+                    "preco": 62.99,
                     "precoAntigo": 99.99,
                     "imagem": "/images/Air Force 1'07 Low Supreme _ Yupoo - 10.jpg",
                     "imagensAdicionais": [
@@ -17153,7 +17153,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                     "nome": "Nike Air Force 1 '07 Low Branco Clássico",
                     "descricao": "O icónico Nike Air Force 1 '07 Low em branco puro — o modelo mais clássico da linha.",
                     "descricaoLonga": "Um dos sneakers mais reconhecidos do mundo, o Air Force 1 '07 Low oferece conforto, durabilidade e estilo em qualquer ocasião. O modelo essencial para qualquer coleção.",
-                    "preco": 55.99,
+                    "preco": 62.99,
                     "precoAntigo": 99.99,
                     "imagem": "/images/Air Force 1 '07 Low _ Yupoo - 01.jpg",
                     "imagensAdicionais": [
@@ -17186,7 +17186,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                     "nome": "Nike Air Force 1 Low North Face Cinza Azul",
                     "descricao": "Modelo Air Force 1 Low com inspiração North Face e design reconstruído.",
                     "descricaoLonga": "Este Air Force 1 Low apresenta um look desconstruído em tons de cinza e azul, com detalhes em fita e camadas inspiradas no estilo técnico da North Face.",
-                    "preco": 55.99,
+                    "preco": 62.99,
                     "precoAntigo": 99.99,
                     "imagem": "/images/Air Force 1 Low 北面米灰蓝解构绑带 _ Yupoo - 01.jpg",
                     "imagensAdicionais": [
@@ -17219,7 +17219,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                     "nome": "CDG x Nike Air Force 1 Low Bege e Vermelho",
                     "descricao": "Colaboração exclusiva CDG x Nike Air Force 1 Low em bege com detalhes vermelhos.",
                     "descricaoLonga": "A parceria entre Comme des Garçons e Nike dá origem a este modelo icónico com contraste elegante entre bege e vermelho. Uma peça essencial para fãs de moda e sneakers.",
-                    "preco": 55.99,
+                    "preco": 62.99,
                     "precoAntigo": 99.99,
                     "imagem": "/images/CDG x Air Force 1 Low 米白红 _ Yupoo - 01.jpg",
                     "imagensAdicionais": [
@@ -17252,7 +17252,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                       "nome": "AMBUSH x Nike Air Force 1 Low SP",
                       "descricao": "Versão exclusiva AMBUSH x Air Force 1 Low SP com detalhes arrojados.",
                       "descricaoLonga": "A colaboração AMBUSH adiciona um design moderno ao clássico Air Force 1 Low, com cores vibrantes e acabamento premium. Perfeito para colecionadores e fãs de streetwear.",
-                      "preco": 55.99,
+                      "preco": 62.99,
                       "precoAntigo": 99.99,
                       "imagem": "/images/d5706a55.jpg",
                       "imagensAdicionais": [
@@ -17280,7 +17280,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                       "nome": "Sup x Nike Air Force 1 Low Bege e Preto",
                       "descricao": "Colaboração Sup x Air Force 1 Low em tons neutros de bege e preto.",
                       "descricaoLonga": "O Air Force 1 Low ganha um toque de exclusividade com a colaboração Sup, combinando bege e preto em design elegante e confortável.",
-                      "preco": 55.99,
+                      "preco": 62.99,
                       "precoAntigo": 99.99,
                       "imagem": "/images/Sup x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                       "imagensAdicionais": [
@@ -17313,7 +17313,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                       "nome": "Nike Air Force 1 '07 Low Cinza Nebuloso e Roxo",
                       "descricao": "Air Force 1 Low em tons de cinza nebuloso com detalhes roxos.",
                       "descricaoLonga": "Este modelo Air Force 1 Low combina tons suaves de cinza e roxo com um design limpo e moderno, ideal para streetwear e uso diário.",
-                      "preco": 55.99,
+                      "preco": 62.99,
                       "precoAntigo": 99.99,
                       "imagem": "/images/Air Force 1 '07 Low 灰雾紫 _ Yupoo - 01.jpg",
                       "imagensAdicionais": [
@@ -17346,7 +17346,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                       "nome": "Nike Air Force 1 Low Gucci Camurça Preta",
                       "descricao": "Air Force 1 Low com inspiração Gucci, camurça preta e padrão discreto.",
                       "descricaoLonga": "O Air Force 1 Low Gucci combina o estilo clássico da silhueta com camurça premium e padrões discretos, perfeito para fãs de marcas de luxo e streetwear.",
-                      "preco": 55.99,
+                      "preco": 62.99,
                       "precoAntigo": 99.99,
                       "imagem": "/images/Air Force 1 Low 古驰暗纹黑麂皮 _ Yupoo - 01.jpg",
                       "imagensAdicionais": [
@@ -17379,7 +17379,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                       "nome": "Nike Air Force 1 '07 Low Camurça Framboesa",
                       "descricao": "Air Force 1 Low com camurça em tom framboesa vibrante.",
                       "descricaoLonga": "Este modelo combina conforto e estilo com camurça premium em tom framboesa, mantendo o design clássico do Air Force 1 '07 Low.",
-                      "preco": 55.99,
+                      "preco": 62.99,
                       "precoAntigo": 99.99,
                       "imagem": "/images/Air Force 1 '07 Low 树莓红麂皮 _ Yupoo - 01.jpg",
                       "imagensAdicionais": [
@@ -17412,7 +17412,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                         "nome": "Nike Air Force 1 Low Premium Verde e Laranja",
                         "descricao": "Air Force 1 Low Premium com combinação vibrante de verde e laranja.",
                         "descricaoLonga": "Este modelo Air Force 1 Low Premium combina cores vibrantes com conforto e estilo clássico da silhueta, ideal para colecionadores e streetwear.",
-                        "preco": 55.99,
+                        "preco": 62.99,
                         "precoAntigo": 99.99,
                         "imagem": "/images/Air Force 1 Low Premium 绿橙 _ Yupoo - 01.jpg",
                         "imagensAdicionais": [
@@ -17445,7 +17445,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                         "nome": "Nike Air Force 1 Low Gradiente Branco, Azul e Vermelho",
                         "descricao": "Air Force 1 Low com gradiente em branco, azul e vermelho.",
                         "descricaoLonga": "O Air Force 1 Low Gradiente combina estilo moderno e conforto, com cores vibrantes em transição suave, perfeito para streetwear.",
-                        "preco": 55.99,
+                        "preco": 62.99,
                         "precoAntigo": 99.99,
                         "imagem": "/images/Air Force 1 Low 米白蓝红渐变 _ Yupoo - 01.jpg",
                         "imagensAdicionais": [
@@ -17478,7 +17478,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                         "nome": "Nike Air Force 1 Low Branco e preto Clássico",
                         "descricao": "Air Force 1 Low em design clássico totalmente branco e preto.",
                         "descricaoLonga": "O modelo clássico da Air Force 1 Low oferece conforto e estilo intemporal, ideal para uso diário e coleções de sneakers.",
-                        "preco": 55.99,
+                        "preco": 62.99,
                         "precoAntigo": 99.99,
                         "imagem": "/images/924250da.jpg",
                         "imagensAdicionais": [
@@ -17507,7 +17507,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Nike Air Force 1 Low Branco e Preto Simples",
                           "descricao": "Air Force 1 Low com design minimalista em branco e preto.",
                           "descricaoLonga": "Este Air Force 1 Low combina um estilo clean com conforto e durabilidade, perfeito para uso diário e streetwear.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Air Force 1 '07 Low 简约白黑 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -17540,7 +17540,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "TNF x Nike Air Force 1 Low Azul e Vermelho",
                           "descricao": "Air Force 1 Low colaboração TNF com cores azul e vermelho.",
                           "descricaoLonga": "Edição especial TNF x Air Force 1 Low, combinando estilo outdoor com o clássico design da silhueta Air Force 1 Low.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/TNF x Air Force 1 Low 米蓝红 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -17573,7 +17573,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Nike Air Force 1 Low Violent Bear Branco e Preto",
                           "descricao": "Air Force 1 Low edição Violent Bear em branco e preto.",
                           "descricaoLonga": "Design inspirado no Violent Bear, com cores contrastantes e detalhes únicos, mantendo o conforto clássico da silhueta Air Force 1 Low.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Air Force 1 Low 暴力熊白黑 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -17606,7 +17606,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Stitch x Nike Air Force 1 Low Cinza e Verde",
                           "descricao": "Air Force 1 Low colaboração Stitch com cores cinza e verde.",
                           "descricaoLonga": "Edição Stitch x Air Force 1 Low com detalhes em cinza e verde, perfeita para fãs de colaborações exclusivas.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Stitch x Air Force 1 Low 灰绿绑带 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -17639,7 +17639,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Air Jordan 1 Low x Supreme",
                           "descricao": "Colaboração Air Jordan 1 Low com Supreme.",
                           "descricaoLonga": "Edição limitada Air Jordan 1 Low x Supreme, trazendo o estilo icônico da Supreme para a silhueta Air Force 1 Low.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Air Jordan 1 Low x Supreme _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -17672,7 +17672,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Nike Air Force 1 Low Azul e Dourado",
                             "descricao": "Air Force 1 Low em azul com detalhes dourados.",
                             "descricaoLonga": "Esta edição do Air Force 1 Low combina tons azul escuro com detalhes dourados, ideal para streetwear e colecionadores.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 Low 墨蓝金 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -17705,7 +17705,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Nike Air Force 1 Low Colaboração",
                             "descricao": "Air Force 1 Low edição colaborativa especial.",
                             "descricaoLonga": "Air Force 1 Low exclusivo em edição limitada colaborativa, combinando conforto e estilo urbano.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Nike Air Force 1 Low 联名款 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -17738,7 +17738,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Nike Air Force 1 Low 07 Branco com Cordas",
                             "descricao": "Air Force 1 Low 07 branco com cordas decorativas.",
                             "descricaoLonga": "Design clean do Air Force 1 Low 07 com cordas brancas que acrescentam um toque especial à silhueta clássica.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 '07 Low 纯白麻绳解构绑带 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -17771,7 +17771,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Stussy x Nike Air Force 1 Low Cinza",
                             "descricao": "Air Force 1 Low colaboração Stussy em cinza.",
                             "descricaoLonga": "Edição limitada Stussy x Air Force 1 Low com cores cinza e detalhes exclusivos, ideal para colecionadores.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Stussy x Air Force 1 Low 米灰生胶 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -17804,7 +17804,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Nike Air Force 1 Low Escuro em Camurça",
                             "descricao": "Air Force 1 Low em camurça escura.",
                             "descricaoLonga": "Air Force 1 Low premium com camurça de alta qualidade, cores escuras e detalhes elegantes, perfeito para streetwear.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 '07 Low 暗黑麂皮 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -17837,7 +17837,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Nike Air Force 1 Low Bege e Marrom Camurça",
                             "descricao": "Air Force 1 Low em tons bege e marrom de camurça.",
                             "descricaoLonga": "Esta edição combina camurça bege e marrom, oferecendo conforto e estilo sofisticado para colecionadores e streetwear.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 '07 Low 米黄棕麂皮 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -17870,7 +17870,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Nike Air Force 1 Low Halloween Spider",
                             "descricao": "Air Force 1 Low edição Halloween com design de aranha prateada.",
                             "descricaoLonga": "Edição especial de Halloween do Air Force 1 Low com detalhes em prata representando uma aranha, ideal para colecionadores.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 Low 万圣节水银蜘蛛 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -17903,7 +17903,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Air Force 1 Low Personalizado",
                               "descricao": "Air Force 1 Low edição personalizada.",
                               "descricaoLonga": "Edição especial Air Force 1 Low personalizada, perfeita para quem quer um design único e exclusivo.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/【定制球鞋】Air Force 1 Low _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -17936,7 +17936,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Air Force 1 Low Halloween Vermelho Esqueleto",
                               "descricao": "Air Force 1 Low edição Halloween em vermelho com esqueleto em relevo.",
                               "descricaoLonga": "Edição limitada Air Force 1 Low com design Halloween vermelho e esqueleto em relevo, perfeito para colecionadores.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/Air Force 1 Low 万圣节酒红骷髅浮雕 _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -17969,7 +17969,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Air Force 1 Low 07 Ice Blue Stars",
                               "descricao": "Air Force 1 Low 07 edição Ice Blue com padrão de estrelas.",
                               "descricaoLonga": "Edição especial Air Force 1 Low 07 em azul gelo com estrelas, ideal para colecionadores e streetwear.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/Air Force 1 '07 Low 冰蓝满天星 _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -18002,7 +18002,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Air Force 1 Low Campeão Cinza Camurça",
                               "descricao": "Air Force 1 Low edição Campeão em camurça cinza.",
                               "descricaoLonga": "Edição limitada Air Force 1 Low em camurça cinza, combinando conforto e estilo urbano, inspirada em vitórias e campeonatos.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/卫冕冠军 x Air Force 1 Low 米灰麂皮 _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -18035,7 +18035,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Nk Air Force 1'07 Low Personalizado Corda Grossa",
                                 "descricao": "Air Force 1 Low edição personalizada com corda grossa.",
                                 "descricaoLonga": "Edição especial Nk Air Force 1'07 Low com corda grossa, combinando conforto e design urbano exclusivo.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Nk Air Force 1'07 Low 定制款 粗麻绳 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -18068,7 +18068,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Sup x Air Force 1 Low Preto",
                                 "descricao": "Air Force 1 Low em colaboração Sup, cor preta.",
                                 "descricaoLonga": "Edição limitada Sup x Air Force 1 Low em preto, combinando exclusividade e streetwear.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Sup x Air Force 1 Low 黑色 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -18101,7 +18101,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Air Force 1 Low Wukong Cinza Azul",
                                 "descricao": "Air Force 1 Low edição Wukong em cinza e azul.",
                                 "descricaoLonga": "Edição especial Air Force 1 Low Wukong em tons de cinza e azul, inspirada no clássico personagem do folclore chinês.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Air Force 1 Low 悟空米灰蓝 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -18134,7 +18134,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Stussy x Air Force 1 Low Cinza Vermelho",
                                 "descricao": "Air Force 1 Low em colaboração Stussy, cores cinza e vermelho.",
                                 "descricaoLonga": "Edição limitada Stussy x Air Force 1 Low em tons de cinza e vermelho, perfeita para streetwear e colecionadores.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Stussy x Air Force 1 Low 米灰红 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -18167,7 +18167,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Air Force 1 Low 'By You' Corda Preta Camurça",
                                 "descricao": "Air Force 1 Low edição 'By You' em camurça preta com corda grossa.",
                                 "descricaoLonga": "Edição personalizada Air Force 1 Low 'By You', combinando camurça preta premium e corda grossa para um design único.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/f7fd6132.jpg",
                                 "imagensAdicionais": [
@@ -18195,7 +18195,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Air Force 1 '07 Low Camurça Cinza",
                                 "descricao": "Air Force 1 '07 Low em camurça cinza.",
                                 "descricaoLonga": "Edição Air Force 1 '07 Low em camurça cinza, perfeita para streetwear e uso diário, com design clássico Nike.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Air Force 1 '07 Low 灰蓝麂皮 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -18228,7 +18228,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "Air Force 1 '07 Low Branco e Marrom",
                                   "descricao": "Air Force 1 '07 Low nas cores branco e marrom.",
                                   "descricaoLonga": "Edição Air Force 1 '07 Low em branco e marrom, com materiais premium e design clássico Nike.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/Air Force 1 '07 Low 白棕 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -18261,7 +18261,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "Air Force 1 '07 Low Branco, Cinza e Verde",
                                   "descricao": "Air Force 1 '07 Low nas cores branco, cinza e verde.",
                                   "descricaoLonga": "Edição Air Force 1 '07 Low com detalhes em branco, cinza e verde, combinando conforto e estilo urbano.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/Air Force 1 '07 Low 白灰绿 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -18294,7 +18294,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "Air Force 1 Low 'Dark Pewter' Preto",
                                   "descricao": "Air Force 1 Low edição 'Dark Pewter' na cor preta.",
                                   "descricaoLonga": "Edição especial Air Force 1 Low 'Dark Pewter', combinando design moderno e materiais premium em preto.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/Air Force 1 Low _Dark Pewter_ 黑色 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -18327,7 +18327,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "CDG x Sup x Air Force 1 Low Branco e Preto Graffiti",
                                   "descricao": "Air Force 1 Low colaboração CDG x Sup em branco e preto com grafite.",
                                   "descricaoLonga": "Edição limitada CDG x Sup x Air Force 1 Low, design streetwear exclusivo em cores branco e preto com grafite artístico.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/CDG x Sup x Air Force 1 Low 三方联名白黑涂鸦 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -18360,7 +18360,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "PEACEMINUSONE x NK Air Force 1 Low",
                                   "descricao": "Edição PEACEMINUSONE x NK Air Force 1 Low.",
                                   "descricaoLonga": "Air Force 1 Low em colaboração com PEACEMINUSONE e Nike, design exclusivo e materiais premium.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/PEACEMINUSONE x NK Air Force 1 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -18393,7 +18393,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 '07 Low Bape",
                                     "descricao": "Air Force 1 '07 Low em colaboração com Bape.",
                                     "descricaoLonga": "Edição limitada Air Force 1 '07 Low em colaboração com Bape, design exclusivo e materiais premium.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1'07 Low Bape _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -18426,7 +18426,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Campeão x Air Force 1 Low Preto Refletivo",
                                     "descricao": "Colaboração Campeão x Air Force 1 Low em preto refletivo.",
                                     "descricaoLonga": "Edição limitada Air Force 1 Low em colaboração com Campeão, design moderno com detalhes refletivos.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/卫冕冠军 x Air Force 1 Low 米黑反光 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -18459,7 +18459,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 Low Next Nature Castanho",
                                     "descricao": "Air Force 1 Low Next Nature na cor castanho.",
                                     "descricaoLonga": "Edição Air Force 1 Low Next Nature em castanho, feita com materiais sustentáveis e design moderno.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1 Low Next Nature 棕色 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -18492,7 +18492,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Stussy x Air Force 1 Low Branco e Preto",
                                     "descricao": "Colaboração Stussy x Air Force 1 Low em branco e preto.",
                                     "descricaoLonga": "Edição limitada Stussy x Air Force 1 Low, design exclusivo em branco e preto com solado natural.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Stussy x Air Force 1 Low 米黑生胶 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -18525,7 +18525,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 Low 'By You' LV Verde",
                                     "descricao": "Air Force 1 Low edição 'By You' LV na cor verde.",
                                     "descricaoLonga": "Personalização exclusiva Air Force 1 Low 'By You' com detalhes LV em verde, design único para colecionadores.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1 Low _By You_ LV米绿 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -18558,7 +18558,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 Low 'By You' Stussy Cinza",
                                     "descricao": "Air Force 1 Low edição 'By You' Stussy em cinza.",
                                     "descricaoLonga": "Personalização Air Force 1 Low 'By You' em colaboração com Stussy, detalhes em cinza e solado natural.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1 Low _By You_ 斯图西米灰 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -18591,7 +18591,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Sup x Air Force 1 Low Branco e Preto",
                                     "descricao": "Supreme x Air Force 1 Low edição branco e preto.",
                                     "descricaoLonga": "Colaboração Supreme x Nike Air Force 1 Low, design exclusivo em branco e preto com solado natural.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Sup x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -18624,7 +18624,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Air Force 1 Low Branco, Castanho e Verde",
                                       "descricao": "Air Force 1 Low com combinação de cores branco, castanho e verde.",
                                       "descricaoLonga": "Air Force 1 Low com design exclusivo em branco, castanho e verde, ideal para streetwear e colecionadores.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/Air Force 1 Low 白褐绿 _ Yupoo - 01.jpg",
                                       "imagensAdicionais": [
@@ -18657,7 +18657,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Kobe x Air Force 1 Low Branco, Amarelo e Roxo",
                                       "descricao": "Colaboração Kobe x Air Force 1 Low em branco, amarelo e roxo.",
                                       "descricaoLonga": "Edição limitada Air Force 1 Low em colaboração com Kobe, combinando cores branco, amarelo e roxo.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/Kobe x Air Force 1 Low 白黄紫 _ Yupoo - 01.jpg",
                                       "imagensAdicionais": [
@@ -18690,7 +18690,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Air Force 1 Low Personalizado",
                                       "descricao": "Air Force 1 Low edição personalizada.",
                                       "descricaoLonga": "Edição especial Air Force 1 Low customizada, ideal para colecionadores e amantes de streetwear.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/b49150e9.jpg",
                                       "imagensAdicionais": [
@@ -18719,7 +18719,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Stussy x Air Force 1 Low Branco e Verde",
                                       "descricao": "Colaboração Stussy x Air Force 1 Low em branco e verde.",
                                       "descricaoLonga": "Edição limitada Air Force 1 Low em colaboração com Stussy, detalhes em branco e verde com solado natural.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/Stussy x Air Force 1 Low 米白绿 _ Yupoo - 01.jpg",
                                       "imagensAdicionais": [
@@ -18752,7 +18752,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                         "nome": "Air Force 1 Low Branco e Prata com Diamantes",
                                         "descricao": "Air Force 1 Low em branco com detalhes prateados e efeito diamante.",
                                         "descricaoLonga": "Edição exclusiva Air Force 1 Low com acabamento branco e prata brilhante, perfeito para colecionadores e amantes de sneakers chamativos.",
-                                        "preco": 55.99,
+                                        "preco": 62.99,
                                         "precoAntigo": 99.99,
                                         "imagem": "/images/Air Force 1 Low 白银闪钻满天星 _ Yupoo - 01.jpg",
                                         "imagensAdicionais": [
@@ -18785,7 +18785,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                         "nome": "Air Force 1 Low Pikachu Branco, Preto e Amarelo",
                                         "descricao": "Air Force 1 Low inspirado no Pikachu, com cores branco, preto e amarelo.",
                                         "descricaoLonga": "Edição temática Air Force 1 Low com design inspirado no Pikachu, ideal para fãs de Pokémon e streetwear.",
-                                        "preco": 55.99,
+                                        "preco": 62.99,
                                         "precoAntigo": 99.99,
                                         "imagem": "/images/Air Force 1 Low 皮卡丘白黑黄 _ Yupoo - 01.jpg",
                                         "imagensAdicionais": [
@@ -18818,7 +18818,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                         "nome": "Air Force 1 Low Branco e Verde Escuro",
                                         "descricao": "Air Force 1 Low em branco com detalhes verde escuro.",
                                         "descricaoLonga": "Design clássico Air Force 1 Low com combinação de branco e verde escuro, ideal para uso diário e colecionadores.",
-                                        "preco": 55.99,
+                                        "preco": 62.99,
                                         "precoAntigo": 99.99,
                                         "imagem": "/images/Air Force 1 Low 白墨绿 _ Yupoo - 01.jpg",
                                         "imagensAdicionais": [
@@ -18851,7 +18851,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low Preto Obsidiana",
                                           "descricao": "Air Force 1 Low com acabamento Preto Obsidiana.",
                                           "descricaoLonga": "Edição Air Force 1 Low com couro premium em Preto Obsidiana, perfeita para colecionadores e streetwear.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 '07 Low 黑曜石 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -18884,7 +18884,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low Preto e Branco com Cadarços Grossos",
                                           "descricao": "Air Force 1 Low com design preto e branco e cadarços grossos.",
                                           "descricaoLonga": "Edição Air Force 1 Low com cadarços grossos e combinação de cores preto e branco, ideal para streetwear e colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 Low 黑白粗绳解构绑带 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -18917,7 +18917,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low Aniversário Verde",
                                           "descricao": "Air Force 1 Low edição aniversário em verde com sola de borracha.",
                                           "descricaoLonga": "Edição especial Air Force 1 Low aniversário, combinando verde e materiais premium, perfeita para colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 Low 周年米绿生胶 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -18950,7 +18950,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Bape x Air Force 1 Low Branco e Cinza",
                                           "descricao": "Colaboração Bape com Air Force 1 Low em branco e cinza.",
                                           "descricaoLonga": "Edição colaborativa Bape x Air Force 1 Low, com design moderno em branco e cinza, ideal para streetwear e colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Bape x Air Force 1 Low 米白灰 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -18983,7 +18983,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low Estilo Chinês Azul, Verde e Roxo",
                                           "descricao": "Air Force 1 Low inspirado na estética chinesa, com cores azul, verde e roxo.",
                                           "descricaoLonga": "Edição Air Force 1 Low com inspiração em estilo tradicional chinês, combinando azul, verde e roxo para um visual único.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 '07 Low 国风米蓝绿紫 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -19016,7 +19016,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low Cinza Menta com Estrelas",
                                           "descricao": "Air Force 1 Low em cinza menta com efeito estrelas.",
                                           "descricaoLonga": "Edição Air Force 1 Low com acabamento cinza menta e estampa de estrelas, perfeito para streetwear e colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 '07 Low 米灰满天星 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -19049,7 +19049,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low Purple Dragon",
                                           "descricao": "Air Force 1 Low em roxo e preto, edição Purple Dragon.",
                                           "descricaoLonga": "Edição Air Force 1 Low Purple Dragon, combinando roxo e preto com detalhes modernos, ideal para streetwear e colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 Low 紫龙虾黑紫 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -19082,7 +19082,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low Majila Branco",
                                           "descricao": "Air Force 1 Low Majila em branco clássico.",
                                           "descricaoLonga": "Edição Air Force 1 Low Majila em branco, perfeita para combinar com qualquer outfit e ideal para colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 Low 马吉拉米白 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -19115,7 +19115,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Air Force 1 Low Juvenil Cinza e Branco",
                                             "descricao": "Air Force 1 Low para jovens em cinza e branco.",
                                             "descricaoLonga": "Edição Air Force 1 Low Juvenil com couro premium e detalhes em cinza e branco, perfeita para estilo casual e streetwear.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Air Force 1 '07 Low 青少年灰白 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -19148,7 +19148,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Ambush x Air Force 1 Low Trigo",
                                             "descricao": "Colaboração Ambush com Air Force 1 Low em cor trigo.",
                                             "descricaoLonga": "Edição limitada Ambush x Air Force 1 Low, combinando materiais premium e cor trigo, ideal para colecionadores e streetwear.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Ambush x Air Force 1 Low 小麦色 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -19181,7 +19181,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Air Force 1 Low Branco e Cinza Refletivo",
                                             "descricao": "Air Force 1 Low em branco e cinza com efeito refletivo.",
                                             "descricaoLonga": "Edição Air Force 1 Low com cores branco e cinza e detalhes refletivos, perfeita para streetwear e colecionadores.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Air Force 1 '07 Low 白灰反光 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -19214,7 +19214,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Air Force 1 Low Preto e Vermelho",
                                             "descricao": "Air Force 1 Low com combinação de cores preto e vermelho.",
                                             "descricaoLonga": "Edição Air Force 1 Low em preto e vermelho, com couro premium e design moderno, ideal para streetwear e colecionadores.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Air Force 1 '07 Low 黑红 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -19247,7 +19247,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Bape x Air Force 1 Low Branco e Preto Refletivo",
                                             "descricao": "Colaboração Bape com Air Force 1 Low em branco e preto refletivo.",
                                             "descricaoLonga": "Edição Bape x Air Force 1 Low com design moderno em branco e preto com efeito refletivo, perfeita para colecionadores.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Bape x Air Force 1 Low 米白黑反光 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -19280,7 +19280,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "CDG x Air Force 1 Low Impressão Marrom Claro",
                                               "descricao": "Colaboração CDG com Air Force 1 Low em marrom claro com impressão.",
                                               "descricaoLonga": "Edição limitada CDG x Air Force 1 Low com couro premium em marrom claro e estampas exclusivas, perfeita para colecionadores.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/CDG x Air Force 1 Low 印字米棕 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -19313,7 +19313,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 '07 Low Branco, Cinza e Vermelho",
                                               "descricao": "Air Force 1 Low em branco, cinza e vermelho.",
                                               "descricaoLonga": "Edição Air Force 1 '07 Low com couro premium e detalhes em branco, cinza e vermelho, ideal para streetwear e colecionadores.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 '07 Low 白灰红 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -19346,7 +19346,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 Low 'By You' Goku Cinza, Vermelho e Dourado",
                                               "descricao": "Air Force 1 Low personalizável 'By You' em cinza, vermelho e dourado com temática Goku.",
                                               "descricaoLonga": "Edição Air Force 1 Low 'By You' com design exclusivo Goku em cinza, vermelho e detalhes dourados, perfeita para colecionadores.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 Low _By You_ 悟空灰酒红金钩 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -19379,7 +19379,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 '07 Low Padrão Verde",
                                               "descricao": "Air Force 1 '07 Low com padrão tipo pedra verde.",
                                               "descricaoLonga": "Edição Air Force 1 '07 Low com couro premium e padrão estilo pedra em tons de verde, ideal para streetwear e colecionadores.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 '07 Low 石斑纹绿色 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -19412,7 +19412,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 Low 'Pintura Chinesa' ",
                                               "descricao": "Air Force 1 Low com design inspirado em pintura chinesa de tinta e aquarela.",
                                               "descricaoLonga": "Edição Air Force 1 Low com arte tradicional chinesa em aquarela, combinando couro premium e estilo exclusivo para colecionadores.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 Low“中国风 水墨画” _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -19445,7 +19445,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Undefeated x Nike Air Force 1 Low",
                                                 "descricao": "Colaboração Undefeated com Air Force 1 Low.",
                                                 "descricaoLonga": "Edição limitada Undefeated x Nike Air Force 1 Low com design exclusivo, perfeita para colecionadores e streetwear.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Undefeated x Nike Air Force 1 Low _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -19478,7 +19478,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 Low Básico Cinza",
                                                 "descricao": "Air Force 1 Low clássico em cores tradicionais.",
                                                 "descricaoLonga": "Air Force 1 Low com couro premium, ideal para uso diário e colecionadores que apreciam o clássico.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/e904fc50.jpg",
                                                 "imagensAdicionais": [
@@ -19505,7 +19505,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Nk Air Force 1'07 Low Sun",
                                                 "descricao": "Air Force 1 '07 Low com cores Sun.",
                                                 "descricaoLonga": "Air Force 1 '07 Low Nk edição Sun com couro premium e detalhes coloridos, ideal para streetwear e colecionadores.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Nk Air Force 1'07 Low _Sun_ _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -19538,7 +19538,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 '07 Low Preto Patente",
                                                 "descricao": "Air Force 1 '07 Low com acabamento em couro patente preto.",
                                                 "descricaoLonga": "Air Force 1 '07 Low com couro patente premium, perfeito para streetwear sofisticado e colecionadores.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 '07 Low 漆皮拼接黑色 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -19571,7 +19571,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 Low Cinco Listras",
                                                 "descricao": "Air Force 1 Low com cinco listras e cordão grosso em branco e vinho.",
                                                 "descricaoLonga": "Air Force 1 Low edição exclusiva com cinco listras, cordão grosso e detalhes em branco e vinho, perfeita para colecionadores.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 Low 五道杠粗绳米白酒红 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -19604,7 +19604,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "CDG x Air Force 1 Low Impressão Bege e Preto",
                                                   "descricao": "Colaboração CDG com Air Force 1 Low em bege e preto.",
                                                   "descricaoLonga": "Air Force 1 Low CDG edição limitada com impressão em bege e preto, ideal para streetwear e colecionadores.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/CDG x Air Force 1 Low 印字米黑 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -19637,7 +19637,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 Low By You Cinza e Preto",
                                                   "descricao": "Air Force 1 Low By You com camurça cinza e cordão preto.",
                                                   "descricaoLonga": "Personalização Air Force 1 Low By You com cordão grosso e camurça cinza e preto, ideal para quem busca exclusividade.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 Low _By You_ 灰黑粗绳麂皮 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -19670,7 +19670,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "AMBUSH x Air Force 1 Low SP Pink",
                                                   "descricao": "Colaboração AMBUSH com Air Force 1 Low SP.",
                                                   "descricaoLonga": "Air Force 1 Low SP em edição limitada AMBUSH com design futurista, ideal para streetwear e colecionadores.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/fc7d50a4.jpg",
                                                   "imagensAdicionais": [
@@ -19699,7 +19699,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Bape x Air Force 1 Low Cinza e Verde",
                                                   "descricao": "Colaboração Bape com Air Force 1 Low em cinza e verde.",
                                                   "descricaoLonga": "Air Force 1 Low Bape edição limitada com camurça cinza e verde, ideal para streetwear e colecionadores.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Bape x Air Force 1 Low 米灰绿 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -19732,7 +19732,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 Low Digimon Cinza e Azul",
                                                   "descricao": "Air Force 1 Low inspirado em Digimon, cores cinza e azul.",
                                                   "descricaoLonga": "Air Force 1 Low Digimon edição exclusiva com camurça cinza e azul, perfeito para colecionadores e fãs de Digimon.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 Low 数码宝贝米灰蓝 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -19765,7 +19765,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 '07 Low NYC Branco e Marrom",
                                                   "descricao": "Air Force 1 Low '07 NYC em branco e marrom.",
                                                   "descricaoLonga": "Edição Air Force 1 Low '07 inspirada em NYC, com cores branco e marrom, ideal para streetwear e colecionadores.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 '07 Low NYC白棕 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -19798,7 +19798,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 '07 Low Cinza e Branco",
                                                   "descricao": "Air Force 1 Low '07 em cinza e branco com sola de borracha natural.",
                                                   "descricaoLonga": "Edição Air Force 1 '07 Low com design minimalista em cinza e branco, sola de borracha natural, perfeito para streetwear.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 '07 Low 灰白生胶底 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -19831,7 +19831,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 '07 Low Branco e Preto Sola Natural",
                                                     "descricao": "Air Force 1 '07 Low em branco e preto com sola natural.",
                                                     "descricaoLonga": "Air Force 1 '07 Low com design clássico em branco e preto, sola natural, ideal para streetwear e colecionadores.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 '07 Low 黑白生胶 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -19864,7 +19864,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 '07 Low Dourado e Preto",
                                                     "descricao": "Air Force 1 '07 Low em preto com detalhes dourados nos pequenos swooshes.",
                                                     "descricaoLonga": "Air Force 1 '07 Low com couro premium preto e detalhes dourados nos quatro pequenos swooshes, estilo exclusivo e streetwear.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 '07 Low 金色四小钩黑白 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -19897,7 +19897,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "ASSC x Air Force 1 Low Branco e Marrom",
                                                     "descricao": "ASSC x Air Force 1 Low edição colaborativa em branco e marrom.",
                                                     "descricaoLonga": "Edição ASSC x Air Force 1 Low combinando couro premium branco e detalhes marrom, edição limitada e colecionável.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/ASSC x Air Force 1 Low 米白棕 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -19930,7 +19930,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 '07 Low Branco e Amarelo Reflexivo",
                                                     "descricao": "Air Force 1 '07 Low em branco e detalhes amarelos reflexivos.",
                                                     "descricaoLonga": "Edição Air Force 1 '07 Low com design clássico em branco e detalhes reflexivos amarelos, perfeita para streetwear e colecionadores.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 '07 Low 白黄反光 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -19963,7 +19963,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Azul, Branco e Roxo",
                                                       "descricao": "Air Force 1 '07 Low em azul, branco e roxo.",
                                                       "descricaoLonga": "Edição Air Force 1 '07 Low combinando tons de azul, branco e roxo, design exclusivo para streetwear e colecionadores.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 '07 Low 蓝白紫 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -19996,7 +19996,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 Low Gucci Mescla e Jeans",
                                                       "descricao": "Air Force 1 Low edição Gucci em tons mescla e jeans.",
                                                       "descricaoLonga": "Edição especial Air Force 1 Low com inspiração Gucci, mescla de cores cinza e detalhes em jeans, perfeita para streetwear e colecionadores.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 Low 古驰米灰牛仔拼接 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -20029,7 +20029,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Preto e Prata Grafite",
                                                       "descricao": "Air Force 1 '07 Low em preto com detalhes prateados e efeito grafite.",
                                                       "descricaoLonga": "Air Force 1 '07 Low com couro preto premium e detalhes prateados, efeito grafite artístico, ideal para streetwear e colecionadores.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 '07 Low 黑银泼墨涂鸦 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -20062,7 +20062,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Cinza e Azul Sola Natural",
                                                       "descricao": "Air Force 1 '07 Low em cinza e azul com sola natural.",
                                                       "descricaoLonga": "Air Force 1 '07 Low com couro cinza e detalhes azuis, sola natural, design clássico e streetwear.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 '07 Low 灰蓝生胶 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -20095,7 +20095,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Love Branco e Roxo",
                                                       "descricao": "Air Force 1 '07 Love série em branco e roxo.",
                                                       "descricaoLonga": "Edição Air Force 1 '07 Love combinando cores branco e roxo, ideal para streetwear e colecionadores.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 '07  Love系列 白紫喷绘 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -20128,7 +20128,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Sup x Air Force 1 Low Mescla Branco e Verde Fluorescente",
                                                         "descricao": "Edição Sup x Air Force 1 Low em branco com detalhes verde fluorescente.",
                                                         "descricaoLonga": "Air Force 1 Low em colaboração Sup, combinando branco e verde fluorescente, perfeita para streetwear e colecionadores.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Sup x Air Force 1 Low 米白荧光绿 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -20161,7 +20161,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "ASSC x Air Force 1 Low Mescla Branco e Cinza",
                                                         "descricao": "Edição ASSC x Air Force 1 Low em branco e cinza.",
                                                         "descricaoLonga": "Air Force 1 Low ASSC com design mescla em branco e cinza, perfeita para streetwear e colecionadores.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/ASSC x Air Force 1 Low 米白灰 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -20194,7 +20194,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Drew x Air Force 1 Low Mescla Preto e Amarelo Grafite",
                                                         "descricao": "Edição Drew x Air Force 1 Low em preto e amarelo com grafite.",
                                                         "descricaoLonga": "Air Force 1 Low Drew com cores preto e amarelo, detalhes em grafite artístico, ideal para streetwear.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Drew x Air Force 1 Low 米黑黄涂鸦 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -20227,7 +20227,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Sup x Air Force 1 Low Branco, Azul e Vermelho",
                                                         "descricao": "Edição Sup x Air Force 1 Low em branco, azul e vermelho.",
                                                         "descricaoLonga": "Air Force 1 Low em colaboração Sup com cores branco, azul e vermelho, perfeita para streetwear.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Sup x Air Force 1 Low 白蓝红 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -20260,7 +20260,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Travis Scott x Air Force 1 Low Sail",
                                                           "descricao": "Edição Travis Scott x Air Force 1 Low em cor Sail.",
                                                           "descricaoLonga": "Air Force 1 Low em colaboração com Travis Scott, acabamento em Sail, perfeita para colecionadores e streetwear.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Travis Scott x Air Force 1 Sail _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -20293,7 +20293,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 Low Coração Batendo Mescla Cinza e Amarelo",
                                                           "descricao": "Air Force 1 Low com padrão coração batendo em cinza e amarelo.",
                                                           "descricaoLonga": "Edição Air Force 1 Low com detalhe do coração batendo, cores mescla cinza e amarelo, perfeita para streetwear.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 Low 心率跳动米灰黄 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -20326,7 +20326,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Hook Rutura Branco, Cinza e Preto",
                                                           "descricao": "Air Force 1 '07 Low com design de hook em branco, cinza e preto.",
                                                           "descricaoLonga": "Modelo Air Force 1 '07 Low com hook quebrado, cores branco, cinza e preto, ideal para streetwear e colecionadores.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Low 断裂钩白灰黑 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -20359,7 +20359,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Branco e Azul Reflexivo",
                                                           "descricao": "Air Force 1 '07 Low com acabamento branco e detalhes em azul reflexivo.",
                                                           "descricaoLonga": "Modelo Air Force 1 '07 Low com design clássico branco e detalhes azul reflexivo, ideal para streetwear.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Low 白蓝反光 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -20392,7 +20392,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Capibara Mescla Branco e Marrom",
                                                             "descricao": "Air Force 1 '07 Low com cores Capibara mescla branco e marrom.",
                                                             "descricaoLonga": "Edição Air Force 1 '07 Low Capibara mescla, combinação perfeita de branco e marrom, ideal para streetwear.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low 卡皮巴拉米白棕 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -20425,7 +20425,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Love Branco e Azul",
                                                             "descricao": "Air Force 1 '07 Low com design Love em branco e azul.",
                                                             "descricaoLonga": "Modelo Air Force 1 '07 Low Love com spray painting em branco e azul, ideal para colecionadores e streetwear.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low Love 白蓝喷绘 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -20458,7 +20458,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Preto e Prata Rosa",
                                                             "descricao": "Air Force 1 '07 Low com design preto, prata e detalhes rosa.",
                                                             "descricaoLonga": "Modelo Air Force 1 '07 Low com combinação de cores preto, prata e rosa, ideal para streetwear e colecionadores.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low 黑银玫瑰 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -20491,7 +20491,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 Low Gucci Lona Mescla Branco e Verde",
                                                             "descricao": "Air Force 1 Low em lona Gucci mescla branco e verde.",
                                                             "descricaoLonga": "Modelo Air Force 1 Low com detalhes em lona Gucci, cores branco e verde, ideal para streetwear e colecionadores.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 Low 古驰麻布拼接米白绿 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -20524,7 +20524,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "ASSC x Air Force 1 Low Branco e Preto",
                                                               "descricao": "Edição ASSC x Air Force 1 Low em branco e preto.",
                                                               "descricaoLonga": "Air Force 1 Low em colaboração com ASSC, com design clássico em branco e preto, ideal para colecionadores e streetwear.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/ASSC x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -20557,7 +20557,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 '07 Low Branco e Preto Reflexivo",
                                                               "descricao": "Air Force 1 '07 Low com design branco e preto reflexivo.",
                                                               "descricaoLonga": "Modelo Air Force 1 '07 Low com acabamento branco e preto reflexivo, perfeito para streetwear e colecionadores.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 '07 Low 白黑反光 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -20590,7 +20590,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "PEACEMINUSONE x NK Air Force 1",
                                                               "descricao": "Air Force 1 Low edição PEACEMINUSONE x Nike.",
                                                               "descricaoLonga": "Edição especial PEACEMINUSONE x Nike Air Force 1 Low, combinação de estilo único com cores exclusivas, perfeita para streetwear.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/PEACEMINUSONE x NK Air Force 1 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -20623,7 +20623,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 '07 Low Preto e Vermelho Spray",
                                                               "descricao": "Air Force 1 '07 Low com design preto e vermelho em efeito spray.",
                                                               "descricaoLonga": "Modelo Air Force 1 '07 Low com acabamento preto e vermelho com efeito de pintura spray, ideal para streetwear e colecionadores.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 '07 Low 黑红泼墨涂鸦 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -20656,7 +20656,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 '07 Low Ano do Dragão Branco e Verde",
                                                               "descricao": "Air Force 1 '07 Low edição Ano do Dragão em branco e verde.",
                                                               "descricaoLonga": "Modelo Air Force 1 '07 Low Ano do Dragão com cores branco e verde, ideal para colecionadores e streetwear.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 '07 Low 龙年白绿 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -20689,7 +20689,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 PLT.AF.ORM Rosa",
                                                                 "descricao": "Air Force 1 Low PLT.AF.ORM em rosa.",
                                                                 "descricaoLonga": "Modelo Air Force 1 Low PLT.AF.ORM em tons de rosa, ideal para streetwear e colecionadores.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 PLT.AF.ORM 粉色 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -20722,7 +20722,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 '07 Low Branco, Preto e Verde Rasgado",
                                                                 "descricao": "Air Force 1 '07 Low com efeito de rasgo em branco, preto e verde.",
                                                                 "descricaoLonga": "Modelo Air Force 1 '07 Low com design rasgado em branco, preto e verde, perfeito para streetwear moderno.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 '07 Low 断裂钩白黑绿 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -20755,7 +20755,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 '07 Low Branco e Azul Escuro",
                                                                 "descricao": "Air Force 1 '07 Low com cores branco e azul escuro.",
                                                                 "descricaoLonga": "Modelo Air Force 1 '07 Low em branco e azul escuro, perfeito para streetwear clássico.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 '07 Low 白深蓝 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -20788,7 +20788,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 '07 Low Branco e Preto",
                                                                 "descricao": "Air Force 1 '07 Low em branco e preto clássico.",
                                                                 "descricaoLonga": "Modelo Air Force 1 '07 Low com cores branco e preto, design clássico para streetwear e colecionadores.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 '07 Low 白黑 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -20821,7 +20821,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 '07 Low Branco e Verde Reflexivo",
                                                                 "descricao": "Air Force 1 '07 Low com cores branco e verde reflexivo.",
                                                                 "descricaoLonga": "Modelo Air Force 1 '07 Low em branco e verde com efeito reflexivo, ideal para streetwear moderno e colecionadores.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 '07 Low 白绿反光 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -20854,7 +20854,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Nike Air Force 1 Low 07 PLT.AF.ORM",
                                                                   "descricao": "Air Force 1 Low 07 modelo PLT.AF.ORM.",
                                                                   "descricaoLonga": "Nike Air Force 1 Low 07 PLT.AF.ORM com design premium em tons suaves, ideal para colecionadores e streetwear.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Nike Air Force 1 Low 07 PLT.AF.ORM _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -20887,7 +20887,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Nike Air Force 1 Low 07 Qinghua Ci",
                                                                   "descricao": "Air Force 1 Low 07 série Qinghua Ci.",
                                                                   "descricaoLonga": "Nike Air Force 1 Low 07 inspirada na porcelana Qinghua Ci, com detalhes em azul e branco, perfeita para streetwear e colecionadores.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Nike Air Force 1 Low 07 青花瓷系列 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -20920,7 +20920,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 Low Qinghua Ci Dragon",
                                                                   "descricao": "Air Force 1 Low com bordado de dragão Qinghua Ci.",
                                                                   "descricaoLonga": "Air Force 1 Low com bordado de dragão inspirado na série Qinghua Ci, combinando estilo clássico e colecionável.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 Low 青花瓷龙纹刺绣 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -20953,7 +20953,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 '07 Low Coração Gel",
                                                                   "descricao": "Air Force 1 '07 Low com detalhe de coração gel.",
                                                                   "descricaoLonga": "Air Force 1 '07 Low com design de coração gel transparente, combinando estilo e conforto para colecionadores.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 '07 Low 爱心果冻钩 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -20986,7 +20986,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "LV x Air Force 1 Low Branco e Amarelo",
                                                                   "descricao": "Air Force 1 Low LV edição especial branco e amarelo.",
                                                                   "descricaoLonga": "Edição especial LV x Air Force 1 Low em branco e amarelo, combinando luxo e streetwear.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/LV x Air Force 1 Low 白黄印花 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -21019,7 +21019,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Sup x Air Force 1 Low Branco e Vermelho",
                                                                     "descricao": "Sup x Air Force 1 Low com detalhe de impressão em branco e vermelho.",
                                                                     "descricaoLonga": "Edição Sup x Air Force 1 Low com design exclusivo em branco e vermelho, ideal para colecionadores e streetwear.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Sup x Air Force 1 Low 白红印字钩 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -21052,7 +21052,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Off-White x Air Force 1 Low",
                                                                     "descricao": "Colaboração Off-White com Air Force 1 Low.",
                                                                     "descricaoLonga": "Edição limitada Off-White x Air Force 1 Low com design inovador, perfeita para colecionadores e fãs de streetwear.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/fe221042.jpg",
                                                                     "imagensAdicionais": [
@@ -21081,7 +21081,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Welldone x Air Force 1 Low Branco e Preto",
                                                                     "descricao": "Colaboração Welldone com Air Force 1 Low em branco e preto.",
                                                                     "descricaoLonga": "Edição Welldone x Air Force 1 Low com design exclusivo em branco e preto, perfeita para streetwear e colecionadores.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Welldone x Air Force 1 Low 白黑 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -21114,7 +21114,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 '07 Low Branco e Rosa Graffiti",
                                                                     "descricao": "Air Force 1 '07 Low com detalhe de graffiti em branco e rosa.",
                                                                     "descricaoLonga": "Air Force 1 '07 Low com design urbano de graffiti, combinando branco e rosa, ideal para streetwear.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 '07 Low 白粉涂鸦钩 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -21147,7 +21147,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 '07 Low Branco, Marrom e Azul",
                                                                     "descricao": "Air Force 1 '07 Low com detalhes em branco, marrom e azul.",
                                                                     "descricaoLonga": "Air Force 1 '07 Low combinando branco, marrom e azul em um design clássico, perfeito para streetwear e colecionadores.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 '07 Low 白棕浅蓝 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -21180,7 +21180,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 '07 Low Qixi Limitado Rosa e Preto",
                                                                       "descricao": "Air Force 1 '07 Low edição limitada Qixi com detalhes rosa e preto.",
                                                                       "descricaoLonga": "Edição especial Air Force 1 '07 Low Qixi, combinando couro premium com detalhes em rosa e preto, ideal para colecionadores.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 '07 Low 七夕限定粉黑喷绘 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -21213,7 +21213,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 Low Quatro Ganchos Preto",
                                                                       "descricao": "Air Force 1 Low com quatro ganchos em preto.",
                                                                       "descricaoLonga": "Air Force 1 Low com design urbano e quatro ganchos pretos, perfeita para streetwear.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 Low 四小钩黑色 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -21246,7 +21246,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Sup x Air Force 1 Low Branco e Azul",
                                                                       "descricao": "Colaboração Sup x Air Force 1 Low com detalhes em branco e azul.",
                                                                       "descricaoLonga": "Edição limitada Sup x Air Force 1 Low combinando branco e azul com design exclusivo, perfeita para colecionadores e streetwear.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Sup x Air Force 1 Low 米白蓝 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -21279,7 +21279,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 '07 Low Marrom",
                                                                       "descricao": "Air Force 1 '07 Low com detalhes em marrom.",
                                                                       "descricaoLonga": "Air Force 1 '07 Low em couro premium com detalhes em marrom, perfeita para streetwear e colecionadores.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 '07 Low 棕色 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -21312,7 +21312,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 '07 Low Branco e Cinza",
                                                                       "descricao": "Air Force 1 '07 Low com detalhes em branco e cinza.",
                                                                       "descricaoLonga": "Air Force 1 '07 Low em couro premium com detalhes em branco e cinza, ideal para colecionadores e streetwear.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 '07 Low 灰白 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -21345,7 +21345,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Marca do Tempo Prata e Bege",
                                                                         "descricao": "Air Force 1 '07 Low com efeito Marca do Tempo em prata e bege.",
                                                                         "descricaoLonga": "Air Force 1 '07 Low 'Marca do Tempo', combinando couro premium com detalhes prateados e bege, ideal para colecionadores.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 时光印迹米银 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -21378,7 +21378,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "LV x Air Force 1 Low Branco e Azul Denim",
                                                                         "descricao": "Colaboração LV x Air Force 1 Low com detalhes em branco e azul denim.",
                                                                         "descricaoLonga": "Edição limitada LV x Air Force 1 Low, combinando couro premium branco com detalhes em azul denim, perfeita para colecionadores.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/7ba83e48.jpg",
                                                                         "imagensAdicionais": [
@@ -21407,7 +21407,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Stussy x Air Force 1 Low Bege e Cinza",
                                                                         "descricao": "Colaboração Stussy x Air Force 1 Low com detalhes em bege e cinza.",
                                                                         "descricaoLonga": "Edição limitada Stussy x Air Force 1 Low combinando couro premium bege com detalhes cinza, ideal para streetwear.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/e122467f.jpg",
                                                                         "imagensAdicionais": [
@@ -21437,7 +21437,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Welldone x Air Force 1 Low Branco e Cinza",
                                                                         "descricao": "Colaboração Welldone x Air Force 1 Low com detalhes em branco e cinza.",
                                                                         "descricaoLonga": "Edição especial Welldone x Air Force 1 Low combinando branco e cinza, perfeita para colecionadores e streetwear.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Welldone x Air Force 1 Low 白灰 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -21470,7 +21470,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Qixi Limitado Branco, Preto e Azul",
                                                                         "descricao": "Air Force 1 '07 Low edição limitada Qixi com detalhes em branco, preto e azul.",
                                                                         "descricaoLonga": "Edição especial Air Force 1 '07 Low Qixi, combinando couro premium com detalhes em branco, preto e azul, ideal para colecionadores.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 七夕限定白黑蓝喷绘 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -21503,7 +21503,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "CDG x Air Force 1 '07 Low Cinza e Azul Graffiti",
                                                                           "descricao": "Colaboração CDG x Air Force 1 '07 Low com detalhes em cinza e azul graffiti.",
                                                                           "descricaoLonga": "Edição limitada CDG x Air Force 1 '07 Low, combinando couro premium com detalhes cinza e azul graffiti, ideal para colecionadores e streetwear.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/CDG x Air Force 1 '07 Low 灰蓝涂鸦 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -21536,7 +21536,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "LV x Air Force 1 Low 3M Branco e Cinza",
                                                                           "descricao": "Colaboração LV x Air Force 1 Low com efeito 3M refletivo em branco e cinza.",
                                                                           "descricaoLonga": "Edição limitada LV x Air Force 1 Low com couro premium branco e cinza 3M refletivo, perfeita para colecionadores e streetwear.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/LV x Air Force 1 Low 3M白灰反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -21569,7 +21569,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 '07 Low Céu Azul e Branco",
                                                                           "descricao": "Air Force 1 '07 Low com estampa Céu Azul e Branco.",
                                                                           "descricaoLonga": "Air Force 1 '07 Low com couro premium e design inspirado no céu azul e nuvens brancas, ideal para streetwear e colecionadores.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Low 蓝天白云喷绘 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -21602,7 +21602,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 SP Low Preto Perfurado",
                                                                           "descricao": "Air Force 1 SP Low com couro preto totalmente perfurado.",
                                                                           "descricaoLonga": "Edição Air Force 1 SP Low, todo em couro preto perfurado, ideal para streetwear e conforto diário.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 SP Low 全开孔黑色 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -21635,7 +21635,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "LV x Air Force 1 Low Branco e Preto Denim",
                                                                           "descricao": "Colaboração LV x Air Force 1 Low com detalhes em branco e preto denim.",
                                                                           "descricaoLonga": "Edição limitada LV x Air Force 1 Low com couro branco e detalhes preto denim, perfeita para colecionadores e streetwear.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/LV x Air Force 1 Low 白黑牛仔 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -21668,7 +21668,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                             "nome": "Air Force 1 '07 Low Verde Neon e Preto",
                                                                             "descricao": "Air Force 1 '07 Low com detalhes em verde neon e preto.",
                                                                             "descricaoLonga": "Air Force 1 '07 Low com couro premium, design em verde neon e preto, perfeito para streetwear e colecionadores.",
-                                                                            "preco": 55.99,
+                                                                            "preco": 62.99,
                                                                             "precoAntigo": 99.99,
                                                                             "imagem": "/images/Air Force 1 '07 Low 荧光绿黑钩 _ Yupoo - 01.jpg",
                                                                             "imagensAdicionais": [
@@ -21701,7 +21701,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                             "nome": "Air Force 1 Low Next Nature Branco",
                                                                             "descricao": "Air Force 1 Low Next Nature com design sustentável em branco.",
                                                                             "descricaoLonga": "Edição Air Force 1 Low Next Nature, combinando couro reciclado e materiais sustentáveis com design totalmente branco, ideal para streetwear consciente.",
-                                                                            "preco": 55.99,
+                                                                            "preco": 62.99,
                                                                             "precoAntigo": 99.99,
                                                                             "imagem": "/images/Air Force 1 Low Next Nature 白色 _ Yupoo - 01.jpg",
                                                                             "imagensAdicionais": [
@@ -21734,7 +21734,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                             "nome": "Air Force 1 '07 Low Três Swoosh Quebrados Branco, Preto e Azul",
                                                                             "descricao": "Air Force 1 '07 Low com design de três swooshes quebrados em branco, preto e azul.",
                                                                             "descricaoLonga": "Edição Air Force 1 '07 Low com três swooshes distintos quebrados, combinando branco, preto e azul, ideal para colecionadores e streetwear arrojado.",
-                                                                            "preco": 55.99,
+                                                                            "preco": 62.99,
                                                                             "precoAntigo": 99.99,
                                                                             "imagem": "/images/Air Force 1 '07 Low 断裂三钩白黑蓝 _ Yupoo - 01.jpg",
                                                                             "imagensAdicionais": [
@@ -21767,7 +21767,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                             "nome": "Air Force 1 Low Glacier Azul",
                                                                             "descricao": "Air Force 1 Low com tons Glacier Blue.",
                                                                             "descricaoLonga": "Air Force 1 Low com couro premium em tons glacier blue, oferecendo estilo fresco e confortável para streetwear diário.",
-                                                                            "preco": 55.99,
+                                                                            "preco": 62.99,
                                                                             "precoAntigo": 99.99,
                                                                             "imagem": "/images/Air Force 1 Low 冰川蓝 _ Yupoo - 01.jpg",
                                                                             "imagensAdicionais": [
@@ -21800,7 +21800,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                               "nome": "Air Force 1 '07 Low Preto, Branco e Azul",
                                                                               "descricao": "Air Force 1 '07 Low com detalhes em preto, branco e azul.",
                                                                               "descricaoLonga": "Air Force 1 '07 Low combinando couro premium em preto, branco e azul, oferecendo estilo moderno e conforto para streetwear.",
-                                                                              "preco": 55.99,
+                                                                              "preco": 62.99,
                                                                               "precoAntigo": 99.99,
                                                                               "imagem": "/images/80d97ee1.jpg",
                                                                               "imagensAdicionais": [
@@ -21829,7 +21829,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                               "nome": "Sup x Air Force 1 Low Branco e Vermelho 3M",
                                                                               "descricao": "Sup x Air Force 1 Low com detalhes em branco, vermelho e reflexivo 3M.",
                                                                               "descricaoLonga": "Colaboração Sup x Air Force 1 Low com design clean em branco e vermelho, detalhes refletivos 3M, ideal para streetwear exclusivo.",
-                                                                              "preco": 55.99,
+                                                                              "preco": 62.99,
                                                                               "precoAntigo": 99.99,
                                                                               "imagem": "/images/Sup x Air Force 1 Low 米白红3M _ Yupoo - 01.jpg",
                                                                               "imagensAdicionais": [
@@ -21862,7 +21862,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                               "nome": "Air Force 1 '07 Low Duck Baby Amarelo Limão",
                                                                               "descricao": "Air Force 1 '07 Low com cores inspiradas em Duck Baby e amarelo limão.",
                                                                               "descricaoLonga": "Air Force 1 '07 Low com couro premium e detalhes amarelo limão, inspirado em Duck Baby, para colecionadores e streetwear moderno.",
-                                                                              "preco": 55.99,
+                                                                              "preco": 62.99,
                                                                               "precoAntigo": 99.99,
                                                                               "imagem": "/images/Air Force 1 '07 Low 鸭宝宝柠檬黄 _ Yupoo - 01.jpg",
                                                                               "imagensAdicionais": [
@@ -21895,7 +21895,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                               "nome": "Air Force 1 '07 Low Preto e Branco",
                                                                               "descricao": "Air Force 1 '07 Low com detalhes em preto e branco.",
                                                                               "descricaoLonga": "Air Force 1 '07 Low combinando couro premium em preto e branco, ideal para streetwear diário e colecionadores.",
-                                                                              "preco": 55.99,
+                                                                              "preco": 62.99,
                                                                               "precoAntigo": 99.99,
                                                                               "imagem": "/images/Air Force 1 '07 Low 黑白蓝 _ Yupoo - 01.jpg",
                                                                               "imagensAdicionais": [
@@ -21928,7 +21928,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                               "nome": "Nike Air Force 1 Low 07 Anime",
                                                                               "descricao": "Nike Air Force 1 Low 07 com design inspirado em estilo anime.",
                                                                               "descricaoLonga": "Air Force 1 Low 07 com couro premium e estampas inspiradas em anime, oferecendo um visual moderno e único para streetwear.",
-                                                                              "preco": 55.99,
+                                                                              "preco": 62.99,
                                                                               "precoAntigo": 99.99,
                                                                               "imagem": "/images/Nike Air Force 1 Low 07二次元 _ Yupoo - 01.jpg",
                                                                               "imagensAdicionais": [
@@ -21961,7 +21961,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                 "nome": "Stussy x Air Force 1 Low Branco e Preto",
                                                                                 "descricao": "Colaboração Stussy x Air Force 1 Low com cores em branco e preto - Variante 2.",
                                                                                 "descricaoLonga": "Stussy x Air Force 1 Low combina couro premium em branco e preto, com design exclusivo da Stussy, ideal para colecionadores e streetwear - Variante 2.",
-                                                                                "preco": 55.99,
+                                                                                "preco": 62.99,
                                                                                 "precoAntigo": 99.99,
                                                                                 "imagem": "/images/Stussy x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                                                                                 "imagensAdicionais": [
@@ -21994,7 +21994,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                 "nome": "Air Force 1 '07 Low Três Ganchos Branco, Preto e Marrom",
                                                                                 "descricao": "Air Force 1 '07 Low com design de três ganchos em branco, preto e marrom.",
                                                                                 "descricaoLonga": "Air Force 1 '07 Low com couro premium e detalhes únicos de três ganchos, cores branco, preto e marrom, ideal para streetwear e colecionadores.",
-                                                                                "preco": 55.99,
+                                                                                "preco": 62.99,
                                                                                 "precoAntigo": 99.99,
                                                                                 "imagem": "/images/Air Force 1 '07 Low 断裂三钩白黑棕 _ Yupoo - 01.jpg",
                                                                                 "imagensAdicionais": [
@@ -22027,7 +22027,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                   "nome": "Air Force 1 '07 Low Yun Jinduan Off-White e Prata",
                                                                                   "descricao": "Air Force 1 '07 Low em tons off-white e prata com acabamento acetinado inspirado em tecidos tradicionais chineses.",
                                                                                   "descricaoLonga": "Air Force 1 '07 Low com tecido premium acetinado, design inspirado em tecidos tradicionais chineses e detalhes prateados elegantes. Combina luxo e conforto num visual sofisticado e moderno.",
-                                                                                  "preco": 55.99,
+                                                                                  "preco": 62.99,
                                                                                   "precoAntigo": 99.99,
                                                                                   "imagem": "/images/Air Force 1 '07 Low 云锦缎米白银 _ Yupoo - 01.jpg",
                                                                                   "imagensAdicionais": [
@@ -22060,7 +22060,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                   "nome": "Air Force 1 '07 Low Branco, Preto e Solado Natural",
                                                                                   "descricao": "Air Force 1 '07 Low com base branca, detalhes pretos e sola em borracha natural.",
                                                                                   "descricaoLonga": "Air Force 1 '07 Low com cabedal em couro branco e detalhes em preto, complementado por uma sola em borracha natural. Um clássico intemporal que combina durabilidade, conforto e estilo urbano.",
-                                                                                  "preco": 55.99,
+                                                                                  "preco": 62.99,
                                                                                   "precoAntigo": 99.99,
                                                                                   "imagem": "/images/Air Force 1 '07 Low 白黑生胶 _ Yupoo - 01.jpg",
                                                                                   "imagensAdicionais": [
@@ -22093,7 +22093,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                   "nome": "LV x Air Force 1 Low Branco e Preto em Ganga",
                                                                                   "descricao": "Colaboração entre LV e Nike em ganga branca e preta com detalhes de luxo - Variante 2.",
                                                                                   "descricaoLonga": "LV x Air Force 1 Low com base em ganga branca e preta, detalhes de tiras e logótipos LV bordados. Um design luxuoso que une o streetwear da Nike ao requinte da Louis Vuitton - Variante 2.",
-                                                                                  "preco": 55.99,
+                                                                                  "preco": 62.99,
                                                                                   "precoAntigo": 99.99,
                                                                                   "imagem": "/images/LV x Air Force 1 Low 白黑牛仔绑带 _ Yupoo - 01.jpg",
                                                                                   "imagensAdicionais": [
@@ -22126,7 +22126,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                   "nome": "LV x Air Force 1 Low Branco e Amarelo em Ganga",
                                                                                   "descricao": "Versão exclusiva LV x Nike em ganga branca e amarela.",
                                                                                   "descricaoLonga": "LV x Air Force 1 Low com base em ganga branca e amarela, costuras contrastantes e logótipos LV bordados. Um modelo vibrante que mistura luxo e estilo urbano num só design.",
-                                                                                  "preco": 55.99,
+                                                                                  "preco": 62.99,
                                                                                   "precoAntigo": 99.99,
                                                                                   "imagem": "/images/LV x Air Force 1 Low 白黄牛仔 _ Yupoo - 01.jpg",
                                                                                   "imagensAdicionais": [
@@ -22159,7 +22159,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                   "nome": "Air Force 1 '07 Low Tema Tubarão Branco e Cinzento",
                                                                                   "descricao": "Air Force 1 '07 Low com design inspirado em tubarões, em tons de branco e cinzento.",
                                                                                   "descricaoLonga": "Air Force 1 '07 Low com cabedal em couro e camurça, cores branco e cinzento, e detalhes inspirados em tubarões. Um visual arrojado para quem gosta de estilo ousado e exclusivo.",
-                                                                                  "preco": 55.99,
+                                                                                  "preco": 62.99,
                                                                                   "precoAntigo": 99.99,
                                                                                   "imagem": "/images/Air Force 1 '07 Low 鲨鱼主题白灰 _ Yupoo - 01.jpg",
                                                                                   "imagensAdicionais": [
@@ -22192,7 +22192,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                     "nome": "Air Force 1 '07 Low Branco e Azul",
                                                                                     "descricao": "Air Force 1 '07 Low com design clássico em branco e azul.",
                                                                                     "descricaoLonga": "Air Force 1 '07 Low com cabedal em couro branco premium e detalhes em azul profundo. O contraste entre as cores cria um visual desportivo e elegante, mantendo o conforto e durabilidade característicos da linha Air Force 1.",
-                                                                                    "preco": 55.99,
+                                                                                    "preco": 62.99,
                                                                                     "precoAntigo": 99.99,
                                                                                     "imagem": "/images/Air Force 1 '07 Low 白蓝 _ Yupoo - 01.jpg",
                                                                                     "imagensAdicionais": [
@@ -22225,7 +22225,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                     "nome": "AMBUSH x Air Force 1 Low SP Série Maifu",
                                                                                     "descricao": "Colaboração exclusiva AMBUSH x Nike com design ousado e materiais premium.",
                                                                                     "descricaoLonga": "AMBUSH x Air Force 1 Low SP Série Maifu apresenta uma silhueta icónica reinterpretada pela AMBUSH, com linhas futuristas e acabamento em couro de alta qualidade. Um modelo de edição especial que combina moda urbana e design arrojado.",
-                                                                                    "preco": 55.99,
+                                                                                    "preco": 62.99,
                                                                                     "precoAntigo": 99.99,
                                                                                     "imagem": "/images/AMBUSH x Air Force 1 Low SP 埋伏系列 _ Yupoo - 01.jpg",
                                                                                     "imagensAdicionais": [
@@ -22258,7 +22258,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                     "nome": "Air Force 1 Low 'By You' Versace Branco e Verde",
                                                                                     "descricao": "Air Force 1 Low personalizado 'By You' inspirado no estilo Versace em branco e verde.",
                                                                                     "descricaoLonga": "Air Force 1 Low 'By You' Versace Branco e Verde combina o luxo da inspiração Versace com a personalização exclusiva Nike By You. Couro branco e detalhes verdes vibrantes criam uma estética ousada e refinada.",
-                                                                                    "preco": 55.99,
+                                                                                    "preco": 62.99,
                                                                                     "precoAntigo": 99.99,
                                                                                     "imagem": "/images/Air Force 1 Low _By You_ 范思哲白绿 _ Yupoo - 01.jpg",
                                                                                     "imagensAdicionais": [
@@ -22291,7 +22291,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                     "nome": "Air Force 1 '07 Low Rosa e Branco",
                                                                                     "descricao": "Air Force 1 '07 Low com design suave em rosa e branco.",
                                                                                     "descricaoLonga": "Air Force 1 '07 Low Rosa e Branco apresenta uma combinação delicada de couro branco com detalhes em rosa pastel. Um modelo feminino e elegante que combina conforto e versatilidade para o dia a dia.",
-                                                                                    "preco": 55.99,
+                                                                                    "preco": 62.99,
                                                                                     "precoAntigo": 99.99,
                                                                                     "imagem": "/images/Air Force 1 '07 Low 粉白 _ Yupoo - 01.jpg",
                                                                                     "imagensAdicionais": [
@@ -22324,7 +22324,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                     "nome": "Sup x Air Force 1 Low Off-White e Azul 3M",
                                                                                     "descricao": "Colaboração exclusiva Sup x Nike com detalhes refletivos 3M.",
                                                                                     "descricaoLonga": "Sup x Air Force 1 Low Off-White e Azul 3M combina o estilo urbano da Supreme com a qualidade da Nike. O cabedal em couro off-white é realçado por detalhes em azul e elementos refletivos 3M, tornando-o ideal para quem procura estilo e visibilidade.",
-                                                                                    "preco": 55.99,
+                                                                                    "preco": 62.99,
                                                                                     "precoAntigo": 99.99,
                                                                                     "imagem": "/images/Sup x Air Force 1 Low 米白蓝3M _ Yupoo - 10.jpg",
                                                                                     "imagensAdicionais": [
@@ -22356,7 +22356,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                       "nome": "Air Force 1 '07 Low Tecido Preto e Branco",
                                                                                       "descricao": "Air Force 1 '07 Low com detalhes em tecido preto e branco.",
                                                                                       "descricaoLonga": "Air Force 1 '07 Low Tecido Preto e Branco combina couro premium com painéis em tecido, proporcionando leveza e conforto. O contraste entre o preto e branco cria um visual moderno e versátil para qualquer ocasião.",
-                                                                                      "preco": 55.99,
+                                                                                      "preco": 62.99,
                                                                                       "precoAntigo": 99.99,
                                                                                       "imagem": "/images/Air Force 1 '07 Low 织布黑白 _ Yupoo - 01.jpg",
                                                                                       "imagensAdicionais": [
@@ -22389,7 +22389,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                       "nome": "Sup x Air Force 1 Low Off-White e Azul Escuro 3M",
                                                                                       "descricao": "Colaboração Sup x Nike com detalhes refletivos e acabamento 3M.",
                                                                                       "descricaoLonga": "Sup x Air Force 1 Low Off-White e Azul Escuro 3M traz uma estética premium com materiais refletivos e cores contrastantes. O design moderno une o conforto clássico da Nike com o toque urbano da Supreme.",
-                                                                                      "preco": 55.99,
+                                                                                      "preco": 62.99,
                                                                                       "precoAntigo": 99.99,
                                                                                       "imagem": "/images/Sup x Air Force 1 Low 米白藏蓝3M _ Yupoo - 01.jpg",
                                                                                       "imagensAdicionais": [
@@ -22422,7 +22422,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                       "nome": "LV x Air Force 1 Low Branco e Azul Jeans Desconstruído",
                                                                                       "descricao": "Edição especial LV x Nike Air Force 1 com design desconstruído e detalhes em denim azul.",
                                                                                       "descricaoLonga": "LV x Air Force 1 Low Branco e Azul Jeans Desconstruído combina o luxo da Louis Vuitton com o design urbano da Nike. Possui cabedal em couro branco e painéis em tecido denim azul com tiras decorativas e acabamento artesanal.",
-                                                                                      "preco": 55.99,
+                                                                                      "preco": 62.99,
                                                                                       "precoAntigo": 99.99,
                                                                                       "imagem": "/images/LV解构绑带白蓝牛仔 经典休闲运动板鞋 _ Yupoo - 01.jpg",
                                                                                       "imagensAdicionais": [
@@ -22455,7 +22455,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                         "nome": "Stussy x Air Force 1 Low Off-White e Azul",
                                                                                         "descricao": "Colaboração Stussy x Nike em tons off-white e azul.",
                                                                                         "descricaoLonga": "Stussy x Air Force 1 Low combina a estética urbana da Stussy com o conforto clássico da Nike. Cabedal em couro off-white e detalhes em azul criam um modelo moderno e exclusivo para streetwear.",
-                                                                                        "preco": 55.99,
+                                                                                        "preco": 62.99,
                                                                                         "precoAntigo": 99.99,
                                                                                         "imagem": "/images/Stussy x Air Force 1 Low 米白蓝 _ Yupoo - 01.jpg",
                                                                                         "imagensAdicionais": [
@@ -22488,7 +22488,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                         "nome": "Sup x Air Force 1 Low Branco e Cinzento Gradiente Três Ganchos",
                                                                                         "descricao": "Colaboração Sup x Nike com efeito gradiente em branco e cinzento e três ganchos.",
                                                                                         "descricaoLonga": "Sup x Air Force 1 Low combina couro premium com detalhes gradiente branco e cinzento, incorporando o design icónico de três ganchos. Ideal para colecionadores e streetwear de luxo.",
-                                                                                        "preco": 55.99,
+                                                                                        "preco": 62.99,
                                                                                         "precoAntigo": 99.99,
                                                                                         "imagem": "/images/Sup x Air Force 1 Low 白灰渐变三小钩 _ Yupoo - 01.jpg",
                                                                                         "imagensAdicionais": [
@@ -22521,7 +22521,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                         "nome": "Air Force 1 '07 Low Verde Maçã Spray",
                                                                                         "descricao": "Air Force 1 '07 Low com efeito spray em verde maçã.",
                                                                                         "descricaoLonga": "Air Force 1 '07 Low Verde Maçã Spray combina couro premium branco com acabamento em spray verde vivo. Um design arrojado e criativo, ideal para quem procura destacar-se no streetwear.",
-                                                                                        "preco": 55.99,
+                                                                                        "preco": 62.99,
                                                                                         "precoAntigo": 99.99,
                                                                                         "imagem": "/images/Air Force 1 '07 Low 青苹果绿喷绘 _ Yupoo - 01.jpg",
                                                                                         "imagensAdicionais": [
@@ -22554,7 +22554,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                         "nome": "Air Force 1 Low Verde Escuro e Branco",
                                                                                         "descricao": "Air Force 1 Low com design clássico em verde escuro e branco.",
                                                                                         "descricaoLonga": "Air Force 1 Low Verde Escuro e Branco possui cabedal em couro premium com contraste entre verde escuro e detalhes brancos. Ideal para uso diário e streetwear, mantendo conforto e durabilidade.",
-                                                                                        "preco": 55.99,
+                                                                                        "preco": 62.99,
                                                                                         "precoAntigo": 99.99,
                                                                                         "imagem": "/images/Air Force 1 Low 深绿白 _ Yupoo - 01.jpg",
                                                                                         "imagensAdicionais": [
@@ -22587,7 +22587,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                                         "nome": "Off-White x Air Force 1 Low",
                                                                                         "descricao": "Colaboração Off-White x Nike com design icónico e moderno - Variante 2.",
                                                                                         "descricaoLonga": "Off-White x Air Force 1 Low combina o streetwear da Nike com o design disruptivo da Off-White. Cabedal em couro premium com detalhes exclusivos Off-White, criando um sneaker altamente colecionável - Variante 2.",
-                                                                                        "preco": 55.99,
+                                                                                        "preco": 62.99,
                                                                                         "precoAntigo": 99.99,
                                                                                         "imagem": "/images/Off-White x Air Force 1 Low _ Yupoo - 01.jpg",
                                                                                         "imagensAdicionais": [
@@ -22620,7 +22620,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Stussy x Air Force 1 Low Branco e Cinzento Escuro",
                           "descricao": "Colaboração Stussy x Nike em branco com detalhes cinzento escuro.",
                           "descricaoLonga": "Stussy x Air Force 1 Low Branco e Cinzento Escuro combina a estética urbana da Stussy com o conforto clássico da Nike. Cabedal em couro branco com painéis cinzento escuro cria um visual moderno e versátil.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Stussy x Air Force 1 Low 白深灰 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -22653,7 +22653,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Air Force 1 Low Retro Branco e Amarelo Snake Hook",
                           "descricao": "Air Force 1 Low Retro com detalhes em branco e amarelo, gancho em padrão de serpente.",
                           "descricaoLonga": "Air Force 1 Low Retro Branco e Amarelo Snake Hook possui cabedal em couro branco e detalhes amarelos com gancho em padrão de serpente. Design retrô clássico atualizado com estilo ousado.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Air Force 1 Low Retro 白黄蛇纹钩 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -22686,7 +22686,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Air Force 1 '07 Low Verde Menta",
                           "descricao": "Air Force 1 '07 Low com cabedal em verde menta e sola natural.",
                           "descricaoLonga": "Air Force 1 '07 Low Verde Menta possui couro premium verde claro e sola natural em borracha. Modelo moderno com toque fresco e streetwear, ideal para looks desportivos.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Air Force 1 '07 Low 米绿生胶 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -22719,7 +22719,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Air Force 1 '07 Low Off-White Metal Pequeno Gancho",
                           "descricao": "Air Force 1 '07 Low com acabamento off-white e pequeno gancho metálico.",
                           "descricaoLonga": "Air Force 1 '07 Low Off-White Metal Pequeno Gancho combina couro off-white premium com detalhes metálicos discretos nos cadarços. Um design minimalista mas elegante, perfeito para streetwear moderno.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Air Force 1 '07 Low 米白金属小钩 _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -22752,7 +22752,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                           "nome": "Off-White x MoMA x Air Force 1 Low",
                           "descricao": "Colaboração Off-White x MoMA x Nike com design exclusivo.",
                           "descricaoLonga": "Off-White x MoMA x Air Force 1 Low combina o streetwear disruptivo da Off-White com a inspiração artística do MoMA. Cabedal em couro premium com detalhes exclusivos, ideal para colecionadores e amantes de sneakers de luxo.",
-                          "preco": 55.99,
+                          "preco": 62.99,
                           "precoAntigo": 99.99,
                           "imagem": "/images/Off-White x MoMA x Air Force 1 Low _ Yupoo - 01.jpg",
                           "imagensAdicionais": [
@@ -22785,7 +22785,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Air Force 1 '07 Low Branco, Verde e Roxo",
                             "descricao": "Air Force 1 '07 Low com cores branco, verde e roxo em estilo vibrante.",
                             "descricaoLonga": "Air Force 1 '07 Low Branco, Verde e Roxo combina couro premium com detalhes coloridos, criando um sneaker versátil e moderno para streetwear. Ideal para quem gosta de cores vibrantes e estilo urbano.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 '07 Low 白绿紫 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -22818,7 +22818,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Air Force 1 Low Next Nature Verde Oliva",
                             "descricao": "Air Force 1 Low Next Nature com cabedal sustentável em verde oliva.",
                             "descricaoLonga": "Air Force 1 Low Next Nature Verde Oliva utiliza materiais reciclados e couro sustentável, mantendo o design clássico da Nike. Cor principal verde oliva com detalhes neutros, perfeito para streetwear eco-friendly.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 Low Next Nature 油绿色 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -22851,7 +22851,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Stussy x Air Force 1 Low Branco e Azul",
                             "descricao": "Colaboração Stussy x Nike com design em branco e azul.",
                             "descricaoLonga": "Stussy x Air Force 1 Low Branco e Azul combina o estilo urbano da Stussy com o clássico da Nike. Cabedal em couro branco com detalhes em azul, ideal para streetwear moderno e versátil.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Stussy x Air Force 1 Low 白蓝 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -22884,7 +22884,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                             "nome": "Air Force 1 Low Quatro Pequenos Ganchos Preto",
                             "descricao": "Air Force 1 Low com quatro pequenos ganchos em preto.",
                             "descricaoLonga": "Air Force 1 Low Quatro Pequenos Ganchos Preto possui cabedal em couro premium branco com quatro ganchos discretos em preto, proporcionando um estilo moderno e único para streetwear e colecionadores.",
-                            "preco": 55.99,
+                            "preco": 62.99,
                             "precoAntigo": 99.99,
                             "imagem": "/images/Air Force 1 Low 四小钩 黑色 _ Yupoo - 01.jpg",
                             "imagensAdicionais": [
@@ -22917,7 +22917,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Air Force 1 '07 Low Cinzento Verde Metal Pequeno Gancho",
                               "descricao": "Air Force 1 '07 Low com pequeno gancho metálico e tons cinzento e verde.",
                               "descricaoLonga": "Air Force 1 '07 Low Cinzento Verde Metal Pequeno Gancho possui cabedal em couro premium com detalhes metálicos pequenos nos cadarços, combinando tons cinzento e verde para um estilo moderno e urbano.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/Air Force 1 '07 Low 灰绿金属小钩 _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -22950,7 +22950,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Air Force 1 '07 Low Preto",
                               "descricao": "Air Force 1 '07 Low em preto total clássico.",
                               "descricaoLonga": "Air Force 1 '07 Low Preto possui cabedal em couro premium totalmente preto, combinando estilo clássico e conforto. Ideal para streetwear minimalista e urbano.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/Air Force 1 '07 Low 黑色 _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -22983,7 +22983,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Sup x Air Force 1 Low Off-White e Azul 3M",
                               "descricao": "Colaboração Sup x Nike com detalhes refletivos 3M em off-white e azul - Variante 2.",
                               "descricaoLonga": "Sup x Air Force 1 Low Off-White e Azul 3M combina couro premium com detalhes refletivos 3M, criando um design moderno e exclusivo. Ideal para streetwear e colecionadores de sneakers de luxo - Variante 2.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/Sup x Air Force 1 Low 米白蓝3M _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -23016,7 +23016,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "LV x Air Force 1 Low Branco e Azul Estampado",
                               "descricao": "Colaboração LV x Nike com design branco e azul estampado.",
                               "descricaoLonga": "LV x Air Force 1 Low Branco e Azul Estampado combina couro premium com estampas LV em azul sobre base branca. Modelo exclusivo e sofisticado, ideal para streetwear e colecionadores.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/LV x Air Force 1 Low 白蓝印花 _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -23049,7 +23049,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                               "nome": "Air Force 1 '07 Low Off-White Verde Gramado",
                               "descricao": "Air Force 1 '07 Low com cabedal em off-white e detalhes verde gramado.",
                               "descricaoLonga": "Air Force 1 '07 Low Off-White Verde Gramado possui couro premium off-white com detalhes verdes claros, combinando estilo clássico e streetwear moderno. Ideal para looks urbanos e casuais.",
-                              "preco": 55.99,
+                              "preco": 62.99,
                               "precoAntigo": 99.99,
                               "imagem": "/images/Air Force 1 '07 Low 奶白草绿 _ Yupoo - 01.jpg",
                               "imagensAdicionais": [
@@ -23082,7 +23082,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "LV x Air Force 1 Low 3M Branco e Verde Refletivo",
                                 "descricao": "Colaboração LV x Nike com efeito refletivo 3M em branco e verde.",
                                 "descricaoLonga": "LV x Air Force 1 Low 3M Branco e Verde Refletivo combina couro premium com detalhes refletivos 3M, criando um sneaker exclusivo e moderno. Ideal para streetwear de luxo e colecionadores.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/LV x Air Force 1 Low 3M白绿反光 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -23115,7 +23115,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Kaws x Air Force 1 Low Cinza e Castanho",
                                 "descricao": "Colaboração Kaws x Nike em tons cinza e castanho.",
                                 "descricaoLonga": "Kaws x Air Force 1 Low Cinza e Castanho combina couro premium cinza com detalhes castanhos e elementos de design assinados por Kaws. Um sneaker exclusivo para colecionadores e fãs de arte urbana.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Kaws x Air Force 1 Low 米灰棕 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -23148,7 +23148,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Air Force 1 Low Cinco Listras Corda Grossa Branco e Cinza",
                                 "descricao": "Air Force 1 Low com cinco listras e corda grossa em branco e cinza.",
                                 "descricaoLonga": "Air Force 1 Low Cinco Listras Corda Grossa Branco e Cinza possui cabedal em couro premium branco com detalhes em corda grossa cinza e cinco listras distintas. Design robusto e moderno, perfeito para streetwear ousado.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Air Force 1 Low 五道杠粗绳米白灰 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -23181,7 +23181,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Stussy x Air Force 1 Low Branco e Roxo",
                                 "descricao": "Colaboração Stussy x Nike com design em branco e roxo.",
                                 "descricaoLonga": "Stussy x Air Force 1 Low Branco e Roxo combina o estilo urbano da Stussy com o clássico da Nike. Cabedal em couro branco com detalhes roxos, perfeito para streetwear moderno e versátil.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Stussy x Air Force 1 Low 白紫 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -23214,7 +23214,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                 "nome": "Air Force 1 '07 Low Lona Off-White e Azul",
                                 "descricao": "Air Force 1 '07 Low com cabedal em lona off-white e azul.",
                                 "descricaoLonga": "Air Force 1 '07 Low Lona Off-White e Azul possui cabedal em lona durável off-white com detalhes em azul, mantendo o design clássico da Nike com um toque casual e fresco para streetwear.",
-                                "preco": 55.99,
+                                "preco": 62.99,
                                 "precoAntigo": 99.99,
                                 "imagem": "/images/Air Force 1 '07 Low 帆布米白蓝 _ Yupoo - 01.jpg",
                                 "imagensAdicionais": [
@@ -23247,7 +23247,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "LV x Air Force 1 Low Branco e Verde Estampado",
                                   "descricao": "Colaboração LV x Nike com design branco e verde estampado.",
                                   "descricaoLonga": "LV x Air Force 1 Low Branco e Verde Estampado combina couro premium com estampas LV em verde sobre base branca. Um sneaker exclusivo para streetwear e colecionadores de luxo.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/LV x Air Force 1 Low 白绿印花 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -23280,7 +23280,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "Stussy x Air Force 1 Low Branco e Vinho",
                                   "descricao": "Colaboração Stussy x Nike com design branco e vinho.",
                                   "descricaoLonga": "Stussy x Air Force 1 Low Branco e Vinho possui cabedal em couro branco com detalhes em vinho. Uma edição especial perfeita para streetwear urbano e colecionadores.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/Stussy x Air Force 1 Low 白酒红 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -23313,7 +23313,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "Air Force 1 '07 Low Tom e Jerry Branco, Cinza e Castanho",
                                   "descricao": "Air Force 1 '07 Low com tema Tom e Jerry em branco, cinza e castanho.",
                                   "descricaoLonga": "Air Force 1 '07 Low Tom e Jerry Branco, Cinza e Castanho possui cabedal em couro premium com estampas do desenho animado Tom e Jerry, combinando cores branco, cinza e castanho. Design divertido e colecionável.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/Air Force 1 '07 Low 猫和老鼠白灰棕 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -23346,7 +23346,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "AMBUSH x Air Force 1 Low SP",
                                   "descricao": "Colaboração AMBUSH x Nike com design exclusivo SP.",
                                   "descricaoLonga": "AMBUSH x Air Force 1 Low SP possui cabedal em couro premium com detalhes exclusivos da parceria AMBUSH x Nike. Um sneaker moderno, urbano e de edição limitada, ideal para streetwear e colecionadores.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/AMBUSH x Air Force 1 Low SP _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -23379,7 +23379,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "Air Force 1 Low Verde Claro",
                                   "descricao": "Air Force 1 Low com cabedal verde claro simples e elegante.",
                                   "descricaoLonga": "Air Force 1 Low Verde Claro possui cabedal em couro premium com cor verde suave e sola branca clássica. Um design minimalista e versátil, perfeito para streetwear casual.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/Air Force 1 Low 米绿 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -23412,7 +23412,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                   "nome": "Bape x Air Force 1 Low Cinza e Azul",
                                   "descricao": "Colaboração Bape x Nike com design cinza e azul.",
                                   "descricaoLonga": "Bape x Air Force 1 Low Cinza e Azul possui cabedal em couro cinza com detalhes em azul e logotipos Bape discretos. Um sneaker de edição especial, moderno e colecionável.",
-                                  "preco": 55.99,
+                                  "preco": 62.99,
                                   "precoAntigo": 99.99,
                                   "imagem": "/images/Bape x Air Force 1 Low 米灰蓝 _ Yupoo - 01.jpg",
                                   "imagensAdicionais": [
@@ -23445,7 +23445,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 Low _By You_ Coração Marrom e Preto em Camurça",
                                     "descricao": "Air Force 1 Low _By You_ personalizado em marrom e preto com camurça.",
                                     "descricaoLonga": "Air Force 1 Low _By You_ Coração Marrom e Preto em Camurça permite personalização única, com cabedal em camurça marrom e detalhes em preto, incluindo ícone de coração. Design exclusivo para streetwear e colecionadores.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1 Low _By You_ 爱心棕黑麂皮 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -23478,7 +23478,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 '07 Low Urso Branco, Azul e Laranja",
                                     "descricao": "Air Force 1 '07 Low com tema ursinho em branco, azul e laranja.",
                                     "descricaoLonga": "Air Force 1 '07 Low Urso Branco, Azul e Laranja possui cabedal em couro premium branco com detalhes azul e laranja, incluindo estampas de ursinhos. Design divertido e colecionável.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1 '07 Low 小熊白蓝橙 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -23511,7 +23511,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 '07 Low Quatro Cores Mandarin Duck Hook",
                                     "descricao": "Air Force 1 '07 Low com quatro cores e design de gancho Mandarin Duck.",
                                     "descricaoLonga": "Air Force 1 '07 Low Quatro Cores Mandarin Duck Hook possui cabedal em couro premium com quatro cores distintas nos detalhes do gancho, criando um design chamativo e moderno para streetwear.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1 '07 Low 四色鸳鸯钩 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -23544,7 +23544,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Air Force 1 '07 Low Branco, Cinza, Rosa e Verde",
                                     "descricao": "Air Force 1 '07 Low com cores branco, cinza, rosa e verde.",
                                     "descricaoLonga": "Air Force 1 '07 Low Branco, Cinza, Rosa e Verde possui cabedal em couro premium com combinação de cores suaves e contrastantes, perfeito para streetwear moderno e versátil.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Air Force 1 '07 Low 白灰粉绿 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -23577,7 +23577,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                     "nome": "Off-White x Air Force 1 Low Azul",
                                     "descricao": "Colaboração Off-White x Nike com design azul.",
                                     "descricaoLonga": "Off-White x Air Force 1 Low Azul possui cabedal em couro azul com detalhes de marcação Off-White. Um sneaker exclusivo de edição limitada, ideal para streetwear e colecionadores.",
-                                    "preco": 55.99,
+                                    "preco": 62.99,
                                     "precoAntigo": 99.99,
                                     "imagem": "/images/Off-White x Air Force 1 Low 蓝色 _ Yupoo - 01.jpg",
                                     "imagensAdicionais": [
@@ -23610,7 +23610,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Air Force 1 '07 Low Astronaut Cinza Claro e Azul",
                                       "descricao": "Air Force 1 '07 Low com tema astronauta em cinza claro e azul.",
                                       "descricaoLonga": "Air Force 1 '07 Low Astronaut Cinza Claro e Azul possui cabedal em couro premium com detalhes inspirados no tema astronauta, combinando cores cinza claro e azul. Ideal para streetwear e colecionadores.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/Air Force 1 '07 Low 航天员米灰蓝 _ Yupoo - 01.jpg",
                                       "imagensAdicionais": [
@@ -23643,7 +23643,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Air Force 1 '07 Low Canvas Cinza e Verde",
                                       "descricao": "Air Force 1 '07 Low com cabedal em canvas cinza e verde.",
                                       "descricaoLonga": "Air Force 1 '07 Low Canvas Cinza e Verde possui cabedal em tecido canvas de alta qualidade, combinando cores cinza e verde. Um sneaker casual e confortável para streetwear.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/3184e748.jpg",
                                       "imagensAdicionais": [
@@ -23671,7 +23671,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "LV x Air Force 1 Low 3M Branco e Azul Escuro Refletivo",
                                       "descricao": "Colaboração LV x Nike com efeito 3M refletivo em branco e azul escuro.",
                                       "descricaoLonga": "LV x Air Force 1 Low 3M Branco e Azul Escuro Refletivo possui cabedal em couro premium branco com detalhes azul escuro e efeito refletivo 3M, combinando estilo de luxo com streetwear moderno.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/LV x Air Force 1 Low 3M白深蓝反光 _ Yupoo - 01.jpg",
                                       "imagensAdicionais": [
@@ -23704,7 +23704,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Air Force 1 '07 Low Canvas Cinza e Verde",
                                       "descricao": "Air Force 1 '07 Low com cabedal em canvas cinza e verde.",
                                       "descricaoLonga": "Air Force 1 '07 Low Canvas Cinza e Verde possui cabedal em tecido canvas de alta qualidade, combinando cores cinza e verde. Um sneaker casual e confortável para streetwear.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/Air Force 1 '07 Low 帆布灰绿 _ Yupoo - 01.jpg",
                                       "imagensAdicionais": [
@@ -23737,7 +23737,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                       "nome": "Air Force 1 '07 Low Branco e Roxo com Gancho Grafite",
                                       "descricao": "Air Force 1 '07 Low com cores branco e roxo e gancho com grafite.",
                                       "descricaoLonga": "Air Force 1 '07 Low Branco e Roxo com Gancho Grafite possui cabedal em couro premium branco com detalhes roxos e gancho com pintura grafite. Um sneaker moderno e ousado para streetwear.",
-                                      "preco": 55.99,
+                                      "preco": 62.99,
                                       "precoAntigo": 99.99,
                                       "imagem": "/images/Air Force 1 '07 Low 白紫涂鸦钩 _ Yupoo - 01.jpg",
                                       "imagensAdicionais": [
@@ -23770,7 +23770,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                         "nome": "Sup x Air Force 1 Low Branco e Azul Gradiente com Três Ganchos",
                                         "descricao": "Sup x Air Force 1 Low com gradiente branco e azul e três ganchos.",
                                         "descricaoLonga": "Sup x Air Force 1 Low Branco e Azul Gradiente com Três Ganchos possui cabedal em couro premium com efeito gradiente branco e azul, destacando três ganchos estilizados. Edição limitada ideal para streetwear e colecionadores.",
-                                        "preco": 55.99,
+                                        "preco": 62.99,
                                         "precoAntigo": 99.99,
                                         "imagem": "/images/Sup x Air Force 1 Low 白蓝渐变三小钩 _ Yupoo - 01.jpg",
                                         "imagensAdicionais": [
@@ -23803,7 +23803,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                         "nome": "Air Force 1 Low Azul e Bege",
                                         "descricao": "Air Force 1 Low com cabedal em azul e bege elegante.",
                                         "descricaoLonga": "Air Force 1 Low Azul e Bege possui cabedal em couro premium azul com detalhes em bege, oferecendo um design clássico e versátil para streetwear.",
-                                        "preco": 55.99,
+                                        "preco": 62.99,
                                         "precoAntigo": 99.99,
                                         "imagem": "/images/Air Force 1 Low 蓝米色 _ Yupoo - 01.jpg",
                                         "imagensAdicionais": [
@@ -23836,7 +23836,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                         "nome": "Travis Scott x Air Force 1 Low Branco",
                                         "descricao": "Colaboração Travis Scott x Nike com design totalmente branco.",
                                         "descricaoLonga": "Travis Scott x Air Force 1 Low Branco possui cabedal em couro premium totalmente branco, com detalhes de assinatura da colaboração Travis Scott. Edição limitada para colecionadores e streetwear.",
-                                        "preco": 55.99,
+                                        "preco": 62.99,
                                         "precoAntigo": 99.99,
                                         "imagem": "/images/Travis Scott x Air Force 1 Low 白色 _ Yupoo - 01.jpg",
                                         "imagensAdicionais": [
@@ -23869,7 +23869,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                         "nome": "Nk Dunk Low Caixa Funcional Graffiti Mood",
                                         "descricao": "Nk Dunk Low com design de graffiti em caixa funcional.",
                                         "descricaoLonga": "Nk Dunk Low Caixa Funcional Graffiti Mood possui cabedal em couro e tecido com pintura de graffiti que expressa diferentes emoções. Um design exclusivo e artístico para colecionadores e streetwear.",
-                                        "preco": 55.99,
+                                        "preco": 62.99,
                                         "precoAntigo": 99.99,
                                         "imagem": "/images/Nk Dunk Low 机能礼盒 涂鸦心情 _ Yupoo - 01.jpg",
                                         "imagensAdicionais": [
@@ -23902,7 +23902,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Bape x Air Force 1 Low Branco Claro e Verde Refletivo",
                                           "descricao": "Bape x Air Force 1 Low com cabedal branco claro e verde refletivo.",
                                           "descricaoLonga": "Bape x Air Force 1 Low Branco Claro e Verde Refletivo possui cabedal em couro premium branco claro com detalhes verdes refletivos, destacando o estilo icónico Bape. Edição limitada ideal para streetwear e colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Bape x Air Force 1 Low 米白绿反光 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -23935,7 +23935,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 07 Low Branco e Azul",
                                           "descricao": "Air Force 1 '07 Low clássico em branco e azul.",
                                           "descricaoLonga": "Air Force 1 '07 Low Branco e Azul possui cabedal em couro premium branco com detalhes em azul, oferecendo um design versátil e clássico para streetwear.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/4de9ef6f.jpg",
                                           "imagensAdicionais": [
@@ -23963,7 +23963,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Nk Air Force 1 '07 Low Preto e Branco Gancho Quebrado",
                                           "descricao": "Nk Air Force 1 '07 Low com design de gancho quebrado em preto e branco.",
                                           "descricaoLonga": "Nk Air Force 1 '07 Low Preto e Branco Gancho Quebrado possui cabedal em couro premium preto com detalhes em branco, destacando o design de gancho quebrado exclusivo. Um sneaker ousado e moderno para streetwear.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Nk Air Force 1'07 Low 黑白断勾 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -23996,7 +23996,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Louis Vuitton x Nike Air Force 1 Low",
                                           "descricao": "Colaboração Louis Vuitton x Nike Air Force 1 Low clássica.",
                                           "descricaoLonga": "Louis Vuitton x Nike Air Force 1 Low possui cabedal em couro premium com detalhes exclusivos da colaboração LV, combinando luxo e streetwear moderno. Edição limitada de colecionador.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Loius Vuitton x Nike Air Force 1 low _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -24029,7 +24029,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 '07 Low LV Branco Claro e Cinza",
                                           "descricao": "Air Force 1 '07 Low com design LV em branco claro e cinza.",
                                           "descricaoLonga": "Air Force 1 '07 Low LV Branco Claro e Cinza possui cabedal em couro premium branco claro com detalhes cinza e marcação LV, combinando streetwear e luxo. Um sneaker exclusivo para colecionadores.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 '07 Low LV米白灰 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -24062,7 +24062,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Off-White x Air Force 1 Low Dourado",
                                             "descricao": "Colaboração Off-White x Nike com cabedal dourado.",
                                             "descricaoLonga": "Off-White x Air Force 1 Low Dourado possui cabedal em couro premium dourado com detalhes icónicos Off-White, combinando luxo e streetwear moderno. Edição limitada para colecionadores.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Off-White x Air Force 1 Low 金色 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -24095,7 +24095,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Nike Air Force 1 '07 Verde Maçã",
                                             "descricao": "Air Force 1 '07 com cores verde maçã vibrantes.",
                                             "descricaoLonga": "Nike Air Force 1 '07 Verde Maçã possui cabedal em couro premium combinando verde maçã com detalhes neutros, oferecendo um design vibrante e moderno para streetwear.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/NIke Air Force 1 '07 青苹果配色 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -24128,7 +24128,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Nk Air Force 1 '07 Low Lonely Bear",
                                             "descricao": "Nk Air Force 1 '07 Low com design Lonely Bear exclusivo.",
                                             "descricaoLonga": "Nk Air Force 1 '07 Low Lonely Bear possui cabedal em couro premium branco e detalhes marrons, com o icónico ursinho Lonely Bear. Um sneaker artístico e exclusivo para colecionadores.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Nk Air Force 1'07 Low _Lonely Bear_ “孤独熊” _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -24161,7 +24161,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Air Force 1 '07 Low Branco Refletivo Angel",
                                             "descricao": "Air Force 1 '07 Low com detalhe refletivo e tema angelical.",
                                             "descricaoLonga": "Air Force 1 '07 Low Branco Refletivo Angel possui cabedal em couro premium branco com detalhes refletivos inspirados em anjos. Design moderno e elegante para streetwear.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Air Force 1 '07 Low 白反光天使 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -24194,7 +24194,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Air Force 1 '07 Low Pintura Azul e Branca com Cadarços",
                                             "descricao": "Air Force 1 '07 Low com pintura azul e branca e cadarços combinando.",
                                             "descricaoLonga": "Air Force 1 '07 Low Pintura Azul e Branca com Cadarços possui cabedal em couro premium branco com pintura azul e cadarços combinando, oferecendo um visual artístico e moderno para streetwear.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Air Force 1 '07 Low 喷绘蓝白绑带 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -24227,7 +24227,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Nk Air Force 1 '07 Low Edição Colaboração",
                                               "descricao": "Nk Air Force 1 '07 Low com design exclusivo de colaboração.",
                                               "descricaoLonga": "Nk Air Force 1 '07 Low Edição Colaboração possui cabedal em couro premium branco com detalhes da colaboração Nk, oferecendo um sneaker exclusivo para colecionadores e streetwear.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Nk Air Force 1'07 Low 联名款 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -24260,7 +24260,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Nike Air Force 1 '07 Low Clássico",
                                               "descricao": "Air Force 1 '07 Low clássico em branco com detalhes discretos.",
                                               "descricaoLonga": "Nike Air Force 1 '07 Low Clássico possui cabedal em couro premium branco, mantendo o design icónico do modelo clássico da Nike. Ideal para streetwear e uso diário.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Nike Air Force 1'07空军一号低帮板鞋 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -24293,7 +24293,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 Low Função Graffiti Branco e Cinza com Cadarços",
                                               "descricao": "Air Force 1 Low com design gráfico e cadarços brancos e cinza.",
                                               "descricaoLonga": "Air Force 1 Low Função Graffiti Branco e Cinza com Cadarços possui cabedal em couro premium branco com detalhes cinza e graffiti, oferecendo um estilo moderno e clássico para streetwear.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 Low 函数涂鸦 绑带白灰 经典休闲运动板鞋 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -24326,7 +24326,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 '07 Low Branco, Azul e Verde",
                                                 "descricao": "Air Force 1 '07 Low com combinação de cores branco, azul e verde.",
                                                 "descricaoLonga": "Air Force 1 '07 Low Branco, Azul e Verde possui cabedal em couro premium branco com detalhes em azul e verde, oferecendo um design moderno e versátil para streetwear.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 '07 Low 白蓝绿 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -24359,7 +24359,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Travis Scott x Air Force 1 Low",
                                                 "descricao": "Colaboração Travis Scott x Nike Air Force 1 Low icónica.",
                                                 "descricaoLonga": "Travis Scott x Air Force 1 Low possui cabedal em couro premium com detalhes exclusivos da colaboração, oferecendo um sneaker único e altamente colecionável para streetwear.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Travis Scott x Air Force 1 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -24392,7 +24392,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "AMBUSH x Air Force 1 Low SP Série",
                                                 "descricao": "Colaboração AMBUSH x Air Force 1 Low SP com design exclusivo.",
                                                 "descricaoLonga": "AMBUSH x Air Force 1 Low SP Série possui cabedal em couro premium com detalhes da coleção SP, combinando estilo streetwear moderno com elementos artísticos exclusivos.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/AMBUSH x Air Force 1 Low SP 系列 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -24425,7 +24425,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 '07 Low Estilo Chinês Bamboo Bege",
                                                 "descricao": "Air Force 1 '07 Low com design inspirado em bambu e cores bege.",
                                                 "descricaoLonga": "Air Force 1 '07 Low Estilo Chinês Bamboo Bege possui cabedal em couro premium bege com detalhes inspirados na cultura chinesa e bambu, oferecendo um design elegante e culturalmente rico para streetwear.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 '07 Low 国风竹林米色 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -24458,7 +24458,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "NOCTA x Air Force 1 Low Marfim e Azul Gelo",
                                                   "descricao": "Colaboração NOCTA x Air Force 1 Low com cores marfim e azul gelo.",
                                                   "descricaoLonga": "NOCTA x Air Force 1 Low Marfim e Azul Gelo possui cabedal em couro premium marfim com detalhes azul gelo, combinando streetwear moderno com exclusividade da colaboração NOCTA.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/NOCTA x Air Force 1 Low 米白冰蓝 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -24491,7 +24491,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 '07 Low Preto e Branco Desconstruído com Cadarços",
                                                   "descricao": "Air Force 1 '07 Low com design desconstruído em preto e branco.",
                                                   "descricaoLonga": "Air Force 1 '07 Low Preto e Branco Desconstruído com Cadarços possui cabedal em couro premium com cores preto e branco e detalhes de cadarços desconstruídos, oferecendo um visual urbano e moderno.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 '07 Low 黑白解构绑带 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -24524,7 +24524,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 Low Cinco Listras Cadarços Grossos Marfim e Preto",
                                                   "descricao": "Air Force 1 Low com cinco listras e cadarços grossos em marfim e preto.",
                                                   "descricaoLonga": "Air Force 1 Low Cinco Listras Cadarços Grossos Marfim e Preto possui cabedal em couro premium com detalhes em marfim e preto e cadarços grossos, proporcionando estilo clássico e urbano.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 Low 五道杠粗绳米白黑 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -24557,7 +24557,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 '07 Low Chemical Graffiti Branco e Preto",
                                                   "descricao": "Air Force 1 '07 Low com pintura chemical graffiti em branco e preto.",
                                                   "descricaoLonga": "Air Force 1 '07 Low Chemical Graffiti Branco e Preto possui cabedal em couro premium branco com detalhes em preto e pintura graffiti química, oferecendo um design artístico e urbano.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 '07 Low 化学涂鸦白黑 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -24590,7 +24590,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Bape x Air Force 1 Low Marfim e Marrom Refletivo",
                                                   "descricao": "Colaboração Bape x Air Force 1 Low com cores marfim e marrom refletivo.",
                                                   "descricaoLonga": "Bape x Air Force 1 Low Marfim e Marrom Refletivo possui cabedal em couro premium marfim com detalhes marrons refletivos, unindo streetwear moderno e exclusividade da marca Bape.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Bape x Air Force 1 Low 米白棕反光 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -24623,7 +24623,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 Low Cinco Listras Cadarços Grossos Marfim e Verde",
                                                   "descricao": "Air Force 1 Low com cinco listras e cadarços grossos em marfim e verde.",
                                                   "descricaoLonga": "Air Force 1 Low Cinco Listras Cadarços Grossos Marfim e Verde possui cabedal em couro premium com detalhes em marfim e verde e cadarços grossos, proporcionando estilo urbano e streetwear.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 Low 五道杠粗绳米白绿 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -24656,7 +24656,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Stussy x Air Force 1 Low Marfim e Marrom",
                                                     "descricao": "Colaboração Stussy x Air Force 1 Low com cores marfim e marrom.",
                                                     "descricaoLonga": "Stussy x Air Force 1 Low Marfim e Marrom possui cabedal em couro premium marfim com detalhes em marrom, unindo streetwear moderno e exclusividade da marca Stussy.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Stussy x Air Force 1 Low 米白棕 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -24689,7 +24689,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 '07 Low Marfim e Preto",
                                                     "descricao": "Air Force 1 '07 Low com cores marfim e preto clássico.",
                                                     "descricaoLonga": "Air Force 1 '07 Low Marfim e Preto possui cabedal em couro premium com detalhes em preto, mantendo o design clássico do modelo e garantindo conforto e estilo para streetwear.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 '07 Low 米白黑 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -24722,7 +24722,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 Low Verde Abacate",
                                                     "descricao": "Air Force 1 Low com tom verde abacate moderno.",
                                                     "descricaoLonga": "Air Force 1 Low Verde Abacate possui cabedal em couro premium verde, oferecendo um design clean e elegante, perfeito para streetwear e looks casuais.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 Low 牛油果绿 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -24755,7 +24755,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 Low Branco e Marrom",
                                                     "descricao": "Air Force 1 Low com combinação clássica branco e marrom.",
                                                     "descricaoLonga": "Air Force 1 Low Branco e Marrom possui cabedal em couro premium branco com detalhes em marrom, oferecendo um design versátil e elegante para streetwear e uso diário.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 Low 白棕 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -24788,7 +24788,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 '07 Low Marfim e Verde",
                                                     "descricao": "Air Force 1 '07 Low com design em marfim e verde.",
                                                     "descricaoLonga": "Air Force 1 '07 Low Marfim e Verde possui cabedal em couro premium marfim com detalhes em verde, garantindo um estilo clássico e elegante para streetwear.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 '07 Low 米白绿 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -24821,7 +24821,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 '07 Low Azul e Rosa Cotton Candy",
                                                     "descricao": "Air Force 1 '07 Low com cores azul e rosa estilo Cotton Candy.",
                                                     "descricaoLonga": "Air Force 1 '07 Low Azul e Rosa Cotton Candy possui cabedal em couro premium com detalhes azul e rosa, oferecendo um visual divertido e moderno inspirado em algodão doce.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 '07 Low 蓝粉棉花糖 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -24854,7 +24854,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Aniversário Branco Prateado",
                                                       "descricao": "Edição especial de aniversário em branco e prateado com acabamento metálico elegante.",
                                                       "descricaoLonga": "O Air Force 1 '07 Low Aniversário Branco Prateado celebra o legado da Nike com detalhes premium em couro branco e toques metálicos prateados que destacam o design clássico.",
-                                                      "preco": 59.99,
+                                                      "preco": 66.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 '07 Low 周年白银 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -24887,7 +24887,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Bege Azul",
                                                       "descricao": "Air Force 1 '07 Low com combinação clássica de bege e azul.",
                                                       "descricaoLonga": "Este modelo Air Force 1 '07 Low combina elegância e conforto com uma paleta de bege e azul suave, ideal para o dia a dia e looks urbanos.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 89.99,
                                                       "imagem": "/images/5b8f0c43.jpg",
                                                       "imagensAdicionais": [
@@ -24915,7 +24915,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Nike Air Force 1 Low '07 Limão Amarelo",
                                                       "descricao": "Air Force 1 Low em amarelo limão vibrante, para quem gosta de cor e estilo.",
                                                       "descricaoLonga": "O Nike Air Force 1 Low '07 Limão Amarelo destaca-se pela sua cor energética e acabamento em couro premium. Um modelo ousado e moderno para looks casuais.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 94.99,
                                                       "imagem": "/images/NK Air Force 1 Low’07 柠檬黄 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -24948,7 +24948,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Nike Air Force 1 Low '07 Colaboração Especial",
                                                       "descricao": "Edição colaborativa exclusiva do clássico Air Force 1 '07 Low.",
                                                       "descricaoLonga": "Versão colaborativa do icónico Air Force 1 '07 Low, mantendo o conforto e a durabilidade com um toque moderno e materiais premium.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Nike Air Force 1 Low 07 联名款 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -24981,7 +24981,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Cinza Prateado Estrelado",
                                                       "descricao": "Air Force 1 '07 Low com detalhes prateados e padrão de estrelas brilhantes.",
                                                       "descricaoLonga": "Este modelo Air Force 1 '07 Low combina tons cinza e prateado com um efeito estrelado que reflete a luz, criando um visual moderno e distinto.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 95.99,
                                                       "imagem": "/images/Air Force 1'07 Low 灰银小勾 满天星 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -25014,7 +25014,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 Low '1V Colaboração Castanho Elfo Noturno",
                                                       "descricao": "Edição especial '1V' com tons castanhos e design inspirado em fantasia.",
                                                       "descricaoLonga": "Inspirado no tema de fantasia 'Elfo Noturno', este Air Force 1 Low '1V' combina tons castanhos e escuros com materiais texturizados e detalhes únicos.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 Low “1V联名棕暗夜精灵 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -25047,7 +25047,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "LV x Air Force 1 Low Colaboração Branco e Preto",
                                                         "descricao": "Colaboração LV x Nike em branco e preto clássico.",
                                                         "descricaoLonga": "LV x Air Force 1 Low Colaboração Branco e Preto traz um cabedal em couro premium branco com detalhes em preto, marcação LV subtíl e estilo de luxo urbano ideal para colecionadores.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/LV x Air Force 1 Low 联名白黑 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -25080,7 +25080,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Drake x Air Force 1 Low Branco e Azul Gelo",
                                                         "descricao": "Colaboração Drake x Nike em branco com toques azul gelo.",
                                                         "descricaoLonga": "Drake x Air Force 1 Low Branco e Azul Gelo combina couro premium branco com detalhes em azul gelo, trazendo exclusividade, estilo e conforto para colecionadores e streetwear.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Drake x Air Force 1 Low 白冰蓝 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -25113,7 +25113,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Air Force 1 '07 Low Trigo Marrom e Vermelho",
                                                         "descricao": "Air Force 1 '07 Low com cabedal cor trigo, acentos marrons e vermelhos.",
                                                         "descricaoLonga": "Air Force 1 '07 Low Trigo Marrom e Vermelho apresenta couro premium cor trigo com acentos em marrom e vermelho, criando um estilo robusto e urbano para uso diário.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Air Force 1 '07 Low 小麦棕红 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -25146,7 +25146,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Air Force 1 Low Estilo Vintage Americano",
                                                         "descricao": "Air Force 1 Low com visual vintage americano desgastado.",
                                                         "descricaoLonga": "Air Force 1 Low Estilo Vintage Americano traz acabamento desgastado deliberado, couro premium e estética inspirada no estilo clássico dos EUA, ideal para um look urbano autêntico.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Air Force 1 Low 美式复古 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -25179,7 +25179,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Sup x Air Force 1 Low Branco e Preto Refletivo",
                                                         "descricao": "Colaboração Sup x Nike com detalhe refletivo em branco e preto.",
                                                         "descricaoLonga": "Sup x Air Force 1 Low Branco e Preto Refletivo traz couro premium branco com detalhes em preto e elementos refletivos, edição especial para streetwear e colecionadores.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Sup x Air Force 1 Low 白黑反光 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -25212,7 +25212,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Bape x Air Force 1 Low Bege e Castanho Patchwork",
                                                           "descricao": "Colaboração Bape x Nike com design bege e castanho em patchwork.",
                                                           "descricaoLonga": "Bape x Air Force 1 Low Bege e Castanho Patchwork combina couro premium em tons bege e castanho com o estilo característico da Bape. Um sneaker de destaque com design ousado e acabamento luxuoso.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Bape x Air Force 1 Low 米白棕拼接 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -25245,7 +25245,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Preto e Branco Degradé",
                                                           "descricao": "Modelo clássico em preto e branco com efeito degradé moderno.",
                                                           "descricaoLonga": "O Air Force 1 '07 Low Preto e Branco Degradé combina o estilo atemporal do AF1 com um visual moderno em degradé, transição suave entre o preto e o branco para um toque distinto e sofisticado.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Low 黑白渐变 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -25278,7 +25278,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Branco e Roxo",
                                                           "descricao": "Air Force 1 clássico com detalhes em roxo vibrante.",
                                                           "descricaoLonga": "Air Force 1 '07 Low Branco e Roxo mantém o design icónico da linha AF1, com base branca e detalhes em roxo que adicionam um toque de cor e elegância discreta ao visual urbano.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/3e18ce3d.jpg",
                                                           "imagensAdicionais": [
@@ -25307,7 +25307,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 Low Carhartt Colaboração Bege e Cinzento",
                                                           "descricao": "Colaboração Carhartt x Nike em bege e cinzento com detalhes utilitários.",
                                                           "descricaoLonga": "O Air Force 1 Low Carhartt Colaboração Bege e Cinzento apresenta materiais têxteis resistentes e design inspirado no estilo workwear da Carhartt. Um modelo durável e sofisticado.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 Low 卡哈特联名米白灰 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -25340,7 +25340,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Cinzento e Preto",
                                                           "descricao": "Design clássico do Air Force 1 em cinzento e preto contrastante.",
                                                           "descricaoLonga": "O Air Force 1 '07 Low Cinzento e Preto oferece um visual moderno e discreto, combinando o conforto característico da linha AF1 com uma paleta de cores sóbria e versátil.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Low 灰黑 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -25373,7 +25373,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Creme e Verde",
                                                             "descricao": "Modelo clássico da Nike com combinação elegante de creme e verde.",
                                                             "descricaoLonga": "O Air Force 1 '07 Low Creme e Verde combina couro premium em tons suaves de creme e verde. Um sneaker versátil e confortável, ideal para o dia a dia e para quem aprecia um visual limpo e moderno.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low 奶白绿 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -25406,7 +25406,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Preto 'Black Warrior'",
                                                             "descricao": "Modelo totalmente preto com estilo urbano e elegante.",
                                                             "descricaoLonga": "O Air Force 1 '07 Low Black Warrior apresenta um design todo em preto, fabricado em couro premium com acabamentos discretos. Ideal para quem procura um visual minimalista e versátil.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low 黑武士 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -25439,7 +25439,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Creme e Amarelo Claro",
                                                             "descricao": "Edição com tons suaves de creme e amarelo pastel, perfeita para um visual leve.",
                                                             "descricaoLonga": "O Air Force 1 '07 Low Creme e Amarelo Claro oferece uma combinação elegante de couro creme e detalhes em amarelo pastel. Um modelo leve, confortável e cheio de estilo.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low 奶黄 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -25472,7 +25472,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 Low By You Preto e Azul com Estrelas",
                                                             "descricao": "Modelo personalizado com base preta, detalhes azuis e padrão de estrelas.",
                                                             "descricaoLonga": "O Air Force 1 Low By You Preto e Azul combina um design arrojado com detalhes exclusivos de estrelas. Um modelo que destaca a individualidade e o estilo pessoal.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 Low _By You_ 黑蓝满天星 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -25505,7 +25505,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 Shadow Branco Puro",
                                                             "descricao": "Air Force 1 Shadow Branco Puro - modelo exclusivo Air Force 1 Shadow.",
                                                             "descricaoLonga": "O Air Force 1 Shadow Branco Puro combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 Shadow 纯白 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -25548,7 +25548,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 Low By You Preto, Branco e Rosa",
                                                             "descricao": "Versão personalizada com mistura moderna de preto, branco e rosa vibrante.",
                                                             "descricaoLonga": "O Air Force 1 Low By You Preto, Branco e Rosa combina cores contrastantes e acabamento premium. Um sneaker expressivo, feito para quem gosta de se destacar com estilo.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 Low _By You_ 黑白粉 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -25581,7 +25581,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 Low By You Rosa e Preto",
                                                               "descricao": "Versão personalizada do Air Force 1 Low em rosa e preto, com estilo moderno e ousado.",
                                                               "descricaoLonga": "O Air Force 1 Low By You Rosa e Preto combina materiais de alta qualidade com um design vibrante e contrastante. A base preta com detalhes em rosa confere um visual elegante e arrojado, perfeito para quem gosta de destacar o seu estilo único.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 Low _By You_ 粉黑 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -25614,7 +25614,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "LV x Air Force 1 Low Creme e Preto",
                                                               "descricao": "Colaboração entre Louis Vuitton e Nike, com um visual sofisticado em creme e preto.",
                                                               "descricaoLonga": "O LV x Air Force 1 Low Creme e Preto é uma edição de luxo que combina o icónico design da Nike com o requinte da Louis Vuitton. Feito em couro premium nas cores creme e preto, este modelo é perfeito para colecionadores e fãs de streetwear de alto nível.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/LV x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -25647,7 +25647,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Nike Air Force 1 Low Preto com Swoosh Azul",
                                                               "descricao": "Air Force 1 Low em preto com detalhe de Swoosh azul vibrante.",
                                                               "descricaoLonga": "O Nike Air Force 1 Low Preto com Swoosh Azul apresenta um visual moderno e elegante. Feito em couro preto com o icónico logótipo Nike em azul, oferece um contraste marcante que destaca o estilo urbano deste modelo.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Nike Air Force 1 Low 07 黑蓝勾 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -25680,7 +25680,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Nike Air Force 1 Low 07 Rosa com Swoosh Preto",
                                                                 "descricao": "Air Force 1 Low 07 com design clássico em rosa e detalhes do logótipo Nike em preto.",
                                                                 "descricaoLonga": "O Nike Air Force 1 Low 07 Rosa com Swoosh Preto apresenta uma combinação elegante e moderna, com base em couro rosa suave e o icónico Swoosh em preto. Ideal para quem procura um estilo arrojado e sofisticado no dia a dia.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Nike Air Force 1 Low 07 粉黑勾 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -25713,7 +25713,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "NOCTA x Air Force 1 Low Creme e Cinza",
                                                                 "descricao": "Colaboração NOCTA x Nike em tons suaves de creme e cinza.",
                                                                 "descricaoLonga": "O NOCTA x Air Force 1 Low Creme e Cinza combina o estilo premium da linha NOCTA com o design intemporal do Air Force 1. Feito em couro de alta qualidade, apresenta tons neutros que combinam com qualquer look.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/NOCTA x Air Force 1 Low 米白灰 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -25746,7 +25746,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 Low Colaboração Bruxinha e Caveira",
                                                                 "descricao": "Edição especial do Air Force 1 Low com detalhes temáticos de bruxinha e caveira.",
                                                                 "descricaoLonga": "O Air Force 1 Low Bruxinha e Caveira é uma colaboração criativa que mistura o estilo urbano da Nike com arte temática. O design inclui detalhes únicos nas laterais e solado, oferecendo um visual ousado e colecionável.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 Low 小巫女骷髅头联名款 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -25779,7 +25779,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 Low By You Castanho e Branco com Corda",
                                                                 "descricao": "Edição By You com acabamento em castanho e branco, com detalhe de corda nas laterais.",
                                                                 "descricaoLonga": "O Air Force 1 Low By You Castanho e Branco com Corda é uma versão artesanal e moderna do clássico modelo. O uso de tons terrosos e a aplicação de cordas naturais tornam-no perfeito para quem valoriza o detalhe e o estilo exclusivo.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 Low _By You_ 棕白麻绳 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -25812,7 +25812,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 '07 Low Branco, Preto e Castanho",
                                                                 "descricao": "Modelo Air Force 1 '07 Low com combinação de branco, preto e castanho.",
                                                                 "descricaoLonga": "O Air Force 1 '07 Low Branco, Preto e Castanho mistura tons neutros e um toque de cor clássica. Feito em couro premium, é uma escolha versátil que combina conforto e estilo urbano em qualquer ocasião.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 '07 Low 白黑褐 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -25845,7 +25845,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Nike Air Force 1 '07 LX",
                                                                   "descricao": "O clássico Air Force 1 '07 LX combina design icónico com detalhes refinados e conforto duradouro.",
                                                                   "descricaoLonga": "O Nike Air Force 1 '07 LX mantém o visual lendário da linha AF1, agora com materiais premium e acabamento cuidado. Ideal para quem valoriza estilo e conforto, este modelo é perfeito para uso diário, mantendo a tradição do basquetebol em forma moderna.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Nike Air Force 1 '07LX 耐克 空军一号低帮 FN7202-224 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -25878,7 +25878,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Stussy x Air Force 1 Low Creme e Preto",
                                                                   "descricao": "Colaboração exclusiva entre Stussy e Nike no modelo Air Force 1 Low em tons creme e preto.",
                                                                   "descricaoLonga": "O Stussy x Air Force 1 Low combina o design urbano da marca Stussy com o clássico conforto do Air Force 1. Com materiais de alta qualidade e tons neutros, é uma escolha versátil e moderna para qualquer ocasião.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Stussy x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -25911,7 +25911,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 '07 Low Branco e Azul com Sola de Goma",
                                                                   "descricao": "Modelo Air Force 1 '07 Low com combinação de branco, azul e sola em borracha natural.",
                                                                   "descricaoLonga": "O Air Force 1 '07 Low Branco e Azul com sola de goma junta a estética clássica do modelo original com um toque moderno e desportivo. Fabricado em couro premium e com detalhes azuis marcantes, é uma escolha ideal para o dia a dia.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 '07 Low 白蓝生胶 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -25944,7 +25944,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 Low 'By You' Trigo e Preto",
                                                                   "descricao": "Edição personalizada 'By You' do Air Force 1 Low com tons de trigo e preto.",
                                                                   "descricaoLonga": "O Air Force 1 Low 'By You' Trigo e Preto é uma versão personalizada do icónico modelo da Nike, com tons terrosos e detalhes em preto que destacam o design. Feito em couro de alta qualidade, oferece durabilidade e estilo urbano.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 Low _By You_ 小麦黑 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -25977,7 +25977,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "A-COLD-WALL* x Air Force 1 Low Creme e Cinzento",
                                                                   "descricao": "Colaboração entre A-COLD-WALL* e Nike no modelo Air Force 1 Low em tons creme e cinzento.",
                                                                   "descricaoLonga": "O A-COLD-WALL* x Air Force 1 Low destaca-se pelo seu design minimalista e contemporâneo. Esta colaboração combina o estilo industrial da marca britânica com o legado icónico do Air Force 1, resultando num sneaker sofisticado e distinto.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/ACW x Air Force 1 Low 米白灰 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -26010,7 +26010,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 Low Branco e Preto Estilo Anime",
                                                                     "descricao": "Modelo Air Force 1 Low com design inspirado em arte anime e detalhes em preto sobre base branca.",
                                                                     "descricaoLonga": "O Air Force 1 Low Branco e Preto Estilo Anime apresenta um visual único e criativo, com traços de ilustração em preto sobre couro branco, remetendo à estética de banda desenhada japonesa. Um modelo ousado que combina arte e moda urbana num só par.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 Low 二次元白黑线稿涂鸦 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -26043,7 +26043,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 Low Cinco Listras Creme e Preto",
                                                                     "descricao": "Edição especial do Air Force 1 Low com design de cinco listras em preto sobre base creme.",
                                                                     "descricaoLonga": "O Air Force 1 Low Cinco Listras Creme e Preto é uma versão diferenciada que mistura elegância e atitude. O contraste entre o creme e o preto dá-lhe um visual moderno e sofisticado, perfeito para destacar-se no dia a dia.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 Low 五道杠米白黑 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -26076,7 +26076,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 '07 Low Creme e Cinzento",
                                                                     "descricao": "Modelo Air Force 1 '07 Low em tons neutros de creme e cinzento para um visual elegante.",
                                                                     "descricaoLonga": "O Air Force 1 '07 Low Creme e Cinzento mantém o design clássico e icónico da Nike, agora com um toque moderno e minimalista. Fabricado em couro de alta qualidade, oferece conforto, durabilidade e estilo atemporal.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/f975d57e.jpg",
                                                                     "imagensAdicionais": [
@@ -26104,7 +26104,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 Low x Carhartt Creme e Preto",
                                                                     "descricao": "Colaboração entre Nike e Carhartt no modelo Air Force 1 Low em tons creme e preto.",
                                                                     "descricaoLonga": "O Air Force 1 Low x Carhartt combina o estilo robusto da Carhartt com o design clássico da Nike. Em tons de creme e preto, este modelo destaca-se pelos materiais resistentes e pelo visual urbano moderno, perfeito para quem procura autenticidade e durabilidade.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 Low 卡哈特联名米白黑 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -26137,7 +26137,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 '07 Low Aniversário Creme e Azul",
                                                                     "descricao": "Edição de aniversário do Air Force 1 '07 Low com tons suaves de creme e azul.",
                                                                     "descricaoLonga": "O Air Force 1 '07 Low Aniversário Creme e Azul celebra o legado da Nike com um design elegante e intemporal. Combinando tons de creme e azul claro, oferece conforto, estilo e uma homenagem à história deste modelo lendário.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 '07 Low 周年米白蓝 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -26170,7 +26170,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 '07 Low Retro Branco e Vermelho",
                                                                     "descricao": "Modelo Air Force 1 '07 Low com inspiração retro e combinação clássica de branco e vermelho.",
                                                                     "descricaoLonga": "O Air Force 1 '07 Low Retro Branco e Vermelho traz de volta o espírito vintage dos anos 80, com uma paleta de cores vibrante e um acabamento de alta qualidade. Ideal para quem aprecia o estilo intemporal da Nike e o conforto lendário da linha Air Force.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 '07 Low 复古白红 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -26203,7 +26203,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 Low 811 Made",
                                                                       "descricao": "Edição especial Air Force 1 Low '811 Made' com design premium e acabamentos exclusivos.",
                                                                       "descricaoLonga": "O Air Force 1 Low 811 Made apresenta-se como uma versão distinta e elegante do clássico modelo da Nike. Feito com couro de alta qualidade e detalhes de fabrico meticuloso, é ideal para quem aprecia exclusividade e conforto num só par.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 Low 811制造 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -26236,7 +26236,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Bape x Air Force 1 Sta Low Branco e Vermelho",
                                                                       "descricao": "Colaboração Bape x Nike com design vibrante em branco e vermelho no modelo Air Force 1 Sta Low.",
                                                                       "descricaoLonga": "O Bape x Air Force 1 Sta Low Branco e Vermelho une o estilo urbano da Bape com a silhueta icónica da Nike. O contraste entre o branco e o vermelho cria um visual arrojado e moderno, perfeito para colecionadores e fãs de colaborações exclusivas.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Bape x Air Force 1 Sta Low 白红 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -26269,7 +26269,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 Low Edição Ano do Dragão Azul e Branco",
                                                                       "descricao": "Edição limitada do Air Force 1 Low inspirada no Ano do Dragão, com detalhes em azul e branco porcelana.",
                                                                       "descricaoLonga": "O Air Force 1 Low Edição Ano do Dragão Azul e Branco celebra a tradição chinesa com um design refinado que mistura elementos culturais e elegância moderna. A base branca com padrões azuis em porcelana confere-lhe um visual luxuoso e distinto.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 Low 龙年限定 蓝白青花瓷 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -26302,7 +26302,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "NOCTA x Air Force 1 Low Creme e Caqui",
                                                                       "descricao": "Parceria NOCTA x Nike no modelo Air Force 1 Low, com tons suaves de creme e caqui.",
                                                                       "descricaoLonga": "O NOCTA x Air Force 1 Low Creme e Caqui combina luxo e simplicidade com a assinatura de estilo do rapper Drake. Feito com materiais de alta qualidade, este modelo destaca-se pelo conforto e design elegante — ideal para quem aprecia moda discreta e sofisticada.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/NOCTA x Air Force 1 Low 米白卡其 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -26335,7 +26335,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 '07 Low Creme e Cinzento",
                                                                       "descricao": "Versão Air Force 1 '07 Low em tons suaves de creme e cinzento, ideal para uso diário.",
                                                                       "descricaoLonga": "O Air Force 1 '07 Low Creme e Cinzento junta conforto e estilo intemporal. Com um design limpo e materiais de qualidade, é uma escolha versátil que combina facilmente com qualquer look, mantendo o charme clássico da linha Air Force.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/0b67ae68.jpg",
                                                                       "imagensAdicionais": [
@@ -26364,7 +26364,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 Low Luxe Laranja e Castanho",
                                                                       "descricao": "Edição Air Force 1 Low Luxe com design robusto em tons de laranja e castanho.",
                                                                       "descricaoLonga": "O Air Force 1 Low Luxe Laranja e Castanho foi concebido para oferecer durabilidade e estilo. Com materiais reforçados e acabamento luxuoso, este modelo combina elegância com resistência — perfeito para o dia a dia ou ocasiões mais descontraídas.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 Low Luxe 橙棕 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -26397,7 +26397,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Creme Amarelo e Cinzento",
                                                                         "descricao": "Modelo Air Force 1 '07 Low em tons suaves de creme, amarelo e cinzento para um look elegante.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Creme Amarelo e Cinzento combina conforto e estilo urbano com uma paleta de cores subtil. Feito em couro premium, é uma escolha versátil que se adapta a qualquer ocasião.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米黄灰 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -26430,7 +26430,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Vintage Ropes Creme",
                                                                         "descricao": "Air Force 1 '07 Low com efeito envelhecido e cordas decorativas em tons creme.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Vintage Ropes Creme apresenta um estilo clássico com detalhes envelhecidos, incluindo cordas naturais para um look artesanal. Ideal para quem gosta de combinar autenticidade e conforto num modelo icónico.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 麻绳做旧米白 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -26463,7 +26463,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Creme e Vermelho",
                                                                         "descricao": "Modelo clássico Air Force 1 '07 Low com combinação de creme e vermelho vibrante.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Creme e Vermelho mantém o design icónico da Nike, combinando conforto e estilo. A base creme realçada com detalhes vermelhos oferece um visual moderno e dinâmico, perfeito para qualquer ocasião urbana.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米白红 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -26496,7 +26496,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low Luxe Preto e Castanho",
                                                                         "descricao": "Edição Air Force 1 Low Luxe com elegante combinação de preto e castanho.",
                                                                         "descricaoLonga": "O Air Force 1 Low Luxe Preto e Castanho destaca-se pelo design sofisticado e materiais reforçados. Perfeito para quem procura conforto, durabilidade e estilo urbano refinado num único par de sneakers.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low Luxe 黑棕 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -26529,7 +26529,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low Edição Ano do Dragão",
                                                                         "descricao": "Edição limitada Air Force 1 Low comemorativa do Ano do Dragão.",
                                                                         "descricaoLonga": "O Air Force 1 Low Ano do Dragão apresenta detalhes exclusivos inspirados na tradição chinesa, combinando estilo e sofisticação. Ideal para colecionadores e amantes de edições especiais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low 龙年限定 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -26562,7 +26562,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "LV x Air Force 1 Low Branco e Castanho",
                                                                         "descricao": "Colaboração LV x Nike no Air Force 1 Low com design elegante em branco e castanho.",
                                                                         "descricaoLonga": "O LV x Air Force 1 Low Branco e Castanho combina luxo e estilo urbano. Com materiais de alta qualidade e detalhes sofisticados, este modelo é perfeito para quem aprecia colaborações icónicas e design refinado.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/LV x Air Force 1 Low 白棕褐 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -26595,7 +26595,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 '07 Low Branco Creme",
                                                                           "descricao": "Modelo clássico Air Force 1 '07 Low em tons de branco creme para um visual clean e elegante.",
                                                                           "descricaoLonga": "O Air Force 1 '07 Low Branco Creme combina conforto e estilo intemporal. Com couro premium e acabamento cuidado, é perfeito para looks urbanos e casuais, mantendo o charme icónico da linha Air Force.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Low 白米色 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -26628,7 +26628,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "AMBUSH x Air Force 1 Low SP",
                                                                           "descricao": "Parceria AMBUSH x Nike Air Force 1 Low SP com design arrojado e contemporâneo.",
                                                                           "descricaoLonga": "O AMBUSH x Air Force 1 Low SP apresenta uma combinação única de materiais e cores, destacando-se pelo seu estilo urbano e inovador. Ideal para fãs de sneakers de edição limitada e design exclusivo.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/AMBUSH x Air Force 1 Low SP _ Yupoo - 01 (2).jpg",
                                                                           "imagensAdicionais": [
@@ -26661,7 +26661,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Bape x Air Force 1 Sta Low Branco e Preto",
                                                                           "descricao": "Colaboração Bape x Nike Air Force 1 Sta Low com estilo urbano em branco e preto.",
                                                                           "descricaoLonga": "O Bape x Air Force 1 Sta Low Branco e Preto combina a silhueta clássica da Nike com o estilo único da Bape. Feito com materiais de qualidade, é ideal para quem procura sneakers exclusivos e de edição limitada.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Bape x Air Force 1 Sta Low 白黑 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -26694,7 +26694,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 '07 Low Creme e Prateado",
                                                                           "descricao": "Air Force 1 '07 Low em creme com detalhes prateados para um visual sofisticado.",
                                                                           "descricaoLonga": "O Air Force 1 '07 Low Creme e Prateado combina conforto, durabilidade e um toque de sofisticação com detalhes metálicos. Perfeito para quem aprecia design icónico com um acabamento moderno.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Low 米白银 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -26727,7 +26727,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 '07 Low Cinzento e Azul",
                                                                           "descricao": "Versão Air Force 1 '07 Low com combinação subtil de cinzento e azul.",
                                                                           "descricaoLonga": "O Air Force 1 '07 Low Cinzento e Azul oferece um equilíbrio perfeito entre estilo clássico e tons modernos. Feito em couro premium, garante conforto e durabilidade sem perder o design icónico da linha Air Force.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Low 灰蓝 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -26760,7 +26760,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Nike Air Force 1 Low 07 x VLONE Branco e Azul",
                                           "descricao": "Colaboração Nike Air Force 1 Low 07 x VLONE com combinação de branco e azul vibrante.",
                                           "descricaoLonga": "O Nike Air Force 1 Low 07 x VLONE Branco e Azul oferece estilo urbano e exclusivo, unindo o clássico da Nike com a estética arrojada da VLONE. Perfeito para fãs de sneakers de edição limitada.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Nike Air Force 1 Low 07 x VLONE 白蓝 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -26793,7 +26793,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "OFF-WHITE x Nike Air Force 1 Low Ouro Fluido",
                                           "descricao": "Colaboração OFF-WHITE x Nike Air Force 1 Low com detalhes em ouro fluido para um visual único.",
                                           "descricaoLonga": "O OFF-WHITE x Nike Air Force 1 Low Ouro Fluido combina design inovador com a silhueta clássica da Nike. Detalhes metálicos dourados destacam o modelo, tornando-o perfeito para colecionadores e fãs de edições limitadas.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/OFF-WHITE x Nike Air Force 1 Low 流沙金 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -26826,7 +26826,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 Low North Face x CDG Cinzento e Azul",
                                           "descricao": "Air Force 1 Low colaboração North Face x CDG em tons de cinzento e azul.",
                                           "descricaoLonga": "O Air Force 1 Low North Face x CDG combina funcionalidade e estilo, com materiais premium e cores subtis de cinzento e azul. Ideal para colecionadores e fãs de edições colaborativas icónicas.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Air Force 1 Low 北面CDG灰蓝 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -26859,7 +26859,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Vlone x Air Force 1 Low Creme e Azul",
                                           "descricao": "Colaboração Vlone x Nike Air Force 1 Low com combinação subtil de creme e azul.",
                                           "descricaoLonga": "O Vlone x Air Force 1 Low Creme e Azul apresenta um design moderno e minimalista, unindo a estética da Vlone com a clássica silhueta da Nike. Ideal para colecionadores e amantes de sneakers exclusivos.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/Vlone x Air Force 1 Low 米白蓝 _ Yupoo - 01.jpg",
                                           "imagensAdicionais": [
@@ -26892,7 +26892,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                           "nome": "Air Force 1 '07 Low Castanho e Branco Gradiente",
                                           "descricao": "Air Force 1 '07 Low com efeito gradiente em tons castanho e branco.",
                                           "descricaoLonga": "O Air Force 1 '07 Low Castanho e Branco Gradiente combina estilo clássico com detalhes modernos. O efeito gradiente oferece um visual exclusivo, mantendo o conforto e a qualidade premium do modelo.",
-                                          "preco": 55.99,
+                                          "preco": 62.99,
                                           "precoAntigo": 99.99,
                                           "imagem": "/images/55862f30.jpg",
                                           "imagensAdicionais": [
@@ -26921,7 +26921,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Air Force 1 '07 Low Lilás Claro",
                                             "descricao": "Air Force 1 '07 Low em lilás claro para um visual subtil e elegante.",
                                             "descricaoLonga": "O Air Force 1 '07 Low Lilás Claro combina a silhueta clássica da Nike com um tom pastel delicado. Feito em couro premium, oferece conforto e estilo urbano, perfeito para qualquer ocasião casual.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Air Force 1 '07 Low 浅紫 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -26954,7 +26954,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Bape x Air Force 1 Sta Low Vermelho e Branco Verniz",
                                             "descricao": "Colaboração Bape x Nike Air Force 1 Sta Low em vermelho e branco com acabamento em verniz.",
                                             "descricaoLonga": "O Bape x Air Force 1 Sta Low Vermelho e Branco Verniz combina o estilo icónico da Bape com o clássico da Nike. O acabamento em verniz oferece um visual premium, perfeito para colecionadores e amantes de sneakers exclusivos.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Bape x Air Force 1 Sta Low 红白漆皮 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -26987,7 +26987,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "NOCTA x Air Force 1 Low Creme e Verde",
                                             "descricao": "Colaboração NOCTA x Nike Air Force 1 Low em creme com detalhes verdes subtis.",
                                             "descricaoLonga": "O NOCTA x Air Force 1 Low Creme e Verde combina o design contemporâneo da NOCTA com a silhueta clássica da Nike. Ideal para fãs de sneakers de edição limitada que procuram conforto e estilo premium.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/NOCTA x Air Force 1 Low 米白绿 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -27020,7 +27020,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Air Force 1 Low Três Swoosh Gradiente Azul e Branco",
                                             "descricao": "Air Force 1 Low com efeito gradiente e três swooshes em azul e branco.",
                                             "descricaoLonga": "O Air Force 1 Low Três Swoosh Gradiente Azul e Branco combina estilo clássico com um toque moderno e gráfico. Feito em couro premium, é perfeito para quem procura sneakers icónicos com design diferenciado.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Air Force 1 Low 三钩渐变蓝白 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -27053,7 +27053,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Sup x Air Force 1 Low Creme e Caqui 3M",
                                             "descricao": "Colaboração Sup x Nike Air Force 1 Low em creme e caqui com detalhes 3M refletivos.",
                                             "descricaoLonga": "O Sup x Air Force 1 Low Creme e Caqui 3M combina estilo urbano com tecnologia refletiva 3M, garantindo visibilidade e design moderno. Feito com materiais premium para máximo conforto e durabilidade.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Sup x Air Force 1 Low 米白卡其3M _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -27086,7 +27086,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                             "nome": "Stussy x Air Force 1 Low Creme e Cinza",
                                             "descricao": "Colaboração Stussy x Nike Air Force 1 Low em tons de creme e cinza subtis.",
                                             "descricaoLonga": "O Stussy x Air Force 1 Low Creme e Cinza combina o design icónico da Nike com o estilo urbano da Stussy. Feito em couro premium, oferece conforto, durabilidade e um visual elegante para qualquer ocasião.",
-                                            "preco": 55.99,
+                                            "preco": 62.99,
                                             "precoAntigo": 99.99,
                                             "imagem": "/images/Stussy x Air Force 1 Low 米白灰 _ Yupoo - 01.jpg",
                                             "imagensAdicionais": [
@@ -27119,7 +27119,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 Low Pequena Bruxa Skull Branco e Roxo",
                                               "descricao": "Air Force 1 Low com tema Pequena Bruxa Skull em branco e roxo.",
                                               "descricaoLonga": "O Air Force 1 Low Pequena Bruxa Skull Branco e Roxo combina o clássico da Nike com detalhes gráficos arrojados. Feito em couro premium, oferece conforto e um visual único para fãs de sneakers exclusivos.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 Low 小巫女骷髅头白紫 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -27152,7 +27152,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 '07 Low Creme e Castanho",
                                               "descricao": "Air Force 1 '07 Low com tons de creme e castanho clássico.",
                                               "descricaoLonga": "O Air Force 1 '07 Low Creme e Castanho combina elegância e conforto em uma silhueta icónica. Feito em couro premium, é perfeito para quem procura estilo urbano e durabilidade.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/b2b18ee3.jpg",
                                               "imagensAdicionais": [
@@ -27180,7 +27180,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 '07 Low Coração Branco, Castanho e Rosa",
                                               "descricao": "Air Force 1 '07 Low com detalhe de coração em branco, castanho e rosa.",
                                               "descricaoLonga": "O Air Force 1 '07 Low Coração Branco, Castanho e Rosa combina estilo divertido e urbano. Feito em couro premium, é ideal para quem procura um toque especial em sneakers clássicos.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 '07 Low 爱心白棕粉 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -27213,7 +27213,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "LV x Air Force 1 Low Creme e Castanho",
                                               "descricao": "Colaboração LV x Nike Air Force 1 Low em tons de creme e castanho elegante.",
                                               "descricaoLonga": "O LV x Air Force 1 Low Creme e Castanho combina o luxo da LV com a silhueta clássica da Nike. Feito em couro premium, é ideal para colecionadores e fãs de edições exclusivas.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/LV x Air Force 1 Low 米白褐 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -27246,7 +27246,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                               "nome": "Air Force 1 '07 Low Branco, Cinza e Prata",
                                               "descricao": "Air Force 1 '07 Low com combinação de branco, cinza e prata elegante.",
                                               "descricaoLonga": "O Air Force 1 '07 Low Branco, Cinza e Prata oferece conforto premium e estilo urbano clássico. Feito em couro de alta qualidade, é ideal para qualquer ocasião casual ou streetwear.",
-                                              "preco": 55.99,
+                                              "preco": 62.99,
                                               "precoAntigo": 99.99,
                                               "imagem": "/images/Air Force 1 '07 Low 白灰银 _ Yupoo - 01.jpg",
                                               "imagensAdicionais": [
@@ -27279,7 +27279,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 Low Black Sugar Girl Preto e Rosa com Cordões",
                                                 "descricao": "Air Force 1 Low estilo Black Sugar Girl em preto e rosa com cordões.",
                                                 "descricaoLonga": "O Air Force 1 Low Black Sugar Girl Preto e Rosa com Cordões combina conforto e estilo urbano com um design ousado. Feito em couro premium, perfeito para quem procura sneakers exclusivos e versáteis.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 Low 黑糖辣妹 绑带黑粉 经典休闲运动板鞋 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -27312,7 +27312,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 Low North Face CDG Cinza e Verde",
                                                 "descricao": "Air Force 1 Low em colaboração com North Face CDG, tons de cinza e verde.",
                                                 "descricaoLonga": "O Air Force 1 Low North Face CDG Cinza e Verde combina durabilidade e estilo urbano. Feito em couro premium, perfeito para colecionadores de sneakers e fãs de colaborações exclusivas.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 Low 北面CDG灰绿 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -27345,7 +27345,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 '07 Low Creme e Preto",
                                                 "descricao": "Air Force 1 '07 Low com combinação clássica de creme e preto.",
                                                 "descricaoLonga": "O Air Force 1 '07 Low Creme e Preto oferece conforto premium e estilo urbano clássico. Feito em couro de alta qualidade, ideal para qualquer ocasião casual.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/cdbb8e0d.jpg",
                                                 "imagensAdicionais": [
@@ -27374,7 +27374,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 Low 'By You' Preto e Azul",
                                                 "descricao": "Air Force 1 Low personalizável 'By You' em preto e azul.",
                                                 "descricaoLonga": "O Air Force 1 Low 'By You' Preto e Azul permite personalização com conforto premium e design urbano. Feito em couro de alta qualidade, ideal para fãs de sneakers customizáveis.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 Low _By You_ 黑蓝 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -27407,7 +27407,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 '07 Low Branco, Vermelho e Azul",
                                                 "descricao": "Air Force 1 '07 Low com combinação clássica de branco, vermelho e azul.",
                                                 "descricaoLonga": "O Air Force 1 '07 Low Branco, Vermelho e Azul oferece conforto premium e estilo urbano icónico. Feito em couro de alta qualidade, é ideal para streetwear e ocasiões casuais.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 '07 Low 白红蓝 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -27440,7 +27440,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                 "nome": "Air Force 1 '07 Low Creme, Azul e Amarelo Clown",
                                                 "descricao": "Air Force 1 '07 Low com combinação divertida de creme, azul e amarelo estilo Clown.",
                                                 "descricaoLonga": "O Air Force 1 '07 Low Creme, Azul e Amarelo Clown mistura cores vibrantes com conforto premium e design urbano. Feito em couro de alta qualidade, ideal para sneakers statement e colecionáveis.",
-                                                "preco": 55.99,
+                                                "preco": 62.99,
                                                 "precoAntigo": 99.99,
                                                 "imagem": "/images/Air Force 1 '07 Low 米蓝黄小丑 _ Yupoo - 01.jpg",
                                                 "imagensAdicionais": [
@@ -27473,7 +27473,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 '07 Low Creme e Caqui",
                                                   "descricao": "Air Force 1 '07 Low com tons suaves de creme e caqui.",
                                                   "descricaoLonga": "O Air Force 1 '07 Low Creme e Caqui combina conforto premium e estilo urbano clássico. Feito em couro de alta qualidade, ideal para qualquer ocasião casual.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 '07 Low 米卡其 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -27506,7 +27506,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 '07 Low Retro Branco e Verde",
                                                   "descricao": "Air Force 1 '07 Low estilo retro em branco e verde.",
                                                   "descricaoLonga": "O Air Force 1 '07 Low Retro Branco e Verde oferece conforto premium com um visual clássico retro. Feito em couro premium, ideal para streetwear e colecionadores de sneakers.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 '07 Low 复古白绿 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -27539,7 +27539,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 Low Dragon Year Branco e Ciano",
                                                   "descricao": "Air Force 1 Low edição Dragon Year em branco e ciano.",
                                                   "descricaoLonga": "O Air Force 1 Low Dragon Year Branco e Ciano combina conforto premium com design exclusivo de edição especial. Feito em couro de alta qualidade, perfeito para colecionadores e fãs de sneakers limitados.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 Low 龙年限定 白青 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -27572,7 +27572,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Sup x Air Force 1 Low Creme e Verde 3M",
                                                   "descricao": "Air Force 1 Low colaboração Sup com detalhes 3M, tons de creme e verde.",
                                                   "descricaoLonga": "O Sup x Air Force 1 Low Creme e Verde 3M combina estilo urbano com reflectores 3M, garantindo destaque em qualquer look. Feito em couro premium para conforto e durabilidade.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Sup x Air Force 1 Low 米白绿3M _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -27605,7 +27605,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "Air Force 1 Low Espaço-Tempo Quebrado",
                                                   "descricao": "Air Force 1 Low com design inspirado em Espaço-Tempo Quebrado.",
                                                   "descricaoLonga": "O Air Force 1 Low Espaço-Tempo Quebrado combina estética futurista com conforto premium. Feito em couro de alta qualidade, ideal para fãs de sneakers inovadores e colecionáveis.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/Air Force 1 Low 断裂时空 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -27638,7 +27638,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                   "nome": "LV x Air Force 1 Low Creme e Cinza Escuro",
                                                   "descricao": "Colaboração LV x Nike Air Force 1 Low em creme e cinza escuro.",
                                                   "descricaoLonga": "O LV x Air Force 1 Low Creme e Cinza Escuro combina luxo e estilo urbano clássico. Feito em couro premium, ideal para colecionadores e fãs de sneakers exclusivos.",
-                                                  "preco": 55.99,
+                                                  "preco": 62.99,
                                                   "precoAntigo": 99.99,
                                                   "imagem": "/images/LV x Air Force 1 Low 米白深灰 _ Yupoo - 01.jpg",
                                                   "imagensAdicionais": [
@@ -27671,7 +27671,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "ACW x Air Force 1 Low Creme, Preto e Cinza",
                                                     "descricao": "Air Force 1 Low em colaboração ACW, tons de creme, preto e cinza.",
                                                     "descricaoLonga": "O ACW x Air Force 1 Low Creme, Preto e Cinza combina estilo urbano com conforto premium. Feito em couro de alta qualidade, ideal para colecionadores e fãs de sneakers exclusivos.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/ACW x Air Force 1 Low 联名米黑灰 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -27704,7 +27704,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "NOCTA x Air Force 1 Low Creme e Preto",
                                                     "descricao": "Air Force 1 Low em colaboração NOCTA, tons de creme e preto.",
                                                     "descricaoLonga": "O NOCTA x Air Force 1 Low Creme e Preto combina design exclusivo com conforto premium. Feito em couro de alta qualidade, perfeito para streetwear e colecionadores.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/NOCTA x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -27737,7 +27737,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Bape x Air Force 1 Low Creme e Preto Patchwork",
                                                     "descricao": "Air Force 1 Low colaboração Bape com patchwork em creme e preto.",
                                                     "descricaoLonga": "O Bape x Air Force 1 Low Creme e Preto Patchwork combina estilo icónico de Bape com conforto premium. Feito em couro de alta qualidade, ideal para colecionadores de sneakers.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Bape x Air Force 1 Low 米白黑拼接 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -27770,7 +27770,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Vlone x Air Force 1 Low Creme e Vinho",
                                                     "descricao": "Air Force 1 Low colaboração Vlone em creme e vinho.",
                                                     "descricaoLonga": "O Vlone x Air Force 1 Low Creme e Vinho combina design moderno com conforto premium. Feito em couro de alta qualidade, ideal para fãs de sneakers de colaboração limitada.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Vlone x Air Force 1 Low 米白酒红 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -27803,7 +27803,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "Air Force 1 Low 'By You' LV Branco, Cinza e Denim",
                                                     "descricao": "Air Force 1 Low personalizável 'By You' LV em branco, cinza e denim.",
                                                     "descricaoLonga": "O Air Force 1 Low 'By You' LV Branco, Cinza e Denim permite personalização com conforto premium e design sofisticado. Feito em couro de alta qualidade, ideal para sneakers customizados exclusivos.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/Air Force 1 Low _By You_ LV白灰牛仔 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -27836,7 +27836,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                     "nome": "RTFKT x Air Force 1 Human bege e Azul",
                                                     "descricao": "Air Force 1 Low colaboração RTFKT Human em branco e azul.",
                                                     "descricaoLonga": "O RTFKT x Air Force 1 Human Branco e Azul combina design futurista com conforto premium. Feito em couro de alta qualidade, ideal para colecionadores e fãs de sneakers exclusivos.",
-                                                    "preco": 55.99,
+                                                    "preco": 62.99,
                                                     "precoAntigo": 99.99,
                                                     "imagem": "/images/RTFKT x Air Force 1 Human 白蓝 _ Yupoo - 01.jpg",
                                                     "imagensAdicionais": [
@@ -27869,7 +27869,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 Low com Desenhos",
                                                       "descricao": "Air Force 1 Low com design artístico e desenhos exclusivos.",
                                                       "descricaoLonga": "O Air Force 1 Low com Desenhos combina estilo único com conforto premium. Cada par apresenta gráficos detalhados, ideal para fãs de sneakers diferenciados e colecionáveis.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/b28d8ae9.jpg",
                                                       "imagensAdicionais": [
@@ -27898,7 +27898,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Preto e Rosa Estrelas",
                                                       "descricao": "Air Force 1 '07 Low com design preto e rosa, padrão estrelas.",
                                                       "descricaoLonga": "O Air Force 1 '07 Low Preto e Rosa Estrelas combina conforto premium com um design marcante e criativo. Feito em couro de alta qualidade, ideal para streetwear e colecionadores.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 '07 Low 黑粉满天星 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -27931,7 +27931,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 '07 Low Vinho 3M",
                                                       "descricao": "Air Force 1 '07 Low em vinho com detalhes refletivos 3M.",
                                                       "descricaoLonga": "O Air Force 1 '07 Low Vinho 3M combina conforto premium com detalhes 3M que refletem luz. Feito em couro premium, perfeito para destacar o teu look urbano.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 '07 Low 酒红3M _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -27964,7 +27964,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "LV x Air Force 1 Low Cinza Escuro e Castanho",
                                                       "descricao": "Air Force 1 Low em colaboração LV, tons de cinza escuro e castanho.",
                                                       "descricaoLonga": "O LV x Air Force 1 Low Cinza Escuro e Castanho combina luxo e conforto premium. Feito em couro premium, ideal para colecionadores e fãs de sneakers exclusivos.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/LV x Air Force 1 Low 深灰棕 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -27997,7 +27997,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Bape x Air Force 1 Sta Low Cinza e Branco Patente",
                                                       "descricao": "Bape x Air Force 1 Sta Low em cinza e branco com acabamento patente.",
                                                       "descricaoLonga": "O Bape x Air Force 1 Sta Low Cinza e Branco Patente combina design icónico de Bape com conforto premium. Feito em couro de alta qualidade, ideal para colecionadores e fãs de sneakers exclusivos.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Bape x Air Force 1 Sta Low 灰白漆皮 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -28030,7 +28030,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                       "nome": "Air Force 1 Low 'By You' LV Branco, Castanho e Denim",
                                                       "descricao": "Air Force 1 Low personalizável 'By You' LV em branco, castanho e denim.",
                                                       "descricaoLonga": "O Air Force 1 Low 'By You' LV Branco, Castanho e Denim permite personalização com conforto premium e design sofisticado. Feito em couro de alta qualidade, ideal para sneakers customizados exclusivos.",
-                                                      "preco": 55.99,
+                                                      "preco": 62.99,
                                                       "precoAntigo": 99.99,
                                                       "imagem": "/images/Air Force 1 Low _By You_ LV白棕牛仔 _ Yupoo - 01.jpg",
                                                       "imagensAdicionais": [
@@ -28063,7 +28063,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Air Force 1 Low North Face CDG Cinza e Preto",
                                                         "descricao": "Air Force 1 Low colaboração North Face x CDG, tons de cinza e preto.",
                                                         "descricaoLonga": "O Air Force 1 Low North Face CDG Cinza e Preto combina estilo urbano e conforto premium. Feito em couro de alta qualidade, ideal para fãs de sneakers de colaboração exclusiva.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Air Force 1 Low 北面CDG灰黑 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -28096,7 +28096,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "ACW x Air Force 1 Low Creme",
                                                         "descricao": "Air Force 1 Low colaboração ACW em tons de creme.",
                                                         "descricaoLonga": "O ACW x Air Force 1 Low Creme combina conforto premium com design exclusivo de colaboração. Feito em couro de alta qualidade, perfeito para colecionadores de sneakers.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/ACW x Air Force 1 Low 联名米色 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -28129,7 +28129,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Sup x Air Force 1 Low Creme 3M Reflectivo",
                                                         "descricao": "Air Force 1 Low Sup com detalhes refletivos 3M em creme.",
                                                         "descricaoLonga": "O Sup x Air Force 1 Low Creme 3M Reflectivo combina conforto premium com detalhes que refletem luz. Feito em couro de alta qualidade, perfeito para streetwear e colecionadores.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Sup x Air Force 1 Low 米白3M反光 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -28162,7 +28162,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Nike Air Force 1 Low 07 Cinza e Branco Duplo Swoosh",
                                                         "descricao": "Air Force 1 Low 07 em cinza e branco com duplo Swoosh.",
                                                         "descricaoLonga": "O Nike Air Force 1 Low 07 Cinza e Branco Duplo Swoosh combina design clássico com conforto premium. Feito em couro de alta qualidade, ideal para uso diário e colecionadores.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Nike Air Force 1 Low 07 灰白双钩 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -28195,7 +28195,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Nk Air Force 1'07 Low LV Fluorescente Tie-Dye Denim",
                                                         "descricao": "Air Force 1'07 Low colaboração LV, tie-dye fluorescente em denim.",
                                                         "descricaoLonga": "O Nk Air Force 1'07 Low LV Fluorescente Tie-Dye Denim combina design criativo e exclusivo com conforto premium. Feito em couro de alta qualidade, ideal para colecionadores.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Nk Air Force 1'07 Low LV联名-荧光扎染牛仔 空军一号低帮休闲板鞋 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -28228,7 +28228,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                         "nome": "Sup x Air Force 1 Low Colaboração Creme e Preto",
                                                         "descricao": "Air Force 1 Low Sup em creme e preto, edição colaboração.",
                                                         "descricaoLonga": "O Sup x Air Force 1 Low Colaboração Creme e Preto combina conforto premium com design exclusivo de colaboração. Feito em couro de alta qualidade, perfeito para fãs de sneakers exclusivos.",
-                                                        "preco": 55.99,
+                                                        "preco": 62.99,
                                                         "precoAntigo": 99.99,
                                                         "imagem": "/images/Sup x Air Force 1 Low 联名米白黑 _ Yupoo - 01.jpg",
                                                         "imagensAdicionais": [
@@ -28261,7 +28261,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Branco, Azul e Cinza",
                                                           "descricao": "Air Force 1 '07 Low com combinação de branco, azul e cinza.",
                                                           "descricaoLonga": "O Air Force 1 '07 Low Branco, Azul e Cinza mistura tons clássicos com conforto premium. Feito em couro de alta qualidade, ideal para uso diário e estilo urbano.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Low 白蓝灰 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -28294,7 +28294,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Midnight Elf",
                                                           "descricao": "Air Force 1 '07 Low com design Midnight Elf, tons escuros e elegantes.",
                                                           "descricaoLonga": "O Air Force 1 '07 Low Midnight Elf combina conforto premium com design sofisticado e detalhes únicos. Feito em couro premium, ideal para streetwear e colecionadores.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Low 暗夜精灵 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -28327,7 +28327,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Bape x Air Force 1 Sta Low Preto e Branco Patente",
                                                           "descricao": "Bape x Air Force 1 Sta Low com acabamento preto e branco patente.",
                                                           "descricaoLonga": "O Bape x Air Force 1 Sta Low Preto e Branco Patente combina design icónico de Bape com conforto premium. Couro de alta qualidade e detalhes patenteados, ideal para colecionadores.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Bape x Air Force 1 Sta Low 黑白漆皮 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -28360,7 +28360,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Low Kusansui Preto e Branco",
                                                           "descricao": "Air Force 1 '07 Low Kusansui com padrão inspirado em jardinagem japonesa, preto e branco.",
                                                           "descricaoLonga": "O Air Force 1 '07 Low Kusansui Preto e Branco combina conforto premium com design inspirado no estilo tradicional japonês de jardinagem. Feito em couro de alta qualidade.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Low 枯山水 黑白 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -28393,7 +28393,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                           "nome": "Air Force 1 '07 Next Nature Azul Claro",
                                                           "descricao": "Air Force 1 '07 Next Nature em tons de azul claro, design sustentável.",
                                                           "descricaoLonga": "O Air Force 1 '07 Next Nature Azul Claro combina conforto premium com materiais sustentáveis e design moderno. Feito em couro de alta qualidade reciclado, ideal para streetwear consciente.",
-                                                          "preco": 55.99,
+                                                          "preco": 62.99,
                                                           "precoAntigo": 99.99,
                                                           "imagem": "/images/Air Force 1 '07 Next Nature 浅蓝白 _ Yupoo - 01.jpg",
                                                           "imagensAdicionais": [
@@ -28426,7 +28426,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "LV x Air Force 1 Low Cinza, Azul e Vermelho",
                                                             "descricao": "Air Force 1 Low colaboração LV em tons de cinza, azul e vermelho.",
                                                             "descricaoLonga": "O LV x Air Force 1 Low Cinza, Azul e Vermelho combina conforto premium com design exclusivo LV. Feito em couro de alta qualidade, ideal para colecionadores e streetwear de luxo.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/LV x Air Force 1 Low 灰蓝红 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -28459,7 +28459,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Stussy x Air Force 1 Low Creme e Cinza Reflectivo",
                                                             "descricao": "Air Force 1 Low colaboração Stussy com tons creme e cinza refletivo.",
                                                             "descricaoLonga": "O Stussy x Air Force 1 Low Creme e Cinza Reflectivo combina conforto premium com detalhes 3M refletivos. Feito em couro de alta qualidade, perfeito para streetwear e colecionadores.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/d9c7e462.jpg",
                                                             "imagensAdicionais": [
@@ -28487,7 +28487,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Cinza e Branco Gradiente",
                                                             "descricao": "Air Force 1 '07 Low com degradé de cinza para branco.",
                                                             "descricaoLonga": "O Air Force 1 '07 Low Cinza e Branco Gradiente combina conforto premium com design moderno em degradé. Feito em couro de alta qualidade, ideal para uso diário e colecionadores.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low 灰白渐变 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -28520,7 +28520,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 Low Santai Ao Bing Branco e Azul",
                                                             "descricao": "Air Force 1 Low inspirado em Santai Ao Bing, tons de branco e azul.",
                                                             "descricaoLonga": "O Air Force 1 Low Santai Ao Bing Branco e Azul combina conforto premium com design exclusivo inspirado em Santai Ao Bing. Feito em couro de alta qualidade, perfeito para streetwear e colecionadores.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 Low 三太子敖丙 白青 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -28553,7 +28553,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                             "nome": "Air Force 1 '07 Low Preto e Branco 2.0",
                                                             "descricao": "Air Force 1 '07 Low edição 2.0 em preto e branco.",
                                                             "descricaoLonga": "O Air Force 1 '07 Low Preto e Branco 2.0 combina conforto premium com design moderno e elegante. Feito em couro de alta qualidade, ideal para streetwear e colecionadores.",
-                                                            "preco": 55.99,
+                                                            "preco": 62.99,
                                                             "precoAntigo": 99.99,
                                                             "imagem": "/images/Air Force 1 '07 Low 黑白2.0 _ Yupoo - 01.jpg",
                                                             "imagensAdicionais": [
@@ -28586,7 +28586,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 '07 Low Creme e Cinza",
                                                               "descricao": "Air Force 1 '07 Low com tons de creme e cinza - Variante 2.",
                                                               "descricaoLonga": "O Air Force 1 '07 Low Creme e Cinza combina conforto premium com design clássico. Feito em couro de alta qualidade, ideal para uso diário e estilo urbano - Variante 2.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 '07 Low 米白灰 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -28619,7 +28619,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 '07 Low Creme e Verde",
                                                               "descricao": "Air Force 1 '07 Low com combinação de creme e verde.",
                                                               "descricaoLonga": "O Air Force 1 '07 Low Creme e Verde mistura conforto premium com design moderno. Feito em couro de alta qualidade, perfeito para uso diário e streetwear.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 '07 Low 米白绿 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -28652,7 +28652,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "LV x Air Force 1 Low Verde Oliva",
                                                               "descricao": "LV x Air Force 1 Low em tom verde oliva, colaboração exclusiva.",
                                                               "descricaoLonga": "O LV x Air Force 1 Low Verde Oliva combina conforto premium com design de luxo LV. Feito em couro de alta qualidade, ideal para colecionadores e streetwear sofisticado.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/LV x Air Force 1 Low 橄榄绿 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -28685,7 +28685,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 '07 Low Verde Maçã Xadrez",
                                                               "descricao": "Air Force 1 '07 Low com padrão xadrez verde maçã.",
                                                               "descricaoLonga": "O Air Force 1 '07 Low Verde Maçã Xadrez combina conforto premium com design jovem e divertido. Feito em couro de alta qualidade, ideal para streetwear e colecionadores.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 '07 Low 苹果绿格子 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -28718,7 +28718,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Vlone x Air Force 1 Low Creme e Azul Claro",
                                                               "descricao": "Vlone x Air Force 1 Low em tons de creme e azul claro.",
                                                               "descricaoLonga": "O Vlone x Air Force 1 Low Creme e Azul Claro combina conforto premium com design exclusivo Vlone. Feito em couro de alta qualidade, perfeito para streetwear e colecionadores.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Vlone x Air Force 1 Low 米白浅蓝 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -28751,7 +28751,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                               "nome": "Air Force 1 '07 Low Branco Lua e Preto",
                                                               "descricao": "Air Force 1 '07 Low com combinação de branco lua e preto.",
                                                               "descricaoLonga": "O Air Force 1 '07 Low Branco Lua e Preto combina conforto premium com design elegante. Feito em couro de alta qualidade, ideal para streetwear e colecionadores.",
-                                                              "preco": 55.99,
+                                                              "preco": 62.99,
                                                               "precoAntigo": 99.99,
                                                               "imagem": "/images/Air Force 1 '07 Low 月白黑 _ Yupoo - 01.jpg",
                                                               "imagensAdicionais": [
@@ -28784,7 +28784,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 '07 Low Lanting Preto e Branco",
                                                                 "descricao": "Air Force 1 '07 Low em preto e branco inspirado em Lanting.",
                                                                 "descricaoLonga": "O Air Force 1 '07 Low Lanting Preto e Branco combina conforto premium com design exclusivo inspirado em caligrafia tradicional. Feito em couro de alta qualidade, ideal para streetwear e colecionadores.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 '07 Low 兰亭序黑白 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -28817,7 +28817,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 '07 Low Trigo, Castanho e Preto",
                                                                 "descricao": "Air Force 1 '07 Low em tons de trigo, castanho e preto.",
                                                                 "descricaoLonga": "O Air Force 1 '07 Low Trigo, Castanho e Preto combina conforto premium com design moderno e versátil. Feito em couro de alta qualidade, perfeito para uso diário e streetwear.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 '07 Low 小麦棕黑 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -28850,7 +28850,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Air Force 1 Low Independência Branco, Azul e Vermelho",
                                                                 "descricao": "Air Force 1 Low em branco, azul e vermelho, edição Independence Day.",
                                                                 "descricaoLonga": "O Air Force 1 Low Independência Branco, Azul e Vermelho combina conforto premium com cores patrióticas marcantes. Feito em couro de alta qualidade, ideal para colecionadores e streetwear.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Air Force 1 Low 独立日白蓝红 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -28883,7 +28883,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Stussy x Air Force 1 Low Creme e Preto Reflectivo",
                                                                 "descricao": "Air Force 1 Low colaboração Stussy, creme e preto com detalhes refletivos.",
                                                                 "descricaoLonga": "O Stussy x Air Force 1 Low Creme e Preto Reflectivo combina conforto premium com design urbano e detalhes 3M refletivos. Feito em couro de alta qualidade, perfeito para streetwear e colecionadores.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Stussy x Air Force 1 Low 米白黑反光 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -28916,7 +28916,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Bape x Air Force 1 Low Cinza Escuro e Creme",
                                                                 "descricao": "Bape x Air Force 1 Low com combinação de cinza escuro e creme.",
                                                                 "descricaoLonga": "O Bape x Air Force 1 Low Cinza Escuro e Creme combina conforto premium com design exclusivo Bape. Feito em couro de alta qualidade, perfeito para streetwear e colecionadores.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Bape x Air Force 1 Low 米深灰拼接 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -28949,7 +28949,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                 "nome": "Vlone x Air Force 1 Low Creme e Khaki Claro",
                                                                 "descricao": "Vlone x Air Force 1 Low em tons creme e khaki claro.",
                                                                 "descricaoLonga": "O Vlone x Air Force 1 Low Creme e Khaki Claro combina conforto premium com design exclusivo Vlone. Feito em couro de alta qualidade, ideal para streetwear e colecionadores.",
-                                                                "preco": 55.99,
+                                                                "preco": 62.99,
                                                                 "precoAntigo": 99.99,
                                                                 "imagem": "/images/Vlone x Air Force 1 Low 米白浅卡其 _ Yupoo - 01.jpg",
                                                                 "imagensAdicionais": [
@@ -28982,7 +28982,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 '07 Low Creme e Azul",
                                                                   "descricao": "Air Force 1 '07 Low em tons de creme e azul.",
                                                                   "descricaoLonga": "O Air Force 1 '07 Low Creme e Azul combina conforto premium com design clássico. Feito em couro de alta qualidade, ideal para streetwear e uso diário.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 '07 Low 米白蓝 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -29015,7 +29015,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 '07 Low Função Graffiti Branco e Azul",
                                                                   "descricao": "Air Force 1 '07 Low com design gráfico Função em branco e azul.",
                                                                   "descricaoLonga": "O Air Force 1 '07 Low Função Graffiti Branco e Azul combina conforto premium com estilo urbano inspirado em arte de graffiti. Feito em couro de alta qualidade, perfeito para streetwear.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 '07 Low 函数涂鸦 白蓝 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -29048,7 +29048,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 Low 'By You' Jeans Lavado Azul",
                                                                   "descricao": "Air Force 1 Low 'By You' em jeans lavado azul, personalizável.",
                                                                   "descricaoLonga": "O Air Force 1 Low 'By You' Jeans Lavado Azul combina conforto premium com design personalizável e denim de alta qualidade. Ideal para streetwear e coleção exclusiva.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 Low _By You_ 水洗牛仔蓝 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -29081,7 +29081,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 '07 Low Gradiente Castanho e Branco",
                                                                   "descricao": "Air Force 1 '07 Low com gradiente castanho e branco - Variante 2.",
                                                                   "descricaoLonga": "O Air Force 1 '07 Low Gradiente Castanho e Branco combina conforto premium com design elegante em gradiente. Feito em couro de alta qualidade, ideal para streetwear e coleção - Variante 2.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 '07 Low 棕白渐变 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -29114,7 +29114,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Stussy x Air Force 1 Low Creme e Cinza Reflectivo",
                                                                   "descricao": "Air Force 1 Low colaboração Stussy, creme e cinza com efeito refletivo.",
                                                                   "descricaoLonga": "O Stussy x Air Force 1 Low Creme e Cinza Reflectivo combina conforto premium com detalhes 3M refletivos. Feito em couro de alta qualidade, ideal para streetwear e coleção exclusiva.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Stussy x Air Force 1 Low 米白灰反光 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -29147,7 +29147,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                   "nome": "Air Force 1 '07 Low Branco, Damasco e Rosa",
                                                                   "descricao": "Air Force 1 '07 Low em branco, damasco e rosa.",
                                                                   "descricaoLonga": "O Air Force 1 '07 Low Branco, Damasco e Rosa combina conforto premium com design delicado em tons suaves. Feito em couro de alta qualidade, ideal para streetwear e coleção exclusiva.",
-                                                                  "preco": 55.99,
+                                                                  "preco": 62.99,
                                                                   "precoAntigo": 99.99,
                                                                   "imagem": "/images/Air Force 1 '07 Low 白杏粉 _ Yupoo - 01.jpg",
                                                                   "imagensAdicionais": [
@@ -29180,7 +29180,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 '07 Low Arte Graffiti Branco e Vermelho",
                                                                     "descricao": "Air Force 1 '07 Low com design artístico em branco e vermelho.",
                                                                     "descricaoLonga": "O Air Force 1 '07 Low Arte Graffiti Branco e Vermelho combina conforto premium com estilo urbano inspirado em graffiti. Feito em couro de alta qualidade, ideal para streetwear e colecionadores.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 '07 Low 艺术涂鸦 白红 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -29213,7 +29213,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 Low Next Nature Verde Claro e Preto",
                                                                     "descricao": "Air Force 1 Low Next Nature em verde claro e preto.",
                                                                     "descricaoLonga": "O Air Force 1 Low Next Nature Verde Claro e Preto combina conforto premium com design sustentável inspirado na coleção Next Nature. Feito em materiais ecológicos e couro de alta qualidade.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 Low Next Nature 淡绿黑 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -29246,7 +29246,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 Low 'By You' Preto e Branco Solado Raw",
                                                                     "descricao": "Air Force 1 Low 'By You' com solado raw em preto e branco, personalizável.",
                                                                     "descricaoLonga": "O Air Force 1 Low 'By You' Preto e Branco Solado Raw combina conforto premium com design personalizável e solado raw exclusivo. Feito em couro de alta qualidade.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 Low _By You_ 黑白生胶底 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -29279,7 +29279,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                     "nome": "Air Force 1 '07 Low 40º Aniversário Branco e Preto",
                                                                     "descricao": "Air Force 1 '07 Low edição 40º Aniversário em branco e preto.",
                                                                     "descricaoLonga": "O Air Force 1 '07 Low 40º Aniversário Branco e Preto combina conforto premium com design comemorativo. Feito em couro de alta qualidade, ideal para colecionadores e streetwear.",
-                                                                    "preco": 55.99,
+                                                                    "preco": 62.99,
                                                                     "precoAntigo": 99.99,
                                                                     "imagem": "/images/Air Force 1 '07 Low 40周年白黑 _ Yupoo - 01.jpg",
                                                                     "imagensAdicionais": [
@@ -29312,7 +29312,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "TEDxPortland x Air Force 1 Low Branco Laser",
                                                                       "descricao": "TEDxPortland x Air Force 1 Low com efeito branco laser.",
                                                                       "descricaoLonga": "O TEDxPortland x Air Force 1 Low Branco Laser combina o conforto icónico da Air Force 1 com um design exclusivo de colaboração. Feito em couro premium, apresenta detalhes laser que conferem um toque moderno e futurista.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/TEDxPortland x Air Force 1 Low 白镭射 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -29345,7 +29345,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Kaws x Air Force 1 Low Cinza Real com Cordões",
                                                                       "descricao": "Kaws x Air Force 1 Low em cinza real com cordões especiais.",
                                                                       "descricaoLonga": "O Kaws x Air Force 1 Low Cinza Real com Cordões é uma colaboração exclusiva que combina estilo urbano com arte contemporânea. Fabricado em couro premium, inclui detalhes de cordões especiais que realçam o design sofisticado.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Kaws x Air Force 1 Low 皇家灰绑带 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -29378,7 +29378,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                       "nome": "Air Force 1 '07 Low Preto e Verde",
                                                                       "descricao": "Air Force 1 '07 Low com combinação de preto e verde.",
                                                                       "descricaoLonga": "O Air Force 1 '07 Low Preto e Verde apresenta o design clássico da linha '07 com uma paleta de cores moderna e urbana. Fabricado em couro premium, oferece conforto, durabilidade e um estilo versátil para qualquer ocasião.",
-                                                                      "preco": 55.99,
+                                                                      "preco": 62.99,
                                                                       "precoAntigo": 99.99,
                                                                       "imagem": "/images/Air Force 1 '07 Low 黑绿 _ Yupoo - 01.jpg",
                                                                       "imagensAdicionais": [
@@ -29411,7 +29411,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Cinzento e Rosa",
                                                                         "descricao": "Air Force 1 '07 Low com combinação elegante de cinzento e rosa - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Cinzento e Rosa combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 清冷灰粉 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29454,7 +29454,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Azul Reflexo",
                                                                         "descricao": "Air Force 1 '07 Low com acabamento azul reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Azul Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 五道杠藏蓝反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29497,7 +29497,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Vlone x Air Force 1 Low Bege e Azul",
                                                                         "descricao": "Vlone x Air Force 1 Low com combinação bege e azul - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Vlone x Air Force 1 Low Bege e Azul combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Vlone x Air Force 1 Low 米白藏蓝 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29540,7 +29540,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Amarelo Limão",
                                                                         "descricao": "Air Force 1 '07 Low em amarelo limão vibrante - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Amarelo Limão combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 柠檬黄 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29583,7 +29583,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Onda Branco e Preto",
                                                                         "descricao": "Air Force 1 '07 Low com padrão de onda em branco e preto - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Onda Branco e Preto combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 海浪白黑 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29626,7 +29626,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Roxo e Amarelo",
                                                                         "descricao": "Air Force 1 '07 Low com combinação vibrante de roxo e amarelo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Roxo e Amarelo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 紫黄 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29669,7 +29669,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Preto e Roxo Estrelas",
                                                                         "descricao": "Air Force 1 '07 Low com padrão de estrelas em preto e roxo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Preto e Roxo Estrelas combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 黑紫满天星 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29712,7 +29712,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low BB",
                                                                         "descricao": "Air Force 1 '07 Low BB - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low BB combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米白黑 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29755,7 +29755,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Bege e Cinzento",
                                                                         "descricao": "Air Force 1 '07 Low com combinação suave de bege e cinzento - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Bege e Cinzento combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米灰 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29798,7 +29798,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "LV x Air Force 1 Low Bege, Caqui e Jeans",
                                                                         "descricao": "LV x Air Force 1 Low com combinação de bege, caqui e jeans - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O LV x Air Force 1 Low Bege, Caqui e Jeans combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/LV x Air Force 1 Low 米白卡其牛仔 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29841,7 +29841,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Stone Island x Air Force 1 Island",
                                                                         "descricao": "Stone Island x Air Force 1 com design exclusivo Island - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Stone Island x Air Force 1 Island combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Stone Island x Air Force 1 石头岛 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29884,7 +29884,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Vlone x Air Force 1 Low Bege e Preto",
                                                                         "descricao": "Vlone x Air Force 1 Low com combinação elegante de bege e preto - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Vlone x Air Force 1 Low Bege e Preto combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Vlone x Air Force 1 Low 米白黑 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29927,7 +29927,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "NK Air Force 1 Low Dourado Especial",
                                                                         "descricao": "NK Air Force 1 Low em dourado especial com detalhes únicos - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O NK Air Force 1 Low Dourado Especial combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/NK Air Force 1 low “喜喜”金黄色 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -29970,7 +29970,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Raspável Branco e Vermelho",
                                                                         "descricao": "Air Force 1 '07 Low com efeito raspável em branco e vermelho - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Raspável Branco e Vermelho combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 刮刮乐白红 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30014,7 +30014,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Azul",
                                                                         "descricao": "Air Force 1 '07 Low Azul - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Azul combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 白蓝 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30057,7 +30057,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Stone Island x Air Force 1 Low Bege, Verde e Reflexo",
                                                                         "descricao": "Stone Island x Air Force 1 Low com combinação de bege, verde e reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Stone Island x Air Force 1 Low Bege, Verde e Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Stone Island x Air Force 1 Low 米白绿反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30100,7 +30100,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Bape x Air Force 1 Low Bege, Azul Escuro e Patchwork",
                                                                         "descricao": "Bape x Air Force 1 Low com combinação de bege, azul escuro e patchwork - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Bape x Air Force 1 Low Bege, Azul Escuro e Patchwork combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Bape x Air Force 1 Low 米深蓝拼接 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30143,7 +30143,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Drake x Air Force 1 Low Branco e Azul Lago",
                                                                         "descricao": "Drake x Air Force 1 Low com combinação de branco e azul lago - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Drake x Air Force 1 Low Branco e Azul Lago combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Drake x Air Force 1 Low 白湖蓝 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30186,7 +30186,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Branco e Verde Claro",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de branco e verde claro - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Branco e Verde Claro combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 白浅绿 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30229,7 +30229,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Nike Air Force 1 Low 07 x Otomo Katsuhiro Verde e Rosa",
                                                                         "descricao": "Nike Air Force 1 Low 07 x Otomo Katsuhiro com combinação de verde e rosa - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Nike Air Force 1 Low 07 x Otomo Katsuhiro Verde e Rosa combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Nike Air Force 1 Low 07 x Otomo Katsuhiro 大友克洋 绿粉 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30272,7 +30272,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Bege",
                                                                         "descricao": "Air Force 1 '07 Low em bege elegante - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Bege combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米白 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30315,7 +30315,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Bege, Roxo e Cordão",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de bege, roxo e cordão - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Bege, Roxo e Cordão combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米白紫绑带 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30358,7 +30358,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Bege, Azul e Vermelho",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de bege, azul e vermelho - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Bege, Azul e Vermelho combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米蓝红 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30401,7 +30401,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Preto e Branco",
                                                                         "descricao": "Air Force 1 '07 Low com combinação clássica de preto e branco - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Preto e Branco combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 黑白 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30444,7 +30444,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Preto e Amarelo",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de preto e amarelo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Preto e Amarelo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 黑黄 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30487,7 +30487,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Verde Escuro Reflexo",
                                                                         "descricao": "Air Force 1 '07 Low com acabamento verde escuro reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Verde Escuro Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 五道杠深绿反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30530,7 +30530,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Vlone x Air Force 1 Low Bege e Verde",
                                                                         "descricao": "Vlone x Air Force 1 Low com combinação de bege e verde - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Vlone x Air Force 1 Low Bege e Verde combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Vlone x Air Force 1 Low 米白绿 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30573,7 +30573,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low Personalizado",
                                                                         "descricao": "Air Force 1 Low personalizado com design único - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low Personalizado combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/【定制球鞋】Air Force 1 Low _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30616,7 +30616,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "LV x Air Force 1 Low Bege, Cinzento e Jeans",
                                                                         "descricao": "LV x Air Force 1 Low com combinação de bege, cinzento e jeans - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O LV x Air Force 1 Low Bege, Cinzento e Jeans combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/LV x Air Force 1 Low 米白灰牛仔 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30659,7 +30659,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Preto, Rosa e Estrelas",
                                                                         "descricao": "Air Force 1 '07 Low com padrão de estrelas em preto e rosa - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Preto, Rosa e Estrelas combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 黑粉满天星 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30702,7 +30702,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Vermelho Vinho Reflexo",
                                                                         "descricao": "Air Force 1 '07 Low com acabamento vermelho vinho reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Vermelho Vinho Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 五道杠酒红反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30745,7 +30745,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Branco e Azul Escuro",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de branco e azul escuro - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Branco e Azul Escuro combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 白藏蓝 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30788,7 +30788,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low Akira Rosa Verde Camurça",
                                                                         "descricao": "Air Force 1 Low inspirado no Akira com combinação de rosa, verde e camurça - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low Akira Rosa Verde Camurça combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low 阿基拉粉绿麂皮 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30831,7 +30831,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low Akira Rosa Camurça",
                                                                         "descricao": "Air Force 1 Low inspirado no Akira com combinação de rosa e camurça - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low Akira Rosa Camurça combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low 阿基拉粉红麂皮 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30874,7 +30874,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Creme e Vermelho Vinho Swoosh",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de creme e vermelho vinho no swoosh - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Creme e Vermelho Vinho Swoosh combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 奶白酒红钩 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30917,7 +30917,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Branco e Azul",
                                                                         "descricao": "Air Force 1 '07 Low com combinação clássica de branco e azul - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Branco e Azul combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 白蓝 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -30960,7 +30960,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Nike Air Force 1 Low 07 Branco e Azul",
                                                                         "descricao": "Nike Air Force 1 Low 07 com combinação clássica de branco e azul - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Nike Air Force 1 Low 07 Branco e Azul combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Nike Air Force 1 Low 07 白蓝 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31003,7 +31003,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Nike Air Force 1 Low 07",
                                                                         "descricao": "Nike Air Force 1 Low 07 - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Nike Air Force 1 Low 07 combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Nike Air Force 1 Low 07 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31046,7 +31046,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Branco e Verde Reflexo",
                                                                         "descricao": "Air Force 1 '07 Low com acabamento branco e verde reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Branco e Verde Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 白绿反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31089,7 +31089,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Internet Branco e Preto Graffiti",
                                                                         "descricao": "Air Force 1 '07 Low com tema internet em branco e preto com graffiti - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Internet Branco e Preto Graffiti combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 互联网白黑涂鸦 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31132,7 +31132,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Branco e Preto 3M Reflexo",
                                                                         "descricao": "Air Force 1 '07 Low com acabamento branco e preto 3M reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Branco e Preto 3M Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 白黑3M反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31175,7 +31175,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Bege, Branco e Preto",
                                                                         "descricao": "Air Force 1 '07 Low com combinação de bege, branco e preto - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Bege, Branco e Preto combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 米白黑 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31218,7 +31218,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Stone Island x Air Force 1 Low Bege, Branco e Preto Reflexo",
                                                                         "descricao": "Stone Island x Air Force 1 Low com combinação de bege, branco e preto reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Stone Island x Air Force 1 Low Bege, Branco e Preto Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Stone Island x Air Force 1 Low 米白黑反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31261,7 +31261,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Nike Air Force 1 Low 07 Rosa Vibrante",
                                                                         "descricao": "Nike Air Force 1 Low 07 em rosa vibrante - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Nike Air Force 1 Low 07 Rosa Vibrante combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Nike Air Force 1 Low 07“骚粉” _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31304,7 +31304,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Drake x Air Force 1 Low Branco e Verde Azeitona",
                                                                         "descricao": "Drake x Air Force 1 Low com acabamento branco e verde azeitona - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Drake x Air Force 1 Low Branco e Verde Azeitona combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Drake x Air Force 1 Low 白橄榄绿 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31347,7 +31347,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low _By You_ Branco e Azul Escuro",
                                                                         "descricao": "Air Force 1 Low _By You_ com acabamento branco e azul escuro - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low _By You_ Branco e Azul Escuro combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low _By You_ 白藏青 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31390,7 +31390,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low _By You_ Branco e Vermelho Reflexo",
                                                                         "descricao": "Air Force 1 Low _By You_ com acabamento branco e vermelho reflexo - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low _By You_ Branco e Vermelho Reflexo combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low _By You_ 白红反光 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31433,7 +31433,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low Verde Fluorescente",
                                                                         "descricao": "Air Force 1 Low em verde fluorescente - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low Verde Fluorescente combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low 荧光绿 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31476,7 +31476,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Branco e Marrom",
                                                                         "descricao": "Air Force 1 '07 Low com acabamento branco e marrom - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Branco e Marrom combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 白褐 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31519,7 +31519,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 '07 Low Marrom, Verde e Palhaço",
                                                                         "descricao": "Air Force 1 '07 Low com tema marrom, verde e palhaço - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 '07 Low Marrom, Verde e Palhaço combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 '07 Low 棕绿小丑 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31562,7 +31562,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low _By You_ Dior Branco e Preto",
                                                                         "descricao": "Air Force 1 Low _By You_ inspirado na Dior em branco e preto - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low _By You_ Dior Branco e Preto combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low _By You_ 迪奥白黑 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31605,7 +31605,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low _By You_ Branco e Preto",
                                                                         "descricao": "Air Force 1 Low _By You_ com acabamento branco e preto - modelo exclusivo Air Force 1 Low.",
                                                                         "descricaoLonga": "O Air Force 1 Low _By You_ Branco e Preto combina o design clássico da Air Force 1 com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diário ou ocasiões casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low _By You_ 白黑 _ Yupoo - 01.jpg",
                                                                         "imagensAdicionais": [
@@ -31650,7 +31650,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Vinho Perolado Pequeno Gancho",
                                                                           "descricao": "Air Force 107 Mid Vinho Perolado Pequeno Gancho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Vinho Perolado Pequeno Gancho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 酒红珠光小勾 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -31693,7 +31693,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Nike Air Force 1 MID Bege e Azul Escuro",
                                                                           "descricao": "Nike Air Force 1 MID Bege e Azul Escuro - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Nike Air Force 1 MID Bege e Azul Escuro combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Nike Air Force 1 MID 米深蓝 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -31737,7 +31737,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Cafe Grao Cor",
                                                                           "descricao": "Air Force 107 Mid Cafe Grao Cor - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Cafe Grao Cor combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 咖啡豆配色 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -31781,7 +31781,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Nk Air Force 107 Mid Bege Prata e Cinzento Cor",
                                                                           "descricao": "Nk Air Force 107 Mid Bege Prata e Cinzento Cor - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Nk Air Force 107 Mid Bege Prata e Cinzento Cor combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Nk Air Force 1'07 Mid 米银灰配色 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -31826,7 +31826,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinco Faixas Bege Branco e Vinho",
                                                                           "descricao": "Air Force 1 07 Mid Cinco Faixas Bege Branco e Vinho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinco Faixas Bege Branco e Vinho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 五道杠米白酒红 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -31871,7 +31871,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege e Vinho Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Bege e Vinho Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege e Vinho Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米酒红反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -31915,7 +31915,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege e Azul Escuro",
                                                                           "descricao": "Air Force 1 07 Mid Bege e Azul Escuro - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege e Azul Escuro combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米深蓝反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -31959,7 +31959,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Coelho Verde 3M",
                                                                           "descricao": "Air Force 1 07 Mid Coelho Verde 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Coelho Verde 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 兔八哥炫绿3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32002,7 +32002,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid",
                                                                           "descricao": "Air Force 1 Mid - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32046,7 +32046,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Caqui e Marrom Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Caqui e Marrom Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Caqui e Marrom Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 卡其棕麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32089,7 +32089,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento Branco e Preto Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento Branco e Preto Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento Branco e Preto Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰白黑麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32134,7 +32134,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege Cinzento e Prata Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Bege Cinzento e Prata Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege Cinzento e Prata Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米灰银反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32179,7 +32179,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "x Air Force 1 Mid Bege e Cinzento Camurca",
                                                                           "descricao": "x Air Force 1 Mid Bege e Cinzento Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O x Air Force 1 Mid Bege e Cinzento Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/卫冕冠军 x Air Force 1 Mid 米灰麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32223,7 +32223,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege e Verde Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Bege e Verde Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege e Verde Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米绿反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32267,7 +32267,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Preto e Verde Militar",
                                                                           "descricao": "Air Force 107 Mid Preto e Verde Militar - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Preto e Verde Militar combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 黑军绿 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32311,7 +32311,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Nk Air Force 107 Mid Bege e Preto",
                                                                           "descricao": "Nk Air Force 107 Mid Bege e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Nk Air Force 107 Mid Bege e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Nk Air Force 1'07 Mid 米黑 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32355,7 +32355,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege Branco e Prata Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Bege Branco e Prata Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege Branco e Prata Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米白银麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32400,7 +32400,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Sup x Air Force 1 Mid Preto",
                                                                           "descricao": "Sup x Air Force 1 Mid Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Sup x Air Force 1 Mid Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Sup x Air Force 1 Mid 黑色 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32443,7 +32443,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白黑 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32487,7 +32487,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Cinzento",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Cinzento - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Cinzento combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白灰 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32531,7 +32531,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Trigo",
                                                                           "descricao": "Air Force 107 Trigo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Trigo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                             "imagem": "/images/Air Force 1’07 空军高帮板鞋 小麦 _ Yupoo - 01.jpg",
                                                                             "imagensAdicionais": [
@@ -32575,7 +32575,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Marrom e Castanho Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Marrom e Castanho Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Marrom e Castanho Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 棕褐麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32618,7 +32618,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento Lavanda",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento Lavanda - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento Lavanda combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 香芋灰 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32661,7 +32661,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid LVTrigo",
                                                                           "descricao": "Air Force 1 Mid LVTrigo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid LVTrigo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid LV小麦印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32705,7 +32705,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米白黑3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32749,7 +32749,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid By You",
                                                                           "descricao": "Air Force 1 Mid By You - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid By You combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid _By You_ 黑白 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32793,7 +32793,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Cinzento",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Cinzento - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Cinzento combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 卫冕冠军 米白灰 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32837,7 +32837,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege e Azul Escuro3M",
                                                                           "descricao": "Air Force 1 07 Mid Bege e Azul Escuro3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege e Azul Escuro3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米深蓝3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32881,7 +32881,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid By You LV Branco e Verde Estampado",
                                                                           "descricao": "Air Force 1 Mid By You LV Branco e Verde Estampado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid By You LV Branco e Verde Estampado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid _By You_ LV白绿印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32925,7 +32925,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid By You LV Branco e Azul Estampado",
                                                                           "descricao": "Air Force 1 Mid By You LV Branco e Azul Estampado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid By You LV Branco e Azul Estampado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid _By You_ LV白蓝印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -32969,7 +32969,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento e Azul Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento e Azul Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento e Azul Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰蓝麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33013,7 +33013,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege Cinzento e Preto Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Bege Cinzento e Preto Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege Cinzento e Preto Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米灰黑麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33058,7 +33058,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cafe Grao Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cafe Grao Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cafe Grao Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 咖啡豆麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33102,7 +33102,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco Terra e Amarelo 3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco Terra e Amarelo 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco Terra e Amarelo 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白土黄3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33146,7 +33146,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege Cinzento e Preto Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Bege Cinzento e Preto Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege Cinzento e Preto Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米灰黑麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33191,7 +33191,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "LV x Air Force 1 Mid Branco e Azul Denim",
                                                                           "descricao": "LV x Air Force 1 Mid Branco e Azul Denim - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O LV x Air Force 1 Mid Branco e Azul Denim combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/LV x Air Force 1 Mid 白蓝牛仔 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33235,7 +33235,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Azul e Amarelo Cordao Pequeno Gancho",
                                                                           "descricao": "Air Force 1 07 Mid Azul e Amarelo Cordao Pequeno Gancho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Azul e Amarelo Cordao Pequeno Gancho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 蓝黄串标小钩 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33279,7 +33279,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Perolado Bege Branco e Vinho",
                                                                           "descricao": "Air Force 1 07 Mid Perolado Bege Branco e Vinho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Perolado Bege Branco e Vinho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 珠光米白酒红 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33324,7 +33324,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Bege Branco e Prata Camurca",
                                                                           "descricao": "Air Force 107 Mid Bege Branco e Prata Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Bege Branco e Prata Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 米白银麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33369,7 +33369,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Bege Branco e Verde Escuro 3M",
                                                                           "descricao": "Air Force 107 Mid Bege Branco e Verde Escuro 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Bege Branco e Verde Escuro 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 米白墨绿3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33414,7 +33414,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Bege Marrom e Verde Camurca",
                                                                           "descricao": "Air Force 107 Mid Bege Marrom e Verde Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Bege Marrom e Verde Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 米棕绿麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33459,7 +33459,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Cinco Faixas Bege Branco e Vinho",
                                                                           "descricao": "Air Force 107 Mid Cinco Faixas Bege Branco e Vinho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Cinco Faixas Bege Branco e Vinho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 五道杠米白酒红 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33504,7 +33504,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cordao Branco e Azul Pequeno Gancho",
                                                                           "descricao": "Air Force 1 07 Mid Cordao Branco e Azul Pequeno Gancho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cordao Branco e Azul Pequeno Gancho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 串标白蓝小钩 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33548,7 +33548,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento e Laranja Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento e Laranja Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento e Laranja Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰橙麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33592,7 +33592,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Perolado Bege Branco e Azul Gelo",
                                                                           "descricao": "Air Force 1 07 Mid Perolado Bege Branco e Azul Gelo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Perolado Bege Branco e Azul Gelo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 珠光米白冰蓝 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33637,7 +33637,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白黑串标小钩 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33681,7 +33681,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "LV x NK Air Force 1 Mid Branco e Preto",
                                                                           "descricao": "LV x NK Air Force 1 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O LV x NK Air Force 1 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/LV x NK Air Force 1 Mid 联名白黑 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33725,7 +33725,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Sombra Cinzenta Reflexo Anjo",
                                                                           "descricao": "Air Force 1 07 Mid Sombra Cinzenta Reflexo Anjo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Sombra Cinzenta Reflexo Anjo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 影子灰反光天使 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33769,7 +33769,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Marrom Amarelo e Laranja Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Marrom Amarelo e Laranja Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Marrom Amarelo e Laranja Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 棕黄橙麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33814,7 +33814,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Azul Escuro 3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Azul Escuro 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Azul Escuro 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白藏蓝3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33858,7 +33858,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "LV x NK Air Force 1 Mid Colaboracao Branco e Vermelho",
                                                                           "descricao": "LV x NK Air Force 1 Mid Colaboracao Branco e Vermelho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O LV x NK Air Force 1 Mid Colaboracao Branco e Vermelho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/LV x NK Air Force 1 Mid 联名白红 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33902,7 +33902,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Leite e Cafe Meio Alto",
                                                                           "descricao": "Air Force 1 07 Mid Leite e Cafe Meio Alto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Leite e Cafe Meio Alto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 奶咖中帮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33946,7 +33946,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Azul 3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Azul 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Azul 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白蓝3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -33990,7 +33990,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Cinzento",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Cinzento - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Cinzento combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 珠光米白灰 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34034,7 +34034,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento Preto e Verde Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento Preto e Verde Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento Preto e Verde Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰黑绿麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34079,7 +34079,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Branco e Vermelho 3M",
                                                                           "descricao": "Air Force 107 Mid Branco e Vermelho 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Branco e Vermelho 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 白红3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34123,7 +34123,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LV Branco e Caqui Estampado",
                                                                           "descricao": "Air Force 1 07 Mid LV Branco e Caqui Estampado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LV Branco e Caqui Estampado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV白卡其印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34166,7 +34166,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid By You Terra e Amarelo Camurca",
                                                                           "descricao": "Air Force 1 Mid By You Terra e Amarelo Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid By You Terra e Amarelo Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid _By You_ 土黄麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34209,7 +34209,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Perolado Bege Branco e Azul Escuro",
                                                                           "descricao": "Air Force 1 07 Mid Perolado Bege Branco e Azul Escuro - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Perolado Bege Branco e Azul Escuro combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 珠光米白藏蓝 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34254,7 +34254,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Uninterrupted x Air Force 1 MORE THAN",
                                                                           "descricao": "Uninterrupted x Air Force 1 MORE THAN - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Uninterrupted x Air Force 1 MORE THAN combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Uninterrupted x Air Force 1 _MORE THAN_ _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34298,7 +34298,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LV Branco e Marrom Estampado Completo",
                                                                           "descricao": "Air Force 1 07 Mid LV Branco e Marrom Estampado Completo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LV Branco e Marrom Estampado Completo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV白棕满印印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34342,7 +34342,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LV Branco e Cinzento Escuro Estampado",
                                                                           "descricao": "Air Force 1 07 Mid LV Branco e Cinzento Escuro Estampado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LV Branco e Cinzento Escuro Estampado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV白深灰印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34386,7 +34386,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Perolado Bege Branco e Verde",
                                                                           "descricao": "Air Force 1 07 Mid Perolado Bege Branco e Verde - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Perolado Bege Branco e Verde combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 珠光米白绿 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34431,7 +34431,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Verde 3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Verde 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Verde 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白绿3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34475,7 +34475,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento Preto e Rosa Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento Preto e Rosa Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento Preto e Rosa Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰黑粉麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34520,7 +34520,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 珠光米白黑 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34564,7 +34564,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Mocha e Preto Patchwork",
                                                                           "descricao": "Air Force 1 07 Mid Mocha e Preto Patchwork - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Mocha e Preto Patchwork combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 摩卡黑拼接 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34607,7 +34607,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Vermelho 3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Vermelho 3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Vermelho 3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白红3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34651,7 +34651,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白黑3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34695,7 +34695,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LV Bege e Marrom Estampado Completo",
                                                                           "descricao": "Air Force 1 07 Mid LV Bege e Marrom Estampado Completo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LV Bege e Marrom Estampado Completo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV米棕满印印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34739,7 +34739,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LV Branco Puro Estampado Completo",
                                                                           "descricao": "Air Force 1 07 Mid LV Branco Puro Estampado Completo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LV Branco Puro Estampado Completo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV纯白满印压花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34782,7 +34782,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Caqui e Marrom Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Caqui e Marrom Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Caqui e Marrom Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 卡其棕麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34825,7 +34825,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Cinzento3M",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Cinzento3M - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Cinzento3M combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米白灰3M _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34869,7 +34869,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Uninterrupted x Air Force 1 MORE THAN",
                                                                           "descricao": "Uninterrupted x Air Force 1 MORE THAN - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Uninterrupted x Air Force 1 MORE THAN combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Uninterrupted x Air Force 1 _MORE THAN_ _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34913,7 +34913,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento e Azul Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento e Azul Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento e Azul Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰蓝麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -34957,7 +34957,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Azul Escuro Caneta",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Azul Escuro Caneta - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Azul Escuro Caneta combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白藏蓝签字笔 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35001,7 +35001,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Azul Estrelas",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Azul Estrelas - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Azul Estrelas combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白蓝满天星 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35045,7 +35045,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LV Branco e Cinzento Escuro Estampado",
                                                                           "descricao": "Air Force 1 07 Mid LV Branco e Cinzento Escuro Estampado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LV Branco e Cinzento Escuro Estampado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV白深灰印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35089,7 +35089,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid By You The North Face Sup Branco e Verde",
                                                                           "descricao": "Air Force 1 Mid By You The North Face Sup Branco e Verde - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid By You The North Face Sup Branco e Verde combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid _By You_ 北面Sup白绿 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35133,7 +35133,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid By You SupBranco e Cinzento",
                                                                           "descricao": "Air Force 1 Mid By You SupBranco e Cinzento - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid By You SupBranco e Cinzento combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid _By You_ 北面Sup白灰 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35177,7 +35177,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Marrom e Preto Cordao",
                                                                           "descricao": "Air Force 1 07 Mid Marrom e Preto Cordao - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Marrom e Preto Cordao combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 棕黑绑带 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35221,7 +35221,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LV Branco e Azul Estampado",
                                                                           "descricao": "Air Force 1 07 Mid LV Branco e Azul Estampado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LV Branco e Azul Estampado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV白蓝印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35265,7 +35265,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Marrom e Verde Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Marrom e Verde Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Marrom e Verde Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 棕绿麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35309,7 +35309,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Prata 3M Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Prata 3M Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Prata 3M Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白银3M反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35353,7 +35353,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento Rosa e Verde Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento Rosa e Verde Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento Rosa e Verde Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰粉绿麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35398,7 +35398,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinco Faixas Azul Gelo 3M Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Cinco Faixas Azul Gelo 3M Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinco Faixas Azul Gelo 3M Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 五道杠冰蓝3M反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35441,7 +35441,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid",
                                                                           "descricao": "Air Force 1 07 Mid - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 黑白 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35485,7 +35485,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid SupBranco e Preto",
                                                                           "descricao": "Air Force 1 Mid SupBranco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid SupBranco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid 北面Sup白黑 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35529,7 +35529,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LVTrigo",
                                                                           "descricao": "Air Force 1 07 Mid LVTrigo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LVTrigo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV小麦印花 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35573,7 +35573,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Azul Gelo Caneta",
                                                                           "descricao": "Air Force 1 07 Mid Azul Gelo Caneta - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Azul Gelo Caneta combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 冰蓝签字笔 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35616,7 +35616,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 High Wild Amarelo",
                                                                           "descricao": "Air Force 1 High Wild Amarelo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 High Wild Amarelo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 high Wild 黄色 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35659,7 +35659,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid LVBege e Preto",
                                                                           "descricao": "Air Force 1 07 Mid LVBege e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid LVBege e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid LV米黑麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35703,7 +35703,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Bege e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米黑夜魔侠 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35747,7 +35747,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Cinzento",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Cinzento - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Cinzento combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 五道杠白灰反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35791,7 +35791,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Vinho Caneta",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Vinho Caneta - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Vinho Caneta combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白酒红签字笔 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35835,7 +35835,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento e Azul Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento e Azul Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento e Azul Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 浅灰蓝麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35879,7 +35879,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Caqui Caneta",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Caqui Caneta - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Caqui Caneta combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白卡其签字笔 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35922,7 +35922,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 High FLAX Trigo",
                                                                           "descricao": "Air Force 1 High FLAX Trigo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 High FLAX Trigo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 High FLAX Wheat _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -35966,7 +35966,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento e Verde Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento e Verde Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento e Verde Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰绿麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36010,7 +36010,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege Branco e Cinzento Escuro 3M Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Bege Branco e Cinzento Escuro 3M Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege Branco e Cinzento Escuro 3M Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米白深灰3M反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36055,7 +36055,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Bege e Branco Demonio da Noite",
                                                                           "descricao": "Air Force 1 07 Mid Bege e Branco Demonio da Noite - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Bege e Branco Demonio da Noite combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 米白夜魔侠 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36099,7 +36099,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Stussy x Air Force 1 Mid Branco Fresco",
                                                                           "descricao": "Stussy x Air Force 1 Mid Branco Fresco - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Stussy x Air Force 1 Mid Branco Fresco combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Stussy x Air Force 1 Mid _White Cool_ _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36142,7 +36142,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Cinzento e Branco Reflexo",
                                                                           "descricao": "Air Force 107 Mid Cinzento e Branco Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Cinzento e Branco Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 灰白反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36186,7 +36186,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Azul e Amarelo Cordao Pequeno Gancho",
                                                                           "descricao": "Air Force 107 Mid Azul e Amarelo Cordao Pequeno Gancho - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Azul e Amarelo Cordao Pequeno Gancho combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 蓝黄串标小钩 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36230,7 +36230,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Cinzento e Azul Camurca",
                                                                           "descricao": "Air Force 107 Mid Cinzento e Azul Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Cinzento e Azul Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 灰蓝麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36274,7 +36274,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Branco Anjo 3M Reflexo",
                                                                           "descricao": "Air Force 107 Mid Branco Anjo 3M Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Branco Anjo 3M Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 白天使3M反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36317,7 +36317,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Azul Gelo Estrelas",
                                                                           "descricao": "Air Force 1 07 Mid Azul Gelo Estrelas - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Azul Gelo Estrelas combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 冰蓝满天星 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36360,7 +36360,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 Mid x Reigning Champ",
                                                                           "descricao": "Air Force 1 Mid x Reigning Champ - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 Mid x Reigning Champ combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 Mid x Reigning Champ _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36404,7 +36404,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Uninterrupted x Air Force 1 MORE THAN",
                                                                           "descricao": "Uninterrupted x Air Force 1 MORE THAN - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Uninterrupted x Air Force 1 MORE THAN combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Uninterrupted x Air Force 1 _MORE THAN_ _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36448,7 +36448,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Azul Denim Patchwork",
                                                                           "descricao": "Air Force 1 07 Mid Azul Denim Patchwork - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Azul Denim Patchwork combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 牛仔蓝拼接 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36491,7 +36491,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento Lavanda",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento Lavanda - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento Lavanda combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 香芋灰满天星 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36534,7 +36534,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 骰神白黑双钩 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36578,7 +36578,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Prata 3M Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Prata 3M Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Prata 3M Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白银3M反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36622,7 +36622,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白黑满天星 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36666,7 +36666,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Marrom Reflexo",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Marrom Reflexo - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Marrom Reflexo combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白棕反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36710,7 +36710,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Cinzento",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Cinzento - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Cinzento combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白灰反光 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36754,7 +36754,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Azul Gelo Estrelas",
                                                                           "descricao": "Air Force 1 07 Mid Azul Gelo Estrelas - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Azul Gelo Estrelas combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 冰蓝满天星 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36797,7 +36797,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Marrom e Verde Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Marrom e Verde Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Marrom e Verde Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 棕绿麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36841,7 +36841,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento e Laranja Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento e Laranja Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento e Laranja Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰橙麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36885,7 +36885,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Bape x Air Force 1 07 Mid Preto Camuflado",
                                                                           "descricao": "Bape x Air Force 1 07 Mid Preto Camuflado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Bape x Air Force 1 07 Mid Preto Camuflado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Bape x Air Force 1 '07 Mid 黑迷彩 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36928,7 +36928,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Cinzento",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Cinzento - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Cinzento combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 黑白灰电玩涂鸦 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -36972,7 +36972,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinco Faixas Colaboracao Personalizado",
                                                                           "descricao": "Air Force 1 07 Mid Cinco Faixas Colaboracao Personalizado - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinco Faixas Colaboracao Personalizado combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 五道杠联名定制 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37016,7 +37016,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 白黑橙 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37060,7 +37060,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Travis Scott x Air Jordan 1 Low Low Invertido TS Colaboracao 553560-061",
                                                                           "descricao": "Travis Scott x Air Jordan 1 Low Low Invertido TS Colaboracao 553560-061 - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Travis Scott x Air Jordan 1 Low Low Invertido TS Colaboracao 553560-061 combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Travis Scott x Air Jordan 1 Low 低帮倒钩TS联名板鞋 553560-061 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37104,7 +37104,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Chocolate e Marrom Camurca",
                                                                           "descricao": "Air Force 107 Mid Chocolate e Marrom Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Chocolate e Marrom Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 巧克力棕麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37147,7 +37147,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cinzento e Branco Estrelas",
                                                                           "descricao": "Air Force 1 07 Mid Cinzento e Branco Estrelas - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cinzento e Branco Estrelas combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 灰白满天星 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37191,7 +37191,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Kaws x Air Force 1 07 Mid Colaboracao Graffiti",
                                                                           "descricao": "Kaws x Air Force 1 07 Mid Colaboracao Graffiti - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Kaws x Air Force 1 07 Mid Colaboracao Graffiti combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Kaws x Air Force 1 '07 Mid 联名涂鸦 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37235,7 +37235,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Branco e Preto",
                                                                           "descricao": "Air Force 1 07 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 五道杠联名白黑 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37279,7 +37279,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 07 Mid Cafe Grao Camurca",
                                                                           "descricao": "Air Force 1 07 Mid Cafe Grao Camurca - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 07 Mid Cafe Grao Camurca combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 '07 Mid 咖啡豆麂皮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37323,7 +37323,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Verde Claro e Cinzento Meio Alto",
                                                                           "descricao": "Air Force 107 Mid Verde Claro e Cinzento Meio Alto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Verde Claro e Cinzento Meio Alto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 浅绿灰中帮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37367,7 +37367,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Bege Amarelo e Preto Meio Alto",
                                                                           "descricao": "Air Force 107 Mid Bege Amarelo e Preto Meio Alto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Bege Amarelo e Preto Meio Alto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 米黄黑中帮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37412,7 +37412,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Bege e Preto",
                                                                           "descricao": "Air Force 107 Mid Bege e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Bege e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 米黑银炫彩夜魔侠 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37456,7 +37456,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Azul Escuro e Branco Meio Alto",
                                                                           "descricao": "Air Force 107 Mid Azul Escuro e Branco Meio Alto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Azul Escuro e Branco Meio Alto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 深蓝白中帮 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37500,7 +37500,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 1 High Branco e Azul Precioso",
                                                                           "descricao": "Air Force 1 High Branco e Azul Precioso - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 1 High Branco e Azul Precioso combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1 High 白宝蓝 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37544,7 +37544,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                           "nome": "Air Force 107 Mid Branco e Preto",
                                                                           "descricao": "Air Force 107 Mid Branco e Preto - modelo exclusivo Air Force 1 High.",
                                                                           "descricaoLonga": "O Air Force 107 Mid Branco e Preto combina o design classico da Air Force 1 High com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                          "preco": 55.99,
+                                                                          "preco": 62.99,
                                                                           "precoAntigo": 99.99,
                                                                           "imagem": "/images/Air Force 1'07 Mid 串标白黑小钩 _ Yupoo - 01.jpg",
                                                                           "imagensAdicionais": [
@@ -37588,7 +37588,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                                                                         "nome": "Air Force 1 Low Fontanka Branco Puro",
                                                                         "descricao": "Air Force 1 Low Fontanka Branco Puro - modelo exclusivo Air Force 1 Fontanka.",
                                                                         "descricaoLonga": "O Air Force 1 Low Fontanka Branco Puro combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-                                                                        "preco": 55.99,
+                                                                        "preco": 62.99,
                                                                         "precoAntigo": 99.99,
                                                                         "imagem": "/images/Air Force 1 Low Fontanka  纯白 _ Yupoo - 05.jpg",
                                                                         "imagensAdicionais": [
@@ -37630,7 +37630,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nk Air Force 1 Fontanka",
         "descricao": "Nk Air Force 1 Fontanka - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Nk Air Force 1 Fontanka combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nk Air Force 1 Fontanka _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37674,7 +37674,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nk Air Force 107 Low Colaboracao",
         "descricao": "Nk Air Force 107 Low Colaboracao - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Nk Air Force 107 Low Colaboracao combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nk Air Force 1'07 Low 联名款 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37718,7 +37718,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 Fontanka Macaroon",
         "descricao": "Nike Air Force 1 Fontanka Macaroon - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Nike Air Force 1 Fontanka Macaroon combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nike Air Force 1 Fontanka Macaroon _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37762,7 +37762,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Gelo e Limao",
         "descricao": "Air Force 1 Fontanka Desconstruido Gelo e Limao - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Gelo e Limao combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构冰柠檬 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37805,7 +37805,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Nike Air Force 1 Fontanka",
         "descricao": "Nike Air Force 1 Fontanka - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Nike Air Force 1 Fontanka combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Nike Air Force 1 Fontanka _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37849,7 +37849,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Vintage Amarelo e Azul",
         "descricao": "Air Force 1 Fontanka Desconstruido Vintage Amarelo e Azul - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Vintage Amarelo e Azul combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构复古黄蓝 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37893,7 +37893,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Vintage Cinzento e Preto",
         "descricao": "Air Force 1 Fontanka Desconstruido Vintage Cinzento e Preto - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Vintage Cinzento e Preto combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构复古灰黑 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37937,7 +37937,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Vintage Cinzento e Marrom",
         "descricao": "Air Force 1 Fontanka Desconstruido Vintage Cinzento e Marrom - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Vintage Cinzento e Marrom combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构复古灰棕 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -37981,7 +37981,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Vintage Azul",
         "descricao": "Air Force 1 Fontanka Desconstruido Vintage Azul - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Vintage Azul combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构复古蓝 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38024,7 +38024,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Chrome Hearts x Air Force 1 Low Chrome Hearts Colaboracao Air Force Fontanka",
         "descricao": "Chrome Hearts x Air Force 1 Low Chrome Hearts Colaboracao Air Force Fontanka - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Chrome Hearts x Air Force 1 Low Chrome Hearts Colaboracao Air Force Fontanka combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Chrome Hearts x Air Force 1 Low 克罗心联名空军丰塔卡 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38068,7 +38068,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Branco e Azul",
         "descricao": "Air Force 1 Fontanka Desconstruido Branco e Azul - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Branco e Azul combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构白蓝 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38112,7 +38112,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Bege Azul e Marrom",
         "descricao": "Air Force 1 Fontanka Desconstruido Bege Azul e Marrom - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Bege Azul e Marrom combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构米蓝棕 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38157,7 +38157,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Bege Marrom e Verde",
         "descricao": "Air Force 1 Fontanka Desconstruido Bege Marrom e Verde - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Bege Marrom e Verde combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构米棕绿 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38202,7 +38202,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Branco e Preto",
         "descricao": "Air Force 1 Fontanka Desconstruido Branco e Preto - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Branco e Preto combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构白黑 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38246,7 +38246,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Branco Laranja e Amarelo",
         "descricao": "Air Force 1 Fontanka Desconstruido Branco Laranja e Amarelo - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Branco Laranja e Amarelo combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构白橙黄 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38291,7 +38291,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Branco e Limao",
         "descricao": "Air Force 1 Fontanka Desconstruido Branco e Limao - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Branco e Limao combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构白柠檬 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38335,7 +38335,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Preto e Azul",
         "descricao": "Air Force 1 Fontanka Desconstruido Preto e Azul - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Preto e Azul combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构黑蓝 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38379,7 +38379,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Branco e Azul",
         "descricao": "Air Force 1 Fontanka Desconstruido Branco e Azul - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Branco e Azul combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构白蓝黄 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38423,7 +38423,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Preto e Branco",
         "descricao": "Air Force 1 Fontanka Desconstruido Preto e Branco - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Preto e Branco combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构黑白 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38467,7 +38467,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Branco e Roxo",
         "descricao": "Air Force 1 Fontanka Desconstruido Branco e Roxo - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Branco e Roxo combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构白紫 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38511,7 +38511,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Gelo e Limao",
         "descricao": "Air Force 1 Fontanka Desconstruido Gelo e Limao - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Gelo e Limao combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构冰柠檬 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38554,7 +38554,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Flores Colorido",
         "descricao": "Air Force 1 Fontanka Desconstruido Flores Colorido - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Flores Colorido combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构花团多彩 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38598,7 +38598,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Low Fontanka Poro do Sol Dourado",
         "descricao": "Air Force 1 Low Fontanka Poro do Sol Dourado - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Low Fontanka Poro do Sol Dourado combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Low  Fontanka  日落金 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38637,7 +38637,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Low Fontanka Bege e Vermelho",
         "descricao": "Air Force 1 Low Fontanka Bege e Vermelho - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Low Fontanka Bege e Vermelho combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Low  Fontanka  米红 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38681,7 +38681,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "0224 Air Force 1 Low Fontanka Verde Fluorescente",
         "descricao": "0224 Air Force 1 Low Fontanka Verde Fluorescente - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O 0224 Air Force 1 Low Fontanka Verde Fluorescente combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/02_24 Air Force 1 Low  Fontanka  荧光绿 _ Yupoo - 02.jpg",
         "imagensAdicionais": [
@@ -38723,7 +38723,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Cinzento Claro",
         "descricao": "Air Force 1 Fontanka Desconstruido Cinzento Claro - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Cinzento Claro combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构浅灰 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38766,7 +38766,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Casa de Doces",
         "descricao": "Air Force 1 Fontanka Desconstruido Casa de Doces - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Casa de Doces combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构糖果屋 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38810,7 +38810,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "Air Force 1 Fontanka Desconstruido Branco Cinzento e Azul",
         "descricao": "Air Force 1 Fontanka Desconstruido Branco Cinzento e Azul - modelo exclusivo Air Force 1 Fontanka.",
         "descricaoLonga": "O Air Force 1 Fontanka Desconstruido Branco Cinzento e Azul combina o design classico da Air Force 1 Fontanka com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/Air Force 1 Fontanka 解构白灰兰 _ Yupoo - 01.jpg",
         "imagensAdicionais": [
@@ -38855,7 +38855,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Bege Branco e Dourado",
           "descricao": "Air Force 1 Shadow Bege Branco e Dourado - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Bege Branco e Dourado combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 米白金 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -38900,7 +38900,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Air Force 1 Macaroon",
           "descricao": "Air Force 1 Air Force 1 Macaroon - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Air Force 1 Macaroon combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 空军一号 马卡龙 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -38944,7 +38944,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Verde e Roxo",
           "descricao": "Air Force 1 Shadow Branco Verde e Roxo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Verde e Roxo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白绿紫 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -38989,7 +38989,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "NK Air Force 1 Shadow",
           "descricao": "NK Air Force 1 Shadow - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O NK Air Force 1 Shadow combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/NK Air Force 1 Shadow _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39033,7 +39033,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Bege Preto e Azul",
           "descricao": "Air Force 1 Shadow Bege Preto e Azul - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Bege Preto e Azul combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 米黑蓝 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39078,7 +39078,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco e Marrom",
           "descricao": "Air Force 1 Shadow Branco e Marrom - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco e Marrom combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白棕 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39122,7 +39122,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Bege Rosa e Cinzento",
           "descricao": "Air Force 1 Shadow Bege Rosa e Cinzento - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Bege Rosa e Cinzento combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 米粉灰 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39167,7 +39167,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Vermelho e Preto",
           "descricao": "Air Force 1 Shadow Branco Vermelho e Preto - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Vermelho e Preto combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白红黑 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39212,7 +39212,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Azul e Roxo",
           "descricao": "Air Force 1 Shadow Branco Azul e Roxo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Azul e Roxo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白蓝紫 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39257,7 +39257,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike AIR Force 1 Low Air Force 1",
           "descricao": "Nike AIR Force 1 Low Air Force 1 - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Nike AIR Force 1 Low Air Force 1 combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Nike AIR Force 1 Low 空军一号 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39301,7 +39301,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "3A Air ForceMacaroon10 Rosa e Branco",
           "descricao": "3A Air ForceMacaroon10 Rosa e Branco - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O 3A Air ForceMacaroon10 Rosa e Branco combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/3A空军！马卡龙系列第10色 粉白 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39345,7 +39345,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "3A Air ForceMacaroon4 Verde Menta",
           "descricao": "3A Air ForceMacaroon4 Verde Menta - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O 3A Air ForceMacaroon4 Verde Menta combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/3A空军！马卡龙系列第4色 薄荷绿 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39389,7 +39389,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow",
           "descricao": "Air Force 1 Shadow - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39433,7 +39433,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Shadow",
           "descricao": "Nike Air Force 1 Shadow - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Nike Air Force 1 Shadow combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Nike Air Force 1 Shadow _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39477,7 +39477,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Amarelo e Verde",
           "descricao": "Air Force 1 Shadow Branco Amarelo e Verde - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Amarelo e Verde combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白黄绿 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39522,7 +39522,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Cinzento e Roxo",
           "descricao": "Air Force 1 Shadow Branco Cinzento e Roxo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Cinzento e Roxo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白灰紫 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39567,7 +39567,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Preto",
           "descricao": "Air Force 1 Shadow Preto - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Preto combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 黑色 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39610,7 +39610,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Bege Verde Azul e Laranja",
           "descricao": "Air Force 1 Shadow Bege Verde Azul e Laranja - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Bege Verde Azul e Laranja combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 米绿蓝橙 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39656,7 +39656,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "NK WMNS Air Force 1 Shadow",
           "descricao": "NK WMNS Air Force 1 Shadow - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O NK WMNS Air Force 1 Shadow combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/NK WMNS Air Force 1 Shadow _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39700,7 +39700,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Bege Branco e Roxo",
           "descricao": "Air Force 1 Shadow Bege Branco e Roxo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Bege Branco e Roxo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 米白紫 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39746,7 +39746,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Vermelho e Azul",
           "descricao": "Air Force 1 Shadow Branco Vermelho e Azul - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Vermelho e Azul combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白红蓝 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39791,7 +39791,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Cinzento e Verde",
           "descricao": "Air Force 1 Shadow Branco Cinzento e Verde - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Cinzento e Verde combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白灰绿 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39836,7 +39836,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Amarelo e Vermelho",
           "descricao": "Air Force 1 Shadow Branco Amarelo e Vermelho - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Amarelo e Vermelho combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白黄红 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39881,7 +39881,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Azul e Verde",
           "descricao": "Air Force 1 Shadow Branco Azul e Verde - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Azul e Verde combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白蓝绿 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39926,7 +39926,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Bege Branco e Rosa",
           "descricao": "Air Force 1 Shadow Bege Branco e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Bege Branco e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 米白粉 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -39971,7 +39971,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Cha com Leite",
           "descricao": "Air Force 1 Shadow Cha com Leite - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Cha com Leite combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 奶茶 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40015,7 +40015,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Shadow",
           "descricao": "Nike Air Force 1 Shadow - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Nike Air Force 1 Shadow combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Nike Air Force 1 Shadow _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40059,7 +40059,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Azul Camurca",
           "descricao": "Air Force 1 Shadow Branco Azul Camurca - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Azul Camurca combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白蓝翻毛 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40103,7 +40103,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Rosa Dourado",
           "descricao": "Air Force 1 Shadow Branco Rosa Dourado - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Rosa Dourado combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白玫瑰金 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40148,7 +40148,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Vermelho Intenso",
           "descricao": "Air Force 1 Shadow Vermelho Intenso - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Vermelho Intenso combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 赤红 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40191,7 +40191,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco e Rosa",
           "descricao": "Air Force 1 Shadow Branco e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白粉 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40235,7 +40235,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 07 Low Branco Azul Camurca",
           "descricao": "Air Force 1 07 Low Branco Azul Camurca - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 07 Low Branco Azul Camurca combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 '07 Low 白蓝翻毛钩 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40279,7 +40279,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Shadow Low Macaroon",
           "descricao": "Nike Air Force 1 Shadow Low Macaroon - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Nike Air Force 1 Shadow Low Macaroon combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Nike Air Force 1 Shadow Low 马卡龙 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40323,7 +40323,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Bege e Amarelo",
           "descricao": "Air Force 1 Shadow Bege e Amarelo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Bege e Amarelo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 米黄 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40367,7 +40367,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Preto e Amarelo",
           "descricao": "Air Force 1 Shadow Branco Preto e Amarelo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Preto e Amarelo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白黑黄 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40412,7 +40412,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Limao e Branco",
           "descricao": "Air Force 1 Shadow Limao e Branco - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Limao e Branco combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 柠檬白 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40456,7 +40456,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Cinzento e Marrom",
           "descricao": "Air Force 1 Shadow Branco Cinzento e Marrom - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Cinzento e Marrom combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白灰棕 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40501,7 +40501,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Preto e Rosa",
           "descricao": "Air Force 1 Shadow Branco Preto e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Preto e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白黑粉 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40546,7 +40546,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Leopardo",
           "descricao": "Air Force 1 Shadow Branco Leopardo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Leopardo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白豹纹 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40589,7 +40589,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike AF1Air Force 1FB7172-111",
           "descricao": "Nike AF1Air Force 1FB7172-111 - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Nike AF1Air Force 1FB7172-111 combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Nike耐克 AF1女子空军一号翻毛拼接休闲鞋板鞋FB7172-111 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40633,7 +40633,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Nike Air Force 1 Low Shadow Branco Azul e Amarelo",
           "descricao": "Nike Air Force 1 Low Shadow Branco Azul e Amarelo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Nike Air Force 1 Low Shadow Branco Azul e Amarelo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Nike Air Force 1 Low Shadow 白蓝黄 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40678,7 +40678,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Rosa Amarelo e Roxo",
           "descricao": "Air Force 1 Shadow Rosa Amarelo e Roxo - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Rosa Amarelo e Roxo combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 粉黄紫 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40723,7 +40723,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Amarelo Verde e Vermelho",
           "descricao": "Air Force 1 Shadow Amarelo Verde e Vermelho - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Amarelo Verde e Vermelho combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 黄绿红 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40768,7 +40768,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco e Rosa",
           "descricao": "Air Force 1 Shadow Branco e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白粉绿 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40812,7 +40812,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Azul e Vermelho",
           "descricao": "Air Force 1 Shadow Branco Azul e Vermelho - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Azul e Vermelho combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白蓝红 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40857,7 +40857,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco e Prata",
           "descricao": "Air Force 1 Shadow Branco e Prata - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco e Prata combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白银 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40901,7 +40901,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Cinzento e Dourado",
           "descricao": "Air Force 1 Shadow Branco Cinzento e Dourado - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Cinzento e Dourado combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白灰金 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40946,7 +40946,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco e Rosa",
           "descricao": "Air Force 1 Shadow Branco e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白粉绿 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -40990,7 +40990,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco e Marrom",
           "descricao": "Air Force 1 Shadow Branco e Marrom - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco e Marrom combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白棕粉 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41034,7 +41034,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco e Rosa",
           "descricao": "Air Force 1 Shadow Branco e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白粉紫 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41078,7 +41078,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "NK Air Force 1 Shadow Macaroon",
           "descricao": "NK Air Force 1 Shadow Macaroon - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O NK Air Force 1 Shadow Macaroon combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/NK Air Force 1 Shadow 马卡龙多彩拼接 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41122,7 +41122,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Rosa Esmaltado",
           "descricao": "Air Force 1 Shadow Rosa Esmaltado - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Rosa Esmaltado combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 釉粉 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41165,7 +41165,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Laser Patchwork",
           "descricao": "Air Force 1 Shadow Laser Patchwork - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Laser Patchwork combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 镭射拼接 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41209,7 +41209,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 ShadowVerde Claro Rosa Patchwork",
           "descricao": "Air Force 1 ShadowVerde Claro Rosa Patchwork - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 ShadowVerde Claro Rosa Patchwork combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow淡绿粉拼接 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41253,7 +41253,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 ShadowBranco Laranja Azul Patchwork",
           "descricao": "Air Force 1 ShadowBranco Laranja Azul Patchwork - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 ShadowBranco Laranja Azul Patchwork combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow白橙蓝拼接 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41298,7 +41298,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Cinzento Preto Verde Patchwork",
           "descricao": "Air Force 1 Shadow Cinzento Preto Verde Patchwork - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Cinzento Preto Verde Patchwork combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 灰黑绿拼接 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41343,7 +41343,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Azul e Rosa",
           "descricao": "Air Force 1 Shadow Branco Azul e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Azul e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白蓝粉 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41388,7 +41388,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Cinzento Azul Meia Noite",
           "descricao": "Air Force 1 Shadow Cinzento Azul Meia Noite - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Cinzento Azul Meia Noite combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 午夜灰蓝 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41432,7 +41432,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Azul Intenso",
           "descricao": "Air Force 1 Shadow Azul Intenso - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Azul Intenso combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 湛蓝 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41476,7 +41476,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Branco Amarelo e Rosa",
           "descricao": "Air Force 1 Shadow Branco Amarelo e Rosa - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Branco Amarelo e Rosa combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白黄粉 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41521,7 +41521,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "NK WMNS Air Force 1 Shadow 3M Reflexo Leve Alto Baixo Versatil",
           "descricao": "NK WMNS Air Force 1 Shadow 3M Reflexo Leve Alto Baixo Versatil - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O NK WMNS Air Force 1 Shadow 3M Reflexo Leve Alto Baixo Versatil combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/NK WMNS Air Force 1 Shadow 3M反光 轻量增高低帮百搭板鞋 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41565,7 +41565,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow Macaroon",
           "descricao": "Air Force 1 Shadow Macaroon - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow Macaroon combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow 白橙马卡龙 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41609,7 +41609,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Air Force 1 Shadow",
           "descricao": "Air Force 1 Shadow - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O Air Force 1 Shadow combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/Air Force 1 Shadow _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41653,7 +41653,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "NK WMNS Air Force 1 Shadow",
           "descricao": "NK WMNS Air Force 1 Shadow - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O NK WMNS Air Force 1 Shadow combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/NK WMNS Air Force 1 Shadow _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41697,7 +41697,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "NK Air Force 1 Shadow AF1",
           "descricao": "NK Air Force 1 Shadow AF1 - modelo exclusivo Air Force 1 Shadow.",
           "descricaoLonga": "O NK Air Force 1 Shadow AF1 combina o design classico da Air Force 1 Shadow com estilo moderno. Fabricado em couro premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-          "preco": 55.99,
+          "preco": 62.99,
           "precoAntigo": 99.99,
           "imagem": "/images/NK Air Force 1 Shadow AF1 _ Yupoo - 01.jpg",
           "imagensAdicionais": [
@@ -41741,7 +41741,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "NK Dunk Low Triple White",
             "descricao": "NK Dunk Low Triple White - modelo clássico Dunk SB em branco total.",
             "descricaoLonga": "O NK Dunk Low Triple White combina o design icónico da Dunk SB com conforto e durabilidade. Fabricado em couro premium, perfeito para uso diário e estilo casual.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/c0ea59a3.jpg",
             "imagensAdicionais": [
@@ -41771,7 +41771,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Nike Dunk Jarritos",
             "descricao": "Nike Dunk Jarritos - edição especial com cores vibrantes.",
             "descricaoLonga": "O Nike Dunk Jarritos combina conforto e estilo com uma paleta de cores inspirada na bebida clássica Jarritos. Fabricado em couro premium, ideal para uso diário e casual.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/f17eb17f.jpg",
             "imagensAdicionais": [
@@ -41800,7 +41800,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Nike Dunk Laser Orange",
             "descricao": "Nike Dunk Laser Orange - modelo Dunk SB em laranja intenso.",
             "descricaoLonga": "O Nike Dunk Laser Orange combina estilo arrojado com conforto, ideal para quem procura destaque. Couro premium e durabilidade garantida para uso diário e casual.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/4cdfcdef.jpg",
             "imagensAdicionais": [
@@ -41837,7 +41837,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Nike Dunk Panda Paisley",
             "descricao": "Nike Dunk Panda Paisley - edição Dunk SB com padrão paisley.",
             "descricaoLonga": "O Nike Dunk Panda Paisley oferece um design icónico inspirado no padrão paisley, com conforto e durabilidade em couro premium. Ideal para colecionadores e amantes de Dunk SB.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/dbd19198.jpg",
             "imagensAdicionais": [
@@ -41869,7 +41869,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
             "nome": "Nike Dunk Vintage Green",
             "descricao": "Nike Dunk Vintage Green - Dunk SB com tonalidade verde vintage.",
             "descricaoLonga": "O Nike Dunk Vintage Green combina o clássico design Dunk SB com um tom verde vintage, oferecendo conforto e durabilidade em couro premium. Perfeito para uso casual ou skate.",
-            "preco": 55.99,
+            "preco": 62.99,
             "precoAntigo": 99.99,
             "imagem": "/images/f4f93ae2.jpg",
             "imagensAdicionais": [
@@ -41901,7 +41901,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Dunk Grey Fog",
               "descricao": "Nike Dunk Grey Fog - Dunk SB em cinza clássico.",
               "descricaoLonga": "O Nike Dunk Grey Fog combina o estilo icónico da Dunk SB com conforto e durabilidade em couro premium. Ideal para skate ou uso casual.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/317bc981.jpg",
               "imagensAdicionais": [
@@ -41933,7 +41933,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Dunk Dark Grey",
               "descricao": "Nike Dunk Dark Grey - Dunk SB em tom cinza escuro.",
               "descricaoLonga": "O Nike Dunk Dark Grey oferece conforto e estilo clássico Dunk SB com couro premium durável. Ideal para uso diário ou skate.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/ab00cbe0.jpg",
               "imagensAdicionais": [
@@ -41962,7 +41962,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "Nike Dunk Blue White",
               "descricao": "Nike Dunk Blue White - edição Dunk SB em azul e branco.",
               "descricaoLonga": "O Nike Dunk Blue White combina conforto e durabilidade com um tom suave de azul e branco. Couro premium para uso diário e skate.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/b6e683c3.jpg",
               "imagensAdicionais": [
@@ -41990,7 +41990,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "NK Dunk Low Kentucky",
               "descricao": "NK Dunk Low Kentucky - Dunk SB em azul clássico.",
               "descricaoLonga": "O NK Dunk Low Kentucky oferece conforto e estilo icónico Dunk SB, com couro premium e durabilidade. Perfeito para skate e uso casual.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/7881b601.jpg",
               "imagensAdicionais": [
@@ -42019,7 +42019,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
               "nome": "NK Dunk Low Team Red",
               "descricao": "NK Dunk Low Team Red - Dunk SB com cores vermelhas intensas.",
               "descricaoLonga": "O NK Dunk Low Team Red combina estilo vibrante com conforto clássico Dunk SB, fabricado em couro premium. Ideal para skate e uso casual.",
-              "preco": 55.99,
+              "preco": 62.99,
               "precoAntigo": 99.99,
               "imagem": "/images/bb235e76.jpg",
               "imagensAdicionais": [
@@ -42048,7 +42048,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "NK Dunk Low White/Black",
                 "descricao": "NK Dunk Low White/Black - Dunk SB clássico em branco e preto.",
                 "descricaoLonga": "O NK Dunk Low White/Black combina conforto, durabilidade e estilo clássico Dunk SB em couro premium. Ideal para skate e uso casual.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/2e6c70ba.jpg",
                 "imagensAdicionais": [
@@ -42079,7 +42079,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "NK Dunk Low Light Violet",
                 "descricao": "NK Dunk Low Light Violet - Dunk SB em tons lilás claros.",
                 "descricaoLonga": "O NK Dunk Low Light Violet oferece conforto e estilo vibrante com couro premium durável. Perfeito para skate ou uso casual.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/f31b22cd.jpg",
                 "imagensAdicionais": [
@@ -42108,7 +42108,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
                 "nome": "NK Dunk Low Reverse Panda",
                 "descricao": "NK Dunk Low Reverse Panda - Dunk SB em preto e branco contrastante.",
                 "descricaoLonga": "O NK Dunk Low Reverse Panda combina estilo clássico com conforto e durabilidade. Couro premium para skate ou uso casual.",
-                "preco": 55.99,
+                "preco": 62.99,
                 "precoAntigo": 99.99,
                 "imagem": "/images/ea0df25e.jpg",
                 "imagensAdicionais": [
@@ -42135,7 +42135,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     "nome": "New Balance 9060 Rosa",
     "descricao": "New Balance 9060 Rosa - modelo exclusivo New Balance 9060.",
     "descricaoLonga": "O 9060 Rosa combina o design classico da New Balance 9060 com estilo moderno. Fabricado em materiais premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-    "preco": 55.99,
+    "preco": 62.99,
     "precoAntigo": 99.99,
     "imagem": "/images/9060 粉色 _ Yupoo - 01.jpg",
     "imagensAdicionais": [
@@ -42178,7 +42178,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     "nome": "Joe Freshgoods x NB9060 Pink",
     "descricao": "Joe Freshgoods x NB9060 - modelo exclusivo New Balance 9060.",
     "descricaoLonga": "O Joe Freshgoods x NB9060 combina o design classico da New Balance 9060 com estilo moderno. Fabricado em materiais premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-    "preco": 55.99,
+    "preco": 62.99,
     "precoAntigo": 99.99,
     "imagem": "/images/76b83b75.jpg",
     "imagensAdicionais": [
@@ -42222,7 +42222,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     "nome": "New Balance 9060 “Triple White”",
     "descricao": "New Balance 9060 “Triple White” - modelo exclusivo New Balance 9060.",
     "descricaoLonga": "O New Balance 9060 “Triple White” combina o design classico da New Balance 9060 com estilo moderno. Fabricado em materiais premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-    "preco": 55.99,
+    "preco": 62.99,
     "precoAntigo": 99.99,
     "imagem": "/images/ea16271d.jpg",
     "imagensAdicionais": [
@@ -42263,7 +42263,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     "nome": "NB 9060 Branco e Preto",
     "descricao": "NB 9060 Branco e Preto - modelo exclusivo New Balance 9060.",
     "descricaoLonga": "O NB 9060 Branco e Preto combina o design classico da New Balance 9060 com estilo moderno. Fabricado em materiais premium, oferece conforto e durabilidade para uso diario ou ocasioes casuais.",
-    "preco": 55.99,
+    "preco": 62.99,
     "precoAntigo": 99.99,
     "imagem": "/images/60e14944.jpg",
     "imagensAdicionais": [
@@ -42304,7 +42304,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "New Balance 9060 Concrete",
       "descricao": "New Balance 9060 Concrete - estilo urbano com design contemporâneo.",
       "descricaoLonga": "O New Balance 9060 Concrete apresenta um visual moderno com tons neutros de cinza e branco. Fabricado com materiais premium, oferece excelente conforto e estabilidade para o uso diário.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/818d3616.jpg",
       "imagensAdicionais": [
@@ -42338,7 +42338,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "New Balance 9060 Beige",
       "descricao": "New Balance 9060 Beige - conforto e estilo em tons suaves.",
       "descricaoLonga": "O New Balance 9060 Beige combina conforto e elegância, com um design minimalista em tons bege. Ideal para quem procura um visual moderno e sofisticado.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/2bba5672.jpg",
       "imagensAdicionais": [
@@ -42370,7 +42370,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "New Balance 9060 Eclipse",
       "descricao": "New Balance 9060 Eclipse - estilo arrojado em tons escuros.",
       "descricaoLonga": "O New Balance 9060 Eclipse combina tons escuros de azul e cinza com um design robusto e moderno. Perfeito para quem procura um visual ousado e confortável.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/47c21b16.jpg",
       "imagensAdicionais": [
@@ -42403,7 +42403,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "nome": "New Balance 9060 Nori",
       "descricao": "New Balance 9060 Nori - estilo moderno com tons verdes subtis.",
       "descricaoLonga": "O New Balance 9060 Nori combina tonalidades de verde e cinza, com materiais premium que garantem conforto e durabilidade. Ideal para quem procura um visual versátil e sofisticado.",
-      "preco": 55.99,
+      "preco": 62.99,
       "precoAntigo": 99.99,
       "imagem": "/images/9fda332d.jpg",
       "imagensAdicionais": [
@@ -42434,7 +42434,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "New Balance 9060 Rose Pink",
         "descricao": "New Balance 9060 Rose Pink - um toque de cor e conforto.",
         "descricaoLonga": "O New Balance 9060 Rose Pink destaca-se pelo seu design vibrante e moderno. Feito com materiais premium, combina estilo desportivo e conforto para o dia a dia.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/a79d14f8.jpg",
         "imagensAdicionais": [
@@ -42468,7 +42468,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "New Balance 9060 Grey Moonbeam",
         "descricao": "New Balance 9060 Grey Moonbeam - elegância em tons neutros.",
         "descricaoLonga": "O New Balance 9060 Grey Moonbeam oferece um visual limpo e sofisticado, ideal para combinações casuais. O conforto premium e o design contemporâneo tornam-no indispensável.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/7a7845c9.jpg",
         "imagensAdicionais": [
@@ -42500,7 +42500,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "New Balance 9060 Boston College",
         "descricao": "New Balance 9060 Boston College - inspirado no espírito universitário.",
         "descricaoLonga": "O New Balance 9060 Boston College combina cores clássicas com um design inovador. Inspirado no estilo universitário americano, é perfeito para quem gosta de um visual autêntico.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/b456f20f.jpg",
         "imagensAdicionais": [
@@ -42534,7 +42534,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "nome": "New Balance 9060 Crystal Pink",
         "descricao": "New Balance 9060 Crystal Pink - leve, moderno e elegante.",
         "descricaoLonga": "O New Balance 9060 Crystal Pink traz um visual feminino e contemporâneo. A paleta de tons rosa pastel e o conforto da sola tornam-no ideal para uso diário.",
-        "preco": 55.99,
+        "preco": 62.99,
         "precoAntigo": 99.99,
         "imagem": "/images/cdf4ff5c.jpg",
         "imagensAdicionais": [
@@ -42699,7 +42699,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "nome": "Match Ball – Bundesliga 2025/26",
           "descricao": "Bola oficial de jogo da Bundesliga 2025/26. Tecnologia alemã de alta qualidade.",
           "descricaoLonga": "A bola oficial da Bundesliga 2025/26 combina precisão alemã com inovação tecnológica. Fabricada com os mais altos padrões de qualidade, oferece excelente desempenho e durabilidade. Design exclusivo que representa a elite do futebol alemão.",
-          "preco": 32.99,
+          "preco": 39.99,
           "imagem": "/images/448_300f4fe0-7cb4-41b9-99b8-2db16062f433.webp",
           "categoria": "bolas",
           "liga": "bundesliga",
@@ -42715,7 +42715,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "categoria": "campus",
           "subcategoria": "sneakers",
           "marca": "Adidas",
-          "preco": 39.99,
+          "preco": 46.99,
           "precoAntigo": 89.99,
           "imagem": "/images/29USD Adidas Originals Campus 00s 学院系列ID HL441301126 Size 36~45半货号 IG5995 - 01.jpeg",
           "imagensAdicionais": [
@@ -42735,7 +42735,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "categoria": "campus",
           "subcategoria": "sneakers",
           "marca": "Adidas",
-          "preco": 39.99,
+          "preco": 46.99,
           "precoAntigo": 89.99,
           "imagem": "/images/33USD Korn x Adidas originals Campus 00S 阿迪达斯 低帮 联名黑白货号 IG0792 05HHLL121125 Size - 01.jpeg",
           "imagensAdicionais": [
@@ -42755,7 +42755,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "categoria": "campus",
           "subcategoria": "sneakers",
           "marca": "Adidas",
-          "preco": 39.99,
+          "preco": 46.99,
           "precoAntigo": 89.99,
           "imagem": "/images/33USD Adidas originals Campus 00S Shoes 阿迪达斯 低帮 粉色货号 ID6139 05HHLL121124 Size 36 - 01.jpeg",
           "imagensAdicionais": [
@@ -42775,7 +42775,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
           "categoria": "campus",
           "subcategoria": "sneakers",
           "marca": "Adidas",
-          "preco": 69.99,
+          "preco": 76.99,
           "precoAntigo": 129.99,
           "imagem": "/images/56USD AD Originals Campus x BAD BUNNY 坏痞货号 GY96936C HL872501118 Size 36~45半 - 01.jpeg",
           "imagensAdicionais": [
@@ -42795,7 +42795,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s 学院系列ID HL441301116 Size 36~45半货号 H03472 - 01.jpeg",
       "imagensAdicionais": [
@@ -42815,7 +42815,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/27USD Adidas Originals Campus 00s 学院系列 面包风经ID HL591201104 Size 36~40半货号 ID7037 - 01.jpeg",
       "imagensAdicionais": [
@@ -42835,7 +42835,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s 学院系列 面包风经典ID HL141301107 Size 36~45半货号 HQ8711 - 01.jpeg",
       "imagensAdicionais": [
@@ -42855,7 +42855,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/27USD Korn x Adidas originals Campus 00S 阿迪达斯 低帮 联名黑白货号 IG0792HL771201208 Size 3 - 01.jpeg",
       "imagensAdicionais": [
@@ -42875,7 +42875,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/27USD Adidas originals Campus 00S Shoes 阿迪达斯 低帮 橄榄绿货号 ID3424 HL051201205 Size 36 - 01.jpeg",
       "imagensAdicionais": [
@@ -42895,7 +42895,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s 学院系列 面包风经典复古低帮百搭休闲运动板鞋 货号 H03471 ID HL44130110 - 01.jpeg",
       "imagensAdicionais": [
@@ -42915,7 +42915,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s 学院系列ID HL441301030 Size 36~45半货号 HQ8707 - 01.jpeg",
       "imagensAdicionais": [
@@ -42935,7 +42935,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/20USD Adidas Originals Campus 00s 学院系列 面包风货号 HP6395 ID HL87901025 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -42955,7 +42955,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s 学院系列 面包风经典复古低帮百搭休闲运动板鞋ID HL141301018 Size 36~4 - 01.jpeg",
       "imagensAdicionais": [
@@ -42975,7 +42975,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s 学院系列 面包风经典复古低帮百搭货号 HP6286 ID HL051301018 Size - 01.jpeg",
       "imagensAdicionais": [
@@ -42995,7 +42995,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/26USD Adidas Originals Campus 00s ID2070 ID HL871151017 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43015,7 +43015,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 89.99,
       "imagem": "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43035,7 +43035,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/26USD AD Originals Campus 80s 学院系列经典复古低帮百搭休闲运动板鞋货号 IG2389 HL871151013 Size 36~45 - 01.jpeg",
       "imagensAdicionais": [
@@ -43055,7 +43055,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/26USD Adidas Originals Campus 00s 学院系列 面包ID HL141151015 Size 36~45半货号 HP6396 - 01.jpeg",
       "imagensAdicionais": [
@@ -43075,7 +43075,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 49.99,
+      "preco": 56.99,
       "precoAntigo": 99.99,
       "imagem": "/images/40USD Adidas Campus ID HL491801014 Size 36~45半货号 IE2174 - 01.jpeg",
       "imagensAdicionais": [
@@ -43095,7 +43095,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/31USD Adidas Originals Campus 00s 学院系列 面包风经典复古低帮百搭休闲运动板鞋HL871401014 Size 36~45半货 - 01.jpeg",
       "imagensAdicionais": [
@@ -43115,7 +43115,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/26USD Adidas Originals Campus 00s 学院系列 面包风经典复古低帮百搭休闲运动板鞋 货号 IE4740 ID HL11115101 - 01.jpeg",
       "imagensAdicionais": [
@@ -43135,7 +43135,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/26USD Adidas originals Campus 00 W阿迪达斯 面包鞋 低帮 墨绿货号 HP6395 HL141151010 Size 36~45 - 01.jpeg",
       "imagensAdicionais": [
@@ -43155,7 +43155,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/22USD Adidas Originals Campus 00s 学院系列 面包风经典复古低帮百搭休闲运动板鞋HL111001011 Size 36~39半货 - 01.jpeg",
       "imagensAdicionais": [
@@ -43174,7 +43174,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/b83463db.jpeg",
       "imagensAdicionais": ["/images/bb35cdcf.jpeg", "/images/bfdbbeb6.jpeg", "/images/e1b38f14.jpeg", "/images/d5190122.jpeg", "/images/53184c1f.jpeg", "/images/f43ca19a.jpeg", "/images/ce418440.jpeg",]
@@ -43185,7 +43185,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 44.99,
+      "preco": 51.99,
       "precoAntigo": 89.99,
       "imagem": "/images/33USD Adidas originals Campus 00S HP2924 05HHLL120811 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43205,7 +43205,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/26USD Originals Campus 00s HQ8707 ID HL111150717 Size 36~45 - 01.jpeg",
       "imagensAdicionais": [
@@ -43225,7 +43225,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/25USD Adidas Originals Campus 00s GY9472 HL351100301 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43245,7 +43245,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/27USD Adidas Originals Campus 00s HL051200228 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43265,7 +43265,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/33USD Adidas originals Campus 00S H03471 05HHLL120810 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43285,7 +43285,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/27USD Adidas originals Campus 00S HP6395 02HHLL120624 Size 36~40半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43305,7 +43305,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/27USD Adidas originals Campus 00S HQ8709 02HHLL120911 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43325,7 +43325,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 49.99,
+      "preco": 56.99,
       "precoAntigo": 99.99,
       "imagem": "/images/36USD Adidas originals Campus 凭06HHLL120420 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43345,7 +43345,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 70.00,
       "imagem": "/images/33USD Adidas originals Campus 00S HR1467 05HHLL120918 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43365,7 +43365,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 46.99,
+      "preco": 53.99,
       "precoAntigo": 99.99,
       "imagem": "/images/36USD Adidas Originals Campus 00s HL871600911 Size 36~45半货号 ID7716 - 01.jpeg",
       "imagensAdicionais": [
@@ -43385,7 +43385,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas Campus Bold 00S HL051200326 Size 35~45 - 01.jpeg",
       "imagensAdicionais": [
@@ -43405,7 +43405,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 49.99,
+      "preco": 56.99,
       "precoAntigo": 89.99,
       "imagem": "/images/42USD Adidas Campus Light ID7956 HL871901021 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43425,7 +43425,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/27USD Adidas originals Campus 00S HR1466 02HHLL120917 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43445,7 +43445,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/27USD adidas Originals Campus 00s HL051200401 Size 36~40半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43465,7 +43465,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/27USD Adidas originals Campus 00s 02HHLL120324 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43485,7 +43485,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s HL871301021 Size 36~45半货号 GY0042 - 01.jpeg",
       "imagensAdicionais": [
@@ -43505,7 +43505,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/25USD Adidas Originals Campus 00s IF0511ID HL211101008 Size 36~45 - 01.jpeg",
       "imagensAdicionais": [
@@ -43525,7 +43525,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 45.99,
+      "preco": 52.99,
       "precoAntigo": 89.99,
       "imagem": "/images/33USD Bad Bunny x Adidas Campus Light HL141500330 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43545,7 +43545,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 52.99,
+      "preco": 59.99,
       "precoAntigo": 99.99,
       "imagem": "/images/42USD BAD BUNNY ADIDAS CAMPUS FZ5823 HL051900303 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43565,7 +43565,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 46.99,
+      "preco": 53.99,
       "precoAntigo": 89.99,
       "imagem": "/images/36USD Adidas originals Campus 00S H03470 06HHLL120712 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43585,7 +43585,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/31USD Adidas originals HandBall Spezial 阿迪达斯 低帮 白黑货号 IF3741 04HHLL121027 Size 36 - 06.jpeg",
       "imagensAdicionais": [
@@ -43600,7 +43600,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/79f1da40.jpeg",
       "imagensAdicionais": [
@@ -43616,7 +43616,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/27USD Adidas originals Campus 00S GY0037 02HHLL120925 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43636,7 +43636,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/27USD Adidas originals Campus 00s 051200508 Size 35~45 - 01.jpeg",
       "imagensAdicionais": [
@@ -43656,7 +43656,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/27USD Adidas originals Campus 00S H03472 - 01.jpeg",
       "imagensAdicionais": [
@@ -43676,7 +43676,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/27USD Adidas originals Campus 00S HQ4569 - 01.jpeg",
       "imagensAdicionais": [
@@ -43696,7 +43696,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 46.99,
+      "preco": 53.99,
       "precoAntigo": 77.99,
       "imagem": "/images/33USD Adidas originals Campus 00s GX9405 - 01.jpeg",
       "imagensAdicionais": [
@@ -43716,7 +43716,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 46.99,
+      "preco": 53.99,
       "precoAntigo": 89.99,
       "imagem": "/images/36USD Adidas originals Campus 00S IE4740 - 01.jpeg",
       "imagensAdicionais": [
@@ -43736,7 +43736,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 59.99,
       "imagem": "/images/29USD Adidas Campus 00s GY0042 HL141300728 - 01.jpeg",
       "imagensAdicionais": [
@@ -43756,7 +43756,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 46.99,
+      "preco": 53.99,
       "precoAntigo": 72.00,
       "imagem": "/images/36USD Adidas Originals Campus 00s HQ9072 - 01.jpeg",
       "imagensAdicionais": [
@@ -43776,7 +43776,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas Campus Bold 00S HQ8711 - 01.jpeg",
       "imagensAdicionais": [
@@ -43796,7 +43796,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas originals Campus 00 W HL051200411 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43816,7 +43816,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/29USD Adidas originals Campus 00 W HP6395 HL141300924 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43836,7 +43836,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 89.99,
       "imagem": "/images/33USD SPORTY &amp; RICH x adidas originals Campus Campus 80s 阿迪达斯 低帮05HHLL120416 - 01.jpeg",
       "imagensAdicionais": [
@@ -43856,7 +43856,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/25USD adidas Originals Campus 00s HQ8707 - 01.jpeg",
       "imagensAdicionais": [
@@ -43876,7 +43876,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas Campus 80S HO3471 - 01.jpeg",
       "imagensAdicionais": [
@@ -43896,7 +43896,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/33USD Adidas Campus 00s GY4581 - 01.jpeg",
       "imagensAdicionais": [
@@ -43916,7 +43916,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     "categoria": "campus",
     "subcategoria": "sneakers",
     "marca": "Adidas",
-    "preco": 39.99,
+    "preco": 46.99,
     "precoAntigo": 89.99,
     "imagem": "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮 卡其色货号 HP2924 02HHLL1221013 Size 36~45半 - 01.jpeg",
     "imagensAdicionais": [
@@ -43936,7 +43936,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 89.99,
       "imagem": "/images/33USD Adidas originals Campus 00S HQ8710 05HHLL121009 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43956,7 +43956,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s ID7028ID HL141301009 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43976,7 +43976,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas originals Campus 00S 阿迪达斯 低帮货号 IF2989 02HHLL121003 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -43996,7 +43996,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas Originals Campus 00s 学院系列 面包风ID HL141150928 Size 36~45半货号 HQ3472 - 01.jpeg",
       "imagensAdicionais": [
@@ -44016,7 +44016,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/25USD Adidas Originals Campus 00s 学院系列 面包风经ID HL111050927 Size 36~45半货号 HQ8708 - 01.jpeg",
       "imagensAdicionais": [
@@ -44036,7 +44036,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas originals Campus 00s 02HHLL120325 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -44056,7 +44056,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 46.99,
+      "preco": 53.99,
       "precoAntigo": 89.99,
       "imagem": "/images/36USD adidas Campus 00s HP6286 06HHLL120721 - 01.jpeg",
       "imagensAdicionais": [
@@ -44076,7 +44076,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 46.99,
+      "preco": 53.99,
       "precoAntigo": 89.99,
       "imagem": "/images/150 公司级adidas Originals Campus 80s 米白绿鞋 官方货号GY4581 - 01.jpeg",
       "imagensAdicionais": [
@@ -44096,7 +44096,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/26USD Adidas Originals Campus 00s GY6433 HL141150818 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -44116,7 +44116,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/27USD Adidas Originals Campus 00s IE2176 ID HL401200815 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -44136,7 +44136,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s IE4740 ID HL141300810 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -44156,7 +44156,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "campus",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/29USD Adidas Originals Campus 00s HQ8706 ID HL141300809 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -44176,7 +44176,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",  
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/1b5b980e.jpg",
       "imagensAdicionais": [
@@ -44197,7 +44197,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/f606b1a4.jpg",
         "imagensAdicionais":[
@@ -44217,7 +44217,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/9b9b6cce.jpg",
         "imagensAdicionais": [
@@ -44236,7 +44236,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/1997969c.jpg",
         "imagensAdicionais": [
@@ -44254,7 +44254,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/10f8d6fc.jpg",
         "imagensAdicionais": 
@@ -44273,7 +44273,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/52526a83.jpg",
         "imagensAdicionais": 
@@ -44293,7 +44293,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/387eb137.jpg",
         "imagensAdicionais": 
@@ -44316,7 +44316,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/61b8225f.jpg",
         "imagensAdicionais": 
@@ -44335,7 +44335,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/6fcf4d80.jpg",
         "imagensAdicionais": 
@@ -44352,7 +44352,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/764b9393.jpg",
         "imagensAdicionais": 
@@ -44371,7 +44371,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/dcc39012.jpg",
         "imagensAdicionais": 
@@ -44390,7 +44390,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "spezial",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 77.99,
         "imagem": "/images/7e3ac75f.jpg",
         "imagensAdicionais": 
@@ -44410,7 +44410,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/💰USD29 Adidas 棕蓝 JH5435 - 01.jpeg",
       "imagensAdicionais": [
@@ -44430,7 +44430,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/💰USD26 Adidas 蓝白 KI5933 3 - 01.jpeg",
       "imagensAdicionais": [
@@ -44450,7 +44450,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/💰USD29 Adidas 墨绿 JP1555 3 - 01.jpeg",
       "imagensAdicionais": [
@@ -44470,7 +44470,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/💰USD29 Adidas 酒红 JP1555 - 01.jpeg",
       "imagensAdicionais": [
@@ -44490,7 +44490,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 77.99,
       "imagem": "/images/💰USD29 Adidas 深蓝 JP1555 - 01.jpeg",
       "imagensAdicionais": [
@@ -44510,7 +44510,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 49.99,
+      "preco": 56.99,
       "precoAntigo": 99.99,
       "imagem": "/images/US$40 IF8913 Adidas Handball Spezial SIZE 35-45 - 01.jpeg",
       "imagensAdicionais": [
@@ -44530,7 +44530,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 73.99,
       "imagem": "/images/US$26 IH2612 Size 36-45 Adidas HANDBALL SPEZIAL - 01.jpg",
       "imagensAdicionais": [
@@ -44550,7 +44550,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/US$29 IE3710 Size 36-45 Adidas HANDBALL SPEZIAL - 01.jpg",
       "imagensAdicionais": [
@@ -44570,7 +44570,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 59.99,
       "imagem": "/images/US$29 IH2148 Size 36-45 Adidas HANDBALL SPEZIAL - 01.jpg",
       "imagensAdicionais": [
@@ -44590,7 +44590,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 87.99,
       "imagem": "/images/US$33 IH7298 Size 36-45 Adidas HANDBALL SPEZIAL - 01.jpg",
       "imagensAdicionais": [
@@ -44610,7 +44610,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 87.99,
       "imagem": "/images/US$33 IH7299 Size 36-45 Adidas HANDBALL SPEZIAL - 01.jpg",
       "imagensAdicionais": [
@@ -44630,7 +44630,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/Price US$29 Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑 低邦板鞋男女同款货号 GY7406 HL771 - 01.jpeg",
       "imagensAdicionais": [
@@ -44650,7 +44650,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/Price US$31 Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑 低邦板鞋男女同款货号 IF6562 04HHL - 01.jpeg",
       "imagensAdicionais": [
@@ -44670,7 +44670,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/29USD Adidas originals Handball Spezial 阿迪达斯 低帮 灰黑货号 IF6562 HL051301028 Size 35~ - 01.jpeg",
       "imagensAdicionais": [
@@ -44685,7 +44685,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/31USD Adidas originals HandBall Spezial 阿迪达斯 低帮 白黑货号 IF3741 04HHLL121027 Size 36 - 01.jpeg",
       "imagensAdicionais": [
@@ -44704,7 +44704,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 54.99,
       "imagem": "/images/27USD Adidas originals Handball Spezial 阿迪达斯 低帮 棕白色 货号 IF8914 02HHLL121016 Size - 01.jpeg",
       "imagensAdicionais": [
@@ -44724,7 +44724,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/31USD Adidas originals HandBall Spezial IE3402 04HHLL121006 Size 36~45半 - 01.jpeg",
       "imagensAdicionais": [
@@ -44744,7 +44744,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "imagem": "/images/30USD Ad Handball Spezial BD7631 HL051300813 - 01.jpeg",
       "imagensAdicionais": [
@@ -44764,7 +44764,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 87.99,
       "tamanhos": "39-45",
       "imagem": "/images/33USD Ad Handball Spezial BD3570 SIZE 39-45 - 01.jpg",
@@ -44785,7 +44785,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 87.99,
       "tamanhos": "39-45",
       "imagem": "/images/33USD Ad Handball Spezial BD7633 SIZE 39-45 - 01.jpg",
@@ -44806,7 +44806,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 87.99,
       "tamanhos": "39-45",
       "imagem": "/images/33USD Ad Handball Spezial BD7637 SIZE 39-45 - 01.jpg",
@@ -44827,7 +44827,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 87.99,
       "tamanhos": "39-45",
       "imagem": "/images/33USD Ad Handball Spezial DB7635 SIZE 39-45 - 01.jpg",
@@ -44848,7 +44848,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 43.99,
+      "preco": 50.99,
       "precoAntigo": 87.99,
       "tamanhos": "39-45",
       "imagem": "/images/33USD Ad Handball Spezial DB7636 SIZE 39-45 - 01.jpg",
@@ -44869,7 +44869,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "spezial",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 47.99,
+      "preco": 54.99,
       "precoAntigo": 95.99,
       "tamanhos": "36-44",
       "imagem": "/images/38USD DB3570 36-44 Adidas Handball Spezial - 01.jpg",
@@ -44890,7 +44890,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/29USD Adidas Samba XLG编码 HL051300929 Size 36~45半货号 IE1379 - 01.jpeg",
@@ -44910,7 +44910,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/27USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯 白绿联货号 HQ6075 编码 HL05120 - 01.jpeg",
@@ -44932,7 +44932,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨低邦板鞋男女同款货号 CQ2640 HL831401019 - 01.jpeg",
@@ -44953,7 +44953,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/20USD Adidas Samba Vegan 三叶草 性价比天花板 桑巴纪念日系列 ID HL11901016 Size 36~45半货号 IG7572 - 01.jpeg",
@@ -44974,7 +44974,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 07.jpeg",
@@ -44988,7 +44988,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 08.jpeg",
@@ -45002,7 +45002,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 09.jpeg",
@@ -45016,7 +45016,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 01.jpeg",
@@ -45031,7 +45031,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/20USD Adidas Originals Samba Vegan OG桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋 货号 IG1025 HL11901014 - 10.jpeg",
@@ -45047,7 +45047,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/22USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL621001014 Size 36~45半货号 ID2056 - 01.jpeg",
@@ -45069,7 +45069,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 01.jpeg",
@@ -45083,7 +45083,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 05.jpeg",
@@ -45097,7 +45097,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/31USD Adidas Samba XLG Low 阿迪达斯 低帮 厚底黑白 舒适百搭潮流防滑耐磨货号 IE1379 HL831401010 Size 36~ - 06.jpeg",
@@ -45111,7 +45111,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 01.jpeg",
@@ -45123,7 +45123,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/20USD Adidas originals Samba Og ID2055 HL21851005 Size 36~45 - 01.jpeg",
@@ -45144,7 +45144,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "36-45",
       "imagem": "/images/25USD Adidas Originals Samba ID HL771100929 Size 36~45半货号 ID2784 - 01.jpeg",
@@ -45165,7 +45165,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 01.jpeg",
@@ -45179,7 +45179,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 12.jpeg",
@@ -45191,7 +45191,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 10.jpeg",
@@ -45203,7 +45203,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 09.jpeg",
@@ -45215,7 +45215,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/20USD adidas Originals Samba OG 桑巴舞系列绅士德GY1889 ID HL31800928 Size 36~44 - 08.jpeg",
@@ -45229,7 +45229,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
     "categoria": "samba",
     "subcategoria": "sneakers",
     "marca": "Adidas",
-    "preco": 39.99,
+    "preco": 46.99,
     "precoAntigo": 79.99,
     "tamanhos": "",
     "imagem": "/images/29USD Originals Samba OG 桑巴舞系列绅士德训足球风百搭低帮休闲运动板鞋“皮革黑白金焦糖底”IF0642ID HL11130928 Siz - 01.jpeg",
@@ -45249,7 +45249,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "35-45",
         "imagem": "/images/27USD Adidas Originals Samba Vegan OG桑巴舞系列绅士货号 GX2913 编码 HL051200925 Size 35~45 - 01.jpeg",
@@ -45270,7 +45270,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 59.99,
         "tamanhos": "36-45",
         "imagem": "/images/20USD Wales Bonner x adidas originals Samba 板鞋 AdidasOriginalsID HL20800924 Size - 01.jpeg",
@@ -45291,7 +45291,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "",
         "imagem": "/images/22USD Adidas originals Samba Og ID2055 HL201000924 Size 36~45半 - 01.jpeg",
@@ -45304,7 +45304,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "",
         "imagem": "/images/22USD Adidas originals Samba Og ID2055 HL201000924 Size 36~45半 - 06.jpeg",
@@ -45317,7 +45317,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 49.99,
+        "preco": 56.99,
         "precoAntigo": 99.99,
         "tamanhos": "36-45",
         "imagem": "/images/36USD AD Originals Samba x Wales Bonner 联名复古低帮休闲运动慢跑鞋 实拍上架货号 ID0217 HL401600816 - 01.jpeg",
@@ -45338,7 +45338,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-45",
         "imagem": "/images/22USD SPORTY &amp; RICH x Adidas originals Samba OG 阿迪达斯货号 IE6975 HL351000806 Si - 01.jpeg",
@@ -45359,7 +45359,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/25USD Adidas Originals Samba 货号 GV8358 ID HL111100805 Size 36~45半 - 01.jpeg",
@@ -45372,7 +45372,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/25USD Adidas Originals Samba 货号 GV8358 ID HL111100805 Size 36~45半 - 06.jpeg",
@@ -45385,7 +45385,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-45",
         "imagem": "/images/20USD Adidas Original SambaO Classic 复古单品 复古HL11901020 Size 36~45半货号 ID7339 - 01.jpeg",
@@ -45406,7 +45406,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-45",
         "imagem": "/images/27USD Adidas originals Samba OG 阿迪达斯 低帮 雨中华尔兹货号 B75807 02HHLL121019 Size 36~45半 - 01.jpeg",
@@ -45427,7 +45427,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-45",
         "imagem": "/images/27USD Adidas Samba VEGAN HL191200927 Size 36~45半货号 HP9085 - 01.jpeg",
@@ -45448,7 +45448,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-45",
         "imagem": "/images/25USD Adidas Originals Samba Vegan OG”SPD“桑巴舞ID HL771100925 Size 36~45半货号 GX6925 - 01.jpeg",
@@ -45469,7 +45469,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "samba",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 79.99,
       "tamanhos": "",
       "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 08.jpeg",
@@ -45483,7 +45483,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-44",
         "imagem": "/images/27USD AD Originals Samba Classic Silver Metallic 桑巴舞系列绅士 H HL111201017 Size 36~4 - 01.jpeg",
@@ -45504,7 +45504,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "",
         "imagem": "/images/27USD Adidas originals Samba OG 德信Y2K 复古防滑耐磨低帮板鞋男女同款 货号 IG1024 HL051201012 Size - 01.jpeg",
@@ -45525,7 +45525,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "",
         "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 07.jpeg",
@@ -45537,7 +45537,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "",
         "imagem": "/images/27USD AdidaS Originals Samba Vegan OG桑 FW4455 HL051201006 Size 36~45半 - 06.jpeg",
@@ -45549,7 +45549,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "samba",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 69.99,
         "tamanhos": "36-45",
         "imagem": "/images/22USD Adidas Samba OG 三叶草桑巴纪念日系列 Adidas 近70年货号 IG5932 HL071001014 Size 36~45半 - 01.jpeg",
@@ -45570,7 +45570,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "S",
         "imagem": "/images/25USD Wales Bonner x A Didas Originals Samba 桑巴舞系列绅士德训货号 H06259 ID HL111101019 S - 01.jpeg",
@@ -45591,7 +45591,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 48.00,
         "tamanhos": "36-45",
         "imagem": "/images/24USD Adidas Originals Gazelle Indoor 三叶草复古防滑耐磨低帮板鞋货号 HQ8716ID HL091101103 Size - 01.jpeg",
@@ -45611,7 +45611,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 62.00,
         "tamanhos": "36-45",
         "imagem": "/images/Price US$31 Adidas originals Gazelle BB5478 04HHLL121204 Size 36~45半 - 01.jpeg",
@@ -45632,7 +45632,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 50.00,
         "tamanhos": "36-45",
         "imagem": "/images/Price US$25 Adidas Originals Gazelle Indoor 三叶草复古编码 HL771101128 Size 36~45半货号 BB - 01.jpeg",
@@ -45653,7 +45653,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 55.00,
         "tamanhos": "36-45",
         "imagem": "/images/Price US$27 Adidas originals Gazelle Indoor ”浅紫白“ID HL281201121 Size 36~45半货号 ID - 01.jpeg",
@@ -45674,7 +45674,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 50.00,
         "tamanhos": "36-45",
         "imagem": "/images/Price US$25 adidas Originals Gazelle HL771101118 Size 36~45半货号 BB5480 - 01.jpeg",
@@ -45695,7 +45695,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 62.00,
         "tamanhos": "36-45",
         "imagem": "/images/Price US$31 Adidas originals Gazelle Shoes 阿迪达斯 低帮 米白黑货号 IE0546 尺码 36-45带半码 04HH - 01.jpeg",
@@ -45716,7 +45716,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 58.00,
         "tamanhos": "35-45",
         "imagem": "/images/Price US$29 Adidas Originals Gazelle Indoor 三叶草复HL051301104 Size 35~45半货号 HQ8716 - 01.jpeg",
@@ -45737,7 +45737,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 55.00,
         "tamanhos": "36-45",
         "imagem": "/images/P💰US$27 KITH x Adidas originals Gazelle Indoor 阿迪达斯 低帮 白黑货号 IE257202HHLL121218 S - 01.jpeg",
@@ -45758,7 +45758,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 62.00,
         "tamanhos": "36-45",
         "imagem": "/images/31USD Adidas originals Gazelle 阿货号 IG3507 04HHLL121026 Size 36~45半 - 01.jpeg",
@@ -45779,7 +45779,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 54.00,
         "tamanhos": "36-45",
         "imagem": "/images/27USD Adidas originals Gazelle IF3233 01HHLL120924 Size 36~45半 - 01.jpeg",
@@ -45800,7 +45800,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 50.00,
         "tamanhos": "36-45",
         "imagem": "/images/25USD Adidas originals Gazelle W 阿迪达斯 低帮 米白绿 舒适休闲耐磨低帮板鞋 货号 IF3235 HL771100112 Si - 01.jpeg",
@@ -45821,7 +45821,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 48.99,
+        "preco": 55.99,
         "precoAntigo": 76.00,
         "tamanhos": "36-45",
         "imagem": "/images/38USD adidas Originals Gazelle INdoor 三叶草休闲防滑耐磨低帮板鞋ID HL051701018 Size 36~45半货号 - 01.jpeg",
@@ -45842,7 +45842,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 48.99,
+        "preco": 55.99,
         "precoAntigo": 76.00,
         "tamanhos": "35-45",
         "imagem": "/images/38USD adidas Originals Gazelle INdoID HL051701019 Size 35~45半官方货号 IG3507 - 01.jpeg",
@@ -45864,7 +45864,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 49.99,
+        "preco": 56.99,
         "precoAntigo": 79.99,
         "tamanhos": "N/A",
         "imagem": "/images/💰USD40 Adidas 粉色 JI2716 - 01.jpeg",
@@ -45885,7 +45885,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 50.00,
         "tamanhos": "36-45",
         "imagem": "/images/P💰US$25 Adidas Gazelle Indoor Trainers 百搭单品 90年代经典的复刻版!HL091101221 Size 36~45半货号 - 01.jpeg",
@@ -45906,7 +45906,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 54.00,
         "tamanhos": "36-45",
         "imagem": "/images/P💰US$27 Adidas Gazelle BoldID HL771201216 Size 36~45半 - 01.jpeg",
@@ -45926,7 +45926,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 62.00,
         "tamanhos": "36-40",
         "imagem": "/images/31USD Adidas Gazelle Bold w ID7056 ID HL011401006 Size 36~40半 - 01.jpeg",
@@ -45947,7 +45947,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 54.00,
         "tamanhos": "35.5-45",
         "imagem": "/images/P💰US$27 Adidas Gazelle Bold w 低帮复古百搭休闲运动板鞋 货号 IG3685 ID HL971201214 Size 35.5~45 - 01.jpeg",
@@ -45968,7 +45968,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "gazelle",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 54.00,
       "tamanhos": "35.5-45",
       "imagem": "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 01.jpeg",
@@ -45984,7 +45984,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "gazelle",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 54.00,
       "tamanhos": "35.5-45",
       "imagem": "/images/P💰US$27 Adidas Gazelle Bold w HQ6912ID HL571201209 Size 35.5~45半 - 06.jpeg",
@@ -46000,7 +46000,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
       "categoria": "gazelle",
       "subcategoria": "sneakers",
       "marca": "Adidas",
-      "preco": 39.99,
+      "preco": 46.99,
       "precoAntigo": 54.00,
       "tamanhos": "36-45",
       "imagem": "/images/P💰US$27 Adidas Originals Gazelle Indoor 复古三叶草防滑透编码 HL771201208 Size 36~45半货号 IE2 - 01.jpeg",
@@ -46021,7 +46021,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 49.99,
+        "preco": 56.99,
         "precoAntigo": 79.99,
         "tamanhos": "N/A",
         "imagem": "/images/💰USD35 Adidas 红白 JI2756 3 - 01.jpeg",
@@ -46042,7 +46042,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 45.99,
+        "preco": 52.99,
         "precoAntigo": 89.99,
         "tamanhos": "N/A",
         "imagem": "/images/💰USD35 Adidas 蓝白 JI2717.5 - 01.jpeg",
@@ -46063,7 +46063,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 54.99,
+        "preco": 61.99,
         "precoAntigo": 99.99,
         "tamanhos": "N/A",
         "imagem": "/images/💰USD44 Adidas 白黑lv LJ9901 3 - 01.jpeg",
@@ -46084,7 +46084,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 45.99,
+        "preco": 52.99,
         "precoAntigo": 79.99,
         "tamanhos": "N/A",
         "imagem": "/images/💰USD35 Adidas 白红kitty II0013 - 01.jpeg",
@@ -46105,7 +46105,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 54.99,
+        "preco": 61.99,
         "precoAntigo": 89.99,
         "tamanhos": "N/A",
         "imagem": "/images/💰USD44 Adidas 白灰 LJ9904 - 01.jpeg",
@@ -46126,7 +46126,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "N/A",
         "imagem": "/images/💰USD29 Adidas 蓝黄生胶 JR8029 3 - 01.jpeg",
@@ -46147,7 +46147,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "35-44, 45",
         "imagem": "/images/US$29 ID1008 Size 35-44 45Adidas GAZELLE INDOOR - 01.jpg",
@@ -46168,7 +46168,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "35-44, 45",
         "imagem": "/images/US$29 ID6104 Size 35-44 45Adidas GAZELLE - 01.jpg",
@@ -46189,7 +46189,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-45",
         "imagem": "/images/US$29 IF9734 Size 36-45BAD BUNNY Adidas GAZELLE INDOORR - 01.jpg",
@@ -46210,7 +46210,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-45",
         "imagem": "/images/US$29 IF9735 size 36-45BAD BUNNY ADIDAS GAZELLE INDOORR - 01.jpg",
@@ -46231,7 +46231,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "35-44",
         "imagem": "/images/US$31 IF9641 Size 35-44Adidas GAZELLE INDOOR KITH - 01.jpg",
@@ -46251,7 +46251,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "35-44",
         "imagem": "/images/US$33 IF9642 Size 35-44 Adidas GAZELLE INDOOR - 01.jpg",
@@ -46272,7 +46272,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-44",
         "imagem": "/images/US$33 IH5483 Size 36-44adidas GAZELLE INDOOR KITH - 01.jpg",
@@ -46293,7 +46293,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 39.99,
+        "preco": 46.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-44",
         "imagem": "/images/US$33 IH9986 Size 36-44adidas GAZELLE INDOOR KITH - 01.jpg",
@@ -46314,7 +46314,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 44.99,
+        "preco": 51.99,
         "precoAntigo": 79.99,
         "tamanhos": "36-44, 45",
         "imagem": "/images/US$35 JI2076 Size 36-44 45 Adidas GAZELLE - 01.jpg",
@@ -46335,7 +46335,7 @@ tags: ["liverpool", "2025/26", "conjunto", "infantil", "i"]
         "categoria": "gazelle",
         "subcategoria": "sneakers",
         "marca": "Adidas",
-        "preco": 51.99,
+        "preco": 58.99,
         "precoAntigo": 89.99,
         "tamanhos": "35-46",
         "imagem": "/images/US$40 IH0120 Size 35-46Adidas GAZELLE INDOOR KITH - 01.jpg",

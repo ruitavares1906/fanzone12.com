@@ -440,12 +440,12 @@ export default function CarrinhoPage() {
                                   className="relative w-20 h-20 lg:w-32 lg:h-32 rounded-xl overflow-hidden bg-muted flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity group"
                                   aria-label={`Ver imagem de ${item.nome} em grande`}
                                 >
-                                  <Image
-                                    src={item.imagem}
-                                    alt={item.nome}
+                              <Image
+                                src={item.imagem}
+                                alt={item.nome}
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform"
-                                  />
+                              />
                                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                                 </button>
 
