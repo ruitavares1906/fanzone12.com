@@ -57,3 +57,4 @@ if camisolas_problematicas:
 else:
     print("Nenhuma camisola problemática encontrada.")
 
+

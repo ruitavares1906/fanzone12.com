@@ -87,3 +87,4 @@ if fixed_count > 0:
 else:
     print("\nNenhuma camisola precisa ser corrigida.")
 
+

@@ -7504,6 +7504,52 @@ const produtosArray = ([
         "edicao_especial": false
       },
       {
+        "id": "bayern-munich-125th-anniversary-190th-oktoberfest-special",
+        "nome": "Bayern Munich 125th anniversary 190th Oktoberfest special",
+        "descricao": "Bayern Munich 125th anniversary 190th Oktoberfest special.",
+        "descricaoLonga": "Bayern Munich 125th anniversary 190th Oktoberfest special.",
+        "preco": 19.99,
+        "precoAntigo": 29.99,
+        "imagem": "/images/5b72204d.jpg",
+        "imagensAdicionais": [
+          "/images/4afc8af0.jpg"
+        ],
+        "categoria": "clubes",
+        "clube": "bayern-munich",
+        "liga": "bundesliga",
+        "temporada": "25/26",
+        "cor": "principal",
+        "material": "Poliéster",
+        "marca": "Nike",
+        "avaliacao": 4.8,
+        "numAvaliacoes": 11,
+        "destaque": false,
+        "edicao_especial": false
+      },
+      {
+        "id": "manchester-city-fourth-away-25-26",
+        "nome": "Manchester City 25/26 Fourth Away",
+        "descricao": "Manchester City 25/26 Fourth Away.",
+        "descricaoLonga": "Manchester City 25/26 Fourth Away.",
+        "preco": 17.99,
+        "precoAntigo": 29.99,
+        "imagem": "/images/d352ad6e.jpg",
+        "imagensAdicionais": [
+          "/images/eab89ce0.jpg"
+        ],
+        "categoria": "clubes",
+        "clube": "manchester-city",
+        "liga": "premier-league",
+        "temporada": "25/26",
+        "cor": "fourth",
+        "material": "Poliéster",
+        "marca": "Nike",
+        "avaliacao": 4.8,
+        "numAvaliacoes": 11,
+        "destaque": false,
+        "edicao_especial": false
+      },
+      {
         "id": "brighton-alternativa-25-26-1",
         "nome": "Brighton & Hove Albion Away Jersey 25/26",
         "descricao": "Camisola alternativa do Brighton & Hove Albion 2025/26.",
