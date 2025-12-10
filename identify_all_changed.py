@@ -61,3 +61,4 @@ for prod in changed_products[:20]:
     print()
 
 
+

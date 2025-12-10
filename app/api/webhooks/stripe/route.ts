@@ -203,7 +203,7 @@ export async function POST(request: Request) {
         const paymentIntent = event.data.object as Stripe.PaymentIntent
         console.log(`💰 PaymentIntent for ${paymentIntent.amount} was successful!`)
 
-        // Atualizar o status de pagamento se houver um pedido associado
+        // Atualizar o status de pagamento se houver um pedido associado e enviar emails
         await updatePaymentStatus(paymentIntent)
         break
 
@@ -240,14 +240,16 @@ async function updatePaymentStatus(paymentIntent: Stripe.PaymentIntent) {
       return
     }
 
-    // Atualizar o status de pagamento do pedido
-    const { error } = await supabaseAdmin
+    // 1. Atualizar o status de pagamento do pedido
+    const { data: updatedOrder, error } = await supabaseAdmin
       .from("orders")
       .update({
         payment_status: "paid",
         updated_at: new Date().toISOString(),
       })
       .eq("id", orderId)
+      .select()
+      .single()
 
     if (error) {
       console.error("Erro ao atualizar status de pagamento:", error)
@@ -255,6 +257,58 @@ async function updatePaymentStatus(paymentIntent: Stripe.PaymentIntent) {
     }
 
     console.log(`Status de pagamento atualizado para 'paid' para o pedido ${orderId}`)
+
+    // 2. Processar a comissão (agora que está pago)
+    await processCommission(updatedOrder)
+
+    // 3. Buscar os itens da encomenda para enviar o email
+    const { data: orderItems, error: itemsError } = await supabaseAdmin
+      .from("order_items")
+      .select("*")
+      .eq("order_id", updatedOrder.id)
+
+    if (itemsError) {
+      console.error("Erro ao buscar itens do pedido para email:", itemsError)
+      return
+    }
+
+    // 4. Fallback Robusto de Email
+    // Verificar order.email, order.customer_email e, se falhar, o receipt_email do paymentIntent
+    let finalCustomerEmail = updatedOrder.email || updatedOrder.customer_email || "";
+    
+    if (!finalCustomerEmail || finalCustomerEmail.trim() === "") {
+        console.log("⚠️ Email não encontrado na encomenda. Tentando recuperar do PaymentIntent...");
+        if (paymentIntent.receipt_email) {
+            finalCustomerEmail = paymentIntent.receipt_email;
+            console.log("✅ Email recuperado do PaymentIntent:", finalCustomerEmail);
+        } else {
+             // Última tentativa: buscar user se houver user_id
+             if (updatedOrder.user_id) {
+                 const { data: user } = await supabaseAdmin.from('users').select('email').eq('id', updatedOrder.user_id).single();
+                 if (user?.email) {
+                     finalCustomerEmail = user.email;
+                     console.log("✅ Email recuperado do User:", finalCustomerEmail);
+                 }
+             }
+        }
+    }
+
+    // Validação final antes de enviar
+    if (!finalCustomerEmail || finalCustomerEmail.trim() === "") {
+        console.error(`❌ FALHA DEFINITIVA: Não foi possível encontrar um email válido para o pedido ${orderId}. Emails não enviados.`);
+        return;
+    }
+
+    const customerData = {
+      name: updatedOrder.customer_name || "Cliente",
+      email: finalCustomerEmail,
+      phone: updatedOrder.customer_phone
+    }
+
+    const paymentMethodText = updatedOrder.payment_method === 'cash_on_delivery' ? "Cash on Delivery" : "Online Payment"
+
+    await sendEmails(updatedOrder, orderItems, paymentMethodText, customerData, updatedOrder.shipping_address)
+
   } catch (error) {
     console.error("Erro ao processar atualização de status de pagamento:", error)
   }
@@ -296,6 +350,12 @@ async function sendEmails(order: any, orderItems: any[], paymentMethodText: stri
   try {
     logger("=== ENVIANDO EMAILS (CLIENTE + ADMIN) ===")
     
+    // Validação extra de segurança
+    if (!customerData.email || !customerData.email.includes('@')) {
+        console.error("❌ ERRO: Tentativa de envio de email com endereço inválido:", customerData.email);
+        return;
+    }
+
     if (!isProduction) {
       logger("Shipping address recebido:", shippingAddress)
       logger("Order shipping_address:", order.shipping_address)
@@ -454,16 +514,23 @@ async function handleAsyncPaymentSucceeded(session: Stripe.Checkout.Session) {
     }
 
     // 5. Preparar dados e enviar emails
+    
+    // Fallback de email robusto
+    let finalCustomerEmail = updatedOrder.email || updatedOrder.customer_email || "";
+    
+    if (!finalCustomerEmail) {
+         if (session.customer_details?.email) {
+             finalCustomerEmail = session.customer_details.email;
+         }
+    }
+
     const customerData = {
        name: updatedOrder.customer_name,
-       email: updatedOrder.customer_email,
+       email: finalCustomerEmail || updatedOrder.customer_email,
        phone: updatedOrder.customer_phone
     }
     
     const paymentMethodText = updatedOrder.payment_method === 'cash_on_delivery' ? "Cash on Delivery" : "Online Payment"
-    
-    // shipping_address já está no objeto order, mas sendEmails espera o formato talvez diferente ou usa o do order
-    // A função sendEmails usa `order.shipping_address` como fallback, então podemos passar null se quisermos usar o do DB
     
     await sendEmails(updatedOrder, orderItems, paymentMethodText, customerData, updatedOrder.shipping_address)
     
@@ -490,15 +557,22 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
     
     // Recuperar detalhes da sessão com expansão completa
     const expandedSession = await stripe.checkout.sessions.retrieve(session.id, {
-      expand: ['line_items.data.price.product', 'customer_details']
+      expand: ['line_items.data.price.product', 'customer_details', 'payment_intent']
     })
     console.log("Sessão expandida obtida")
 
-    // Recuperar detalhes do cliente
-    const customerEmail = expandedSession.customer_details?.email || ""
-    const customerName = expandedSession.customer_details?.name || ""
-    const customerPhone = expandedSession.customer_details?.phone || ""
-    const shippingAddress = expandedSession.customer_details?.address
+    // --- CORREÇÃO DA MORADA E NOME ---
+    // Prioridade: shipping_details -> customer_details
+    // O Stripe coloca a morada de entrega em shipping_details quando diferente da faturação
+    const shippingDetails = expandedSession.shipping_details || expandedSession.customer_details;
+    const customerDetails = expandedSession.customer_details;
+
+    const customerEmail = customerDetails?.email || "";
+    // Nome: Preferir shipping_details.name para garantir que vai para quem recebe
+    const customerName = shippingDetails?.name || customerDetails?.name || "";
+    const customerPhone = customerDetails?.phone || shippingDetails?.phone || "";
+    
+    const shippingAddress = shippingDetails?.address;
     
     // Buscar o usuário pelo email (se estiver autenticado)
     let userId = null
@@ -581,7 +655,7 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
           subtotal: paymentMethod === 'cash_on_delivery' ? (originalTotal - shippingCost) : (totalAmount - shippingCost),
           shipping_cost: shippingCost,
           shipping_address: shippingAddress,
-          billing_address: expandedSession.customer_details,
+          billing_address: customerDetails?.address, // Billing costuma vir em customer_details
           payment_method: paymentMethod,
           email: customerEmail,
           customer_name: customerName,
@@ -645,6 +719,34 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
             if (itemsError) throw itemsError
         }
     }
+
+    // --- ATUALIZAR METADADOS DO PAYMENT INTENT ---
+    // Isso é crucial para que o evento 'payment_intent.succeeded' possa ligar o pagamento à encomenda
+    // se o pagamento for assíncrono (Multibanco)
+    if (expandedSession.payment_intent) {
+        let paymentIntentId = "";
+        if (typeof expandedSession.payment_intent === 'string') {
+            paymentIntentId = expandedSession.payment_intent;
+        } else if ((expandedSession.payment_intent as any).id) {
+            paymentIntentId = (expandedSession.payment_intent as any).id;
+        }
+
+        if (paymentIntentId) {
+            console.log(`=== ATUALIZANDO PAYMENT INTENT ${paymentIntentId} ===`)
+            try {
+                await stripe.paymentIntents.update(paymentIntentId, {
+                    metadata: {
+                        order_id: order.id,
+                        order_number: order.order_number
+                    }
+                });
+                console.log("✅ Metadados do PaymentIntent atualizados com ID da encomenda")
+            } catch (piError) {
+                console.error("❌ Erro ao atualizar PaymentIntent:", piError)
+            }
+        }
+    }
+
 
     // --- VERIFICAÇÃO ESTRITA DE PAGAMENTO (Gatekeeper) ---
     if (order.payment_status === 'paid') {

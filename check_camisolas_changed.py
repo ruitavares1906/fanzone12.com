@@ -58,3 +58,4 @@ else:
     print("Nenhuma camisola problemática encontrada.")
 
 
+
