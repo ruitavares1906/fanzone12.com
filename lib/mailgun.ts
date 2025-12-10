@@ -29,16 +29,38 @@ export interface OrderEmailData {
   shipping: number
   total: number
   shippingAddress?: {
-    name: string
-    address: string
-    city: string
-    postalCode: string
-    country: string
+    name?: string
+    address?: string
+    line1?: string
+    line2?: string
+    city?: string
+    postalCode?: string
+    postal_code?: string
+    country?: string
   } | null
   paymentMethod?: string
   upfrontPayment?: number
   remainingPayment?: number
   hasPersonalizedItems?: boolean
+}
+
+// Helper para formatar o endereço de forma robusta
+function formatShippingAddress(addressData: any): string {
+  if (!addressData) return 'Address not available'
+
+  const name = addressData.name || 'Customer'
+  const line1 = addressData.address || addressData.line1 || 'Address not available'
+  const line2 = addressData.line2 ? `<br>${addressData.line2}` : ''
+  const postal = addressData.postalCode || addressData.postal_code || ''
+  const city = addressData.city || ''
+  const country = addressData.country || ''
+
+  return `
+    ${name}<br>
+    ${line1}${line2}<br>
+    ${city}, ${postal}<br>
+    ${country}
+  `
 }
 
 export async function sendAdminOrderNotification(data: OrderEmailData) {
@@ -58,6 +80,10 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
         </div>
       </div>
     `).join('')
+
+    const formattedAddress = data.shippingAddress 
+      ? formatShippingAddress(data.shippingAddress)
+      : 'Address not available'
 
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f8f9fa; padding: 20px;">
@@ -79,20 +105,10 @@ export async function sendAdminOrderNotification(data: OrderEmailData) {
           </div>
 
           <!-- Endereço de envio -->
-          ${data.shippingAddress ? `
           <div style="background-color: #f0f9ff; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #3b82f6;">
             <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📍 Shipping Address</h3>
-            <p style="margin: 5px 0;"><strong>${data.shippingAddress.name || 'Customer'}</strong></p>
-            <p style="margin: 5px 0;">${data.shippingAddress.address || 'Address not available'}</p>
-            <p style="margin: 5px 0;">${data.shippingAddress.postalCode || ''} ${data.shippingAddress.city || ''}</p>
-            <p style="margin: 5px 0;">${data.shippingAddress.country || ''}</p>
+            <p style="margin: 5px 0; line-height: 1.6;">${formattedAddress}</p>
           </div>
-          ` : `
-          <div style="background-color: #fef3c7; padding: 20px; margin-bottom: 25px; border-radius: 6px; border-left: 4px solid #f59e0b;">
-            <h3 style="color: #1f2937; margin: 0 0 15px 0; font-size: 18px;">📍 Shipping Address</h3>
-            <p style="margin: 5px 0; color: #92400e;">Address not available</p>
-          </div>
-          `}
 
           <!-- Itens do pedido -->
           <div style="margin-bottom: 25px;">
@@ -192,6 +208,10 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
       </div>
     `).join('')
 
+    const formattedAddress = data.shippingAddress 
+      ? formatShippingAddress(data.shippingAddress)
+      : 'Address not available'
+
     const emailData = {
       from: MAILGUN_FROM_EMAIL,
       to: data.customerEmail,
@@ -249,12 +269,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
             <div style="margin-bottom: 25px;">
               <h3 style="color: #1f2937; margin: 0 0 10px 0; font-size: 18px;">Shipping Address</h3>
               <div style="background-color: #f9fafb; padding: 15px; border-radius: 6px; color: #6b7280; line-height: 1.6;">
-                ${data.shippingAddress ? `
-                  ${data.shippingAddress.name || 'Customer'}<br>
-                  ${data.shippingAddress.address || 'Address not available'}<br>
-                  ${data.shippingAddress.city || ''}, ${data.shippingAddress.postalCode || ''}<br>
-                  ${data.shippingAddress.country || ''}
-                ` : 'Address not available'}
+                ${formattedAddress}
               </div>
             </div>
 
@@ -316,12 +331,7 @@ export async function sendOrderConfirmationEmail(data: OrderEmailData) {
         Total: ${(data.total || 0).toFixed(2)}€
 
         SHIPPING ADDRESS:
-        ${data.shippingAddress ? `
-        ${data.shippingAddress.name || 'Customer'}
-        ${data.shippingAddress.address || 'Address not available'}
-        ${data.shippingAddress.city || ''}, ${data.shippingAddress.postalCode || ''}
-        ${data.shippingAddress.country || ''}
-        ` : 'Address not available'}
+        ${formattedAddress.replace(/<br>/g, '\n').replace(/<\/?[^>]+(>|$)/g, "")}
 
         NEXT STEPS:
         - Order preparation (1-2 business days)
