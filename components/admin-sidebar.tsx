@@ -90,6 +90,11 @@ export default function AdminSidebar({ isOpen = true, onClose }: AdminSidebarPro
       icon: <PlusCircle className="h-5 w-5" />,
     },
     {
+      name: "Testar Pagamento Real",
+      href: "/admin/test-payment",
+      icon: <DollarSign className="h-5 w-5" />,
+    },
+    {
       name: "Testar Webhook",
       href: "/admin/testar-webhook",
       icon: <Zap className="h-5 w-5" />,
