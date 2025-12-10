@@ -153,7 +153,7 @@ export async function POST(request: Request) {
     console.log(`🔄 Processando evento: ${event.type}`)
 
     // Verificar se o evento pertence a esta loja
-    if (event.type === 'checkout.session.completed') {
+    if (event.type === 'checkout.session.completed' || event.type === 'checkout.session.async_payment_succeeded') {
       const session = event.data.object as Stripe.Checkout.Session
       const storeId = session.metadata?.store
       
@@ -182,6 +182,19 @@ export async function POST(request: Request) {
           console.log("✅ Pedido processado com sucesso")
         } catch (error) {
           console.error("❌ Erro ao processar pedido:", error)
+          throw error
+        }
+        break
+
+      case "checkout.session.async_payment_succeeded":
+        const asyncSession = event.data.object as Stripe.Checkout.Session
+        console.log(`✅ Async payment succeeded: ${asyncSession.id}`)
+        
+        try {
+          await handleAsyncPaymentSucceeded(asyncSession)
+          console.log("✅ Pagamento assíncrono processado com sucesso")
+        } catch (error) {
+          console.error("❌ Erro ao processar pagamento assíncrono:", error)
           throw error
         }
         break
@@ -340,6 +353,127 @@ async function sendEmails(order: any, orderItems: any[], paymentMethodText: stri
   }
 }
 
+// Helper para processar comissões
+async function processCommission(order: any) {
+  try {
+    if (order.discount_code && order.payment_status === "paid") {
+      // Buscar parceiro pelo discount_code
+      const { data: partner, error: partnerError } = await supabaseAdmin
+        .from("partners")
+        .select("id, discount_code")
+        .eq("discount_code", order.discount_code)
+        .single()
+
+      if (!partnerError && partner) {
+        // Verificar se já existe comissão para esta encomenda
+        const { data: existingCommission } = await supabaseAdmin
+            .from("partner_commissions")
+            .select("id")
+            .eq("order_id", order.id)
+            .single()
+
+        if (existingCommission) {
+            console.log("⚠️ Comissão já registada para esta encomenda.")
+            return
+        }
+
+        const commissionValue = Number((order.total * 0.10).toFixed(2))
+
+        // Inserir comissão
+        const { error: commissionError } = await supabaseAdmin
+          .from("partner_commissions")
+          .insert({
+            partner_id: partner.id,
+            order_id: order.id,
+            commission_value: commissionValue,
+          })
+
+        if (commissionError) {
+          console.error("Erro ao criar comissão do parceiro:", commissionError)
+        } else {
+          console.log("✅ Comissão registada:", commissionValue)
+        }
+      }
+    }
+  } catch (commissionCatchError) {
+    console.error("Erro no processamento de comissão:", commissionCatchError)
+  }
+}
+
+async function handleAsyncPaymentSucceeded(session: Stripe.Checkout.Session) {
+  try {
+    logger("=== PROCESSANDO PAGAMENTO ASSÍNCRONO (ASYNC SUCCESS) ===")
+    logger("Session ID:", session.id)
+
+    // 1. Procurar a encomenda existente pelo session_id
+    const { data: order, error: orderError } = await supabaseAdmin
+      .from("orders")
+      .select("*")
+      .eq("stripe_session_id", session.id)
+      .single()
+
+    if (orderError || !order) {
+      console.error("❌ Encomenda não encontrada para pagamento assíncrono:", session.id)
+      // Opcional: Criar a encomenda aqui se não existir?
+      // Por agora, seguimos a regra estrita de atualizar.
+      return
+    }
+
+    console.log("✅ Encomenda encontrada:", order.id)
+    
+    // 2. Atualizar status para paid
+    const { data: updatedOrder, error: updateError } = await supabaseAdmin
+      .from("orders")
+      .update({
+        payment_status: 'paid',
+        updated_at: new Date().toISOString()
+      })
+      .eq("id", order.id)
+      .select()
+      .single()
+      
+    if (updateError) {
+      console.error("❌ Erro ao atualizar status da encomenda (Async):", updateError)
+      throw updateError
+    }
+
+    console.log("✅ Status atualizado para PAID")
+
+    // 3. Processar comissão
+    await processCommission(updatedOrder)
+
+    // 4. Buscar itens da encomenda para o email
+    const { data: orderItems, error: itemsError } = await supabaseAdmin
+      .from("order_items")
+      .select("*")
+      .eq("order_id", updatedOrder.id)
+    
+    if (itemsError) {
+       console.error("❌ Erro ao buscar itens para email:", itemsError)
+       return
+    }
+
+    // 5. Preparar dados e enviar emails
+    const customerData = {
+       name: updatedOrder.customer_name,
+       email: updatedOrder.customer_email,
+       phone: updatedOrder.customer_phone
+    }
+    
+    const paymentMethodText = updatedOrder.payment_method === 'cash_on_delivery' ? "Cash on Delivery" : "Online Payment"
+    
+    // shipping_address já está no objeto order, mas sendEmails espera o formato talvez diferente ou usa o do order
+    // A função sendEmails usa `order.shipping_address` como fallback, então podemos passar null se quisermos usar o do DB
+    
+    await sendEmails(updatedOrder, orderItems, paymentMethodText, customerData, updatedOrder.shipping_address)
+    
+  } catch (error) {
+    console.error("=== ERRO NO PAGAMENTO ASSÍNCRONO ===")
+    console.error("Erro:", error)
+    throw error
+  }
+}
+
 async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
   try {
     logger("=== INICIANDO PROCESSAMENTO DO CHECKOUT ===")
@@ -347,23 +481,6 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
     
     // Verificar se é um pagamento antecipado usando função utilitária
     const isUpfrontPayment = checkIfUpfrontPayment(session)
-    
-    logger("=== VERIFICANDO PAGAMENTO ANTECIPADO ===")
-    logger("Amount total:", session.amount_total)
-    
-    if (isProduction) {
-      logger("Session metadata keys:", Object.keys(session.metadata || {}))
-    } else {
-      logger("Session metadata:", session.metadata)
-      logger("Line items description:", session.line_items?.data?.[0]?.description)
-    }
-    if (!isProduction) {
-      logger("Payment method from metadata:", session.metadata?.payment_method)
-      logger("Amount from metadata:", session.metadata?.amount)
-      logger("Order number from metadata:", session.metadata?.orderNumber)
-      logger("Line items:", session.line_items?.data?.[0])
-    }
-    logger("Is upfront payment:", isUpfrontPayment)
     
     if (isUpfrontPayment) {
       logger("=== PAGAMENTO ANTECIPADO DETECTADO ===")
@@ -383,37 +500,22 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
     const customerPhone = expandedSession.customer_details?.phone || ""
     const shippingAddress = expandedSession.customer_details?.address
     
-    console.log("=== DADOS DO CLIENTE ===")
-    console.log("Nome:", customerName)
-    console.log("Email:", customerEmail)
-    console.log("Telefone:", customerPhone)
-    console.log("Endereço:", JSON.stringify(shippingAddress, null, 2))
-
     // Buscar o usuário pelo email (se estiver autenticado)
     let userId = null
-    const { data: userData, error: userError } = await supabaseAdmin
+    const { data: userData } = await supabaseAdmin
       .from("users")
       .select("id")
       .eq("email", customerEmail)
       .single()
 
-    if (userError) {
-      console.log("Erro ou usuário não encontrado:", userError.message)
-    } else {
-      console.log("Usuário encontrado:", userData)
-      userId = userData?.id
+    if (userData) {
+      userId = userData.id
     }
 
-     // Metadados da sessão (tracking de parceiro) - apenas campos essenciais
+     // Metadados da sessão
      const sessionDiscountCode = (expandedSession.metadata && (expandedSession.metadata as any).discount_code) || null
      const paymentMethod = (expandedSession.metadata && (expandedSession.metadata as any).payment_method) || 'online'
      
-     console.log("=== METADADOS DA SESSÃO ===")
-     console.log("Discount code:", sessionDiscountCode)
-     console.log("Payment method:", paymentMethod)
-     console.log("⚠️ NOTA: Usando line_items como fonte principal dos produtos (não metadata.cart_items)")
-     console.log("💡 IMPORTANTE: Para produtos personalizados, garantir que o cliente compreenda no checkout que são necessários 8€ antecipados")
-    
     const originalTotal = (expandedSession.metadata && (expandedSession.metadata as any).original_total) ? 
       parseFloat((expandedSession.metadata as any).original_total) : 0
 
@@ -429,219 +531,151 @@ async function handleCompletedCheckout(session: Stripe.Checkout.Session) {
       remainingPayment = originalTotal // Restante = total original (sem subtrair os €8)
     }
 
-    // Preparar dados do pedido
-    const orderData = {
-      user_id: userId,
-      stripe_session_id: session.id,
-      order_number: Math.floor(100000 + Math.random() * 900000).toString(),
-      status: "processing",
-      payment_status: session.payment_status === "paid" ? "paid" : "pending",
-      total: paymentMethod === 'cash_on_delivery' ? originalTotal : totalAmount,
-      total_amount: paymentMethod === 'cash_on_delivery' ? originalTotal : totalAmount,
-      subtotal: paymentMethod === 'cash_on_delivery' ? (originalTotal - shippingCost) : (totalAmount - shippingCost),
-      shipping_cost: shippingCost,
-      shipping_address: shippingAddress,
-      billing_address: expandedSession.customer_details,
-      payment_method: paymentMethod,
-      email: customerEmail,
-      customer_name: customerName,
-      customer_phone: customerPhone,
-      discount_code: sessionDiscountCode || null,
-      cash_on_delivery_fee: paymentMethod === 'cash_on_delivery' ? 8.00 : 0,
-       upfront_payment: upfrontPayment,
-       remaining_payment: remainingPayment,
-       is_upfront_payment: paymentMethod === 'cash_on_delivery', // Campo para diferenciar pagamentos
-       // order_items removido - dados ficam apenas na tabela order_items
-       created_at: new Date().toISOString(),
-       updated_at: new Date().toISOString()
-    }
+    // --- IDEMPOTÊNCIA: Verificar se a encomenda já existe ---
+    const { data: existingOrder } = await supabaseAdmin
+        .from("orders")
+        .select("*")
+        .eq("stripe_session_id", session.id)
+        .single()
+    
+    let order: any;
+    let orderItems: any[] = [];
+    
+    if (existingOrder) {
+        logger("⚠️ Encomenda já existe. Atualizando status...")
+        
+        // Atualizar status e updated_at
+        const { data: updatedOrder, error: updateError } = await supabaseAdmin
+             .from('orders')
+             .update({
+                 payment_status: session.payment_status, // Pode ser 'paid' ou 'unpaid'/'no_payment_required'
+                 updated_at: new Date().toISOString()
+             })
+             .eq('id', existingOrder.id)
+             .select()
+             .single()
+             
+        if (updateError) throw updateError;
+        order = updatedOrder;
+        
+        // Se formos enviar email, precisamos dos items
+        if (order.payment_status === 'paid') {
+             const { data: items } = await supabaseAdmin
+                .from('order_items')
+                .select('*')
+                .eq('order_id', order.id)
+             orderItems = items || [];
+        }
+        
+    } else {
+        // --- CRIAR NOVA ENCOMENDA ---
+        // Preparar dados do pedido
+        const orderData = {
+          user_id: userId,
+          stripe_session_id: session.id,
+          order_number: Math.floor(100000 + Math.random() * 900000).toString(),
+          status: "processing",
+          payment_status: session.payment_status === "paid" ? "paid" : "pending",
+          total: paymentMethod === 'cash_on_delivery' ? originalTotal : totalAmount,
+          total_amount: paymentMethod === 'cash_on_delivery' ? originalTotal : totalAmount,
+          subtotal: paymentMethod === 'cash_on_delivery' ? (originalTotal - shippingCost) : (totalAmount - shippingCost),
+          shipping_cost: shippingCost,
+          shipping_address: shippingAddress,
+          billing_address: expandedSession.customer_details,
+          payment_method: paymentMethod,
+          email: customerEmail,
+          customer_name: customerName,
+          customer_phone: customerPhone,
+          discount_code: sessionDiscountCode || null,
+          cash_on_delivery_fee: paymentMethod === 'cash_on_delivery' ? 8.00 : 0,
+          upfront_payment: upfrontPayment,
+          remaining_payment: remainingPayment,
+          is_upfront_payment: paymentMethod === 'cash_on_delivery',
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
+        }
 
-    console.log("=== DADOS DO PEDIDO ===")
-    console.log(JSON.stringify(orderData, null, 2))
-
-    // Salvar o pedido no Supabase usando cliente admin
-    const { data: order, error: orderError } = await supabaseAdmin
-      .from("orders")
-      .insert(orderData)
-      .select()
-      .single()
-
-    if (orderError) {
-      console.error("=== ERRO AO SALVAR PEDIDO ===")
-      console.error("Erro:", orderError)
-      console.error("Detalhes:", JSON.stringify(orderError, null, 2))
-      throw orderError
-    }
-
-    console.log("✅ Pedido salvo com sucesso:", order.id)
-
-    // Se a sessão tiver discount_code e o pagamento estiver pago, calcular comissão (10%)
-    try {
-      if (orderData.discount_code && orderData.payment_status === "paid") {
-        // Buscar parceiro pelo discount_code
-        const { data: partner, error: partnerError } = await supabaseAdmin
-          .from("partners")
-          .select("id, discount_code")
-          .eq("discount_code", orderData.discount_code)
+        console.log("=== CRIANDO NOVA ENCOMENDA ===")
+        const { data: newOrder, error: orderError } = await supabaseAdmin
+          .from("orders")
+          .insert(orderData)
+          .select()
           .single()
 
-        if (!partnerError && partner) {
-          const commissionValue = Number((orderData.total * 0.10).toFixed(2))
-
-          // Inserir comissão se não existir ainda para esta encomenda
-          const { error: commissionError } = await supabaseAdmin
-            .from("partner_commissions")
-            .insert({
-              partner_id: partner.id,
-              order_id: order.id,
-              commission_value: commissionValue,
-            })
-
-          if (commissionError) {
-            console.error("Erro ao criar comissão do parceiro:", commissionError)
-          } else {
-            console.log("✅ Comissão registada:", commissionValue)
-          }
+        if (orderError) {
+          console.error("=== ERRO AO SALVAR PEDIDO ===")
+          throw orderError
         }
-      }
-    } catch (commissionCatchError) {
-      console.error("Erro no processamento de comissão:", commissionCatchError)
+        order = newOrder;
+        
+        // --- PROCESSAR ITENS ---
+        const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
+           expand: ['data.price.product']
+        })
+        
+        // Mapear itens (lógica de parsing existente)
+        orderItems = lineItems.data.map((item) => {
+           const description = item.description || ""
+           const sizeMatch = description.match(/Tamanho:\s*([A-Z0-9-]+)/i)
+           const size = sizeMatch ? sizeMatch[1] : "M"
+           const customizationMatch = description.match(/Personalização:\s*([^•]+?)(?:\s*•|$)/i)
+           const customization = customizationMatch ? customizationMatch[1].trim() : null
+           const productName = description.split(/Tamanho:|•/)[0].trim()
+           const unitPrice = (item.amount_total || 0) / 100 / (item.quantity || 1)
+           
+           let finalUnitPrice = unitPrice
+           if (unitPrice === 0 && (item as any).price_data?.unit_amount) {
+             finalUnitPrice = ((item as any).price_data.unit_amount || 0) / 100
+           }
+           const finalProductName = productName || description || "Produto"
+           
+           return {
+             order_id: order.id,
+             product_name: finalProductName,
+             quantity: item.quantity || 1,
+             unit_price: finalUnitPrice,
+             size: size,
+             customization: customization,
+             is_personalized: !!customization,
+           }
+        })
+        
+        if (orderItems.length > 0) {
+            const { error: itemsError } = await supabaseAdmin.from("order_items").insert(orderItems)
+            if (itemsError) throw itemsError
+        }
     }
 
-     // Preparar e salvar itens do pedido usando line_items como fonte principal
-     // Usar expansão para melhor performance
-     const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
-       expand: ['data.price.product']
-     })
-     logger("=== ITENS DO PEDIDO (LINE_ITEMS) ===")
-     logger("Número de itens:", lineItems.data.length)
-
-     const orderItems = lineItems.data.map((item) => {
-       if (!isProduction) {
-         logger(`=== PROCESSANDO ITEM ${item.id} ===`)
-         logger("Line item description:", item.description)
-         logger("Line item amount_total:", item.amount_total)
-       }
-       if (!isProduction) {
-         logger("Line item quantity:", item.quantity)
-         logger("Description completa:", item.description || "")
-       }
-
-       // Usar description como fonte principal (formato padronizado: "Nome • Tamanho: M • Personalização: João")
-       const description = item.description || ""
-
-       // Regex padronizado com separador • como delimitador
-       const sizeMatch = description.match(/Tamanho:\s*([A-Z0-9-]+)/i)
-       const size = sizeMatch ? sizeMatch[1] : "M"
-       if (!isProduction) {
-         logger("Tamanho extraído:", size)
-       }
-
-       // Extrair personalização (até o próximo • ou fim da string)
-       const customizationMatch = description.match(/Personalização:\s*([^•]+?)(?:\s*•|$)/i)
-       const customization = customizationMatch ? customizationMatch[1].trim() : null
-       if (!isProduction) {
-         logger("Personalização extraída:", customization)
-       }
-
-       // Nome do produto (tudo antes de "Tamanho:" ou primeiro •)
-       const productName = description.split(/Tamanho:|•/)[0].trim()
-       if (!isProduction) {
-         logger("Nome do produto extraído:", productName)
-         logger("Description completa:", description)
-       }
-
-       // Preço unitário (amount_total já inclui quantidade, então dividir)
-       const unitPrice = (item.amount_total || 0) / 100 / (item.quantity || 1)
-       if (!isProduction) {
-         logger("Preço unitário calculado:", unitPrice)
-         logger("Amount total:", item.amount_total)
-         logger("Quantity:", item.quantity)
-         logger("Price data:", (item as any).price_data)
-       }
-       
-       // Se amount_total for 0, tentar usar price_data (se disponível)
-       let finalUnitPrice = unitPrice
-       if (unitPrice === 0 && (item as any).price_data?.unit_amount) {
-         finalUnitPrice = ((item as any).price_data.unit_amount || 0) / 100
-         if (!isProduction) {
-           logger("Usando price_data.unit_amount:", finalUnitPrice)
-         }
-       }
-       
-       // Fallback: se não conseguir extrair nome, usar description completa
-       const finalProductName = productName || description || "Produto"
-       if (!isProduction) {
-         logger("Nome final do produto:", finalProductName)
-       }
-       
-       return {
-         order_id: order.id,
-         product_name: finalProductName,
-         quantity: item.quantity || 1,
-         unit_price: finalUnitPrice,
-         size: size,
-         customization: customization,
-         is_personalized: !!customization,
-       }
-     })
-
-    logger("Itens do pedido processados:", JSON.stringify(orderItems, null, 2))
-    
-    // Verificar se há problemas nos dados
-    orderItems.forEach((item, index) => {
-      if (!item.product_name || item.product_name.trim() === '') {
-        logger(`❌ PROBLEMA: Item ${index} sem nome do produto:`, item)
-      }
-      if (item.unit_price === 0) {
-        logger(`❌ PROBLEMA: Item ${index} com preço 0:`, item)
-      }
-    })
-
-    // Salvar os itens do pedido usando cliente admin
-    if (orderItems.length > 0) {
-      console.log("=== TENTANDO SALVAR ITENS COM CLIENTE ADMIN ===")
-      console.log("Número de itens:", orderItems.length)
-      
-      const { error: itemsError } = await supabaseAdmin
-        .from("order_items")
-        .insert(orderItems)
-          
-      if (itemsError) {
-        console.error("=== ERRO AO SALVAR ITENS ===")
-        console.error("Erro:", itemsError)
-        console.error("Detalhes:", JSON.stringify(itemsError, null, 2))
-        throw itemsError
-      }
-      
-      console.log("✅ Itens salvos com sucesso:", orderItems.length, "itens")
+    // --- VERIFICAÇÃO ESTRITA DE PAGAMENTO (Gatekeeper) ---
+    if (order.payment_status === 'paid') {
+        console.log("✅ Pagamento confirmado (PAID). Processando emails e comissões.")
+        
+        // Processar comissão se ainda não foi processada
+        await processCommission(order)
+        
+        // Preparar dados para email
+        const customerData = {
+           name: customerName,
+           email: customerEmail,
+           phone: customerPhone
+        }
+        
+        const paymentMethodText = paymentMethod === 'cash_on_delivery' ? "Cash on Delivery" : "Online Payment"
+        
+        const formattedShippingAddress = shippingAddress ? {
+           name: customerName || 'Customer',
+           address: shippingAddress.line1 || '',
+           city: shippingAddress.city || '',
+           postalCode: shippingAddress.postal_code || '',
+           country: shippingAddress.country || ''
+        } : null
+        
+        await sendEmails(order, orderItems, paymentMethodText, customerData, formattedShippingAddress)
+        
+    } else {
+        console.log(`⏳ Status do pagamento: ${order.payment_status}. Emails NÃO enviados.`)
+        console.log("Aguardando confirmação de pagamento (async_payment_succeeded) ou webhook futuro.")
     }
-
-     // Enviar emails usando função centralizada
-     const customerData = {
-       name: customerName,
-       email: customerEmail,
-       phone: customerPhone
-     }
-     
-     const paymentMethodText = paymentMethod === 'cash_on_delivery' ? "Cash on Delivery" : "Online Payment"
-     
-     // Preparar endereço de envio no formato correto
-     console.log("=== PREPARANDO ENDEREÇO DE ENVIO ===")
-     console.log("ShippingAddress original:", JSON.stringify(shippingAddress, null, 2))
-     console.log("CustomerName:", customerName)
-     
-     const formattedShippingAddress = shippingAddress ? {
-       name: customerName || 'Customer',
-       address: shippingAddress.line1 || '',
-       city: shippingAddress.city || '',
-       postalCode: shippingAddress.postal_code || '',
-       country: shippingAddress.country || ''
-     } : null
-     
-     console.log("FormattedShippingAddress:", JSON.stringify(formattedShippingAddress, null, 2))
-     
-     await sendEmails(order, orderItems, paymentMethodText, customerData, formattedShippingAddress)
 
     console.log("✅ PROCESSAMENTO COMPLETO DO PEDIDO FINALIZADO")
 
