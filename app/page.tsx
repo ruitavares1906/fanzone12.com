@@ -983,59 +983,6 @@ export default async function Home() {
       {/* Parceiros Section */}
       <ParceirosSection />
 
-      {/* Modern Vantagens Section */}
-      <section className="py-8 modern-section">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-responsive-lg text-gray-800 mb-4">
-              Why choose fanzone12.com?
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We offer the best shopping experience with quality products and exceptional service
-            </p>
-          </div>
-
-          {/* Unified Responsive Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div className="modern-card group p-6 md:p-8 text-center rounded-2xl shadow-modern">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                <Truck className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">
-                Fast Delivery
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                Shipping from just €4 and free for 3 or more jerseys. Fast delivery across Europe.
-              </p>
-            </div>
-
-            <div className="modern-card group p-6 md:p-8 text-center rounded-2xl shadow-modern">
-              <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                <CreditCard className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">
-                Secure Payment
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                Multiple secure payment options with complete protection of your data.
-              </p>
-            </div>
-
-            <div className="modern-card group p-6 md:p-8 text-center rounded-2xl shadow-modern">
-              <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mb-6 w-16 h-16 mx-auto flex items-center justify-center">
-                <Star className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">
-                Guaranteed Quality
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                Official products with authenticity guarantee and premium quality.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Catálogo Completo Info Section - Estático */}
       <section id="complete-catalog-section" className="py-4 sm:py-8 bg-gradient-to-br from-gray-50 to-blue-50/20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
