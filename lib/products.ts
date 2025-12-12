@@ -7775,7 +7775,7 @@ const produtosArray = ([
         preco: 17.99,
         precoAntigo: 29.99,
         imagem: "/images/664556.webp",
-        imagensAdicionais: ["/images/53453453.webp","/images/hgfhfgh.webp"],
+        imagensAdicionais: ["/images/53453453.webp"],
         categoria: "selecoes",
         clube: "brasil",
         liga: "selecoes-nacionais",
